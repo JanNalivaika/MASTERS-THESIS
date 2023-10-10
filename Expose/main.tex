@@ -1,0 +1,242 @@
+% !TeX spellcheck = en_US
+\documentclass[ZLstudentexpose%     style
+              ,optBiber%            bibliography tool
+              ,optEnglish% 		      language
+              %,optTikzExternalize% compiles faster for large tikz images
+              ,10pt
+              ]{ZLlatex}%
+%
+% Set paths
+\usepackage[onehalfspacing]{setspace}
+\graphicspath{{figures/}}%
+\bibliography{lit.bib}%
+\usepackage{float}
+
+%
+\begin{document}%
+% Re-definition of chair name
+% ---------------------------
+% Option A: use pre-defined chair name (replace ABC by the abbreviation of your chair (e.g. AM = Applied Mechanics))
+%\renewcommand{\ZLlangChair}{\ZLlangChairMWABC}%
+% Option B: custom chair name
+\renewcommand{\ZLlangChair}{\ZLlangGerEng{Name des Lehrstuhls (deutsch)}{Institute for Machine Tools and Industrial Management}}%
+%
+% Titlepage
+% ---------
+%\ZLstudentexposeTitlePageBachelorsThesis{Provisional Title}{Your Name}{03600000}{your.name@tum.de}{Your Supervisor}{\ZLutilsToday}%
+%\ZLstudentexposeTitlePageSemesterThesis{Provisional Title}{Your Name}{03600000}{your.name@tum.de}{Your Supervisor}{\ZLutilsToday}%
+\ZLstudentexposeTitlePageMastersThesis{Development of a Methodical Approach for Analyzing Process Parameters and Optimizing Boundary Conditions in Multi-Axis Robot Programs}{Jan Nalivaika}{03694590}{ga53pir@tum.de}{Prof. Dr.-Ing. Michael F. Zäh}{\ZLutilsToday}%
+%\ZLstudentexposeTitlePageIDP{Provisional Title}{Your Name}{03600000}{your.name@tum.de}{Your Supervisor}{\ZLutilsToday}%
+
+%
+\section{\ZLlangGerEng{Thema}{Introduction and Motivation}}%
+
+
+In the age of "Industrie 4.0", advanced technologies like digital twins, have greatly transformed industrial manufacturing. A considerable amount of data can be gathered from various processes, like milling or 3D printing. By analyzing this data, it is possible to find new and optimized methods for efficient manufacturing. By doing so, a significant amount of resources, like time and money, can be saved while at the same time increasing the quality of the produced product.\newline
+Computer-Aided Manufacturing (CAM) has been introduced as a crucial tool to improve productivity and accuracy in creating customized products. CAM systems automate and optimize tasks such as machining, welding, and assembly. One of the key strengths of CAM lies in its precision and consistency, ensuring that intricate components are produced with minimal error. Furthermore, CAM systems contribute to increased efficiency by minimizing material waste and reducing production time. These capabilities play a significant role in achieving a carbon-neutral production process. One of the most important areas of CAM is the calculation of the tool path in CNC machines as well as the movement and behavior of multi-axis industrial robots \cite{Pan}. \newline
+
+
+Manufacturing machines are the backbone of modern industrial processes. These machines encompass a wide range of equipment, from computer numerical controled (CNC) machining centers to 3D printers and automated assembly lines. Their primary ability lies in precision and efficiency. CNC machines, for instance, can repeatedly produce intricate parts with high accuracy, reducing human error and ensuring consistency. \newline
+Industrial robots are a dominant part in the area of manufacturing as they can perform precise, repeatable movements that are needed to fulfill the customers wishes for individualized products and meet the requirements. Additionally, they are also adaptable, allowing for quick reconfiguration to produce different components or products, promoting flexibility in manufacturing. Further, advancements in robotics and artificial intelligence (AI) have broadened their capabilities, enabling tasks that were once deemed too complex or hazardous for humans. \newline
+
+Achieving efficiency and sustainability in the current fast-changing environment requires a thorough analysis of the interdependent relationships between the manufactured part, process parameters, and boundary conditions that govern multi-axis robot programs \cite{Pan}. As the companies that work with industrial robots can place a strong emphasis on energy reduction, cost savings, or precision, optimizing these parameters is essential. CAM enables the simulation of the planned process, and thus adapting any boundary conditions to fit the selected goals.
+This thesis is focused on the development of a methodical approach for analyzing process parameters and optimizing boundary conditions in multi-axis robot programs \cite{Pan}. 
+
+\section{\ZLlangGerEng{Stand der Wissenschaft und Technik}{State of Science and Technology}}%
+The following chapter gives a brief introduction to the topics of manufacturing methods and CAM, as well as a first look into the available optimization methods for various process parameters.  
+\subsection{Manufacturing Methods}
+Manufacturing methods encompass a variety of techniques utilized to manufacture functional components and products. Two noteworthy approaches are subtractive and additive manufacturing. Subtractive manufacturing, closely related to traditional machining, requires the removal of material from a solid workpiece to attain the desired shape. This process typically employs cutting tools like drills and mills.
+
+Additive manufacturing, or 3D printing, uses digital designs to build objects in layers. This technique provides remarkable design flexibility, minimizes material waste, and enables the creation of intricate geometries. Subtractive and additive manufacturing methods have unique advantages and applications that make them indispensable in modern industrial processes. They play a significant role in the advancement of advanced manufacturing technologies.
+
+
+
+\subsubsection{Subtractive Manufacturing}
+Milling is a sophisticated machining process that plays a central role in modern industrial production. It relies on the precision and automation of Computer Numerical Control (CNC) technology to machine intricate shapes and components with precise accuracy. A CNC milling machine, guided by computer programs, manipulates cutting tools to shape workpieces  according to design specifications with tight tolerances. This technology facilitates the creation of high-precision parts and prototypes. The integration of CNC technology and milling processes has pushed the era of manufacturing towards higher efficiency, minimal material waste, and the ability to realize increasingly complex and innovative designs.
+\newpage
+\subsubsection{Additive Manufacturing}
+Additive Manufacturing (AM), often referred to as 3D printing, stands in contrast to subtractive manufacturing processes like CNC milling. Instead of removing material to create a part, additive manufacturing builds objects layer by layer, adding material precisely where needed. This approach has opened up new possibilities in terms of design freedom, customization, and efficiency.
+
+The Layer-by-Layer approach in AM encompass various technologies like Fused Deposition Modeling (FDM), Stereolithography (SLA), and Selective Laser Sintering (SLS). This layering enables the creation of complex geometries that would be extremely challenging or impossible to produce using traditional methods.
+A second advantage of AM is the compatibility with a wide range of materials, from plastics and metals to ceramics and even bio-materials. This versatility allows for the production of components with diverse properties, including strength, flexibility, and heat resistance. One of the most significant advantages of AM is the freedom it offers in design. Traditional manufacturing methods often involve design constraints due to the limitations of tools and processes. With AM, designers have more creative liberty, which can lead to innovative and lightweight structures, improved functionality, and optimized performance.
+Despite its many benefits, AM also presents challenges such as post-processing requirements (e.g., smoothing or heat treatment for some materials), limited material options for certain applications, and production speed for large or complex parts.
+
+Additive manufacturing has found applications across numerous industries, including aerospace, healthcare, automotive, and consumer goods. As AM technologies advance, they have the potential to transform supply chains, enable distributed manufacturing, and redefine the approach of the creation of products and components.
+\subsubsection{Computer-Aided Manufacturing}\label{CAM}
+Computer-aided manufacturing (CAM) is used to automatically generate tool paths for computer numerical controlled (CNC) machines. The CAM software considers the models of the blank and finished part, as well as constraints of the machine, the tools and the manufacturing technology. Together with user-configurable parameters, tool paths for 3-axis, 5-axis and robot-based machine tools are generated.
+The growing demand for flexibility in machine tools (e.g., the use of multiple manufacturing technologies in one machine or automated loading and unloading) has led to many machine tools having additional mechanical axes. Examples include robots mounted on linear axes and rotary-tilt tables.
+The tool paths created in CAM are usually defined in 5 degrees of freedom. The first three are the translational axes X, Y and Z. The tilting and inclining of the tool are defined by the A and B axes. Occasionally an additional rotation of the tool (C-axis) around the Z-axis (e.g., for dragging a swivel knife) is defined.
+Machines that have more degrees of freedom than are constrained by the tool path, require constraints given by the user to fully define the machines axis’ movements. One example is the orientation of a part with the help of the rotary-tilt table so that the tool Z-axis always points in the direction of gravity. This is helpful in processes like Fused Deposition Modeling (FDM) and Wire Arc Additive Manufacturing (WAAM). 
+It is common practice to set the user defined constraints based on experience. A preliminary literature review indicates that the configuration of these degrees of freedom has an impact on the energy consumption and stability of the process.
+The definition of these constraints does not affect the tool path as generated by the CAM software. As such, developing a methodical approach to optimize these constraints in terms of efficiency, speed, and energy consumption of the machine is possible. As of now no literature is providing a comprehensive analysis or methodology regarding this optimization problem.
+
+
+\subsubsection{CNC Machining}
+Computer Numerical Control (CNC) is essential in modern machining and has revolutionized manufacturing. At its core, CNC uses computers to control machining tools and equipment, resulting in increased precision, efficiency, and repeatability in manufacturing processes, especially milling. CNC machining relies on precise instructions programmed into a computer. This software, frequently developed utilizing Computer-Aided Design (CAD) software, delineates the necessary movement, tool alteration, and parameter adjustment for the machining procedure. This automation level guarantees precise and consistent results, eliminating human error and enabling the production of complex and highly detailed parts.
+
+G-code is a set of commands and coordinates that provide direction to the CNC machine. It specifies toolpaths, tool changes, and spindle speeds, among other parameters, and is generated by Computer-Aided Manufacturing (CAM) software from 3D CAD models, taking into account toolpaths, speeds, feeds, and other parameters.
+The CNC controller interprets the G-code instructions and translates them into precise movements and tool actions. It serves as a mediator between the computer program and the physical machining equipment. CNC technology is highly versatile, encompassing not only milling but also a range of machining processes such as turning, drilling, and grinding. Its uses span various industries, including aerospace, automotive manufacturing, medical device fabrication, and custom prototyping. CNC machines can work with a wide variety of materials, from metals like aluminum and titanium to plastics and composites.
+The continuous advancement of CNC technology, including the integration of Artificial Intelligence (AI) and the development of multi-axis machines, enhances its capabilities.  These innovations enable more complex geometries, faster production rates, and tighter tolerances. As a result, CNC machining has become an essential tool in modern manufacturing, driving innovation and enabling the creation of intricate and high-precision components across various industries.
+\subsection{Industrial Robots}
+Industrial robots are crucial to modern manufacturing and automation, transforming production methods and repetitive task performance across diverse industries. Since their inception in the mid-20th century, these machines have undergone significant advancements, evolving into highly adaptive and sophisticated devices that promote productivity, accuracy, and safety within manufacturing processes.
+At their core, industrial robots are programmable machines designed to execute tasks with a high degree of accuracy and efficiency. They can carry out repetitive actions consistently, which enhances productivity and reduces the risk of human error. 
+
+One key aspect in industrial robotics is the continuous path mode, which enables robots to smoothly and continuously follow a path that is different from the pre-programmed path as they perform their tasks. This feature is especially interesting in ares where the path of a tool is rapidly changing its direction and would require significant moments and forces to achieve that path.
+This feature is helpful for improvement in speed and fluidity of the movement as well as energy reduction but critical in applications such as welding, painting, and 3D printing. Continuous paths can deviate from the defined path and result in parts that are manufactured not to the desired specification. 
+
+The robots performance relies on sophisticated control algorithms and feedback systems that allow them to adapt to dynamic conditions, adjust movements in real-time, and maintain a consistently high level of accuracy. This improves both the quality of the final product and the safety of the manufacturing process, as robots can navigate complex paths without risking collisions or accidents.
+As technology continues to advance, industrial robots will play an even more prominent role in shaping the future of manufacturing and automation.
+
+
+\subsection{Process Parameters in WAAM}
+Wire Arc Additive Manufacturing (WAAM) is an additive manufacturing process that uses an industrial robot equipped with welding equipment to deposit metal material layer by layer to build up a three-dimensional object. Process parameters in WAAM are critical for achieving the desired quality and properties in the final product.
+
+The amount of electrical current supplied to the welding arc affects the heat input and melting rate. Adjusting the welding current can control the size and penetration depth of the weld bead. The arc voltage influences the arc length and the stability of the welding process. Proper voltage settings ensure a stable arc and consistent deposition. The speed at which the robot moves along the deposition path determines the layer thickness and deposition rate. It can be adjusted to control the build-up rate.
+The rate at which the filler wire is fed into the weld pool influences the deposition rate and the size of the weld bead. Proper wire feed is essential for maintaining a uniform weld. Optimizing these process parameters is essential to achieve the desired mechanical properties, surface finish, and dimensional accuracy in WAAM-produced parts. Fine-tuning these parameters may require experimentation and monitoring to ensure consistent and high-quality results.
+
+In the context of WAAM with industrial robots, various robot-specific parameters and considerations play a crucial role in the overall process. The type and model of the industrial robot being used can impact the range of motion, payload capacity, and precision. The robot's kinematic configuration, such as whether it's a Cartesian, articulated, or other type, affects its ability to reach different areas of the workpiece. Controlling the robot's speed and acceleration during deposition and toolpath execution is essential for maintaining precision and preventing vibrations that could affect print quality.
+
+Especially in situations with more degrees of freedom than required, as described in chapter \ref{CAM}, setting the right process parameters can significantly influence the process.
+Table \ref{parameter} gives a overview about the parameters that can be influenced by setting different boundary conditions
+
+\begin{table} [h!]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\hline
+Singularity avoidance & Joint accelerations\\
+Joint jerks & Extension \\
+Energy use & Direction changes\\
+Transfer time & Precision\\
+Maximum load capacity & \\
+\hline
+\hline
+
+\end{tabular}
+
+\label{parameter}
+\caption{Areas of influence of boundary conditions and process parameters}
+
+\end{table}
+
+Developing robot programs for precise toolpath execution, including considerations for adaptive path planning to accommodate irregular geometries, is a fundamental aspect of WAAM.
+These robot-specific parameters and considerations are essential for achieving the desired precision, quality, and efficiency in WAAM processes. Integrating the robot effectively into the a manufacturing system and optimizing its parameters are key factors for efficient and precise production.
+
+\subsection{Comparison of Available Process Optimization Methods}
+
+As mentioned in chapter \ref{}, one of the most simple approach is to define the configuration of the robot manually. These setting are mostly based on experience and intuition and cant be quantified numerically. Additionally multiple iterations can be necessary to find the right settings \cite{Pan}.
+
+
+Processes like spot welding can be regarded as a travelling salesman problem. As of now , no CAM software is currently able to optimally solve this problem and optimize for a fast cycle time \cite{Pan}. To solve this problem, a genetic algorithm is proposed in \cite{Kim.2002}.
+
+this is where the fun starts
+
+https://www.mdpi.com/1996-1073/15/6/2074
+
+https://www.connectedpapers.com/main/8b7530a477d778f26f336b0a0a9f4a350647d4d4/Energy%20Efficient-Robot-Configuration-and-Motion-Planning-Using-Genetic-Algorithm-and-Particle-Swarm-Optimization/graph
+
+
+\newpage
+\section{\ZLlangGerEng{Ziele der Arbeit}{Objective of the Thesis}}%
+The aim of this work is to develop a methodical approach that analyze a set of constraints and evaluate the influence of those constraints on a set of defined process variables.
+The focus of the work is on a 6-axis robot with a rotary-tilt table, whereby the results should also be transferable to other machines. Furthermore, experiments and validations are limited to the manufacturing processes WAAM and milling.
+First, the influence of the constraints on relevant process variables (energy consumption, joint turnover, speed and acceleration peaks, total joint movements, etc.) in a manufacturing process like WAAM is assessed. Subsequently, a process evaluation is developed in the CAM software, by means of which the process quality can be determined.
+Depending on the respective process variables, approximation methods or machine learning methods are investigated for process evaluation. The process quality as a one-dimensional variable is determined by weighting the process variables.
+Subsequently, a method for the optimization of the constraints is developed. This task corresponds to an optimization problem in which the process quality is to be maximized by the selection of suitable constraints. 
+
+\section{\ZLlangGerEng{Arbeitsplan und benötigte Ressourcen}{Work Plan and necessary Resources}}%
+The start of the thesis is the 01.10.2023 and ends on the 31.03.2024. The developed method is to be validated on a industrial robot provided by Siemens. For that, the required software (Siemens NX) is necessary. Access and training on that software is provided by the industry supervisor Marius Breuer. 
+Additionally, weekly meetings are scheduled with the university supervisor Ludgwig Siebert. In those weekly meetings a short update regarding the pogress is presented.  \newline
+For a better structure of the thesis a set of predefined work packages is agreed upon:
+
+\begin{enumerate}
+\itemsep0em 
+\item Literature research
+\item Familiarization with WAAM and milling machines 
+\item Familiarization with CAM-software 
+\item Selection of suitable process parameters
+\item Development of the proposed method in a suitable programming language
+\item Verification and validation of the developed method
+\item Documentation of the work
+\end{enumerate}
+Figure \ref{TIME} give a visual overview of a proposed time structure. 
+To avoid running into time issues in the last weeks of the process, the self-defined deadlines are set four weeks prior to the actual deadline of the thesis. A possible publication of the developed method can be worked on in the last three weeks.
+ 
+\begin{figure}[H]%
+    \centering%
+    \ZLlangGerEng{\input{figures/zeitplan.tikz}}{\input{figures/timeschedule.tikz}}%
+    \caption{\ZLlangGerEng{Zeitplan}{Time schedule}.}%
+    \label{TIME}
+\end{figure}%
+
+\newpage
+\section{\ZLlangGerEng{Literatur}{Literature}}%
+
+{%
+    %\sloppy% "Word"-like typesetting in order to improve breaking lines with long URLs/DOIs
+    \printbibliography[heading=none]%
+}%
+\newpage
+\section{\ZLlangGerEng{Gliederung der Thesis}{Structure of the Thesis}}%
+The following structure is serving as a rough guide for the proposed research question.
+
+\begin{enumerate}
+	\item Introduction	
+		\begin{enumerate}
+		\item Motivation
+		\item Problem Formulation
+		\item Aim
+		\end{enumerate}
+	\item State of Research and Development
+		\begin{enumerate}
+			\item Manufacturing Technologies
+				\begin{enumerate}
+				\item Computer-Aided Manufacturing
+				\item Milling
+				\item Additive Manufacturing
+				\begin{enumerate}
+					\item Generic 3D-Printing
+					\item Wire Arc Additive Manufacturing 
+				\end{enumerate}
+					
+				\item Industrial Robots
+				\begin{enumerate}
+					\item Basic Structure
+					\item Advantages and Disadvantages 
+					\item Continuous­ Path Mode
+				\end{enumerate}
+				\end{enumerate}
+			
+			\item Path Planning 
+			\item Machine Learning
+			\item Optimization Algorithms
+			\item Comparison of the State of the Art 
+		\end{enumerate}
+	
+	
+	
+	\item Methodology
+	\begin{enumerate}
+		\item Selection of Process Parameters
+		\item Optimization of Boundary Conditions
+	\end{enumerate}
+	\item Implementation and Validation 
+		\begin{enumerate}
+			\item Implementation
+			\item Testing and Validation 
+			\item Analysis and discussion of the results
+			\begin{enumerate}
+				\item Analysis
+				\item Discussion
+			\end{enumerate}
+		\end{enumerate}
+	\item Conclusion
+		\begin{enumerate}
+			\item Summary
+			\item Outlook
+		\end{enumerate}
+	
+\end{enumerate} 
+%
+\end{document}%
+

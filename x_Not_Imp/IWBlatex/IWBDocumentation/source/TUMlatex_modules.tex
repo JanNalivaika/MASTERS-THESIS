@@ -1,0 +1,735 @@
+% Auto-generated module documentation
+\section{IWBcore}%
+\label{sec:module_IWBcore}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & none\\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & none\\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & inputenc etoolbox xparse silence soul \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBcore.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMcore.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBcoreLogInfo]{\textbackslash IWBcoreLogInfo} \hyperref[sec:command_IWBcoreLogWarning]{\textbackslash IWBcoreLogWarning} \hyperref[sec:command_IWBcoreLogError]{\textbackslash IWBcoreLogError} \hyperref[sec:command_IWBcoreRepetition]{\textbackslash IWBcoreRepetition} \hyperref[sec:command_IWBcoreProjectWebsite]{\textbackslash IWBcoreProjectWebsite} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMcore_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMcore.sty%
+The \IWBdocumentationModule{IWBcore}-module is the most important module since it plays a major role in the building process of the class. It helps filtering warnings and debugging the whole document. For more information related to the commands of this module look up \cref{sec:commands}. The results of the debugging process are written to the log file (\textit{main.log}).\par%
+%
+There are also basic control structures implemented. You can use the command \hyperref[sec:command_IWBcoreRepetition]{\textbackslash IWBcoreRepetition} as simple implementation of a for-loop.\par%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBcore_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBcore.sty
+%
+%
+%
+%
+%
+\section{IWBfont}%
+\label{sec:module_IWBfont}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optHelvetica optArial optCharter optComputerModern optCharterMath optComputerModernMath \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & fix-cm fontenc helvet uarial charter mathdesign anyfontsize \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBfont.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMfont.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBfontSetDocumentFontSizeVI]{\textbackslash IWBfontSetDocumentFontSizeVI} \hyperref[sec:command_IWBfontSetDocumentFontSizeVII]{\textbackslash IWBfontSetDocumentFontSizeVII} \hyperref[sec:command_IWBfontSetDocumentFontSizeVIII]{\textbackslash IWBfontSetDocumentFontSizeVIII} \hyperref[sec:command_IWBfontSetDocumentFontSizeIX]{\textbackslash IWBfontSetDocumentFontSizeIX} \hyperref[sec:command_IWBfontSetDocumentFontSizeX]{\textbackslash IWBfontSetDocumentFontSizeX} \hyperref[sec:command_IWBfontSetDocumentFontSizeXI]{\textbackslash IWBfontSetDocumentFontSizeXI} \hyperref[sec:command_IWBfontSetDocumentFontSizeXII]{\textbackslash IWBfontSetDocumentFontSizeXII} \hyperref[sec:command_IWBfontSetDocumentFontSizeXIII]{\textbackslash IWBfontSetDocumentFontSizeXIII} \hyperref[sec:command_IWBfontSetDocumentFontSizeXIV]{\textbackslash IWBfontSetDocumentFontSizeXIV} \hyperref[sec:command_IWBfontSetDocumentFontSizeXV]{\textbackslash IWBfontSetDocumentFontSizeXV} \hyperref[sec:command_IWBfontSetDocumentFontSizeXVI]{\textbackslash IWBfontSetDocumentFontSizeXVI} \hyperref[sec:command_IWBfontSetDocumentFontSizeXVIII]{\textbackslash IWBfontSetDocumentFontSizeXVIII} \hyperref[sec:command_IWBfontSetDocumentFontSizeXX]{\textbackslash IWBfontSetDocumentFontSizeXX} \hyperref[sec:command_IWBfontSetDocumentFontSizeXXII]{\textbackslash IWBfontSetDocumentFontSizeXXII} \hyperref[sec:command_IWBfontSetDocumentFontSizeXXIV]{\textbackslash IWBfontSetDocumentFontSizeXXIV} \hyperref[sec:command_IWBfontSetDocumentFontSizeXXVIII]{\textbackslash IWBfontSetDocumentFontSizeXXVIII} \hyperref[sec:command_IWBfontSetDocumentFontSizeXXLII]{\textbackslash IWBfontSetDocumentFontSizeXXLII} \hyperref[sec:command_IWBfontSetDocumentFontSizeXXLVI]{\textbackslash IWBfontSetDocumentFontSizeXXLVI} \hyperref[sec:command_IWBfontSetDocumentFontSizeXL]{\textbackslash IWBfontSetDocumentFontSizeXL} \hyperref[sec:command_IWBfontSetDocumentFontSizeXLIV]{\textbackslash IWBfontSetDocumentFontSizeXLIV} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMfont_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMfont.sty%
+The module \IWBdocumentationModule{IWBfont} loads all requested fonts and symbols. There are four different ``text'' fonts available. If you do not select one of them \IWBdocumentationOption{optHelvetica}, or a font specified by the chosen style, will be used as default. The same applies to the two math options, which define the ``mathematical'' font. The default ``mathematical'' font is \IWBdocumentationOption{optCharterMath}.\par%
+%
+\begin{center}%
+    \begin{tabular}{|l|ccc|}%
+        \hline%
+        \textbf{Option} & \textbf{Sans Serif} & \textbf{Roman} & \textbf{Typewriter}\\\hline%
+        \IWBdocumentationOption{optHelvetica} & \textbf{Helvetica} (phv) & Charter (bch) & Com. Mod. (cmtt)\\%
+        \IWBdocumentationOption{optArial} & \textbf{URW Arial} (ua1) & Charter (bch) & Com. Mod. (cmtt)\\%
+        \IWBdocumentationOption{optCharter} & Helvetica (phv) & \textbf{Charter} (bch) & Com. Mod. (cmtt)\\%
+        \IWBdocumentationOption{optComputerModern} & Com. Mod. (cmss) & \textbf{Com. Mod.} (cmr) & Com. Mod. (cmtt)\\%
+        \hline%
+    \end{tabular}%
+\end{center}%
+%
+Note that URW Arial is \textbf{not} included in standard \LaTeX\ distribution like TeXLive, thus it will only be loaded if the option \IWBdocumentationOption{optArial} is given explicitly. You probably have to install this font manually for your system.\par%
+%
+\textbf{Hint:} You can switch between sans serif, roman and typewriter font easily with the standard LaTeX commands \IWBdocumentationCode{\textbackslash sffamily}, \IWBdocumentationCode{\textbackslash rmfamily} and \IWBdocumentationCode{\textbackslash ttfamily} respectively.\par%
+%
+%
+\subsection*{Font Families}%
+The following table shows examples for the different font options.\par%
+%
+\begin{center}\vspace{-1em}%
+    \begin{tabular}[t]{|l|c|}%
+    	\hline%
+    	Helvetica (sans serif only) & {\fontfamily{phv}\selectfont Example Text 1 2 3 A B C a b c} \\%
+    	\hline%
+    	Charter (roman only) & {\fontfamily{bch}\selectfont Example Text 1 2 3 A B C a b c} \\%
+    	\hline%
+    	Computer Modern (sans serif) & {\fontfamily{cmss}\selectfont Example Text 1 2 3 A B C a b c} \\%
+    	\hline%
+    	Computer Modern (roman) & {\fontfamily{cmr}\selectfont Example Text 1 2 3 A B C a b c} \\%
+    	\hline%
+    	Computer Modern (typewriter) & {\fontfamily{cmtt}\selectfont Example Text 1 2 3 A B C a b c}\\%
+    	\hline%
+    \end{tabular}%
+\end{center}%
+%
+%
+\subsection*{Fontsizes}%
+By using the commands of this module (starting with \IWBdocumentationCode{\textbackslash IWBfontSetDocumentFontSize}) you can change the default font size of the whole document. Note that it is also possible to use these commands to switch font sizes within a document.\par%
+%
+The package provides following fontsizes%
+\begin{center}\vspace{-1em}%
+    \begin{tabular}[t]{|c|c|l|}%
+    	\hline%
+    	\textbf{Command} & \textbf{Font Size} & \textbf{Comment}\\%
+    	\hline%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeVI]{\textbackslash IWBfontSetDocumentFontSizeVI} & 6pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeVII]{\textbackslash IWBfontSetDocumentFontSizeVII} & 7pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeVIII]{\textbackslash IWBfontSetDocumentFontSizeVIII} & 8pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeIX]{\textbackslash IWBfontSetDocumentFontSizeIX} & 9pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeX]{\textbackslash IWBfontSetDocumentFontSizeX} & 10pt & from standard article-class (\textbf{original})\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXI]{\textbackslash IWBfontSetDocumentFontSizeXI} & 11pt & from standard article-class (\textbf{original})\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXII]{\textbackslash IWBfontSetDocumentFontSizeXII} & 12pt & from standard article-class (\textbf{original})\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXIII]{\textbackslash IWBfontSetDocumentFontSizeXIII} & 13pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXIV]{\textbackslash IWBfontSetDocumentFontSizeXIV} & 14pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXV]{\textbackslash IWBfontSetDocumentFontSizeXV} & 15pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXVI]{\textbackslash IWBfontSetDocumentFontSizeXVI} & 16pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXVIII]{\textbackslash IWBfontSetDocumentFontSizeXVIII} & 18pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXX]{\textbackslash IWBfontSetDocumentFontSizeXX} & 20pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXXII]{\textbackslash IWBfontSetDocumentFontSizeXXII} & 22pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXXIV]{\textbackslash IWBfontSetDocumentFontSizeXXIV} & 24pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXXVIII]{\textbackslash IWBfontSetDocumentFontSizeXXVIII} & 28pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXXLII]{\textbackslash IWBfontSetDocumentFontSizeXXLII} & 32pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXXLVI]{\textbackslash IWBfontSetDocumentFontSizeXXLVI} & 36pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXL]{\textbackslash IWBfontSetDocumentFontSizeXL} & 40pt & \textbf{scaled} from standard article-class\\%
+    	\hyperref[sec:command_IWBfontSetDocumentFontSizeXLIV]{\textbackslash IWBfontSetDocumentFontSizeXLIV} & 44pt & \textbf{scaled} from standard article-class\\%
+    	\hline%
+    \end{tabular}%
+\end{center}%
+%
+The commands in the following table will be affected by the font size and accordingly adjusted. In this case the commands for the font size \IWBdocumentationCode{11pt} are shown.\par%
+%
+\begin{center}\vspace{-1em}%
+    \begin{tabular}[t]{|c|c|c|c|c|}%
+    	\hline%
+    	\tiny{A} & \scriptsize{A} & \footnotesize{A} & \small{A} & \normalsize{A} \\%
+    	\hline%
+    	\verb+\tiny+ & \verb+\scriptsize+ & \verb+\footnotesize+ & \verb+\small+ & \verb+\normalsize+\\%
+    	\hline%
+    	\large{A} & \Large{A} & \LARGE{A} & \huge{A} & \Huge{A} \\%
+    	\hline%
+    	\verb+\large+ & \verb+\Large+ & \verb+\LARGE+ & \verb+\huge+ & \verb+\HUGE+ \\%
+    	\hline%
+    \end{tabular}%
+\end{center}%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBfont_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBfont.sty
+%
+%
+%
+%
+%
+\section{IWBlang}%
+\label{sec:module_IWBlang}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optGerman optEnglish \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & babel csquotes \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBlang.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMlang.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBlangBibliography]{\textbackslash IWBlangBibliography} \hyperref[sec:command_IWBlangAcronyms]{\textbackslash IWBlangAcronyms} \hyperref[sec:command_IWBlangGlossary]{\textbackslash IWBlangGlossary} \hyperref[sec:command_IWBlangSwitchToGerman]{\textbackslash IWBlangSwitchToGerman} \hyperref[sec:command_IWBlangSwitchToEnglish]{\textbackslash IWBlangSwitchToEnglish} \hyperref[sec:command_IWBlangGerEng]{\textbackslash IWBlangGerEng} \hyperref[sec:command_IWBlangForceGerman]{\textbackslash IWBlangForceGerman} \hyperref[sec:command_IWBlangForceEnglish]{\textbackslash IWBlangForceEnglish} \hyperref[sec:command_IWBlangTUM]{\textbackslash IWBlangTUM} \hyperref[sec:command_IWBlangDepartmentMW]{\textbackslash IWBlangDepartmentMW} \hyperref[sec:command_IWBlangDepartmentIN]{\textbackslash IWBlangDepartmentIN} \hyperref[sec:command_IWBlangDepartmentCIT]{\textbackslash IWBlangDepartmentCIT} \hyperref[sec:command_IWBlangDepartment]{\textbackslash IWBlangDepartment} \hyperref[sec:command_IWBlangChairMWAER]{\textbackslash IWBlangChairMWAER} \hyperref[sec:command_IWBlangChairMWVIB]{\textbackslash IWBlangChairMWVIB} \hyperref[sec:command_IWBlangChairMWAM]{\textbackslash IWBlangChairMWAM} \hyperref[sec:command_IWBlangChairMWAPT]{\textbackslash IWBlangChairMWAPT} \hyperref[sec:command_IWBlangChairMWAIS]{\textbackslash IWBlangChairMWAIS} \hyperref[sec:command_IWBlangChairMWIWB]{\textbackslash IWBlangChairMWIWB} \hyperref[sec:command_IWBlangChairMWIWBLWF]{\textbackslash IWBlangChairMWIWBLWF} \hyperref[sec:command_IWBlangChairMWIWBLBM]{\textbackslash IWBlangChairMWIWBLBM} \hyperref[sec:command_IWBlangChairMWIWBPE]{\textbackslash IWBlangChairMWIWBPE} \hyperref[sec:command_IWBlangChairMWBVT]{\textbackslash IWBlangChairMWBVT} \hyperref[sec:command_IWBlangChairMWLCC]{\textbackslash IWBlangChairMWLCC} \hyperref[sec:command_IWBlangChairMWLES]{\textbackslash IWBlangChairMWLES} \hyperref[sec:command_IWBlangChairMWLFE]{\textbackslash IWBlangChairMWLFE} \hyperref[sec:command_IWBlangChairMWFTM]{\textbackslash IWBlangChairMWFTM} \hyperref[sec:command_IWBlangChairMWFSD]{\textbackslash IWBlangChairMWFSD} \hyperref[sec:command_IWBlangChairMWFML]{\textbackslash IWBlangChairMWFML} \hyperref[sec:command_IWBlangChairMWLHT]{\textbackslash IWBlangChairMWLHT} \hyperref[sec:command_IWBlangChairMWPKM]{\textbackslash IWBlangChairMWPKM} \hyperref[sec:command_IWBlangChairMWLLB]{\textbackslash IWBlangChairMWLLB} \hyperref[sec:command_IWBlangChairMWLLS]{\textbackslash IWBlangChairMWLLS} \hyperref[sec:command_IWBlangChairMWFZG]{\textbackslash IWBlangChairMWFZG} \hyperref[sec:command_IWBlangChairMWMHPC]{\textbackslash IWBlangChairMWMHPC} \hyperref[sec:command_IWBlangChairMWLMT]{\textbackslash IWBlangChairMWLMT} \hyperref[sec:command_IWBlangChairMWLMM]{\textbackslash IWBlangChairMWLMM} \hyperref[sec:command_IWBlangChairMWLNT]{\textbackslash IWBlangChairMWLNT} \hyperref[sec:command_IWBlangChairMWLNM]{\textbackslash IWBlangChairMWLNM} \hyperref[sec:command_IWBlangChairMWPMW]{\textbackslash IWBlangChairMWPMW} \hyperref[sec:command_IWBlangChairMWPE]{\textbackslash IWBlangChairMWPE} \hyperref[sec:command_IWBlangChairMWPTM]{\textbackslash IWBlangChairMWPTM} \hyperref[sec:command_IWBlangChairMWLFA]{\textbackslash IWBlangChairMWLFA} \hyperref[sec:command_IWBlangChairMWLRT]{\textbackslash IWBlangChairMWLRT} \hyperref[sec:command_IWBlangChairMWRT]{\textbackslash IWBlangChairMWRT} \hyperref[sec:command_IWBlangChairMWSES]{\textbackslash IWBlangChairMWSES} \hyperref[sec:command_IWBlangChairMWSPGM]{\textbackslash IWBlangChairMWSPGM} \hyperref[sec:command_IWBlangChairMWTD]{\textbackslash IWBlangChairMWTD} \hyperref[sec:command_IWBlangChairMWTFD]{\textbackslash IWBlangChairMWTFD} \hyperref[sec:command_IWBlangChairMWUTG]{\textbackslash IWBlangChairMWUTG} \hyperref[sec:command_IWBlangChairMWLVK]{\textbackslash IWBlangChairMWLVK} \hyperref[sec:command_IWBlangChairMWWKM]{\textbackslash IWBlangChairMWWKM} \hyperref[sec:command_IWBlangChairMWLWE]{\textbackslash IWBlangChairMWLWE} \hyperref[sec:command_IWBlangChairMWZFP]{\textbackslash IWBlangChairMWZFP} \hyperref[sec:command_IWBlangChairMWZL]{\textbackslash IWBlangChairMWZL} \hyperref[sec:command_IWBlangChairCITAIR]{\textbackslash IWBlangChairCITAIR} \hyperref[sec:command_IWBlangChairINAIR]{\textbackslash IWBlangChairINAIR} \hyperref[sec:command_IWBlangChairINSSE]{\textbackslash IWBlangChairINSSE} \hyperref[sec:command_IWBlangChair]{\textbackslash IWBlangChair} \hyperref[sec:command_IWBlangresearchassistantMale]{\textbackslash IWBlangresearchassistantMale} \hyperref[sec:command_IWBlangResearchassistantMale]{\textbackslash IWBlangResearchassistantMale} \hyperref[sec:command_IWBlangResearchAssistantMale]{\textbackslash IWBlangResearchAssistantMale} \hyperref[sec:command_IWBlangresearchassistantFemale]{\textbackslash IWBlangresearchassistantFemale} \hyperref[sec:command_IWBlangResearchassistantFemale]{\textbackslash IWBlangResearchassistantFemale} \hyperref[sec:command_IWBlangResearchAssistantFemale]{\textbackslash IWBlangResearchAssistantFemale} \hyperref[sec:command_IWBlangtenuredprofessorMale]{\textbackslash IWBlangtenuredprofessorMale} \hyperref[sec:command_IWBlangTenuredprofessorMale]{\textbackslash IWBlangTenuredprofessorMale} \hyperref[sec:command_IWBlangTenuredProfessorMale]{\textbackslash IWBlangTenuredProfessorMale} \hyperref[sec:command_IWBlangtenuredprofessorFemale]{\textbackslash IWBlangtenuredprofessorFemale} \hyperref[sec:command_IWBlangTenuredprofessorFemale]{\textbackslash IWBlangTenuredprofessorFemale} \hyperref[sec:command_IWBlangTenuredProfessorFemale]{\textbackslash IWBlangTenuredProfessorFemale} \hyperref[sec:command_IWBlangsupervisor]{\textbackslash IWBlangsupervisor} \hyperref[sec:command_IWBlangSupervisor]{\textbackslash IWBlangSupervisor} \hyperref[sec:command_IWBlangsupervision]{\textbackslash IWBlangsupervision} \hyperref[sec:command_IWBlangSupervision]{\textbackslash IWBlangSupervision} \hyperref[sec:command_IWBlangexaminer]{\textbackslash IWBlangexaminer} \hyperref[sec:command_IWBlangExaminer]{\textbackslash IWBlangExaminer} \hyperref[sec:command_IWBlangbachelorsthesis]{\textbackslash IWBlangbachelorsthesis} \hyperref[sec:command_IWBlangBachelorsthesis]{\textbackslash IWBlangBachelorsthesis} \hyperref[sec:command_IWBlangBachelorsThesis]{\textbackslash IWBlangBachelorsThesis} \hyperref[sec:command_IWBlangdiplomathesis]{\textbackslash IWBlangdiplomathesis} \hyperref[sec:command_IWBlangDiplomathesis]{\textbackslash IWBlangDiplomathesis} \hyperref[sec:command_IWBlangDiplomaThesis]{\textbackslash IWBlangDiplomaThesis} \hyperref[sec:command_IWBlangsemesterthesis]{\textbackslash IWBlangsemesterthesis} \hyperref[sec:command_IWBlangSemesterthesis]{\textbackslash IWBlangSemesterthesis} \hyperref[sec:command_IWBlangSemesterThesis]{\textbackslash IWBlangSemesterThesis} \hyperref[sec:command_IWBlangmastersthesis]{\textbackslash IWBlangmastersthesis} \hyperref[sec:command_IWBlangMastersthesis]{\textbackslash IWBlangMastersthesis} \hyperref[sec:command_IWBlangMastersThesis]{\textbackslash IWBlangMastersThesis} \hyperref[sec:command_IWBlanginterdisciplinaryproject]{\textbackslash IWBlanginterdisciplinaryproject} \hyperref[sec:command_IWBlangInterdisciplinaryproject]{\textbackslash IWBlangInterdisciplinaryproject} \hyperref[sec:command_IWBlangInterdisciplinaryProject]{\textbackslash IWBlangInterdisciplinaryProject} \hyperref[sec:command_IWBlangScientificWorkForObtainingAcademicDegree]{\textbackslash IWBlangScientificWorkForObtainingAcademicDegree} \hyperref[sec:command_IWBlangFieldOfStudyinformatics]{\textbackslash IWBlangFieldOfStudyinformatics} \hyperref[sec:command_IWBlangFieldOfStudyInformatics]{\textbackslash IWBlangFieldOfStudyInformatics} \hyperref[sec:command_IWBlangFieldOfStudygamesengineering]{\textbackslash IWBlangFieldOfStudygamesengineering} \hyperref[sec:command_IWBlangFieldOfStudyGamesengineering]{\textbackslash IWBlangFieldOfStudyGamesengineering} \hyperref[sec:command_IWBlangFieldOfStudyGamesEngineering]{\textbackslash IWBlangFieldOfStudyGamesEngineering} \hyperref[sec:command_IWBlangFieldOfStudyinformationsystems]{\textbackslash IWBlangFieldOfStudyinformationsystems} \hyperref[sec:command_IWBlangFieldOfStudyInformationsystems]{\textbackslash IWBlangFieldOfStudyInformationsystems} \hyperref[sec:command_IWBlangFieldOfStudyInformationSystems]{\textbackslash IWBlangFieldOfStudyInformationSystems} \hyperref[sec:command_IWBlangFieldOfStudybiomedicalcomputing]{\textbackslash IWBlangFieldOfStudybiomedicalcomputing} \hyperref[sec:command_IWBlangFieldOfStudyBiomedicalcomputing]{\textbackslash IWBlangFieldOfStudyBiomedicalcomputing} \hyperref[sec:command_IWBlangFieldOfStudyBiomedicalComputing]{\textbackslash IWBlangFieldOfStudyBiomedicalComputing} \hyperref[sec:command_IWBlangFieldOfStudyautomotivesoftwareengineering]{\textbackslash IWBlangFieldOfStudyautomotivesoftwareengineering} \hyperref[sec:command_IWBlangFieldOfStudyAutomotivesoftwareengineering]{\textbackslash IWBlangFieldOfStudyAutomotivesoftwareengineering} \hyperref[sec:command_IWBlangFieldOfStudyAutomotiveSoftwareEngineering]{\textbackslash IWBlangFieldOfStudyAutomotiveSoftwareEngineering} \hyperref[sec:command_IWBlangFieldOfstudyroboticscognitionintelligence]{\textbackslash IWBlangFieldOfstudyroboticscognitionintelligence} \hyperref[sec:command_IWBlangFieldOfStudyRoboticscognitionintelligence]{\textbackslash IWBlangFieldOfStudyRoboticscognitionintelligence} \hyperref[sec:command_IWBlangFieldOfStudyRoboticsCognitionIntelligence]{\textbackslash IWBlangFieldOfStudyRoboticsCognitionIntelligence} \hyperref[sec:command_IWBlangPhdDegreeDrIng]{\textbackslash IWBlangPhdDegreeDrIng} \hyperref[sec:command_IWBlangPhdDegreeDrIngFemale]{\textbackslash IWBlangPhdDegreeDrIngFemale} \hyperref[sec:command_IWBlangPhdDegreeDrIngOld]{\textbackslash IWBlangPhdDegreeDrIngOld} \hyperref[sec:command_IWBlangPhdDegreeDrRerNat]{\textbackslash IWBlangPhdDegreeDrRerNat} \hyperref[sec:command_IWBlangPhdDegreeDrRerNatFemale]{\textbackslash IWBlangPhdDegreeDrRerNatFemale} \hyperref[sec:command_IWBlangDate]{\textbackslash IWBlangDate} \hyperref[sec:command_IWBlangMonth]{\textbackslash IWBlangMonth} \hyperref[sec:command_IWBlangMonthShort]{\textbackslash IWBlangMonthShort} \hyperref[sec:command_IWBlangmonth]{\textbackslash IWBlangmonth} \hyperref[sec:command_IWBlangmonthShort]{\textbackslash IWBlangmonthShort} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMlang_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMlang.sty%
+The module \IWBdocumentationModule{IWBlang} gives you the ability to change the language of the document. Thereby, you have the choice between German (\IWBdocumentationOption{optGerman}) and English (\IWBdocumentationOption{optEnglish}). This especially effects predefined headers and titlepages. If no option has been passed, the default language will be German (\IWBdocumentationOption{optGerman}). You can also switch the language of the document dynamically (i.\,e. within the text) with the commands \hyperref[sec:command_IWBlangSwitchToGerman]{\textbackslash IWBlangSwitchToGerman} and \hyperref[sec:command_IWBlangSwitchToEnglish]{\textbackslash IWBlangSwitchToEnglish}.\par%
+%
+Besides it also includes an accumulation of commands, which displays different words or phrases in English or German. These are all listed in \cref{sec:commands}. Furthermore you can easily create placeholders with the command \hyperref[sec:command_IWBlangGerEng]{\textbackslash IWBlangGerEng} where you can specify german and english translations. Depending on the document language the german or english text will be displayed automatically.\par%
+%
+%
+\subsection*{Dates}%
+The module also specifies helper commands to typeset dates in the global document language. You can use the commands \hyperref[sec:command_IWBlangMonth]{\textbackslash IWBlangMonth}, \hyperref[sec:command_IWBlangMonthShort]{\textbackslash IWBlangMonthShort} and \hyperref[sec:command_IWBlangmonth]{\textbackslash IWBlangmonth} to output month names.\par%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBlang_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBlang.sty
+%
+%
+%
+%
+%
+\section{IWBaddress}%
+\label{sec:module_IWBaddress}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & none\\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & none\\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & none\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBaddress.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMaddress.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBaddressCityMunich]{\textbackslash IWBaddressCityMunich} \hyperref[sec:command_IWBaddressCityGarching]{\textbackslash IWBaddressCityGarching} \hyperref[sec:command_IWBaddressCityMW]{\textbackslash IWBaddressCityMW} \hyperref[sec:command_IWBaddressCityIN]{\textbackslash IWBaddressCityIN} \hyperref[sec:command_IWBaddressCityCIT]{\textbackslash IWBaddressCityCIT} \hyperref[sec:command_IWBaddressCityDepartment]{\textbackslash IWBaddressCityDepartment} \hyperref[sec:command_IWBaddressCityChair]{\textbackslash IWBaddressCityChair} \hyperref[sec:command_IWBaddressPostalCodeGarching]{\textbackslash IWBaddressPostalCodeGarching} \hyperref[sec:command_IWBaddressPostalCodeMunich]{\textbackslash IWBaddressPostalCodeMunich} \hyperref[sec:command_IWBaddressPostalCodeMW]{\textbackslash IWBaddressPostalCodeMW} \hyperref[sec:command_IWBaddressPostalCodeIN]{\textbackslash IWBaddressPostalCodeIN} \hyperref[sec:command_IWBaddressPostalCodeCIT]{\textbackslash IWBaddressPostalCodeCIT} \hyperref[sec:command_IWBaddressPostalCodeDepartment]{\textbackslash IWBaddressPostalCodeDepartment} \hyperref[sec:command_IWBaddressPostalCodeChair]{\textbackslash IWBaddressPostalCodeChair} \hyperref[sec:command_IWBaddressStreetMW]{\textbackslash IWBaddressStreetMW} \hyperref[sec:command_IWBaddressStreetIN]{\textbackslash IWBaddressStreetIN} \hyperref[sec:command_IWBaddressStreetCIT]{\textbackslash IWBaddressStreetCIT} \hyperref[sec:command_IWBaddressStreetDepartment]{\textbackslash IWBaddressStreetDepartment} \hyperref[sec:command_IWBaddressStreetChair]{\textbackslash IWBaddressStreetChair} \hyperref[sec:command_IWBaddressIBANTUM]{\textbackslash IWBaddressIBANTUM} \hyperref[sec:command_IWBaddressIBANMW]{\textbackslash IWBaddressIBANMW} \hyperref[sec:command_IWBaddressIBANIN]{\textbackslash IWBaddressIBANIN} \hyperref[sec:command_IWBaddressIBANCIT]{\textbackslash IWBaddressIBANCIT} \hyperref[sec:command_IWBaddressIBANDepartment]{\textbackslash IWBaddressIBANDepartment} \hyperref[sec:command_IWBaddressIBANChair]{\textbackslash IWBaddressIBANChair} \hyperref[sec:command_IWBaddressBICTUM]{\textbackslash IWBaddressBICTUM} \hyperref[sec:command_IWBaddressBICMW]{\textbackslash IWBaddressBICMW} \hyperref[sec:command_IWBaddressBICIN]{\textbackslash IWBaddressBICIN} \hyperref[sec:command_IWBaddressBICCIT]{\textbackslash IWBaddressBICCIT} \hyperref[sec:command_IWBaddressBICDepartment]{\textbackslash IWBaddressBICDepartment} \hyperref[sec:command_IWBaddressBICChair]{\textbackslash IWBaddressBICChair} \hyperref[sec:command_IWBaddressCreditInstitutionTUM]{\textbackslash IWBaddressCreditInstitutionTUM} \hyperref[sec:command_IWBaddressCreditInstitutionMW]{\textbackslash IWBaddressCreditInstitutionMW} \hyperref[sec:command_IWBaddressCreditInstitutionIN]{\textbackslash IWBaddressCreditInstitutionIN} \hyperref[sec:command_IWBaddressCreditInstitutionCIT]{\textbackslash IWBaddressCreditInstitutionCIT} \hyperref[sec:command_IWBaddressCreditInstitutionDepartment]{\textbackslash IWBaddressCreditInstitutionDepartment} \hyperref[sec:command_IWBaddressCreditInstitutionChair]{\textbackslash IWBaddressCreditInstitutionChair} \hyperref[sec:command_IWBaddressWebsiteTUM]{\textbackslash IWBaddressWebsiteTUM} \hyperref[sec:command_IWBaddressWebsiteMW]{\textbackslash IWBaddressWebsiteMW} \hyperref[sec:command_IWBaddressWebsiteIN]{\textbackslash IWBaddressWebsiteIN} \hyperref[sec:command_IWBaddressWebsiteCIT]{\textbackslash IWBaddressWebsiteCIT} \hyperref[sec:command_IWBaddressWebsiteDepartment]{\textbackslash IWBaddressWebsiteDepartment} \hyperref[sec:command_IWBaddressWebsiteChair]{\textbackslash IWBaddressWebsiteChair} \hyperref[sec:command_IWBaddressTaxNumberTUM]{\textbackslash IWBaddressTaxNumberTUM} \hyperref[sec:command_IWBaddressTaxNumberMW]{\textbackslash IWBaddressTaxNumberMW} \hyperref[sec:command_IWBaddressTaxNumberIN]{\textbackslash IWBaddressTaxNumberIN} \hyperref[sec:command_IWBaddressTaxNumberCIT]{\textbackslash IWBaddressTaxNumberCIT} \hyperref[sec:command_IWBaddressTaxNumberDepartment]{\textbackslash IWBaddressTaxNumberDepartment} \hyperref[sec:command_IWBaddressTaxNumberChair]{\textbackslash IWBaddressTaxNumberChair} \hyperref[sec:command_IWBaddressSalesTaxIDTUM]{\textbackslash IWBaddressSalesTaxIDTUM} \hyperref[sec:command_IWBaddressSalesTaxIDMW]{\textbackslash IWBaddressSalesTaxIDMW} \hyperref[sec:command_IWBaddressSalesTaxIDIN]{\textbackslash IWBaddressSalesTaxIDIN} \hyperref[sec:command_IWBaddressSalesTaxIDCIT]{\textbackslash IWBaddressSalesTaxIDCIT} \hyperref[sec:command_IWBaddressSalesTaxIDDepartment]{\textbackslash IWBaddressSalesTaxIDDepartment} \hyperref[sec:command_IWBaddressSalesTaxIDChair]{\textbackslash IWBaddressSalesTaxIDChair} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMaddress_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMaddress.sty%
+The \IWBdocumentationModule{IWBaddress}-module defines common strings used in contact information like streets, cities, postal codes, IBANs and BICs. Selected commands:%
+\begin{center}%
+    \begin{tabular}{|l|l|}%
+        \hline%
+        \textbf{Command} & \textbf{Output}\\%
+        \hline%
+    	\hyperref[sec:command_IWBaddressCityMunich]{\textbackslash IWBaddressCityMunich} & \IWBaddressCityMunich\\%
+    	\hyperref[sec:command_IWBaddressCityGarching]{\textbackslash IWBaddressCityGarching} & \IWBaddressCityGarching\\%
+    	\hyperref[sec:command_IWBaddressCityChair]{\textbackslash IWBaddressCityChair} & \IWBaddressCityChair\\%
+    	\hyperref[sec:command_IWBaddressPostalCodeChair]{\textbackslash IWBaddressPostalCodeChair} & \IWBaddressPostalCodeChair\\%
+    	\hyperref[sec:command_IWBaddressStreetChair]{\textbackslash IWBaddressStreetChair} & \IWBaddressStreetChair\\%
+    	\hyperref[sec:command_IWBaddressIBANChair]{\textbackslash IWBaddressIBANChair} & \IWBaddressIBANChair\\%
+    	\hyperref[sec:command_IWBaddressBICChair]{\textbackslash IWBaddressBICChair} & \IWBaddressBICChair\\%
+    	\hyperref[sec:command_IWBaddressCreditInstitutionChair]{\textbackslash IWBaddressCreditInstitutionChair} & \IWBaddressCreditInstitutionChair\\%
+        \hyperref[sec:command_IWBaddressWebsiteTUM]{\textbackslash IWBaddressWebsiteTUM} & \IWBaddressWebsiteTUM\\%
+        \hyperref[sec:command_IWBaddressWebsiteDepartment]{\textbackslash IWBaddressWebsiteDepartment} & \IWBaddressWebsiteDepartment\\%
+    	\hyperref[sec:command_IWBaddressWebsiteChair]{\textbackslash IWBaddressWebsiteChair} & \IWBaddressWebsiteChair\\%
+    	\hyperref[sec:command_IWBaddressTaxNumberChair]{\textbackslash IWBaddressTaxNumberChair} & \IWBaddressTaxNumberChair\\%
+    	\hyperref[sec:command_IWBaddressSalesTaxIDChair]{\textbackslash IWBaddressSalesTaxIDChair} & \IWBaddressSalesTaxIDChair\\%
+        \hline%
+    \end{tabular}%
+\end{center}%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBaddress_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBaddress.sty%
+%
+%
+%
+%
+%
+\section{IWBcolor}%
+\label{sec:module_IWBcolor}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optRGB optCMYK optGray optMonochrome \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & xcolor \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBcolor.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMcolor.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & none\\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMcolor_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMcolor.sty%
+The module \IWBdocumentationModule{IWBcolor} defines the official colors of the TUM according to the coorporate design. The main options of this module are \IWBdocumentationOption{optRGB}, \IWBdocumentationOption{optCMYK}, \IWBdocumentationOption{optGray} and \IWBdocumentationOption{optMonochrome}, which are different color models. Though CMYK is preferable used for print media and RGB for digital documents. Gray and Monochrome are just different variations of black and white. If no option has been passed, the default option \IWBdocumentationOption{optRGB} will be used.\par%
+%
+The following tables give an overview over the color definitions.\par\vspace{1em}%
+%
+\textbf{Default Colors:}%
+\begin{center}%
+    \begin{tabular}[t]{|l|c|c|c|c|c|c|c|c|c|}%
+		\hline%
+    	\textbf{Color} & \textbf{R} & \textbf{G} & \textbf{B} & \textbf{C} & \textbf{M} & \textbf{Y} & \textbf{K} & \textbf{Hex} & \textbf{Preview} \\\hline\hline%
+        TUMBlue & 0 & 101 & 189 & 100 & 43 & 0 & 0 & \texttt{0x0065BD} & \raisebox{-0.25em}{\tikz \fill [TUMBlue] (0,0) rectangle (1.3cm,1em);} \\\hline%
+    	TUMWhite & 255 & 255 & 255 & 0 & 0 & 0 & 0 & \texttt{0xFFFFFF} & \raisebox{-0.25em}{\tikz \fill [TUMWhite] (0,0) rectangle (1.3cm,1em);} \\\hline%
+    	TUMBlack & 0 & 0 & 0 & 0 & 0 & 0 & 100 & \texttt{0x000000} & \raisebox{-0.25em}{\tikz \fill [TUMBlack] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        %
+        TUMBlue1 & 0 & 51 & 89 & 100 & 57 & 12 & 70 & \texttt{0x003359} & \raisebox{-0.25em}{\tikz \fill [TUMBlue1] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        TUMBlue2 & 0 & 82 & 147 & 100 & 54 & 4 & 19 & \texttt{0x005293} & \raisebox{-0.25em}{\tikz \fill [TUMBlue2] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        TUMGray1 & 51 & 51 & 51 & 0 & 0 & 0 & 80 & \texttt{0x333333} & \raisebox{-0.25em}{\tikz \fill [TUMGray1] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        TUMGray2 & 127 & 127 & 127 & 0 & 0 & 0 & 50 & \texttt{0x7F7F7F} & \raisebox{-0.25em}{\tikz \fill [TUMGray2] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        TUMGray3 & 204 & 204 & 204 & 0 & 0 & 0 & 20 & \texttt{0xCCCCCC} & \raisebox{-0.25em}{\tikz \fill [TUMGray3] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        %
+        TUMBlue3 & 100 & 160 & 200 & 65 & 19 & 1 & 4 & \texttt{0x64A0C8} & \raisebox{-0.25em}{\tikz \fill [TUMBlue3] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        TUMBlue4 & 152 & 198 & 234 & 42 & 9 & 0 & 0 & \texttt{0x98C6EA} & \raisebox{-0.25em}{\tikz \fill [TUMBlue4] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        TUMIvory & 218 & 215 & 203 & 3 & 4 & 14 & 8 & \texttt{0xDAD7CB} & \raisebox{-0.25em}{\tikz \fill [TUMIvory] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        TUMOrange & 227 & 114 & 34 & 0 & 65 & 95 & 0 & \texttt{0xE37222} & \raisebox{-0.25em}{\tikz \fill [TUMOrange] (0,0) rectangle (1.3cm,1em);} \\\hline%
+        TUMGreen & 162 & 173 & 0 & 35 & 0 & 100 & 20 & \texttt{0xA2AD00} & \raisebox{-0.25em}{\tikz \fill [TUMGreen] (0,0) rectangle (1.3cm,1em);} \\\hline%
+    \end{tabular}%
+\end{center}%
+\par\vspace{1em}%
+%
+\textbf{Extended Diagram Colors:}%
+\begin{center}%
+	\begin{tabular}[t]{|l|c|c|c|c|c|c|c|c|c|}%
+		\hline%
+		\textbf{Color}  & \textbf{R} & \textbf{G} & \textbf{B} & \textbf{C} & \textbf{M} & \textbf{Y} & \textbf{K} & \textbf{Hex} & \textbf{Preview} \\\hline\hline%
+		TUMDiagPurple   & 105 &   8 &  90 &  50 & 100 &   0 &  40 & \texttt{0x69085A} & \raisebox{-0.25em}{\tikz \fill [TUMDiagPurple] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagBlue     &  15 &  27 &  95 & 100 & 100 &   0 &  40 & \texttt{0x0F1B5F} & \raisebox{-0.25em}{\tikz \fill [TUMDiagBlue] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagBlueGreen&   0 & 119 & 138 & 100 &   3 &  30 &  30 & \texttt{0x00778A} & \raisebox{-0.25em}{\tikz \fill [TUMDiagBlueGreen] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagGreen1   &   0 & 124 &  48 & 100 &   0 & 100 &  20 & \texttt{0x007C30} & \raisebox{-0.25em}{\tikz \fill [TUMDiagGreen1] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagGreen2   & 103 & 154 &  29 &  60 &   0 & 100 &  20 & \texttt{0x679A1D} & \raisebox{-0.25em}{\tikz \fill [TUMDiagGreen2] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagYellow   & 255 & 220 &   0 &   0 &  10 & 100 &   0 & \texttt{0xFFDC00} & \raisebox{-0.25em}{\tikz \fill [TUMDiagYellow] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagOrange1  & 249 & 186 &   0 &   0 &  30 & 100 &   0 & \texttt{0xF9BA00} & \raisebox{-0.25em}{\tikz \fill [TUMDiagOrange1] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagOrange2  & 214 &  76 &  19 &   0 &  80 & 100 &  10 & \texttt{0xD64C13} & \raisebox{-0.25em}{\tikz \fill [TUMDiagOrange2] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagRed1     & 196 &   7 &  27 &  10 & 100 & 100 &  10 & \texttt{0xC4071B} & \raisebox{-0.25em}{\tikz \fill [TUMDiagRed1] (0,0) rectangle (1.3cm,1em);} \\\hline%
+		TUMDiagRed2     & 156 &  13 &  22 &   0 & 100 & 100 &  40 & \texttt{0x9C0D1B} & \raisebox{-0.25em}{\tikz \fill [TUMDiagRed2] (0,0) rectangle (1.3cm,1em);} \\\hline%
+	\end{tabular}%
+\end{center}%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBcolor_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBcolor.sty
+%
+%
+%
+%
+%
+\section{IWBtikz}%
+\label{sec:module_IWBtikz}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optTikzExternalize \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & pdfpages tikz mdframed pgfplots grffile pgfgantt \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBtikz.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMtikz.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBtikzExternalizeSkipNext]{\textbackslash IWBtikzExternalizeSkipNext} \hyperref[sec:command_IWBtikzGrid]{\textbackslash IWBtikzGrid} \hyperref[sec:command_IWBtikzCircled]{\textbackslash IWBtikzCircled} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMtikz_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMtikz.sty%
+The \IWBdocumentationModule{IWBtikz} module implements basic TikZ, pgfplots and pgfgantt funcitonality. The option \IWBdocumentationOption{optTikzExternalize} quickens the building process by storing TikZ-graphics in a separate folder (\textit{figures/tikzoutput}). When rebuilding the document the compiler will take unchanged graphics directly from the external dataset instead of building the graphic again. However, in some cases positioning problems may occur. In this case the module provides a solution by forcing TikZ to skip the externalization of the next graphic by the command \hyperref[sec:command_IWBtikzExternalizeSkipNext]{\textbackslash IWBtikzExternalizeSkipNext}.\par%
+%
+Furthermore the module defines the command \hyperref[sec:command_IWBtikzGrid]{\textbackslash IWBtikzGrid} with which a grid can be drawn:\par%
+%
+\IWBtikzGrid[dotted]{5mm}{5mm}{20}{3}\par%
+%
+Additionally macros for framing content are defined:%
+%
+\begin{center}%
+    \begin{tabular}{|ll|}%
+        \hline%
+        \textbf{Command} & \textbf{Example(s)}\\\hline%
+        \hyperref[sec:command_IWBtikzCircled]{\textbackslash IWBtikzCircled} & \IWBtikzCircled{A}, \IWBtikzCircled{$\vx$}, \IWBtikzCircled{1}\\%
+        \hline%
+    \end{tabular}%
+\end{center}%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBtikz_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBtikz.sty
+%
+%
+%
+%
+%
+\section{IWBlogo}%
+\label{sec:module_IWBlogo}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \hyperref[sec:module_IWBfont]{IWBfont} \hyperref[sec:module_IWBcolor]{IWBcolor} \hyperref[sec:module_IWBlang]{IWBlang} \hyperref[sec:module_IWBtikz]{IWBtikz} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & none\\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & none\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBlogo.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMlogo.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBlogoTercetTUM]{\textbackslash IWBlogoTercetTUM} \hyperref[sec:command_IWBlogoTercetDepartment]{\textbackslash IWBlogoTercetDepartment} \hyperref[sec:command_IWBlogoTercetChair]{\textbackslash IWBlogoTercetChair} \hyperref[sec:command_IWBlogoTUM]{\textbackslash IWBlogoTUM} \hyperref[sec:command_IWBlogoDepartmentMW]{\textbackslash IWBlogoDepartmentMW} \hyperref[sec:command_IWBlogoDepartmentIN]{\textbackslash IWBlogoDepartmentIN} \hyperref[sec:command_IWBlogoDepartmentCIT]{\textbackslash IWBlogoDepartmentCIT} \hyperref[sec:command_IWBlogoDepartment]{\textbackslash IWBlogoDepartment} \hyperref[sec:command_IWBlogoAnniversary]{\textbackslash IWBlogoAnniversary} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMlogo_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMlogo.sty%
+The \IWBdocumentationModule{IWBlogo} module creates the logos of the university and the department as TikZ pictures. By passing parameters to the commands, the size and the color of the logos is specified.\par%
+%
+\begin{center}%
+    \begin{tabular}[t]{c@{\hspace{1cm}}c@{\hspace{1cm}}c}%
+    	\IWBlogoTUM{2cm}{TUMBlue} & \IWBlogoTUM{2cm}{TUMBlack} & \IWBlogoDepartment{2cm}{TUMBlue}\\[1em]%
+        \hyperref[sec:command_IWBlogoTUM]{\textbackslash IWBlogoTUM} & \hyperref[sec:command_IWBlogoTUM]{\textbackslash IWBlogoTUM} & \hyperref[sec:command_IWBlogoDepartment]{\textbackslash IWBlogoDepartment}\\%
+    \end{tabular}%
+\end{center}%
+%
+Similar to the logos, also the TUM tercets can be printed in a convenient way:%
+%
+\begin{center}%
+    \begin{tabular}[t]{c@{\hspace{1cm}}c@{\hspace{1cm}}c}%
+    	\IWBlogoTercetTUM{1cm} & \IWBlogoTercetDepartment{1cm} & \IWBlogoTercetChair{1cm}\\[1em]%
+        \hyperref[sec:command_IWBlogoTercetTUM]{\textbackslash IWBlogoTercetTUM} & \hyperref[sec:command_IWBlogoTercetDepartment]{\textbackslash IWBlogoTercetDepartment} & \hyperref[sec:command_IWBlogoTercetChair]{\textbackslash IWBlogoTercetChair}\\%
+    \end{tabular}%
+\end{center}%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBlogo_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBlogo.sty
+%
+%
+%
+%
+%
+\section{IWBmath}%
+\label{sec:module_IWBmath}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optLeftEquations optCenterEquations optLimitMathFonts \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & amsmath mathtools siunitx amssymb amsfonts bm \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBmath.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMmath.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_real]{\textbackslash real} \hyperref[sec:command_imag]{\textbackslash imag} \hyperref[sec:command_asin]{\textbackslash asin} \hyperref[sec:command_acos]{\textbackslash acos} \hyperref[sec:command_atan]{\textbackslash atan} \hyperref[sec:command_co]{\textbackslash co} \hyperref[sec:command_atanII]{\textbackslash atanII} \hyperref[sec:command_AtanII]{\textbackslash AtanII} \hyperref[sec:command_sinabr]{\textbackslash sinabr} \hyperref[sec:command_cosabr]{\textbackslash cosabr} \hyperref[sec:command_sign]{\textbackslash sign} \hyperref[sec:command_sgn]{\textbackslash sgn} \hyperref[sec:command_argmin]{\textbackslash argmin} \hyperref[sec:command_argmax]{\textbackslash argmax} \hyperref[sec:command_div]{\textbackslash div} \hyperref[sec:command_grad]{\textbackslash grad} \hyperref[sec:command_curl]{\textbackslash curl} \hyperref[sec:command_rot]{\textbackslash rot} \hyperref[sec:command_dif]{\textbackslash dif} \hyperref[sec:command_Dif]{\textbackslash Dif} \hyperref[sec:command_order]{\textbackslash order} \hyperref[sec:command_Abs]{\textbackslash Abs} \hyperref[sec:command_abs]{\textbackslash abs} \hyperref[sec:command_Norm]{\textbackslash Norm} \hyperref[sec:command_norm]{\textbackslash norm} \hyperref[sec:command_e]{\textbackslash e} \hyperref[sec:command_const]{\textbackslash const} \hyperref[sec:command_konst]{\textbackslash konst} \hyperref[sec:command_laplacian]{\textbackslash laplacian} \hyperref[sec:command_vdiv]{\textbackslash vdiv} \hyperref[sec:command_vgrad]{\textbackslash vgrad} \hyperref[sec:command_vcurl]{\textbackslash vcurl} \hyperref[sec:command_vrot]{\textbackslash vrot} \hyperref[sec:command_hex]{\textbackslash hex} \hyperref[sec:command_bin]{\textbackslash bin} \hyperref[sec:command_dec]{\textbackslash dec} \hyperref[sec:command_bnot]{\textbackslash bnot} \hyperref[sec:command_MR]{\textbackslash MR} \hyperref[sec:command_MN]{\textbackslash MN} \hyperref[sec:command_MZ]{\textbackslash MZ} \hyperref[sec:command_MC]{\textbackslash MC} \hyperref[sec:command_MQ]{\textbackslash MQ} \hyperref[sec:command_Mone]{\textbackslash Mone} \hyperref[sec:command_eqhat]{\textbackslash eqhat} \hyperref[sec:command_eqexcl]{\textbackslash eqexcl} \hyperref[sec:command_eqdef]{\textbackslash eqdef} \hyperref[sec:command_defined]{\textbackslash defined} \hyperref[sec:command_rdefined]{\textbackslash rdefined} \hyperref[sec:command_vec]{\textbackslash vec} \hyperref[sec:command_vnull]{\textbackslash vnull} \hyperref[sec:command_vzero]{\textbackslash vzero} \hyperref[sec:command_vone]{\textbackslash vone} \hyperref[sec:command_vnabla]{\textbackslash vnabla} \hyperref[sec:command_mat]{\textbackslash mat} \hyperref[sec:command_pmat]{\textbackslash pmat} \hyperref[sec:command_bmat]{\textbackslash bmat} \hyperref[sec:command_Bmat]{\textbackslash Bmat} \hyperref[sec:command_vmat]{\textbackslash vmat} \hyperref[sec:command_Vmat]{\textbackslash Vmat} \hyperref[sec:command_dd]{\textbackslash dd} \hyperref[sec:command_vdot]{\textbackslash vdot} \hyperref[sec:command_vddot]{\textbackslash vddot} \hyperref[sec:command_diff]{\textbackslash diff} \hyperref[sec:command_tdiff]{\textbackslash tdiff} \hyperref[sec:command_pdiff]{\textbackslash pdiff} \hyperref[sec:command_tpdiff]{\textbackslash tpdiff} \hyperref[sec:command_Ddiff]{\textbackslash Ddiff} \hyperref[sec:command_tDdiff]{\textbackslash tDdiff} \hyperref[sec:command_rs]{\textbackslash rs} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMmath_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMmath.sty%
+The \IWBdocumentationModule{IWBmath} module defines various math operators, sets of numbers, numeral systems, relations as well as vector and matrix notations. The options \IWBdocumentationOption{optLeftEquations} (default) and \IWBdocumentationOption{optCenterEquations} allows the user to specify the alignment of equations. %
+The option \IWBdocumentationOption{optLimitMathFonts} can be used to limit the number of math fonts that are loaded. This is done by not loading the bm-package, which is otherwise included to improve typesetting bold math symbols.%
+%
+%
+\subsection*{Operators}%
+\begin{tabular}{@{}|ll|ll|ll|ll|}%
+	\hline%
+	\textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output}\\\hline%
+	\hyperref[sec:command_real]{\textbackslash real} & $\real$ & \hyperref[sec:command_sign]{\textbackslash sign} & $\sign$ & \hyperref[sec:command_curl]{\textbackslash curl} & $\curl$ & \hyperref[sec:command_dif]{\textbackslash dif} & $\dif$ \\%
+	%
+	\hyperref[sec:command_imag]{\textbackslash imag} & $\imag$ & \hyperref[sec:command_sgn]{\textbackslash sgn} & $\sgn$ & \hyperref[sec:command_rot]{\textbackslash rot}  & $\rot$ & \hyperref[sec:command_dif]{\textbackslash Dif} & $\Dif$\\%
+	%
+	\hyperref[sec:command_asin]{\textbackslash asin} & $\asin$ & \hyperref[sec:command_argmin]{\textbackslash argmin} & $\argmin$ & \hyperref[sec:command_atanII]{\textbackslash atanII} & $\atanII$ & \hyperref[sec:command_order]{\textbackslash order} & $\order$\\%
+	%
+	\hyperref[sec:command_acos]{\textbackslash acos} & $\acos$ & \hyperref[sec:command_argmax]{\textbackslash argmax} & $\argmax$ & \hyperref[sec:command_AtanII]{\textbackslash AtanII} & $\AtanII$ & & \\%
+	%
+	\hyperref[sec:command_atan]{\textbackslash atan} & $\atan$ & \hyperref[sec:command_div]{\textbackslash div} & $\div$ & \hyperref[sec:command_sinabr]{\textbackslash sinabr} & $\sinabr$ &  &  \\%
+	%
+	\hyperref[sec:command_co]{\textbackslash co} & $\co$ & \hyperref[sec:command_grad]{\textbackslash grad} & $\grad$ & \hyperref[sec:command_cosabr]{\textbackslash cosabr} & $\cosabr$ & & \\%
+	\hline%
+\end{tabular}\par%
+%
+\subsection*{Miscellaneous}%
+\begin{tabular}{@{}|lc|lc|lc|lc|}%
+	\hline%
+	\textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output}\\\hline%
+	\hyperref[sec:command_Abs]{\textbackslash Abs}\{x\} & $\Abs{x}$ & \hyperref[sec:command_Norm]{\textbackslash Norm}{\{x\}} & $\Norm{x}$ & \hyperref[sec:command_konst]{\textbackslash konst} & $\konst$ & \hyperref[sec:command_vgrad]{\textbackslash vgrad} & $\vgrad$ \\%
+	%
+	\hyperref[sec:command_abs]{\textbackslash abs}\{x\} & $\abs{x}$ & \hyperref[sec:command_norm]{\textbackslash norm}\{x\} & $\norm{x}$ & \hyperref[sec:command_laplacian]{\textbackslash laplacian} & $\laplacian$ & \hyperref[sec:command_vcurl]{\textbackslash vcurl} & $\vcurl$ \\%
+	%
+	\hyperref[sec:command_e]{\textbackslash e} & $\e$ & \hyperref[sec:command_const]{\textbackslash const} & $\const$ & \hyperref[sec:command_vdiv]{\textbackslash vdiv} & $\vdiv$ & \hyperref[sec:command_vrot]{\textbackslash vrot} & $\vrot$ \\%
+	\hline%
+\end{tabular}\par%
+%
+%
+\subsection*{Numeral Systems and Sets of Numbers}%
+\begin{tabular}{@{}|lc|lc|lc|lc|}%
+    \hline%
+    \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output}\\\hline%
+    \hyperref[sec:command_hex]{\textbackslash hex}\{123\} & $\hex{123}$ & \hyperref[sec:command_bin]{\textbackslash bin}\{101\} & $\bin{101}$ & \hyperref[sec:command_dec]{\textbackslash dec}\{123\} & $\dec{123}$ & \hyperref[sec:command_bnot]{\textbackslash bnot}\{101\} & $\bnot{101}$\\%
+    %
+    \hyperref[sec:command_MR]{\textbackslash MR} & $\MR$ & \hyperref[sec:command_MN]{\textbackslash MN} & $\MN$ & \hyperref[sec:command_MZ]{\textbackslash MZ} & $\MZ$ & \hyperref[sec:command_MC]{\textbackslash MC} & $\MC$\\%
+    %
+    \hyperref[sec:command_MQ]{\textbackslash MQ} & $\MQ$ & \hyperref[sec:command_Mone]{\textbackslash Mone} & $\Mone$ & & & & \\%
+    \hline%
+\end{tabular}\par%
+%
+%
+\subsection*{Relations}%
+\begin{tabular}{@{}|lc|lc|lc|lc|}%
+    \hline%
+    \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output}\\\hline%
+    \hyperref[sec:command_eqhat]{\textbackslash eqhat} & $\eqhat$ & \hyperref[sec:command_eqexcl]{\textbackslash eqexcl} & $\eqexcl$ & \hyperref[sec:command_eqdef]{\textbackslash eqdef} & $\eqdef$ & \hyperref[sec:command_defined]{\textbackslash defined} & $\defined$\\%
+    %
+    \hyperref[sec:command_rdefined]{\textbackslash rdefined} & $\rdefined$ & & & & & & \\%
+    \hline%
+\end{tabular}\par%
+%
+%
+\subsection*{Derivatives}%
+\begin{tabular}{@{}|lc|lc|lc|}%
+    \hline%
+    \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} \\\hline%
+    \hyperref[sec:command_dd]{\textbackslash dd}\{x\} & $\dd{x}$ & \hyperref[sec:command_vdot]{\textbackslash vdot}\{x\} & $\vdot{x}$ & \hyperref[sec:command_vddot]{\textbackslash vddot}\{x\} & $\vddot{x}$\\%
+    %
+    \hyperref[sec:command_diff]{\textbackslash diff}{[2]}\{f\}\{x\} & $\diff[2]{f}{x}$ & \hyperref[sec:command_tdiff]{\textbackslash tdiff}{[2]}\{f\}\{x\} & $\tdiff[2]{f}{x}$ & \hyperref[sec:command_pdiff]{\textbackslash pdiff}{[2]}\{f\}\{x\} & $\pdiff[2]{f}{x}$\\%
+    %
+    \hyperref[sec:command_tpdiff]{\textbackslash tpdiff}{[2]}\{f\}\{x\} & $\tpdiff[2]{f}{x}$ & \hyperref[sec:command_Ddiff]{\textbackslash Ddiff}{[2]}\{f\}\{x\} & $\Ddiff[2]{f}{x}$ & \hyperref[sec:command_tDdiff]{\textbackslash tDdiff}{[2]}\{f\}\{x\} & $\tDdiff[2]{f}{x}$\\%
+    \hline%
+\end{tabular}\par%
+%
+%
+\subsection*{Vectors and Matrices}%
+Vectors and matrices are usually written as \textbf{bold} symbols. You can either use the explicit command \hyperref[sec:command_vec]{\textbackslash vec} or the short and handy form \IWBdocumentationCode{\textbackslash v+<letter>} to typeset vectors. The placeholder \IWBdocumentationCode{<letter>} can be replaced by any lower or upper case latin or greek letter. Example:\par%
+%
+\vspace{0.5em}%
+\begin{tabular}{@{}|lc|lc|}%
+    \hline%
+    \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} \\\hline%
+    \IWBdocumentationCode{\textbackslash vec\{a\}} & $\vec{a}$ & \IWBdocumentationCode{\textbackslash va} & $\va$\\%
+    \IWBdocumentationCode{\textbackslash vec\{A\}} & $\vec{A}$ & \IWBdocumentationCode{\textbackslash vA} & $\vA$\\%
+    %
+    \IWBdocumentationCode{\textbackslash vec\{\textbackslash gamma\}} & $\vec{\gamma}$ & \IWBdocumentationCode{\textbackslash vgamma} & $\vgamma$\\%
+    \IWBdocumentationCode{\textbackslash vec\{\textbackslash Gamma\}} & $\vec{\Gamma}$ & \IWBdocumentationCode{\textbackslash vGamma} & $\vGamma$\\%
+    \hline%
+\end{tabular}\par%
+%
+\vspace{0.5em}%
+Moreover there exist abbreviations for the most common matrix notations:\par%
+%
+\vspace{0.5em}%
+\begin{tabular}{@{}|lc|lc|lc|}%
+    \hline%
+    \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output} & \textbf{Command} & \textbf{Output}\\\hline%
+    \hyperref[sec:command_mat]{\textbackslash mat}\{1\&2\textbackslash\textbackslash 3\&4\} & $\mat{1 & 2\\ 3 & 4}$ & \hyperref[sec:command_pmat]{\textbackslash pmat}\{1\&2\textbackslash\textbackslash 3\&4\} & $\pmat{1 & 2\\ 3 & 4}$ & \hyperref[sec:command_bmat]{\textbackslash bmat}\{1\&2\textbackslash\textbackslash 3\&4\} & $\bmat{1 & 2\\ 3 & 4}$\\[1.5em]%
+    %
+    \hyperref[sec:command_Bmat]{\textbackslash Bmat}\{1\&2\textbackslash\textbackslash 3\&4\} & $\Bmat{1 & 2\\ 3 & 4}$ & \hyperref[sec:command_vmat]{\textbackslash vmat}\{1\&2\textbackslash\textbackslash 3\&4\} & $\vmat{1 & 2\\ 3 & 4}$ & \hyperref[sec:command_Vmat]{\textbackslash Vmat}\{1\&2\textbackslash\textbackslash 3\&4\} & $\Vmat{1 & 2\\ 3 & 4}$\\%
+    \hline%
+\end{tabular}\par%
+%
+%
+\subsection*{Indices}%
+There exists the auxillary command \hyperref[sec:command_rs]{\textbackslash rs} to typeset leftsided indices in equations. Example: type \IWBdocumentationCode{\textbackslash rs\{\_a\^{}b\}\{\textbackslash vC\}\_c\^{}d} to obtain $\rs{_a^b}{\vX}_c^d$.\par%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBmath_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBmath.sty
+%
+%
+%
+%
+%
+\section{IWBlayout}%
+\label{sec:module_IWBlayout}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \hyperref[sec:module_IWBcolor]{IWBcolor} \hyperref[sec:module_IWBtikz]{IWBtikz} \hyperref[sec:module_IWBlogo]{IWBlogo} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optAfive optAfour optAthree optAtwo optAone optAzero optBeamerClassicFormat optBeamerWideFormat optExzellenz \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & geometry \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBlayout.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMlayout.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBlayoutHeaderCustomChair]{\textbackslash IWBlayoutHeaderCustomChair} \hyperref[sec:command_IWBlayoutTitlePageDefault]{\textbackslash IWBlayoutTitlePageDefault} \hyperref[sec:command_IWBlayoutSetIndent]{\textbackslash IWBlayoutSetIndent} \hyperref[sec:command_IWBlayoutNoIndent]{\textbackslash IWBlayoutNoIndent} \hyperref[sec:command_IWBlayoutSetAfive]{\textbackslash IWBlayoutSetAfive} \hyperref[sec:command_IWBlayoutSetAfour]{\textbackslash IWBlayoutSetAfour} \hyperref[sec:command_IWBlayoutSetAthree]{\textbackslash IWBlayoutSetAthree} \hyperref[sec:command_IWBlayoutSetAtwo]{\textbackslash IWBlayoutSetAtwo} \hyperref[sec:command_IWBlayoutSetAone]{\textbackslash IWBlayoutSetAone} \hyperref[sec:command_IWBlayoutSetAzero]{\textbackslash IWBlayoutSetAzero} \hyperref[sec:command_IWBlayoutSetBeamerClassicFormat]{\textbackslash IWBlayoutSetBeamerClassicFormat} \hyperref[sec:command_IWBlayoutSetBeamerWideFormat]{\textbackslash IWBlayoutSetBeamerWideFormat} \hyperref[sec:command_IWBlayoutPutAtCenter]{\textbackslash IWBlayoutPutAtCenter} \hyperref[sec:command_IWBlayoutPutAtNorthWest]{\textbackslash IWBlayoutPutAtNorthWest} \hyperref[sec:command_IWBlayoutPutAtNorthWestCentered]{\textbackslash IWBlayoutPutAtNorthWestCentered} \hyperref[sec:command_IWBlayoutPutAtNorthEast]{\textbackslash IWBlayoutPutAtNorthEast} \hyperref[sec:command_IWBlayoutPutAtNorthEastCentered]{\textbackslash IWBlayoutPutAtNorthEastCentered} \hyperref[sec:command_IWBlayoutPutAtSouthWest]{\textbackslash IWBlayoutPutAtSouthWest} \hyperref[sec:command_IWBlayoutPutAtSouthWestCentered]{\textbackslash IWBlayoutPutAtSouthWestCentered} \hyperref[sec:command_IWBlayoutPutAtSouthEast]{\textbackslash IWBlayoutPutAtSouthEast} \hyperref[sec:command_IWBlayoutPutAtSouthEastCentered]{\textbackslash IWBlayoutPutAtSouthEastCentered} \hyperref[sec:command_IWBlayoutHeaderCDTUMLogoOnly]{\textbackslash IWBlayoutHeaderCDTUMLogoOnly} \hyperref[sec:command_IWBlayoutHeaderCDTUM]{\textbackslash IWBlayoutHeaderCDTUM} \hyperref[sec:command_IWBlayoutHeaderCDDepartment]{\textbackslash IWBlayoutHeaderCDDepartment} \hyperref[sec:command_IWBlayoutHeaderCDDepartmentTUMLogoOnly]{\textbackslash IWBlayoutHeaderCDDepartmentTUMLogoOnly} \hyperref[sec:command_IWBlayoutHeaderCDChair]{\textbackslash IWBlayoutHeaderCDChair} \hyperref[sec:command_IWBlayoutCDBorder]{\textbackslash IWBlayoutCDBorder} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMlayout_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMLayout.sty%
+The \IWBdocumentationModule{IWBlayout} module defines page size and margins, commands for absolute positioning of content on the page and header definitions. The four options of this module specify the document page format. If no size option is specified the default option \IWBdocumentationOption{optAfour} is used.\par%
+%
+The following table gives an overview of the page formats.\par%
+%
+\begin{center}%
+    \begin{tabular}{|lll|}%
+        \hline%
+        \textbf{Option} & \textbf{Size} & \textbf{Margins}\\\hline%
+        \IWBdocumentationOption{optAfive} & DIN A5 (148mm $\times$ 210mm) & 1.41cm\\%
+        \IWBdocumentationOption{optAfour} & DIN A4 (210mm $\times$ 297mm) & 2cm\\%
+        \IWBdocumentationOption{optAthree} & DIN A3 (297mm $\times$ 420mm) & 2.82cm\\%
+        \IWBdocumentationOption{optAtwo} & DIN A2 (420mm $\times$ 594mm) & 4cm\\%
+        \IWBdocumentationOption{optAone} & DIN A1 (594mm $\times$ 841mm) & 5.66cm\\%
+        \IWBdocumentationOption{optAzero} & DIN A0 (841mm $\times$ 1189mm) & 8cm\\%
+        \IWBdocumentationOption{optBeamerClassicFormat} & 4:3 (254mm $\times$ 190.5mm) & 1cm (left and right)\\%
+        \IWBdocumentationOption{optBeamerWideFormat} & 16:9 (254mm $\times$ 142.9mm) & 1cm (left and right)\\%
+        \hline%
+    \end{tabular}%
+\end{center}%
+%
+%
+\subsection*{Absolute Positioning}%
+For absolute positioning on the page several convenience commands exits. They all start with \IWBdocumentationCode{\textbackslash IWBlayoutPutAt} and allow positioning relative to global page markers, i.\,e. the corners or the page center. The content is integrated into a TikZ-picture whose anchor is in the same corner as the specified page corner. Moreover the content may be rotated by any angle of rotation.\par%
+%
+\textbf{Important:} Note that due to positioning issues TikZ-pictures cannot be externalized in combination with this commands.\par%
+%
+\subsection*{Headers}%
+The module defines several headers which differ in the amount of information displayed. Headers including the letters ``CD'' correspond to the corporate design of the TUM. By passing the option \IWBdocumentationOption{optExzellenz} you can enable the display of the anniversary badge (use this only in the anniversary year 2018).\par%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBlayout_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBlayout.sty
+%
+%
+%
+%
+%
+\section{IWBbiblio}%
+\label{sec:module_IWBbiblio}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \hyperref[sec:module_IWBlang]{IWBlang} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optBiber optBibtex optBibstyleNumeric optBibstyleAlphabetic optBibstyleAuthorYear \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & biblatex \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBbiblio.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMbiblio.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & none\\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMbiblio_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMbiblio.sty%
+The \IWBdocumentationModule{IWBbiblio} module generates the layout of the citations and bibliography. You can choose between the two backends \textit{biber} (\IWBdocumentationOption{optBiber}, modern, recommended) and \textit{bibtex} (\IWBdocumentationOption{optBibtex}, outdated, not recommended). Note, that the module is only loaded, if a backend has been specified.\par%
+%
+Moreover the style of bibliography entries can be specified. An example for the references%
+%
+\begin{itemize}\itemsep0pt%
+    \item Albert Einstein, ``Zur Elektrodynamik bewegter Körper'', 1905%
+    \item Michel Goossens, Frank Mittelbach, and Alexander Samarin ``The LaTeX Companion'', 1993%
+\end{itemize}%
+%
+is given for every option:%
+%
+\begin{itemize}%
+    \item \IWBdocumentationOption{optBibstyleAuthorYear:} Einstein 1916 -- Goossens, Mittelbach and Samarin 1993%
+    \item \IWBdocumentationOption{optBibstyleAlphabetic:} {[Ein16]} -- {[GMS93]}%
+    \item \IWBdocumentationOption{optBibstyleNumeric:} [1] -- [2]%
+\end{itemize}%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBbiblio_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBbiblio.sty
+%
+%
+%
+%
+%
+\section{IWBnames}%
+\label{sec:module_IWBnames}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & none\\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & none\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBnames.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMnames.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBnamesProfHerrmann]{\textbackslash IWBnamesProfHerrmann} \hyperref[sec:command_IWBnamesProfHofmann]{\textbackslash IWBnamesProfHofmann} \hyperref[sec:command_IWBnamesPresident]{\textbackslash IWBnamesPresident} \hyperref[sec:command_IWBnamesProfAdams]{\textbackslash IWBnamesProfAdams} \hyperref[sec:command_IWBnamesProfBengler]{\textbackslash IWBnamesProfBengler} \hyperref[sec:command_IWBnamesProfBerensmeier]{\textbackslash IWBnamesProfBerensmeier} \hyperref[sec:command_IWBnamesProfBottasso]{\textbackslash IWBnamesProfBottasso} \hyperref[sec:command_IWBnamesProfCaccamo]{\textbackslash IWBnamesProfCaccamo} \hyperref[sec:command_IWBnamesProfDaub]{\textbackslash IWBnamesProfDaub} \hyperref[sec:command_IWBnamesProfDrechsler]{\textbackslash IWBnamesProfDrechsler} \hyperref[sec:command_IWBnamesProfFottner]{\textbackslash IWBnamesProfFottner} \hyperref[sec:command_IWBnamesProfGee]{\textbackslash IWBnamesProfGee} \hyperref[sec:command_IWBnamesProfGrosse]{\textbackslash IWBnamesProfGrosse} \hyperref[sec:command_IWBnamesProfGuemmer]{\textbackslash IWBnamesProfGuemmer} \hyperref[sec:command_IWBnamesProfGuenthner]{\textbackslash IWBnamesProfGuenthner} \hyperref[sec:command_IWBnamesProfHaidn]{\textbackslash IWBnamesProfHaidn} \hyperref[sec:command_IWBnamesProfHajek]{\textbackslash IWBnamesProfHajek} \hyperref[sec:command_IWBnamesProfHolzapfel]{\textbackslash IWBnamesProfHolzapfel} \hyperref[sec:command_IWBnamesProfHornung]{\textbackslash IWBnamesProfHornung} \hyperref[sec:command_IWBnamesProfKaltenbach]{\textbackslash IWBnamesProfKaltenbach} \hyperref[sec:command_IWBnamesProfKlein]{\textbackslash IWBnamesProfKlein} \hyperref[sec:command_IWBnamesProfKoutsourelakis]{\textbackslash IWBnamesProfKoutsourelakis} \hyperref[sec:command_IWBnamesProfKremling]{\textbackslash IWBnamesProfKremling} \hyperref[sec:command_IWBnamesProfLieleg]{\textbackslash IWBnamesProfLieleg} \hyperref[sec:command_IWBnamesProfLienkamp]{\textbackslash IWBnamesProfLienkamp} \hyperref[sec:command_IWBnamesProfLindemann]{\textbackslash IWBnamesProfLindemann} \hyperref[sec:command_IWBnamesProfLohmann]{\textbackslash IWBnamesProfLohmann} \hyperref[sec:command_IWBnamesProfLueth]{\textbackslash IWBnamesProfLueth} \hyperref[sec:command_IWBnamesProfMacianJuan]{\textbackslash IWBnamesProfMacianJuan} \hyperref[sec:command_IWBnamesProfMarburg]{\textbackslash IWBnamesProfMarburg} \hyperref[sec:command_IWBnamesProfNeu]{\textbackslash IWBnamesProfNeu} \hyperref[sec:command_IWBnamesProfPolifke]{\textbackslash IWBnamesProfPolifke} \hyperref[sec:command_IWBnamesProfProvost]{\textbackslash IWBnamesProfProvost} \hyperref[sec:command_IWBnamesProfReinhart]{\textbackslash IWBnamesProfReinhart} \hyperref[sec:command_IWBnamesProfRixen]{\textbackslash IWBnamesProfRixen} \hyperref[sec:command_IWBnamesProfSattelmayer]{\textbackslash IWBnamesProfSattelmayer} \hyperref[sec:command_IWBnamesProfSenner]{\textbackslash IWBnamesProfSenner} \hyperref[sec:command_IWBnamesProfSpannerUlmer]{\textbackslash IWBnamesProfSpannerUlmer} \hyperref[sec:command_IWBnamesProfSpliethoff]{\textbackslash IWBnamesProfSpliethoff} \hyperref[sec:command_IWBnamesProfStahl]{\textbackslash IWBnamesProfStahl} \hyperref[sec:command_IWBnamesProfVogelHeuser]{\textbackslash IWBnamesProfVogelHeuser} \hyperref[sec:command_IWBnamesProfVolk]{\textbackslash IWBnamesProfVolk} \hyperref[sec:command_IWBnamesProfWachtmeister]{\textbackslash IWBnamesProfWachtmeister} \hyperref[sec:command_IWBnamesProfWall]{\textbackslash IWBnamesProfWall} \hyperref[sec:command_IWBnamesProfWalter]{\textbackslash IWBnamesProfWalter} \hyperref[sec:command_IWBnamesProfWerner]{\textbackslash IWBnamesProfWerner} \hyperref[sec:command_IWBnamesProfWeusterBotz]{\textbackslash IWBnamesProfWeusterBotz} \hyperref[sec:command_IWBnamesProfZaeh]{\textbackslash IWBnamesProfZaeh} \hyperref[sec:command_IWBnamesProfZimmermann]{\textbackslash IWBnamesProfZimmermann} \hyperref[sec:command_IWBnamesProfAlthoff]{\textbackslash IWBnamesProfAlthoff} \hyperref[sec:command_IWBnamesProfBurschka]{\textbackslash IWBnamesProfBurschka} \hyperref[sec:command_IWBnamesProfKnoll]{\textbackslash IWBnamesProfKnoll} \hyperref[sec:command_IWBnamesProfPretschner]{\textbackslash IWBnamesProfPretschner} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMnames_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMnames.sty%
+The \IWBdocumentationModule{IWBnames} module implements the names of various active professors (see \cref{sec:commands}).\par%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBnames_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBnames.sty
+%
+%
+%
+%
+%
+\section{IWButils}%
+\label{sec:module_IWButils}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \hyperref[sec:module_IWBlang]{IWBlang} \hyperref[sec:module_IWBcolor]{IWBcolor} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optHideTodos optHideAnnotations \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & excludeonly epstopdf xspace cancel datetime eurosym blindtext titlesec titletoc pdfcomment \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWButils.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMutils.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWButilsTodo]{\textbackslash IWButilsTodo} \hyperref[sec:command_IWButilsTodoW]{\textbackslash IWButilsTodoW} \hyperref[sec:command_IWButilsTodoSpacer]{\textbackslash IWButilsTodoSpacer} \hyperref[sec:command_IWButilsPDFanno]{\textbackslash IWButilsPDFanno} \hyperref[sec:command_IWButilsPDFannoColor]{\textbackslash IWButilsPDFannoColor} \hyperref[sec:command_IWButilsPDFhigh]{\textbackslash IWButilsPDFhigh} \hyperref[sec:command_IWButilsDate]{\textbackslash IWButilsDate} \hyperref[sec:command_IWButilsToday]{\textbackslash IWButilsToday} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMutils_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMutils.sty%
+The \IWBdocumentationModule{IWButils} module provides several utility functions, which make it easier to integrate comments, annotations and other notes into the final PDF.\par%
+%
+%
+\subsection*{Todos}%
+There are several ways to typeset todos:
+%
+\begin{center}%
+    \begin{tabular}{|lll|}%
+        \hline%
+        \textbf{Command} & \textbf{Output} & \textbf{Comment}\\\hline%
+        \hyperref[sec:command_IWButilsTodo]{\textbackslash IWButilsTodo} & \IWButilsTodo{default}, \IWButilsTodo[TUMBlue]{custom} & simple todo note (color customizable)\\%
+        \hyperref[sec:command_IWButilsTodoW]{\textbackslash IWButilsTodoW} & \IWButilsTodo{default}, \IWButilsTodo[TUMBlue]{custom} & todo note with LaTeX warning\\%
+        \hline%
+    \end{tabular}%
+\end{center}%
+%
+There is also the possibility to insert a placeholder by \hyperref[sec:command_IWButilsTodoSpacer]{\textbackslash IWButilsTodoSpacer}:%
+\IWButilsTodoSpacer[custom spacer header]{15}%
+%
+\textbf{Note:} Todos can be hidden globally by passing the option \IWBdocumentationOption{optHideTodos}.%
+%
+\subsection*{Comments and annotations}%
+If the document length should not be influenced by a comment, one may use the following commands:%
+\begin{center}%
+    \begin{tabular}{|lll|}%
+        \hline%
+        \textbf{Command} & \textbf{Output} & \textbf{Comment}\\\hline%
+        \hyperref[sec:command_IWButilsPDFanno]{\textbackslash IWButilsPDFanno} & annotated text\IWButilsPDFanno[author name]{annotation text} & simple pdf popup annotation\\%
+        \hyperref[sec:command_IWButilsPDFannoColor]{\textbackslash IWButilsPDFannoColor} & annotated text\IWButilsPDFannoColor[author name]{annotation text}{TUMBlue} & pdf popup annotation (custom color)\\%
+        \hyperref[sec:command_IWButilsPDFhigh]{\textbackslash IWButilsPDFhigh} & \IWButilsPDFhigh[yellow]{highlighted text passage} & pdf highlighted text (customizable color)\\%
+        \hline%
+    \end{tabular}%
+\end{center}%
+%
+\textbf{Note:} Comments and annotations can be hidden globally by passing the option \IWBdocumentationOption{optHideAnnotations}.%
+%
+\subsection*{Dates}%
+In order to typeset dates, the two commands \hyperref[sec:command_IWButilsDate]{\textbackslash IWButilsDate} and \hyperref[sec:command_IWButilsToday]{\textbackslash IWButilsToday} exist.%
+\begin{center}%
+    \begin{tabular}{|lll|}%
+        \hline%
+        \textbf{Command} & \textbf{Output} & \textbf{Comment}\\\hline%
+        \hyperref[sec:command_IWButilsDate]{\textbackslash IWButilsDate} & \IWButilsDate{1}{1}{1970} & displays a custom date\\%
+        \hyperref[sec:command_IWButilsToday]{\textbackslash IWButilsToday} & \IWButilsToday & displays the current date (compile time)\\%
+        \hline%
+    \end{tabular}%
+\end{center}%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWButils_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWButils.sty
+%
+%
+%
+%
+%
+\section{IWBref}%
+\label{sec:module_IWBref}%
+\begingroup\sffamily\begin{tabular}{|p{4cm}|p{11cm}|}%
+\hline\bfseries\IWBlangGerEng{Abhängigkeiten}{Dependencies} & \hyperref[sec:module_IWBcore]{IWBcore} \hyperref[sec:module_IWBlang]{IWBlang} \hyperref[sec:module_IWBcolor]{IWBcolor} \\\hline%
+\bfseries\IWBlangGerEng{Optionen}{Options} & optBlackRefs \\\hline%
+\bfseries\IWBlangGerEng{Geladene Pakete}{Loaded Packages} & hyperref cleveref \\\hline%
+\bfseries\IWBlangGerEng{Quelldatei}{Sourcefile} & source/MW/IWB/Modules/IWBref.sty\\\hline%
+\bfseries\IWBlangGerEng{Quelldatei (Basis)}{Sourcefile (parent)} & source/TUM/Modules/TUMref.sty\\%
+\hline%
+\bfseries\IWBlangGerEng{Befehle}{Commands} & \scriptsize \hyperref[sec:command_IWBrefSetPDFMetadata]{\textbackslash IWBrefSetPDFMetadata} \\\hline%
+\end{tabular}\endgroup\par%
+%
+%
+\subsection*{\IWBlangGerEng{Beschreibung}{Description}}%
+% >>> CONTENTS OF FILE source/TUM/Modules/TUMref_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file TUMref.sty%
+The \IWBdocumentationModule{IWBref} module takes care of in-document referencing. Basically it loads and initializes the \IWBdocumentationCode{hyperref} and \IWBdocumentationCode{cleveref} packages. Furthermore the module provides a command to set the PDF meta-data (properties of the pdf document).\par%
+You can use the \IWBdocumentationOption{optBlackRefs} to disable colored references.
+%
+\textbf{Hint:} This module loads the \IWBdocumentationCode{hyperref} packages which often has to be loaded \textbf{after} loading certain other packages. In order to load packages \textbf{before} \IWBdocumentationCode{hyperref} and \textbf{without} modifying the TUMlatex class/package you can add a file \IWBdocumentationCode{pre\_hyperref\_packages.tex} right beside your \IWBdocumentationCode{main.tex} file. The TUMlatex package will automatically execute the content of this file (i.\,e. your additional package loading macros) directly before loading the \IWBdocumentationCode{hyperref} package.\par%
+%
+%
+%
+% >>> CONTENTS OF FILE source/MW/IWB/Modules/IWBref_doc.tex: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+% Documentation of file IWBref.sty
+%
+%
+%
+%
+%

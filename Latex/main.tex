@@ -1,0 +1,71 @@
+% !TeX spellcheck = de_DE
+\documentclass[IWBstudentthesis%     style
+              ,optCharter%           font
+              %,optCMYK%             color model
+              ,optBiber% 	         bibliography tool
+              ,optBibstyleAuthorYear%iwb citation style
+              ,optEnglish% 		 language
+              %,optTikzExternalize%  compiles faster for large tikz images
+              ]{IWBlatex}%
+%
+% Set paths
+\graphicspath{{figures/}}%
+\addbibresource{source/literature.bib}%
+\include{source/abbreviations}%
+\include{source/glossary}%
+%
+\begin{document}%
+% Titlepage
+% ---------
+\frontmatter%
+% Info: replace Prof. Daub by Prof. Zäh:\IWBnamesProfZaeh \newline \IWBlangChairMWIWBLWF
+% Info: separate multiple supervisors by \newline
+\IWBstudentthesisTitlePageCustomMastersThesis{German Title}{English Title}{Jan Nalivaika \newline Lerchenauerstrasse 10 \newline 80809 Munich}{\IWBnamesProfZaeh \newline \IWBlangChairMWIWBLBM}{\IWButilsDate{15}{03}{2024}}%
+%
+%\IWBstudentthesisTitlePageCustomBachelorsThesis{German Title}{English Title}{Martin Mustermann \newline Musterweg 20 \newline 80999 München}{\IWBnamesProfDaub \newline \IWBlangChairMWIWBPE}{\IWButilsDate{1}{1}{2018}}%
+%
+%\IWBstudentthesisTitlePageCustomSemesterThesis{German Title}{English Title}{Martin Mustermann \newline Musterweg 20 \newline 80999 München}{\IWBnamesProfDaub \newline \IWBlangChairMWIWBPE}{\IWButilsDate{1}{1}{2018}}%
+%
+%\IWBstudentthesisTitlePageCDIDP{German Title}{English Title}{Martin Mustermann \newline Musterweg 20 \newline 80999 München}{\IWBnamesProfDaub \newline \IWBlangChairMWIWBPE}{\IWButilsDate{1}{1}{2018}}%
+%
+% Task formulation
+% ----------------
+\include{source/task}%
+%
+% Abstract
+% --------
+\include{source/abstract}%
+%
+% Content
+% -------
+\IWBstudentthesisPrintTableOfContents%
+%
+% List of Abbreviations
+% ---------------------
+\printnoidxglossary[type=acronym,sort=standard,title={\IWBlangAcronyms}]
+%
+% Mainmatter
+% ----------
+\mainmatter%
+\include{source/latex_tutorial}%
+\include{source/chapter01}%
+\include{source/chapter02}%
+\include{source/chapter03}%
+%
+% Appendix
+% --------
+\appendix%
+\include{source/appendixA}%
+%
+% Glossary
+% ---------------------
+\printnoidxglossary[sort=standard,title={\IWBlangGlossary}]
+%
+% References
+% ----------
+\printbibliography[heading=bibintoc, title={\IWBlangBibliography}]%
+%
+%
+\end{document}%
+%
+%
