@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  11 OCT 2023 15:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  12 OCT 2023 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2178,14 +2178,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with '.19072023':
-(biblatex)                - misc entry '.19072023' (lit.bib): Invalid format '1
-1/10/2023' of date field 'urldate' - ignoring.
-
-)
+ (main.bbl)
 Package biblatex Info: Reference section=0 on input line 16.
 Package biblatex Info: Reference segment=0 on input line 16.
 Package hyperref Info: Link coloring ON on input line 16.
@@ -2377,29 +2370,15 @@ Overfull \hbox (56.52023pt too wide) in paragraph at lines 43--167
 [7] [8]
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
 (Font)              scaled to size 9.6688pt on input line 176.
-
-Overfull \hbox (60.55745pt too wide) in paragraph at lines 176--176
-\T1/phv/m/n/10.95 lenges, trends, and ap-pli-ca-tions^^Q. In: \T1/phv/m/sl/10.9
-5 Ad-vances in Me-chan-i-cal En-gi-neer-ing \T1/phv/m/n/10.95 11.2 (2019), p. 1
-68781401882288.
- []
-
-[9]
+ [9]
 Overfull \hbox (2.79443pt too wide) in paragraph at lines 176--176
 \T1/phv/m/sl/10.95 in En-gi-neer-ing Soft-ware \T1/phv/m/n/10.95 41.4 (2010), p
 p. 548^^U556. \T1/phv/m/sc/10.95 issn\T1/phv/m/n/10.95 : 0965-9978. \T1/phv/m/s
 c/10.95 doi\T1/phv/m/n/10.95 : [][]$10 . 1016 / j . advengsoft .
  []
 
-[10]
-Overfull \hbox (15.49516pt too wide) in paragraph at lines 176--176
-\T1/phv/m/sl/10.95 trial Robot: An In-ter-na-tional Jour-nal \T1/phv/m/n/10.95 
-35.5 (2008), pp. 456^^U464. \T1/phv/m/sc/10.95 doi\T1/phv/m/n/10.95 : [][]$10 .
- 1108 / 01439910810893626$[][].
- []
-
-[11] [12] [13] [14] [15]
-Underfull \hbox (badness 1342) in paragraph at lines 240--240
+[10] [11] [12] [13] [14] [15]
+Underfull \hbox (badness 1342) in paragraph at lines 241--241
 []|\T1/phv/m/n/10.95 Supervising sci-en-tific staff at
  []
 
@@ -2424,10 +2403,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61653 strings out of 475247
- 1437870 string characters out of 5756376
- 2388196 words of memory out of 5000000
- 82096 multiletter control sequences out of 15000+600000
+ 61659 strings out of 475247
+ 1438316 string characters out of 5756376
+ 2388277 words of memory out of 5000000
+ 82101 multiletter control sequences out of 15000+600000
  625648 words of font info for 113 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  101i,12n,131p,6113b,2465s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2435,9 +2414,9 @@ Here is how much of TeX's memory you used:
 b8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvet
 ic/uhvr8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
-Output written on main.pdf (16 pages, 149144 bytes).
+Output written on main.pdf (16 pages, 150410 bytes).
 PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

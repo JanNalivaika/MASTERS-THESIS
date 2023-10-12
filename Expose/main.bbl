@@ -58,8 +58,6 @@
       \field{title}{Additive manufacturing: Challenges, trends, and applications}
       \field{volume}{11}
       \field{year}{2019}
-      \field{pages}{168781401882288}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1177/1687814018822880
       \endverb
@@ -642,19 +640,64 @@
       \verb Chen, Zhang et al. 2017 - Fuzzy-Sliding Mode Force Control Research:Attachments/Chen, Zhang et al. 2017 - Fuzzy-Sliding Mode Force Control Research.pdf:application/pdf
       \endverb
     \endentry
-    \entry{.19072023}{misc}{}
+    \entry{cnckonw}{misc}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labeltitlesource}{title}
-      \field{title}{CNC KNOWLEDGE}
-      \field{year}{19/07/2023}
+      \field{title}{CNC KNOWLEDGE: Last access: 12.10.2023}
+      \field{year}{2023}
       \verb{urlraw}
       \verb https://www.cncknowledge.in/2020/05/haas-cnc-g-code-list-for-lathe-milling.html
       \endverb
       \verb{url}
       \verb https://www.cncknowledge.in/2020/05/haas-cnc-g-code-list-for-lathe-milling.html
       \endverb
-      \warn{\item misc entry '.19072023' (lit.bib): Invalid format '11/10/2023' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Cvitanic.2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e6ac0dc60696f57da819f4c1478bc53f}{%
+           family={Cvitanic},
+           familyi={C\bibinitperiod},
+           given={Toni},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6a8f26aa94297d679633525b05d3ee8a}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Vinh},
+           giveni={V\bibinitperiod}}}%
+        {{hash=abb074cf4970aa5af4a03ff208125d32}{%
+           family={Melkote},
+           familyi={M\bibinitperiod},
+           given={Shreyes\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{fullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{bibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authorbibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authornamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authorfullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robots are typically not used for milling of hard materials due to their low stiffness compared to traditional machine tools. Due to millin$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Pose optimization in robotic machining using static and dynamic stiffness models}
+      \field{volume}{66}
+      \field{year}{2020}
+      \field{pages}{101992}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2020.101992
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584520302039
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584520302039
+      \endverb
     \endentry
     \entry{Dilberoglu.2017}{article}{}
       \name{author}{4}{}{%
@@ -1281,8 +1324,6 @@
       \field{title}{The joint--limits and singularity avoidance in robotic welding}
       \field{volume}{35}
       \field{year}{2008}
-      \field{pages}{456\bibrangedash 464}
-      \range{pages}{9}
       \verb{doi}
       \verb 10.1108/01439910810893626
       \endverb
