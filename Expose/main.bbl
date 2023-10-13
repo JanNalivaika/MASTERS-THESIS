@@ -750,6 +750,58 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2351978917303529
       \endverb
     \endentry
+    \entry{DIN66025}{article}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{DIN 66025-1:1983-01, Programmaufbau für numerisch gesteuerte Arbeitsmaschinen; Allgemeines}
+      \field{year}{1983}
+      \verb{doi}
+      \verb 10.31030/1300778
+      \endverb
+    \endentry
+    \entry{Ding.2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=64fb7ce003bb1aa33f96b134f07bf8bb}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Songlin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b5f2aed132e152387b6326c54b6847f0}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Ridong},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5da81ce02f9ae9eaf96c5b6657295f3d}
+      \strng{fullhash}{5da81ce02f9ae9eaf96c5b6657295f3d}
+      \strng{bibnamehash}{5da81ce02f9ae9eaf96c5b6657295f3d}
+      \strng{authorbibnamehash}{5da81ce02f9ae9eaf96c5b6657295f3d}
+      \strng{authornamehash}{5da81ce02f9ae9eaf96c5b6657295f3d}
+      \strng{authorfullhash}{5da81ce02f9ae9eaf96c5b6657295f3d}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Contour or CNC EDM machining of free-form surfaces requires tool paths that are different from those used in mechanical milling although in geometry b$\ldots$}
+      \field{issn}{0890-6955}
+      \field{journaltitle}{International Journal of Machine Tools and Manufacture}
+      \field{number}{14}
+      \field{title}{Tool path generation for 4-axis contour EDM rough machining}
+      \field{volume}{44}
+      \field{year}{2004}
+      \field{pages}{1493\bibrangedash 1502}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.ijmachtools.2004.05.010
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0890695504001269
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0890695504001269
+      \endverb
+    \endentry
     \entry{Dinovitzer.2019}{article}{}
       \name{author}{5}{}{%
         {{hash=4ac06ae62721a26a99e718dd080ed029}{%
@@ -1337,6 +1389,52 @@
       \verb https://www.emerald.com/insight/content/doi/10.1108/01439910810893626/full/pdf
       \endverb
     \endentry
+    \entry{Iglesias.2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9d76380f63f96fc5d2229cbfb09d136a}{%
+           family={Iglesias},
+           familyi={I\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2e1126a6d5673b00bfeabdf856ad92ed}{%
+           family={Sebastián},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=be658f859bcce77eb51e1b432ebeb72e}{%
+           family={Ares},
+           familyi={A\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{fullhash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{bibnamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authorbibnamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authornamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authorfullhash}{749e05a950c719602aa7befa804aa4cd}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nowadays industrial robots are an appropriate technology for developing flexible and reconfigurable manufacturing systems which contribute to perform $\ldots$}
+      \field{issn}{1877-7058}
+      \field{journaltitle}{1877-7058}
+      \field{title}{Overview of the State of Robotic Machining: Current Situation and Future Potential}
+      \field{volume}{132}
+      \field{year}{2015}
+      \field{pages}{911\bibrangedash 917}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.proeng.2015.12.577
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877705815044896
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877705815044896
+      \endverb
+    \endentry
     \entry{Iqbal.2020}{article}{}
       \name{author}{6}{}{%
         {{hash=a5ff1ab5d1bf3e365902f900f0de72af}{%
@@ -1777,6 +1875,59 @@
       \verb 10.1109/TMECH.2015.2401606
       \endverb
     \endentry
+    \entry{Lee.2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=60d90bf5d38de765e8aff44d8054d6e6}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jeng-Dao},
+           giveni={J\bibinithyphendelim D\bibinitperiod}}}%
+        {{hash=b6dae03abac35b5f8c82a57c361b8117}{%
+           family={Tsai-Lin},
+           familyi={T\bibinithyphendelim L\bibinitperiod},
+           given={Cheng-Wei},
+           giveni={C\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=be5b3c4e948673efade78a896b78c0dc}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Yi-Cheng},
+           giveni={Y\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=103fd02359dcef1a48b6440831b3994b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Min-Che},
+           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=b93074ed50fe37dd2d05758baac9720e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Li-Yin},
+           giveni={L\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b8953e06042560b5ecdd7b231f4d8ab}
+      \strng{fullhash}{4b8953e06042560b5ecdd7b231f4d8ab}
+      \strng{bibnamehash}{4b8953e06042560b5ecdd7b231f4d8ab}
+      \strng{authorbibnamehash}{4b8953e06042560b5ecdd7b231f4d8ab}
+      \strng{authornamehash}{4b8953e06042560b5ecdd7b231f4d8ab}
+      \strng{authorfullhash}{4b8953e06042560b5ecdd7b231f4d8ab}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{MATEC Web of Conferences, open access proceedings in Materials science, Engineering and Chemistry}
+      \field{issn}{2261-236X}
+      \field{journaltitle}{MATEC Web of Conferences}
+      \field{title}{Fully automatic CNC machining production system}
+      \field{volume}{108}
+      \field{year}{2017}
+      \field{pages}{04002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/matecconf/201710804002
+      \endverb
+      \verb{file}
+      \verb Lee, Tsai-Lin et al. 2017 - Fully automatic CNC machining production:Attachments/Lee, Tsai-Lin et al. 2017 - Fully automatic CNC machining production.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{Li.2015}{article}{}
       \name{author}{4}{}{%
         {{hash=5d775948fabdacd6af277b3ade48b5c3}{%
@@ -1820,6 +1971,49 @@
       \range{pages}{12}
       \verb{doi}
       \verb 10.1007/s10845-013-0812-4
+      \endverb
+    \endentry
+    \entry{Li.2015c}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ebdd70eedda3ca4e1accef8b48bdac73}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yingguang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6900901c831e5b94e2e392839456080c}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Chen-Han},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=96fe8f208b55d92c50a3f721161e0040}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa46bf71d7493c3b5759f005ffc5f2f3}
+      \strng{fullhash}{fa46bf71d7493c3b5759f005ffc5f2f3}
+      \strng{bibnamehash}{fa46bf71d7493c3b5759f005ffc5f2f3}
+      \strng{authorbibnamehash}{fa46bf71d7493c3b5759f005ffc5f2f3}
+      \strng{authornamehash}{fa46bf71d7493c3b5759f005ffc5f2f3}
+      \strng{authorfullhash}{fa46bf71d7493c3b5759f005ffc5f2f3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0954-4054}
+      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part B: Journal of Engineering Manufacture}
+      \field{number}{7}
+      \field{title}{From computer-aided to intelligent machining: Recent advances in computer numerical control machining research}
+      \field{volume}{229}
+      \field{year}{2015}
+      \field{pages}{1087\bibrangedash 1103}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1177/0954405414560622
+      \endverb
+      \verb{file}
+      \verb Li, Lee et al. 2015 - From computer-aided to intelligent machining:Attachments/Li, Lee et al. 2015 - From computer-aided to intelligent machining.pdf:application/pdf
       \endverb
     \endentry
     \entry{Lin.2023}{article}{}
@@ -1973,6 +2167,42 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/2075-4701/9/7/725
+      \endverb
+    \endentry
+    \entry{Nee.2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b3604a39c6bc91d6f9eb3e0a91070a56}{%
+           family={Nee},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelimb Y.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{2}{%
+        {Springer London}%
+        {Imprint: Springer}%
+      }
+      \strng{namehash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{fullhash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{bibnamehash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{authorbibnamehash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{authornamehash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{authorfullhash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st ed. 2015}
+      \field{isbn}{978-1-4471-4669-8}
+      \field{title}{Handbook of Manufacturing Engineering and Technology}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1007/978-1-4471-4670-4
+      \endverb
+      \verb{file}
+      \verb Nee 2015 - Handbook of Manufacturing Engineering:Attachments/Nee 2015 - Handbook of Manufacturing Engineering.pdf:application/pdf
       \endverb
     \endentry
     \entry{Nonoyama.2022}{article}{}
@@ -2382,6 +2612,53 @@
       \verb https://www.mdpi.com/1996-1073/13/11/2730
       \endverb
     \endentry
+    \entry{Selvi.2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7450199c113f618525b71e2ad7681d9a}{%
+           family={Selvi},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5679db57d4b494a6de5f3443948b9c71}{%
+           family={Vishvaksenan},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc466dd5bea9b9b2a95c9617d266ff68}{%
+           family={Rajasekar},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{fullhash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{bibnamehash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{authorbibnamehash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{authornamehash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{authorfullhash}{9ee5290791b19a907ea91d03bb31700f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cold Metal Transfer technology has revolutionized the welding of dissimilar metals and thicker materials by producing improved weld bead aesthetics wi$\ldots$}
+      \field{issn}{2214-9147}
+      \field{journaltitle}{2214-9147}
+      \field{number}{1}
+      \field{title}{Cold metal transfer (CMT) technology - An overview}
+      \field{volume}{14}
+      \field{year}{2018}
+      \field{pages}{28\bibrangedash 44}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.dt.2017.08.002
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214914717301022
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214914717301022
+      \endverb
+    \endentry
     \entry{Sherwani.2020}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=74afc8eac3125f8a5ba2005650aa5d5b}{%
@@ -2768,6 +3045,71 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0959652615018247
+      \endverb
+    \endentry
+    \entry{Zhu.2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=ed3e04a023039e7beb6faacb3b110e2d}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shaowei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3df6343178b7a31999ff8a89b0acbb50}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Guofu},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ed61ab47e90d0f4512653e373abd12d7}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Shengfeng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2237ac672ee19b554d90b120ee48c600}{%
+           family={Lei},
+           familyi={L\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=301544f6966296a28173742434744b6e}{%
+           family={Zhuang},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ae057d405219c516a3255dc47a0c29f3}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Kaiyin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{89923e233f422beb315e4fa782632e56}
+      \strng{fullhash}{89923e233f422beb315e4fa782632e56}
+      \strng{bibnamehash}{89923e233f422beb315e4fa782632e56}
+      \strng{authorbibnamehash}{89923e233f422beb315e4fa782632e56}
+      \strng{authornamehash}{89923e233f422beb315e4fa782632e56}
+      \strng{authorfullhash}{89923e233f422beb315e4fa782632e56}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents an integrated geometric error modeling, identification and compensation method for machine tools. Regarding a machine tool as a ri$\ldots$}
+      \field{issn}{0890-6955}
+      \field{journaltitle}{International Journal of Machine Tools and Manufacture}
+      \field{number}{1}
+      \field{title}{Integrated geometric error modeling, identification and compensation of CNC machine tools}
+      \field{volume}{52}
+      \field{year}{2012}
+      \field{pages}{24\bibrangedash 29}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.ijmachtools.2011.08.011
+      \endverb
+      \verb{file}
+      \verb Zhu, Ding et al. 2012 - Integrated geometric error modeling:Attachments/Zhu, Ding et al. 2012 - Integrated geometric error modeling.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0890695511001490
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0890695511001490
       \endverb
     \endentry
   \enddatalist
