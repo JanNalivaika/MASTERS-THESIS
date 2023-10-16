@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  12 OCT 2023 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  16 OCT 2023 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -832,6 +832,9 @@ with kernel methods
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
 tikz/libraries\tikzexternalshared.code.tex))
+\openout3 = `main.auxlock'.
+
+
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.st
 y
 Package: mdframed 2013/07/01 1.9b: mdframed
@@ -1429,7 +1432,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count432
@@ -1541,18 +1544,18 @@ File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count508
 )
-Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
-Package biblatex Info: ... file 'authoryear-comp.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
-(C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\authory
-ear-comp.bbx
-File: authoryear-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
+(C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric
+-comp.bbx
+File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
 
-(C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\authory
-ear.bbx
-File: authoryear.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+(C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric
+.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -1562,23 +1565,26 @@ File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count509
 \c@bbx:relatedtotal=\count510
 )))
-Package biblatex Info: Trying to load citation style 'authoryear-comp'...
-Package biblatex Info: ... file 'authoryear-comp.cbx' found.
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-(C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\authory
-ear-comp.cbx
-File: authoryear-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+(C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric
+-comp.cbx
+File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count511
+\c@cbx@tempcntb=\count512
+\c@cbx@tempcntc=\count513
+\c@cbx@tempcntd=\count514
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\footcites'.
-Package biblatex Info: Redefining '\footcitetexts'.
 Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
@@ -1599,9 +1605,6 @@ Package biblatex Info: ... and expl3
 pl3.sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defin
-ed, overwriting on input line 4862.
-
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/excludeonly\excludeo
 nly.sty
 Package: excludeonly 2003/03/14 v1.0 eponymous command opposite to \includeonly
@@ -1649,10 +1652,10 @@ Package: fcprefix 2012/09/28
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser
 .sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count511
+\fc@digit@counter=\count515
 ))
-\c@padzeroesN=\count512
-\fc@tmpcatcode=\count513
+\c@padzeroesN=\count516
+\fc@tmpcatcode=\count517
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fc-english.
 def
@@ -1674,35 +1677,35 @@ File: fc-germanb.def 2013/08/17
 .def
 File: fc-ngermanb.def 2013/08/17
 ))
-\@DT@modctr=\count514
-\@ordinalctr=\count515
-\@orgargctr=\count516
-\@strctr=\count517
-\@tmpstrctr=\count518
-\@DT@loopN=\count519
-\@DT@X=\count520
+\@DT@modctr=\count518
+\@ordinalctr=\count519
+\@orgargctr=\count520
+\@strctr=\count521
+\@tmpstrctr=\count522
+\@DT@loopN=\count523
+\@DT@X=\count524
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-de
 faults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count521
-\@month=\count522
-\@year=\count523
-\c@HOUR=\count524
-\c@HOURXII=\count525
-\c@MINUTE=\count526
-\c@TOHOUR=\count527
-\c@TOMINUTE=\count528
-\c@SECOND=\count529
-\currenthour=\count530
-\currentminute=\count531
-\currentsecond=\count532
+\@day=\count525
+\@month=\count526
+\@year=\count527
+\c@HOUR=\count528
+\c@HOURXII=\count529
+\c@MINUTE=\count530
+\c@TOHOUR=\count531
+\c@TOMINUTE=\count532
+\c@SECOND=\count533
+\currenthour=\count534
+\currentminute=\count535
+\currentsecond=\count536
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count533
-\dayofyear=\count534
-\dayofweek=\count535
+\@dtctr=\count537
+\dayofyear=\count538
+\dayofweek=\count539
 LaTeX Info: Redefining \today on input line 736.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/datetime\dt-ngerman.
@@ -1720,24 +1723,24 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.
 sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-\c@blindtext=\count536
-\c@Blindtext=\count537
-\c@blind@countparstart=\count538
-\blind@countxx=\count539
-\blindtext@numBlindtext=\count540
-\blind@countyy=\count541
-\c@blindlist=\count542
-\c@blindlistlevel=\count543
-\c@blindlist@level=\count544
-\blind@listitem=\count545
-\c@blind@listcount=\count546
-\c@blind@levelcount=\count547
-\blind@mathformula=\count548
-\blind@Mathformula=\count549
-\c@blind@randomcount=\count550
-\c@blind@randommax=\count551
-\c@blind@pangramcount=\count552
-\c@blind@pangrammax=\count553
+\c@blindtext=\count540
+\c@Blindtext=\count541
+\c@blind@countparstart=\count542
+\blind@countxx=\count543
+\blindtext@numBlindtext=\count544
+\blind@countyy=\count545
+\c@blindlist=\count546
+\c@blindlistlevel=\count547
+\c@blindlist@level=\count548
+\blind@listitem=\count549
+\c@blind@listcount=\count550
+\c@blind@levelcount=\count551
+\blind@mathformula=\count552
+\blind@Mathformula=\count553
+\c@blind@randomcount=\count554
+\c@blind@randommax=\count555
+\c@blind@pangramcount=\count556
+\c@blind@pangrammax=\count557
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.st
 y
@@ -1761,10 +1764,10 @@ Package: titletoc 2021/07/05 v2.14 TOC entries
 t.sty
 Package: pdfcomment 2018/11/01 pdfcomment.sty v2.4a - Josef Kleber (C) 2008-201
 2, 2015-2016, 2018
-\c@pc@count@i=\count554
-\c@pc@count@ii=\count555
-\c@pc@count@iii=\count556
-\c@pc@count@iv=\count557
+\c@pc@count@i=\count558
+\c@pc@count@ii=\count559
+\c@pc@count@iii=\count560
+\c@pc@count@iv=\count561
 \pc@mathannot@box=\box88
 \pc@nullbox=\box89
 \pc@dima=\skip156
@@ -1821,7 +1824,7 @@ Package zref Info: New property list: savepos on input line 79.
 Package zref Info: New property: posx on input line 81.
 Package zref Info: New property: posy on input line 82.
 )
-\c@zref@unique=\count558
+\c@zref@unique=\count562
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.st
 y
@@ -1830,15 +1833,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/marginnote\marginnot
 e.sty
 Package: marginnote 2018/08/09 1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count559
+\c@mn@abspage=\count563
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/soulpos\soulpos.sty
 Package: soulpos 2021/10/15 v1.2 Fancy underlining
-\ulp@subcnt=\count560
-\ulp@cnt=\count561
+\ulp@subcnt=\count564
+\ulp@cnt=\count565
 \ulp@out=\write5
 \ulp@in=\read5
 \ulwidth=\dimen323
@@ -1865,11 +1868,11 @@ Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
 titlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count562
+\c@section@level=\count566
 )
 \@linkdim=\dimen324
-\Hy@linkcounter=\count563
-\Hy@pagecounter=\count564
+\Hy@linkcounter=\count567
+\Hy@pagecounter=\count568
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
@@ -1880,7 +1883,7 @@ Now handling font encoding PD1 ...
 y
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count565
+\Hy@SavedSpaceFactor=\count569
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
@@ -1901,7 +1904,7 @@ Package hyperref Info: Plain pages OFF on input line 4182.
 Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4434.
-\c@Hy@tempcnt=\count566
+\c@Hy@tempcnt=\count570
 LaTeX Info: Redefining \url on input line 4772.
 \XeTeXLinkMargin=\dimen325
 
@@ -1913,7 +1916,7 @@ alc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count567
+\Fld@menulength=\count571
 \Field@Width=\dimen326
 \Fld@charsize=\dimen327
 Package hyperref Info: Hyper figures OFF on input line 6051.
@@ -1929,17 +1932,17 @@ y
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count568
-\c@Item=\count569
-\c@Hfootnote=\count570
+\Hy@abspage=\count572
+\c@Item=\count573
+\c@Hfootnote=\count574
 )
 Package hyperref Info: Driver: hpdftex.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2023-07-08 v7.01b Hyperref driver for pdfTeX
-\HyAnn@Count=\count571
-\Fld@listcount=\count572
-\c@bookmark@seq@number=\count573
+\HyAnn@Count=\count575
+\Fld@listcount=\count576
+\c@bookmark@seq@number=\count577
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerun
 filecheck.sty
@@ -1993,8 +1996,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen335
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count574
-\c@continuedfloat=\count575
+\c@caption@flags=\count578
+\c@continuedfloat=\count579
 Package caption Info: hyperref package is loaded.
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
@@ -2029,7 +2032,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count576
+\c@su@anzahl=\count580
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-fp
 .sty
@@ -2040,19 +2043,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count577
+\actioncount=\count581
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count578
-\FP@xia=\count579
-\FP@xib=\count580
-\FP@xfa=\count581
-\FP@xfb=\count582
-\FP@rega=\count583
-\FP@regb=\count584
-\FP@regs=\count585
-\FP@times=\count586
+\FP@xs=\count582
+\FP@xia=\count583
+\FP@xib=\count584
+\FP@xfa=\count585
+\FP@xfb=\count586
+\FP@rega=\count587
+\FP@regb=\count588
+\FP@regs=\count589
+\FP@times=\count590
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -2071,7 +2074,7 @@ Package: fp-pas 1994/08/29
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count587
+\FPseed=\count591
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -2083,14 +2086,14 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks72
-\@dtl@tmpcount=\count588
+\@dtl@tmpcount=\count592
 \dtl@tmplength=\skip176
-\dtl@sortresult=\count589
-\@dtl@numgrpsepcount=\count590
-\@dtl@datatype=\count591
-\dtl@codeA=\count592
-\dtl@codeB=\count593
-\@dtl@foreach@level=\count594
+\dtl@sortresult=\count593
+\@dtl@numgrpsepcount=\count594
+\@dtl@datatype=\count595
+\dtl@codeA=\count596
+\dtl@codeB=\count597
+\@dtl@foreach@level=\count598
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/translator\translato
 r.sty
@@ -2105,7 +2108,7 @@ File: glossaries-english.ldf 2014/11/23 v1.0
 ossaries-german.ldf
 File: glossaries-german.ldf 2014/11/23 v1.0
 )
-\gls@level=\count595
+\gls@level=\count599
 \@gls@tmpb=\toks73
 \gls@tmplen=\skip177
 \glskeylisttok=\toks74
@@ -2132,17 +2135,17 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip180
 \LTpre=\skip181
 \LTpost=\skip182
-\LTchunksize=\count596
+\LTchunksize=\count600
 \LTcapwidth=\dimen336
 \LT@head=\box90
 \LT@firsthead=\box91
 \LT@foot=\box92
 \LT@lastfoot=\box93
 \LT@gbox=\box94
-\LT@cols=\count597
-\LT@rows=\count598
-\c@LT@tables=\count599
-\c@LT@chunks=\count600
+\LT@cols=\count601
+\LT@rows=\count602
+\c@LT@tables=\count603
+\c@LT@chunks=\count604
 \LT@p@ftn=\toks78
 )
 \glsdescwidth=\skip183
@@ -2155,7 +2158,7 @@ Package: glossary-super 2023/09/29 v4.53 (NLCT)
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\superta
 bular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count601
+\c@tracingst=\count605
 \ST@wd=\dimen337
 \ST@rightskip=\skip185
 \ST@leftskip=\skip186
@@ -2189,58 +2192,58 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
  (main.aux (source/task.aux) (source/abstract.aux)
-(source/latex_tutorial.aux) (source/chapter01.aux) (source/chapter02.aux)
-(source/chapter03.aux) (source/appendixA.aux))
+(source/chapter01.aux) (source/chapter02.aux) (source/chapter03.aux)
+(source/chapter04.aux) (source/chapter05.aux) (source/appendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 17.
-LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 1
-7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 2
+6.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mathdesign\mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 17.
-LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 1
-7.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 2
+6.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mathdesign\mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
 .mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count602
+\scratchcounter=\count606
 \scratchdimen=\dimen347
 \scratchbox=\box96
-\nofMPsegments=\count603
-\nofMParguments=\count604
+\nofMPsegments=\count607
+\nofMParguments=\count608
 \everyMPshowfont=\toks79
-\MPscratchCnt=\count605
+\MPscratchCnt=\count609
 \MPscratchDim=\dimen348
-\MPnumerator=\count606
-\makeMPintoPDFobject=\count607
+\MPnumerator=\count610
+\makeMPintoPDFobject=\count611
 \everyMPtoPDFconversion=\toks80
 )
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.
@@ -2267,7 +2270,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 17.
+or `english'. on input line 26.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\t
 ranslations-basic-dictionary-german.trsl
@@ -2275,7 +2278,7 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 17.
+or `german'. on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2344,67 +2347,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
-
-Package biblatex Warning: citation 'Bayerlein2018'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Bayerlein2016469'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Zaeh2018385'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Kleinwort2018658'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Kleinwort20189'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Kleinwort2018631'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'Heuss2018'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'iwb-Startseite'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-
-Package biblatex Warning: citation 'ISO.10218-2'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
-Package biblatex Info: Reference section=0 on input line 17.
-Package biblatex Info: Reference segment=0 on input line 17.
-Package hyperref Info: Link coloring OFF on input line 17.
-(main.out) (main.out)
+Package biblatex Info: ... file 'main.bbl' found.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 26.
+Package biblatex Info: Reference segment=0 on input line 26.
+Package hyperref Info: Link coloring OFF on input line 26.
+ (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
@@ -2418,125 +2366,135 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.50546pt on input line 23.
+(Font)              scaled to size 7.50546pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.6688pt on input line 23.
+(Font)              scaled to size 9.6688pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.6688pt on input line 23.
+(Font)              scaled to size 9.6688pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 21.1919pt on input line 23.
+(Font)              scaled to size 21.1919pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 17.65991pt on input line 23.
+(Font)              scaled to size 17.65991pt on input line 33.
+
+Overfull \hbox (1.46536pt too wide) in paragraph at lines 33--33
+[]\T1/phv/b/n/20 Methodischer Ansatz zur Anal-yse von Prozess-pa-ram-
+ []
+
+
+Overfull \hbox (10.82504pt too wide) in paragraph at lines 33--33
+\T1/phv/b/n/20 e-tern und Op-ti-mierung von Randbe-din-gun-gen in Mutli-
+ []
+
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.59595pt on input line 23.
+(Font)              scaled to size 10.59595pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 14.12793pt on input line 23.
+(Font)              scaled to size 14.12793pt on input line 33.
 LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line
- 23.
+ 33.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mathdesign/mdbch\ot1
 mdbch.fd
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Trying to load font information for OML+mdbch on input line
- 23.
+ 33.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mathdesign/mdbch\oml
 mdbch.fd
 File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
 )
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line
- 23.
+ 33.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mathdesign/mdbch\oms
 mdbch.fd
 File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
 )
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line
- 23.
+ 33.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mathdesign/mdbch\omx
 mdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 11.31592pt on input line 23.
+(Font)              scaled to size 11.31592pt on input line 33.
 LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 7.54395pt on input line 23.
+(Font)              scaled to size 7.54395pt on input line 33.
 LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 5.65796pt on input line 23.
+(Font)              scaled to size 5.65796pt on input line 33.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line
- 23.
+ 33.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mathdesign/mdbch\mda
 mdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line
- 23.
+ 33.
 
 (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/mathdesign/mdbch\mdb
 mdbch.fd
 File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
 )
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 11.52008pt on input line 23.
+(Font)              scaled to size 11.52008pt on input line 33.
 LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 7.68005pt on input line 23.
+(Font)              scaled to size 7.68005pt on input line 33.
 LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 5.76004pt on input line 23.
+(Font)              scaled to size 5.76004pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.59595pt on input line 23.
+(Font)              scaled to size 10.59595pt on input line 33.
 
-Overfull \hbox (4.76999pt too wide) in paragraph at lines 23--23
+Overfull \hbox (4.76999pt too wide) in paragraph at lines 33--33
 [] 
  []
 
@@ -2562,60 +2520,52 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 18.31332pt on input line 2.
 
-Overfull \hbox (8.26007pt too wide) in paragraph at lines 6--12
-[]\T1/bch/b/n/10.95 Titel der Bach-e-lor's The-sis/der Mas-ter's The-sis/der Se
-mester-ar-beit/des in-ter-diszi-plinären
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
  []
 
-
-Overfull \hbox (16.3083pt too wide) in paragraph at lines 6--12
-\T1/bch/b/n/10.95 (English Ti-tle of the Bach-e-lor's/Master's The-sis/Semester
- Thesis/In-ter-dis-ci-pli-na-ry Project:) 
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 3
-1.
-(C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1bch.fd
-File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
-)
 [3
 
 
 ]
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 43.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 10.51207pt on input line 43.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 43.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 43.
-LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 10.32576pt on input line 43.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 43.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 43.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 43.
-LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 10.51207pt on input line 43.
-LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 10.51207pt on input line 43.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 3
+7.
+ (C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1bch.fd
+File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-Overfull \hbox (24.0pt too wide) in paragraph at lines 41--33
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
+(Font)              scaled to size 10.32576pt on input line 54.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
+(Font)              scaled to size 10.51207pt on input line 54.
+)
+Overfull \hbox (24.0pt too wide) in paragraph at lines 52--43
 [] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 33.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 43.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.6688pt on input line 33.
+(Font)              scaled to size 9.6688pt on input line 43.
 [4]
 \openout2 = `source/abstract.aux'.
 
@@ -2633,258 +2583,166 @@ Package cleveref Info: loaded `english' language definitions on input line 10.
 ]) (main.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
 Package cleveref Info: loaded `english' language definitions on input line 3.
-)
-\tf@toc=\write7
-\openout7 = `main.toc'.
-
  [7
 
 
-] [8
+])
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
-]
-Using TeX to sort glossary entries---this may take a while
-[9
+Package cleveref Info: loaded `english' language definitions on input line 51.
+ [8]
 
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={acrony
+m}]. Rerun may be required (or you may have forgotten to use commands like \gls
+) on input line 55.
 
-] [10
+\openout2 = `source/chapter01.aux'.
 
-]
-\openout2 = `source/latex_tutorial.aux'.
-
- (source/latex_tutorial.tex
+(source/chapter01.tex
 Chapter 1.
 
-Overfull \hbox (2.21191pt too wide) in paragraph at lines 6--7
-[]\T1/bch/m/n/10.95 Die Ti-tel-seite wird in ./main.tex definiert. Der Stu-di-e
-n-ar-beit-styp wird durch Ein- und Auskom-
- []
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
-LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 11.73846pt on input line 8.
-
-Overfull \hbox (6.31824pt too wide) in paragraph at lines 12--13
-\T1/bch/m/n/10.95 ausgewählt und die Seite entsprechend der Ar-gu-mente gesetzt
-. Die Pro-fes-soren und Lehrstuhle
  []
 
 
-LaTeX Warning: Citation 'Bayerlein2018' on page 1 undefined on input line 21.
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
-
-LaTeX Warning: Citation 'Bayerlein2016469' on page 1 undefined on input line 21
-.
-
-
-LaTeX Warning: Citation 'Zaeh2018385' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Kleinwort2018658' on page 1 undefined on input line 21
-.
-
-
-LaTeX Warning: Citation 'Kleinwort20189' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Kleinwort2018631' on page 1 undefined on input line 21
-.
-
-
-LaTeX Warning: Citation 'Heuss2018' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'iwb-Startseite' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'ISO.10218-2' on page 1 undefined on input line 23.
-
-
-Overfull \hbox (0.23001pt too wide) in paragraph at lines 23--24
-[]\T1/bch/m/n/10.95 Normen wer-den als [] dargestellt. Im Bibtex-Export des ver
--wen-de-ten Lit-er-aturver-
- []
-
-
-Overfull \hbox (3.07707pt too wide) in paragraph at lines 23--24
-\T1/bch/m/n/10.95 wal-tungspro-gramm sind bes-timmte Ein-stel-lun-gen vorzunehm
-en. Doku-menten-typ ist ^^P  @book^^Q
  []
 
 [1
 
 
+
+
 ]
-<figures/ImagePNG.png, id=223, 289.08pt x 289.08pt>
-File: figures/ImagePNG.png Graphic file (type png)
-<use figures/ImagePNG.png>
-Package pdftex.def Info: figures/ImagePNG.png  used on input line 52.
-(pdftex.def)             Requested size: 113.81102pt x 113.8082pt.
-<figures/ImagePDF.pdf, id=225, 284.52756pt x 284.52756pt>
-File: figures/ImagePDF.pdf Graphic file (type pdf)
-<use figures/ImagePDF.pdf>
-Package pdftex.def Info: figures/ImagePDF.pdf  used on input line 57.
-(pdftex.def)             Requested size: 113.81102pt x 113.80899pt.
- (figures/ImageTIKZ.tikz) (figures/ImagePDFTEX.pdf_tex
-<figures/ImagePDFTEX.pdf, id=226, page=1, 284.52756pt x 284.52756pt>
-File: figures/ImagePDFTEX.pdf Graphic file (type pdf)
-<use figures/ImagePDFTEX.pdf, page 1>
-Package pdftex.def Info: figures/ImagePDFTEX.pdf , page1 used on input line 52.
-
-(pdftex.def)             Requested size: 113.81102pt x 113.80899pt.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.82996pt on input line 74.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.82996pt on input line 74.
-
-(figures/plot_two_dim.tikz
-PGFPlots: reading {figures/datatable2d.dat}
-Package pgfplots info on input line 17: Overriding colorspace to rgb due to xco
-lor configuration.
-
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 9.42993pt on input line 22.
-LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 6.60095pt on input line 22.
-LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 4.71497pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 9.60007pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 6.72005pt on input line 22.
-LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 4.80003pt on input line 22.
-) (figures/plot_three_dim.tikz
-Package pgfplots info on input line 22: Overriding colorspace to rgb due to xco
-lor configuration.
-PGFPlots: reading {figures/datatable3d.dat}
-Package pgfplots info on input line 24: Overriding colorspace to rgb due to xco
-lor configuration.
-))
-Package cleveref Info: loaded `english' language definitions on input line 50.
- [2]
-Package cleveref Info: loaded `english' language definitions on input line 50.
- [3{C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ly1/texnans
-i.enc} <./figures/ImagePNG.png> <./figures/ImagePDF.pdf> <./figures/ImagePDFTEX
-.pdf>]
-Package cleveref Info: loaded `english' language definitions on input line 50.
- [4]
-\openout2 = `source/chapter01.aux'.
-
- (source/chapter01.tex
-Chapter 2.
-[5
-
-
-
-])
-Package cleveref Info: loaded `english' language definitions on input line 51.
- [6]
+Package cleveref Info: loaded `english' language definitions on input line 37.
+ [2])
+Package cleveref Info: loaded `english' language definitions on input line 61.
+ [3]
 \openout2 = `source/chapter02.aux'.
 
- (source/chapter02.tex
-Chapter 3.
-[7
-
-
-
-])
-Package cleveref Info: loaded `english' language definitions on input line 52.
- [8]
-\openout2 = `source/chapter03.aux'.
-
- (source/chapter03.tex
-Chapter 4.
-[9
-
-
-
-])
-Package cleveref Info: loaded `english' language definitions on input line 53.
- [10]
-\openout2 = `source/appendixA.aux'.
-
- (source/appendixA.tex
-Appendix A.
-) [11
+ (source/chapter02.tex [4
 
 
 
 ]
-Package cleveref Info: loaded `english' language definitions on input line 58.
+Chapter 2.
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 45.
+ [6]
+Package cleveref Info: loaded `english' language definitions on input line 66.
+
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 80.
+ [8]
+Package cleveref Info: loaded `english' language definitions on input line 95.
+
+[9]
+Package cleveref Info: loaded `english' language definitions on input line 125.
+
+ [10]
+Package cleveref Info: loaded `english' language definitions on input line 150.
+
+ [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 173.
+
  [12]
-Using TeX to sort glossary entries---this may take a while
-
-LaTeX Warning: Empty bibliography on input line 66.
+Package cleveref Info: loaded `english' language definitions on input line 190.
 
 
-Overfull \hbox (6.94122pt too wide) in paragraph at lines 62--69
-[] 
+[13]
+Package cleveref Info: loaded `english' language definitions on input line 208.
+
+ [14]
+Package cleveref Info: loaded `english' language definitions on input line 226.
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 242.
+
+ [16]
+Package cleveref Info: loaded `english' language definitions on input line 258.
+
+
+[17]
+Package cleveref Info: loaded `english' language definitions on input line 282.
+
+ [18])
+Package cleveref Info: loaded `english' language definitions on input line 62.
+ [19]
+\openout2 = `source/chapter03.aux'.
+
+ (source/chapter03.tex [20
+
+
+
+]
+Chapter 3.
+) [21]
+\openout2 = `source/chapter04.aux'.
+
+ (source/chapter04.tex [22
+
+
+
+]
+Chapter 4.
+) [23]
+\openout2 = `source/chapter05.aux'.
+
+ (source/chapter05.tex [24
+
+
+
+]
+Chapter 5.
+) [25]
+\openout2 = `source/appendixA.aux'.
+
+ (source/appendixA.tex [26
+
+
+
+]
+Appendix A.
+) [27]
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
+. Rerun may be required (or you may have forgotten to use commands like \gls) o
+n input line 74.
+
+[28
+
+
+] [29]
+Overfull \hbox (29.67229pt too wide) in paragraph at lines 78--78
+\T1/bch/m/n/10.95 nolo-gies^^Q. In: \T1/bch/m/it/10.95 Ma-chines \T1/bch/m/n/10
+.95 8.1 (2020), p. 13. \T1/bch/m/sc/10.95 issn\T1/bch/m/n/10.95 : 2075-1702. \T
+1/bch/m/sc/10.95 doi\T1/bch/m/n/10.95 : []$10 . 3390 / machines8010013$[].
  []
 
-[13
+Package cleveref Info: loaded `english' language definitions on input line 78.
+[30]
+Package cleveref Info: loaded `english' language definitions on input line 81.
+ [31] [32
 
 
-
-] [14
-
-
-] [15] (main.aux
+] [33] (main.aux
 Package cleveref Info: loaded `english' language definitions on input line 24.
  (source/task.aux) (source/abstract.aux
 Package cleveref Info: loaded `english' language definitions on input line 3.
 )
-(source/latex_tutorial.aux) (source/chapter01.aux) (source/chapter02.aux)
-(source/chapter03.aux) (source/appendixA.aux)
+(source/chapter01.aux) (source/chapter02.aux) (source/chapter03.aux)
+(source/chapter04.aux) (source/chapter05.aux) (source/appendixA.aux)
 * soulpos - computing points - it may take a few seconds *
 \openout5 = `main.upb'.
 
@@ -2893,43 +2751,32 @@ Package cleveref Info: loaded `english' language definitions on input line 3.
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7F2DCAD041010A423B67C4CE318E3F42;1811.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 4BF2076052AFA8590E22CBDC3DEB7ABB;2455.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66307 strings out of 475247
- 1521025 string characters out of 5756376
- 2583156 words of memory out of 5000000
- 86625 multiletter control sequences out of 15000+600000
- 660449 words of font info for 165 fonts, out of 8000000 for 9000
+ 65072 strings out of 475247
+ 1493291 string characters out of 5756376
+ 2511811 words of memory out of 5000000
+ 85364 multiletter control sequences out of 15000+600000
+ 634045 words of font info for 122 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 109i,19n,131p,2381b,4249s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\z0041bmr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi643\e
-ctt1095.pk><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstre
-a/charter/bchb8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/bitstrea/charter/bchr8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX
-/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Users/z0041bmr/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/mathdesign/mdbch/md-chr7t.pfb><C:/Users/z0041bmr/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/z00
-41bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Use
-rs/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><
-C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8
-a.pfb>
-Output written on main.pdf (25 pages, 176031 bytes).
+ 109i,13n,131p,2510b,3109s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter
+/bchb8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstr
+ea/charter/bchr8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/bitstrea/charter/bchri8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKT
+eX/fonts/type1/mathdesign/mdbch/md-chr7t.pfb><C:/Users/z0041bmr/AppData/Local/P
+rograms/MiKTeX/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/z0041bmr/App
+Data/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/z0041b
+mr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/
+z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (41 pages, 222714 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

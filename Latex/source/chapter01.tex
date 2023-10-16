@@ -1,29 +1,48 @@
 % !TeX spellcheck = en_US
-\chapter{Kapitelname}%
-\blindtext%
-%
-%
-\section{Abschnittname}%
-\blindtext%
-%
-%
-\section{Abschnittname}%
-\blindtext%
-%
-%
-\subsection{Unterabschnittname}%
-\blindtext%
-%
-%
-\subsection{Unterabschnittname}%
-\blindtext%
-%
-%
-\subsection{Unterabschnittname}%
-\blindtext%
-%
-%
-\section{Abschnittname}%
-\blindtext%
-%
-%
+\chapter{Introduction}%
+
+\section{Motivation}%
+
+In the age of "Industrie 4.0", advanced technologies like digital twins, have greatly transformed industrial manufacturing \cite{Singh.2021}. A considerable amount of data can be gathered from various processes, like milling or 3D printing. By analyzing this data, it is possible to find new and optimized methods for efficient manufacturing \cite{Ghobakhloo.2020}. By doing so, a significant amount of resources, like time and money, can be saved while at the same time increasing the quality of the produced product \cite{Bibby.2018,Simonis.2016}.\newline
+Computer-Aided Manufacturing (CAM) has been introduced as a crucial tool to improve productivity and accuracy in creating customized products \cite{Feldhausen.2022}. CAM systems automate and optimize tasks such as machining, welding, and assembly \cite{LalitNarayan.2013b}. One of the key strengths of CAM lies in its precision and consistency, ensuring that intricate components are produced with minimal error. Furthermore, CAM systems contribute to increased efficiency by minimizing material waste and reducing production time~\cite{Dubovska.2014}. These capabilities play a significant role in achieving a carbon-neutral production process~\cite{Saxena.2020}. One of the most important areas of CAM is the calculation of the tool path in computer numerical control (CNC) machines as well as the movement and behavior of multi-axis industrial robots \cite{Pan}. \newline
+
+
+Manufacturing machines are the backbone of modern industrial processes \cite{Bi.2020}. These machines encompass a wide range of equipment, from CNC machining centers to 3D printers and automated assembly lines. Their primary ability lies in precision and efficiency. CNC machines, for instance, can repeatedly produce intricate parts with high accuracy, reducing human error and ensuring consistency \cite{Jia.2018}. \newline
+Industrial robots are a dominant part in the area of manufacturing as they can perform multi-axis movements that are needed to fulfill the customers wishes for individualized products~\cite{Sherwani.2020}. They are cheaper to acquire compared to CNC milling machines but have their own set of disadvantages \cite{Iglesias.2015}. One advantage is the wide adaptability. They allow for quick reconfiguration to produce different components or products, promoting flexibility in manufacturing \cite{Billard.2019}. Further, advancements in robotics and artificial intelligence (AI) have broadened their capabilities, enabling tasks that were once deemed too complex or hazardous for humans~\cite{Goel.2020}. \newline
+
+Achieving efficiency and sustainability in the current fast-changing environment requires a thorough analysis of the interdependent relationships between the manufactured part, process parameters, and boundary conditions that govern multi-axis robot programs \cite{Pan}. As the companies that work with industrial robots can place a strong emphasis on energy reduction, cost savings, or precision, optimizing these parameters is essential. CAM enables the simulation of the planned process, thus adapting any boundary conditions to fit the selected goals \cite{Kyratsis.2020,Maiti.2017}.
+This thesis is focused on a methodical approach for analyzing process parameters and optimizing boundary conditions in multi-axis robot programs \cite{Pan}. 
+
+\section{Problem Formulation}%
+Manufacturing systems employing industrial robots with redundant degrees of freedom offer enhanced flexibility and potential performance improvements. However, they also present numerous challenges that need to be addressed for efficient and reliable operation.
+
+One of the critical challenges in manufacturing systems with redundant degrees of freedom is singularity avoidance. Singularities occur when the robot manipulator loses control or achieves limited mobility due to certain configurations. These configurations can result in the loss of a degree of freedom or make the system highly sensitive to small changes, leading to unstable or unpredictable behavior. Advanced control algorithms and motion planning techniques are necessary to detect and avoid singularities, ensuring the system operates within safe and stable regions.
+
+Redundant degrees of freedom introduce complexities in controlling joint accelerations and jerks. Rapid changes in acceleration and jerk can cause mechanical stress, decrease system lifespan, and compromise precision. Proper trajectory planning and control schemes that consider joint acceleration and jerk limits are crucial to maintain smooth and controlled motion, reducing the risk of mechanical failures and ensuring accurate positioning.
+
+Extension:
+Redundant degrees of freedom can provide additional extension capabilities to industrial robots, allowing them to reach difficult-to-access areas. However, managing and controlling the extension can be challenging, particularly when precise positioning or maintaining stability is required. Accurate modeling, control algorithms, and calibration techniques are necessary to ensure proper extension control and to avoid issues related to overextension or underextension.
+
+Energy Use:
+Redundant degrees of freedom can increase energy consumption in manufacturing systems. Additional joints and actuators require more power, leading to higher energy costs and environmental impact. Efficient energy management strategies, such as optimizing control algorithms, utilizing regenerative braking, and incorporating energy-efficient components, are crucial to minimize energy use while maintaining system performance.
+
+Direction Changes:
+Redundant degrees of freedom offer increased flexibility in changing the direction of motion. However, abrupt and frequent direction changes can lead to mechanical stress, decreased precision, and increased energy consumption. Proper trajectory planning, smooth path generation, and optimized control algorithms are essential to manage direction changes effectively, ensuring smooth and controlled motion without compromising system performance.
+
+Transfer Time:
+Transfer time is another critical aspect affected by redundant degrees of freedom. Complex motion patterns required for utilizing redundant degrees of freedom can increase the time required to complete a task. Minimizing transfer time is crucial for improving production efficiency and throughput. Optimal path planning, motion optimization, and parallel processing techniques can be employed to reduce transfer time while leveraging redundant degrees of freedom effectively.
+
+Precision:
+Redundant degrees of freedom can enhance precision and accuracy in manufacturing systems. However, achieving and maintaining high precision can be challenging due to increased complexity and sensitivity to various factors. Calibration techniques, accurate modeling, feedback control, and error compensation algorithms are vital to ensure precise positioning and improve overall system accuracy.
+
+Maximum Load Capacity:
+Redundant degrees of freedom can influence the maximum load capacity of industrial robots. Increased complexity and additional joints can affect the robot's ability to handle heavy loads or maintain stability. Proper design considerations, such as structural reinforcement, joint torque and force limitations, and payload distribution, are necessary to ensure safe and reliable operation under maximum load conditions.
+
+Stiffness:
+The presence of redundant degrees of freedom can affect the stiffness of the manufacturing system. Increased flexibility due to redundant degrees of freedom may introduce compliance and reduce overall system stiffness. This can impact precision, accuracy, and stability. Careful design, utilization of appropriate materials, and control strategies that compensate for compliance can be employed to ensure the desired level of stiffness and system rigidity.
+\section{Objective}%
+The definition of the redundant constraints, mentioned in chapter \text{text}, does not affect the relative tool path as generated by the CAM software. As such, a methodical approach to optimize these constraints, without altering the toolpath, in terms of efficiency, speed, and energy demand of the machine is required. Currently, no literature provides a comprehensive analysis or methodology regarding this global optimization problem.
+This work aims to attain a methodical approach that analyzes a set of constraints and evaluates the influence of those constraints on a set of defined process variables. It will focus on a 6-axis robot with a rotary-tilt table, whereby the results should also be transferable to other machines. Furthermore, the experiments and validations will be limited to the manufacturing processes of WAAM and milling. 
+
+
+First, the influence of the constraints on relevant process variables (energy demand, joint turnover, speed and acceleration peaks, total joint movements) in a manufacturing process such as WAAM will be assessed. Subsequently, a process evaluation will be elaborated in the CAM software, by means of which the process quality can be determined. Depending on the respective process variables, approximation methods or machine learning methods will be investigated for the process evaluation. The process quality as a one-dimensional variable will be determined by weighting the process variables. Subsequently, a method for the optimization of the constraints will be elaborated. This task corresponds to an optimization problem in which the process quality will be maximized by selecting suitable constraints. 

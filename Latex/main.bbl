@@ -1,0 +1,1384 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Abdulhameed.2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=985502bc8c4c256603bcc9951cae149c}{%
+           family={Abdulhameed},
+           familyi={A\bibinitperiod},
+           given={Osama},
+           giveni={O\bibinitperiod}}}%
+        {{hash=d9f20d9c9799de3977f003130cfc1b0b}{%
+           family={Al-Ahmari},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Abdulrahman},
+           giveni={A\bibinitperiod}}}%
+        {{hash=22e7f05d7307d3dc0ff93af2b975dd89}{%
+           family={Ameen},
+           familyi={A\bibinitperiod},
+           given={Wadea},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a4809c15119458197d19a5c1688aad4c}{%
+           family={Mian},
+           familyi={M\bibinitperiod},
+           given={Syed\bibnamedelima Hammad},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc9c04431002f086e4053c57bb80b162}
+      \strng{fullhash}{cc9c04431002f086e4053c57bb80b162}
+      \strng{bibnamehash}{cc9c04431002f086e4053c57bb80b162}
+      \strng{authorbibnamehash}{cc9c04431002f086e4053c57bb80b162}
+      \strng{authornamehash}{cc9c04431002f086e4053c57bb80b162}
+      \strng{authorfullhash}{cc9c04431002f086e4053c57bb80b162}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Additive manufacturing is a recent trend in production processes owing to its many benefits. It can be defined as the process of producing parts through the deposition of material in a layer-by-lay...}
+      \field{journaltitle}{Advances in Mechanical Engineering}
+      \field{number}{2}
+      \field{title}{Additive manufacturing: Challenges, trends, and applications}
+      \field{volume}{11}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1177/1687814018822880
+      \endverb
+    \endentry
+    \entry{Amanullah.2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=16525dc3b2665def4f851dffb14a7e1b}{%
+           family={Amanullah},
+           familyi={A\bibinitperiod},
+           given={A.N.M.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=82c3d19ca834f8b55cc258f924c0083d}{%
+           family={Murshiduzzaman},
+           familyi={M\bibinitperiod}}}%
+        {{hash=8ba3a4a7c353e7787cec41b69ecd574a}{%
+           family={Saleh},
+           familyi={S\bibinitperiod},
+           given={Tanveer},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fe29abfbab9fd9ed83d9097429f1fa0b}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Raisuddin},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{90cbb7a9e874f42b6123457735142297}
+      \strng{fullhash}{90cbb7a9e874f42b6123457735142297}
+      \strng{bibnamehash}{90cbb7a9e874f42b6123457735142297}
+      \strng{authorbibnamehash}{90cbb7a9e874f42b6123457735142297}
+      \strng{authornamehash}{90cbb7a9e874f42b6123457735142297}
+      \strng{authorfullhash}{90cbb7a9e874f42b6123457735142297}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1877-7058}
+      \field{journaltitle}{1877-7058}
+      \field{title}{Design and Development of a Hybrid Machine Combining Rapid Prototyping and CNC Milling Operation}
+      \field{volume}{184}
+      \field{year}{2017}
+      \field{pages}{163\bibrangedash 170}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.proeng.2017.04.081
+      \endverb
+    \endentry
+    \entry{Bandyopadhyay.2020}{book}{}
+      \name{author}{1}{}{%
+        {{hash=14021f8564f7cc82b9d61c8b827e564b}{%
+           family={Bandyopadhyay},
+           familyi={B\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Milton}%
+      }
+      \list{publisher}{1}{%
+        {Taylor {\&} Francis Group}%
+      }
+      \strng{namehash}{14021f8564f7cc82b9d61c8b827e564b}
+      \strng{fullhash}{14021f8564f7cc82b9d61c8b827e564b}
+      \strng{bibnamehash}{14021f8564f7cc82b9d61c8b827e564b}
+      \strng{authorbibnamehash}{14021f8564f7cc82b9d61c8b827e564b}
+      \strng{authornamehash}{14021f8564f7cc82b9d61c8b827e564b}
+      \strng{authorfullhash}{14021f8564f7cc82b9d61c8b827e564b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The field of additive manufacturing is growing dynamically as the interest is persisting from manufacturing sector, including other sectors as well. Conceptually, additive manufacturing is a way to build parts without using any part-specific tooling or dies from the computer-aided design (CAD) file of the part. Second edition of Additive Manufacturing highlights the latest advancements in the field, taking an application oriented approach. It includes new material on traditional polymer based rapid prototyping technologies, additive manufacturing of metals and alloys including related design issues. Each chapter comes with suggested reading, questions for instructors and PowerPoint slides.}
+      \field{edition}{2nd ed.}
+      \field{isbn}{9780429881022}
+      \field{title}{Additive Manufacturing, Second Edition}
+      \field{year}{2020}
+    \endentry
+    \entry{Bi.2020}{book}{}
+      \name{author}{2}{}{%
+        {{hash=93c8b1c5accaeea2d4c801365e52e2ba}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Zhuming},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=5adffbd7c706ebdbab61a2359c25cefb}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaoqin},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{location}{2}{%
+        {Hoboken, New Jersey}%
+        {West Sussex, England}%
+      }
+      \list{publisher}{2}{%
+        {Wiley}%
+        {ASME Press}%
+      }
+      \strng{namehash}{a6f294fd01cdd407752db15640c48140}
+      \strng{fullhash}{a6f294fd01cdd407752db15640c48140}
+      \strng{bibnamehash}{a6f294fd01cdd407752db15640c48140}
+      \strng{authorbibnamehash}{a6f294fd01cdd407752db15640c48140}
+      \strng{authornamehash}{a6f294fd01cdd407752db15640c48140}
+      \strng{authorfullhash}{a6f294fd01cdd407752db15640c48140}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{<}b{>}Broad coverage of digital product creation, from design to manufacture and process optimization{<}/b{>}{<}/p{>} This book addresses the need to provide up-to-date coverage of current CAD/CAM usage and implementation. It covers, in one source, the entire design-to-manufacture process, reflecting the industry trend to further integrate CAD and CAM into a single, unified process. It also updates the computer aided design theory and methods in modern manufacturing systems and examines the most advanced computer-aided tools used in digital manufacturing.{<}/p{>} {<}i{>}Computer Aided Design and Manufacturing {<}/i{>}consists of three parts. The first part on Computer Aided Design (CAD) offers the chapters on Geometric Modelling; Knowledge Based Engineering; Platforming Technology; Reverse Engineering; and Motion Simulation. The second part on Computer Aided Manufacturing (CAM) covers Group Technology and Cellular Manufacturing; Computer Aided Fixture Design; Computer Aided Manufacturing; Simulation of Manufacturing Processes; and Computer Aided Design of Tools, Dies and Molds (TDM). The final part includes the chapters on Digital Manufacturing; Additive Manufacturing; and Design for Sustainability. The book is also featured for{<}/p{>} {<}ul{>} {<}li{>}being uniquely structured to classify and align engineering disciplines and computer aided technologies from the perspective of the design needs in whole product life cycles,{<}/li{>} {<}li{>}utilizing a comprehensive Solidworks package (add-ins, toolbox, and library) to showcase the most critical functionalities of modern computer aided tools, and{<}/li{>} {<}li{>}presenting real-world design projects and case studies so that readers can gain CAD and CAM problem-solving skills upon the CAD/CAM theory.{<}/li{>} {<}/ul{>} {<}i{>}Computer Aided Design and Manufacturing {<}/i{>}is an ideal textbook for undergraduate and graduate students in mechanical engineering, manufacturing engineering, and industrial engineering. It can also be used as a technical reference for researchers and engineers in mechanical and manufacturing engineering or computer-aided technologies.{<}/p{>}}
+      \field{edition}{1st edition}
+      \field{isbn}{9781119534211}
+      \field{series}{Wiley-ASME press series}
+      \field{title}{Computer aided design and manufacturing}
+      \field{year}{2020}
+    \endentry
+    \entry{Bibby.2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c54394baba84e5e37b8134fbc3d985f2}{%
+           family={Bibby},
+           familyi={B\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+        {{hash=79c1ffba47fa83ec82f5b9c593eb2b7a}{%
+           family={Dehe},
+           familyi={D\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d699cab32d6a8acb7dbb7ba3d2f00f09}
+      \strng{fullhash}{d699cab32d6a8acb7dbb7ba3d2f00f09}
+      \strng{bibnamehash}{d699cab32d6a8acb7dbb7ba3d2f00f09}
+      \strng{authorbibnamehash}{d699cab32d6a8acb7dbb7ba3d2f00f09}
+      \strng{authornamehash}{d699cab32d6a8acb7dbb7ba3d2f00f09}
+      \strng{authorfullhash}{d699cab32d6a8acb7dbb7ba3d2f00f09}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{1. The future of manufacturing organisations is being transformed globally by the development of a more digitalised environment, where value chains are connected and production systems are increasi...}
+      \field{journaltitle}{Production Planning {\&} Control}
+      \field{number}{12}
+      \field{title}{Defining and assessing industry 4.0 maturity levels -- case of the defence sector}
+      \field{volume}{29}
+      \field{year}{2018}
+      \field{pages}{1030\bibrangedash 1043}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/09537287.2018.1503355
+      \endverb
+      \verb{file}
+      \verb Bibby, Dehe 2018 - Defining and assessing industry 4.0:Attachments/Bibby, Dehe 2018 - Defining and assessing industry 4.0.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Billard.2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3cd4f444d840eee2580ddf886f20b1c8}{%
+           family={Billard},
+           familyi={B\bibinitperiod},
+           given={Aude},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d8a72b3bd29e9244932e7c10628e6b03}{%
+           family={Kragic},
+           familyi={K\bibinitperiod},
+           given={Danica},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{fullhash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{bibnamehash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{authorbibnamehash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{authornamehash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{authorfullhash}{17a114522a9a892d516c37aaa1200bfa}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dexterous manipulation is one of the primary goals in robotics. Robots with this capability could sort and package objects, chop vegetables, and fold clothes. As robots come to work side by side with humans, they must also become human-aware. Over the past decade, research has made strides toward these goals. Progress has come from advances in visual and haptic perception and in mechanics in the form of soft actuators that offer a natural compliance. Most notably, immense progress in machine learning has been leveraged to encapsulate models of uncertainty and to support improvements in adaptive and robust control. Open questions remain in terms of how to enable robots to deal with the most unpredictable agent of all, the human.}
+      \field{journaltitle}{Science}
+      \field{number}{6446}
+      \field{title}{Trends and challenges in robot manipulation}
+      \field{volume}{364}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1126/science.aat8414
+      \endverb
+      \verb{file}
+      \verb Billard, Kragic 2019 - Trends and challenges in robot:Attachments/Billard, Kragic 2019 - Trends and challenges in robot.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Calleja.2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1e952f60475fce06efca781e681c73ce}{%
+           family={Calleja},
+           familyi={C\bibinitperiod},
+           given={Amaia},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a653c1f64ea6e66b58448cc83fc1a2c0}{%
+           family={Bo},
+           familyi={B\bibinitperiod},
+           given={Pengbo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bcfbec9b3a3156d2043f7d089f82103e}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={Haizea},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2552a9dc62b60d7f2e9c21a7fdec8a58}{%
+           family={Bartoň},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ce6194a2798dc2ee1de627a7623c9dfe}{%
+           family={{López de Lacalle, Luis Norberto}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{bffa1a85f346d2c224139c9148544090}
+      \strng{fullhash}{bffa1a85f346d2c224139c9148544090}
+      \strng{bibnamehash}{bffa1a85f346d2c224139c9148544090}
+      \strng{authorbibnamehash}{bffa1a85f346d2c224139c9148544090}
+      \strng{authornamehash}{bffa1a85f346d2c224139c9148544090}
+      \strng{authorfullhash}{bffa1a85f346d2c224139c9148544090}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A new method for 5-axis flank computer numerically controlled (CNC) machining is proposed. A set of tappered ball-end-mill tools (aka conical milling tools) is given as the input and the flank milling paths within user-defined tolerance are returned. Thespace of lines that admit tangential motion of an associated truncated cone along a general, doubly curved, free-form surface is explored. These lines serve as discrete positions of conical axes in 3D space. Spline surface fitting is used to generate a ruled surface that represents a single continuous sweep of a rigid conical milling tool. An optimization-based approach is then applied to globally minimize the error between the design surface and the conical envelope. The milling simulations are validated with physical experiments on two benchmark industrial datasets, reducing significantly the execution times while preserving or even reducing the milling error when compared to the state-of-the-art industrial software.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{5-8}
+      \field{title}{Highly accurate 5-axis flank CNC machining with conical tools}
+      \field{volume}{97}
+      \field{year}{2018}
+      \field{pages}{1605\bibrangedash 1615}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s00170-018-2033-7
+      \endverb
+      \verb{file}
+      \verb Calleja, Bo et al. 2018 - Highly accurate 5-axis flank CNC:Attachments/Calleja, Bo et al. 2018 - Highly accurate 5-axis flank CNC.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-018-2033-7
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-018-2033-7
+      \endverb
+    \endentry
+    \entry{Dilberoglu.2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9c79937e4136dd4a2a6a72af1b7f7aa7}{%
+           family={Dilberoglu},
+           familyi={D\bibinitperiod},
+           given={Ugur\bibnamedelima M.},
+           giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d5a42ac5bb7f81fe876a38a2046aa5ea}{%
+           family={Gharehpapagh},
+           familyi={G\bibinitperiod},
+           given={Bahar},
+           giveni={B\bibinitperiod}}}%
+        {{hash=059613bef460dd2be759e8642a689e8f}{%
+           family={Yaman},
+           familyi={Y\bibinitperiod},
+           given={Ulas},
+           giveni={U\bibinitperiod}}}%
+        {{hash=fd8aa16151621e3dd77f301a9a475158}{%
+           family={Dolen},
+           familyi={D\bibinitperiod},
+           given={Melik},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d064cce84551d56eeab7a21964f59ed}
+      \strng{fullhash}{3d064cce84551d56eeab7a21964f59ed}
+      \strng{bibnamehash}{3d064cce84551d56eeab7a21964f59ed}
+      \strng{authorbibnamehash}{3d064cce84551d56eeab7a21964f59ed}
+      \strng{authornamehash}{3d064cce84551d56eeab7a21964f59ed}
+      \strng{authorfullhash}{3d064cce84551d56eeab7a21964f59ed}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The latest industrial revolution, Industry 4.0, is encouraging the integration of intelligent production systems and advanced information technologies$\ldots$}
+      \field{issn}{2351-9789}
+      \field{journaltitle}{Procedia Manufacturing}
+      \field{title}{The Role of Additive Manufacturing in the Era of Industry 4.0}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{pages}{545\bibrangedash 554}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.promfg.2017.07.148
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2351978917303529
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2351978917303529
+      \endverb
+    \endentry
+    \entry{Dubovska.2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=acf8c8cb6ecf6bb6acad5211102dee91}{%
+           family={Dubovska},
+           familyi={D\bibinitperiod},
+           given={Rozmarina},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9ee05bb58941d7adc5cdca4af043b05b}{%
+           family={Jambor},
+           familyi={J\bibinitperiod},
+           given={Jaroslav},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2c5012da92c674cbfdb9ef8ca40e1337}{%
+           family={Majerik},
+           familyi={M\bibinitperiod},
+           given={Jozef},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ff879be89ff3c14aac009d569f10950}
+      \strng{fullhash}{5ff879be89ff3c14aac009d569f10950}
+      \strng{bibnamehash}{5ff879be89ff3c14aac009d569f10950}
+      \strng{authorbibnamehash}{5ff879be89ff3c14aac009d569f10950}
+      \strng{authornamehash}{5ff879be89ff3c14aac009d569f10950}
+      \strng{authorfullhash}{5ff879be89ff3c14aac009d569f10950}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents improved methodology of the virtual simulation of turning and milling technological process of the selected components in the grap$\ldots$}
+      \field{issn}{1877-7058}
+      \field{journaltitle}{1877-7058}
+      \field{title}{Implementation of CAD/CAM System CATIA V5 in Simulation of CNC Machining Process}
+      \field{volume}{69}
+      \field{year}{2014}
+      \field{pages}{638\bibrangedash 645}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.proeng.2014.03.037
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877705814002835
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877705814002835
+      \endverb
+    \endentry
+    \entry{Feldhausen.2022}{article}{}
+      \name{author}{8}{}{%
+        {{hash=1fcc6f8faf4c012f8812c14e48592619}{%
+           family={Feldhausen},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8ad1f9a5dfdc7a9a4751ff8e298dcb68}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Lauren},
+           giveni={L\bibinitperiod}}}%
+        {{hash=576d0f3a2743c22f2fa5e73c7b1d17dc}{%
+           family={Saleeby},
+           familyi={S\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b9433f98ba57277927bb9565006e5522}{%
+           family={Burl},
+           familyi={B\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=534f01189692eecff628019365739686}{%
+           family={Post},
+           familyi={P\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7295faa5948140f837898d5ff44d3aab}{%
+           family={MacDonald},
+           familyi={M\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7e01c8508ff6e485b9b078f512528ee5}{%
+           family={Saldana},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9786ff23f0de904481b8940f51cadf01}{%
+           family={Love},
+           familyi={L\bibinitperiod},
+           given={Lonnie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a39fb9c2ced0266507b84ea8862589c2}
+      \strng{fullhash}{a39fb9c2ced0266507b84ea8862589c2}
+      \strng{bibnamehash}{a39fb9c2ced0266507b84ea8862589c2}
+      \strng{authorbibnamehash}{a39fb9c2ced0266507b84ea8862589c2}
+      \strng{authornamehash}{a39fb9c2ced0266507b84ea8862589c2}
+      \strng{authorfullhash}{a39fb9c2ced0266507b84ea8862589c2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2214-8604}
+      \field{journaltitle}{Additive Manufacturing}
+      \field{title}{Review of Computer-Aided Manufacturing (CAM) strategies for hybrid directed energy deposition}
+      \field{volume}{56}
+      \field{year}{2022}
+      \field{pages}{102900}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.addma.2022.102900
+      \endverb
+    \endentry
+    \entry{Ghobakhloo.2020}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b963f11ee19f34f2782fe4268d3c630e}{%
+           family={Ghobakhloo},
+           familyi={G\bibinitperiod},
+           given={Morteza},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{fullhash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{bibnamehash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{authorbibnamehash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{authornamehash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{authorfullhash}{b963f11ee19f34f2782fe4268d3c630e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The fourth industrial revolution and the underlying digital transformation, known as Industry 4.0, is progressing exponentially. The digital revolutio$\ldots$}
+      \field{issn}{0959-6526}
+      \field{journaltitle}{Journal of Cleaner Production}
+      \field{title}{Industry 4.0, digitization, and opportunities for sustainability}
+      \field{volume}{252}
+      \field{year}{2020}
+      \field{pages}{119869}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jclepro.2019.119869
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0959652619347390
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0959652619347390
+      \endverb
+    \endentry
+    \entry{Goel.2020}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=373a9f5a18798a7674b1d313fe8ed3a5}{%
+           family={Goel},
+           familyi={G\bibinitperiod},
+           given={Ruchi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65959455d91061aad103cf9bdfe64d67}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Pooja},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Cham}%
+      }
+      \strng{namehash}{888127026b642e0048ca55f4aacc9adc}
+      \strng{fullhash}{888127026b642e0048ca55f4aacc9adc}
+      \strng{bibnamehash}{888127026b642e0048ca55f4aacc9adc}
+      \strng{authorbibnamehash}{888127026b642e0048ca55f4aacc9adc}
+      \strng{authornamehash}{888127026b642e0048ca55f4aacc9adc}
+      \strng{authorfullhash}{888127026b642e0048ca55f4aacc9adc}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industry 4.0 also known as fourth revolution is a new era in which industry will deal with technologies like Robotics, Automation, Artificial Intelligence (AI), and many more. The adoption of robots in Industries worldwide is on the high rise. Robots and human both...}
+      \field{booktitle}{A Roadmap to Industry 4.0: Smart Production, Sharp Business and Sustainable Development}
+      \field{title}{Robotics and Industry 4.0}
+      \field{year}{2020}
+      \field{pages}{157\bibrangedash 169}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/978-3-030-14544-6{\textunderscore }9
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-030-14544-6_9
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-030-14544-6_9
+      \endverb
+    \endentry
+    \entry{Iglesias.2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9d76380f63f96fc5d2229cbfb09d136a}{%
+           family={Iglesias},
+           familyi={I\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2e1126a6d5673b00bfeabdf856ad92ed}{%
+           family={Sebastián},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=be658f859bcce77eb51e1b432ebeb72e}{%
+           family={Ares},
+           familyi={A\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{fullhash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{bibnamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authorbibnamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authornamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authorfullhash}{749e05a950c719602aa7befa804aa4cd}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nowadays industrial robots are an appropriate technology for developing flexible and reconfigurable manufacturing systems which contribute to perform $\ldots$}
+      \field{issn}{1877-7058}
+      \field{journaltitle}{1877-7058}
+      \field{title}{Overview of the State of Robotic Machining: Current Situation and Future Potential}
+      \field{volume}{132}
+      \field{year}{2015}
+      \field{pages}{911\bibrangedash 917}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.proeng.2015.12.577
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877705815044896
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877705815044896
+      \endverb
+    \endentry
+    \entry{Iqbal.2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a5ff1ab5d1bf3e365902f900f0de72af}{%
+           family={Iqbal},
+           familyi={I\bibinitperiod},
+           given={Asif},
+           giveni={A\bibinitperiod}}}%
+        {{hash=418b778fb2df37f8a9b2f76348bb5aa6}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Guolong},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4be9514f40fc02e352434c57667b1cb2}{%
+           family={Suhaimi},
+           familyi={S\bibinitperiod},
+           given={Hazwani},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8fa11ec832a942bba355a7901b3f14f8}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod}}}%
+        {{hash=55acef5a6b43e40b5b140591365ccebf}{%
+           family={Hussain},
+           familyi={H\bibinitperiod},
+           given={Ghulam},
+           giveni={G\bibinitperiod}}}%
+        {{hash=16e27adac1b31563e17c86920f0c910e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfcc504cfa0c51ee31a690bc217a7129}
+      \strng{fullhash}{cfcc504cfa0c51ee31a690bc217a7129}
+      \strng{bibnamehash}{cfcc504cfa0c51ee31a690bc217a7129}
+      \strng{authorbibnamehash}{cfcc504cfa0c51ee31a690bc217a7129}
+      \strng{authornamehash}{cfcc504cfa0c51ee31a690bc217a7129}
+      \strng{authorfullhash}{cfcc504cfa0c51ee31a690bc217a7129}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The successful realization of Industry 4.0 depends much on how coherently the cyber and physical realms are conjoined in cyber-physical systems. In the context of the fourth industrial revolution, research efforts have mostly been channeled toward the cyber domain, whereas the physical domain has received significantly lesser consideration. A physical domain generally comprises material shaping equipment, work material, tools, working medium, sensors, automation technology, and connectivity mechanisms. The article provides a comprehensive review of the published literature to establish the states of readiness of the two most important manufacturing technologies: subtractive and additive and their sustainable merger from the perspective of Industry 4.0. Rich potentials in the four characteristics at the process level: speed, sustainability, agility, and customer centricity and three at the system level: connectivity, data collection, and automation are required for a manufacturing system (physical domain) to be Industry 4.0 compatible. The review establishes that the subtractive manufacturing domain is nearly compatible regarding speed and agility but needs improvements in respect of sustainability and customer centricity. Additive manufacturing, on the other hand, appears strong on agility and customer-centricity fronts but needs amelioration regarding production speed and sustainability. In respect of the system level characteristics, both technologies seem to be compatible regarding automation, whereas significant improvements are required in connectivity and data sensing and collection. For the sake of raising compatibility levels of the manufacturing systems, subtractive-additive amalgamation is scrutinized. The amalgamation, especially in a done-in-one configuration, has, reportedly, succeeded to retain the favorable traits of the two manufacturing technologies, thus, bringing the merger much closer to the Industry 4.0 requirements. Proper process planning and optimal work distribution between the subtractive and additive modes are critical for operating an amalgamated system at high levels of the key characteristics.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{9-10}
+      \field{title}{Readiness of subtractive and additive manufacturing and their sustainable amalgamation from the perspective of Industry 4.0: a comprehensive review}
+      \field{volume}{111}
+      \field{year}{2020}
+      \field{pages}{2475\bibrangedash 2498}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1007/s00170-020-06287-6
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-020-06287-6
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-020-06287-6
+      \endverb
+    \endentry
+    \entry{Jayawardane.2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7c8aa94c2d67fa14e0de9c071d5c47c5}{%
+           family={Jayawardane},
+           familyi={J\bibinitperiod},
+           given={Heshan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8d3c7a0d2f4f75c867139e3dd12c8b71}{%
+           family={Davies},
+           familyi={D\bibinitperiod},
+           given={Ian\bibnamedelima J.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a44944fde5f055662036e51247982378}{%
+           family={Gamage},
+           familyi={G\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=17d25e3b6d6103e0c4c9905b5dbf9edd}{%
+           family={John},
+           familyi={J\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9f1aad9353dc6dd5a17df9dd64df22ec}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Wahidul\bibnamedelima K.},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3bc66acb7645b81271d40f6dc1e7857}
+      \strng{fullhash}{d3bc66acb7645b81271d40f6dc1e7857}
+      \strng{bibnamehash}{d3bc66acb7645b81271d40f6dc1e7857}
+      \strng{authorbibnamehash}{d3bc66acb7645b81271d40f6dc1e7857}
+      \strng{authornamehash}{d3bc66acb7645b81271d40f6dc1e7857}
+      \strng{authorfullhash}{d3bc66acb7645b81271d40f6dc1e7857}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2667-3444}
+      \field{journaltitle}{Sustainable Manufacturing and Service Economics}
+      \field{title}{Sustainability perspectives -- a review of additive and subtractive manufacturing}
+      \field{volume}{2}
+      \field{year}{2023}
+      \field{pages}{100015}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.smse.2023.100015
+      \endverb
+    \endentry
+    \entry{Jia.2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d261670f4ba5df509b360f3d91c5c892}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Zhen-yuan},
+           giveni={Z\bibinithyphendelim y\bibinitperiod}}}%
+        {{hash=b0b10d9329260384a6f2ace6dc92734f}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jian-wei},
+           giveni={J\bibinithyphendelim w\bibinitperiod}}}%
+        {{hash=23c37842799ad370a16062e7016d3125}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={De-ning},
+           giveni={D\bibinithyphendelim n\bibinitperiod}}}%
+        {{hash=d2769ff47db7658e930b395853118b40}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Fu-ji},
+           giveni={F\bibinithyphendelim j\bibinitperiod}}}%
+        {{hash=c0e0d23e2d09e45e6f51cc2bcea6d9f9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{24e259e144cc073d439a0cb0fd392b11}
+      \strng{fullhash}{24e259e144cc073d439a0cb0fd392b11}
+      \strng{bibnamehash}{24e259e144cc073d439a0cb0fd392b11}
+      \strng{authorbibnamehash}{24e259e144cc073d439a0cb0fd392b11}
+      \strng{authornamehash}{24e259e144cc073d439a0cb0fd392b11}
+      \strng{authorfullhash}{24e259e144cc073d439a0cb0fd392b11}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0890-6955}
+      \field{journaltitle}{International Journal of Machine Tools and Manufacture}
+      \field{title}{A review of contouring-error reduction method in multi-axis CNC machining}
+      \field{volume}{125}
+      \field{year}{2018}
+      \field{pages}{34\bibrangedash 54}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.ijmachtools.2017.10.008
+      \endverb
+    \endentry
+    \entry{Kumar.2020}{book}{}
+      \name{author}{3}{}{%
+        {{hash=f6eba7259ec767c73c458e7c78833148}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Kaushik.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8ee237154de642f2212567140e3f8427}{%
+           family={Ranjan},
+           familyi={R\bibinitperiod},
+           given={Chikesh.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=97c8167ae6a9336313cdfaca20f9d2ed}{%
+           family={Davim},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi Paulo.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{2}{%
+        {Springer International Publishing}%
+        {Imprint: Springer}%
+      }
+      \strng{namehash}{133528a60c160e56aff3204212bb95cf}
+      \strng{fullhash}{133528a60c160e56aff3204212bb95cf}
+      \strng{bibnamehash}{133528a60c160e56aff3204212bb95cf}
+      \strng{authorbibnamehash}{133528a60c160e56aff3204212bb95cf}
+      \strng{authornamehash}{133528a60c160e56aff3204212bb95cf}
+      \strng{authorfullhash}{133528a60c160e56aff3204212bb95cf}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st ed. 2020}
+      \field{isbn}{978-3-030-41278-4}
+      \field{series}{Materials Forming, Machining and Tribology}
+      \field{title}{CNC Programming for Machining}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1007/978-3-030-41279-1
+      \endverb
+      \verb{file}
+      \verb Kumar, Ranjan et al. 2020 - CNC Programming for Machining:Attachments/Kumar, Ranjan et al. 2020 - CNC Programming for Machining.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Kyratsis.2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f0f4d1ae4b73b351a3433475ee8a9d8a}{%
+           family={Kyratsis},
+           familyi={K\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6c3d2d1220789b9b37833a9dd8449a26}{%
+           family={Kakoulis},
+           familyi={K\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ce8901da7dca3010122999e867e638f3}{%
+           family={Markopoulos},
+           familyi={M\bibinitperiod},
+           given={Angelos\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{fullhash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{bibnamehash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{authorbibnamehash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{authornamehash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{authorfullhash}{6c808711020e6242cf71b7fee55be8c0}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Computer-aided design, computer-aided manufacturing and computer-aided engineering (CAD/CAM/CAE) technologies find more and more applications in today's industry, e [...]}
+      \field{issn}{2075-1702}
+      \field{journaltitle}{Machines}
+      \field{number}{1}
+      \field{title}{Advances in CAD/CAM/CAE Technologies}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{13}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/machines8010013
+      \endverb
+      \verb{file}
+      \verb Kyratsis, Kakoulis et al. 2020 - Advances in CAD CAM CAE Technologies:Attachments/Kyratsis, Kakoulis et al. 2020 - Advances in CAD CAM CAE Technologies.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2075-1702/8/1/13/htm
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2075-1702/8/1/13/htm
+      \endverb
+    \endentry
+    \entry{LalitNarayan.2013b}{book}{}
+      \name{author}{3}{}{%
+        {{hash=243173cc300f93b6619a5b4a8584f8d8}{%
+           family={{Lalit Narayan}},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=85580600b26932c6424a73a33d72207c}{%
+           family={{Mallikarjuna Rao}},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b18978de0abd39c01eb80a77d628ef04}{%
+           family={Sarcar},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Delhi}%
+      }
+      \list{publisher}{1}{%
+        {PHI Learning Private Limited}%
+      }
+      \strng{namehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{fullhash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{bibnamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{authorbibnamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{authornamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{authorfullhash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The impact of the technology of Computer-Aided Design and Manufacturing in automobile engineering, marine engineering and aerospace engineering has been tremendous. Using computers in manufacturing is receiving particular prominence as industries seek to improve product quality, increase productivity and to reduce inventory costs. Therefore, the emphasis has been attributed to the subject of CAD and its integration with CAM. Designed as a textbook for the undergraduate students of mechanical engineering, production engineering and industrial engineering, it provides a description of both the hardware and software of CAD/CAM systems. The Coverage Includes  Principles of interactive computer graphics  Wireframe, surface and solid modelling  Finite element modelling and analysis  NC part programming and computer-aided part programming  Machine vision systems  Robot technology and automated guided vehicles  Flexible manufacturing systems  Computer integrated manufacturing  Artificial intelligence and expert systems  Communication systems in manufacturing PEDAGOGICAL FEATURES  CNC program examples and APT program examples  Review questions at the end of every chapter  A comprehensive Glossary  A Question Bank at the end of the chapters}
+      \field{edition}{Second printing}
+      \field{isbn}{9788120333420}
+      \field{title}{Computer aided design and manufacturing}
+      \field{year}{2013}
+    \endentry
+    \entry{Maiti.2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=159334c0584644af762e2a392ff063b6}{%
+           family={Maiti},
+           familyi={M\bibinitperiod},
+           given={C.\bibnamedelimi K.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Temasek Boulevard, Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Pan Stanford Publishing}%
+      }
+      \strng{namehash}{159334c0584644af762e2a392ff063b6}
+      \strng{fullhash}{159334c0584644af762e2a392ff063b6}
+      \strng{bibnamehash}{159334c0584644af762e2a392ff063b6}
+      \strng{authorbibnamehash}{159334c0584644af762e2a392ff063b6}
+      \strng{authornamehash}{159334c0584644af762e2a392ff063b6}
+      \strng{authorfullhash}{159334c0584644af762e2a392ff063b6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cover -- Half Title -- Title Page -- Copyright Page -- Dedication -- Table of Contents -- Preface -- 1: Introduction -- 1.1 The Need -- 1.2 Role of TCAD -- 1.3 TCAD: Challenges -- 1.4 TCAD: 2D versus 3D -- 1.5 TCAD: Design Flow -- 1.6 Extending TCAD -- 1.7 Process Compact Model -- 1.8 Process-Aware Design -- 1.9 Design for Manufacturing -- 1.10 TCAD Calibration -- 1.11 TCAD Tools -- 1.12 Technology Boosters -- 1.13 BiCMOS Process Simulation -- 1.14 SiGe and SiGeC HBTs -- 1.15 Silicon Hetero-FETs -- 1.16 FinFETs -- 1.17 Advanced Devices -- 1.18 Memory Devices -- 1.19 Power Devices -- 1.20 Solar Cells -- 1.21 TCAD for SPICE Parameter Extraction -- 1.22 TCAD for DFM -- 1.23 VWF and Online Laboratory -- 1.24 Summary -- 2: Technology CAD Tools -- 2.1 History of Process and Device Simulation Tools -- 2.2 Commercial TCAD Tools -- 2.3 Silvaco Tool Overview -- 2.3.1 MaskViews -- 2.4 ATHENA -- 2.5 ATLAS -- 2.5.1 Physical Structure -- 2.5.2 Structure Editing -- 2.5.3 Meshing -- 2.5.4 Mesh Definition -- 2.5.5 Regions and Materials -- 2.5.6 Physical Models -- 2.5.6.1 Models -- 2.5.7 Impact Ionization Models -- 2.5.7.1 C-Interpreter functions -- 2.5.8 Gate Current Models -- 2.5.9 Bandgap Narrowing -- 2.5.10 Solution Methods -- 2.5.11 VictoryCell -- 2.5.12 VictoryProcess -- 2.5.13 VictoryStress -- 2.5.13.1 VictoryStress features and capabilities -- 2.5.14 VictoryDevice -- 2.6 Stress Modeling -- 2.6.1 Stress-Strain Relationship -- 2.6.2 Mobility -- 2.6.3 SmartSpice -- 2.7 Synopsys TCAD Platforms -- 2.7.1 Taurus-Device -- 2.7.2 Taurus-Process -- 2.7.3 Device Simulation -- 2.7.4 Carrier Recombination-Generation -- 2.7.4.1 Thin-layer mobility -- 2.7.4.2 High-k degradation mobility -- 2.7.5 Stress Effects -- 2.7.5.1 Band-to-band tunneling leakage current -- 2.8 Atomistic Simulation -- 2.8.1 GARAND -- 2.8.2 MYSTIC -- 2.8.3 RandomSPICE -- 2.9 Summary.}
+      \field{isbn}{9789814745529}
+      \field{title}{Introducing technology computer-aided design (TCAD): Fundamentals, simulations and applications}
+      \field{year}{2017}
+      \verb{file}
+      \verb Maiti 2017 - Introducing technology computer-aided design TCAD:Attachments/Maiti 2017 - Introducing technology computer-aided design TCAD.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Pan}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d8d1756d391b3b0eb8dcc0bf791d1fbf}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Zengxi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c32fd0be1e3e915523d485514c47167f}{%
+           family={Polden},
+           familyi={P\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2df951682e26288bf1eec511ac674a79}{%
+           family={Larkin},
+           familyi={L\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d672e2365ff9715e02b6d7cc967f31bd}{%
+           family={{van Duin}},
+           familyi={v\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=faa48da64a59d5d87f14e1c289dff2f3}{%
+           family={Norrish},
+           familyi={N\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f761a4be96bfa54e38efc7abe3f55986}
+      \strng{fullhash}{f761a4be96bfa54e38efc7abe3f55986}
+      \strng{bibnamehash}{f761a4be96bfa54e38efc7abe3f55986}
+      \strng{authorbibnamehash}{f761a4be96bfa54e38efc7abe3f55986}
+      \strng{authornamehash}{f761a4be96bfa54e38efc7abe3f55986}
+      \strng{authorfullhash}{f761a4be96bfa54e38efc7abe3f55986}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although an automated flexible production cell is an intriguing prospect for small to median enterprises (SMEs) in current global market conditions, t$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{number}{2}
+      \field{title}{Recent progress on programming methods for industrial robots}
+      \field{volume}{28}
+      \field{year}{2012}
+      \field{pages}{87\bibrangedash 94}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2011.08.004
+      \endverb
+      \verb{file}
+      \verb Pan, Polden et al. 2012 - Recent progress on programming methods:Attachments/Pan, Polden et al. 2012 - Recent progress on programming methods.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
+      \endverb
+    \endentry
+    \entry{Saxena.2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bd8f6be2fb6f2a6af3303717f7903800}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={Prateek},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4d6125b1b2a10d9cd374996222e8a4f2}{%
+           family={Stavropoulos},
+           familyi={S\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+        {{hash=487d82eb207aae3632db77eb93e2387b}{%
+           family={Kechagias},
+           familyi={K\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1d9e95f39aad68d9fc144264736c9313}{%
+           family={Salonitis},
+           familyi={S\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{e96f1e2246db84d5dcb104b3e5bfc11c}
+      \strng{fullhash}{e96f1e2246db84d5dcb104b3e5bfc11c}
+      \strng{bibnamehash}{e96f1e2246db84d5dcb104b3e5bfc11c}
+      \strng{authorbibnamehash}{e96f1e2246db84d5dcb104b3e5bfc11c}
+      \strng{authornamehash}{e96f1e2246db84d5dcb104b3e5bfc11c}
+      \strng{authorfullhash}{e96f1e2246db84d5dcb104b3e5bfc11c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sustainability is becoming more and more important as a decision attribute in the manufacturing environment. However, quantitative metrics for all the aspects of the triple bottom line are difficult to assess. Within the present paper, the sustainability metrics are considered in tandem with other traditional manufacturing metrics such as time, flexibility, and quality and a novel framework is presented that integrates information and requirements from Computer-Aided Technologies (CAx) systems. A novel tool is outlined for considering a number of key performance indicators related to the triple bottom line when deciding the most appropriate process route. The implemented system allows the assessment of alternative process plans considering the market demands and available resources.}
+      \field{issn}{1996-1073}
+      \field{journaltitle}{Energies}
+      \field{number}{11}
+      \field{title}{Sustainability Assessment for Manufacturing Operations}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{2730}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/en13112730
+      \endverb
+      \verb{file}
+      \verb Saxena, Stavropoulos et al. 2020 - Sustainability Assessment for Manufacturing Operations:Attachments/Saxena, Stavropoulos et al. 2020 - Sustainability Assessment for Manufacturing Operations.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1996-1073/13/11/2730
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1996-1073/13/11/2730
+      \endverb
+    \endentry
+    \entry{Sherwani.2020}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=74afc8eac3125f8a5ba2005650aa5d5b}{%
+           family={Sherwani},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5beec9a83acacd1281d1e2109defc69c}{%
+           family={Asad},
+           familyi={A\bibinitperiod},
+           given={Muhammad\bibnamedelima Mujtaba},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=300a4531558edeb90108e848763e84b7}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={B.S.K.K.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{fullhash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{bibnamehash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{authorbibnamehash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{authornamehash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{authorfullhash}{ab02489726a9d5fb9051764243c03bac}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 International Conference on Emerging Trends in Smart Technologies (ICETST)}
+      \field{title}{Collaborative Robots and Industrial Revolution 4.0 (IR 4.0)}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1109/icetst49965.2020.9080724
+      \endverb
+    \endentry
+    \entry{Simonis.2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1628dfc77d959d5cfd9e2f719b8900ef}{%
+           family={Simonis},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=45895e9c2c6df7c12c6cb86601939110}{%
+           family={Gloy},
+           familyi={G\bibinitperiod},
+           given={Y-S},
+           giveni={Y\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=2d37ecfdab7fa6ff390e8d884836ed5e}{%
+           family={Gries},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
+      \strng{fullhash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
+      \strng{bibnamehash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
+      \strng{authorbibnamehash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
+      \strng{authornamehash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
+      \strng{authorfullhash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1757-899X}
+      \field{journaltitle}{IOP Conference Series: Materials Science and Engineering}
+      \field{number}{1}
+      \field{title}{INDUSTRIE 4.0 - Automation in weft knitting technology}
+      \field{volume}{141}
+      \field{year}{2016}
+      \field{pages}{012014}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1757-899X/141/1/012014
+      \endverb
+      \verb{file}
+      \verb Simonis, Gloy et al. 2016 - INDUSTRIE 4.0:Attachments/Simonis, Gloy et al. 2016 - INDUSTRIE 4.0.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1088/1757-899x/141/1/012014/meta
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/1757-899x/141/1/012014/meta
+      \endverb
+    \endentry
+    \entry{Singh.2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=fcdac3d1c0370d50d9ade1c68adf53e7}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Maulshree},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a2654bd8a8aa9268e7a21e308e0d1b4}{%
+           family={Fuenmayor},
+           familyi={F\bibinitperiod},
+           given={Evert},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3b9cd2f3f78a736c40b558124e087a7f}{%
+           family={Hinchy},
+           familyi={H\bibinitperiod},
+           given={Eoin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d32e628881ed4370c656517178858e6a}{%
+           family={Qiao},
+           familyi={Q\bibinitperiod},
+           given={Yuansong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4406e8ec11aada3ea6ae39cb12fc3df8}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Niall},
+           giveni={N\bibinitperiod}}}%
+        {{hash=489135b3b667ea33671a7d61fd19dbd1}{%
+           family={Devine},
+           familyi={D\bibinitperiod},
+           given={Declan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e88214af3ad8296ecc986b9a7083d81}
+      \strng{fullhash}{4e88214af3ad8296ecc986b9a7083d81}
+      \strng{bibnamehash}{4e88214af3ad8296ecc986b9a7083d81}
+      \strng{authorbibnamehash}{4e88214af3ad8296ecc986b9a7083d81}
+      \strng{authornamehash}{4e88214af3ad8296ecc986b9a7083d81}
+      \strng{authorfullhash}{4e88214af3ad8296ecc986b9a7083d81}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Digital Twin (DT) refers to the virtual copy or model of any physical entity (physical twin) both of which are interconnected via exchange of data in real time. Conceptually, a DT mimics the state of its physical twin in real time and vice versa. Application of DT includes real-time monitoring, designing/planning, optimization, maintenance, remote access, etc. Its implementation is expected to grow exponentially in the coming decades. The advent of Industry 4.0 has brought complex industrial systems that are more autonomous, smart, and highly interconnected. These systems generate considerable amounts of data useful for several applications such as improving performance, predictive maintenance, training, etc. A sudden influx in the number of publications related to `Digital Twin' has led to confusion between different terminologies related to the digitalization of industries. Another problem that has arisen due to the growing popularity of DT is a lack of consensus on the description of DT as well as so many different types of DT, which adds to the confusion. This paper intends to consolidate the different types of DT and different definitions of DT throughout the literature for easy identification of DT from the rest of the complimentary terms such as `product avatar', `digital thread', `digital model', and `digital shadow'. The paper looks at the concept of DT since its inception to its predicted future to realize the value it can bring to certain sectors. Understanding the characteristics and types of DT while weighing its pros and cons is essential for any researcher, business, or sector before investing in the technology.}
+      \field{issn}{2571-5577}
+      \field{journaltitle}{Applied System Innovation}
+      \field{number}{2}
+      \field{title}{Digital Twin: Origin to Future}
+      \field{volume}{4}
+      \field{year}{2021}
+      \field{pages}{36}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/asi4020036
+      \endverb
+      \verb{file}
+      \verb Singh, Fuenmayor et al. 2021 - Digital Twin:Attachments/Singh, Fuenmayor et al. 2021 - Digital Twin.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2571-5577/4/2/36
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2571-5577/4/2/36
+      \endverb
+    \endentry
+    \entry{Tomaz.2021}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=97a1da42b45c142187dc78cf582ecb4b}{%
+           family={Tomaz},
+           familyi={T\bibinitperiod},
+           given={Italo},
+           giveni={I\bibinitperiod}}}%
+        {{hash=e5f40d5094e64065b008c90259d55410}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Munish\bibnamedelima Kumar},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5496dc6d8d44a54976f50c98f3cc4160}{%
+           family={Pimenov},
+           familyi={P\bibinitperiod},
+           given={Danil\bibnamedelima Yu.},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Singapore}%
+      }
+      \strng{namehash}{5c0cdd815ae0aed91df980c76448d6ad}
+      \strng{fullhash}{5c0cdd815ae0aed91df980c76448d6ad}
+      \strng{bibnamehash}{5c0cdd815ae0aed91df980c76448d6ad}
+      \strng{authorbibnamehash}{5c0cdd815ae0aed91df980c76448d6ad}
+      \strng{authornamehash}{5c0cdd815ae0aed91df980c76448d6ad}
+      \strng{authorfullhash}{5c0cdd815ae0aed91df980c76448d6ad}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Composite material~is a~material~made by the combination of two or more constituent~materials~with considerably distinct properties resulting in a~material~that presents chemical and physical properties that are not seem in any...}
+      \field{booktitle}{Additive and Subtractive Manufacturing of Composites}
+      \field{title}{Subtractive Manufacturing of Different Composites}
+      \field{year}{2021}
+      \field{pages}{137\bibrangedash 165}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1007/978-981-16-3184-9{\textunderscore }6
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-981-16-3184-9_6
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-981-16-3184-9_6
+      \endverb
+    \endentry
+    \entry{vanLe.2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1232b289cc192d34616050775f5152f3}{%
+           family={{van Le}},
+           familyi={v\bibinitperiod},
+           given={Thao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5c07534d9ec9f2c5d8d1e930ac0383ce}{%
+           family={Paris},
+           familyi={P\bibinitperiod},
+           given={Henri},
+           giveni={H\bibinitperiod}}}%
+        {{hash=26249d7865a499bcc8075725771094ee}{%
+           family={Mandil},
+           familyi={M\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1f0ff190f1704c78b9f97bbfa266177}
+      \strng{fullhash}{e1f0ff190f1704c78b9f97bbfa266177}
+      \strng{bibnamehash}{e1f0ff190f1704c78b9f97bbfa266177}
+      \strng{authorbibnamehash}{e1f0ff190f1704c78b9f97bbfa266177}
+      \strng{authornamehash}{e1f0ff190f1704c78b9f97bbfa266177}
+      \strng{authorfullhash}{e1f0ff190f1704c78b9f97bbfa266177}
+      \field{sortinit}{v}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently, the combination of additive and subtractive manufacturing technologies is gaining significant attention from both the industrial and academi$\ldots$}
+      \field{issn}{0959-6526}
+      \field{journaltitle}{Journal of Cleaner Production}
+      \field{title}{Environmental impact assessment of an innovative strategy based on an additive and subtractive manufacturing combination}
+      \field{volume}{164}
+      \field{year}{2017}
+      \field{pages}{508\bibrangedash 523}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.jclepro.2017.06.204
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0959652617313732
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0959652617313732
+      \endverb
+    \endentry
+    \entry{Wang.2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5dfc0029cef360158276b0922e0c5670}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wenbo},
+           giveni={W\bibinitperiod}}}%
+        {{hash=e3278b56f44b798bed2b709f9d20f6ca}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=1b198e2209bcc0774264675c8138dfcd}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zhibo},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=fb9df8ae6f2840327f9f6ac22a775a0a}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b80d6ff42790b6d417f95335de1a86ac}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Jinting},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{432e136537b0847567b68759efbcf4d5}
+      \strng{fullhash}{432e136537b0847567b68759efbcf4d5}
+      \strng{bibnamehash}{432e136537b0847567b68759efbcf4d5}
+      \strng{authorbibnamehash}{432e136537b0847567b68759efbcf4d5}
+      \strng{authornamehash}{432e136537b0847567b68759efbcf4d5}
+      \strng{authorfullhash}{432e136537b0847567b68759efbcf4d5}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Milling refers to a class of material processing methods that relies on a high-speed rotating milling cutter removing extra material to get desired sh$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{A state-of-the-art review on robotic milling of complex parts with high efficiency and precision}
+      \field{volume}{79}
+      \field{year}{2023}
+      \field{pages}{102436}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2022.102436
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s073658452200120x
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s073658452200120x
+      \endverb
+    \endentry
+    \entry{Watson.2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=644dd69403c7d1dab7837b3a1976d56a}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=f14ae2a4a2be218224bb144af1bcae74}{%
+           family={Taminger},
+           familyi={T\bibinitperiod},
+           given={K.\bibnamedelimi M.\bibnamedelimi B.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{15e5fdafb066c55b8199c3c3b3d7d97d}
+      \strng{fullhash}{15e5fdafb066c55b8199c3c3b3d7d97d}
+      \strng{bibnamehash}{15e5fdafb066c55b8199c3c3b3d7d97d}
+      \strng{authorbibnamehash}{15e5fdafb066c55b8199c3c3b3d7d97d}
+      \strng{authornamehash}{15e5fdafb066c55b8199c3c3b3d7d97d}
+      \strng{authorfullhash}{15e5fdafb066c55b8199c3c3b3d7d97d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a simple computational model for determining whether additive manufacturing or subtractive manufacturing is more energy efficient for production of a given metallic part. The key discriminating variable is the fraction of the bounding envelope that contains material - i.e. the volume fraction of solid material. For both the additive process and the subtractive process, the total energy associated with the production of a part is defined in terms of the volume fraction of that part. The critical volume fraction is that for which the energy consumed by subtractive manufacturing equals the energy consumed by additive manufacturing. For volume fractions less than the critical value, additive manufacturing is more energy efficient. For volume fractions greater than the critical value, subtractive manufacturing is more efficient. The model considers the entire manufacturing lifecycle - from production and transport of feedstock material through processing to return of post-production scrap for recycling. Energy consumed by processing equipment while idle is also accounted for in the model. Although the individual energy components in the model are identified and accounted for in the expressions for additive and subtractive manufacturing, values for many of these components may not be currently available. Energy values for some materials' production and subtractive and additive manufacturing processes can be found in the literature. However, since many of these data are reported for a very specific application, it may be difficult, if not impossible, to reliably apply these data to new process-material manufacturing scenarios since, very often, insufficient information is provided to enable extrapolation to broader use. Consequently, this paper also highlights the need to develop improved knowledge of the energy embodied in each phase of the manufacturing process. To be most valuable, users of the model should determine the energy consumed by their manufacturing process equipment on the basis of energy-per-unit-volume of production for each material of interest - considering both alloy composition and form. Energy consumed during machine idle per unit time should also be determined by the user then scaled to specific processing scenarios. Energy required to generate feedstock material (billet, plate, bar, wire, powder) must be obtained from suppliers.}
+      \field{issn}{0959-6526}
+      \field{journaltitle}{Journal of Cleaner Production}
+      \field{title}{A decision-support model for selecting additive manufacturing versus subtractive manufacturing based on energy consumption}
+      \field{volume}{176}
+      \field{year}{2015}
+      \field{pages}{1316\bibrangedash 1322}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.jclepro.2015.12.009
+      \endverb
+      \verb{file}
+      \verb Watson, Taminger 2015 - A decision-support model for selecting:Attachments/Watson, Taminger 2015 - A decision-support model for selecting.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0959652615018247
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0959652615018247
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,11 +1,12 @@
-% !TeX spellcheck = de_DE
+% !TeX spellcheck = en_US
 \documentclass[IWBstudentthesis%     style
               ,optCharter%           font
               %,optCMYK%             color model
               ,optBiber% 	         bibliography tool
-              ,optBibstyleAuthorYear%iwb citation style
+              %,optBibstyleAuthorYear %iwb citation style
+              ,optBibstyleNumeric
               ,optEnglish% 		 language
-              %,optTikzExternalize%  compiles faster for large tikz images
+              ,optTikzExternalize%  compiles faster for large tikz images
               ]{IWBlatex}%
 %
 % Set paths
@@ -13,6 +14,14 @@
 \addbibresource{source/literature.bib}%
 \include{source/abbreviations}%
 \include{source/glossary}%
+
+%\DeclareCiteCommand{\cite}[\mkbibparens]
+%{\usebibmacro{prenote}}
+%{\usebibmacro{citeindex}%
+%	\printtext[bibhyperref]{\usebibmacro{cite}}}
+%{\multicitedelim}
+%{\usebibmacro{postnote}}
+
 %
 \begin{document}%
 % Titlepage
@@ -20,7 +29,8 @@
 \frontmatter%
 % Info: replace Prof. Daub by Prof. Zäh:\IWBnamesProfZaeh \newline \IWBlangChairMWIWBLWF
 % Info: separate multiple supervisors by \newline
-\IWBstudentthesisTitlePageCustomMastersThesis{German Title}{English Title}{Jan Nalivaika \newline Lerchenauerstrasse 10 \newline 80809 Munich}{\IWBnamesProfZaeh \newline \IWBlangChairMWIWBLBM}{\IWButilsDate{15}{03}{2024}}%
+\IWBstudentthesisTitlePageCustomMastersThesis{Methodischer Ansatz zur Analyse von Prozessparametern und Optimierung von Randbedingungen in Mutli-Achs-Roboterprogrammen}{Methodical Approach for Analyzing Process Parameters and Optimizing
+	Boundary Conditions in Mutli-Axis Robot Programs}{Jan Nalivaika \newline Lerchenauerstrasse 10 \newline 80809 Munich}{\IWBnamesProfZaeh \newline \IWBlangChairMWIWB}{\IWButilsDate{15}{03}{2024}}%
 %
 %\IWBstudentthesisTitlePageCustomBachelorsThesis{German Title}{English Title}{Martin Mustermann \newline Musterweg 20 \newline 80999 München}{\IWBnamesProfDaub \newline \IWBlangChairMWIWBPE}{\IWButilsDate{1}{1}{2018}}%
 %
@@ -47,10 +57,12 @@
 % Mainmatter
 % ----------
 \mainmatter%
-\include{source/latex_tutorial}%
+%\include{source/latex_tutorial}%
 \include{source/chapter01}%
 \include{source/chapter02}%
 \include{source/chapter03}%
+\include{source/chapter04}%
+\include{source/chapter05}%
 %
 % Appendix
 % --------
