@@ -9,9 +9,9 @@
 \contentsline {section}{\numberline {2.1}Manufacturing Technologies}{5}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Subtractive Manufacturing}{5}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Additive Manufacturing}{7}{subsection.2.1.2}%
-\contentsline {subsubsection}{WAAM}{9}{subsubsection*.3}%
-\contentsline {subsubsection}{WAAM-Process}{9}{subsubsection*.4}%
-\contentsline {subsubsection}{CMT}{10}{subsubsection*.5}%
+\contentsline {subsubsection}{WAAM}{9}{subsubsection*.4}%
+\contentsline {subsubsection}{WAAM-Process}{9}{subsubsection*.5}%
+\contentsline {subsubsection}{CMT}{10}{subsubsection*.6}%
 \contentsline {subsection}{\numberline {2.1.3}Industrial Robots}{11}{subsection.2.1.3}%
 \contentsline {section}{\numberline {2.2}Computer-Aided Manufacturing}{13}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}CAM Software}{13}{subsection.2.2.1}%
@@ -39,5 +39,5 @@
 \contentsline {section}{\numberline {5.1}Summary}{25}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Outlook}{25}{section.5.2}%
 \contentsline {chapter}{\numberline {A}Appendix}{27}{appendix.A}%
-\contentsline {chapter}{Bibliography}{29}{appendix*.6}%
+\contentsline {chapter}{Bibliography}{29}{appendix*.7}%
 \contentsfinish 

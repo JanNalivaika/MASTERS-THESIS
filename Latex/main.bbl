@@ -104,6 +104,118 @@
       \verb 10.1016/j.proeng.2017.04.081
       \endverb
     \endentry
+    \entry{Anjum.2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=59f0de275df09cf2edfa7bcaaca6358d}{%
+           family={Anjum},
+           familyi={A\bibinitperiod},
+           given={Zuha},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=417bd19388df6649be328814b9e03667}{%
+           family={Samo},
+           familyi={S\bibinitperiod},
+           given={Saifullah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9f82fdb5339a807a2adeb7f8597f3b24}{%
+           family={Nighat},
+           familyi={N\bibinitperiod},
+           given={Arbab},
+           giveni={A\bibinitperiod}}}%
+        {{hash=831c47b45c6c1e74fbfdf7636ba5f385}{%
+           family={Nisa},
+           familyi={N\bibinitperiod},
+           given={Akhtar\bibnamedelima Un},
+           giveni={A\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=21339c1ea2a0359ccfafd6519a566d99}{%
+           family={Soomro},
+           familyi={S\bibinitperiod},
+           given={Muhammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=89296f511ec981007202a96033b61c31}{%
+           family={Alayi},
+           familyi={A\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc9ebca48c5f1514888234ae5ffc99e5}
+      \strng{fullhash}{cc9ebca48c5f1514888234ae5ffc99e5}
+      \strng{bibnamehash}{cc9ebca48c5f1514888234ae5ffc99e5}
+      \strng{authorbibnamehash}{cc9ebca48c5f1514888234ae5ffc99e5}
+      \strng{authornamehash}{cc9ebca48c5f1514888234ae5ffc99e5}
+      \strng{authorfullhash}{cc9ebca48c5f1514888234ae5ffc99e5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Design and Modeling of 9 Degrees of Freedom Redundant Robotic Manipulator}
+      \field{issn}{2715-5056}
+      \field{journaltitle}{Journal of Robotics and Control (JRC)}
+      \field{number}{6}
+      \field{title}{Design and Modeling of 9 Degrees of Freedom Redundant Robotic Manipulator}
+      \field{volume}{3}
+      \field{year}{2022}
+      \field{pages}{800\bibrangedash 808}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.18196/jrc.v3i6.15958
+      \endverb
+      \verb{file}
+      \verb Anjum, Samo et al. 2022 - Design and Modeling of 9:Attachments/Anjum, Samo et al. 2022 - Design and Modeling of 9.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journal.umy.ac.id/index.php/jrc/article/view/15958
+      \endverb
+      \verb{url}
+      \verb https://journal.umy.ac.id/index.php/jrc/article/view/15958
+      \endverb
+    \endentry
+    \entry{Ayten.2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b31a1082fe3fcfab2b5b24e0db7f5e36}{%
+           family={Ayten},
+           familyi={A\bibinitperiod},
+           given={K.\bibnamedelimi Koray},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=b6ec53052c9b432db6520c4ddf758448}{%
+           family={Sahinkaya},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi Necip},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8008da4c415be6a036f818d7e4b8ee32}{%
+           family={Dumlu},
+           familyi={D\bibinitperiod},
+           given={Ahmet},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{fullhash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{bibnamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{authorbibnamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{authornamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{authorfullhash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents an optimization technique to develop minimum energy consumption trajectories for redundant/hyper-redundant manipulators with pre-d$\ldots$}
+      \field{issn}{2405-8963}
+      \field{journaltitle}{IFAC-PapersOnLine}
+      \field{number}{21}
+      \field{title}{Optimum Trajectory Generation for Redundant/Hyper-Redundant Manipulators}
+      \field{volume}{49}
+      \field{year}{2016}
+      \field{pages}{493\bibrangedash 500}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.ifacol.2016.10.651
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2405896316322637
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2405896316322637
+      \endverb
+    \endentry
     \entry{Bandyopadhyay.2020}{book}{}
       \name{author}{1}{}{%
         {{hash=14021f8564f7cc82b9d61c8b827e564b}{%
@@ -246,6 +358,97 @@
       \verb Billard, Kragic 2019 - Trends and challenges in robot:Attachments/Billard, Kragic 2019 - Trends and challenges in robot.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Boscariol.2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=079253368d3f09dc5f85f0038f9725d3}{%
+           family={Boscariol},
+           familyi={B\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e289e9a0bc2aacc0c06e8ce8a419bff2}{%
+           family={Caracciolo},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=56f53631c0da54a7dd0203bdd6aef15f}{%
+           family={Richiedei},
+           familyi={R\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+        {{hash=738a99fc8baa74c721e495509033c45d}{%
+           family={Trevisani},
+           familyi={T\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fbfdfcef58711df33d90b84cd4b571bb}
+      \strng{fullhash}{fbfdfcef58711df33d90b84cd4b571bb}
+      \strng{bibnamehash}{fbfdfcef58711df33d90b84cd4b571bb}
+      \strng{authorbibnamehash}{fbfdfcef58711df33d90b84cd4b571bb}
+      \strng{authornamehash}{fbfdfcef58711df33d90b84cd4b571bb}
+      \strng{authorfullhash}{fbfdfcef58711df33d90b84cd4b571bb}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{9}
+      \field{title}{Energy Optimization of Functionally Redundant Robots through Motion Design}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{3022}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app10093022
+      \endverb
+      \verb{file}
+      \verb Boscariol, Caracciolo et al. 2020 - Energy Optimization of Functionally Redundant:Attachments/Boscariol, Caracciolo et al. 2020 - Energy Optimization of Functionally Redundant.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Boscariol.2019}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=079253368d3f09dc5f85f0038f9725d3}{%
+           family={Boscariol},
+           familyi={B\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=56f53631c0da54a7dd0203bdd6aef15f}{%
+           family={Richiedei},
+           familyi={R\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Cham}%
+      }
+      \strng{namehash}{d048c80dd29fec0fb2aeba1344688399}
+      \strng{fullhash}{d048c80dd29fec0fb2aeba1344688399}
+      \strng{bibnamehash}{d048c80dd29fec0fb2aeba1344688399}
+      \strng{authorbibnamehash}{d048c80dd29fec0fb2aeba1344688399}
+      \strng{authornamehash}{d048c80dd29fec0fb2aeba1344688399}
+      \strng{authorfullhash}{d048c80dd29fec0fb2aeba1344688399}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work proposes a method to increase the energy efficiency of robotic cells by exploiting redundancy. The test case proposed for validation is a system typically used for fast pick and placements operations: a three degrees of freedom SCARA robot integrated with a...}
+      \field{title}{Energy Saving in Redundant Robotic Cells: Optimal Trajectory Planning}
+      \field{year}{2019}
+      \field{pages}{268\bibrangedash 275}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-030-00365-4{\textunderscore }32
+      \endverb
+      \verb{file}
+      \verb Boscariol, Richiedei 2019 - Energy Saving in Redundant Robotic:Attachments/Boscariol, Richiedei 2019 - Energy Saving in Redundant Robotic.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-030-00365-4_32
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-030-00365-4_32
+      \endverb
+    \endentry
     \entry{Calleja.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=1e952f60475fce06efca781e681c73ce}{%
@@ -355,6 +558,44 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2351978917303529
       \endverb
     \endentry
+    \entry{Doan.2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=a7ca8e0613aa4d18bfcf6d5c6b4cb2e0}{%
+           family={Doan},
+           familyi={D\bibinitperiod},
+           given={Ngoc\bibnamedelimb Chi\bibnamedelima Nam},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=db6c0327238bac7736aaecf59abed7bd}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Pey\bibnamedelima Yuen},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=4a5c69e514f00961901616047782d0d6}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{230fad4674b711abc88a74178775c6d3}
+      \strng{fullhash}{230fad4674b711abc88a74178775c6d3}
+      \strng{bibnamehash}{230fad4674b711abc88a74178775c6d3}
+      \strng{authorbibnamehash}{230fad4674b711abc88a74178775c6d3}
+      \strng{authornamehash}{230fad4674b711abc88a74178775c6d3}
+      \strng{authorfullhash}{230fad4674b711abc88a74178775c6d3}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)}
+      \field{title}{Optimal redundancy resolution for robotic arc welding using modified particle swarm optimization}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1109/aim.2016.7576826
+      \endverb
+    \endentry
     \entry{Dubovska.2014}{article}{}
       \name{author}{3}{}{%
         {{hash=acf8c8cb6ecf6bb6acad5211102dee91}{%
@@ -399,6 +640,46 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s1877705814002835
+      \endverb
+    \endentry
+    \entry{Duong.2021}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0db7c6ec6f80d078b9bfa0f4b47d6e9d}{%
+           family={Duong},
+           familyi={D\bibinitperiod},
+           given={Xuan\bibnamedelima Bien},
+           giveni={X\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{fullhash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{bibnamehash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{authorbibnamehash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{authornamehash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{authorfullhash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is focused on investigating the joints jerk of industrial serial redundant manipulators with 6 degrees of freedom (6-DOF) under the variation of the end-effector point (EEP) trajectory in the workspace. The EEP trajectories are initially built in the basic planes because of their simplicity, verification and experimentation are smooth, and most of the actual welded structures are performed on these basic planes. The jerk is determined by solving the inverse kinematics problem of the redundant system. This problem is solved based on the algorithm which is used for adjusting the increments of the generalized coordinate vector (AGV). The efficiency of this algorithm is shown through the error between a given trajectory and the recalculated trajectory through the forward kinematics problem. The result of this study allows us to evaluate the effect of the change of the trajectory on the kinematics characteristics of the robot in general and the jerk of the joints in particular. On the other hand, these results can be used as the basis for planning the EEP trajectory for redundant robots, developing algorithms to reduce joint jerky, increase the life of robot systems, and improve the accuracy of the redundant robot movement.}
+      \field{issn}{2383-4536}
+      \field{journaltitle}{Journal of Applied and Computational Mechanics}
+      \field{number}{3}
+      \field{title}{On the Effect of the End-effector Point Trajectory on the Joint Jerk of the Redundant Manipulators}
+      \field{volume}{7}
+      \field{year}{2021}
+      \field{pages}{1575\bibrangedash 1582}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.22055/jacm.2021.35350.2635
+      \endverb
+      \verb{file}
+      \verb Duong 2021 - On the Effect:Attachments/Duong 2021 - On the Effect.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://jacm.scu.ac.ir/article_16660.html
+      \endverb
+      \verb{url}
+      \verb https://jacm.scu.ac.ir/article_16660.html
       \endverb
     \endentry
     \entry{Feldhausen.2022}{article}{}
@@ -541,6 +822,65 @@
       \endverb
       \verb{url}
       \verb https://link.springer.com/chapter/10.1007/978-3-030-14544-6_9
+      \endverb
+    \endentry
+    \entry{Huynh.2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=af65202c872c733936dfa89c773c5f86}{%
+           family={Huynh},
+           familyi={H\bibinitperiod},
+           given={Hoai\bibnamedelima Nam},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8b5159bbd6ac93b4917ba992e199a721}{%
+           family={Assadi},
+           familyi={A\bibinitperiod},
+           given={Hamed},
+           giveni={H\bibinitperiod}}}%
+        {{hash=15f352c66a076908413d9f126f51101c}{%
+           family={Rivière-Lorphèvre},
+           familyi={R\bibinithyphendelim L\bibinitperiod},
+           given={Edouard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=857efd7ebd753c97b63a92eea568bf26}{%
+           family={Verlinden},
+           familyi={V\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b155ad17c1775eb669add593573004f4}{%
+           family={Ahmadi},
+           familyi={A\bibinitperiod},
+           given={Keivan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{2fea5c5d575befa8a2b30fc3496ca329}
+      \strng{fullhash}{2fea5c5d575befa8a2b30fc3496ca329}
+      \strng{bibnamehash}{2fea5c5d575befa8a2b30fc3496ca329}
+      \strng{authorbibnamehash}{2fea5c5d575befa8a2b30fc3496ca329}
+      \strng{authornamehash}{2fea5c5d575befa8a2b30fc3496ca329}
+      \strng{authorfullhash}{2fea5c5d575befa8a2b30fc3496ca329}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using industrial robots as machine tools is targeted by many industries for their lower cost and larger workspace. Nevertheless, performance of indust$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Modelling the dynamics of industrial robots for milling operations}
+      \field{volume}{61}
+      \field{year}{2020}
+      \field{pages}{101852}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2019.101852
+      \endverb
+      \verb{file}
+      \verb Huynh, Assadi et al. 2020 - Modelling the dynamics of industrial:Attachments/Huynh, Assadi et al. 2020 - Modelling the dynamics of industrial.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584519301784
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584519301784
       \endverb
     \endentry
     \entry{Iglesias.2015}{article}{}
@@ -886,6 +1226,121 @@
       \field{title}{Computer aided design and manufacturing}
       \field{year}{2013}
     \endentry
+    \entry{Lin.2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=911f3f167c630c6017ae269ec324c770}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Junzhe},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6e86507a6044d2095c51cde65948dc14}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Congcong},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2f376c8a25e03445b9888b5ebb1eb602}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jixiang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=385515219469b49871047a8385f24608}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cadfb3c8b624e050874a32bc3cd292a4}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e43542c63845b561d802a67aa23a6856}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{284a17c8d48865dc2b5c151e0fea6817}
+      \strng{fullhash}{284a17c8d48865dc2b5c151e0fea6817}
+      \strng{bibnamehash}{284a17c8d48865dc2b5c151e0fea6817}
+      \strng{authorbibnamehash}{284a17c8d48865dc2b5c151e0fea6817}
+      \strng{authornamehash}{284a17c8d48865dc2b5c151e0fea6817}
+      \strng{authorfullhash}{284a17c8d48865dc2b5c151e0fea6817}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Robot manipulators with 6 degree-of-freedom (DOF) have advantages of good flexibility and large working space. However, the relatively low stiffness d$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Contour error-based optimization of the end-effector pose of a 6 degree-of-freedom serial robot in milling operation}
+      \field{volume}{73}
+      \field{year}{2022}
+      \field{pages}{102257}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2021.102257
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s073658452100137x
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s073658452100137x
+      \endverb
+    \endentry
+    \entry{Liu.2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=93c82128aca25c57cfb17e90d02136d5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e4b2ac8bed44f2d428aa4517c0f0c1bd}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Linwei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=37b1b6da57c8e2bdd8c0ef5045632a57}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=61660b97cdba4981a8815a4feeb249c9}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jinyu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=488553daf9166a59ba516b7db07498fc}{%
+           family={Shu},
+           familyi={S\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd91c890768d719b7a2eb9ff967f8fed}
+      \strng{fullhash}{cd91c890768d719b7a2eb9ff967f8fed}
+      \strng{bibnamehash}{cd91c890768d719b7a2eb9ff967f8fed}
+      \strng{authorbibnamehash}{cd91c890768d719b7a2eb9ff967f8fed}
+      \strng{authornamehash}{cd91c890768d719b7a2eb9ff967f8fed}
+      \strng{authorfullhash}{cd91c890768d719b7a2eb9ff967f8fed}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Aiming at the redundant degree of freedom problem of six axis industrial robot performing five axis milling task, a new optimization method of robot milling redundant degrees of freedom considering chatter stability was proposed. Taking the limit cutting depth of robot milling regenerative cha...}
+      \field{title}{Optimization of redundant degree of freedom in robot milling considering chatter stability}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.21203/rs.3.rs-1360661/v1
+      \endverb
+      \verb{file}
+      \verb Liu, Wang et al. 2022 - Optimization of redundant degree:Attachments/Liu, Wang et al. 2022 - Optimization of redundant degree.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchsquare.com/article/rs-1360661/latest
+      \endverb
+      \verb{url}
+      \verb https://www.researchsquare.com/article/rs-1360661/latest
+      \endverb
+    \endentry
     \entry{Maiti.2017}{book}{}
       \name{author}{1}{}{%
         {{hash=159334c0584644af762e2a392ff063b6}{%
@@ -916,6 +1371,76 @@
       \field{year}{2017}
       \verb{file}
       \verb Maiti 2017 - Introducing technology computer-aided design TCAD:Attachments/Maiti 2017 - Introducing technology computer-aided design TCAD.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Malyshev.2022}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=0862b994f24da22a4104fff5805d56de}{%
+           family={Malyshev},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=148b978a467efc9842f66e4e1f4c17b3}{%
+           family={Rybak},
+           familyi={R\bibinitperiod},
+           given={L.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a49ddd1353f5948e079716c4c708c10a}{%
+           family={Pisarenko},
+           familyi={P\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=11a8816771b866515384e23d2a7ea03a}{%
+           family={Cherkasov},
+           familyi={C\bibinitperiod},
+           given={V.\bibnamedelimi V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b6cfa06c6d110548dbb088a1445563f5}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7fbe96d4f8bcef734703749abac931e2}{%
+           family={Brandstötter},
+           familyi={B\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{2}{%
+        {Springer International Publishing}%
+        {Imprint: Springer}%
+      }
+      \strng{namehash}{5719c16169230b9e69b09f46c6a0af02}
+      \strng{fullhash}{5719c16169230b9e69b09f46c6a0af02}
+      \strng{bibnamehash}{5719c16169230b9e69b09f46c6a0af02}
+      \strng{authorbibnamehash}{5719c16169230b9e69b09f46c6a0af02}
+      \strng{authornamehash}{5719c16169230b9e69b09f46c6a0af02}
+      \strng{authorfullhash}{5719c16169230b9e69b09f46c6a0af02}
+      \strng{editorbibnamehash}{a9ff748c17b8d12fc25970e4653186a7}
+      \strng{editornamehash}{a9ff748c17b8d12fc25970e4653186a7}
+      \strng{editorfullhash}{a9ff748c17b8d12fc25970e4653186a7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Service and Industrial Robotics}
+      \field{isbn}{978-3-031-04869-2}
+      \field{series}{Mechanisms and Machine Science}
+      \field{title}{Analysis of the Singularities Influence on the Forward Kinematics Solution and the Geometry of the Workspace of the Gough-Stewart Platform}
+      \field{volume}{120}
+      \field{year}{2022}
+      \field{pages}{60\bibrangedash 67}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-031-04870-8{\textunderscore }8
+      \endverb
+      \verb{file}
+      \verb Malyshev, Rybak et al. 2022 - Analysis of the Singularities Influence:Attachments/Malyshev, Rybak et al. 2022 - Analysis of the Singularities Influence.pdf:application/pdf
       \endverb
     \endentry
     \entry{Pan}{article}{}
@@ -976,6 +1501,85 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
+      \endverb
+    \endentry
+    \entry{Staff.1988}{book}{}
+      \name{author}{3}{}{%
+        {{hash=3bc4939df463ff8a9329c377273d57fd}{%
+           family={{R.V. Dubey}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=002c258aea02c3c04ce47382b34335e7}{%
+           family={{J.A. Euler}},
+           familyi={J\bibinitperiod}}}%
+        {{hash=5cb458aecab8f0eda9b8f23af2da6e30}{%
+           family={{S.M. Babcock}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Ieee International Conference on Ro Staff}%
+      }
+      \list{location}{1}{%
+        {Los Alamitos}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society Press}%
+      }
+      \strng{namehash}{667838421ce2a9bf23db5846c442b516}
+      \strng{fullhash}{667838421ce2a9bf23db5846c442b516}
+      \strng{bibnamehash}{667838421ce2a9bf23db5846c442b516}
+      \strng{authorbibnamehash}{667838421ce2a9bf23db5846c442b516}
+      \strng{authornamehash}{667838421ce2a9bf23db5846c442b516}
+      \strng{authorfullhash}{667838421ce2a9bf23db5846c442b516}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0818608528}
+      \field{title}{Robotics and Automation, 5th IEEE International Conference on, 1988: Proceedings}
+      \field{year}{1988}
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/servlet/opac?punumber=202
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/servlet/opac?punumber=202
+      \endverb
+    \endentry
+    \entry{Reiter.2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=bf4330c73776862e0013e58f8df3a2b9}{%
+           family={Reiter},
+           familyi={R\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bd3a94ded53b2df3f4d08462262f8a64}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f72fb7098ec14120894cb67f6c3bd0a}{%
+           family={Gattringer},
+           familyi={G\bibinitperiod},
+           given={Hubert},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{fullhash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{bibnamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{authorbibnamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{authornamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{authorfullhash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IECON 2016 - 42nd Annual Conference of the IEEE Industrial Electronics Society}
+      \field{title}{Inverse kinematics in minimum-time trajectory planning for kinematically redundant manipulators}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1109/iecon.2016.7793436
       \endverb
     \endentry
     \entry{Saxena.2020}{article}{}
@@ -1069,6 +1673,66 @@
       \field{year}{2020}
       \verb{doi}
       \verb 10.1109/icetst49965.2020.9080724
+      \endverb
+    \endentry
+    \entry{Shi.2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a1770271e12b3ed81b13f52fe408d895}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Xiaohua},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7ab947d5412a3e2fb932e67fcdb67505}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=77d6fd64a87e74cba85a7796cbdf353e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xuechan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=06f197c11eed4b6e57fe4044e996cf0c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ziming},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f3f19ca065d221c5861419a36bd95b4d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zhiwei},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{24d7309417112ffae6d00aab4715847f}
+      \strng{fullhash}{24d7309417112ffae6d00aab4715847f}
+      \strng{bibnamehash}{24d7309417112ffae6d00aab4715847f}
+      \strng{authorbibnamehash}{24d7309417112ffae6d00aab4715847f}
+      \strng{authornamehash}{24d7309417112ffae6d00aab4715847f}
+      \strng{authorfullhash}{24d7309417112ffae6d00aab4715847f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A new method of kinematic analysis and singularity analysis is proposed for a 7-DOF redundant manipulator with three consecutive parallel axes. First, the redundancy angle is described according to the self-motion characteristics of the manipulator, the position and orientation of the end-effector are separated, and the inverse kinematics of this manipulator is analyzed by geometric methods with the redundancy angle as a constraint. Then, the Jacobian matrix is established to derive the conditions for the kinematic singularities of the robotic arm by using the primitive matrix method and the block matrix method. Then, the kinematic singularities conditions in the joint space are mapped to the Cartesian space, and the singular configuration is described using the end poses and redundancy angles of the robotic arm, and a singularity avoidance method based on the redundancy angles and end pose is proposed. Finally, the correctness and feasibility of the inverse kinematics algorithm and the singularity avoidance method are verified by simulation examples.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{21}
+      \field{title}{Kinematics and Singularity Analysis of a 7-DOF Redundant Manipulator}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{pages}{7257}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s21217257
+      \endverb
+      \verb{file}
+      \verb Shi, Guo et al. 2021 - Kinematics and Singularity Analysis:Attachments/Shi, Guo et al. 2021 - Kinematics and Singularity Analysis.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/21/21/7257
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/21/21/7257
       \endverb
     \endentry
     \entry{Simonis.2016}{article}{}
@@ -1376,6 +2040,59 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0959652615018247
+      \endverb
+    \endentry
+    \entry{Zhao.2021}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=0db445256963546f26ac7dc0d929265b}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Hang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=dc86a56f5713c9035c86aeed5fb14222}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bangcheng},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8ba2426904463349cba1a2ebc5476f78}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Xiaojing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a8cfd0afb4a2a8779cdb000367c9e4d9}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ziqiang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=fa5520f5635265a711b5eac8525441fc}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d1694b68d78ce00a948b9394625fbe3f}
+      \strng{fullhash}{d1694b68d78ce00a948b9394625fbe3f}
+      \strng{bibnamehash}{d1694b68d78ce00a948b9394625fbe3f}
+      \strng{authorbibnamehash}{d1694b68d78ce00a948b9394625fbe3f}
+      \strng{authornamehash}{d1694b68d78ce00a948b9394625fbe3f}
+      \strng{authorfullhash}{d1694b68d78ce00a948b9394625fbe3f}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 China Automation Congress (CAC)}
+      \field{title}{Singularity Analysis and Singularity Avoidance Trajectory Planning for Industrial Robots}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1109/cac53003.2021.9727497
       \endverb
     \endentry
   \enddatalist
