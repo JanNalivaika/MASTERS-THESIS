@@ -507,6 +507,60 @@
       \verb https://link.springer.com/article/10.1007/s00170-018-2033-7
       \endverb
     \endentry
+    \entry{ChenGang.2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ce27d38a9b96ffca656bd49a0591a1c4}{%
+           family={Chen-Gang},
+           familyi={C\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=cd470c0d8f2dcfb3e7beaf1c1dc2cb2f}{%
+           family={Li-Tong},
+           familyi={L\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=db68f4980149ff9e1a18ee47be27f801}{%
+           family={Chu-Ming},
+           familyi={C\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=30110dbb7d28d4d38952a0412c235988}{%
+           family={Xuan},
+           familyi={X\bibinitperiod},
+           given={Jia-Qing},
+           giveni={J\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=742bc0288b954555e372979862e5877e}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Sun-Han},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{7202dd683adbf52ae463bfecd6a7f600}
+      \strng{fullhash}{7202dd683adbf52ae463bfecd6a7f600}
+      \strng{bibnamehash}{7202dd683adbf52ae463bfecd6a7f600}
+      \strng{authorbibnamehash}{7202dd683adbf52ae463bfecd6a7f600}
+      \strng{authornamehash}{7202dd683adbf52ae463bfecd6a7f600}
+      \strng{authorfullhash}{7202dd683adbf52ae463bfecd6a7f600}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Robot kinematics calibration is of great significance for improving robot absolute pose accuracy, which can be divided into modelbased and non-parametric kinematics calibration. For model-based kinematics calibration, kinematics calibration modeling, pose measurement of end-effector, kinematics parameters calibration and error compensation are systematically analyzed. And with the increasing demand for autonomy, the autonomous kinematics calibration is introduced. On the other hand, research status of nonparametric kinematics calibration is elaborated, the advantages and disadvantage of which are discussed respectively. On the basis, comprehensive and organized description and summarization of the three kinds of calibrations are given. Overall, aiming at robot kinematics calibration, existing achievements are summarized, a typical calibration process is carried out and calibration precautions are detailed, then calibration results of various methods are compared and analyzed. Finally, existing problems in kinematics calibration are analyzed and development prospects are presented.}
+      \field{issn}{2005-4602}
+      \field{journaltitle}{International Journal of Precision Engineering and Manufacturing}
+      \field{number}{8}
+      \field{title}{Review on kinematics calibration technology of serial robots}
+      \field{volume}{15}
+      \field{year}{2014}
+      \field{pages}{1759\bibrangedash 1774}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s12541-014-0528-1
+      \endverb
+      \verb{file}
+      \verb Chen-Gang, Li-Tong et al. 2014 - Review on kinematics calibration technology:Attachments/Chen-Gang, Li-Tong et al. 2014 - Review on kinematics calibration technology.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12541-014-0528-1
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12541-014-0528-1
+      \endverb
+    \endentry
     \entry{Dilberoglu.2017}{article}{}
       \name{author}{4}{}{%
         {{hash=9c79937e4136dd4a2a6a72af1b7f7aa7}{%
@@ -1940,6 +1994,47 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0959652617313732
+      \endverb
+    \endentry
+    \entry{VandeWeghe.2007}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=e5527f8c93d89e1543be456262f19585}{%
+           family={{Vande Weghe}},
+           familyi={V\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=35f3ca374463c429652940b9722efa08}{%
+           family={Ferguson},
+           familyi={F\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a77cf8d8e3ec4a0f44508c534df6e5af}{%
+           family={Srinivasa},
+           familyi={S\bibinitperiod},
+           given={Siddhartha\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c77de54242eca57385f84e2551fd674f}
+      \strng{fullhash}{c77de54242eca57385f84e2551fd674f}
+      \strng{bibnamehash}{c77de54242eca57385f84e2551fd674f}
+      \strng{authorbibnamehash}{c77de54242eca57385f84e2551fd674f}
+      \strng{authornamehash}{c77de54242eca57385f84e2551fd674f}
+      \strng{authorfullhash}{c77de54242eca57385f84e2551fd674f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2007 7th IEEE-RAS International Conference on Humanoid Robots}
+      \field{title}{Randomized path planning for redundant manipulators without inverse kinematics}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1109/ichr.2007.4813913
+      \endverb
+      \verb{file}
+      \verb Vande Weghe, Ferguson et al. 2007 - Randomized path planning for redundant:Attachments/Vande Weghe, Ferguson et al. 2007 - Randomized path planning for redundant.pdf:application/pdf
       \endverb
     \endentry
     \entry{Wang.2023}{article}{}
