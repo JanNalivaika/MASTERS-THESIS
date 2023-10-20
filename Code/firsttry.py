@@ -103,7 +103,7 @@ def main():
 
     # Set the parameters for the genetic algorithm
     # print(objective_function(np.asarray([[30,0]])))
-    initial_population_size = 100
+    initial_population_size = 10
     num_variables = 2
     num_generations = 100
     crossover_rate = int(initial_population_size*5)
@@ -112,7 +112,7 @@ def main():
     local_search_rate =  1
 
     # Define the bounds for each variable
-    lim = 40
+    lim = 100
     lower_bounds = [-lim, -lim]
     upper_bounds = [lim, lim]
 
