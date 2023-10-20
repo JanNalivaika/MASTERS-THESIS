@@ -169,6 +169,87 @@
       \verb https://journal.umy.ac.id/index.php/jrc/article/view/15958
       \endverb
     \endentry
+    \entry{Aslan.2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=604d50e097cbe4ab4ce1ee0353f788f4}{%
+           family={Aslan},
+           familyi={A\bibinitperiod},
+           given={Deniz},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3619b105bb06370c5b34c30640b892f0}{%
+           family={Altintas},
+           familyi={A\bibinitperiod},
+           given={Yusuf},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{723a1a667c728310c90897dfffcf7c1e}
+      \strng{fullhash}{723a1a667c728310c90897dfffcf7c1e}
+      \strng{bibnamehash}{723a1a667c728310c90897dfffcf7c1e}
+      \strng{authorbibnamehash}{723a1a667c728310c90897dfffcf7c1e}
+      \strng{authornamehash}{723a1a667c728310c90897dfffcf7c1e}
+      \strng{authorfullhash}{723a1a667c728310c90897dfffcf7c1e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents an on-line chatter detection method in milling using drive motor current commands supplied by the CNC system in real-time. The met$\ldots$}
+      \field{issn}{0890-6955}
+      \field{journaltitle}{International Journal of Machine Tools and Manufacture}
+      \field{title}{On-line chatter detection in milling using drive motor current commands extracted from CNC}
+      \field{volume}{132}
+      \field{year}{2018}
+      \field{pages}{64\bibrangedash 80}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.ijmachtools.2018.04.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0890695518300841
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0890695518300841
+      \endverb
+    \endentry
+    \entry{Attaran.2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8c8a21b012b156aa7db82008f63d4570}{%
+           family={Attaran},
+           familyi={A\bibinitperiod},
+           given={Mohsen},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c8a21b012b156aa7db82008f63d4570}
+      \strng{fullhash}{8c8a21b012b156aa7db82008f63d4570}
+      \strng{bibnamehash}{8c8a21b012b156aa7db82008f63d4570}
+      \strng{authorbibnamehash}{8c8a21b012b156aa7db82008f63d4570}
+      \strng{authornamehash}{8c8a21b012b156aa7db82008f63d4570}
+      \strng{authorfullhash}{8c8a21b012b156aa7db82008f63d4570}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The use of additive manufacturing technologies in different industries has increased substantially during the past years. Henry Ford introduced the mo$\ldots$}
+      \field{issn}{0007-6813}
+      \field{journaltitle}{Business Horizons}
+      \field{number}{5}
+      \field{title}{The rise of 3-D printing: The advantages of additive manufacturing over traditional manufacturing}
+      \field{volume}{60}
+      \field{year}{2017}
+      \field{pages}{677\bibrangedash 688}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.bushor.2017.05.011
+      \endverb
+      \verb{file}
+      \verb Attaran 2017 - The rise of 3-D printing:Attachments/Attaran 2017 - The rise of 3-D printing.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0007681317300897
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0007681317300897
+      \endverb
+    \endentry
     \entry{Ayten.2016}{article}{}
       \name{author}{3}{}{%
         {{hash=b31a1082fe3fcfab2b5b24e0db7f5e36}{%
@@ -449,6 +530,51 @@
       \verb https://link.springer.com/chapter/10.1007/978-3-030-00365-4_32
       \endverb
     \endentry
+    \entry{Bose.2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=247a6ab37a8e598e3335faffcc72d256}{%
+           family={Bose},
+           familyi={B\bibinitperiod},
+           given={Susmita},
+           giveni={S\bibinitperiod}}}%
+        {{hash=63beb12af31f1af6026847329cc69a69}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Dongxu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b8a8a69a03aefe78c2a8784b2d54e6bc}{%
+           family={Sahasrabudhe},
+           familyi={S\bibinitperiod},
+           given={Himanshu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=14021f8564f7cc82b9d61c8b827e564b}{%
+           family={Bandyopadhyay},
+           familyi={B\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
+      \strng{fullhash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
+      \strng{bibnamehash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
+      \strng{authorbibnamehash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
+      \strng{authornamehash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
+      \strng{authorfullhash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Biomaterials are used to engineer functional restoration of different tissues to improve human health and the quality of life. Biomaterials can be natural or synthetic. Additive manufacturing (AM) is a novel materials processing approach to create parts or prototypes layer-by-layer directly from a computer aided design (CAD) file. The combination of additive manufacturing and biomaterials is very promising, especially towards patient specific clinical applications. Challenges of AM technology along with related materials issues need to be realized to make this approach feasible for broader clinical needs. This approach is already making a significant gain towards numerous commercial biomedical devices. In this review, key additive manufacturing methods are first introduced followed by AM of different materials, and finally applications of AM in various treatment options. Realization of critical challenges and technical issues for different AM methods and biomaterial selections based on clinical needs are vital. Multidisciplinary research will be necessary to face those challenges and fully realize the potential of AM in the coming days. Biomaterials are used to engineer functional restoration of different tissues to improve human health and the quality of life. Biomaterials can be natural or synthetic. Additive manufacturing (AM) is a novel materials processing approach to create parts or prototypes layer-by-layer directly from a computer aided design (CAD) file. The combination of additive manufacturing and biomaterials is very promising, especially towards patient specific clinical applications. Challenges of AM technology along with related materials issues need to be realized to make this approach feasible for broader clinical needs. This approach is already making a significant gain towards numerous commercial biomedical devices. In this review, key additive manufacturing methods are first introduced followed by AM of different materials, and finally applications of AM in various treatment options. Realization of critical challenges and technical issues for different AM methods and biomaterial selections based on clinical needs are vital. Multidisciplinary research will be necessary to face those challenges and fully realize the potential of AM in the coming days. // Biomaterials are used to engineer functional restoration of different tissues to improve human health and the quality of life. Biomaterials can be natural or synthetic. Additive manufacturing (AM) is a novel materials processing approach to create parts or prototypes layer-by-layer directly from a computer aided design (CAD) file. The combination of additive manufacturing and biomaterials is very promising, especially towards patient specific clinical applications. Challenges of AM technology along with related materials issues need to be realized to make this approach feasible for broader clinical needs. This approach is already making a significant gain towards numerous commercial biomedical devices. In this review, key additive manufacturing methods are first introduced followed by AM of different materials, and finally applications of AM in various treatment options. Realization of critical challenges and technical issues for different AM methods and biomaterial selections based on clinical needs are vital. Multidisciplinary research will be necessary to face those challenges and fully realize the potential of AM in the coming days.}
+      \field{issn}{0079-6425}
+      \field{journaltitle}{Progress in materials science}
+      \field{title}{Additive manufacturing of biomaterials}
+      \field{volume}{93}
+      \field{year}{2018}
+      \field{pages}{45\bibrangedash 111}
+      \range{pages}{67}
+      \verb{doi}
+      \verb 10.1016/j.pmatsci.2017.08.003
+      \endverb
+    \endentry
     \entry{Calleja.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=1e952f60475fce06efca781e681c73ce}{%
@@ -561,6 +687,65 @@
       \verb https://link.springer.com/article/10.1007/s12541-014-0528-1
       \endverb
     \endentry
+    \entry{Cunningham.2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0f4aa9b723d3efd8d5286f3d9be1018d}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=aefb330af207717f6186ed0a92beeeac}{%
+           family={Flynn},
+           familyi={F\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e63bdd8af6a63f25cea2482154075eec}{%
+           family={Shokrani},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=60b2eb689be06fd9117a43dea6798e38}{%
+           family={Dhokia},
+           familyi={D\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=07f66ad03cac632d0bffb419771e5d0a}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={S.\bibnamedelimi T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{acdd67a5a27090f31f58eccf7f7bd705}
+      \strng{fullhash}{acdd67a5a27090f31f58eccf7f7bd705}
+      \strng{bibnamehash}{acdd67a5a27090f31f58eccf7f7bd705}
+      \strng{authorbibnamehash}{acdd67a5a27090f31f58eccf7f7bd705}
+      \strng{authornamehash}{acdd67a5a27090f31f58eccf7f7bd705}
+      \strng{authorfullhash}{acdd67a5a27090f31f58eccf7f7bd705}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Wire Arc Additive Manufacturing (WAAM) is attracting significant attention in industry and academia due to its ability to capture the benefits of addi$\ldots$}
+      \field{issn}{2214-8604}
+      \field{journaltitle}{Additive Manufacturing}
+      \field{title}{Invited review article: Strategies and processes for high quality wire arc additive manufacturing}
+      \field{volume}{22}
+      \field{year}{2018}
+      \field{pages}{672\bibrangedash 686}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.addma.2018.06.020
+      \endverb
+      \verb{file}
+      \verb Cunningham, Flynn et al. 2018 - Invited review article:Attachments/Cunningham, Flynn et al. 2018 - Invited review article.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214860418303920
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214860418303920
+      \endverb
+    \endentry
     \entry{Dilberoglu.2017}{article}{}
       \name{author}{4}{}{%
         {{hash=9c79937e4136dd4a2a6a72af1b7f7aa7}{%
@@ -610,6 +795,21 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s2351978917303529
+      \endverb
+    \endentry
+    \entry{Additive}{misc}{}
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Beuth Verlag GmbH}%
+      }
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{DIN EN ISO/ASTM 52900:2022-03, Additive Fertigung{\_}- Grundlagen{\_}- Terminologie (ISO/ASTM 52900:2021); Deutsche Fassung EN{\_}ISO/ASTM 52900:2021}
+      \verb{doi}
+      \verb 10.31030/3290011
       \endverb
     \endentry
     \entry{Doan.2016}{inproceedings}{}
@@ -736,6 +936,119 @@
       \verb https://jacm.scu.ac.ir/article_16660.html
       \endverb
     \endentry
+    \entry{Faludi.2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=fc26af138d81471ea4417416a2b75321}{%
+           family={Faludi},
+           familyi={F\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=07b363b4b5cf69f4065e67b42bca5b3e}{%
+           family={Bayley},
+           familyi={B\bibinitperiod},
+           given={Cindy},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e732e294d4fe369782192edacaf80920}{%
+           family={Bhogal},
+           familyi={B\bibinitperiod},
+           given={Suraj},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5c3924e25c2f34f2f58a571d9580c5e1}{%
+           family={Iribarne},
+           familyi={I\bibinitperiod},
+           given={Myles},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{90446b743a21e8fbefe3aee8b61428ac}
+      \strng{fullhash}{90446b743a21e8fbefe3aee8b61428ac}
+      \strng{bibnamehash}{90446b743a21e8fbefe3aee8b61428ac}
+      \strng{authorbibnamehash}{90446b743a21e8fbefe3aee8b61428ac}
+      \strng{authornamehash}{90446b743a21e8fbefe3aee8b61428ac}
+      \strng{authorfullhash}{90446b743a21e8fbefe3aee8b61428ac}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Comparing environmental impacts of additive manufacturing vs traditional machining via life-cycle assessment - Author: Jeremy Faludi, Cindy Bayley, Suraj Bhogal, Myles Iribarne}
+      \field{journaltitle}{Rapid Prototyping Journal}
+      \field{number}{1}
+      \field{title}{Comparing environmental impacts of additive manufacturing vs traditional machining via life-cycle assessment}
+      \field{volume}{21}
+      \field{year}{2015}
+      \field{pages}{14\bibrangedash 33}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1108/RPJ-07-2013-0067
+      \endverb
+      \verb{file}
+      \verb Faludi, Bayley et al. 2015 - Comparing environmental impacts of additive:Attachments/Faludi, Bayley et al. 2015 - Comparing environmental impacts of additive.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.emerald.com/insight/content/doi/10.1108/rpj-07-2013-0067/full/pdf
+      \endverb
+      \verb{url}
+      \verb https://www.emerald.com/insight/content/doi/10.1108/rpj-07-2013-0067/full/pdf
+      \endverb
+    \endentry
+    \entry{Faria.2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7202002fb39565af2f99107905419dda}{%
+           family={Faria},
+           familyi={F\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3c9cca3893fa6df8c0f874e341a92f6e}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Flora},
+           giveni={F\bibinitperiod}}}%
+        {{hash=dd1fb017f52faeb721a19c6f47f8ec49}{%
+           family={Erlhagen},
+           familyi={E\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=63654051e3e1974ff72abc5dca6b0a56}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Sérgio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eac57fa6b7dde7ed0413ceb627dfcb65}{%
+           family={Bicho},
+           familyi={B\bibinitperiod},
+           given={Estela},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4136ab05678bd5960bbfe82dc7147620}
+      \strng{fullhash}{4136ab05678bd5960bbfe82dc7147620}
+      \strng{bibnamehash}{4136ab05678bd5960bbfe82dc7147620}
+      \strng{authorbibnamehash}{4136ab05678bd5960bbfe82dc7147620}
+      \strng{authornamehash}{4136ab05678bd5960bbfe82dc7147620}
+      \strng{authorfullhash}{4136ab05678bd5960bbfe82dc7147620}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a novel analytic method to uniquely solve inverse kinematics of 7 degrees-of-freedom manipulators while avoiding joint limits and $\ldots$}
+      \field{issn}{0094-114X}
+      \field{journaltitle}{Mechanism and Machine Theory}
+      \field{title}{Position-based kinematics for 7-DoF serial manipulators with global configuration control, joint limit and singularity avoidance}
+      \field{volume}{121}
+      \field{year}{2018}
+      \field{pages}{317\bibrangedash 334}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.mechmachtheory.2017.10.025
+      \endverb
+      \verb{file}
+      \verb Faria, Ferreira et al. 2018 - Position-based kinematics for 7-DoF serial:Attachments/Faria, Ferreira et al. 2018 - Position-based kinematics for 7-DoF serial.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x17306559
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x17306559
+      \endverb
+    \endentry
     \entry{Feldhausen.2022}{article}{}
       \name{author}{8}{}{%
         {{hash=1fcc6f8faf4c012f8812c14e48592619}{%
@@ -800,6 +1113,55 @@
       \verb 10.1016/j.addma.2022.102900
       \endverb
     \endentry
+    \entry{Gadaleta.2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=807c10fb532b591cda91e43b0f123b9a}{%
+           family={Gadaleta},
+           familyi={G\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a9987fac2d05b57c877ce85876b19634}{%
+           family={Pellicciari},
+           familyi={P\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1efd6d2180b616f007a1dd10d0cc187d}{%
+           family={Berselli},
+           familyi={B\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{fullhash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{bibnamehash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{authorbibnamehash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{authornamehash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{authorfullhash}{899081cccc02beb53eee3ab6caa967d2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At present, energy consumption strongly affects the financial payback period of industrial robots, as well as the related manufacturing process sustai$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Optimization of the energy consumption of industrial robots for automatic code generation}
+      \field{volume}{57}
+      \field{year}{2019}
+      \field{pages}{452\bibrangedash 464}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2018.12.020
+      \endverb
+      \verb{file}
+      \verb Gadaleta, Pellicciari et al. 2019 - Optimization of the energy consumption:Attachments/Gadaleta, Pellicciari et al. 2019 - Optimization of the energy consumption.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584518301856
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584518301856
+      \endverb
+    \endentry
     \entry{Ghobakhloo.2020}{article}{}
       \name{author}{1}{}{%
         {{hash=b963f11ee19f34f2782fe4268d3c630e}{%
@@ -834,6 +1196,52 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0959652619347390
+      \endverb
+    \endentry
+    \entry{GiorgioBort.2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7c422a8a50320bb2243f0a2c993aad91}{%
+           family={{Giorgio Bort}},
+           familyi={G\bibinitperiod},
+           given={Carlos\bibnamedelima Maximiliano},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=701bb8bec1dc956ee3382b49bb70c8a8}{%
+           family={Leonesio},
+           familyi={L\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df56edb08976f1c1b6151344082e7816}{%
+           family={Bosetti},
+           familyi={B\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{26baba62ff4a65a6c550bd617ec5f7ec}
+      \strng{fullhash}{26baba62ff4a65a6c550bd617ec5f7ec}
+      \strng{bibnamehash}{26baba62ff4a65a6c550bd617ec5f7ec}
+      \strng{authorbibnamehash}{26baba62ff4a65a6c550bd617ec5f7ec}
+      \strng{authornamehash}{26baba62ff4a65a6c550bd617ec5f7ec}
+      \strng{authorfullhash}{26baba62ff4a65a6c550bd617ec5f7ec}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Seeking a higher level of automation, according to Intelligent Manufacturing paradigm, an optimal process control for milling process has been develop$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{A model-based adaptive controller for chatter mitigation and productivity enhancement in CNC milling machines}
+      \field{volume}{40}
+      \field{year}{2016}
+      \field{pages}{34\bibrangedash 43}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2016.01.006
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584516300242
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584516300242
       \endverb
     \endentry
     \entry{Goel.2020}{incollection}{}
@@ -876,6 +1284,124 @@
       \endverb
       \verb{url}
       \verb https://link.springer.com/chapter/10.1007/978-3-030-14544-6_9
+      \endverb
+    \endentry
+    \entry{Gu.2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f91079d85cd6a9d0a5fb3cdcee4d131b}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=5a1fa1814a312ce304ee2f2957996a66}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Yoram},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{54a91a441090ca3b1aa4100644ad8611}
+      \strng{fullhash}{54a91a441090ca3b1aa4100644ad8611}
+      \strng{bibnamehash}{54a91a441090ca3b1aa4100644ad8611}
+      \strng{authorbibnamehash}{54a91a441090ca3b1aa4100644ad8611}
+      \strng{authornamehash}{54a91a441090ca3b1aa4100644ad8611}
+      \strng{authorfullhash}{54a91a441090ca3b1aa4100644ad8611}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Globalization and social networks are dramatically changing the producer-buyer landscape. Consumers have an increasing desire to buy unique products t$\ldots$}
+      \field{issn}{2213-8463}
+      \field{journaltitle}{Manufacturing Letters}
+      \field{title}{Manufacturing system architecture for cost-effective mass-individualization}
+      \field{volume}{16}
+      \field{year}{2018}
+      \field{pages}{44\bibrangedash 48}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.mfglet.2018.04.002
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2213846317300974
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2213846317300974
+      \endverb
+    \endentry
+    \entry{Haleem.2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ac64f478d5bbd373bdb223b8547d13de}{%
+           family={Haleem},
+           familyi={H\bibinitperiod},
+           given={Abid},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1e9e80fb5bc43df028d06eb40fe68a21}{%
+           family={Javaid},
+           familyi={J\bibinitperiod},
+           given={Mohd},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1528511380f2d45e6a33763273aeaf73}
+      \strng{fullhash}{1528511380f2d45e6a33763273aeaf73}
+      \strng{bibnamehash}{1528511380f2d45e6a33763273aeaf73}
+      \strng{authorbibnamehash}{1528511380f2d45e6a33763273aeaf73}
+      \strng{authornamehash}{1528511380f2d45e6a33763273aeaf73}
+      \strng{authorfullhash}{1528511380f2d45e6a33763273aeaf73}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Additive manufacturing (AM) is a set of technologies and are vital to fulfilling different requirements of Industry 4.0. So, there is a need to study different additive manufacturing applications t...}
+      \field{issn}{2424-8622}
+      \field{journaltitle}{Journal of Industrial Integration and Management}
+      \field{number}{04}
+      \field{title}{Additive Manufacturing Applications in Industry 4.0: A Review}
+      \field{volume}{04}
+      \field{year}{2019}
+      \field{pages}{1930001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1142/S2424862219300011
+      \endverb
+    \endentry
+    \entry{Hesser.2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a6622e5da292381e3130ea577e02a1a8}{%
+           family={Hesser},
+           familyi={H\bibinitperiod},
+           given={Daniel\bibnamedelima Frank},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=d0cb0359b76407a7f5823637d69075a4}{%
+           family={Markert},
+           familyi={M\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{de414718a8ff5c61ccda1ee4d97916a5}
+      \strng{fullhash}{de414718a8ff5c61ccda1ee4d97916a5}
+      \strng{bibnamehash}{de414718a8ff5c61ccda1ee4d97916a5}
+      \strng{authorbibnamehash}{de414718a8ff5c61ccda1ee4d97916a5}
+      \strng{authornamehash}{de414718a8ff5c61ccda1ee4d97916a5}
+      \strng{authorfullhash}{de414718a8ff5c61ccda1ee4d97916a5}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Predictive maintenance, in contrast to preventive maintenance, raises the manufacturing quality and reliability, where the integrity is monitored cont$\ldots$}
+      \field{issn}{2213-8463}
+      \field{journaltitle}{Manufacturing Letters}
+      \field{title}{Tool wear monitoring of a retrofitted CNC milling machine using artificial neural networks}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/j.mfglet.2018.11.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2213846318301524
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2213846318301524
       \endverb
     \endentry
     \entry{Huynh.2020}{article}{}
@@ -1043,6 +1569,111 @@
       \endverb
       \verb{url}
       \verb https://link.springer.com/article/10.1007/s00170-020-06287-6
+      \endverb
+    \endentry
+    \entry{IvanTabernero.2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ec24b5d49e23d4ad405918f790b92cd4}{%
+           family={IvánTabernero},
+           familyi={I\bibinitperiod}}}%
+        {{hash=a7fd773930cc79a3929b169845056a62}{%
+           family={Paskual},
+           familyi={P\bibinitperiod},
+           given={Amagoia},
+           giveni={A\bibinitperiod}}}%
+        {{hash=137b123c0b062c319e96ddfa707273c9}{%
+           family={Álvarez},
+           familyi={Á\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6cb75a3b6f222c8024d3bcaac94072ef}{%
+           family={Suárez},
+           familyi={S\bibinitperiod},
+           given={Alfredo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{794c68866bf2a75d46beecbb81015c24}
+      \strng{fullhash}{794c68866bf2a75d46beecbb81015c24}
+      \strng{bibnamehash}{794c68866bf2a75d46beecbb81015c24}
+      \strng{authorbibnamehash}{794c68866bf2a75d46beecbb81015c24}
+      \strng{authornamehash}{794c68866bf2a75d46beecbb81015c24}
+      \strng{authorfullhash}{794c68866bf2a75d46beecbb81015c24}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although Additive Manufacturing implementation is rapidly growing, industrial sectors are demanding an increase of manufactured part size which most e$\ldots$}
+      \field{issn}{2212-8271}
+      \field{journaltitle}{2212-8271}
+      \field{title}{Study on Arc Welding Processes for High Deposition Rate Additive Manufacturing}
+      \field{volume}{68}
+      \field{year}{2018}
+      \field{pages}{358\bibrangedash 362}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.procir.2017.12.095
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2212827117310363
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2212827117310363
+      \endverb
+    \endentry
+    \entry{Jandyal.2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fd5708636054c35785bb90907c2b02bc}{%
+           family={Jandyal},
+           familyi={J\bibinitperiod},
+           given={Anketa},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c4011109df002caa82e5f7a37dc54272}{%
+           family={Chaturvedi},
+           familyi={C\bibinitperiod},
+           given={Ikshita},
+           giveni={I\bibinitperiod}}}%
+        {{hash=5145aea19ec34e3076a0e4ee0120ec6f}{%
+           family={Wazir},
+           familyi={W\bibinitperiod},
+           given={Ishika},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8abad91eb25b9fb1f574d1b41f012bea}{%
+           family={Raina},
+           familyi={R\bibinitperiod},
+           given={Ankush},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fb09554a3a559e4882914bfbbf62af70}{%
+           family={{Ul Haq}},
+           familyi={U\bibinitperiod},
+           given={Mir\bibnamedelima Irfan},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f6ee5da25b8457624d23ee7625c45e3}
+      \strng{fullhash}{5f6ee5da25b8457624d23ee7625c45e3}
+      \strng{bibnamehash}{5f6ee5da25b8457624d23ee7625c45e3}
+      \strng{authorbibnamehash}{5f6ee5da25b8457624d23ee7625c45e3}
+      \strng{authornamehash}{5f6ee5da25b8457624d23ee7625c45e3}
+      \strng{authorfullhash}{5f6ee5da25b8457624d23ee7625c45e3}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{3D printing, unlike other manufacturing processes, being an additive process has emerged as a viable technology for the production of engineering comp$\ldots$}
+      \field{issn}{2666-4127}
+      \field{journaltitle}{2666-4127}
+      \field{title}{3D printing -- A review of processes, materials and applications in industry 4.0}
+      \field{volume}{3}
+      \field{year}{2022}
+      \field{pages}{33\bibrangedash 42}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.susoc.2021.09.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2666412721000441
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2666412721000441
       \endverb
     \endentry
     \entry{Jayawardane.2023}{article}{}
@@ -1280,6 +1911,71 @@
       \field{title}{Computer aided design and manufacturing}
       \field{year}{2013}
     \endentry
+    \entry{Li.2019}{article}{}
+      \name{author}{6}{}{%
+        {{hash=99f1df0e446ad72b49566d3454db9313}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Johnnieew\bibnamedelima Zhong},
+           giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=ecb4560d3d25f63a164f4cc29806f508}{%
+           family={Alkahari},
+           familyi={A\bibinitperiod},
+           given={Mohd\bibnamedelima Rizal},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c5f37bf2dd79534d35cc41198c12be68}{%
+           family={Rosli},
+           familyi={R\bibinitperiod},
+           given={Nor\bibnamedelimb Ana\bibnamedelima Binti},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=113a5dc77e8e531a7a7bff4d8bc30cf3}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={Rafidah},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9c4675d307464c70356c99785082b700}{%
+           family={Sudin},
+           familyi={S\bibinitperiod},
+           given={Mohd\bibnamedelima Nizam},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=402a535afbc5065d717c0c79d7695f26}{%
+           family={Ramli},
+           familyi={R\bibinitperiod},
+           given={Faiz\bibnamedelima Redza},
+           giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8400c5be863b965578ca6d7f4b3b26e8}
+      \strng{fullhash}{8400c5be863b965578ca6d7f4b3b26e8}
+      \strng{bibnamehash}{8400c5be863b965578ca6d7f4b3b26e8}
+      \strng{authorbibnamehash}{8400c5be863b965578ca6d7f4b3b26e8}
+      \strng{authornamehash}{8400c5be863b965578ca6d7f4b3b26e8}
+      \strng{authorfullhash}{8400c5be863b965578ca6d7f4b3b26e8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{J-STAGE}
+      \field{issn}{1883-8022}
+      \field{journaltitle}{International Journal of Automation Technology}
+      \field{number}{3}
+      \field{title}{Review of Wire Arc Additive Manufacturing for 3D Metal Printing}
+      \field{volume}{13}
+      \field{year}{2019}
+      \field{pages}{346\bibrangedash 353}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.20965/ijat.2019.p0346
+      \endverb
+      \verb{file}
+      \verb Li, Alkahari et al. 2019 - Review of Wire Arc Additive:Attachments/Li, Alkahari et al. 2019 - Review of Wire Arc Additive.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstage.jst.go.jp/article/ijat/13/3/13_346/_article/-char/ja/
+      \endverb
+      \verb{url}
+      \verb https://www.jstage.jst.go.jp/article/ijat/13/3/13_346/_article/-char/ja/
+      \endverb
+    \endentry
     \entry{Lin.2022}{article}{}
       \name{author}{6}{}{%
         {{hash=911f3f167c630c6017ae269ec324c770}{%
@@ -1497,6 +2193,187 @@
       \verb Malyshev, Rybak et al. 2022 - Analysis of the Singularities Influence:Attachments/Malyshev, Rybak et al. 2022 - Analysis of the Singularities Influence.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Meier.2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0d88b3ea9dccce571ca307d32c6f70ec}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e0a0abb8e8c9587db8cab01d1d5f61d0}{%
+           family={Penny},
+           familyi={P\bibinitperiod},
+           given={Ryan\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b05676c42078eb5403349406a834f979}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=40620a05f5e8b460878f25c3e868be95}{%
+           family={Gibbs},
+           familyi={G\bibinitperiod},
+           given={Jonathan\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=50eb21325661fd1f1af6f2b0159af25d}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={A.\bibnamedelimi John},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d422d15b7cac80285994e3af76ac9688}
+      \strng{fullhash}{d422d15b7cac80285994e3af76ac9688}
+      \strng{bibnamehash}{d422d15b7cac80285994e3af76ac9688}
+      \strng{authorbibnamehash}{d422d15b7cac80285994e3af76ac9688}
+      \strng{authornamehash}{d422d15b7cac80285994e3af76ac9688}
+      \strng{authorfullhash}{d422d15b7cac80285994e3af76ac9688}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1049-0787}
+      \field{journaltitle}{Annual Review of Heat Transfer}
+      \field{number}{1}
+      \field{title}{THERMOPHYSICAL PHENOMENA IN METAL ADDITIVE MANUFACTURING BY SELECTIVE LASER MELTING: FUNDAMENTALS, MODELING, SIMULATION, AND EXPERIMENTATION}
+      \field{volume}{20}
+      \field{year}{2017}
+      \field{pages}{241\bibrangedash 316}
+      \range{pages}{76}
+      \verb{doi}
+      \verb 10.1615/AnnualRevHeatTransfer.2018019042
+      \endverb
+      \verb{file}
+      \verb Meier, Penny et al. 2017 - THERMOPHYSICAL PHENOMENA IN METAL ADDITIVE:Attachments/Meier, Penny et al. 2017 - THERMOPHYSICAL PHENOMENA IN METAL ADDITIVE.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.dl.begellhouse.com/references/5756967540dd1b03,562e7b3835dec96e,0860d4f32b9f248d.html
+      \endverb
+      \verb{url}
+      \verb https://www.dl.begellhouse.com/references/5756967540dd1b03,562e7b3835dec96e,0860d4f32b9f248d.html
+      \endverb
+    \endentry
+    \entry{Milenkovic.2021}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a534dddef54a82e5640f139a110dfb8b}{%
+           family={Milenkovic},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{fullhash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{bibnamehash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{authorbibnamehash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{authornamehash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{authorfullhash}{a534dddef54a82e5640f139a110dfb8b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Novel high-order procedures follow finite displacements avoiding the adverse effects of the wrist singularity of a serial robot manipulating a curved $\ldots$}
+      \field{issn}{0094-114X}
+      \field{journaltitle}{Mechanism and Machine Theory}
+      \field{title}{Wrist singularity avoidance with a robot end-effector adding an oblique, redundant axis}
+      \field{volume}{162}
+      \field{year}{2021}
+      \field{pages}{104355}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.mechmachtheory.2021.104355
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x21001130
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x21001130
+      \endverb
+    \endentry
+    \entry{Nee.2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b3604a39c6bc91d6f9eb3e0a91070a56}{%
+           family={Nee},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelimb Y.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{2}{%
+        {Springer London}%
+        {Imprint: Springer}%
+      }
+      \strng{namehash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{fullhash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{bibnamehash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{authorbibnamehash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{authornamehash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \strng{authorfullhash}{b3604a39c6bc91d6f9eb3e0a91070a56}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st ed. 2015}
+      \field{isbn}{978-1-4471-4669-8}
+      \field{title}{Handbook of Manufacturing Engineering and Technology}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1007/978-1-4471-4670-4
+      \endverb
+      \verb{file}
+      \verb Nee 2015 - Handbook of Manufacturing Engineering:Attachments/Nee 2015 - Handbook of Manufacturing Engineering.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Ong.2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6abef02d7b9f920685ab24367b89e4e3}{%
+           family={Ong},
+           familyi={O\bibinitperiod},
+           given={Pauline},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cac9b93d7062ef7aff439c2a4b635dd7}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Woon\bibnamedelima Kiow},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=71f816ecefec851a87d88ec48b6f391b}{%
+           family={Lau},
+           familyi={L\bibinitperiod},
+           given={Raymond\bibnamedelimb Jit\bibnamedelima Hoo},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8d0f8afd79967db4623f178463c4470}
+      \strng{fullhash}{c8d0f8afd79967db4623f178463c4470}
+      \strng{bibnamehash}{c8d0f8afd79967db4623f178463c4470}
+      \strng{authorbibnamehash}{c8d0f8afd79967db4623f178463c4470}
+      \strng{authornamehash}{c8d0f8afd79967db4623f178463c4470}
+      \strng{authorfullhash}{c8d0f8afd79967db4623f178463c4470}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The monitoring of tool condition in machining processes has significant importance to control the quality of machined parts and to reduce equipment downtime. This study investigates the application of a special variant of artificial neural networks (ANNs), in particular, wavelet neural network (WNN) for tool wear monitoring in CNC end milling process of high-speed steel. A mixed level design of experiments with machining parameters of cutting speed, feed rate, cutting depth, and machining time is developed, from which 126 experiments are conducted. For each experiment, tool wear and surface roughness of machined workpiece are measured. The tool wear images are processed, and the descriptor of wear zone is extracted. The WNN is then applied to predict the flank wear of the cutting tool and compared with commonly used types of ANNs and the statistical model. Different input combinations with the inclusion of wear zone descriptor and surface roughness of machined parts are used to evaluate the performance of all models. Results show that the WNN with the input parameters of cutting speed, feed rate, depth of cut, machining time, and descriptor of wear zone predicts the degree of tool wear most accurately.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{1-4}
+      \field{title}{Tool condition monitoring in CNC end milling using wavelet neural network based on machine vision}
+      \field{volume}{104}
+      \field{year}{2019}
+      \field{pages}{1369\bibrangedash 1379}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s00170-019-04020-6
+      \endverb
+      \verb{file}
+      \verb Ong, Lee et al. 2019 - Tool condition monitoring in CNC:Attachments/Ong, Lee et al. 2019 - Tool condition monitoring in CNC.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-019-04020-6
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-019-04020-6
+      \endverb
+    \endentry
     \entry{Pan}{article}{}
       \name{author}{5}{}{%
         {{hash=d8d1756d391b3b0eb8dcc0bf791d1fbf}{%
@@ -1555,6 +2432,87 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
+      \endverb
+    \endentry
+    \entry{Plocher.2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1556cf8dc74cb9ece55a24a083c14dfb}{%
+           family={Plocher},
+           familyi={P\bibinitperiod},
+           given={János},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2f96ead743013251dca5f774a97c7116}{%
+           family={Panesar},
+           familyi={P\bibinitperiod},
+           given={Ajit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{564d36e6e33d98edb77523d3477cf31d}
+      \strng{fullhash}{564d36e6e33d98edb77523d3477cf31d}
+      \strng{bibnamehash}{564d36e6e33d98edb77523d3477cf31d}
+      \strng{authorbibnamehash}{564d36e6e33d98edb77523d3477cf31d}
+      \strng{authornamehash}{564d36e6e33d98edb77523d3477cf31d}
+      \strng{authorfullhash}{564d36e6e33d98edb77523d3477cf31d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{02641275}
+      \field{journaltitle}{Materials {\&} Design}
+      \field{title}{Review on design and structural optimisation in additive manufacturing: Towards next-generation lightweight structures}
+      \field{volume}{183}
+      \field{year}{2019}
+      \field{pages}{108164}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.matdes.2019.108164
+      \endverb
+    \endentry
+    \entry{Prakash.2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a05b5504d95b6edf30737c6aa435f26a}{%
+           family={Prakash},
+           familyi={P\bibinitperiod},
+           given={K.\bibnamedelimi Satish},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=00f6f5a6a3e8f14ae8e72d9c9ca1c11f}{%
+           family={Nancharaih},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6100323cea9f1c2eb75199d135f46943}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={V.\bibnamedelimi SubbaV.},
+           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d37989ad579cf4ece400f1ee9f3913ce}
+      \strng{fullhash}{d37989ad579cf4ece400f1ee9f3913ce}
+      \strng{bibnamehash}{d37989ad579cf4ece400f1ee9f3913ce}
+      \strng{authorbibnamehash}{d37989ad579cf4ece400f1ee9f3913ce}
+      \strng{authornamehash}{d37989ad579cf4ece400f1ee9f3913ce}
+      \strng{authorfullhash}{d37989ad579cf4ece400f1ee9f3913ce}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Research projects have been taken up on additive manufacturing (AM) technology and has been getting developed for more than 25 years, but without remo$\ldots$}
+      \field{issn}{2214-7853}
+      \field{journaltitle}{Materials Today: Proceedings}
+      \field{number}{2}
+      \field{title}{Additive Manufacturing Techniques in Manufacturing -An Overview}
+      \field{volume}{5}
+      \field{year}{2018}
+      \field{pages}{3873\bibrangedash 3882}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.matpr.2017.11.642
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214785317329152
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214785317329152
       \endverb
     \endentry
     \entry{Staff.1988}{book}{}
@@ -1903,6 +2861,147 @@
       \verb https://www.mdpi.com/2571-5577/4/2/36
       \endverb
     \endentry
+    \entry{Svetlizky.2021}{article}{}
+      \name{author}{9}{}{%
+        {{hash=b802de1ab5097711916905d6ed317c7e}{%
+           family={Svetlizky},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=258d912fc77bb8da8893479ef28ca5e5}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Mitun},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4332883abac76a62a216d600a66414a8}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Baolong},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9d2a1765bf9d0ea5948a768c9a98bf44}{%
+           family={Vyatskikh},
+           familyi={V\bibinitperiod},
+           given={Alexandra\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=247a6ab37a8e598e3335faffcc72d256}{%
+           family={Bose},
+           familyi={B\bibinitperiod},
+           given={Susmita},
+           giveni={S\bibinitperiod}}}%
+        {{hash=14021f8564f7cc82b9d61c8b827e564b}{%
+           family={Bandyopadhyay},
+           familyi={B\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=680e35a8dda752d18fdd1a49ca08f193}{%
+           family={Schoenung},
+           familyi={S\bibinitperiod},
+           given={Julie\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8577ab75177b15a439130484672671de}{%
+           family={Lavernia},
+           familyi={L\bibinitperiod},
+           given={Enrique\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b178f4faa2c18d69a942ad5175e8fb89}{%
+           family={Eliaz},
+           familyi={E\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
+      \strng{fullhash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
+      \strng{bibnamehash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
+      \strng{authorbibnamehash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
+      \strng{authornamehash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
+      \strng{authorfullhash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Directed energy deposition (DED) is a branch of additive manufacturing (AM) processes in which a feedstock material in the form of powder or wire is d$\ldots$}
+      \field{issn}{1369-7021}
+      \field{journaltitle}{Materials Today}
+      \field{title}{Directed energy deposition (DED) additive manufacturing: Physical characteristics, defects, challenges and applications}
+      \field{volume}{49}
+      \field{year}{2021}
+      \field{pages}{271\bibrangedash 295}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/j.mattod.2021.03.020
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1369702121001139
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1369702121001139
+      \endverb
+    \endentry
+    \entry{Tien.2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=bd7c4499aa5ef931d239e2bbde87f8be}{%
+           family={Tien},
+           familyi={T\bibinitperiod},
+           given={Dung\bibnamedelima Hoang},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=cbc64aef0de469eb8892312413fd8da4}{%
+           family={Duc},
+           familyi={D\bibinitperiod},
+           given={Quy\bibnamedelima Tran},
+           giveni={Q\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=d2b3edb3ee769f74c03baade983c4905}{%
+           family={Van},
+           familyi={V\bibinitperiod},
+           given={Thien\bibnamedelima Nguyen},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=c70cfec62138c68d113d0e313c2f40f2}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Nhu-Tung},
+           giveni={N\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=6ad45e93360b0b4b6731fb575f602e3a}{%
+           family={{Do Duc}},
+           familyi={D\bibinitperiod},
+           given={Trung},
+           giveni={T\bibinitperiod}}}%
+        {{hash=638456acd9f45db4abe3cba02933afc5}{%
+           family={Duy},
+           familyi={D\bibinitperiod},
+           given={Trinh\bibnamedelima Nguyen},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7af71fa42f7a59a948c20079ca3bf22f}
+      \strng{fullhash}{7af71fa42f7a59a948c20079ca3bf22f}
+      \strng{bibnamehash}{7af71fa42f7a59a948c20079ca3bf22f}
+      \strng{authorbibnamehash}{7af71fa42f7a59a948c20079ca3bf22f}
+      \strng{authornamehash}{7af71fa42f7a59a948c20079ca3bf22f}
+      \strng{authorfullhash}{7af71fa42f7a59a948c20079ca3bf22f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Online monitoring and optimisation of technological parameters are very effective methods of improving productivity and machining surface quality, especially in high-speed milling. During high-speed milling processes, cutting tools wear fast, leading to increased cutting forces and vibrations and decreased surface quality with increased power consumption. To investigate the effect of cutting forces and vibrations on high-speed milling processes, models for determining cutting forces and vibrations are presented in this paper. Stochastic tool wear was obtained from a probabilistic approach based on the combination of cutting force and systematic single-point vibration analyses. The singularity obtained from the vibration sensor signal is determined by the holder exponent (HE) through the wavelet transform maximum module. In addition, the nonlinear processes caused by the deformation and geometry of the cutting blade, the basis of selecting HE as an indicator to estimate the singularity points of the vibration signal, are also considered. To provide a model for predicting and optimising cutting forces, tool wear, vibrations, surface quality and power consumption, a new hybrid algorithm, i.e. back-propagation neural network and multi-objective particle swarm optimisation, was developed to determine the optimal cutting parameters to minimise the total power consumption, improve surface quality and increase tool life. High-speed milling experiments were conducted to confirm the accuracy and availability of the proposed multi-objective prediction and optimisation model. The improved optimisation method based on the proposed model can increase the surface quality and tool life by 5.95{\%} and 9.87{\%}, respectively. The power consumption can be reduced by 10.49{\%} compared to empirical selection.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{9-10}
+      \field{title}{Online monitoring and multi-objective optimisation of technological parameters in high-speed milling process}
+      \field{volume}{112}
+      \field{year}{2021}
+      \field{pages}{2461\bibrangedash 2483}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/s00170-020-06444-x
+      \endverb
+      \verb{file}
+      \verb Tien, Duc et al. 2021 - Online monitoring and multi-objective optimisation:Attachments/Tien, Duc et al. 2021 - Online monitoring and multi-objective optimisation.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-020-06444-x
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-020-06444-x
+      \endverb
+    \endentry
     \entry{Tomaz.2021}{incollection}{}
       \name{author}{3}{}{%
         {{hash=97a1da42b45c142187dc78cf582ecb4b}{%
@@ -1948,6 +3047,102 @@
       \endverb
       \verb{url}
       \verb https://link.springer.com/chapter/10.1007/978-981-16-3184-9_6
+      \endverb
+    \endentry
+    \entry{Uhlmann.2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c20323865440ae4b0b8ce8bf141d9d4e}{%
+           family={Uhlmann},
+           familyi={U\bibinitperiod},
+           given={Eckart},
+           giveni={E\bibinitperiod}}}%
+        {{hash=135a164f1340d305db91f9dff62b0973}{%
+           family={Reinkober},
+           familyi={R\bibinitperiod},
+           given={Sascha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a2c1d486f058eed1b688ce1d1af41644}{%
+           family={Hollerbach},
+           familyi={H\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{fullhash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{bibnamehash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{authorbibnamehash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{authornamehash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{authorfullhash}{dd61e7fe220fe654819a05eb3587df83}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Robot guided machining has a great potential to substitute or supplement machining with expensive machine tools as well as the inaccurate manual proce$\ldots$}
+      \field{issn}{2212-8271}
+      \field{journaltitle}{2212-8271}
+      \field{title}{Energy Efficient Usage of Industrial Robots for Machining Processes}
+      \field{volume}{48}
+      \field{year}{2016}
+      \field{pages}{206\bibrangedash 211}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.procir.2016.03.241
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2212827116305303
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2212827116305303
+      \endverb
+    \endentry
+    \entry{Valente.2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=42122219fe35894e32afce9c62221065}{%
+           family={Valente},
+           familyi={V\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7e59bc8e826ec223eb7d1d0e83a99df7}{%
+           family={Baraldo},
+           familyi={B\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=71b6a82b49fda58edadaf723b354944a}{%
+           family={Carpanzano},
+           familyi={C\bibinitperiod},
+           given={Emanuele},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{bded384bbae07aa8c44cc16666d0c831}
+      \strng{fullhash}{bded384bbae07aa8c44cc16666d0c831}
+      \strng{bibnamehash}{bded384bbae07aa8c44cc16666d0c831}
+      \strng{authorbibnamehash}{bded384bbae07aa8c44cc16666d0c831}
+      \strng{authornamehash}{bded384bbae07aa8c44cc16666d0c831}
+      \strng{authorfullhash}{bded384bbae07aa8c44cc16666d0c831}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robots conceived for high-precision assembly processes are demanded to match the best trade-off between precision and speed. This research $\ldots$}
+      \field{issn}{00078506}
+      \field{journaltitle}{CIRP Annals}
+      \field{number}{1}
+      \field{title}{Smooth trajectory generation for industrial robots performing high precision assembly processes}
+      \field{volume}{66}
+      \field{year}{2017}
+      \field{pages}{17\bibrangedash 20}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/j.cirp.2017.04.105
+      \endverb
+      \verb{file}
+      \verb Valente, Baraldo et al. 2017 - Smooth trajectory generation for industrial:Attachments/Valente, Baraldo et al. 2017 - Smooth trajectory generation for industrial.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0007850617301051
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0007850617301051
       \endverb
     \endentry
     \entry{vanLe.2017}{article}{}
@@ -2035,6 +3230,122 @@
       \endverb
       \verb{file}
       \verb Vande Weghe, Ferguson et al. 2007 - Randomized path planning for redundant:Attachments/Vande Weghe, Ferguson et al. 2007 - Randomized path planning for redundant.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Wan.2019}{article}{}
+      \name{author}{6}{}{%
+        {{hash=20655c58959be0c9ba62e822cd09552d}{%
+           family={Wan},
+           familyi={W\bibinitperiod},
+           given={Shaoke},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1a0e28a4b68bcafc0c1632534090fb0a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xiaohu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=46c1054fcc29082a8d071ea200bdba6b}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Wenjun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=503a19e30ff8418f009e6a130f503f45}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Junpeng},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c436bc8bebcf24cbfb756c65a861eeb1}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=edaa549f982f24badee3f0fbc5c5dc1c}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Xiaoliang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8cc80f102140a20b53625da14b492a5}
+      \strng{fullhash}{c8cc80f102140a20b53625da14b492a5}
+      \strng{bibnamehash}{c8cc80f102140a20b53625da14b492a5}
+      \strng{authorbibnamehash}{c8cc80f102140a20b53625da14b492a5}
+      \strng{authornamehash}{c8cc80f102140a20b53625da14b492a5}
+      \strng{authorfullhash}{c8cc80f102140a20b53625da14b492a5}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Self-excited vibration, widely referred to as chatter, has always been a limitation and challenge in machining. To suppress milling chatter vibration $\ldots$}
+      \field{issn}{0141-6359}
+      \field{journaltitle}{Precision Engineering}
+      \field{title}{Active damping of milling chatter vibration via a novel spindle system with an integrated electromagnetic actuator}
+      \field{volume}{57}
+      \field{year}{2019}
+      \field{pages}{203\bibrangedash 210}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.precisioneng.2019.04.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0141635918307931
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0141635918307931
+      \endverb
+    \endentry
+    \entry{Wang.2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=fcd6114a30fda9801eef65b9d374f56b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5abc23a6afcc9795376920849d51d6a7}{%
+           family={Goyanes},
+           familyi={G\bibinitperiod},
+           given={Alvaro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=663df44ca4fde7f63c1ba5083351618c}{%
+           family={Gaisford},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2a4c7b444cdb15259f26a8fc57a3bbaa}{%
+           family={Basit},
+           familyi={B\bibinitperiod},
+           given={Abdul\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{65d7ce77db5d1a8df217172dc0b42048}
+      \strng{fullhash}{65d7ce77db5d1a8df217172dc0b42048}
+      \strng{bibnamehash}{65d7ce77db5d1a8df217172dc0b42048}
+      \strng{authorbibnamehash}{65d7ce77db5d1a8df217172dc0b42048}
+      \strng{authornamehash}{65d7ce77db5d1a8df217172dc0b42048}
+      \strng{authorfullhash}{65d7ce77db5d1a8df217172dc0b42048}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The aim of this work was to evaluate the suitability of stereolithography (SLA) to fabricate drug-loaded tablets with modified-release characteristics. The SLA printer creates solid objects by using a laser beam to photopolymerise monomers. In this work polyethylene glycol diacrylate (PEGDA) was used as a monomer and diphenyl(2,4,6-trimethylbenzoyl)phosphine oxide was used as a photo-initiator. 4-aminosalicylic acid (4-ASA) and paracetamol (acetaminophen) were selected as model drugs. Tablets were successfully printed and formulations with different properties were fabricated by adding polyethylene glycol 300 (PEG 300) to the printing solution. The loading of paracetamol and 4-ASA in the printed tablets was 5.69{\%} and 5.40{\%} respectively. In a realistic dynamic dissolution simulation of the gastrointestinal tract, drug release from the tablets was dependent on the composition of the formulations, but independent of dissolution pH. In conclusion SLA 3DP technology allows the manufacture of drug loaded tablets with specific extended-release profiles. In the future this technology could become a manufacturing technology for the elaboration of oral dosage forms, for industrial production or even for personalised dose.}
+      \field{issn}{0378-5173}
+      \field{journaltitle}{International Journal of Pharmaceutics}
+      \field{number}{1-2}
+      \field{title}{Stereolithographic (SLA) 3D printing of oral modified-release dosage forms}
+      \field{volume}{503}
+      \field{year}{2016}
+      \field{pages}{207\bibrangedash 212}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.ijpharm.2016.03.016
+      \endverb
+      \verb{file}
+      \verb Wang, Goyanes et al. 2016 - Stereolithographic SLA 3D printing:Attachments/Wang, Goyanes et al. 2016 - Stereolithographic SLA 3D printing.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0378517316302150
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0378517316302150
       \endverb
     \endentry
     \entry{Wang.2023}{article}{}
@@ -2135,6 +3446,282 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0959652615018247
+      \endverb
+    \endentry
+    \entry{Wickramasinghe.2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5157cc30075e480810afa98de86fc492}{%
+           family={Wickramasinghe},
+           familyi={W\bibinitperiod},
+           given={Sachini},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6687a9bee72f85f1b3ccd18036ed5712}{%
+           family={Do},
+           familyi={D\bibinitperiod},
+           given={Truong},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e6d2720e4359a0568101c9f26d13120c}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Phuong},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d91e3ea01974fff8a28158a3c0eac1e2}
+      \strng{fullhash}{d91e3ea01974fff8a28158a3c0eac1e2}
+      \strng{bibnamehash}{d91e3ea01974fff8a28158a3c0eac1e2}
+      \strng{authorbibnamehash}{d91e3ea01974fff8a28158a3c0eac1e2}
+      \strng{authornamehash}{d91e3ea01974fff8a28158a3c0eac1e2}
+      \strng{authorfullhash}{d91e3ea01974fff8a28158a3c0eac1e2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fused deposition modelling (FDM) is one of the fastest-growing additive manufacturing methods used in printing fibre-reinforced composites (FRC). The performances of the resulting printed parts are limited compared to those by other manufacturing methods due to their inherent defects. Hence, the effort to develop treatment methods to overcome these drawbacks has accelerated during the past few years. The main focus of this study is to review the impact of those defects on the mechanical performance of FRC and therefore to discuss the available treatment methods to eliminate or minimize them in order to enhance the functional properties of the printed parts. As FRC is a combination of polymer matrix material and continuous or short reinforcing fibres, this review will thoroughly discuss both thermoplastic polymers and FRCs printed via FDM technology, including the effect of printing parameters such as layer thickness, infill pattern, raster angle and fibre orientation. The most common defects on printed parts, in particular, the void formation, surface roughness and poor bonding between fibre and matrix, are explored. An inclusive discussion on the effectiveness of chemical, laser, heat and ultrasound treatments to minimize these drawbacks is provided by this review.}
+      \field{issn}{2073-4360}
+      \field{journaltitle}{Polymers}
+      \field{number}{7}
+      \field{title}{FDM-Based 3D Printing of Polymer and Associated Composite: A Review on Mechanical Properties, Defects and Treatments}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{pages}{1529}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/polym12071529
+      \endverb
+      \verb{file}
+      \verb Wickramasinghe, Do et al. 2020 - FDM-Based 3D Printing of Polymer:Attachments/Wickramasinghe, Do et al. 2020 - FDM-Based 3D Printing of Polymer.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2073-4360/12/7/1529
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2073-4360/12/7/1529
+      \endverb
+    \endentry
+    \entry{Wu.2018}{article}{}
+      \name{author}{7}{}{%
+        {{hash=86d021856d21d6743b33180eba08c065}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Bintao},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d8d1756d391b3b0eb8dcc0bf791d1fbf}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Zengxi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=62907ec38463ccc60c56556aefabae53}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Donghong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=274afe708f5bd0556dec396d7265bea2}{%
+           family={Cuiuri},
+           familyi={C\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f606fef6e71a3be35e11adc561b1422e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Huijun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=107cdbc1053b5baff69de9dcfdbc5c0e}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=faa48da64a59d5d87f14e1c289dff2f3}{%
+           family={Norrish},
+           familyi={N\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2c8475891c61013642a27250169588c}
+      \strng{fullhash}{c2c8475891c61013642a27250169588c}
+      \strng{bibnamehash}{c2c8475891c61013642a27250169588c}
+      \strng{authorbibnamehash}{c2c8475891c61013642a27250169588c}
+      \strng{authornamehash}{c2c8475891c61013642a27250169588c}
+      \strng{authorfullhash}{c2c8475891c61013642a27250169588c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Due to the feasibility of economically producing large-scale metal components with relatively high deposition rates, significant progress has been mad$\ldots$}
+      \field{issn}{1526-6125}
+      \field{journaltitle}{Journal of Manufacturing Processes}
+      \field{title}{A review of the wire arc additive manufacturing of metals: properties, defects and quality improvement}
+      \field{volume}{35}
+      \field{year}{2018}
+      \field{pages}{127\bibrangedash 139}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.jmapro.2018.08.001
+      \endverb
+      \verb{file}
+      \verb Wu, Pan et al. 2018 - A review of the wire:Attachments/Wu, Pan et al. 2018 - A review of the wire.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1526612518310739
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1526612518310739
+      \endverb
+    \endentry
+    \entry{Xiong.2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a9911a26db1d9920ffe275904c37177f}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f8d1f12e82b36e862d7c06e7e02c9118}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4b839c2989e3a8ee7c890b6a2f0fccc9}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={LiMin},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{fullhash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{bibnamehash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{authorbibnamehash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{authornamehash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{authorfullhash}{75ac0c8f58119b4a6c7a3db610110358}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robot provides an optimistic alternative of traditional CNC machine tool due to its advantages of large workspace, low cost and great flexi$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Stiffness-based pose optimization of an industrial robot for five-axis milling}
+      \field{volume}{55}
+      \field{year}{2019}
+      \field{pages}{19\bibrangedash 28}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2018.07.001
+      \endverb
+      \verb{file}
+      \verb Xiong, Ding et al. 2019 - Stiffness-based pose optimization:Attachments/Xiong, Ding et al. 2019 - Stiffness-based pose optimization.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584517304556
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584517304556
+      \endverb
+    \endentry
+    \entry{Yang.2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=68d4747f396b8c8dd2209ca3a8ea466a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8cef38ba221995a4832b88995a9b0479}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Genbao},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2da367b19825399ea68e3c3e98a3d6dc}{%
+           family={Ran},
+           familyi={R\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cc9ee7a6a1c20a51fbf390bf9b2de882}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8f738c7a52fe62173f4d6069461b546}
+      \strng{fullhash}{e8f738c7a52fe62173f4d6069461b546}
+      \strng{bibnamehash}{e8f738c7a52fe62173f4d6069461b546}
+      \strng{authorbibnamehash}{e8f738c7a52fe62173f4d6069461b546}
+      \strng{authornamehash}{e8f738c7a52fe62173f4d6069461b546}
+      \strng{authorfullhash}{e8f738c7a52fe62173f4d6069461b546}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents the solution to evaluate and predict machining precision of a multi-axis computer numerical control (CNC) machine tool. The {\grqq}funct$\ldots$}
+      \field{issn}{0094-114X}
+      \field{journaltitle}{Mechanism and Machine Theory}
+      \field{title}{Kinematic modeling and machining precision analysis of multi-axis CNC machine tools based on screw theory}
+      \field{volume}{140}
+      \field{year}{2019}
+      \field{pages}{538\bibrangedash 552}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.mechmachtheory.2019.06.021
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x19307992
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x19307992
+      \endverb
+    \endentry
+    \entry{YUE.2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=90170153724de0f25700b6907d87d716}{%
+           family={YUE},
+           familyi={Y\bibinitperiod},
+           given={Caixu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5e4221f9caade9df17b944c9519b33f9}{%
+           family={GAO},
+           familyi={G\bibinitperiod},
+           given={Haining},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c3ec0eeaaabef0277476d6e905c9b897}{%
+           family={LIU},
+           familyi={L\bibinitperiod},
+           given={Xianli},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a49144ec5d85aea158135e0f28e093a7}{%
+           family={LIANG},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima Y.},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=65436496e63d7ea35a6bc5c412afdc17}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lihui},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec585e8fc77e49c3183bf4d80c0931ea}
+      \strng{fullhash}{ec585e8fc77e49c3183bf4d80c0931ea}
+      \strng{bibnamehash}{ec585e8fc77e49c3183bf4d80c0931ea}
+      \strng{authorbibnamehash}{ec585e8fc77e49c3183bf4d80c0931ea}
+      \strng{authornamehash}{ec585e8fc77e49c3183bf4d80c0931ea}
+      \strng{authorfullhash}{ec585e8fc77e49c3183bf4d80c0931ea}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Chatter is a self-excited vibration of parts in machining systems. It is widely present across a range of cutting processes, and has an impact upon bo$\ldots$}
+      \field{issn}{1000-9361}
+      \field{journaltitle}{1000-9361}
+      \field{number}{2}
+      \field{title}{A review of chatter vibration research in milling}
+      \field{volume}{32}
+      \field{year}{2019}
+      \field{pages}{215\bibrangedash 242}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1016/j.cja.2018.11.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1000936119300147
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1000936119300147
       \endverb
     \endentry
     \entry{Zhao.2021}{inproceedings}{}

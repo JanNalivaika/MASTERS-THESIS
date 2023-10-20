@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  19 OCT 2023 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  20 OCT 2023 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2631,7 +2631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
 
 ]
-Package cleveref Info: loaded `english' language definitions on input line 62.
+Package cleveref Info: loaded `english' language definitions on input line 60.
  [2])
 Package cleveref Info: loaded `english' language definitions on input line 62.
  [3]
@@ -2648,110 +2648,143 @@ Chapter 2.
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package cleveref Info: loaded `english' language definitions on input line 44.
+Package cleveref Info: loaded `english' language definitions on input line 43.
  [6]
-Package cleveref Info: loaded `english' language definitions on input line 60.
+Package cleveref Info: loaded `english' language definitions on input line 67.
 
 [7]
-Package cleveref Info: loaded `english' language definitions on input line 76.
- [8]
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [9]
-Underfull \vbox (badness 1226) has occurred while \output is active []
 
-Package cleveref Info: loaded `english' language definitions on input line 126.
+LaTeX Warning: Citation '' on page 8 undefined on input line 73.
+
+
+LaTeX Warning: Citation '' on page 8 undefined on input line 73.
+
+
+LaTeX Warning: Citation '' on page 8 undefined on input line 75.
+
+
+LaTeX Warning: Citation '' on page 8 undefined on input line 75.
+
+
+LaTeX Warning: Citation '' on page 8 undefined on input line 75.
+
+Package cleveref Info: loaded `english' language definitions on input line 82.
+[8]
+Package cleveref Info: loaded `english' language definitions on input line 117.
+
+ [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 141.
 
  [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package cleveref Info: loaded `english' language definitions on input line 150.
-
- [11]
-Package cleveref Info: loaded `english' language definitions on input line 169.
+Package cleveref Info: loaded `english' language definitions on input line 161.
 
 
-[12]
-Package cleveref Info: loaded `english' language definitions on input line 187.
+[11]
+Package cleveref Info: loaded `english' language definitions on input line 178.
+
+ [12]
+Package cleveref Info: loaded `english' language definitions on input line 195.
 
  [13]
-Package cleveref Info: loaded `english' language definitions on input line 204.
+Package cleveref Info: loaded `english' language definitions on input line 213.
 
  [14]
-Package cleveref Info: loaded `english' language definitions on input line 222.
-
- [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package cleveref Info: loaded `english' language definitions on input line 238.
+Package cleveref Info: loaded `english' language definitions on input line 229.
 
- [16]
-Package cleveref Info: loaded `english' language definitions on input line 262.
+ [15]
+Package cleveref Info: loaded `english' language definitions on input line 253.
 
 
-[17]
-Package cleveref Info: loaded `english' language definitions on input line 274.
+[16]
+Package cleveref Info: loaded `english' language definitions on input line 267.
 
- [18])
+ [17])
 Package cleveref Info: loaded `english' language definitions on input line 63.
- [19]
+ [18]
 \openout2 = `source/chapter03.aux'.
 
- (source/chapter03.tex [20
+ (source/chapter03.tex
+Chapter 3.
+) [19
 
 
 
 ]
-Chapter 3.
-) [21]
 \openout2 = `source/chapter04.aux'.
 
- (source/chapter04.tex [22
+ (source/chapter04.tex [20
 
 
 
 ]
 Chapter 4.
-) [23]
+) [21]
 \openout2 = `source/chapter05.aux'.
 
- (source/chapter05.tex [24
+ (source/chapter05.tex [22
 
 
 
 ]
 Chapter 5.
-) [25]
+) [23]
 \openout2 = `source/appendixA.aux'.
 
- (source/appendixA.tex [26
+ (source/appendixA.tex [24
 
 
 
 ]
 Chapter 6.
-) [27]
+) [25]
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
 . Rerun may be required (or you may have forgotten to use commands like \gls) o
 n input line 75.
 
-[28
+[26
 
 
 ]
+Overfull \hbox (32.95955pt too wide) in paragraph at lines 79--79
+\T1/bch/m/n/10.95 2018 . 04 . 007$[]. \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 :
+ []$https : / / www . sciencedirect . com / science / article / pii / s08906955
+18300841$[]. 
+ []
+
+
 Overfull \hbox (25.58333pt too wide) in paragraph at lines 79--79
 \T1/bch/m/n/10.95 Redundant/Hyper-Redundant Ma-nip-u-la-tors^^Q. In: \T1/bch/m/
 it/10.95 IFAC-PapersOnLine \T1/bch/m/n/10.95 49.21 (2016), pp. 493^^U
  []
 
-[29]
+[27]
+Package cleveref Info: loaded `english' language definitions on input line 79.
+ [28]
+Overfull \hbox (54.55577pt too wide) in paragraph at lines 79--79
+[]\T1/bch/m/n/10.95 Gu, X. and Ko-ren, Y. ^^P  Man-u-fac-tur-ing sys-tem ar-chi
+-tec-ture for cost-effective mass-individualization^^Q.
+ []
+
+
+Overfull \hbox (2.45325pt too wide) in paragraph at lines 79--79
+\T1/bch/m/sc/10.95 issn\T1/bch/m/n/10.95 : 2213-8463. \T1/bch/m/sc/10.95 doi\T1
+/bch/m/n/10.95 : []$10 . 1016 / j . mfglet . 2018 . 11 . 001$[]. \T1/bch/m/sc/1
+0.95 url\T1/bch/m/n/10.95 : []$https : / / www . sciencedirect .
+ []
+
+
 Overfull \hbox (13.14061pt too wide) in paragraph at lines 79--79
 \T1/bch/m/n/10.95 elling the dy-nam-ics of in-dus-trial robots for milling op-e
 r-a-tions^^Q. In: \T1/bch/m/it/10.95 Robotics and Computer-
  []
 
 Package cleveref Info: loaded `english' language definitions on input line 79.
-[30]
+[29]
 Overfull \hbox (29.67229pt too wide) in paragraph at lines 79--79
 \T1/bch/m/n/10.95 nolo-gies^^Q. In: \T1/bch/m/it/10.95 Ma-chines \T1/bch/m/n/10
 .95 8.1 (2020), p. 13. \T1/bch/m/sc/10.95 issn\T1/bch/m/n/10.95 : 2075-1702. \T
@@ -2759,12 +2792,33 @@ Overfull \hbox (29.67229pt too wide) in paragraph at lines 79--79
  []
 
 Package cleveref Info: loaded `english' language definitions on input line 79.
+[30]
+Overfull \hbox (1.46657pt too wide) in paragraph at lines 79--79
+[]\T1/bch/m/n/10.95 Milenkovic, P. ^^P  Wrist sin-gu-lar-ity avoid-ance with a 
+robot end-effector adding an oblique,
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 79.
 [31]
+Overfull \hbox (5.56274pt too wide) in paragraph at lines 79--79
+\T1/bch/m/n/10.95 03 . 020$[]. \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 : []$htt
+ps : / / www . sciencedirect . com / science / article / pii / s136970212100113
+9$[]. 
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 79.
+[32]
+Overfull \hbox (5.56274pt too wide) in paragraph at lines 79--79
+\T1/bch/m/n/10.95 03 . 016$[]. \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 : []$htt
+ps : / / www . sciencedirect . com / science / article / pii / s037851731630215
+0$[]. 
+ []
+
 Package cleveref Info: loaded `english' language definitions on input line 82.
- [32] [33
+[33] [34
 
 
-] (main.aux
+] [35] (main.aux
 Package cleveref Info: loaded `english' language definitions on input line 24.
  (source/Acknowledgment.aux) (source/task.aux)
 (source/abstract.aux
@@ -2787,13 +2841,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 65194 strings out of 475247
- 1497693 string characters out of 5756376
- 2517297 words of memory out of 5000000
- 85460 multiletter control sequences out of 15000+600000
- 634045 words of font info for 122 fonts, out of 8000000 for 9000
+ 65392 strings out of 475247
+ 1504980 string characters out of 5756376
+ 2525981 words of memory out of 5000000
+ 85624 multiletter control sequences out of 15000+600000
+ 635730 words of font info for 123 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 109i,13n,131p,2510b,3109s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,13n,131p,3569b,3109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter
 /bchb8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstr
 ea/charter/bchr8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/ty
@@ -2803,9 +2857,9 @@ rograms/MiKTeX/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/z0041bmr/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/z0041b
 mr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/
 z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (43 pages, 245350 bytes).
+Output written on main.pdf (45 pages, 287074 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
+ 818 PDF objects out of 1000 (max. 8388607)
+ 166 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
