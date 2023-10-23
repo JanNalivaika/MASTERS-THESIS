@@ -69,87 +69,99 @@ Another advantage of WAAM is its capability to construct large components withou
 
 However, it is important to note that WAAM components may have some inherent defects. These include residual stresses and deformations that persist after the production process, as well as relatively low geometric precision and modest surface quality. These limitations should be taken into consideration when utilizing WAAM for manufacturing purposes~\cite{Wu.2018}.
 
-\subsubsection{WAAM-Process}
-The operating principle of WAAM involves the generation of an arc through electrical discharge between an electrode and the workpiece. This arc transfers energy to the workpiece, causing melting in the fusion zone \cite{}. Additionally, if a welding filler material in the form of a wire or consumable electrode is introduced into the arc, it also melts and can be used to deposit welds onto a metallic substrate \cite{}. To ensure a continuous weld seam, a wire feed system is employed.
+\subsubsection{WAAM-Process and Cold Metal Transfer}
+The operating principle of WAAM involves the generation of an arc through electrical discharge between an electrode and the workpiece. This arc transfers energy to the workpiece, causing melting in the fusion zone~\cite{Ou.2018}. Additionally, if a welding filler material in the form of a wire is introduced into the arc, it also melts and can be used to deposit welds onto a metallic substrate~\cite{Cunningham.2018}. To ensure a continuous weld seam, a wire feed system can be employed~\cite{Ding.2015}.
 
-The manufacturing of components using WAAM involves a kinematic system that allows movement of the welding torch and/or the workpiece. This can be achieved using articulated arm robots or gantry systems \cite{}. The base-plate can be placed on a fixed base or on a rotary tilting table. Alternatively, a spatially fixed welding torch, combined with robotic kinematics, can be used to move the component \cite{}. The WAAM process builds up the component layer by layer, following a predefined machine path. Initially, the welding torch applies a layer of adjacent welding beads to the plane of the substrate plate. Then, the kinematics move the welding torch upwards along the z-axis, based on the desired layer thickness. The next layer is then placed on top of the previously produced layer. In the case of a welding torch that remains fixed, the workpiece is moved accordingly to facilitate layer deposition \cite{}.
+The industrial manufacturing of components using WAAM involves a kinematic system that allows movement of the welding torch. This can be achieved using robot-configurations or gantry systems~\cite{Schmitz.2021}. Alternatively, a spatially fixed welding torch, combined with robotic kinematics or rotary-tilt table, can be used to move the component~\cite{Nagasai.2022}. The WAAM process builds up the component layer by layer, following a predefined path.
 
-\subsubsection{CMT}
-Cold Metal Transfer (CMT) welding is a sophisticated process that merges the advantages of MIG/MAG and TIG welding techniques. It functions based on the principle of controlled short-circuiting, wherein the welding torch generates a short circuit between the electrode and the workpiece. This controlled short circuit triggers the wire to detach and subsequently reattach, generating a sequence of droplets that transfer to the weld pool with remarkable precision.
+Cold Metal Transfer (CMT) welding is a sophisticated process that merges the advantages of multiple welding techniques~\cite{Dutra.2015}. It functions based on the principle of controlled short-circuiting, wherein the welding torch generates a short circuit between the electrode and the workpiece. This short circuit triggers the wire melt and detach. The detachment is assisted by a retraction of the wire. This process is generating a sequence of droplets that transfer to the weld pool with remarkable precision~\cite{Selvi.2018, Srinivasan.2022}.
 
-CMT welding provides superior heat control with lower heat input than conventional methods. The controlled arc and droplet transfer reduce the risk of overheating and distortion, making it suitable for thinner materials and heat-sensitive applications. The process minimizes spatter formation, resulting in cleaner and smoother welds and reducing the requirement for post-weld cleaning.
+CMT welding provides superior heat control with lower heat input than conventional methods. The controlled arc and droplet transfer reduce the risk of overheating and distortion, making it suitable for thinner materials and heat-sensitive applications~\cite{Scotti.2020}. The process minimizes spatter formation, resulting in cleaner and smoother welds and reducing the requirement for post-weld cleaning~\cite{Srinivasan.2022}]. This process stands out for its exceptional weld quality. Its precise control over heat input and metal transfer results in improved fusion, reduced porosity, and an enhanced appearance of the weld bead. CMT welding is ideal for applications that require the highest weld quality which includes structural fabrication and automotive manufacturing~\cite{Cong.2016}.
 
-CMT welding stands out for its exceptional weld quality. Its precise control over heat input and metal transfer results in improved fusion, reduced porosity, and an enhanced appearance of the weld bead. CMT welding is ideal for applications that require the highest weld quality which includes structural fabrication and automotive manufacturing.
+For dependable weld quality, CMT welding typically integrates advanced process control systems, which utilize adaptive control and real-time monitoring to consistently adjust welding parameters based on sensor feedback. This enhances the precision and dependability of the welding process~\cite{Pickin.2006}.
 
-CMT welding is a flexible process capable of joining a wide array of materials including dissimilar metals such as aluminum to steel or copper to steel. This compatibility creates new possibilities for engineering applications that require the combination of multiple materials.
-
-For dependable weld quality, CMT welding typically integrates advanced process control systems, which utilize adaptive control and real-time monitoring to consistently adjust welding parameters based on sensor feedback. This enhances the precision and dependability of the welding process.
-
-Cold Metal Transfer welding provides precise heat control, reduces spatter, improves weld quality, and is compatible with various materials, making it a highly efficient and versatile welding process. As a result, it is widely used in industries that demand high-quality welds and require different metals to be joined.
-
-A CMT cycle consists of 3 phases 
+A CMT cycle consists of three phases~\cite{Selvi.2018}:\newline
 1st pulse phase: a high current pulse leads to the ignition of the arc, 
 which melts the wire electrode. A droplet begins to form at the 
 tip of the wire. The wire is moved forward in the direction of the 
-workpiece.
+workpiece.\newline
 2nd arc phase: The arc is kept burning at a lower current. 
 burning at a lower current. This prevents the melt droplet from detaching early and 
-from detaching prematurely and transferring to the workpiece.
-3. short-circuit phase: as soon as the wire comes into contact with the substrate, 
+from detaching prematurely and transferring to the workpiece.\newline
+3d short-circuit phase: as soon as the wire comes into contact with the substrate, 
 the voltage drops to 0 V and the wire feeder is signaled to withdraw the wire. 
 is signaled to withdraw the wire. This supports the droplet detachment 
-from the wire into the molten bath 
+from the wire into the molten bath.
+
+Figure \ref{fig:CMT} shows the three Phases of a CMT cycle. The voltage is constant in the first two phases and drops to zero in the short circuit phase. The spike of current is clearly visible in the first phase which is also the shortest.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figures/CMT.jpg}
+	\caption{Current and Voltage wave forms of a CMT process~\cite{Selvi.2018}}
+	\label{fig:CMT}
+\end{figure}
+
+In summary, WAAM and CMT are highly sophisticated processes that enable the creation of 3D printed parts with specifically designed parameters. CMT achieves precise welds with low heat input and minimal spatter. It is ideal for thinner materials and applications requiring high weld quality. Advanced process control systems enhance the reliability of CMT welding~\cite{Rahul.2018, Pickin.2011}.
+
+
+I FEEL SOMETHING IS MISSING !!!!
+PLZ HELP
+
 
 \subsection{Industrial Robots}\label{IR}
-Klare Abgrenzung
+Industrial robots are advanced machines designed to perform various tasks in manufacturing and industrial settings. They come in different types, each with its own set of capabilities and advantages. They crucial to modern manufacturing and automation, transforming production methods and repetitive task performance across diverse industries. Since their inception in the mid-20th century, these machines have undergone significant advancements, evolving into highly adaptive and sophisticated devices that promote productivity, accuracy, and safety within manufacturing processes~\cite{Ji.2019}.
+At their core, industrial robots are programmable machines designed to execute tasks with a high degree of accuracy and efficiency. They can carry out repetitive actions consistently, which enhances productivity and reduces the risk of human error \cite{Siciliano.2016}. 
 
-Industrial robots are advanced machines designed to perform various tasks in manufacturing and industrial settings. They come in different types, each with its own set of capabilities and advantages.
+One common type of industrial robots is the articulated robot. These robots have rotary joints that allow them to move like a human arm, with multiple links and joints. They can perform a wide range of tasks, such as welding, material handling, or assembly operations~\cite{Hanafusa.1981, Jain.2019}. Another type is the Cartesian robot, also known as gantry robots. These robots move along three linear axes (X, Y, and Z) to perform tasks. They are commonly used for pick and place operations or in applications that require precise positioning~\cite{Kim.2003}. SCARA robots, on the other hand, are designed for fast and precise movements in assembly operations. They have a selective compliance assembly robot arm that allows them to move quickly while maintaining accuracy~\cite{Das.2005}. Delta robots are used for high-speed pick and place applications, such as packaging or sorting. They are known for their rapid movements and high throughput~\cite{bonev2001delta}. Collaborative robots, or cobots, are designed to work safely alongside humans. They have built-in safety features, such as force sensors or vision systems, that allow them to interact with humans without causing harm. Cobots are often used in tasks that require human-robot collaboration, such as assembly or inspection operations~\cite{Liu.2022b}.
 
-One common type of industrial robot is the articulated robot. These robots have rotary joints that allow them to move like a human arm, with multiple links and joints. They can perform a wide range of tasks, such as welding, material handling, or assembly operations.
+Industrial robots are based on articulated robots and have a wide range of applications across various industries. They can be used for assembly operations, where they can perform tasks like fastening, welding, or soldering components together. Robots are also commonly used for material handling tasks, such as lifting, moving, and stacking materials in warehouses or production lines. Inspection tasks can be automated with robots equipped with sensors or cameras, allowing them to inspect products for defects or perform quality control checks \cite{Hagele.2016}.
 
-Another type is the Cartesian robot, also known as gantry robots. These robots move along three linear axes (X, Y, and Z) to perform tasks. They are commonly used for pick and place operations or in applications that require precise positioning.
 
-SCARA robots, on the other hand, are designed for fast and precise movements in assembly operations. They have a selective compliance assembly robot arm that allows them to move quickly while maintaining accuracy.
+Industrial robots offer several benefits. Firstly, they increase productivity by working continuously, without breaks or fatigue. This leads to higher production rates and shorter cycle times. Additionally, robots can perform tasks with high precision and accuracy, reducing errors and defects, thereby improving product quality \cite{Kubela.2016}. Safety is another important aspect of industrial robots. They are designed to handle dangerous or hazardous tasks, keeping human workers safe. Robots can work in environments with high temperatures, toxic substances, or heavy loads, minimizing the risk of injury to humans \cite{Heyer.2010}.
+While the initial investment in industrial robots can be high, they offer long-term cost savings. Robots can reduce labor costs by automating repetitive tasks and increasing efficiency. They also offer flexibility, as they can be reprogrammed or reconfigured to perform different tasks, allowing for greater adaptability in manufacturing processes \cite{Jung.2020b}.
 
-Delta robots are used for high-speed pick and place applications, such as packaging or sorting. They are known for their rapid movements and high throughput.
+When comparing industrial robots to CNC machines, there are a few notable disadvantages for industrial robots. Firstly, industrial robots generally have lower positional accuracy and repeatability compared to CNC machines. CNC machines are purpose-built for precise machining operations and can achieve high levels of accuracy and repeatability \cite{Wang.2023}.
+Secondly, industrial robots typically have a longer cycle time compared to CNC machines for similar tasks. The complex movements and computations involved in robot control can result in slower overall operation speeds, which may not be ideal for high-volume production environments \cite{Joshi.2021}.
+Additionally, industrial robots can be more complex to program and set up than CNC machines. CNC machines follow a predefined set of instructions, whereas programming industrial robots often requires more advanced programming skills and can be time-consuming \cite{Ye.2022}. Lastly, industrial robots may have limitations when it comes to handling heavy loads or performing heavy-duty machining operations. CNC machines are specifically designed for heavy-duty cutting, milling, and drilling tasks, whereas industrial robots are better suited for lighter material handling and assembly operations \cite{Wu.2022}. These differences should be considered when deciding between industrial robots and CNC machines for specific manufacturing applications.
 
-Collaborative robots, or cobots, are designed to work safely alongside humans. They have built-in safety features, such as force sensors or vision systems, that allow them to interact with humans without causing harm. Cobots are often used in tasks that require human-robot collaboration, such as assembly or inspection operations.
+Industrial robots can be programmed using different methods. One common method is using a teach pendant, where operators manually move the robot to record positions and actions. Offline programming is another approach, where programs are created and simulated on a computer before being transferred to the robot. Sensor-based programming allows robots to respond to sensor inputs or interact with the environment \cite{Heimann.2020}. More information regarding the control of robots is described in chapter \ref{CAMmain}.
 
-Industrial robots have a wide range of applications across various industries. They can be used for assembly operations, where they can perform tasks like fastening, welding, or soldering components together. Robots are also commonly used for material handling tasks, such as lifting, moving, and stacking materials in warehouses or production lines.
 
-Packaging is another area where robots excel. They can package products into boxes, palletize goods, or apply labels with precision and consistency. In the field of welding, robots are widely used to perform welding operations, ensuring high-quality welds with consistent results.
+Serial kinematics is a widely used configuration in industrial robots, where the robot arm is constructed as a sequential chain of joints and links. Each joint provides one degree of freedom (DOF), enabling the robot to move and position its end-effector in a controlled manner. The joints can be of various types, including revolute, prismatic, spherical, and cylindrical, providing rotational, linear, and combined movements. The motion of the robot arm is controlled using forward kinematics and inverse kinematics. Forward kinematics calculates the position and orientation of the end-effector based on the joint angles, while inverse kinematics determines the joint angles required to achieve a desired end-effector pose \cite{Singh.2021b}. Serial kinematics robots have significantly contributed to automation processes, enhancing productivity, efficiency, and flexibility in manufacturing industries.
 
-Robots are also used for painting applications, where they can paint large surfaces or apply coatings with controlled movements. Inspection tasks can be automated with robots equipped with sensors or cameras, allowing them to inspect products for defects or perform quality control checks.
 
-Machine tending is another common application for industrial robots. They can load and unload parts from machines, such as CNC machines or injection molding machines, improving efficiency and reducing the need for human intervention.
+In summary, the robots performance relies on sophisticated control algorithms and feedback systems that allow them to adapt to dynamic conditions, adjust movements in real-time, and maintain a consistently high level of accuracy \cite{Lin.2023}. This improves both the quality of the final product and the safety of the manufacturing process, as robots can navigate complex paths without risking collisions or accidents~\cite{Bosscher.2011}.
+As technology continues to advance, industrial robots will play an even more prominent role in shaping the future of manufacturing and automation \cite{Domae.2019}
 
-Pick and place operations, where robots pick items from one location and place them in another, are also widely performed by industrial robots. This can be seen in assembly lines or warehouses, where robots can handle the repetitive task of moving items from one place to another.
 
-Industrial robots offer several benefits. Firstly, they increase productivity by working continuously, without breaks or fatigue. This leads to higher production rates and shorter cycle times. Additionally, robots can perform tasks with high precision and accuracy, reducing errors and defects, thereby improving product quality.
+\subsubsection{redundant}
 
-Safety is another important aspect of industrial robots. They are designed to handle dangerous or hazardous tasks, keeping human workers safe. Robots can work in environments with high temperatures, toxic substances, or heavy loads, minimizing the risk of injury to humans.
 
-While the initial investment in industrial robots can be high, they offer long-term cost savings. Robots can reduce labor costs by automating repetitive tasks and increasing efficiency. They also offer flexibility, as they can be reprogrammed or reconfigured to perform different tasks, allowing for greater adaptability in manufacturing processes.
 
-Industrial robots can be programmed using different methods. One common method is using a teach pendant, where operators manually move the robot to record positions and actions. Offline programming is another approach, where programs are created and simulated on a computer before being transferred to the robot. Sensor-based programming allows robots to respond to sensor inputs or interact with the environment.
+Industrial robots with redundant degrees of freedom are robotic systems designed with more degrees of freedom (DOF) than necessary to perform a specific task. The redundancy in DOF allows these robots to have additional joint movements or configurations beyond what is required for basic movement or manipulation.
 
-Safety is a key consideration in the design and use of industrial robots. They are equipped with safety features to prevent accidents and protect human workers. These include safety sensors to detect the presence of humans and stop or slow down robot movements, as well as safety zones
+The primary advantage of redundant robots is their increased flexibility and adaptability. With more DOF, they can achieve a wider range of positions and orientations, enabling them to perform tasks in complex and constrained environments that might otherwise be challenging or impossible. This additional flexibility also allows them to avoid obstacles or work around obstacles without compromising the task at hand.
 
-A 6-degree-of-freedom (6-DoF) industrial robot with an additional axis refers to a robotic system that has six independent movements or degrees of freedom, along with an extra rotational axis. The additional axis provides enhanced flexibility and versatility to the robot, allowing it to perform more complex tasks and maneuver in tighter spaces.
+Redundant robots are often used in industrial settings for various applications such as assembly, material handling, welding, painting, and inspection. These robots can navigate around obstacles, maintain a specific posture or orientation, and optimize their movements to achieve the desired task more efficiently.
 
-The six degrees of freedom in a 6-DoF robot typically include three linear motions (X, Y, Z) and three rotational motions (roll, pitch, yaw). These movements enable the robot to position its end-effector or tool in any desired position and orientation within its workspace.
+The redundancy in DOF can be exploited using advanced control algorithms, such as inverse kinematics and optimization techniques. These algorithms analyze the robot's current configuration, environment, and task requirements to calculate the optimal joint movements that achieve the desired task. This allows the robot to adapt to changes in the environment or task conditions on the fly.
 
-The additional axis, often referred to as the seventh axis or wrist axis, is usually located at the end of the robot arm and allows for an additional rotational motion. This axis provides an extra degree of freedom, enabling the robot to rotate its end-effector around a specific axis, such as a wrist joint or tool rotation.
+Additionally, redundant robots can provide enhanced dexterity and manipulation capabilities. They can perform tasks that require fine motor skills, such as delicate assembly operations or precise object manipulation. The additional DOF enable them to adjust their movements and grasp objects from various angles or orientations, enhancing their overall performance and precision.
 
-The presence of the seventh axis in a 6-DoF robot with an additional axis expands its capabilities and enables it to perform tasks that require complex orientations or intricate movements. For example, in tasks like welding or assembly operations, the additional axis allows the robot to reach and manipulate objects from various angles, improving precision and efficiency.
 
-The increased flexibility provided by the additional axis also enables the robot to access hard-to-reach areas or work around obstacles. This is particularly useful in applications where space is limited or when the robot needs to navigate complex workpieces or environments.
 
-Additionally, the additional axis can be used to implement specialized end-effectors or tools that require rotational motion. For instance, in applications like painting or polishing, the extra axis allows the robot to adjust the angle or orientation of the tool to achieve the desired finish or coverage.
 
-Programming a 6-DoF industrial robot with an additional axis follows similar methods used for programming other industrial robots. This can include teaching the robot using a teach pendant or offline programming using simulation software. The programming process involves specifying the desired positions, orientations, and trajectories for the robot to execute during its operation.
+----------------------
 
-In summary, a 6-DoF industrial robot with an additional axis provides enhanced flexibility, precision, and maneuverability. The additional axis allows for an extra rotational motion, expanding the robot's capabilities and enabling it to perform more complex tasks in various industries, such as welding, assembly, painting, or polishing.
+
+
+
+
+\subsubsection{PATHMODE}
+
+\subsubsection{ENEGY CONSUMPTION}
+
 
 \section{Computer-Aided Manufacturing}\label{CAMmain}
 \subsection{CAM Software}

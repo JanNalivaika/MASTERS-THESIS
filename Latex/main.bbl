@@ -439,6 +439,39 @@
       \verb Billard, Kragic 2019 - Trends and challenges in robot:Attachments/Billard, Kragic 2019 - Trends and challenges in robot.pdf:application/pdf
       \endverb
     \endentry
+    \entry{bonev2001delta}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c7032cac6f721f28d0a620af7c4c0981}{%
+           family={Bonev},
+           familyi={B\bibinitperiod},
+           given={Ilian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Newsletter, available at http://www. parallelmic. org}%
+      }
+      \strng{namehash}{c7032cac6f721f28d0a620af7c4c0981}
+      \strng{fullhash}{c7032cac6f721f28d0a620af7c4c0981}
+      \strng{bibnamehash}{c7032cac6f721f28d0a620af7c4c0981}
+      \strng{authorbibnamehash}{c7032cac6f721f28d0a620af7c4c0981}
+      \strng{authornamehash}{c7032cac6f721f28d0a620af7c4c0981}
+      \strng{authorfullhash}{c7032cac6f721f28d0a620af7c4c0981}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Delta parallel robot-the story of success}
+      \field{year}{2001}
+      \verb{file}
+      \verb Delta parallel robot-the story 2001:Attachments/Delta parallel robot-the story 2001.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.robotics.caltech.edu/~jwb/courses/me115/handouts/deltarobothistory.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.robotics.caltech.edu/~jwb/courses/me115/handouts/deltarobothistory.pdf
+      \endverb
+    \endentry
     \entry{Boscariol.2020}{article}{}
       \name{author}{4}{}{%
         {{hash=079253368d3f09dc5f85f0038f9725d3}{%
@@ -575,6 +608,47 @@
       \verb 10.1016/j.pmatsci.2017.08.003
       \endverb
     \endentry
+    \entry{Bosscher.2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0635d81717224e78f121cf455590d259}{%
+           family={Bosscher},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=49e4b26ab20d9ee366a03de1e39f9f9f}{%
+           family={Hedman},
+           familyi={H\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3afbaab16a5a0049cd269185a6432310}
+      \strng{fullhash}{3afbaab16a5a0049cd269185a6432310}
+      \strng{bibnamehash}{3afbaab16a5a0049cd269185a6432310}
+      \strng{authorbibnamehash}{3afbaab16a5a0049cd269185a6432310}
+      \strng{authornamehash}{3afbaab16a5a0049cd269185a6432310}
+      \strng{authorfullhash}{3afbaab16a5a0049cd269185a6432310}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Real--time collision avoidance algorithm for robotic manipulators - Author: Paul Bosscher, Daniel Hedman}
+      \field{journaltitle}{Industrial Robot: An International Journal}
+      \field{number}{2}
+      \field{title}{Real--time collision avoidance algorithm for robotic manipulators}
+      \field{volume}{38}
+      \field{year}{2011}
+      \field{pages}{186\bibrangedash 197}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1108/01439911111106390
+      \endverb
+      \verb{urlraw}
+      \verb https://www.emerald.com/insight/content/doi/10.1108/01439911111106390/full/pdf
+      \endverb
+      \verb{url}
+      \verb https://www.emerald.com/insight/content/doi/10.1108/01439911111106390/full/pdf
+      \endverb
+    \endentry
     \entry{Calleja.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=1e952f60475fce06efca781e681c73ce}{%
@@ -687,6 +761,58 @@
       \verb https://link.springer.com/article/10.1007/s12541-014-0528-1
       \endverb
     \endentry
+    \entry{Cong.2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c406203cafbeb5a12cb8afd668de45e4}{%
+           family={Cong},
+           familyi={C\bibinitperiod},
+           given={Baoqiang},
+           giveni={B\bibinitperiod}}}%
+        {{hash=11db61e8934093486441e015049b5259}{%
+           family={Ouyang},
+           familyi={O\bibinitperiod},
+           given={Ruijie},
+           giveni={R\bibinitperiod}}}%
+        {{hash=75a3a8b6524304db0f7d289c00c56ff8}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Bojin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8b289cbde0f5b1aacb72a8844198d11}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Jialuo},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c00fa8eaac4e7de096b466f41f86e701}
+      \strng{fullhash}{c00fa8eaac4e7de096b466f41f86e701}
+      \strng{bibnamehash}{c00fa8eaac4e7de096b466f41f86e701}
+      \strng{authorbibnamehash}{c00fa8eaac4e7de096b466f41f86e701}
+      \strng{authornamehash}{c00fa8eaac4e7de096b466f41f86e701}
+      \strng{authorfullhash}{c00fa8eaac4e7de096b466f41f86e701}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The weld bead geometry and the porosity of AA2219-T851 high strength aluminum alloy welds with ER2319 wire produced by different cold metal transfer ($\ldots$}
+      \field{issn}{1875-5372}
+      \field{journaltitle}{Rare Metal Materials and Engineering}
+      \field{number}{3}
+      \field{title}{Influence of Cold Metal Transfer Process and Its Heat Input on Weld Bead Geometry and Porosity of Aluminum-Copper Alloy Welds}
+      \field{volume}{45}
+      \field{year}{2016}
+      \field{pages}{606\bibrangedash 611}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/S1875-5372(16)30080-7
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1875537216300807
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1875537216300807
+      \endverb
+    \endentry
     \entry{Cunningham.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=0f4aa9b723d3efd8d5286f3d9be1018d}{%
@@ -744,6 +870,51 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s2214860418303920
+      \endverb
+    \endentry
+    \entry{Das.2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=352ef0bb7c653f207456b43212cb6e2b}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi Taylan},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=310b67d0707b934977c38521cb4b36c9}{%
+           family={{Canan Dülger}},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{eda2d8561a74c2b62d900bb5a4903bb0}
+      \strng{fullhash}{eda2d8561a74c2b62d900bb5a4903bb0}
+      \strng{bibnamehash}{eda2d8561a74c2b62d900bb5a4903bb0}
+      \strng{authorbibnamehash}{eda2d8561a74c2b62d900bb5a4903bb0}
+      \strng{authornamehash}{eda2d8561a74c2b62d900bb5a4903bb0}
+      \strng{authorfullhash}{eda2d8561a74c2b62d900bb5a4903bb0}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A complete mathematical model of SCARA robot (Serpent 1) is developed including servo actuator dynamics and presented together with dynamic simulation$\ldots$}
+      \field{issn}{1569-190X}
+      \field{journaltitle}{Simulation Modelling Practice and Theory}
+      \field{number}{3}
+      \field{title}{Mathematical modelling, simulation and experimental verification of a scara robot}
+      \field{volume}{13}
+      \field{year}{2005}
+      \field{pages}{257\bibrangedash 271}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.simpat.2004.11.004
+      \endverb
+      \verb{file}
+      \verb Das, Canan D{\"u}lger 2005 - Mathematical modelling:Attachments/Das, Canan D{\"u}lger 2005 - Mathematical modelling.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1569190x04001200
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1569190x04001200
       \endverb
     \endentry
     \entry{Dilberoglu.2017}{article}{}
@@ -812,6 +983,61 @@
       \verb 10.31030/3290011
       \endverb
     \endentry
+    \entry{Ding.2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=62907ec38463ccc60c56556aefabae53}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Donghong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d8d1756d391b3b0eb8dcc0bf791d1fbf}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Zengxi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=274afe708f5bd0556dec396d7265bea2}{%
+           family={Cuiuri},
+           familyi={C\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f606fef6e71a3be35e11adc561b1422e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Huijun},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{fullhash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{bibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{authorbibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{authornamehash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{authorfullhash}{aafd04ab6b37bd187b72b7b014edabae}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Wire-feed additive manufacturing (AM) is a promising alternative to traditional subtractive manufacturing for fabricating large expensive metal components with complex geometry. The current research focus on wire-feed AM is trying to produce complex-shaped functional metal components with good geometry accuracy, surface finish and material property to meet the demanding requirements from aerospace, automotive and rapid tooling industry. Wire-feed AM processes generally involve high residual stresses and distortions due to the excessive heat input and high deposition rate. The influences of process conditions, such as energy input, wire-feed rate, welding speed, deposition pattern and deposition sequences, etc., on thermal history and resultant residual stresses of AM-processed components needs to be further understood. In addition, poor accuracy and surface finish of the process limit the applications of wire-feed AM technology. In this paper, after an introduction of various wire-feed AM technologies and its characteristics, an in depth review of various process aspects of wire-feed AM, including quality and accuracy of wire-feed AM processed components, will be presented. The overall objective is to identify the current challenges for wire-feed AM as well as point out the future research direction.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{1-4}
+      \field{title}{Wire-feed additive manufacturing of metal components: technologies, developments and future interests}
+      \field{volume}{81}
+      \field{year}{2015}
+      \field{pages}{465\bibrangedash 481}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s00170-015-7077-3
+      \endverb
+      \verb{file}
+      \verb Ding, Pan et al. 2015 - Wire-feed additive manufacturing of metal:Attachments/Ding, Pan et al. 2015 - Wire-feed additive manufacturing of metal.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-015-7077-3
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-015-7077-3
+      \endverb
+    \endentry
     \entry{Doan.2016}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=a7ca8e0613aa4d18bfcf6d5c6b4cb2e0}{%
@@ -848,6 +1074,46 @@
       \field{year}{2016}
       \verb{doi}
       \verb 10.1109/aim.2016.7576826
+      \endverb
+    \endentry
+    \entry{Domae.2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7534398e903c1d4461a982bd1cc72ae1}{%
+           family={Domae},
+           familyi={D\bibinitperiod},
+           given={Yukiyasu},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{7534398e903c1d4461a982bd1cc72ae1}
+      \strng{fullhash}{7534398e903c1d4461a982bd1cc72ae1}
+      \strng{bibnamehash}{7534398e903c1d4461a982bd1cc72ae1}
+      \strng{authorbibnamehash}{7534398e903c1d4461a982bd1cc72ae1}
+      \strng{authornamehash}{7534398e903c1d4461a982bd1cc72ae1}
+      \strng{authorfullhash}{7534398e903c1d4461a982bd1cc72ae1}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{J-STAGE}
+      \field{issn}{1883-8049}
+      \field{journaltitle}{Journal of Robotics and Mechatronics}
+      \field{number}{1}
+      \field{title}{Recent Trends in the Research of Industrial Robots and Future Outlook}
+      \field{volume}{31}
+      \field{year}{2019}
+      \field{pages}{57\bibrangedash 62}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.20965/jrm.2019.p0057
+      \endverb
+      \verb{file}
+      \verb Domae 2019 - Recent Trends in the Research:Attachments/Domae 2019 - Recent Trends in the Research.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstage.jst.go.jp/article/jrobomech/31/1/31_57/_article/-char/ja/
+      \endverb
+      \verb{url}
+      \verb https://www.jstage.jst.go.jp/article/jrobomech/31/1/31_57/_article/-char/ja/
       \endverb
     \endentry
     \entry{Dubovska.2014}{article}{}
@@ -934,6 +1200,46 @@
       \endverb
       \verb{url}
       \verb https://jacm.scu.ac.ir/article_16660.html
+      \endverb
+    \endentry
+    \entry{Dutra.2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a5f24c8ab57d3f3208cebafe18065f49}{%
+           family={Dutra},
+           familyi={D\bibinitperiod},
+           given={Jair\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=cb984acdb31fad51148b3813b5106e8b}{%
+           family={{Gonçalves e Silva}},
+           familyi={G\bibinitperiod},
+           given={Régis\bibnamedelima Henrique},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=58487dd088556201bb883cd02c94070d}{%
+           family={Marques},
+           familyi={M\bibinitperiod},
+           given={Cleber},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d46aaec18c55208e4ebcc7a89159c774}
+      \strng{fullhash}{d46aaec18c55208e4ebcc7a89159c774}
+      \strng{bibnamehash}{d46aaec18c55208e4ebcc7a89159c774}
+      \strng{authorbibnamehash}{d46aaec18c55208e4ebcc7a89159c774}
+      \strng{authornamehash}{d46aaec18c55208e4ebcc7a89159c774}
+      \strng{authorfullhash}{d46aaec18c55208e4ebcc7a89159c774}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although it emerged more than six decades ago, the MIG/MAG welding process continues to generate new expectations and is often a topic of discussion. For a layperson examining the entire process, i...}
+      \field{journaltitle}{Welding International}
+      \field{number}{3}
+      \field{title}{Melting and welding power characteristics of MIG--CMT versus conventional MIG for aluminium 5183}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{pages}{181\bibrangedash 186}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1080/09507116.2014.932974
       \endverb
     \endentry
     \entry{Faludi.2015}{article}{}
@@ -1327,6 +1633,58 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2213846317300974
       \endverb
     \endentry
+    \entry{Hagele.2016}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=8cb8d00438891daee06979b28e5653e7}{%
+           family={Hägele},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c34a5092013ac7ed690625f215699309}{%
+           family={Nilsson},
+           familyi={N\bibinitperiod},
+           given={Klas},
+           giveni={K\bibinitperiod}}}%
+        {{hash=cf39e5d1228989e52433069447892927}{%
+           family={Pires},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi Norberto},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=2f914bbe64bd82c123d0ef61b9e00bac}{%
+           family={Bischoff},
+           familyi={B\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Cham}%
+      }
+      \strng{namehash}{ea0add2efdd317b0499da88d01300dbd}
+      \strng{fullhash}{ea0add2efdd317b0499da88d01300dbd}
+      \strng{bibnamehash}{ea0add2efdd317b0499da88d01300dbd}
+      \strng{authorbibnamehash}{ea0add2efdd317b0499da88d01300dbd}
+      \strng{authornamehash}{ea0add2efdd317b0499da88d01300dbd}
+      \strng{authorfullhash}{ea0add2efdd317b0499da88d01300dbd}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Much of the technology that makes robots reliable, human friendly, and industrialroboticsadaptable for numerous applications has emerged from manufacturers of industrial robots. With an estimated installation base in 2014 of about 1.5 million units, some...}
+      \field{booktitle}{Springer Handbook of Robotics}
+      \field{title}{Industrial Robotics}
+      \field{year}{2016}
+      \field{pages}{1385\bibrangedash 1422}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1007/978-3-319-32552-1{\textunderscore }54
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-319-32552-1_54
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-319-32552-1_54
+      \endverb
+    \endentry
     \entry{Haleem.2019}{article}{}
       \name{author}{2}{}{%
         {{hash=ac64f478d5bbd373bdb223b8547d13de}{%
@@ -1361,6 +1719,86 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1142/S2424862219300011
+      \endverb
+    \endentry
+    \entry{Hanafusa.1981}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1252b251ed55b34180d44878facc27b9}{%
+           family={Hanafusa},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3425bcfa811fff3ba64984e7d816e10b}{%
+           family={Yoshikawa},
+           familyi={Y\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3261d68d2879cf714db71fcba9b8713b}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea35c350fba795195c78a43942606c70}
+      \strng{fullhash}{ea35c350fba795195c78a43942606c70}
+      \strng{bibnamehash}{ea35c350fba795195c78a43942606c70}
+      \strng{authorbibnamehash}{ea35c350fba795195c78a43942606c70}
+      \strng{authornamehash}{ea35c350fba795195c78a43942606c70}
+      \strng{authorfullhash}{ea35c350fba795195c78a43942606c70}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robot applications have seen remarkable growth in numbers and in diversity of uses. In configuration, it is also slowly changing from carte$\ldots$}
+      \field{issn}{1474-6670}
+      \field{journaltitle}{IFAC Proceedings Volumes}
+      \field{number}{2}
+      \field{title}{Analysis and Control of Articulated Robot Arms with Redundancy}
+      \field{volume}{14}
+      \field{year}{1981}
+      \field{pages}{1927\bibrangedash 1932}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/S1474-6670(17)63754-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1474667017637546
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1474667017637546
+      \endverb
+    \endentry
+    \entry{Heimann.2020}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=3fd995049b7ed852ece8813f0a58a6c3}{%
+           family={Heimann},
+           familyi={H\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=a73136204d98e13407d47ce34de065fd}{%
+           family={Guhl},
+           familyi={G\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{3fe622c3c9a8a357daa502d08fac23fc}
+      \strng{fullhash}{3fe622c3c9a8a357daa502d08fac23fc}
+      \strng{bibnamehash}{3fe622c3c9a8a357daa502d08fac23fc}
+      \strng{authorbibnamehash}{3fe622c3c9a8a357daa502d08fac23fc}
+      \strng{authornamehash}{3fe622c3c9a8a357daa502d08fac23fc}
+      \strng{authorfullhash}{3fe622c3c9a8a357daa502d08fac23fc}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 25th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA)}
+      \field{title}{Industrial Robot Programming Methods: A Scoping Review}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1109/etfa46521.2020.9211997
       \endverb
     \endentry
     \entry{Hesser.2019}{article}{}
@@ -1402,6 +1840,37 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s2213846318301524
+      \endverb
+    \endentry
+    \entry{Heyer.2010}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=50d1fe7f81ea7b03a3098fea2b0028b0}{%
+           family={Heyer},
+           familyi={H\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{50d1fe7f81ea7b03a3098fea2b0028b0}
+      \strng{fullhash}{50d1fe7f81ea7b03a3098fea2b0028b0}
+      \strng{bibnamehash}{50d1fe7f81ea7b03a3098fea2b0028b0}
+      \strng{authorbibnamehash}{50d1fe7f81ea7b03a3098fea2b0028b0}
+      \strng{authornamehash}{50d1fe7f81ea7b03a3098fea2b0028b0}
+      \strng{authorfullhash}{50d1fe7f81ea7b03a3098fea2b0028b0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2010 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{title}{Human-robot interaction and future industrial robotics applications}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1109/iros.2010.5651294
+      \endverb
+      \verb{file}
+      \verb Heyer 2010 - Human-robot interaction and future industrial:Attachments/Heyer 2010 - Human-robot interaction and future industrial.pdf:application/pdf
       \endverb
     \endentry
     \entry{Huynh.2020}{article}{}
@@ -1620,6 +2089,55 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2212827117310363
       \endverb
     \endentry
+    \entry{Jain.2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d953ae34de1f3cdb1fb80688536046a2}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Rishabh},
+           giveni={R\bibinitperiod}}}%
+        {{hash=823b5b5b4e6ccd8b08b0eddcee4b63db}{%
+           family={{Nayab Zafar}},
+           familyi={N\bibinitperiod},
+           given={Mohd.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=aa134036d232b824daebc07d6290e73d}{%
+           family={Mohanta},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d3937b75a5dd8038e7cf0a75a398266}
+      \strng{fullhash}{9d3937b75a5dd8038e7cf0a75a398266}
+      \strng{bibnamehash}{9d3937b75a5dd8038e7cf0a75a398266}
+      \strng{authorbibnamehash}{9d3937b75a5dd8038e7cf0a75a398266}
+      \strng{authornamehash}{9d3937b75a5dd8038e7cf0a75a398266}
+      \strng{authorfullhash}{9d3937b75a5dd8038e7cf0a75a398266}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1757-899X}
+      \field{journaltitle}{IOP Conference Series: Materials Science and Engineering}
+      \field{number}{1}
+      \field{title}{Modeling and Analysis of Articulated Robotic Arm for Material Handling Applications}
+      \field{volume}{691}
+      \field{year}{2019}
+      \field{pages}{012010}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1757-899X/691/1/012010
+      \endverb
+      \verb{file}
+      \verb Jain, Nayab Zafar et al. 2019 - Modeling and Analysis of Articulated:Attachments/Jain, Nayab Zafar et al. 2019 - Modeling and Analysis of Articulated.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1088/1757-899x/691/1/012010/meta
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/1757-899x/691/1/012010/meta
+      \endverb
+    \endentry
     \entry{Jandyal.2022}{article}{}
       \name{author}{5}{}{%
         {{hash=fd5708636054c35785bb90907c2b02bc}{%
@@ -1725,6 +2243,51 @@
       \verb 10.1016/j.smse.2023.100015
       \endverb
     \endentry
+    \entry{Ji.2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c1447b3ead7fa8f45ce1170480e4a4a2}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=65436496e63d7ea35a6bc5c412afdc17}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lihui},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{b59a681cd799738839a9b94800534113}
+      \strng{fullhash}{b59a681cd799738839a9b94800534113}
+      \strng{bibnamehash}{b59a681cd799738839a9b94800534113}
+      \strng{authorbibnamehash}{b59a681cd799738839a9b94800534113}
+      \strng{authornamehash}{b59a681cd799738839a9b94800534113}
+      \strng{authorfullhash}{b59a681cd799738839a9b94800534113}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{For the past three decades, robotic machining has attracted a large amount of research interest owning to the benefit of cost efficiency, high flexibility and multi-functionality of industrial robot. Covering articles published on the subjects of robotic machining in the past 30 years or so; this paper aims to provide an up-to-date review of robotic machining research works, a critical analysis of publications that publish the research works, and an understanding of the future directions in the field. The research works are organised into two operation categories, low material removal rate (MRR) and high MRR, according their machining properties, and the research topics are reviewed and highlighted separately. Then, a set of statistical analysis is carried out in terms of published years and countries. Towards an applicable robotic machining, the future trends and key research points are identified at the end of this paper.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{1-4}
+      \field{title}{Industrial robotic machining: a review}
+      \field{volume}{103}
+      \field{year}{2019}
+      \field{pages}{1239\bibrangedash 1255}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s00170-019-03403-z
+      \endverb
+      \verb{file}
+      \verb Ji, Wang 2019 - Industrial robotic machining:Attachments/Ji, Wang 2019 - Industrial robotic machining.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-019-03403-z
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-019-03403-z
+      \endverb
+    \endentry
     \entry{Jia.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=d261670f4ba5df509b360f3d91c5c892}{%
@@ -1772,6 +2335,172 @@
       \range{pages}{21}
       \verb{doi}
       \verb 10.1016/j.ijmachtools.2017.10.008
+      \endverb
+    \endentry
+    \entry{Joshi.2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=68b2920dba4b26f437a971a9167dfcc8}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Kedar},
+           giveni={K\bibinitperiod}}}%
+        {{hash=abb074cf4970aa5af4a03ff208125d32}{%
+           family={Melkote},
+           familyi={M\bibinitperiod},
+           given={Shreyes\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=81a1ee7fe5360e509724fc7036704d31}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=190d558280f7db6d32de6f9ab13353a7}{%
+           family={Chaudhari},
+           familyi={C\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{143109c61834e0680112814aaa06a23e}
+      \strng{fullhash}{143109c61834e0680112814aaa06a23e}
+      \strng{bibnamehash}{143109c61834e0680112814aaa06a23e}
+      \strng{authorbibnamehash}{143109c61834e0680112814aaa06a23e}
+      \strng{authornamehash}{143109c61834e0680112814aaa06a23e}
+      \strng{authorfullhash}{143109c61834e0680112814aaa06a23e}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The production of power transmission components such as gears and bearing rings involves precision finishing of highly specialized and dedicated preci$\ldots$}
+      \field{issn}{1755-5817}
+      \field{journaltitle}{CIRP Journal of Manufacturing Science and Technology}
+      \field{title}{Investigation of cycle time behavior in the robotic grinding process}
+      \field{volume}{35}
+      \field{year}{2021}
+      \field{pages}{315\bibrangedash 322}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.cirpj.2021.06.021
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581721001139
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581721001139
+      \endverb
+    \endentry
+    \entry{Jung.2020b}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1f3f8c1dc22d81a3563ea9e59dc6a7d7}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Jin\bibnamedelima Hwa},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=23361cc07bfe432cc2b6d5fc528bf263}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Dong-Geon},
+           giveni={D\bibinithyphendelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{78246931f4ca55377b1ea55e749ea976}
+      \strng{fullhash}{78246931f4ca55377b1ea55e749ea976}
+      \strng{bibnamehash}{78246931f4ca55377b1ea55e749ea976}
+      \strng{authorbibnamehash}{78246931f4ca55377b1ea55e749ea976}
+      \strng{authornamehash}{78246931f4ca55377b1ea55e749ea976}
+      \strng{authorfullhash}{78246931f4ca55377b1ea55e749ea976}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In recent years, the global rapid expansion of industrial robots has induced ever-increasing concerns for the cause and effect of such growth, particu$\ldots$}
+      \field{issn}{0040-1625}
+      \field{journaltitle}{0040-1625}
+      \field{title}{Industrial robots, employment growth, and labor cost: A simultaneous equation analysis}
+      \field{volume}{159}
+      \field{year}{2020}
+      \field{pages}{120202}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.techfore.2020.120202
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0040162520310283
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0040162520310283
+      \endverb
+    \endentry
+    \entry{Kim.2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4e3e526038b733495300ae0a3e6bdb18}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Han\bibnamedelima Sung},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4c2b75c340f030f18c7c86c4f637f69a}{%
+           family={Tsai},
+           familyi={T\bibinitperiod},
+           given={Lung-Wen},
+           giveni={L\bibinithyphendelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{53fc83410e090aa88cbf67d7d56a80bb}
+      \strng{fullhash}{53fc83410e090aa88cbf67d7d56a80bb}
+      \strng{bibnamehash}{53fc83410e090aa88cbf67d7d56a80bb}
+      \strng{authorbibnamehash}{53fc83410e090aa88cbf67d7d56a80bb}
+      \strng{authornamehash}{53fc83410e090aa88cbf67d7d56a80bb}
+      \strng{authorfullhash}{53fc83410e090aa88cbf67d7d56a80bb}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces a 3-DOF translational parallel manipulator called Cartesian Parallel Manipulator (CPM). The manipulator consists of a moving platform that is connected to a fixed base by three limbs. Each limb is made up of one prismatic and three revolute joints and all joint axes are parallel to one another. In this way, each limb provides two rotational constraints to the moving platform and the combined effects of the three limbs lead to an over-constrained mechanism with three translational degrees of freedom. The manipulator behaves like a conventional X-Y-Z Cartesian machine due to the orthogonal arrangement of the three limbs. Two actuation methods are analyzed. However, the rotary actuation method is discarded because of the existence of singularities within the workspace. For the linear actuation method, there exists a one-to-one correspondence between the input and output displacements of the manipulator. The effects of misalignment of linear actuators on the motion of the moving platform are discussed. Each limb structure is exposed to a bending moment induced by external forces exerted on the moving platform. In order to minimize the deflection at the joints caused by the bending moment, a method to maximize the stiffness is suggested. A numerical example of the optimal design is presented.}
+      \field{issn}{1050-0472}
+      \field{journaltitle}{Journal of Mechanical Design}
+      \field{number}{1}
+      \field{title}{Design Optimization of a Cartesian Parallel Manipulator}
+      \field{volume}{125}
+      \field{year}{2003}
+      \field{pages}{43\bibrangedash 51}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1115/1.1543977
+      \endverb
+    \endentry
+    \entry{Kubela.2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3b9cf83e95afe1d00f443a07de30375d}{%
+           family={Kubela},
+           familyi={K\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9dc96958881b3531fc85f06a4470f2f4}{%
+           family={Pochyly},
+           familyi={P\bibinitperiod},
+           given={Ales},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d35b246b88cb10b1216535cc650fa1fc}{%
+           family={Singule},
+           familyi={S\bibinitperiod},
+           given={Vladislav},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{467779ade334debe739dca8848f376fd}
+      \strng{fullhash}{467779ade334debe739dca8848f376fd}
+      \strng{bibnamehash}{467779ade334debe739dca8848f376fd}
+      \strng{authorbibnamehash}{467779ade334debe739dca8848f376fd}
+      \strng{authornamehash}{467779ade334debe739dca8848f376fd}
+      \strng{authorfullhash}{467779ade334debe739dca8848f376fd}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE International Power Electronics and Motion Control Conference (PEMC)}
+      \field{title}{Assessment of industrial robots accuracy in relation to accuracy improvement in machining processes}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1109/epepemc.2016.7752083
       \endverb
     \endentry
     \entry{Kumar.2020}{book}{}
@@ -2037,6 +2766,95 @@
       \verb https://www.sciencedirect.com/science/article/pii/s073658452100137x
       \endverb
     \endentry
+    \entry{Lin.2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5f65c83b890486e05d6fb24cca8e5b72}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=385515219469b49871047a8385f24608}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cadfb3c8b624e050874a32bc3cd292a4}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba5a5191382653af84e194da71396f4d}
+      \strng{fullhash}{ba5a5191382653af84e194da71396f4d}
+      \strng{bibnamehash}{ba5a5191382653af84e194da71396f4d}
+      \strng{authorbibnamehash}{ba5a5191382653af84e194da71396f4d}
+      \strng{authornamehash}{ba5a5191382653af84e194da71396f4d}
+      \strng{authorfullhash}{ba5a5191382653af84e194da71396f4d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robots are increasingly used in machining of large-scale components due to advantages of high repeatability, large workspace and low cost. $\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Real-time path correction of industrial robots in machining of large-scale components based on model and data hybrid drive}
+      \field{volume}{79}
+      \field{year}{2023}
+      \field{pages}{102447}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2022.102447
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584522001302
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584522001302
+      \endverb
+    \endentry
+    \entry{Liu.2022b}{article}{}
+      \name{author}{4}{}{%
+        {{hash=fa3e4da50b3416b1a04c39a932b2344c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fe7f05f38aea96007fe95782edf7ba98}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Fu},
+           giveni={F\bibinitperiod}}}%
+        {{hash=72caa5801cd2b44e66983b968a998e17}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Zishuai},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=ea16703d80d976de51f0e3ca56e963c5}{%
+           family={Duffy},
+           familyi={D\bibinitperiod},
+           given={Vincent\bibnamedelima G.},
+           giveni={V\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d495016ef996087a7d59599e473be21}
+      \strng{fullhash}{6d495016ef996087a7d59599e473be21}
+      \strng{bibnamehash}{6d495016ef996087a7d59599e473be21}
+      \strng{authorbibnamehash}{6d495016ef996087a7d59599e473be21}
+      \strng{authornamehash}{6d495016ef996087a7d59599e473be21}
+      \strng{authorfullhash}{6d495016ef996087a7d59599e473be21}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{1. With the development of Industry 4.0, manufacturing is required to respond to the needs of consumers in a timely and rapid manner. In this context, the emergence of collaborative robots (cobots)...}
+      \field{journaltitle}{International Journal of Human--Computer Interaction}
+      \field{title}{Application, Development and Future Opportunities of Collaborative Robots (Cobots) in Manufacturing: A Literature Review}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1080/10447318.2022.2041907
+      \endverb
+    \endentry
     \entry{Liu.2022}{article}{}
       \name{author}{5}{}{%
         {{hash=93c82128aca25c57cfb17e90d02136d5}{%
@@ -2288,6 +3106,52 @@
       \verb https://www.sciencedirect.com/science/article/pii/s0094114x21001130
       \endverb
     \endentry
+    \entry{Nagasai.2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f055f515efbc3651a9fcde31d9d7b8ef}{%
+           family={Nagasai},
+           familyi={N\bibinitperiod},
+           given={Bellamkonda\bibnamedelima Prasanna},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ee14b8193cbb7aa0f52f95887b2b9538}{%
+           family={Malarvizhi},
+           familyi={M\bibinitperiod},
+           given={Sudersanan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6e47819e4c5929d10dbbd90437645332}{%
+           family={Balasubramanian},
+           familyi={B\bibinitperiod},
+           given={Visvalingam},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{fullhash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{bibnamehash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{authorbibnamehash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{authornamehash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{authorfullhash}{6abc97353bef5855cea6b9e94e9f2457}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In recent decades, Additive Manufacturing (AM) has become a viable alternative to the manufacture of metal parts. Wire arc additive manufacturing (WAA$\ldots$}
+      \field{issn}{1755-5817}
+      \field{journaltitle}{CIRP Journal of Manufacturing Science and Technology}
+      \field{title}{Effect of welding processes on mechanical and metallurgical characteristics of carbon steel cylindrical components made by wire arc additive manufacturing (WAAM) technique}
+      \field{volume}{36}
+      \field{year}{2022}
+      \field{pages}{100\bibrangedash 116}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.cirpj.2021.11.005
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581721001887
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581721001887
+      \endverb
+    \endentry
     \entry{Nee.2015}{book}{}
       \name{author}{1}{}{%
         {{hash=b3604a39c6bc91d6f9eb3e0a91070a56}{%
@@ -2374,6 +3238,65 @@
       \verb https://link.springer.com/article/10.1007/s00170-019-04020-6
       \endverb
     \endentry
+    \entry{Ou.2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fd762c131409ead60c94ae65feb47cad}{%
+           family={Ou},
+           familyi={O\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=072990a4766dc0d5024cdd12679f1405}{%
+           family={Mukherjee},
+           familyi={M\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b29b39badfea2d7ad83d39ed0fdd5a24}{%
+           family={Knapp},
+           familyi={K\bibinitperiod},
+           given={G.\bibnamedelimi L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=39a828ca447ab36e7e33ce05d4c575d9}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=eb149039038c6ca02af5debcae806110}{%
+           family={DebRoy},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{fullhash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{bibnamehash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{authorbibnamehash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{authornamehash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{authorfullhash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Structure, properties and serviceability of components made by wire arc additive manufacturing (WAAM) depend on the process parameters such as arc pow$\ldots$}
+      \field{issn}{0017-9310}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{title}{Fusion zone geometries, cooling rates and solidification parameters during wire arc additive manufacturing}
+      \field{volume}{127}
+      \field{year}{2018}
+      \field{pages}{1084\bibrangedash 1094}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.ijheatmasstransfer.2018.08.111
+      \endverb
+      \verb{file}
+      \verb Ou, Mukherjee et al. 2018 - Fusion zone geometries:Attachments/Ou, Mukherjee et al. 2018 - Fusion zone geometries.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0017931018323974
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0017931018323974
+      \endverb
+    \endentry
     \entry{Pan}{article}{}
       \name{author}{5}{}{%
         {{hash=d8d1756d391b3b0eb8dcc0bf791d1fbf}{%
@@ -2432,6 +3355,91 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
+      \endverb
+    \endentry
+    \entry{Pickin.2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=703998e1d6c168155c96aa6567d9ef1a}{%
+           family={Pickin},
+           familyi={P\bibinitperiod},
+           given={C.\bibnamedelimi G.},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=3f21ef9be738653ed7526251e68ee25b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={S.\bibnamedelimi W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b39d760801bd4b89e35d32a6653c1414}{%
+           family={Lunt},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e27fb4070f96cb184cdd1f0a9e7e5205}
+      \strng{fullhash}{e27fb4070f96cb184cdd1f0a9e7e5205}
+      \strng{bibnamehash}{e27fb4070f96cb184cdd1f0a9e7e5205}
+      \strng{authorbibnamehash}{e27fb4070f96cb184cdd1f0a9e7e5205}
+      \strng{authornamehash}{e27fb4070f96cb184cdd1f0a9e7e5205}
+      \strng{authorfullhash}{e27fb4070f96cb184cdd1f0a9e7e5205}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The process characteristics of the synergic cold metal transfer (CMT) process have been examined for welding aluminium alloy. Utilising a simple backl$\ldots$}
+      \field{issn}{0924-0136}
+      \field{journaltitle}{Journal of Materials Processing Technology}
+      \field{number}{3}
+      \field{title}{Characterisation of the cold metal transfer (CMT) process and its application for low dilution cladding}
+      \field{volume}{211}
+      \field{year}{2011}
+      \field{pages}{496\bibrangedash 502}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.jmatprotec.2010.11.005
+      \endverb
+      \verb{file}
+      \verb Pickin, Williams et al. 2011 - Characterisation of the cold metal:Attachments/Pickin, Williams et al. 2011 - Characterisation of the cold metal.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0924013610003456
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0924013610003456
+      \endverb
+    \endentry
+    \entry{Pickin.2006}{article}{}
+      \name{author}{2}{}{%
+        {{hash=703998e1d6c168155c96aa6567d9ef1a}{%
+           family={Pickin},
+           familyi={P\bibinitperiod},
+           given={C.\bibnamedelimi G.},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=2e87a889cdbf1a41ac3e3047e2947f88}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{803bf4f7d6db8dbde892a32716a06ae4}
+      \strng{fullhash}{803bf4f7d6db8dbde892a32716a06ae4}
+      \strng{bibnamehash}{803bf4f7d6db8dbde892a32716a06ae4}
+      \strng{authorbibnamehash}{803bf4f7d6db8dbde892a32716a06ae4}
+      \strng{authornamehash}{803bf4f7d6db8dbde892a32716a06ae4}
+      \strng{authorfullhash}{803bf4f7d6db8dbde892a32716a06ae4}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cold metal transfer (CMT) is an automated welding process based on dip transfer welding, characterised by controlled material deposition during the short circuit of the wire electrode to the workpi...}
+      \field{journaltitle}{Science and Technology of Welding and Joining}
+      \field{number}{5}
+      \field{title}{Evaluation of cold metal transfer (CMT) process for welding aluminium alloy}
+      \field{volume}{11}
+      \field{year}{2006}
+      \field{pages}{583\bibrangedash 585}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1179/174329306X120886
       \endverb
     \endentry
     \entry{Plocher.2019}{article}{}
@@ -2556,6 +3564,72 @@
       \verb http://ieeexplore.ieee.org/servlet/opac?punumber=202
       \endverb
     \endentry
+    \entry{Rahul.2018}{article}{}
+      \name{author}{7}{}{%
+        {{hash=0d3aa95a4fc0a5c6e467bbe88ae7b397}{%
+           family={Rahul},
+           familyi={R\bibinitperiod},
+           given={S.\bibnamedelimi G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=c6e6d60ef291f0e09521e4dde661d4c6}{%
+           family={Dhivyasri},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a62c9caccfb888f27e7a621b48a21d30}{%
+           family={Kavitha},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f0c3d99139d66f79c00d5a758e3f09b4}{%
+           family={{Arungalai Vendan}},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=54fa3ddaf7ceb8d6e781d6ebe115b83d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={K.\bibnamedelimi RameshA.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=94707833675536b69034d0634afa27d2}{%
+           family={Garg},
+           familyi={G\bibinitperiod},
+           given={Akhil},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a8eab9075a7e8567d259e822a8ff36e6}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{1912e9df0d49b485cf05691e28b2c171}
+      \strng{fullhash}{1912e9df0d49b485cf05691e28b2c171}
+      \strng{bibnamehash}{1912e9df0d49b485cf05691e28b2c171}
+      \strng{authorbibnamehash}{1912e9df0d49b485cf05691e28b2c171}
+      \strng{authornamehash}{1912e9df0d49b485cf05691e28b2c171}
+      \strng{authorfullhash}{1912e9df0d49b485cf05691e28b2c171}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, an adaptive control scheme is employed for joining Aluminium 6061 alloy sheets by Cold Metal Transfer (CMT) process. The transfer funct$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Model reference adaptive controller for enhancing depth of penetration and bead width during Cold Metal Transfer joining process}
+      \field{volume}{53}
+      \field{year}{2018}
+      \field{pages}{122\bibrangedash 134}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2018.03.013
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584517304519
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584517304519
+      \endverb
+    \endentry
     \entry{Reiter.2016}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=bf4330c73776862e0013e58f8df3a2b9}{%
@@ -2647,6 +3721,180 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/1996-1073/13/11/2730
+      \endverb
+    \endentry
+    \entry{Schmitz.2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=68b1a7b46f40b7c801ef89dae7296816}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b05e6a3ae9764201ad5b8dca1253cf5}{%
+           family={Wiartalla},
+           familyi={W\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=30797a6192d17c3a000b03d4e7fadd8a}{%
+           family={Gelfgren},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fab618f1321f12cc560875c3a91b6bb9}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e67a8122b799fdf450be3aadceedce44}{%
+           family={Corves},
+           familyi={C\bibinitperiod},
+           given={Burkhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e30b00ec4014b77d38ed322c83771586}{%
+           family={Hüsing},
+           familyi={H\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{fullhash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{bibnamehash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{authorbibnamehash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{authornamehash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{authorfullhash}{24a8c90dc924e8aa048113888d25e12e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Previous algorithms for slicing, path planning or trajectory planning of additive manufacturing cannot be used consistently for multidirectional additive manufacturing with pure object manipulation in wire-arc additive manufacturing. This work presents a novel path planning approach that directly takes robot kinematics into account and thus ensures the reachability of all critical path poses. In an additional step, the planned path segments are smoothed so that joint velocity limits are respected. It is shown that the implemented path planner generates executable robot paths and at the same time maintains the process quality (in this case, sufficient coverage of the slice area). While the introduced method enables the generation of reachable printing paths, the smoothing algorithm allows for the execution of the path with respect to the robot's velocity limits and at the same time improves the slice coverage. Future experiments will show the realization of the real robot setup presented.}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{13}
+      \field{title}{A Robot-Centered Path-Planning Algorithm for Multidirectional Additive Manufacturing for WAAM Processes and Pure Object Manipulation}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{pages}{5759}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app11135759
+      \endverb
+      \verb{file}
+      \verb Schmitz, Wiartalla et al. 2021 - A Robot-Centered Path-Planning Algorithm:Attachments/Schmitz, Wiartalla et al. 2021 - A Robot-Centered Path-Planning Algorithm.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-3417/11/13/5759
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-3417/11/13/5759
+      \endverb
+    \endentry
+    \entry{Scotti.2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=c8c46b20e1330a6d6e98281e4ce3997c}{%
+           family={Scotti},
+           familyi={S\bibinitperiod},
+           given={Fernando\bibnamedelima Matos},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d934d967594b8b8470953fb28e3649b8}{%
+           family={Teixeira},
+           familyi={T\bibinitperiod},
+           given={Felipe\bibnamedelima Ribeiro},
+           giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ce3b0a15673382c78e28bd7487083b0f}{%
+           family={{Da Silva}},
+           familyi={D\bibinitperiod},
+           given={Leandro\bibnamedelima João},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=42a9441c1fe095e563a507031031752c}{%
+           family={Araújo},
+           familyi={A\bibinitperiod},
+           given={Douglas\bibnamedelima Bezerra},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=179abcc67990dd47ce5d4031d99dadea}{%
+           family={Reis},
+           familyi={R\bibinitperiod},
+           given={Ruham\bibnamedelima Pablo},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ff1bee4c040b037e5fa1967df2faef21}{%
+           family={Scotti},
+           familyi={S\bibinitperiod},
+           given={Américo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbbb4f0647086ebc344b727fd1980cd8}
+      \strng{fullhash}{bbbb4f0647086ebc344b727fd1980cd8}
+      \strng{bibnamehash}{bbbb4f0647086ebc344b727fd1980cd8}
+      \strng{authorbibnamehash}{bbbb4f0647086ebc344b727fd1980cd8}
+      \strng{authornamehash}{bbbb4f0647086ebc344b727fd1980cd8}
+      \strng{authorfullhash}{bbbb4f0647086ebc344b727fd1980cd8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Thermal management is a key factor in wire + arc additive manufacturing (WAAM) in order to mitigate heat accumulation and cope with limitations regard$\ldots$}
+      \field{issn}{1526-6125}
+      \field{journaltitle}{Journal of Manufacturing Processes}
+      \field{title}{Thermal management in WAAM through the CMT Advanced process and an active cooling technique}
+      \field{volume}{57}
+      \field{year}{2020}
+      \field{pages}{23\bibrangedash 35}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.jmapro.2020.06.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1526612520303807
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1526612520303807
+      \endverb
+    \endentry
+    \entry{Selvi.2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7450199c113f618525b71e2ad7681d9a}{%
+           family={Selvi},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5679db57d4b494a6de5f3443948b9c71}{%
+           family={Vishvaksenan},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc466dd5bea9b9b2a95c9617d266ff68}{%
+           family={Rajasekar},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{fullhash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{bibnamehash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{authorbibnamehash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{authornamehash}{9ee5290791b19a907ea91d03bb31700f}
+      \strng{authorfullhash}{9ee5290791b19a907ea91d03bb31700f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cold Metal Transfer technology has revolutionized the welding of dissimilar metals and thicker materials by producing improved weld bead aesthetics wi$\ldots$}
+      \field{issn}{2214-9147}
+      \field{journaltitle}{2214-9147}
+      \field{number}{1}
+      \field{title}{Cold metal transfer (CMT) technology - An overview}
+      \field{volume}{14}
+      \field{year}{2018}
+      \field{pages}{28\bibrangedash 44}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.dt.2017.08.002
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214914717301022
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214914717301022
       \endverb
     \endentry
     \entry{Sherwani.2020}{inproceedings}{}
@@ -2745,6 +3993,50 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/1424-8220/21/21/7257
+      \endverb
+    \endentry
+    \entry{Siciliano.2016}{book}{}
+      \name{author}{2}{}{%
+        {{hash=38f7a70abf2d86e432d63826f560ab93}{%
+           family={Siciliano},
+           familyi={S\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a1ed48939870abd896792330bc735967}{%
+           family={Khatib},
+           familyi={K\bibinitperiod},
+           given={Oussama},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Springer International Publishing}%
+      }
+      \list{location}{2}{%
+        {Berlin}%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{fullhash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{bibnamehash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{authorbibnamehash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{authornamehash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \strng{authorfullhash}{0bdecfa7d3574a8d04c99af970a7506e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd edition}
+      \field{isbn}{978-3-319-32550-7}
+      \field{title}{Springer handbook of robotics: With 1375 figures and 109 tables}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1007/978-3-319-32552-1
+      \endverb
+      \verb{file}
+      \verb Siciliano, Khatib 2016 - Springer handbook of robotics:Attachments/Siciliano, Khatib 2016 - Springer handbook of robotics.pdf:application/pdf
       \endverb
     \endentry
     \entry{Simonis.2016}{article}{}
@@ -2859,6 +4151,126 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/2571-5577/4/2/36
+      \endverb
+    \endentry
+    \entry{Singh.2021b}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=f156380c696d5f61b23aea2c72461500}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Randheer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ab4249d25a4bec69bd40acf5d0654bb3}{%
+           family={Kukshal},
+           familyi={K\bibinitperiod},
+           given={Vikas},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a78ab993fcc339fcbc9474524776c36c}{%
+           family={Yadav},
+           familyi={Y\bibinitperiod},
+           given={Vinod\bibnamedelima Singh},
+           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=24bd64b6ff79dd5118fefc96f440ac1d}{%
+           family={Rakesh},
+           familyi={R\bibinitperiod},
+           given={Pawan\bibnamedelima Kumar},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=75fcb7d6ef9f82d5d48bd78b7bcb6db7}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Apurbba\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=c51d3e7a5e4f14856a942f325d7411da}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Inderdeep},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{2}{%
+        {Springer Singapore}%
+        {Imprint: Springer}%
+      }
+      \strng{namehash}{464ca31342ee0433977ec124ac78b8a3}
+      \strng{fullhash}{464ca31342ee0433977ec124ac78b8a3}
+      \strng{bibnamehash}{464ca31342ee0433977ec124ac78b8a3}
+      \strng{authorbibnamehash}{464ca31342ee0433977ec124ac78b8a3}
+      \strng{authornamehash}{464ca31342ee0433977ec124ac78b8a3}
+      \strng{authorfullhash}{464ca31342ee0433977ec124ac78b8a3}
+      \strng{editorbibnamehash}{c1e6a6ca5bdb07cb5b892821cf5a5552}
+      \strng{editornamehash}{c1e6a6ca5bdb07cb5b892821cf5a5552}
+      \strng{editorfullhash}{c1e6a6ca5bdb07cb5b892821cf5a5552}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Engineering Design}
+      \field{isbn}{978-981-33-4017-6}
+      \field{series}{Lecture Notes in Mechanical Engineering}
+      \field{title}{A Review on Forward and Inverse Kinematics of Classical Serial Manipulators}
+      \field{year}{2021}
+      \field{pages}{417\bibrangedash 428}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/978-981-33-4018-3{\textunderscore }39
+      \endverb
+      \verb{file}
+      \verb Singh, Kukshal et al. 2021 - A Review on Forward:Attachments/Singh, Kukshal et al. 2021 - A Review on Forward.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Srinivasan.2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7e5030f8ca26e8138c1e6a2c087ae816}{%
+           family={Srinivasan},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=33800a7a2bf354c4c21089034e9dcbcd}{%
+           family={Sevvel},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c4e0b54c79b11146f5711246b5354ed2}{%
+           family={{John Solomon}},
+           familyi={J\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=1f7fb4f774d7fcdf611004626881fc28}{%
+           family={Tanushkumaar},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{770d429c6a651550eed2727e1e0d7f86}
+      \strng{fullhash}{770d429c6a651550eed2727e1e0d7f86}
+      \strng{bibnamehash}{770d429c6a651550eed2727e1e0d7f86}
+      \strng{authorbibnamehash}{770d429c6a651550eed2727e1e0d7f86}
+      \strng{authornamehash}{770d429c6a651550eed2727e1e0d7f86}
+      \strng{authorfullhash}{770d429c6a651550eed2727e1e0d7f86}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cold metal transfer (CMT) is a novel technique of joining, which is an improvised version of the gas metal arc welding (GMAW) techniques, in which the$\ldots$}
+      \field{issn}{2214-7853}
+      \field{journaltitle}{Materials Today: Proceedings}
+      \field{title}{A review on Cold Metal Transfer (CMT) technology of welding}
+      \field{volume}{64}
+      \field{year}{2022}
+      \field{pages}{108\bibrangedash 115}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.matpr.2022.04.016
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214785322021289
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2214785322021289
       \endverb
     \endentry
     \entry{Svetlizky.2021}{article}{}
@@ -3567,6 +4979,60 @@
       \verb https://www.sciencedirect.com/science/article/pii/s1526612518310739
       \endverb
     \endentry
+    \entry{Wu.2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6925c5dcdb9b5ed8f2a02432404549e7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=899707226730bae3eac3d43e628c4645}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jiaquan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=385515219469b49871047a8385f24608}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9e115f3a9820b00a0540bf9b5b92fdfc}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef7a0310d754c94bfb8bd4545a5a7e12}
+      \strng{fullhash}{ef7a0310d754c94bfb8bd4545a5a7e12}
+      \strng{bibnamehash}{ef7a0310d754c94bfb8bd4545a5a7e12}
+      \strng{authorbibnamehash}{ef7a0310d754c94bfb8bd4545a5a7e12}
+      \strng{authornamehash}{ef7a0310d754c94bfb8bd4545a5a7e12}
+      \strng{authorfullhash}{ef7a0310d754c94bfb8bd4545a5a7e12}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Due to their high flexibility, large workspace, and high repeatability, industrial robots are widely used in roughing and semifinishing fields. However, their low machining accuracy and low stability limit further development of industrial robots in the machining field, with low stiffness being the most significant factor. The stiffness of industrial robots is affected by the joint deformation, transmission mechanism, friction, environment, and coupling of these factors. Moreover, the stiffness of a robot has a nonlinear distribution throughout the workspace, and external forces during processing cause irregular deviations of the robot, thereby affecting the machining accuracy and surface quality of the workpiece. Many scholars have researched identifying the stiffness of industrial robots and have proposed methods for improving the performance of industrial robots, mainly by optimizing the body structure of the robot and compensating for deformation errors with stiffness models. This paper reviews recent research on the stiffness modelling of industrial robots, which can be broadly classified as finite element analysis (FEA), matrix structure analysis (MSA), and virtual joint modelling (VJM) methods. Each method is studied from three aspects: algorithms, implementation, and limitations. In addition, common measurement techniques have been introduced for measuring deformation. Further research directions are also discussed.}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{17}
+      \field{title}{Review of Industrial Robot Stiffness Identification and Modelling}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{8719}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app12178719
+      \endverb
+      \verb{file}
+      \verb Wu, Li et al. 2022 - Review of Industrial Robot Stiffness:Attachments/Wu, Li et al. 2022 - Review of Industrial Robot Stiffness.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-3417/12/17/8719
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-3417/12/17/8719
+      \endverb
+    \endentry
     \entry{Xiong.2019}{article}{}
       \name{author}{3}{}{%
         {{hash=a9911a26db1d9920ffe275904c37177f}{%
@@ -3665,6 +5131,34 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0094114x19307992
+      \endverb
+    \endentry
+    \entry{Ye.2022}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=4562bb82062afd836cfea40bbd07e085}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Weiwen},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4562bb82062afd836cfea40bbd07e085}
+      \strng{fullhash}{4562bb82062afd836cfea40bbd07e085}
+      \strng{bibnamehash}{4562bb82062afd836cfea40bbd07e085}
+      \strng{authorbibnamehash}{4562bb82062afd836cfea40bbd07e085}
+      \strng{authornamehash}{4562bb82062afd836cfea40bbd07e085}
+      \strng{authorfullhash}{4562bb82062afd836cfea40bbd07e085}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 7th International Conference on Mechatronics System and Robots (ICMSR)}
+      \field{title}{Exploring the Use of Industrial Robots in CNC Machine Tool Programming and Operation Courses}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1109/icmsr2020.2022.00017
       \endverb
     \endentry
     \entry{YUE.2019}{article}{}
