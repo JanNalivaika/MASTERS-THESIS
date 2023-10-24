@@ -2492,6 +2492,32 @@
     <bcf:citekey order="109" intorder="1">Lin.2023</bcf:citekey>
     <bcf:citekey order="110" intorder="1">Bosscher.2011</bcf:citekey>
     <bcf:citekey order="111" intorder="1">Domae.2019</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">Liu.2022</bcf:citekey>
+    <bcf:citekey order="113" intorder="1">Duong.2021</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">Shi.2021</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">Milenkovic.2021</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">Yuan.2020</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">Boscariol.2019</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">Hanafusa.1981</bcf:citekey>
+    <bcf:citekey order="118" intorder="2">Liu.2022</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">Halevi.2011</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">Duong.2021</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">Ahangar.2019</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">Erdos.2016</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">Jia.2018</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">Zhang.2020</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">Jia.2018</bcf:citekey>
+    <bcf:citekey order="125" intorder="2">Yang.2017</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">Shahzadeh.2018</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">Li.2018</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">Liu.2020</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">Boujelbene.2004</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">Jia.2018</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">Shahzadeh.2018</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">Jia.2018</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">Song.2017</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">Shahzadeh.2018</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">sinumericmanual</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
