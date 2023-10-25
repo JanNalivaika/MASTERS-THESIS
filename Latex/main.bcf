@@ -2518,6 +2518,28 @@
     <bcf:citekey order="133" intorder="1">Song.2017</bcf:citekey>
     <bcf:citekey order="134" intorder="1">Shahzadeh.2018</bcf:citekey>
     <bcf:citekey order="135" intorder="1">sinumericmanual</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">Bi.2021</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">Bi.2021</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">Kumar.2019</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">Bui.2019</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">Kyratsis.2020</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">Liang.2021</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">Ramazanov.2020</bcf:citekey>
+    <bcf:citekey order="143" intorder="1">Kadam.2023</bcf:citekey>
+    <bcf:citekey order="144" intorder="1">Kappmeyer.2021</bcf:citekey>
+    <bcf:citekey order="145" intorder="1">Brecher.2013</bcf:citekey>
+    <bcf:citekey order="146" intorder="1">Xu.2015</bcf:citekey>
+    <bcf:citekey order="147" intorder="1">Tunc.2017</bcf:citekey>
+    <bcf:citekey order="148" intorder="1">Liu.2017</bcf:citekey>
+    <bcf:citekey order="149" intorder="1">Takeuchi.2014</bcf:citekey>
+    <bcf:citekey order="150" intorder="1">Dubovska.2014</bcf:citekey>
+    <bcf:citekey order="151" intorder="1">Sivanandam.2007b</bcf:citekey>
+    <bcf:citekey order="152" intorder="1">Ruder.2017</bcf:citekey>
+    <bcf:citekey order="153" intorder="1">Back.1993</bcf:citekey>
+    <bcf:citekey order="154" intorder="1">Back.1993</bcf:citekey>
+    <bcf:citekey order="155" intorder="1">Lambora.2019</bcf:citekey>
+    <bcf:citekey order="155" intorder="2">Katoch.2021</bcf:citekey>
+    <bcf:citekey order="156" intorder="1">Yang.2011</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

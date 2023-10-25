@@ -159,9 +159,25 @@ def main():
     print(np.max(fitness))
 
     return crossover_rate, mutation_rate, step_size, local_search_rate, np.max(fitness)
-if __name__ == "__main__":
 
-    main()
+
+if __name__ == "__main__":
+    sphere_func = SphereFunction()
+
+    bounds = [(-40, 40), (-40, 40)]  # input bounds
+    num_ants = 50
+    max_iter = 50
+    evaporation_rate = 0.5
+    alpha = 1.0
+    beta = 2.0
+
+    aco = ACO(sphere_func.evaluate, bounds, num_ants, max_iter, evaporation_rate, alpha, beta)
+
+    best_position, best_value = aco.best_solution
+    print("Best Position:", best_position)
+    print("Best Value:", best_value)
+
+
 
 
 

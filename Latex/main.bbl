@@ -340,6 +340,41 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2405896316322637
       \endverb
     \endentry
+    \entry{Back.1993}{article}{}
+      \name{author}{2}{}{%
+        {{hash=63db21b1dd89fc12aac7791967820b87}{%
+           family={Bäck},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=67288c65997bce06c3796cdeed061ea6}{%
+           family={Schwefel},
+           familyi={S\bibinitperiod},
+           given={Hans-Paul},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{0894e01ab73f8d3b41f6fb8fa497bbf0}
+      \strng{fullhash}{0894e01ab73f8d3b41f6fb8fa497bbf0}
+      \strng{bibnamehash}{0894e01ab73f8d3b41f6fb8fa497bbf0}
+      \strng{authorbibnamehash}{0894e01ab73f8d3b41f6fb8fa497bbf0}
+      \strng{authornamehash}{0894e01ab73f8d3b41f6fb8fa497bbf0}
+      \strng{authorfullhash}{0894e01ab73f8d3b41f6fb8fa497bbf0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1063-6560}
+      \field{journaltitle}{Evolutionary Computation}
+      \field{number}{1}
+      \field{title}{An Overview of Evolutionary Algorithms for Parameter Optimization}
+      \field{volume}{1}
+      \field{year}{1993}
+      \field{pages}{1\bibrangedash 23}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1162/evco.1993.1.1.1
+      \endverb
+    \endentry
     \entry{Bandyopadhyay.2020}{book}{}
       \name{author}{1}{}{%
         {{hash=14021f8564f7cc82b9d61c8b827e564b}{%
@@ -369,6 +404,46 @@
       \field{isbn}{9780429881022}
       \field{title}{Additive Manufacturing, Second Edition}
       \field{year}{2020}
+    \endentry
+    \entry{Bi.2021}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=93c8b1c5accaeea2d4c801365e52e2ba}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Zhuming},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Cham}%
+      }
+      \strng{namehash}{93c8b1c5accaeea2d4c801365e52e2ba}
+      \strng{fullhash}{93c8b1c5accaeea2d4c801365e52e2ba}
+      \strng{bibnamehash}{93c8b1c5accaeea2d4c801365e52e2ba}
+      \strng{authorbibnamehash}{93c8b1c5accaeea2d4c801365e52e2ba}
+      \strng{authornamehash}{93c8b1c5accaeea2d4c801365e52e2ba}
+      \strng{authorfullhash}{93c8b1c5accaeea2d4c801365e52e2ba}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In a manufacturing system, manufacturing processes are the operations through which raw materials are transformed into final products. Manufacturing processes use machines, tools, and labors to implement the transformation of materials. Design of manufacturing...}
+      \field{booktitle}{Practical Guide to Digital Manufacturing}
+      \field{title}{Computer-Aided Manufacturing (CAM)}
+      \field{year}{2021}
+      \field{pages}{223\bibrangedash 320}
+      \range{pages}{98}
+      \verb{doi}
+      \verb 10.1007/978-3-030-70304-2{\textunderscore }4
+      \endverb
+      \verb{file}
+      \verb Bi 2021 - Computer-Aided Manufacturing CAM:Attachments/Bi 2021 - Computer-Aided Manufacturing CAM.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-030-70304-2_4
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-030-70304-2_4
+      \endverb
     \endentry
     \entry{Bi.2020}{book}{}
       \name{author}{2}{}{%
@@ -737,6 +812,99 @@
       \verb 10.1016/j.ijmachtools.2003.08.005
       \endverb
     \endentry
+    \entry{Brecher.2013}{article}{}
+      \name{author}{2}{}{%
+        {{hash=af11d62a636fe48270faa869fbfebe8f}{%
+           family={Brecher},
+           familyi={B\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b0e1bcd7fbbfad2288a304990369118d}{%
+           family={Lohse},
+           familyi={L\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6ca83a335d93d5d8b20d67198eeaf48}
+      \strng{fullhash}{d6ca83a335d93d5d8b20d67198eeaf48}
+      \strng{bibnamehash}{d6ca83a335d93d5d8b20d67198eeaf48}
+      \strng{authorbibnamehash}{d6ca83a335d93d5d8b20d67198eeaf48}
+      \strng{authornamehash}{d6ca83a335d93d5d8b20d67198eeaf48}
+      \strng{authorfullhash}{d6ca83a335d93d5d8b20d67198eeaf48}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Complex machining technologies such as simultaneous five-axis milling become increasingly significant for today's production industry. Although most e$\ldots$}
+      \field{issn}{1755-5817}
+      \field{journaltitle}{CIRP Journal of Manufacturing Science and Technology}
+      \field{number}{4}
+      \field{title}{Evaluation of toolpath quality: User-assisted CAM for complex milling processes}
+      \field{volume}{6}
+      \field{year}{2013}
+      \field{pages}{233\bibrangedash 245}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.cirpj.2013.07.002
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581713000539
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581713000539
+      \endverb
+    \endentry
+    \entry{Bui.2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e54c51b61cf19a148e193792337b36df}{%
+           family={Bui},
+           familyi={B\bibinitperiod},
+           given={Hieu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2276758c7c60f850c52ad25a84c72415}{%
+           family={Pierson},
+           familyi={P\bibinitperiod},
+           given={Harry\bibnamedelima A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c9d4a9d22e12b402e6280d3af5883c3f}{%
+           family={Nurre},
+           familyi={N\bibinitperiod},
+           given={Sarah\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=6bfefce2c9afc52fefcf610f91d1a5af}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={Kelly\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0891075dd896e78117f9ed9f0048cbe}
+      \strng{fullhash}{f0891075dd896e78117f9ed9f0048cbe}
+      \strng{bibnamehash}{f0891075dd896e78117f9ed9f0048cbe}
+      \strng{authorbibnamehash}{f0891075dd896e78117f9ed9f0048cbe}
+      \strng{authornamehash}{f0891075dd896e78117f9ed9f0048cbe}
+      \strng{authorfullhash}{f0891075dd896e78117f9ed9f0048cbe}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Additive manufacturing (AM) has revolutionized the way industries manufacture and prototype products. A significant drawback that prevents 3D printing$\ldots$}
+      \field{issn}{2351-9789}
+      \field{journaltitle}{2351-9789}
+      \field{title}{Tool Path Planning Optimization for Multi-Tool Additive Manufacturing}
+      \field{volume}{39}
+      \field{year}{2019}
+      \field{pages}{457\bibrangedash 464}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.promfg.2020.01.389
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2351978920304601
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2351978920304601
+      \endverb
+    \endentry
     \entry{Calleja.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=1e952f60475fce06efca781e681c73ce}{%
@@ -972,52 +1140,6 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2214860418303920
       \endverb
     \endentry
-    \entry{Cvitanic.2020}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e6ac0dc60696f57da819f4c1478bc53f}{%
-           family={Cvitanic},
-           familyi={C\bibinitperiod},
-           given={Toni},
-           giveni={T\bibinitperiod}}}%
-        {{hash=6a8f26aa94297d679633525b05d3ee8a}{%
-           family={Nguyen},
-           familyi={N\bibinitperiod},
-           given={Vinh},
-           giveni={V\bibinitperiod}}}%
-        {{hash=abb074cf4970aa5af4a03ff208125d32}{%
-           family={Melkote},
-           familyi={M\bibinitperiod},
-           given={Shreyes\bibnamedelima N.},
-           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-      }
-      \strng{namehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
-      \strng{fullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
-      \strng{bibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
-      \strng{authorbibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
-      \strng{authornamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
-      \strng{authorfullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Industrial robots are typically not used for milling of hard materials due to their low stiffness compared to traditional machine tools. Due to millin$\ldots$}
-      \field{issn}{0736-5845}
-      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
-      \field{title}{Pose optimization in robotic machining using static and dynamic stiffness models}
-      \field{volume}{66}
-      \field{year}{2020}
-      \field{pages}{101992}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.rcim.2020.101992
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/s0736584520302039
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/s0736584520302039
-      \endverb
-    \endentry
     \entry{Das.2005}{article}{}
       \name{author}{2}{}{%
         {{hash=352ef0bb7c653f207456b43212cb6e2b}{%
@@ -1182,48 +1304,6 @@
       \endverb
       \verb{url}
       \verb https://link.springer.com/article/10.1007/s00170-015-7077-3
-      \endverb
-    \endentry
-    \entry{Ding.2004}{article}{}
-      \name{author}{2}{}{%
-        {{hash=64fb7ce003bb1aa33f96b134f07bf8bb}{%
-           family={Ding},
-           familyi={D\bibinitperiod},
-           given={Songlin},
-           giveni={S\bibinitperiod}}}%
-        {{hash=b5f2aed132e152387b6326c54b6847f0}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={Ridong},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{5da81ce02f9ae9eaf96c5b6657295f3d}
-      \strng{fullhash}{5da81ce02f9ae9eaf96c5b6657295f3d}
-      \strng{bibnamehash}{5da81ce02f9ae9eaf96c5b6657295f3d}
-      \strng{authorbibnamehash}{5da81ce02f9ae9eaf96c5b6657295f3d}
-      \strng{authornamehash}{5da81ce02f9ae9eaf96c5b6657295f3d}
-      \strng{authorfullhash}{5da81ce02f9ae9eaf96c5b6657295f3d}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Contour or CNC EDM machining of free-form surfaces requires tool paths that are different from those used in mechanical milling although in geometry b$\ldots$}
-      \field{issn}{0890-6955}
-      \field{journaltitle}{International Journal of Machine Tools and Manufacture}
-      \field{number}{14}
-      \field{title}{Tool path generation for 4-axis contour EDM rough machining}
-      \field{volume}{44}
-      \field{year}{2004}
-      \field{pages}{1493\bibrangedash 1502}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1016/j.ijmachtools.2004.05.010
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/s0890695504001269
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/s0890695504001269
       \endverb
     \endentry
     \entry{Doan.2016}{inproceedings}{}
@@ -2156,46 +2236,6 @@
       \verb Heyer 2010 - Human-robot interaction and future industrial:Attachments/Heyer 2010 - Human-robot interaction and future industrial.pdf:application/pdf
       \endverb
     \endentry
-    \entry{Hirzinger.2005}{book}{}
-      \name{author}{4}{}{%
-        {{hash=f620f3fd9aa3fdd81899c9e8ecaa0eaa}{%
-           family={Hirzinger},
-           familyi={H\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=396737e7f78d9a8d0e80ba24b8f99612}{%
-           family={Bals},
-           familyi={B\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=90af125acec10657af08d388d8ab3f93}{%
-           family={Otter},
-           familyi={O\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=78d1c5c15af7a17d11252f82278f01fb}{%
-           family={Stelter},
-           familyi={S\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{4972993ea3de57a39cc325fd45a8ebc5}
-      \strng{fullhash}{4972993ea3de57a39cc325fd45a8ebc5}
-      \strng{bibnamehash}{4972993ea3de57a39cc325fd45a8ebc5}
-      \strng{authorbibnamehash}{4972993ea3de57a39cc325fd45a8ebc5}
-      \strng{authornamehash}{4972993ea3de57a39cc325fd45a8ebc5}
-      \strng{authorfullhash}{4972993ea3de57a39cc325fd45a8ebc5}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The DLR-KUKA Success Story}
-      \field{volume}{12}
-      \field{year}{2005}
-      \verb{doi}
-      \verb 10.1109/MRA.2005.1511865
-      \endverb
-    \endentry
     \entry{Huynh.2020}{article}{}
       \name{author}{5}{}{%
         {{hash=af65202c872c733936dfa89c773c5f86}{%
@@ -2752,6 +2792,146 @@
       \verb https://www.sciencedirect.com/science/article/pii/s0040162520310283
       \endverb
     \endentry
+    \entry{Kadam.2023}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=da54aa6eed641802a778ae332495990a}{%
+           family={Kadam},
+           familyi={K\bibinitperiod},
+           given={Onkar\bibnamedelima Bhaskar},
+           giveni={O\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d4240eb7658b72691efeaefae7a367a5}{%
+           family={Pirayesh},
+           familyi={P\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8fb8bdd34e6e24f260510d1a5bbe21e4}{%
+           family={{Fatahi Valilai}},
+           familyi={F\bibinitperiod},
+           given={Omid},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Cham}%
+      }
+      \strng{namehash}{6fa1a5ed369ad121a292a6e4430a351d}
+      \strng{fullhash}{6fa1a5ed369ad121a292a6e4430a351d}
+      \strng{bibnamehash}{6fa1a5ed369ad121a292a6e4430a351d}
+      \strng{authorbibnamehash}{6fa1a5ed369ad121a292a6e4430a351d}
+      \strng{authornamehash}{6fa1a5ed369ad121a292a6e4430a351d}
+      \strng{authorfullhash}{6fa1a5ed369ad121a292a6e4430a351d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the advancement of the technology, the computer aided design (CAD) has encountered developments which require the collaborative plan and the circulated configuration. The increasing necessity and intricacy of the product requires a new approach strategy to...}
+      \field{title}{Technological Insights of Interoperable Models for Integration of CAD/PLM/PDM and ERP Modules in Engineering Change Management}
+      \field{year}{2023}
+      \field{pages}{556\bibrangedash 564}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/978-3-031-17629-6{\textunderscore }58
+      \endverb
+      \verb{file}
+      \verb Kadam, Pirayesh et al. 2023 - Technological Insights of Interoperable Models:Attachments/Kadam, Pirayesh et al. 2023 - Technological Insights of Interoperable Models.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-17629-6_58
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-031-17629-6_58
+      \endverb
+    \endentry
+    \entry{Kappmeyer.2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ac36a73d2a38915ffce6db38e00bfef4}{%
+           family={Kappmeyer},
+           familyi={K\bibinitperiod},
+           given={Gregor},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8967e8c59db4dd1934785896a7f86067}{%
+           family={Novovic},
+           familyi={N\bibinitperiod},
+           given={Donka},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{05446d9dc05cd74afe38a22b233f828d}
+      \strng{fullhash}{05446d9dc05cd74afe38a22b233f828d}
+      \strng{bibnamehash}{05446d9dc05cd74afe38a22b233f828d}
+      \strng{authorbibnamehash}{05446d9dc05cd74afe38a22b233f828d}
+      \strng{authornamehash}{05446d9dc05cd74afe38a22b233f828d}
+      \strng{authorfullhash}{05446d9dc05cd74afe38a22b233f828d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Production technology research is a vital building block for enabling efficient and cost-effective aerospace component manufacturing. This paper descr$\ldots$}
+      \field{issn}{2212-8271}
+      \field{journaltitle}{2212-8271}
+      \field{title}{Production technology research -- Building blocks for competitiveness and solution for future challenges in aerospace component manufacturing}
+      \field{volume}{101}
+      \field{year}{2021}
+      \field{pages}{62\bibrangedash 68}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.procir.2020.09.189
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2212827121006570
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2212827121006570
+      \endverb
+    \endentry
+    \entry{Katoch.2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fda3358187a4813b12cc84afd9636dde}{%
+           family={Katoch},
+           familyi={K\bibinitperiod},
+           given={Sourabh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=034226d7a1f1953f14206341c1b56d66}{%
+           family={Chauhan},
+           familyi={C\bibinitperiod},
+           given={Sumit\bibnamedelima Singh},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=3c2a6a0658f1ad90e7d4a83eef9c3841}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd1ac3ca133eb3560ff89df4cf058d81}
+      \strng{fullhash}{cd1ac3ca133eb3560ff89df4cf058d81}
+      \strng{bibnamehash}{cd1ac3ca133eb3560ff89df4cf058d81}
+      \strng{authorbibnamehash}{cd1ac3ca133eb3560ff89df4cf058d81}
+      \strng{authornamehash}{cd1ac3ca133eb3560ff89df4cf058d81}
+      \strng{authorfullhash}{cd1ac3ca133eb3560ff89df4cf058d81}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, the analysis of recent advances in genetic algorithms is discussed. The genetic algorithms of great interest in research community are selected for analysis. This review will help the new and demanding researchers to provide the wider vision of genetic algorithms. The well-known algorithms and their implementation are presented with their pros and cons. The genetic operators and their usages are discussed with the aim of facilitating new researchers. The different research domains involved in genetic algorithms are covered. The future research directions in the area of genetic operators, fitness function and hybrid algorithms are discussed. This structured review will be helpful for research and graduate teaching.}
+      \field{issn}{1573-7721}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{number}{5}
+      \field{title}{A review on genetic algorithm: past, present, and future}
+      \field{volume}{80}
+      \field{year}{2021}
+      \field{pages}{8091\bibrangedash 8126}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1007/s11042-020-10139-6
+      \endverb
+      \verb{file}
+      \verb Katoch, Chauhan et al. 2021 - A review on genetic algorithm:Attachments/Katoch, Chauhan et al. 2021 - A review on genetic algorithm.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s11042-020-10139-6
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s11042-020-10139-6
+      \endverb
+    \endentry
     \entry{Kim.2003}{article}{}
       \name{author}{2}{}{%
         {{hash=4e3e526038b733495300ae0a3e6bdb18}{%
@@ -2873,6 +3053,52 @@
       \verb Kumar, Ranjan et al. 2020 - CNC Programming for Machining:Attachments/Kumar, Ranjan et al. 2020 - CNC Programming for Machining.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Kumar.2019}{book}{}
+      \name{editor}{3}{}{%
+        {{hash=cd50e447766fda187985f3b04b3175d2}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={L.\bibnamedelimi Jyothish},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=28ef0fe311150beb5475f9022b6243b2}{%
+           family={Pandey},
+           familyi={P\bibinitperiod},
+           given={Pulak\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=92f651562bb47f477a758e147b0b616e}{%
+           family={Wimpenny},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima Ian},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Springer Singapore}%
+      }
+      \strng{namehash}{9c3a23b751632bdbdf650e2d38908dce}
+      \strng{fullhash}{9c3a23b751632bdbdf650e2d38908dce}
+      \strng{bibnamehash}{9c3a23b751632bdbdf650e2d38908dce}
+      \strng{editorbibnamehash}{9c3a23b751632bdbdf650e2d38908dce}
+      \strng{editornamehash}{9c3a23b751632bdbdf650e2d38908dce}
+      \strng{editorfullhash}{9c3a23b751632bdbdf650e2d38908dce}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This book presents a selection of papers on advanced technologies for 3D printing and additive manufacturing, and demonstrates how these technologies have changed the face of direct, digital technologies for the rapid production of models, prototypes and patterns. Because of their wide range of applications, 3D printing and additive manufacturing technologies have sparked a powerful new industrial revolution in the field of manufacturing. The evolution of 3D printing and additive manufacturing technologies has changed design, engineering and manufacturing processes across such diverse industries as consumer products, aerospace, medical devices and automotive engineering. This book will help designers, R{\&}D personnel, and practicing engineers grasp the latest developments in the field of 3D Printing and Additive Manufacturing Chapter 1: Finite Element Analysis of Melt Pool Characteristics in Selective Laser Spot Melting on a Powder Layer -- Chapter 2: Thermal Transport Phenomena in Multi-Layer Deposition using Arc Welding Process -- Chapter 3: Comparison of Bonding strength of Ti-6Al-4V alloy deposit and substrate processed by laser metal deposition -- Chapter 4: Study on Rayleigh-Bénard convection in Laser Melting process -- Chapter 5: ENHANCING SURFACE FINISH OF FUSED DEPOSITION MODELLING PARTS -- Chapter 6: Development and Analysis of Accurate and Adaptive FDM Post Finishing Approach -- Chapter 7: Toolpath Generation for Additive Manufacturing using CNC Milling Machine -- Chapter 8: Modelling of Heat Transfer in Powder Bed Based Additive Manufacturing Process using Lattice Boltzmann Method -- Chapter 9: Effect of process parameters on mechanical properties of solidified PLA parts fabricated by 3D Printing process -- Chapter 10: Metal Powder Based Additive Manufacturing Technologies - Business Forecast}
+      \field{isbn}{9789811303050}
+      \field{series}{Springer eBook Collection}
+      \field{title}{3D Printing and Additive Manufacturing Technologies}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1007/978-981-13-0305-0
+      \endverb
+      \verb{file}
+      \verb Kumar, Pandey et al. (Hg.) 2019 - 3D Printing and Additive Manufacturing:Attachments/Kumar, Pandey et al. (Hg.) 2019 - 3D Printing and Additive Manufacturing.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{Kyratsis.2020}{article}{}
       \name{author}{3}{}{%
         {{hash=f0f4d1ae4b73b351a3433475ee8a9d8a}{%
@@ -2963,57 +3189,42 @@
       \field{title}{Computer aided design and manufacturing}
       \field{year}{2013}
     \endentry
-    \entry{Lee.2017}{article}{}
-      \name{author}{5}{}{%
-        {{hash=60d90bf5d38de765e8aff44d8054d6e6}{%
-           family={Lee},
+    \entry{Lambora.2019}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=04ae3b92801a6d70750be59ecc5e32ad}{%
+           family={Lambora},
            familyi={L\bibinitperiod},
-           given={Jeng-Dao},
-           giveni={J\bibinithyphendelim D\bibinitperiod}}}%
-        {{hash=b6dae03abac35b5f8c82a57c361b8117}{%
-           family={Tsai-Lin},
-           familyi={T\bibinithyphendelim L\bibinitperiod},
-           given={Cheng-Wei},
-           giveni={C\bibinithyphendelim W\bibinitperiod}}}%
-        {{hash=be5b3c4e948673efade78a896b78c0dc}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Yi-Cheng},
-           giveni={Y\bibinithyphendelim C\bibinitperiod}}}%
-        {{hash=103fd02359dcef1a48b6440831b3994b}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Min-Che},
-           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
-        {{hash=b93074ed50fe37dd2d05758baac9720e}{%
-           family={Chen},
+           given={Annu},
+           giveni={A\bibinitperiod}}}%
+        {{hash=635392fc0e121802abb541a790d1ea75}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bd2764f4362f72176b4d87d90284f0f9}{%
+           family={Chopra},
            familyi={C\bibinitperiod},
-           given={Li-Yin},
-           giveni={L\bibinithyphendelim Y\bibinitperiod}}}%
+           given={Kriti},
+           giveni={K\bibinitperiod}}}%
       }
-      \strng{namehash}{4b8953e06042560b5ecdd7b231f4d8ab}
-      \strng{fullhash}{4b8953e06042560b5ecdd7b231f4d8ab}
-      \strng{bibnamehash}{4b8953e06042560b5ecdd7b231f4d8ab}
-      \strng{authorbibnamehash}{4b8953e06042560b5ecdd7b231f4d8ab}
-      \strng{authornamehash}{4b8953e06042560b5ecdd7b231f4d8ab}
-      \strng{authorfullhash}{4b8953e06042560b5ecdd7b231f4d8ab}
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{5183eb6b2e8048e5773b526da3daeda7}
+      \strng{fullhash}{5183eb6b2e8048e5773b526da3daeda7}
+      \strng{bibnamehash}{5183eb6b2e8048e5773b526da3daeda7}
+      \strng{authorbibnamehash}{5183eb6b2e8048e5773b526da3daeda7}
+      \strng{authornamehash}{5183eb6b2e8048e5773b526da3daeda7}
+      \strng{authorfullhash}{5183eb6b2e8048e5773b526da3daeda7}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{MATEC Web of Conferences, open access proceedings in Materials science, Engineering and Chemistry}
-      \field{issn}{2261-236X}
-      \field{journaltitle}{MATEC Web of Conferences}
-      \field{title}{Fully automatic CNC machining production system}
-      \field{volume}{108}
-      \field{year}{2017}
-      \field{pages}{04002}
-      \range{pages}{1}
+      \field{booktitle}{2019 International Conference on Machine Learning, Big Data, Cloud and Parallel Computing (COMITCon)}
+      \field{title}{Genetic Algorithm- A Literature Review}
+      \field{year}{2019}
       \verb{doi}
-      \verb 10.1051/matecconf/201710804002
-      \endverb
-      \verb{file}
-      \verb Lee, Tsai-Lin et al. 2017 - Fully automatic CNC machining production:Attachments/Lee, Tsai-Lin et al. 2017 - Fully automatic CNC machining production.pdf:application/pdf
+      \verb 10.1109/comitcon.2019.8862255
       \endverb
     \endentry
     \entry{Li.2018}{article}{}
@@ -3124,47 +3335,44 @@
       \verb https://www.jstage.jst.go.jp/article/ijat/13/3/13_346/_article/-char/ja/
       \endverb
     \endentry
-    \entry{Li.2015c}{article}{}
+    \entry{Liang.2021}{article}{}
       \name{author}{3}{}{%
-        {{hash=ebdd70eedda3ca4e1accef8b48bdac73}{%
-           family={Li},
+        {{hash=ec7fde3e8c2c43a9ee190f4f570fab08}{%
+           family={Liang},
            familyi={L\bibinitperiod},
-           given={Yingguang},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=6900901c831e5b94e2e392839456080c}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Chen-Han},
-           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
-        {{hash=96fe8f208b55d92c50a3f721161e0040}{%
-           family={Gao},
-           familyi={G\bibinitperiod},
-           given={James},
-           giveni={J\bibinitperiod}}}%
+           given={Fusheng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4d6c87baedb8dcba3c4bad5608281598}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Chengwei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b8b41b653c8ddd0332b0379432c93143}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Fengzhou},
+           giveni={F\bibinitperiod}}}%
       }
-      \strng{namehash}{fa46bf71d7493c3b5759f005ffc5f2f3}
-      \strng{fullhash}{fa46bf71d7493c3b5759f005ffc5f2f3}
-      \strng{bibnamehash}{fa46bf71d7493c3b5759f005ffc5f2f3}
-      \strng{authorbibnamehash}{fa46bf71d7493c3b5759f005ffc5f2f3}
-      \strng{authornamehash}{fa46bf71d7493c3b5759f005ffc5f2f3}
-      \strng{authorfullhash}{fa46bf71d7493c3b5759f005ffc5f2f3}
+      \strng{namehash}{0610aff6faed6cd49c17be67804f1399}
+      \strng{fullhash}{0610aff6faed6cd49c17be67804f1399}
+      \strng{bibnamehash}{0610aff6faed6cd49c17be67804f1399}
+      \strng{authorbibnamehash}{0610aff6faed6cd49c17be67804f1399}
+      \strng{authornamehash}{0610aff6faed6cd49c17be67804f1399}
+      \strng{authorfullhash}{0610aff6faed6cd49c17be67804f1399}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0954-4054}
-      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers, Part B: Journal of Engineering Manufacture}
-      \field{number}{7}
-      \field{title}{From computer-aided to intelligent machining: Recent advances in computer numerical control machining research}
-      \field{volume}{229}
-      \field{year}{2015}
-      \field{pages}{1087\bibrangedash 1103}
-      \range{pages}{17}
+      \field{abstract}{1. With the rapid development of optics, dies and aerospace industries, complex surfaces usually constructed with free-form geometries have been widely used to improve the performance of equipment ...}
+      \field{journaltitle}{International Journal of Production Research}
+      \field{number}{18}
+      \field{title}{A review on tool orientation planning in multi-axis machining}
+      \field{volume}{59}
+      \field{year}{2021}
+      \field{pages}{5690\bibrangedash 5720}
+      \range{pages}{31}
       \verb{doi}
-      \verb 10.1177/0954405414560622
-      \endverb
-      \verb{file}
-      \verb Li, Lee et al. 2015 - From computer-aided to intelligent machining:Attachments/Li, Lee et al. 2015 - From computer-aided to intelligent machining.pdf:application/pdf
+      \verb 10.1080/00207543.2020.1786187
       \endverb
     \endentry
     \entry{Lin.2022}{article}{}
@@ -3272,6 +3480,49 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0736584522001302
+      \endverb
+    \endentry
+    \entry{Liu.2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=50cc8251589b9736abcef99db9aef21b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Changqing},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ebdd70eedda3ca4e1accef8b48bdac73}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yingguang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9c4c43c5f6ac907607f1108992536844}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Xiaozhong},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{e10ad4b43b370fbe9f114d4a0c1e2053}
+      \strng{fullhash}{e10ad4b43b370fbe9f114d4a0c1e2053}
+      \strng{bibnamehash}{e10ad4b43b370fbe9f114d4a0c1e2053}
+      \strng{authorbibnamehash}{e10ad4b43b370fbe9f114d4a0c1e2053}
+      \strng{authornamehash}{e10ad4b43b370fbe9f114d4a0c1e2053}
+      \strng{authorfullhash}{e10ad4b43b370fbe9f114d4a0c1e2053}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{9-12}
+      \field{title}{An adaptive machining approach based on in-process inspection of interim machining states for large-scaled and thin-walled complex parts}
+      \field{volume}{90}
+      \field{year}{2017}
+      \field{pages}{3119\bibrangedash 3128}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/s00170-016-9647-4
+      \endverb
+      \verb{file}
+      \verb Liu, Li et al. 2017 - An adaptive machining approach based:Attachments/Liu, Li et al. 2017 - An adaptive machining approach based.pdf:application/pdf
       \endverb
     \endentry
     \entry{Liu.2022b}{article}{}
@@ -3868,104 +4119,6 @@
       \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
       \endverb
     \endentry
-    \entry{Paryanto.2015}{article}{}
-      \name{author}{4}{}{%
-        {{hash=3242bba193892017b1b05cc7db7c8751}{%
-           family={Paryanto},
-           familyi={P\bibinitperiod}}}%
-        {{hash=04b86ad368ecded47027ace56a26fe3d}{%
-           family={Brossog},
-           familyi={B\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod}}}%
-        {{hash=316ed9a8a2dbccd6efcf973009da29dd}{%
-           family={Bornschlegl},
-           familyi={B\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=861854a17a7d79ab04e94dc8829f0e71}{%
-           family={Franke},
-           familyi={F\bibinitperiod},
-           given={Jörg},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{e969e4995806b4e27aea8e45b8f9ad51}
-      \strng{fullhash}{e969e4995806b4e27aea8e45b8f9ad51}
-      \strng{bibnamehash}{e969e4995806b4e27aea8e45b8f9ad51}
-      \strng{authorbibnamehash}{e969e4995806b4e27aea8e45b8f9ad51}
-      \strng{authornamehash}{e969e4995806b4e27aea8e45b8f9ad51}
-      \strng{authorfullhash}{e969e4995806b4e27aea8e45b8f9ad51}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Reducing the energy consumption of industrial robots (IR) that are used in manufacturing systems has become a main focus in the development of green production systems. This is due to the reality that almost all automated manufacturing processes are using IR as the main component. Thus, reducing the energy consumption of IR will automatically reduce operating costs and CO2 emissions. Therefore, a method for reducing the energy consumption of IR in manufacturing systems is desired. Firstly, this paper presents a literature survey of the research in energy consumption analysis of IR that is used in manufacturing processes. The survey found that current research in this field is focused on the development of simulation models of IR that are able to be used to predict its energy consumption. Secondly, a modular model to analyze power consumption and dynamic behavior of IR is developed. Afterward, an experimental investigation is carried out to validate and estimate the accuracy of the model developed. The investigation shows that the developed modular model can be conveniently used to optimize the industrial robot's operating parameters, which are commonly needed for production planning and at the process optimization stage. In addition, the investigation shows that the process constraints, environment layout, productivity requirement, as well as the robot payload and operating speed are the key factors that must be considered for optimizing the productivity and efficiency of IR.}
-      \field{issn}{1433-3015}
-      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
-      \field{number}{5-8}
-      \field{title}{Reducing the energy consumption of industrial robots in manufacturing systems}
-      \field{volume}{78}
-      \field{year}{2015}
-      \field{pages}{1315\bibrangedash 1328}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1007/s00170-014-6737-z
-      \endverb
-      \verb{file}
-      \verb Paryanto, Brossog et al. 2015 - Reducing the energy consumption:Attachments/Paryanto, Brossog et al. 2015 - Reducing the energy consumption.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/article/10.1007/s00170-014-6737-z
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/article/10.1007/s00170-014-6737-z
-      \endverb
-    \endentry
-    \entry{Pham.2018}{article}{}
-      \name{author}{2}{}{%
-        {{hash=14a8e4b6eb0a5ab4186111ae2e6b8c4a}{%
-           family={Pham},
-           familyi={P\bibinitperiod},
-           given={Anh-Duc},
-           giveni={A\bibinithyphendelim D\bibinitperiod}}}%
-        {{hash=9ee20467db61ac5777dee4e318c0e836}{%
-           family={Ahn},
-           familyi={A\bibinitperiod},
-           given={Hyeong-Joon},
-           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{2624fdcf6f820a7bc01832e63b91ffa5}
-      \strng{fullhash}{2624fdcf6f820a7bc01832e63b91ffa5}
-      \strng{bibnamehash}{2624fdcf6f820a7bc01832e63b91ffa5}
-      \strng{authorbibnamehash}{2624fdcf6f820a7bc01832e63b91ffa5}
-      \strng{authornamehash}{2624fdcf6f820a7bc01832e63b91ffa5}
-      \strng{authorfullhash}{2624fdcf6f820a7bc01832e63b91ffa5}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{New industrial revolution - ``The 4th industrial revolution'' must be a remarkable milestone for the second decade of the twenty-first century. Many countries are competing to innovate their manufacturing chains for eco-friendly and energy-efficient productions. Although this green or sustainable manufacturing system evolves under the support of cyber-physical system (or digital twin) based on ICT technology, industrial robots also play important roles in this speedy, flexible and effective manufacturing chains. Recently, low-cost industrial robots or collaborative robots, are rising in a highly interactive environment with humans. Although an industrial robot consists of many important components such as mechanical parts (kinematic structure and reducer) and electric parts (servo motor, driver, sensors, and controller), precision reducer takes approximately 25{\%} of material-cost and governs important performance indices of industrial robots. This paper presents review of high precision reducers (HPRs) for industrial robots driving 4th industrial revolution. First, we provide HPRs market along with industrial robots. According to previous studies, HPRs for industrial robots can be classified based on their principles: planetary reducer, cycloid reducer, and harmonic drive (HD). Then, principle, characteristics, and three main performances (hysteresis, rotational transmission error (RTE) and efficiency) of HPRs are discussed. In addition, compensation methods overcoming accuracy limits of HPRs are summarized. Finally, other applications of HPRs except industrial robots are presented.}
-      \field{issn}{2198-0810}
-      \field{journaltitle}{International Journal of Precision Engineering and Manufacturing-Green Technology}
-      \field{number}{4}
-      \field{title}{High Precision Reducers for Industrial Robots Driving 4th Industrial Revolution: State of Arts, Analysis, Design, Performance Evaluation and Perspective}
-      \field{volume}{5}
-      \field{year}{2018}
-      \field{pages}{519\bibrangedash 533}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1007/s40684-018-0058-x
-      \endverb
-      \verb{file}
-      \verb Pham, Ahn 2018 - High Precision Reducers for Industrial:Attachments/Pham, Ahn 2018 - High Precision Reducers for Industrial.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/article/10.1007/s40684-018-0058-x
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/article/10.1007/s40684-018-0058-x
-      \endverb
-    \endentry
     \entry{Pickin.2011}{article}{}
       \name{author}{3}{}{%
         {{hash=703998e1d6c168155c96aa6567d9ef1a}{%
@@ -4239,6 +4392,66 @@
       \verb https://www.sciencedirect.com/science/article/pii/s0736584517304519
       \endverb
     \endentry
+    \entry{Ramazanov.2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d862a13cfb7e3e714b0590d48c1b2317}{%
+           family={Ramazanov},
+           familyi={R\bibinitperiod},
+           given={Sultan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b7ed09669c5434439383720ea08ab20f}{%
+           family={Babenko},
+           familyi={B\bibinitperiod},
+           given={Vitalina},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5fe635a123df45cc2fdb4b6d8b66fbf8}{%
+           family={Honcharenko},
+           familyi={H\bibinitperiod},
+           given={Oleksandr},
+           giveni={O\bibinitperiod}}}%
+        {{hash=283f13f3faaa1af19b3ea2c4d7833d9d}{%
+           family={Moisieieva},
+           familyi={M\bibinitperiod},
+           given={Nataliia},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2d51fa9d8e0333a24fec5ab1437fe0d8}{%
+           family={Dykan},
+           familyi={D\bibinitperiod},
+           given={Volodymyr},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cece44a04bd3e5bce52d51f3753eca3}
+      \strng{fullhash}{1cece44a04bd3e5bce52d51f3753eca3}
+      \strng{bibnamehash}{1cece44a04bd3e5bce52d51f3753eca3}
+      \strng{authorbibnamehash}{1cece44a04bd3e5bce52d51f3753eca3}
+      \strng{authornamehash}{1cece44a04bd3e5bce52d51f3753eca3}
+      \strng{authorfullhash}{1cece44a04bd3e5bce52d51f3753eca3}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Developed an integrated intellectual computerized system of ecological-economic monitoring, modeling, and managing the life cycle of the products of technogenic enterprises of transport engineering, which is presented in the form of a 3-equation structure, functioning in conditions of instability. The proposed paradigm system life cycle management applicable to any other control system of large and complex systems, such as techno-genic type. This new paradigm of complex systems and process management, including technical systems. The system is based on the following findings: concepts, principles, a set of non-linear models, decision-making methods, and the environmental and economic governance, integral criteria. As an example, in this paper offer solution to the problem of estimating the cost of the product life cycle of railway transport.}
+      \field{issn}{2008-5893}
+      \field{journaltitle}{Journal of Information Technology Management}
+      \field{number}{3}
+      \field{title}{Integrated Intelligent Information and Analytical System of Management of a Life Cycle of Products of Transport Companies}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{pages}{26\bibrangedash 33}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.22059/jitm.2020.76291
+      \endverb
+      \verb{file}
+      \verb Ramazanov, Babenko et al. 2020 - Integrated Intelligent Information and Analytical:Attachments/Ramazanov, Babenko et al. 2020 - Integrated Intelligent Information and Analytical.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://jitm.ut.ac.ir/article_76291_0.html
+      \endverb
+      \verb{url}
+      \verb https://jitm.ut.ac.ir/article_76291_0.html
+      \endverb
+    \endentry
     \entry{Reiter.2016}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=bf4330c73776862e0013e58f8df3a2b9}{%
@@ -4275,6 +4488,31 @@
       \field{year}{2016}
       \verb{doi}
       \verb 10.1109/iecon.2016.7793436
+      \endverb
+    \endentry
+    \entry{Ruder.2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b468248a20d75c52ee742f4592c2569f}{%
+           family={Ruder},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{fullhash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{bibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorbibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authornamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Gradient descent optimization algorithms, while increasingly popular, are often used as black-box optimizers, as practical explanations of their strengths and weaknesses are hard to come by. This article aims to provide the reader with intuitions with regard to the behaviour of different algorithms that will allow her to put them to use. In the course of this overview, we look at different variants of gradient descent, summarize challenges, introduce the most common optimization algorithms, review architectures in a parallel and distributed setting, and investigate additional strategies for optimizing gradient descent.}
+      \field{title}{An overview of gradient descent optimization algorithms}
+      \field{year}{2017}
+      \verb{file}
+      \verb Ruder 2017 - An overview of gradient descent:Attachments/Ruder 2017 - An overview of gradient descent.pdf:application/pdf
       \endverb
     \endentry
     \entry{Saxena.2020}{article}{}
@@ -4885,6 +5123,60 @@
       \verb Singh, Kukshal et al. 2021 - A Review on Forward:Attachments/Singh, Kukshal et al. 2021 - A Review on Forward.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Sivanandam.2007b}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=34f2b088675fe9010506e013602f2cb0}{%
+           family={Sivanandam},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=46a56ccc66af2fa24854870ebb7436ce}{%
+           family={Deepa},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=34f2b088675fe9010506e013602f2cb0}{%
+           family={Sivanandam},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=46a56ccc66af2fa24854870ebb7436ce}{%
+           family={Deepa},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin u.a.}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \strng{fullhash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \strng{bibnamehash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \strng{authorbibnamehash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \strng{authornamehash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \strng{authorfullhash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \strng{editorbibnamehash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \strng{editornamehash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \strng{editorfullhash}{9443722c9c7f4ec6541d0ab0e26b566e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Introduction to genetic algorithms}
+      \field{isbn}{978-3-540-73189-4}
+      \field{title}{Genetic Algorithm Optimization Problems}
+      \field{year}{2007}
+      \field{pages}{165\bibrangedash 209}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1007/978-3-540-73190-0{\textunderscore }7
+      \endverb
+    \endentry
     \entry{Song.2017}{article}{}
       \name{author}{4}{}{%
         {{hash=23c37842799ad370a16062e7016d3125}{%
@@ -5060,6 +5352,46 @@
       \verb https://www.sciencedirect.com/science/article/pii/s1369702121001139
       \endverb
     \endentry
+    \entry{Takeuchi.2014}{article}{}
+      \name{author}{1}{}{%
+        {{hash=46fcfc009770bd4589777e2c45fc1d18}{%
+           family={Takeuchi},
+           familyi={T\bibinitperiod},
+           given={Yoshimi},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{46fcfc009770bd4589777e2c45fc1d18}
+      \strng{fullhash}{46fcfc009770bd4589777e2c45fc1d18}
+      \strng{bibnamehash}{46fcfc009770bd4589777e2c45fc1d18}
+      \strng{authorbibnamehash}{46fcfc009770bd4589777e2c45fc1d18}
+      \strng{authornamehash}{46fcfc009770bd4589777e2c45fc1d18}
+      \strng{authorfullhash}{46fcfc009770bd4589777e2c45fc1d18}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{J-STAGE}
+      \field{issn}{1883-8049}
+      \field{journaltitle}{Journal of Robotics and Mechatronics}
+      \field{number}{5}
+      \field{title}{Current State of the Art of Multi-Axis Control Machine Tools and CAM System}
+      \field{volume}{26}
+      \field{year}{2014}
+      \field{pages}{529\bibrangedash 539}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.20965/jrm.2014.p0529
+      \endverb
+      \verb{file}
+      \verb Takeuchi 2014 - Current State of the Art:Attachments/Takeuchi 2014 - Current State of the Art.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstage.jst.go.jp/article/jrobomech/26/5/26_529/_article/-char/ja/
+      \endverb
+      \verb{url}
+      \verb https://www.jstage.jst.go.jp/article/jrobomech/26/5/26_529/_article/-char/ja/
+      \endverb
+    \endentry
     \entry{Tien.2021}{article}{}
       \name{author}{6}{}{%
         {{hash=bd7c4499aa5ef931d239e2bbde87f8be}{%
@@ -5170,6 +5502,51 @@
       \endverb
       \verb{url}
       \verb https://link.springer.com/chapter/10.1007/978-981-16-3184-9_6
+      \endverb
+    \endentry
+    \entry{Tunc.2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ade1c7a9a1d067539956df373b7d2fec}{%
+           family={Tunc},
+           familyi={T\bibinitperiod},
+           given={L.\bibnamedelimi T.},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=ee1670aa5cb175b76c1612866ee74ee4}{%
+           family={Stoddart},
+           familyi={S\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b378c0e4dbbbe5726be07462c7f81eaf}
+      \strng{fullhash}{b378c0e4dbbbe5726be07462c7f81eaf}
+      \strng{bibnamehash}{b378c0e4dbbbe5726be07462c7f81eaf}
+      \strng{authorbibnamehash}{b378c0e4dbbbe5726be07462c7f81eaf}
+      \strng{authornamehash}{b378c0e4dbbbe5726be07462c7f81eaf}
+      \strng{authorfullhash}{b378c0e4dbbbe5726be07462c7f81eaf}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Robotic milling becomes increasingly relevant to large-scale part manufacturing industries thanks to its cost-effective and portable manufacturing concept compared to large-scale CNC machine tools. Integration of milling processes with industrial robots is proposed to be well aligned with the aims and objective of the recent fourth industrial revolution. However, the industrial robots introduce position-dependent and asymmetrical dynamic flexibility, which may reflect to the tool tip dynamics under several conditions. Under such circumstances, the stability limits become dependent on the machining location and the feed direction. In this respect, selection of machining tool path patterns is crucial for increased chatter-free material removal rates (MRR). This paper proposes an approach to evaluate and select tool path patterns, offered by the existing CAM packages, for increased chatter-free MRR. The machining area is divided into number of machining locations. The optimal feed direction is decided based on the absolute stability at each region considering the asymmetrical and position-dependent tool tip dynamics. Then, the alternative tool path patterns are evaluated and the corresponding optimum feed direction is decided for increased chatter-free material removal. The application of the proposed approach is demonstrated through simulations and representative experiments.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{9-12}
+      \field{title}{Tool path pattern and feed direction selection in robotic milling for increased chatter-free material removal rate}
+      \field{volume}{89}
+      \field{year}{2017}
+      \field{pages}{2907\bibrangedash 2918}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s00170-016-9896-2
+      \endverb
+      \verb{file}
+      \verb Tunc, Stoddart 2017 - Tool path pattern and feed:Attachments/Tunc, Stoddart 2017 - Tool path pattern and feed.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-016-9896-2
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-016-9896-2
       \endverb
     \endentry
     \entry{Uhlmann.2016}{article}{}
@@ -5793,6 +6170,61 @@
       \verb https://www.sciencedirect.com/science/article/pii/s0736584517304556
       \endverb
     \endentry
+    \entry{Xu.2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c141ace695fe2c50eae85cabf82dc75b}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Tongming},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ab5f5d1d3e841f0b1f56aaf548b5b022}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhuoning},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1deff324eb9979d346f5c0fc238bc3de}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jianxun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=768b92d822a8e66ccf0ff7731e4ccdc4}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Xiaoguang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{d362aa60c927ba2cfd48032320a0c493}
+      \strng{fullhash}{d362aa60c927ba2cfd48032320a0c493}
+      \strng{bibnamehash}{d362aa60c927ba2cfd48032320a0c493}
+      \strng{authorbibnamehash}{d362aa60c927ba2cfd48032320a0c493}
+      \strng{authornamehash}{d362aa60c927ba2cfd48032320a0c493}
+      \strng{authorfullhash}{d362aa60c927ba2cfd48032320a0c493}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nowadays, machining process information from CAPP cannot yet be directly interpreted and utilized in CAM systems. It is the NC programmers who decipher the information and link up CAPP and CAM, which is inefficient. In order to reduce the tool path editing and programming time, this paper describes the implementation of an automatic tool path generation from the structuralized machining process (SMP). An intelligent agent named KMAIMOD was developed to automate SMP analysis and tool path generation based on operation controlled template (OCT) and feature machining volume semantics (FMVS). The framework of CAD/CAPP/CAM integration was introduced for automatic tool path generation. Then the working principle and machining process data analysis of KMAIMOD was proposed. And three categories of FMVS construction with machining elements were discussed to automatic determine machining position and range. In the experiments, some part models are utilized to verify the approach for automatic tool path generation, and the experimental results are analyzed at length to show the application effectiveness of the method.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{5-8}
+      \field{title}{Automatic tool path generation from structuralized machining process integrated with CAD/CAPP/CAM system}
+      \field{volume}{80}
+      \field{year}{2015}
+      \field{pages}{1097\bibrangedash 1111}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s00170-015-7067-5
+      \endverb
+      \verb{file}
+      \verb Xu, Chen et al. 2015 - Automatic tool path generation:Attachments/Xu, Chen et al. 2015 - Automatic tool path generation.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-015-7067-5
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-015-7067-5
+      \endverb
+    \endentry
     \entry{Yang.2019}{article}{}
       \name{author}{4}{}{%
         {{hash=68d4747f396b8c8dd2209ca3a8ea466a}{%
@@ -5876,6 +6308,45 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1016/j.ijmachtools.2017.07.007
+      \endverb
+    \endentry
+    \entry{Yang.2011}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=8b9a8afb4153d569a17f211b83af9fac}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xin-She},
+           giveni={X\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Berlin, Heidelberg}%
+      }
+      \strng{namehash}{8b9a8afb4153d569a17f211b83af9fac}
+      \strng{fullhash}{8b9a8afb4153d569a17f211b83af9fac}
+      \strng{bibnamehash}{8b9a8afb4153d569a17f211b83af9fac}
+      \strng{authorbibnamehash}{8b9a8afb4153d569a17f211b83af9fac}
+      \strng{authornamehash}{8b9a8afb4153d569a17f211b83af9fac}
+      \strng{authorfullhash}{8b9a8afb4153d569a17f211b83af9fac}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Metaheuristic algorithms are becoming an important part of modern optimization. A wide range of metaheuristic algorithms have emerged over the last two decades, and many metaheuristics such as particle swarm optimization are becoming increasingly popular. Despite...}
+      \field{title}{Metaheuristic Optimization: Algorithm Analysis and Open Problems}
+      \field{year}{2011}
+      \field{pages}{21\bibrangedash 32}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/978-3-642-20662-7{\textunderscore }2
+      \endverb
+      \verb{file}
+      \verb Yang 2011 - Metaheuristic Optimization:Attachments/Yang 2011 - Metaheuristic Optimization.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-642-20662-7_2
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-642-20662-7_2
       \endverb
     \endentry
     \entry{Ye.2022}{inproceedings}{}
@@ -6138,71 +6609,6 @@
       \field{year}{2021}
       \verb{doi}
       \verb 10.1109/cac53003.2021.9727497
-      \endverb
-    \endentry
-    \entry{Zhu.2012}{article}{}
-      \name{author}{6}{}{%
-        {{hash=ed3e04a023039e7beb6faacb3b110e2d}{%
-           family={Zhu},
-           familyi={Z\bibinitperiod},
-           given={Shaowei},
-           giveni={S\bibinitperiod}}}%
-        {{hash=3df6343178b7a31999ff8a89b0acbb50}{%
-           family={Ding},
-           familyi={D\bibinitperiod},
-           given={Guofu},
-           giveni={G\bibinitperiod}}}%
-        {{hash=ed61ab47e90d0f4512653e373abd12d7}{%
-           family={Qin},
-           familyi={Q\bibinitperiod},
-           given={Shengfeng},
-           giveni={S\bibinitperiod}}}%
-        {{hash=2237ac672ee19b554d90b120ee48c600}{%
-           family={Lei},
-           familyi={L\bibinitperiod},
-           given={Jiang},
-           giveni={J\bibinitperiod}}}%
-        {{hash=301544f6966296a28173742434744b6e}{%
-           family={Zhuang},
-           familyi={Z\bibinitperiod},
-           given={Li},
-           giveni={L\bibinitperiod}}}%
-        {{hash=ae057d405219c516a3255dc47a0c29f3}{%
-           family={Yan},
-           familyi={Y\bibinitperiod},
-           given={Kaiyin},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{89923e233f422beb315e4fa782632e56}
-      \strng{fullhash}{89923e233f422beb315e4fa782632e56}
-      \strng{bibnamehash}{89923e233f422beb315e4fa782632e56}
-      \strng{authorbibnamehash}{89923e233f422beb315e4fa782632e56}
-      \strng{authornamehash}{89923e233f422beb315e4fa782632e56}
-      \strng{authorfullhash}{89923e233f422beb315e4fa782632e56}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This paper presents an integrated geometric error modeling, identification and compensation method for machine tools. Regarding a machine tool as a ri$\ldots$}
-      \field{issn}{0890-6955}
-      \field{journaltitle}{International Journal of Machine Tools and Manufacture}
-      \field{number}{1}
-      \field{title}{Integrated geometric error modeling, identification and compensation of CNC machine tools}
-      \field{volume}{52}
-      \field{year}{2012}
-      \field{pages}{24\bibrangedash 29}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1016/j.ijmachtools.2011.08.011
-      \endverb
-      \verb{file}
-      \verb Zhu, Ding et al. 2012 - Integrated geometric error modeling:Attachments/Zhu, Ding et al. 2012 - Integrated geometric error modeling.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/s0890695511001490
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/s0890695511001490
       \endverb
     \endentry
   \enddatalist
