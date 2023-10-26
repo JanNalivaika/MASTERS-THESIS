@@ -812,6 +812,52 @@
       \verb 10.1016/j.ijmachtools.2003.08.005
       \endverb
     \endentry
+    \entry{Breaz.2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2f1d3bf9dd384ef40649f69b67fd55a7}{%
+           family={Breaz},
+           familyi={B\bibinitperiod},
+           given={Radu\bibnamedelima Eugen},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=670a56ba80e97cf24429d26c17be8a94}{%
+           family={Bologa},
+           familyi={B\bibinitperiod},
+           given={Octavian},
+           giveni={O\bibinitperiod}}}%
+        {{hash=0ad8cbaab4e98470349e7d3668c8d066}{%
+           family={Racz},
+           familyi={R\bibinitperiod},
+           given={Sever\bibnamedelima Gabriel},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba565516a419cd0c457ce26f96f63bd9}
+      \strng{fullhash}{ba565516a419cd0c457ce26f96f63bd9}
+      \strng{bibnamehash}{ba565516a419cd0c457ce26f96f63bd9}
+      \strng{authorbibnamehash}{ba565516a419cd0c457ce26f96f63bd9}
+      \strng{authornamehash}{ba565516a419cd0c457ce26f96f63bd9}
+      \strng{authorfullhash}{ba565516a419cd0c457ce26f96f63bd9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robots are usually used for pick-and-place applications, which require only point-to-point motion control. However, the recent developments$\ldots$}
+      \field{issn}{1877-0509}
+      \field{journaltitle}{1877-0509}
+      \field{title}{Selecting industrial robots for milling applications using AHP}
+      \field{volume}{122}
+      \field{year}{2017}
+      \field{pages}{346\bibrangedash 353}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.procs.2017.11.379
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877050917326224
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877050917326224
+      \endverb
+    \endentry
     \entry{Brecher.2013}{article}{}
       \name{author}{2}{}{%
         {{hash=af11d62a636fe48270faa869fbfebe8f}{%
@@ -1138,6 +1184,52 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s2214860418303920
+      \endverb
+    \endentry
+    \entry{Cvitanic.2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e6ac0dc60696f57da819f4c1478bc53f}{%
+           family={Cvitanic},
+           familyi={C\bibinitperiod},
+           given={Toni},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6a8f26aa94297d679633525b05d3ee8a}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Vinh},
+           giveni={V\bibinitperiod}}}%
+        {{hash=abb074cf4970aa5af4a03ff208125d32}{%
+           family={Melkote},
+           familyi={M\bibinitperiod},
+           given={Shreyes\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{fullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{bibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authorbibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authornamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authorfullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robots are typically not used for milling of hard materials due to their low stiffness compared to traditional machine tools. Due to millin$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Pose optimization in robotic machining using static and dynamic stiffness models}
+      \field{volume}{66}
+      \field{year}{2020}
+      \field{pages}{101992}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2020.101992
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584520302039
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584520302039
       \endverb
     \endentry
     \entry{Das.2005}{article}{}
@@ -1786,6 +1878,48 @@
       \verb https://www.sciencedirect.com/science/article/pii/s0736584518301856
       \endverb
     \endentry
+    \entry{Gasparetto.2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ec3ce1be2e73081dad44f25325c92284}{%
+           family={Gasparetto},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=922955151d75da1ab0c9909c4da292f1}{%
+           family={Zanotto},
+           familyi={Z\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{8007fcacd991e3142712a21847874a2b}
+      \strng{fullhash}{8007fcacd991e3142712a21847874a2b}
+      \strng{bibnamehash}{8007fcacd991e3142712a21847874a2b}
+      \strng{authorbibnamehash}{8007fcacd991e3142712a21847874a2b}
+      \strng{authornamehash}{8007fcacd991e3142712a21847874a2b}
+      \strng{authorfullhash}{8007fcacd991e3142712a21847874a2b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An analysis of the results of an algorithm for optimal trajectory planning of robot manipulators is described in this paper. The objective function to$\ldots$}
+      \field{issn}{0965-9978}
+      \field{journaltitle}{Advances in Engineering Software}
+      \field{number}{4}
+      \field{title}{Optimal trajectory planning for industrial robots}
+      \field{volume}{41}
+      \field{year}{2010}
+      \field{pages}{548\bibrangedash 556}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.advengsoft.2009.11.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0965997809002464
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0965997809002464
+      \endverb
+    \endentry
     \entry{Ghobakhloo.2020}{article}{}
       \name{author}{1}{}{%
         {{hash=b963f11ee19f34f2782fe4268d3c630e}{%
@@ -2001,6 +2135,54 @@
       \endverb
       \verb{url}
       \verb https://link.springer.com/chapter/10.1007/978-3-319-32552-1_54
+      \endverb
+    \endentry
+    \entry{Halbauer.2013}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=6323d902a3943faac4e3ab87c9355a89}{%
+           family={Halbauer},
+           familyi={H\bibinitperiod},
+           given={Marcel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=05bf8d0655506cf8f93ef436fe7dbce6}{%
+           family={Lehmann},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4811a48b202c15810fe506030b1cf354}{%
+           family={Stadter},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi Philipp},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=bc1dff07b3c80a25bc5ff1cc47bd2e6f}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod}}}%
+        {{hash=156aa0b91cb8ca8bf3312bda7475ba5a}{%
+           family={Leali},
+           familyi={L\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4c5a06dc5639feba757f0713b94016f4}
+      \strng{fullhash}{4c5a06dc5639feba757f0713b94016f4}
+      \strng{bibnamehash}{4c5a06dc5639feba757f0713b94016f4}
+      \strng{authorbibnamehash}{4c5a06dc5639feba757f0713b94016f4}
+      \strng{authornamehash}{4c5a06dc5639feba757f0713b94016f4}
+      \strng{authorfullhash}{4c5a06dc5639feba757f0713b94016f4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 IEEE 18th Conference on Emerging Technologies {\&} Factory Automation (ETFA)}
+      \field{title}{Milling strategies optimized for industrial robots to machine hard materials}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1109/etfa.2013.6648124
       \endverb
     \endentry
     \entry{Haleem.2019}{article}{}
@@ -2234,6 +2416,88 @@
       \endverb
       \verb{file}
       \verb Heyer 2010 - Human-robot interaction and future industrial:Attachments/Heyer 2010 - Human-robot interaction and future industrial.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Hirzinger.2005}{book}{}
+      \name{author}{4}{}{%
+        {{hash=f620f3fd9aa3fdd81899c9e8ecaa0eaa}{%
+           family={Hirzinger},
+           familyi={H\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=396737e7f78d9a8d0e80ba24b8f99612}{%
+           family={Bals},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90af125acec10657af08d388d8ab3f93}{%
+           family={Otter},
+           familyi={O\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=78d1c5c15af7a17d11252f82278f01fb}{%
+           family={Stelter},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4972993ea3de57a39cc325fd45a8ebc5}
+      \strng{fullhash}{4972993ea3de57a39cc325fd45a8ebc5}
+      \strng{bibnamehash}{4972993ea3de57a39cc325fd45a8ebc5}
+      \strng{authorbibnamehash}{4972993ea3de57a39cc325fd45a8ebc5}
+      \strng{authornamehash}{4972993ea3de57a39cc325fd45a8ebc5}
+      \strng{authorfullhash}{4972993ea3de57a39cc325fd45a8ebc5}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The DLR-KUKA Success Story}
+      \field{volume}{12}
+      \field{year}{2005}
+      \verb{doi}
+      \verb 10.1109/MRA.2005.1511865
+      \endverb
+    \endentry
+    \entry{Huo.2008b}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7680363d614029d92a1274a98af6e940}{%
+           family={Huo},
+           familyi={H\bibinitperiod},
+           given={Liguo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0771e3821162c315bdb59e81165cca98}{%
+           family={Baron},
+           familyi={B\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{fullhash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{bibnamehash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{authorbibnamehash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{authornamehash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{authorfullhash}{8bb246f39064ca5180efc9e4e567d66e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The joint--limits and singularity avoidance in robotic welding - Author: Liguo Huo, Luc Baron}
+      \field{journaltitle}{Industrial Robot: An International Journal}
+      \field{number}{5}
+      \field{title}{The joint--limits and singularity avoidance in robotic welding}
+      \field{volume}{35}
+      \field{year}{2008}
+      \verb{doi}
+      \verb 10.1108/01439910810893626
+      \endverb
+      \verb{file}
+      \verb Huo, Baron 2008 - The joint-limits and singularity avoidance:Attachments/Huo, Baron 2008 - The joint-limits and singularity avoidance.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.emerald.com/insight/content/doi/10.1108/01439910810893626/full/pdf
+      \endverb
+      \verb{url}
+      \verb https://www.emerald.com/insight/content/doi/10.1108/01439910810893626/full/pdf
       \endverb
     \endentry
     \entry{Huynh.2020}{article}{}
@@ -4117,6 +4381,104 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
+      \endverb
+    \endentry
+    \entry{Paryanto.2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3242bba193892017b1b05cc7db7c8751}{%
+           family={Paryanto},
+           familyi={P\bibinitperiod}}}%
+        {{hash=04b86ad368ecded47027ace56a26fe3d}{%
+           family={Brossog},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=316ed9a8a2dbccd6efcf973009da29dd}{%
+           family={Bornschlegl},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=861854a17a7d79ab04e94dc8829f0e71}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e969e4995806b4e27aea8e45b8f9ad51}
+      \strng{fullhash}{e969e4995806b4e27aea8e45b8f9ad51}
+      \strng{bibnamehash}{e969e4995806b4e27aea8e45b8f9ad51}
+      \strng{authorbibnamehash}{e969e4995806b4e27aea8e45b8f9ad51}
+      \strng{authornamehash}{e969e4995806b4e27aea8e45b8f9ad51}
+      \strng{authorfullhash}{e969e4995806b4e27aea8e45b8f9ad51}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reducing the energy consumption of industrial robots (IR) that are used in manufacturing systems has become a main focus in the development of green production systems. This is due to the reality that almost all automated manufacturing processes are using IR as the main component. Thus, reducing the energy consumption of IR will automatically reduce operating costs and CO2 emissions. Therefore, a method for reducing the energy consumption of IR in manufacturing systems is desired. Firstly, this paper presents a literature survey of the research in energy consumption analysis of IR that is used in manufacturing processes. The survey found that current research in this field is focused on the development of simulation models of IR that are able to be used to predict its energy consumption. Secondly, a modular model to analyze power consumption and dynamic behavior of IR is developed. Afterward, an experimental investigation is carried out to validate and estimate the accuracy of the model developed. The investigation shows that the developed modular model can be conveniently used to optimize the industrial robot's operating parameters, which are commonly needed for production planning and at the process optimization stage. In addition, the investigation shows that the process constraints, environment layout, productivity requirement, as well as the robot payload and operating speed are the key factors that must be considered for optimizing the productivity and efficiency of IR.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{5-8}
+      \field{title}{Reducing the energy consumption of industrial robots in manufacturing systems}
+      \field{volume}{78}
+      \field{year}{2015}
+      \field{pages}{1315\bibrangedash 1328}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s00170-014-6737-z
+      \endverb
+      \verb{file}
+      \verb Paryanto, Brossog et al. 2015 - Reducing the energy consumption:Attachments/Paryanto, Brossog et al. 2015 - Reducing the energy consumption.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-014-6737-z
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-014-6737-z
+      \endverb
+    \endentry
+    \entry{Pham.2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=14a8e4b6eb0a5ab4186111ae2e6b8c4a}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Anh-Duc},
+           giveni={A\bibinithyphendelim D\bibinitperiod}}}%
+        {{hash=9ee20467db61ac5777dee4e318c0e836}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Hyeong-Joon},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2624fdcf6f820a7bc01832e63b91ffa5}
+      \strng{fullhash}{2624fdcf6f820a7bc01832e63b91ffa5}
+      \strng{bibnamehash}{2624fdcf6f820a7bc01832e63b91ffa5}
+      \strng{authorbibnamehash}{2624fdcf6f820a7bc01832e63b91ffa5}
+      \strng{authornamehash}{2624fdcf6f820a7bc01832e63b91ffa5}
+      \strng{authorfullhash}{2624fdcf6f820a7bc01832e63b91ffa5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{New industrial revolution - ``The 4th industrial revolution'' must be a remarkable milestone for the second decade of the twenty-first century. Many countries are competing to innovate their manufacturing chains for eco-friendly and energy-efficient productions. Although this green or sustainable manufacturing system evolves under the support of cyber-physical system (or digital twin) based on ICT technology, industrial robots also play important roles in this speedy, flexible and effective manufacturing chains. Recently, low-cost industrial robots or collaborative robots, are rising in a highly interactive environment with humans. Although an industrial robot consists of many important components such as mechanical parts (kinematic structure and reducer) and electric parts (servo motor, driver, sensors, and controller), precision reducer takes approximately 25{\%} of material-cost and governs important performance indices of industrial robots. This paper presents review of high precision reducers (HPRs) for industrial robots driving 4th industrial revolution. First, we provide HPRs market along with industrial robots. According to previous studies, HPRs for industrial robots can be classified based on their principles: planetary reducer, cycloid reducer, and harmonic drive (HD). Then, principle, characteristics, and three main performances (hysteresis, rotational transmission error (RTE) and efficiency) of HPRs are discussed. In addition, compensation methods overcoming accuracy limits of HPRs are summarized. Finally, other applications of HPRs except industrial robots are presented.}
+      \field{issn}{2198-0810}
+      \field{journaltitle}{International Journal of Precision Engineering and Manufacturing-Green Technology}
+      \field{number}{4}
+      \field{title}{High Precision Reducers for Industrial Robots Driving 4th Industrial Revolution: State of Arts, Analysis, Design, Performance Evaluation and Perspective}
+      \field{volume}{5}
+      \field{year}{2018}
+      \field{pages}{519\bibrangedash 533}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s40684-018-0058-x
+      \endverb
+      \verb{file}
+      \verb Pham, Ahn 2018 - High Precision Reducers for Industrial:Attachments/Pham, Ahn 2018 - High Precision Reducers for Industrial.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s40684-018-0058-x
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s40684-018-0058-x
       \endverb
     \endentry
     \entry{Pickin.2011}{article}{}
