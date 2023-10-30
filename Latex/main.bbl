@@ -19,6 +19,19 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{5ax}{misc}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Machining where a workpiece is processed by a rotating tool with computer-controlled movement usually in 5 or more axes.}
+      \field{title}{5-axis milling: Last access: 30.10.2023}
+      \verb{urlraw}
+      \verb https://www.manufacturingguide.com/en/5-axis-milling
+      \endverb
+      \verb{url}
+      \verb https://www.manufacturingguide.com/en/5-axis-milling
+      \endverb
+    \endentry
     \entry{Abdulhameed.2019}{article}{}
       \name{author}{4}{}{%
         {{hash=985502bc8c4c256603bcc9951cae149c}{%
@@ -210,6 +223,19 @@
       \endverb
       \verb{url}
       \verb https://journal.umy.ac.id/index.php/jrc/article/view/15958
+      \endverb
+    \endentry
+    \entry{3D}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{abstract}{AnkerMake M5C 3D-Drucker + 2kg Filament - Mühelose Steuerung von mehreren Geräten aus Anpassbare {"}One-Click{"}-Taste 500mm/s Hochgeschwindigkeitsdruck[1] 35mm$^3$/s Extrusionsfluss 0,1mm Druckpräzision[2] 7$\times$7 Auto-Nivellierung Mühelose Einrichtung in nur 15 Minuten Struktur aus Aluminiumlegierung 220$\times$220$\times$220mm$^3$ Druckvolumen}
+      \field{title}{AnkerMake M5C 3D-Drucker + 2kg Filament: Last access: 30.10.2023}
+      \verb{urlraw}
+      \verb https://www.ankermake.com/eu-de/products/m5c-3d-printer-2kg-filament?variant=45837302694176&discount=WS24DEM5C
+      \endverb
+      \verb{url}
+      \verb https://www.ankermake.com/eu-de/products/m5c-3d-printer-2kg-filament?variant=45837302694176&discount=WS24DEM5C
       \endverb
     \endentry
     \entry{Aslan.2018}{article}{}
@@ -1063,6 +1089,32 @@
       \verb https://link.springer.com/article/10.1007/s12541-014-0528-1
       \endverb
     \endentry
+    \entry{3ax}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b64610ea8e0d2049016d9d9f490951cf}{%
+           family={{CNC Masters - Just another WordPress site}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b64610ea8e0d2049016d9d9f490951cf}
+      \strng{fullhash}{b64610ea8e0d2049016d9d9f490951cf}
+      \strng{bibnamehash}{b64610ea8e0d2049016d9d9f490951cf}
+      \strng{authorbibnamehash}{b64610ea8e0d2049016d9d9f490951cf}
+      \strng{authornamehash}{b64610ea8e0d2049016d9d9f490951cf}
+      \strng{authorfullhash}{b64610ea8e0d2049016d9d9f490951cf}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this buyer's guide we cover each type of CNC machine like mills, lathes, plasma cutters, and more and discuss their uses, prices, and must-have features}
+      \field{title}{CNC Machine Buyer's Guide: Types, Uses, Price, {\&} Definitions: Last access: 30.10.2023}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.cncmasters.com/cnc-machine-buyers-guide/
+      \endverb
+      \verb{url}
+      \verb https://www.cncmasters.com/cnc-machine-buyers-guide/
+      \endverb
+    \endentry
     \entry{Cong.2016}{article}{}
       \name{author}{4}{}{%
         {{hash=c406203cafbeb5a12cb8afd668de45e4}{%
@@ -1650,6 +1702,18 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s0007850616300245
+      \endverb
+    \endentry
+    \entry{WAAMba}{misc}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeltitlesource}{title}
+      \field{title}{Fabricación aditiva en metales - WAAM | Lortek: Last access: 30.10.2023}
+      \verb{urlraw}
+      \verb https://www.lortek.es/en/technological-areas/metal-additive-manufacturing/waam
+      \endverb
+      \verb{url}
+      \verb https://www.lortek.es/en/technological-areas/metal-additive-manufacturing/waam
       \endverb
     \endentry
     \entry{Faludi.2015}{article}{}
@@ -2559,6 +2623,41 @@
       \verb https://www.sciencedirect.com/science/article/pii/s0736584519301784
       \endverb
     \endentry
+    \entry{HuynhHoaiNam.2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=af65202c872c733936dfa89c773c5f86}{%
+           family={{Huynh Hoai Nam}},
+           familyi={H\bibinitperiod}}}%
+        {{hash=db790f8f9fb8401b1ea11e8f14118089}{%
+           family={{Edouard Riviere}},
+           familyi={E\bibinitperiod}}}%
+        {{hash=25c9235d3452177edc517679de67c9c7}{%
+           family={{Olivier Verlinden}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{fullhash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{bibnamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{authorbibnamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{authornamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{authorfullhash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{PDF | As robots are increasingly involved in industry, robotic manufacturing techniques arise in order to replace their conventional counterpart.... | Find, read and cite all the research you need on ResearchGate}
+      \field{title}{Multibody modelling of a flexible 6-axis robot dedicated to robotic machining}
+      \field{year}{2018}
+      \verb{file}
+      \verb Huynh Hoai Nam, Edouard Riviere et al. 2018 - Multibody modelling of a flexible:Attachments/Huynh Hoai Nam, Edouard Riviere et al. 2018 - Multibody modelling of a flexible.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/profile/huynh-hoai-nam/publication/326106790_multibody_modelling_of_a_flexible_6-axis_robot_dedicated_to_robotic_machining
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/profile/huynh-hoai-nam/publication/326106790_multibody_modelling_of_a_flexible_6-axis_robot_dedicated_to_robotic_machining
+      \endverb
+    \endentry
     \entry{Iglesias.2015}{article}{}
       \name{author}{3}{}{%
         {{hash=9d76380f63f96fc5d2229cbfb09d136a}{%
@@ -2964,6 +3063,63 @@
       \verb 10.1016/j.ijmachtools.2017.10.008
       \endverb
     \endentry
+    \entry{Jin.2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a995b78eaf6da41e837735bef5f6b5b1}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Wanwan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c197cc091413d9f319a56849f146d0bd}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chaoqun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d6794c6e68679bb71c3f8ba95004ef36}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Shuoya},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dc72897b4df57c9db5033d7ac8b358b4}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Yingtao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=37af96673bb985dbd8a4b7b81e19bb11}{%
+           family={Wellmann},
+           familyi={W\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4d7b40882a0f3cad65155854ac2add23}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c64c23b1c0c9697e4296286aa74f9c5}
+      \strng{fullhash}{5c64c23b1c0c9697e4296286aa74f9c5}
+      \strng{bibnamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
+      \strng{authorbibnamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
+      \strng{authornamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
+      \strng{authorfullhash}{5c64c23b1c0c9697e4296286aa74f9c5}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{5}
+      \field{title}{Wire Arc Additive Manufacturing of Stainless Steels: A Review}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{1563}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app10051563
+      \endverb
+      \verb{file}
+      \verb Jin, Zhang et al. 2020 - Wire Arc Additive Manufacturing:Attachments/Jin, Zhang et al. 2020 - Wire Arc Additive Manufacturing.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{Joshi.2021}{article}{}
       \name{author}{4}{}{%
         {{hash=68b2920dba4b26f437a971a9167dfcc8}{%
@@ -3268,6 +3424,22 @@
       \field{year}{2016}
       \verb{doi}
       \verb 10.1109/epepemc.2016.7752083
+      \endverb
+    \endentry
+    \entry{linear}{article}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With KUKA linear axis, you can also use your robot over long distances and at multiple machines. Find out more here!}
+      \field{title}{KUKA linear units: Last access: 30.10.2023}
+      \verb{file}
+      \verb KUKA linear units 03 06 2017:Attachments/KUKA linear units 03 06 2017.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.kuka.com/en-de/products/robot-systems/robot-periphery/linear-units
+      \endverb
+      \verb{url}
+      \verb https://www.kuka.com/en-de/products/robot-systems/robot-periphery/linear-units
       \endverb
     \endentry
     \entry{Kumar.2020}{book}{}
@@ -4214,54 +4386,30 @@
       \verb Nee 2015 - Handbook of Manufacturing Engineering:Attachments/Nee 2015 - Handbook of Manufacturing Engineering.pdf:application/pdf
       \endverb
     \endentry
-    \entry{Ong.2019}{article}{}
-      \name{author}{3}{}{%
-        {{hash=6abef02d7b9f920685ab24367b89e4e3}{%
-           family={Ong},
-           familyi={O\bibinitperiod},
-           given={Pauline},
-           giveni={P\bibinitperiod}}}%
-        {{hash=cac9b93d7062ef7aff439c2a4b635dd7}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Woon\bibnamedelima Kiow},
-           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=71f816ecefec851a87d88ec48b6f391b}{%
-           family={Lau},
-           familyi={L\bibinitperiod},
-           given={Raymond\bibnamedelimb Jit\bibnamedelima Hoo},
-           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+    \entry{NXManufacturing.2015}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0d7e2feca91fc5161ec9d59586cc8a87}{%
+           family={{NX Manufacturing}},
+           familyi={N\bibinitperiod}}}%
       }
-      \strng{namehash}{c8d0f8afd79967db4623f178463c4470}
-      \strng{fullhash}{c8d0f8afd79967db4623f178463c4470}
-      \strng{bibnamehash}{c8d0f8afd79967db4623f178463c4470}
-      \strng{authorbibnamehash}{c8d0f8afd79967db4623f178463c4470}
-      \strng{authornamehash}{c8d0f8afd79967db4623f178463c4470}
-      \strng{authorfullhash}{c8d0f8afd79967db4623f178463c4470}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \strng{namehash}{0d7e2feca91fc5161ec9d59586cc8a87}
+      \strng{fullhash}{0d7e2feca91fc5161ec9d59586cc8a87}
+      \strng{bibnamehash}{0d7e2feca91fc5161ec9d59586cc8a87}
+      \strng{authorbibnamehash}{0d7e2feca91fc5161ec9d59586cc8a87}
+      \strng{authornamehash}{0d7e2feca91fc5161ec9d59586cc8a87}
+      \strng{authorfullhash}{0d7e2feca91fc5161ec9d59586cc8a87}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The monitoring of tool condition in machining processes has significant importance to control the quality of machined parts and to reduce equipment downtime. This study investigates the application of a special variant of artificial neural networks (ANNs), in particular, wavelet neural network (WNN) for tool wear monitoring in CNC end milling process of high-speed steel. A mixed level design of experiments with machining parameters of cutting speed, feed rate, cutting depth, and machining time is developed, from which 126 experiments are conducted. For each experiment, tool wear and surface roughness of machined workpiece are measured. The tool wear images are processed, and the descriptor of wear zone is extracted. The WNN is then applied to predict the flank wear of the cutting tool and compared with commonly used types of ANNs and the statistical model. Different input combinations with the inclusion of wear zone descriptor and surface roughness of machined parts are used to evaluate the performance of all models. Results show that the WNN with the input parameters of cutting speed, feed rate, depth of cut, machining time, and descriptor of wear zone predicts the degree of tool wear most accurately.}
-      \field{issn}{1433-3015}
-      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
-      \field{number}{1-4}
-      \field{title}{Tool condition monitoring in CNC end milling using wavelet neural network based on machine vision}
-      \field{volume}{104}
-      \field{year}{2019}
-      \field{pages}{1369\bibrangedash 1379}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1007/s00170-019-04020-6
-      \endverb
-      \verb{file}
-      \verb Ong, Lee et al. 2019 - Tool condition monitoring in CNC:Attachments/Ong, Lee et al. 2019 - Tool condition monitoring in CNC.pdf:application/pdf
-      \endverb
+      \field{abstract}{Did you know that you can drive next generation hybrid machine tools with NX CAM? View this approximately two minute video, ``Hybrid Additive Manufacturing with NX CAM{\&}nbsp;Overview,'' to glimpse the h...}
+      \field{title}{Hybrid Additive Manufacturing with NX CAM Overview - NX Manufacturing: Last access: 30.10.2023}
+      \field{year}{2015}
       \verb{urlraw}
-      \verb https://link.springer.com/article/10.1007/s00170-019-04020-6
+      \verb https://blogs.sw.siemens.com/nx-manufacturing/hybrid-additive-manufacturing-with-nx-cam-overview/
       \endverb
       \verb{url}
-      \verb https://link.springer.com/article/10.1007/s00170-019-04020-6
+      \verb https://blogs.sw.siemens.com/nx-manufacturing/hybrid-additive-manufacturing-with-nx-cam-overview/
       \endverb
     \endentry
     \entry{Ou.2018}{article}{}

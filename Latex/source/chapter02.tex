@@ -1,6 +1,8 @@
 % !TeX spellcheck = en_US
 \chapter{State of Science and Technology}%
-The following chapter gives a overview of manufacturing technologies, CAM, and various algorithms for optimization problems. Special attention is given to the comparison of optimization problems in manufacturing with redundant degrees of freedom. 
+The following chapter gives an overview of manufacturing technologies, CAM, and various algorithms for optimization problems. Special attention is given to the comparison of optimization problems in manufacturing with redundant degrees of freedom. 
+
+
 \section{Manufacturing Technologies}
 Manufacturing technologies encompass a wide range of processes that are used to transform raw materials into finished products. Two major categories within this field are subtractive and additive manufacturing~\cite{Iqbal.2020}. Subtractive manufacturing involves removing material from a workpiece to shape it into the desired form~\cite{Watson.2015}. This is commonly achieved through techniques like cutting, drilling, milling, or grinding. On the other hand, additive manufacturing, also known as 3D printing, involves building up layers of material to create an object. This process offers greater design flexibility and the ability to create complex geometries~\cite{Dilberoglu.2017}. Both subtractive and additive manufacturing play crucial roles in various industries, revolutionizing production methods and offering new possibilities for customization and innovation~\cite{Bandyopadhyay.2020, vanLe.2017}.
 
@@ -15,41 +17,63 @@ Manufacturing technologies encompass a wide range of processes that are used to 
 
 
 \subsection{Subtractive Manufacturing}
-Subtractive manufacturing, also referred to as subtractive fabrication or machining, is a precise and efficient method utilized in contemporary manufacturing processes~\cite{Wang.2023}. This approach entails the removal of material from a solid block or workpiece, resulting in the formation of a desired shape or product~\cite{Calleja.2018}. In contrast to additive manufacturing techniques, like 3D printing, where material is applied layer by layer, subtractive manufacturing always starts from a block of material~\cite{Abdulhameed.2019}.
+Subtractive manufacturing, also referred to as subtractive fabrication or machining, is a precise and efficient method utilized in contemporary manufacturing processes~\cite{Wang.2023}. This approach entails the removal of material from a solid block of material or workpiece, resulting in the formation of a desired shape or product~\cite{Calleja.2018}. In contrast to additive manufacturing techniques, like 3D printing, where material is applied layer by layer, subtractive manufacturing always starts from a block of material~\cite{Abdulhameed.2019}.
 
 Subtractive manufacturing involves various techniques such as milling, turning, drilling, and grinding that are mostly performed by using CNC machines~\cite{Kumar.2020}. Such machines are programmed to precisely control the cutting tool movement to clear material from the workpiece based on a predetermined design~\cite{Amanullah.2017}.
 
-The versatility and precision of subtractive manufacturing is one of its significant advantages. A CNC machine can process a diverse array of materials, such as metals, plastics, and composites, with high level of precision and surface quality, allowing for the creation of intricate and complex components~\cite{Tomaz.2021,Yang.2019}. As a result, it finds applications in industries where precision and quality are critical, such as aerospace, automotive, and medical.
+The versatility and precision of subtractive manufacturing are two of its significant advantages. A CNC machine can process a diverse array of materials, such as metals, plastics, and composites, with high levels of precision and surface quality, allowing for the creation of intricate and complex components~\cite{Tomaz.2021,Yang.2019}. As a result, it finds applications in industries where precision and quality are critical, such as aerospace, automotive, and medical.
 
-The process of subtractive manufacturing starts with the drafting of the intended component using computer-aided design (CAD) software. Subsequently, CAM software is used to generate instructions that are used to guide the CNC machine (see chapter \ref{CAMmain} for more details) . The machining process begins with the machine operator setting up and securing the workpiece in the machine and starting the execution of the generated instructions~\cite{Nee.2015}.
+The process of subtractive manufacturing starts with the drafting of the intended component using computer-aided design (CAD) software. Subsequently, CAM software is used to generate instructions that are used to guide the CNC machine (see chapter \ref{CAMmain} for more details). The machining process begins with the machine operator setting up and securing the workpiece in the machine and starting the execution of the generated instructions~\cite{Nee.2015}.
 
-The cutting tools then perform various operations, including drilling holes, creating pockets or slots, and shaping the external contours of the part, by following the predetermined movements. In a typical 3-axis machine, the degrees of freedom are along the X, Y, and Z axes. Additionally, recent research is trying to extend the machines possibilities by adding advanced abilities like constantly monitor and adjusts the cutting parameters to ensure the most efficient cutting speed, feed rate, and tool engagement while minimizing errors~\cite{Tien.2021}.
+The cutting tools then perform various operations, including drilling holes, creating pockets or slots, and shaping the external contours of the part, by following the predetermined movements. In a typical 3-axis machine, the degrees of freedom are along the X, Y, and Z axes. Additionally, recent research is trying to extend the machines possibilities by adding advanced abilities like constantly monitoring and adjusting the cutting parameters on the fly to ensure the most efficient cutting speed, feed rate, and tool engagement while minimizing errors~\cite{Tien.2021}.
 
 
 Subtractive manufacturing provides numerous advantages over alternative manufacturing techniques. This method allows for the creation of intricate and highly customizable components with tight tolerances and complex geometries~\cite{Jayawardane.2023}. In addition, it results in exceptional surface finish, dimensional accuracy, and consistency, guaranteeing uniform quality across production runs. Moreover, it is cost-effective for small to medium production volumes as it does not necessitate the use of costly molds or tooling~\cite{Gu.2018}.
 
-One of the disadvantages of the process is the possibly long cycle time. Particularly for intricate designs, and can result in significant material waste~\cite{Faludi.2015}. Furthermore, it may not be appropriate for high hardness or brittle materials, which can lead to excessive tool wear or breakage~\cite{Hesser.2019}. In summary, subtractive manufacturing offers a wide range of applications but should be carefully considered for each situation. CNC technology in combination with subtractive manufacturing has become indispensable across a variety of industries. Nonetheless, it is crucial to evaluate its restrictions and suitability for specific design needs and material characteristics.
+One of the disadvantages of the process is the possibly long cycle time. Particularly for intricate and large-volume designs, the process can result in significant material waste~\cite{Faludi.2015}. Furthermore, it may not be appropriate for high hardness or brittle materials, which can lead to excessive tool wear or breakage~\cite{Hesser.2019}. In summary, subtractive manufacturing offers a wide range of applications but should be carefully considered for each situation. CNC technology, in combination with subtractive manufacturing, has become indispensable across a variety of industries. Nonetheless, it is crucial to evaluate its restrictions and suitability for specific design needs and material characteristics.
 
 
-One common issue in CNC machining is tool vibration. Tool vibration, also called Chatter, refers to the unwanted oscillation or movement of the cutting tool during the machining operation~\cite{YUE.2019}. This phenomenon can have detrimental effects on the quality of the finished part and can lead to various problems, such as poor surface finish, reduced dimensional accuracy, increased tool wear, and even tool breakage~\cite{Aslan.2018}.
+One common issue in CNC machining is tool vibration. Tool vibration, also called chatter, refers to the unwanted oscillation or movement of the cutting tool during the machining operation~\cite{YUE.2019}. This phenomenon can have detrimental effects on the quality of the finished part and can lead to various problems, such as poor surface finish, reduced dimensional accuracy, increased tool wear, and even tool breakage~\cite{Aslan.2018}.
 
 Several factors contribute to tool vibration in CNC machining. One of the primary factors is the cutting parameters, which include the cutting speed, feed rate, and depth of cut. When these parameters are not optimized, excessive cutting forces can be generated, causing the tool to vibrate. It is crucial to find the right balance between material removal rates and minimizing tool vibration to ensure optimal machining outcomes~\cite{GiorgioBort.2016}.
 
-The tool holder and spindle system also influence tool vibration. A rigid and stable tool holder and spindle are necessary to minimize vibrations and maintain accuracy during machining~\cite{Wan.2019}. Any excessive play or misalignment in these components can contribute to tool vibration. To mitigate tool vibration in CNC machining, various strategies can be employed. Optimizing cutting parameters, such as adjusting the cutting speed, feed rate, and depth of cut, can help minimize vibrations~\cite{Ong.2019}.
+The tool holder and spindle system also influence tool vibration. A rigid and stable tool holder and spindle are necessary to minimize vibrations and maintain accuracy during machining~\cite{Wan.2019}. Any play or misalignment in these components can contribute to tool vibration. %To mitigate tool vibration in CNC machining, various strategies can be employed. Optimizing cutting parameters, such as adjusting the cutting speed, feed rate, and depth of cut, can help minimize vibrations~\cite{Ong.2019}.
 
-In conclusion, tool vibration is a common challenge in CNC machining that can negatively impact part quality. Thus it is paramount to ensure stiffness for high precision operations.
-Chapter \ref{IR} gives a more in-depth look regarding the stiffens in machining operation executed with industrial robots.
+In conclusion, tool vibration is a common challenge in CNC machining that can negatively impact part quality. Thus, it is paramount to ensure stiffness for high-precision operations.
+Chapter \ref{IR} gives a more in-depth look regarding the stiffens in machining operations executed with industrial robots.
 
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
+Figure \ref{3ax} shows the basic design of a CNC machine. In this design, the workpiece is placed on the worktable and secured using a vice to hold it in place. The worktable has the ability to move in two directions, namely the X and Y directions. This movement allows for precise positioning and maneuvering of the workpiece. On the other hand, the spindle, which is the rotating component responsible for cutting or shaping the workpiece, moves in the Z direction. This vertical movement of the spindle enables it to perform various machining operations at different depths.
+
+Additionally, the machine interface serves as the control panel for the CNC machine. It provides the user with options to select and load the desired CNC program. By selecting the appropriate program, operators can control the movements and actions of the CNC machine to achieve the desired part.
+
+
+ 
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.6]{figures/basicCNC.jpg}}
+	\caption{3-Axis CNC Machine \cite{3ax}}
+	\label{3ax}
+\end{figure}
+
+Figure \ref{5ax} shows the schematic model of a 5-axis CNC machine. In this particular design, the spindle, which is responsible for cutting the workpiece, has the ability to move along three axes, namely the X, Y, and Z axes. This movement allows for precise control over the position and depth of the tool in relation to the workpiece.
+
+In addition to the spindle movement, the machine features a rotary-tilt table that can adjust two additional axes, namely the A and B axes. These axes provide rotational and tilting capabilities to the worktable, allowing for more intricate movements and increased flexibility in part design. By adjusting the A and B axes, the workpiece can be positioned and oriented in different angles, enabling the CNC machine to access and machine complex geometries that would otherwise be difficult or impossible to achieve with fewer axes. Additionally, a tool magazine is included that allows for tool changes. In this way, a roughing and finishing operation can be performed without having to change the tool manually.
+
+The inclusion of these two additional degrees of freedom in the 5-axis CNC machine significantly expands the range of operations that can be performed. It enables the machine to handle more complex and sophisticated machining tasks, such as multi-sided machining, contouring, and simultaneous machining on multiple surfaces. This increased flexibility and versatility make the 5-axis CNC machine a valuable tool in industries that require high precision and intricate part production.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.45]{figures/5ax.png}}
+	\caption{5-Axis CNC Machine \cite{5ax}}
+	\label{5ax}
+\end{figure}
+
+
 
 \subsection{Additive Manufacturing}
-AM processes involve the conversion of CAD-files into physical objects by building them layer by layer. This layering approach offers several advantages. Firstly, it allows for the creation of complex geometries that would be extremely challenging or impossible to produce using traditional manufacturing methods~\cite{Prakash.2018}. The ability to fabricate intricate structures with internal cavities, undercuts, and overhangs opens up new possibilities in engineering and design~\cite{Abdulhameed.2019}.
+AM processes involve the conversion of CAD files into physical objects by building them layer by layer. This layering approach offers several advantages. Firstly, it allows for the creation of complex geometries that would be extremely challenging or impossible to produce using traditional manufacturing methods~\cite{Prakash.2018}. The ability to fabricate intricate structures with internal cavities, undercuts, and overhangs opens up new possibilities in engineering and design~\cite{Abdulhameed.2019}.
 
 Various AM technologies utilize different methods to build the layers. Fused Deposition Modeling (FDM), for example, involves extruding molten thermoplastic filament through a heated nozzle, which solidifies as it cools, creating the desired shape~\cite{Wickramasinghe.2020}. Stereolithography (SLA) employs a liquid photopolymer resin that is solidified by a UV laser, while Selective Laser Sintering (SLS) uses a high-power laser to selectively fuse powdered materials, such as plastics or metals~\cite{Wang.2016, Meier.2017}.
 
-The compatibility of AM with a wide range of materials is another scientific advantage~\cite{Bose.2018}. It enables the production of components with diverse properties, including strength, flexibility, conductivity, and heat resistance. AM can accommodate various plastics, such as ABS, PLA, and nylon, as well as metals like titanium, aluminum, and stainless steel. Additionally, ceramics and even biomaterials, like hydrogels or living cells, can be used in AM processes. New materials specifically tailored for AM are continuously developed  expanding the possibilities for unique applications~\cite{Attaran.2017}.
+The compatibility of AM with a wide range of materials is another scientific advantage~\cite{Bose.2018}. It enables the production of components with diverse properties, including strength, flexibility, conductivity, and heat resistance. AM can accommodate various plastics, such as ABS, PLA, and nylon, as well as metals like titanium, aluminum, and stainless steel. Additionally, ceramics and even biomaterials, like hydrogels or living cells, can be used in AM processes. New materials specifically tailored for AM are continuously developed,  expanding the possibilities for unique applications~\cite{Attaran.2017}.
 
 The design freedom offered by AM is a significant scientific breakthrough. Traditional manufacturing methods often have design constraints due to limitations in tooling and manufacturing processes. With AM, designers have greater flexibility to create complex and organic shapes, lightweight structures, and intricate internal features. This freedom leads to optimized performance and improved functionality~\cite{Plocher.2019}.
 
@@ -59,95 +83,143 @@ However, AM also poses scientific challenges. Post-processing requirements, such
 
 As AM technologies continue to advance, they have the potential to transform supply chains. The concept of distributed manufacturing, where products are produced closer to the point of use, becomes feasible with AM~\cite{Jandyal.2022}. This reduces transportation costs, lowers carbon emissions, and enables on-demand manufacturing, leading to shorter lead times and increased sustainability~\cite{Haleem.2019}.
 
-%Wire Arc Additive Manufacturing is an additive manufacturing process which belongs to the process category of Directed Energy Deposition (DED). According to DIN EN ISO/ASTM 52900, these are additive processes in which focused thermal energy is used to melt the starting material during the application process. In this case, the WAAM uses an electrically generated arc as the energy source. Current manufacturing systems use standard welding technology available as standard for this purpose, such as gas-shielded metal arc welding. If this technology is combined with suitable kinematics for spatial movement of the welding torch, components can thus be built up layer by layer. The advantages of WAAM result in particular from the high deposition rate, large component sizes and low acquisition costs.
-
 %The high application rates, which range from 1 kg/h (aluminum and titanium) to 4 kg/h (steel), for example, make it possible to build large components at reasonable production times. Thus, most components can be produced within one working day. Compared to other additive manufacturing processes such as Powder Bed Fusion (PBF) with order collars of 0.1 - 0.36 kg/h (for Ti6Al4V), this can mean a time advantage with a factor of up to 10. In terms of part size, the maximum production volume is limited only by the working range of the kinematics used. In the case of an articulated-arm robot, this corresponds to the range within the minimum and maximum reach. The disadvantages of the WAAM are the residual stresses and deformations remaining after the process, the low geometric accuracy and the moderate surface quality. These problems are among the typical defects of WAAM components.
 
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
+Figure \ref{3D} shows a commercially available 3D printer. The base plate has the ability to move along the Y axis, which allows for horizontal movement of the printed object. On the other hand, the print head can move along the X and Z axes. The X-axis movement controls the horizontal positioning of the print head, while the Z-axis movement controls the vertical positioning. This combination of movements in the X and Z axes enables the print head to accurately deposit layers of material to create the desired 3D object.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.5]{figures/3Dprinter.png}}
+	\caption{3D Printer \cite{3D}}
+	\label{3D}
+\end{figure}
 
 \subsubsection{Wire Arc Additive Manufacturing}
-Wire Arc Additive Manufacturing (WAAM) is a specific type of additive manufacturing process known as Directed Energy Deposition (DED)~\cite{Svetlizky.2021}. According to the DIN EN ISO/ASTM 52900 standard, DED involves using focused thermal energy to melt the starting material during the application process~\cite{Additive}. In the case of WAAM, an electric arc is used to generate the necessary energy for melting. This is achieved by utilizing standard welding technology, such as gas-shielded metal arc welding, in combination with precise spatial movement of the welding torch~\cite{Cunningham.2018}. This allows for the construction of components layer by layer.
+Wire Arc Additive Manufacturing (WAAM) is a specific type of additive manufacturing process known as Directed Energy Deposition (DED)~\cite{Svetlizky.2021}. According to the DIN EN ISO 52900 standard, DED involves using focused thermal energy to melt material during the application process to build up the individual layers~\cite{Additive}. In the case of WAAM, an electric arc is used to generate the necessary energy for melting. This process is utilizing standard welding technology, such as gas-shielded metal arc welding, in combination with precise spatial movement of the welding torch~\cite{Cunningham.2018}. This allows for the construction of components layer by layer.
 
-WAAM offers several advantages over other additive manufacturing techniques. One major advantage is its high deposition rate, which range up to 6kg/h. This high deposition rate enables the construction of large components in a relatively short amount of time. Components can be produced within a single workday, providing a significant time advantage compared to techniques like Powder Bed Fusion (PBF), which typically operates at much slower deposition rates~\cite{IvanTabernero.2018}.
+WAAM offers several advantages over other additive manufacturing techniques. One major advantage is its high deposition rate, which ranges up to 6kg/h. This high deposition rate enables the construction of large components in a relatively short amount of time. Components can be produced within a single workday, providing a significant time advantage compared to techniques like Powder Bed Fusion (PBF), which typically operate at much slower deposition rates~\cite{IvanTabernero.2018}.
 
-Another advantage of WAAM is its capability to construct large components without limitations on part size. The production volume is only constrained by the working range of the kinematics employed. For example, in the case of an articulated-arm robot, the range is defined by its minimum and maximum reach. This means that WAAM has the potential to create components of various sizes without compromising its effectiveness~\cite{Li.2019}.
+Another advantage of WAAM is its capability to construct large components without limitations on part size. The production volume is only constrained by the working range of the kinematics employed. For example, in the case of an articulated-arm robot, the range is defined by its maximum reach. This means that WAAM has the potential to create components of various sizes without compromising its effectiveness~\cite{Li.2019}.
 
 However, it is important to note that WAAM components may have some inherent defects. These include residual stresses and deformations that persist after the production process, as well as relatively low geometric precision and modest surface quality. These limitations should be taken into consideration when utilizing WAAM for manufacturing purposes~\cite{Wu.2018}.
 
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
+Figure \ref{WAAM} shows a schematic representation of a WAAM process. In this process, a wire feeder is utilized to supply a continuous stream of material. The wire is then subjected to high heat generated by an electric arc. The wire is melted and then deposited onto a substrate plate. The substrate plate serves as the foundation or base on which the material is built. As the molten wire is deposited, it solidifies and fuses with the previous layers, gradually building up the desired 3D object.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.12]{figures/WAAM.png}}
+	\caption{Schematic representation of WAAM \cite{Jin.2020}}
+	\label{WAAM}
+\end{figure}
+
+Figure \ref{WAAMba} shows a part produced by WAAM with the addition of a post processing step. The rough surface finish is clearly visible on the non post processed side of the part.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.8]{figures/WAAMba.jpg}}
+	\caption{Part produced by WAAM with post machining \cite{WAAMba}}
+	\label{WAAMba}
+\end{figure}
 
 \subsubsection{WAAM-Process and Cold Metal Transfer}
-The operating principle of WAAM involves the generation of an arc through electrical discharge between an electrode and the workpiece. This arc transfers energy to the workpiece, causing melting in the fusion zone~\cite{Ou.2018}. Additionally, if a welding filler material in the form of a wire is introduced into the arc, it also melts and can be used to deposit welds onto a metallic substrate~\cite{Cunningham.2018}. To ensure a continuous weld seam, a wire feed system can be employed~\cite{Ding.2015}.
+The operating principle of WAAM involves the generation of an arc through electrical discharge between an electrode and the workpiece. This arc transfers energy to the workpiece, causing melting in the fusion zone~\cite{Ou.2018}. Additionally, if a welding filler material in the form of a wire is introduced into the arc, it also melts and can be used to deposit additional material onto a metallic substrate~\cite{Cunningham.2018}. To ensure a continuous weld seam, a wire feed system can be employed~\cite{Ding.2015}.
 
-The industrial manufacturing of components using WAAM involves a kinematic system that allows movement of the welding torch. This can be achieved using robot-configurations or gantry systems~\cite{Schmitz.2021}. Alternatively, a spatially fixed welding torch, combined with robotic kinematics or rotary-tilt table, can be used to move the component~\cite{Nagasai.2022}. The WAAM process builds up the component layer by layer, following a predefined path.
+The industrial manufacturing of components using WAAM involves a kinematic system that allows movement of the welding torch. This can be achieved using robot-configurations or gantry systems~\cite{Schmitz.2021}. Alternatively, a spatially fixed welding torch, combined with robotic kinematics or rotary-tilt table, can be used to move the component~\cite{Nagasai.2022}. %The WAAM process builds up the component layer by layer, following a predefined path.
 
-Cold Metal Transfer (CMT) welding is a sophisticated process that merges the advantages of multiple welding techniques~\cite{Dutra.2015}. It functions based on the principle of controlled short-circuiting, wherein the welding torch generates a short circuit between the electrode and the workpiece. This short circuit triggers the wire melt and detach. The detachment is assisted by a retraction of the wire. This process is generating a sequence of droplets that transfer to the weld pool with remarkable precision~\cite{Selvi.2018, Srinivasan.2022}.
+Cold Metal Transfer (CMT) welding is a sophisticated process that merges the advantages of multiple welding techniques~\cite{Dutra.2015}. It functions based on the principle of controlled short-circuiting, wherein the welding torch generates a short circuit between the electrode and the workpiece. This short circuit triggers the melting of the tip of the wire and subsequent detachment. The detachment is assisted by a retraction of the wire. This process is generating a sequence of droplets that are transferred to the weld pool with remarkable precision~\cite{Selvi.2018, Srinivasan.2022}.
 
-CMT welding provides superior heat control with lower heat input than conventional methods. The controlled arc and droplet transfer reduce the risk of overheating and distortion, making it suitable for thinner materials and heat-sensitive applications~\cite{Scotti.2020}. The process minimizes spatter formation, resulting in cleaner and smoother welds and reducing the requirement for post-weld cleaning~\cite{Srinivasan.2022}]. This process stands out for its exceptional weld quality. Its precise control over heat input and metal transfer results in improved fusion, reduced porosity, and an enhanced appearance of the weld bead. CMT welding is ideal for applications that require the highest weld quality which includes structural fabrication and automotive manufacturing~\cite{Cong.2016}.
+CMT welding provides superior heat control with lower heat input than conventional methods. The controlled arc and droplet transfer reduce the risk of overheating and distortion, making it suitable for thinner materials and heat-sensitive applications~\cite{Scotti.2020}. The process minimizes spatter formation, resulting in cleaner and smoother welds and reducing the requirement for post-weld cleaning~\cite{Srinivasan.2022}. %This process stands out for its exceptional weld quality. Its precise control over heat input and metal transfer results in improved fusion, reduced porosity, and an enhanced appearance of the weld bead.
+CMT welding is ideal for applications that require the highest weld quality which includes structural fabrication and automotive manufacturing~\cite{Cong.2016}.
 
 For dependable weld quality, CMT welding typically integrates advanced process control systems, which utilize adaptive control and real-time monitoring to consistently adjust welding parameters based on sensor feedback. This enhances the precision and dependability of the welding process~\cite{Pickin.2006}.
 
 A CMT cycle consists of three phases~\cite{Selvi.2018}:\newline
-1st pulse phase: a high current pulse leads to the ignition of the arc, 
+1st - pulse phase: a high current pulse leads to the ignition of the arc, 
 which melts the wire electrode. A droplet begins to form at the 
 tip of the wire. The wire is moved forward in the direction of the 
 workpiece.\newline
-2nd arc phase: The arc is kept burning at a lower current. 
+2nd - arc phase: The arc is kept burning at a lower current. 
 burning at a lower current. This prevents the melt droplet from detaching early and 
 from detaching prematurely and transferring to the workpiece.\newline
-3d short-circuit phase: as soon as the wire comes into contact with the substrate, 
+3d - short-circuit phase: as soon as the wire comes into contact with the substrate, 
 the voltage drops to 0 V and the wire feeder is signaled to withdraw the wire. 
 is signaled to withdraw the wire. This supports the droplet detachment 
 from the wire into the molten bath.
 
 Figure \ref{fig:CMT} shows the three Phases of a CMT cycle. The voltage is constant in the first two phases and drops to zero in the short circuit phase. The spike of current is clearly visible in the first phase which is also the shortest.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/CMT.jpg}
 	\caption{Current and Voltage wave forms of a CMT process~\cite{Selvi.2018}}
 	\label{fig:CMT}
 \end{figure}
 
-In summary, WAAM and CMT are highly sophisticated processes that enable the creation of 3D printed parts with specifically designed parameters. CMT achieves precise welds with low heat input and minimal spatter. It is ideal for thinner materials and applications requiring high weld quality. Advanced process control systems enhance the reliability of CMT welding~\cite{Rahul.2018, Pickin.2011}.
+
+Figure \ref{fig:CMT2} shows the clearly distinct parts in a CMT cycle. At first an electric arc is formed and melts the fire. After a short circuit is established the wire retracts and detaches from the molten droplet. After that the cycle restarts.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/CMT2.png}
+	\caption{Individual sections of a CMT cycle}
+	\label{fig:CMT2}
+\end{figure}
+
+
+In summary, WAAM and CMT are highly sophisticated processes that enable the creation of 3D printed metal parts with specifically designed parameters. CMT achieves precise welds with low heat input and minimal spatter. It is ideal for thinner materials and applications requiring high weld quality. Advanced process control systems can enhance the reliability of CMT welding~\cite{Rahul.2018, Pickin.2011}.
 
 
 I FEEL SOMETHING IS MISSING !!!!\newline
+PLZ HELP\newline
+PLZ HELP\newline
+PLZ HELP\newline
+PLZ HELP\newline
 PLZ HELP
 
 
 \subsection{Industrial Robots}\label{IR}
-Industrial robots are advanced machines designed to perform various tasks in manufacturing and industrial settings. They come in different types, each with its own set of capabilities and advantages. They crucial to modern manufacturing and automation, transforming production methods and repetitive task performance across diverse industries. Since their inception in the mid-20th century, these machines have undergone significant advancements, evolving into highly adaptive and sophisticated devices that promote productivity, accuracy, and safety within manufacturing processes~\cite{Ji.2019}.
+Industrial robots are advanced machines designed to perform various tasks in manufacturing and industrial settings. They come in different types, each with its own set of capabilities and advantages. They are crucial to modern manufacturing and automation, transforming production methods and repetitive task performance across diverse industries. Since their inception in the mid-20th century, these machines have undergone significant advancements, evolving into highly adaptive and sophisticated devices that promote productivity, accuracy, and safety within manufacturing processes~\cite{Ji.2019}.
 At their core, industrial robots are programmable machines designed to execute tasks with a high degree of accuracy and efficiency. They can carry out repetitive actions consistently, which enhances productivity and reduces the risk of human error \cite{Siciliano.2016}. 
 
-One common type of industrial robots is the articulated robot. These robots have rotary joints that allow them to move like a human arm, with multiple links and joints. They can perform a wide range of tasks, such as welding, material handling, or assembly operations~\cite{Hanafusa.1981, Jain.2019}. Another type is the Cartesian robot, also known as gantry robots. These robots move along three linear axes (X, Y, and Z) to perform tasks. They are commonly used for pick and place operations or in applications that require precise positioning~\cite{Kim.2003}. SCARA robots, on the other hand, are designed for fast and precise movements in assembly operations. They have a selective compliance assembly robot arm that allows them to move quickly while maintaining accuracy~\cite{Das.2005}. Delta robots are used for high-speed pick and place applications, such as packaging or sorting. They are known for their rapid movements and high throughput~\cite{bonev2001delta}. Collaborative robots, or cobots, are designed to work safely alongside humans. They have built-in safety features, such as force sensors or vision systems, that allow them to interact with humans without causing harm. Cobots are often used in tasks that require human-robot collaboration, such as assembly or inspection operations~\cite{Liu.2022b}.
-
-Industrial robots are based on articulated robots and have a wide range of applications across various industries. They can be used for assembly operations, where they can perform tasks like fastening, welding, or soldering components together. Robots are also commonly used for material handling tasks, such as lifting, moving, and stacking materials in warehouses or production lines. Inspection tasks can be automated with robots equipped with sensors or cameras, allowing them to inspect products for defects or perform quality control checks \cite{Hagele.2016}.
 
 
-Industrial robots offer several benefits. Firstly, they increase productivity by working continuously, without breaks or fatigue. This leads to higher production rates and shorter cycle times. Additionally, robots can perform tasks with high precision and accuracy, reducing errors and defects, thereby improving product quality \cite{Kubela.2016}. Safety is another important aspect of industrial robots. They are designed to handle dangerous or hazardous tasks, keeping human workers safe. Robots can work in environments with high temperatures, toxic substances, or heavy loads, minimizing the risk of injury to humans \cite{Heyer.2010}.
+One common type of industrial robots are the articulated robots. These robots have rotary joints that allow them to move like a human arm, with multiple links and joints. They can perform a wide range of tasks, such as welding, material handling, or assembly operations~\cite{Hanafusa.1981, Jain.2019}. Another type is the Cartesian robot, also known as gantry robots. These robots move along three linear axes (X, Y, and Z) to perform tasks. They are commonly used for pick-and-place operations or in applications that require precise positioning~\cite{Kim.2003}. SCARA robots, on the other hand, are designed for fast and precise movements in assembly operations. They have a selective compliance assembly robot arm that allows them to move quickly while maintaining accuracy~\cite{Das.2005}. Delta robots are used for high-speed pick and place applications, such as packaging or sorting. They are known for their rapid movements and high throughput~\cite{bonev2001delta}. Collaborative robots, or cobots, are designed to work safely alongside humans. They have built-in safety features, such as force sensors or vision systems, that allow them to interact with humans without causing harm. Cobots are often used in tasks that require human-robot collaboration, such as assembly or inspection operations~\cite{Liu.2022b}.
+
+
+Figure \ref{fig:ScaraDelta} shows a SCARA and Delta Robot.
+\begin{figure}[H]%
+	\centering
+	\subfloat{{\includegraphics[width=5cm]{figures/scara.png} }}%
+	\qquad
+	\subfloat{{\includegraphics[width=5cm]{figures/delta.png} }}%
+	\caption{SCARA and Delta Robot}%
+	\label{fig:ScaraDelta}%
+\end{figure}
+
+Industrial robots are based on articulated robots and have a wide range of applications across various industries. They can be used for assembly operations, where they can perform tasks like fastening, welding, or soldering components together. These robots are also commonly used for material handling tasks, such as lifting, moving, and stacking materials in warehouses or production lines. Inspection tasks can be automated with robots equipped with sensors or cameras, allowing them to inspect products for defects or perform quality control checks \cite{Hagele.2016}.
+
+
+Industrial robots offer several benefits. Firstly, they increase productivity by working continuously, without breaks or fatigue. This leads to higher production rates and shorter cycle times. Additionally, robots can perform tasks with high precision and accuracy, reducing errors and defects and thereby improving product quality \cite{Kubela.2016}. Safety is another important aspect of industrial robots. They are designed to handle dangerous or hazardous tasks, keeping human workers safe. Robots can work in environments with high temperatures, toxic substances, or heavy loads, minimizing the risk of injury to humans \cite{Heyer.2010}.
 While the initial investment in industrial robots can be high, they offer long-term cost savings. Robots can reduce labor costs by automating repetitive tasks and increasing efficiency. They also offer flexibility, as they can be reprogrammed or reconfigured to perform different tasks, allowing for greater adaptability in manufacturing processes \cite{Jung.2020b}.
 
 When comparing industrial robots to CNC machines, there are a few notable disadvantages for industrial robots. Firstly, industrial robots generally have lower positional accuracy and repeatability compared to CNC machines. CNC machines are purpose-built for precise machining operations and can achieve high levels of accuracy and repeatability \cite{Wang.2023}.
 Secondly, industrial robots typically have a longer cycle time compared to CNC machines for similar tasks. The complex movements and computations involved in robot control can result in slower overall operation speeds, which may not be ideal for high-volume production environments \cite{Joshi.2021}.
 Additionally, industrial robots can be more complex to program and set up than CNC machines. CNC machines follow a predefined set of instructions, whereas programming industrial robots often requires more advanced programming skills and can be time-consuming \cite{Ye.2022}. Lastly, industrial robots may have limitations when it comes to handling heavy loads or performing heavy-duty machining operations. CNC machines are specifically designed for heavy-duty cutting, milling, and drilling tasks, whereas industrial robots are better suited for lighter material handling and assembly operations \cite{Wu.2022}. These differences should be considered when deciding between industrial robots and CNC machines for specific manufacturing applications.
 
-Industrial robots can be programmed using different methods. One common method is using a teach pendant, where operators manually move the robot to record positions and actions. Offline programming is another approach, where programs are created and simulated on a computer before being transferred to the robot. Sensor-based programming allows robots to respond to sensor inputs or interact with the environment \cite{Heimann.2020}. More information regarding the control of robots is described in chapter \ref{CAMmain}.
+Industrial robots can be programmed using different methods. One common method is using a teach pendant, where operators manually move the robot to record positions and actions. Offline programming is another approach, where programs are created and simulated on a computer before being transferred to the robot. Sensor-based programming allows robots to respond to sensor inputs or interact with the environment \cite{Heimann.2020}. %More information regarding the control of robots is described in Chapter \ref{CAMmain}.
 
 
-Serial kinematics is a widely used configuration in industrial robots, where the robot arm is constructed as a sequential chain of joints and links. Each joint provides one degree of freedom (DOF), enabling the robot to move and position its end-effector in a controlled manner. The joints can be of various types, including revolute, prismatic, spherical, and cylindrical, providing rotational, linear, and combined movements. The motion of the robot arm is controlled using forward kinematics and inverse kinematics. Forward kinematics calculates the position and orientation of the end-effector based on the joint angles, while inverse kinematics determines the joint angles required to achieve a desired end-effector pose \cite{Singh.2021b}. Serial kinematics robots have significantly contributed to automation processes, enhancing productivity, efficiency, and flexibility in manufacturing industries.
+Serial kinematics is a widely used configuration in industrial robots, where the robot arm is constructed as a sequential chain of joints and links. Each joint provides one DoF, enabling the robot to move and position its end-effector in a controlled manner. The joints can be of various types, including revolute, prismatic, spherical, and cylindrical, providing rotational, linear, and combined movements. The motion of the robot arm is controlled using forward kinematics and inverse kinematics. Forward kinematics calculates the position and orientation of the end-effector based on the joint angles, while inverse kinematics determines the joint angles required to achieve the desired end-effector pose \cite{Singh.2021b}. %Serial kinematics robots have significantly contributed to automation processes, enhancing productivity, efficiency, and flexibility in manufacturing industries.
 
 
 In summary, the robots performance relies on sophisticated control algorithms and feedback systems that allow them to adapt to dynamic conditions, adjust movements in real-time, and maintain a consistently high level of accuracy \cite{Lin.2023}. This improves both the quality of the final product and the safety of the manufacturing process, as robots can navigate complex paths without risking collisions or accidents~\cite{Bosscher.2011}.
 As technology continues to advance, industrial robots will play an even more prominent role in shaping the future of manufacturing and automation \cite{Domae.2019}
 
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
+
+Figure \ref{robot} shows the schematic design of a 6-DoF industrial robot with a spindle and force sensor that is used for machining.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.4]{figures/robot.png}}
+	\caption{6-DoF industrial Robot \cite{HuynhHoaiNam.2018}}
+	\label{robot}
+\end{figure}
 
 
 \subsubsection{Redundancy in robotic systems}
@@ -164,11 +236,13 @@ Additionally, redundancy can also be observed when using a generic 6-DoF system 
 
 In summary, redundancy in robotic systems can be achieved through various means such as increasing joint numbers, incorporating rotary tilt tables, including linear axes, or using a higher DoF system for tasks that demand fewer DoF. These redundant features enhance the capabilities and versatility of the robot, enabling it to perform a wide range of complex tasks efficiently.
 
+Figure \ref{linear} shows two industrial robots from the manufacturer KUKA GmbH that are placed on a linear axis. This enables the robots to use the additional and redundant DoF for optimizing the process. Multiple robots can be positioned on one linear unit. 
 
-
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.4]{figures/linear.png}}
+	\caption{6-DoF industrial Robot wit an additional linear axis \cite{linear}}
+	\label{linear}
+\end{figure}
 
 
 
@@ -180,7 +254,30 @@ While redundancy in industrial robots can provide increased flexibility and adap
 \subsubsection{Continuous-path mode}
 In the context of industrial robotics, continuous and smooth paths of a tool, plays a crucial role in achieving precise and smooth movements of robotic arms along a defined trajectory \cite{Jia.2018}. This ensures that the robot can execute complex tasks with accuracy and efficiency. By incorporating continuous paths mode into industrial robot programming, manufacturers can optimize production processes and improve the quality of manufactured products \cite{Zhang.2020}.
 
-Continuous path mode refers to a mode of operation in high-speed CNC machines where the goal is to achieve a smooth and uninterrupted movement of the machine along a toolpath. In this mode, the machine is expected to follow a path without any sudden changes in velocity, acceleration, or curvature. The purpose of continuous path mode is to minimize jerk spikes, machine vibrations, and other undesirable effects that can occur when there are discontinuities in the toolpath \cite{Jia.2018, Yang.2017}. 
+Continuous path mode refers to a mode of operation in high-speed CNC machines where the goal is to achieve a smooth and uninterrupted movement of the machine along a toolpath. In this mode, the machine is expected to follow a path without any sudden changes in velocity, acceleration, or curvature. The purpose of continuous path mode is to minimize jerk spikes, machine vibrations, and other undesirable effects that can occur when there are discontinuities in the toolpath \cite{Jia.2018, Yang.2017}.
+
+Figure \ref{C1} shows where the smooth-path-requirement comes into conflict with the part geometry. Sharp corners and small radii can require significant acceleration to maintain a constant velocity. 
+ \begin{figure}[H]
+ 	\centerline{\includegraphics[scale=.8]{figures/conti.png}}
+ 	\caption{Desired path with constant velocity \cite{sinumericmanual}}
+ 	\label{C1}
+ \end{figure}
+ 
+Figure \ref{C2} shows how specific G-code commands of the SINUMERIK 840D influences the targeted feedrate. When using the G60 command, the points are reached exactly but the feedrate is reducing to 0 at every way-point. When implementing the G64 command, the feedrate can be held at the desired value.
+ 
+ \begin{figure}[H]
+ 	\centerline{\includegraphics[scale=1]{figures/conti1.png}}
+ 	\caption{X \cite{sinumericmanual}}
+ 	\label{C2}
+ \end{figure}
+ 
+Figure \ref{C3} shows how the G-code command  G641 ADIS=0.5 of the SINUMERIK 840D is influencing the programmed contour. The rounding of the path begins no more than 0.5 mm before the programmed end of the block and must finish 0.5 mm after the end of the block. 
+ 
+ \begin{figure}[H]
+ 	\centerline{\includegraphics[scale=.9]{figures/conti2.png}}
+ 	\caption{X \cite{sinumericmanual}}
+ 	\label{C3}
+ \end{figure}
  
 Continuous-path mode in CNC machining is a crucial aspect when it comes to processing parts with rapidly varied geometric features. These types of components, often found in high-end equipment, pose challenges due to their intricate structures and strict requirements. The presence of rapidly varied geometric features, coupled with the continuous-path running characteristic, gives rise to trajectory errors during the machining process, which severely hampers the overall machining accuracy of such parts \cite{Shahzadeh.2018}. This becomes even more critical in high-feed-speed machining scenarios, where existing studies struggle to effectively reduce this error without compromising machining efficiency \cite{Li.2018}.
 
@@ -200,14 +297,14 @@ One approach to achieving continuous path mode is by using biclothoid fillets. T
 
 
 
+
+
+
+
 MORE SINUMERIC HERE \cite{sinumericmanual} ?????????
-
-
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
-INSERT COOL IMAGES HERE\newline
-
-IN GODS NAME I DONT KNOW ANYTHING ABOUT THIS 
+gemeinsamkeitmnen \newline
+prozesskräfte \newline
+was ist wichtig bei fräsen unf WAAM \newline 
 
 \section{Computer-Aided Manufacturing}\label{CAMmain}
 
@@ -226,6 +323,14 @@ It also offers advanced features such as multi-axis machining and support for co
 Furthermore, CAM software often integrates with other manufacturing software systems, such as computer-aided engineering (CAE) and enterprise resource planning (ERP) systems \cite{Ramazanov.2020}. This integration enables seamless data exchange, improves collaboration between different departments, and ensures that the manufacturing process is aligned with the overall production goals \cite{Kadam.2023}.
 
 CAM software is a crucial tool for modern manufacturing. It automates and optimizes the manufacturing process, generating toolpaths and machining instructions based on CAD data. It enables manufacturers to improve efficiency, reduce errors, and achieve higher-quality products. With features such as optimization, simulation, multi-axis machining, and integration with other systems, CAM software empowers manufacturers to stay competitive in today's fast-paced and complex manufacturing environment \cite{Kappmeyer.2021}.
+
+Figure \ref{CAMinterface} shows the interface of Siemens NX, a CAM/CAD software that can be used to desing parts and generate the machine specific instructions for manufacturing. 
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.4]{figures/CAM.png}}
+	\caption{Interface of Siemens NX \cite{NXManufacturing.2015}}
+	\label{CAMinterface}
+\end{figure}
 
 
 \subsection{Path Planning}

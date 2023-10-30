@@ -11,8 +11,10 @@
 %
 % Set paths
 \usepackage{comment}
-\usepackage{setspace}
-\onehalfspacing
+%\usepackage{setspace}
+%\onehalfspacing
+\usepackage{float}
+\usepackage{subfig}
 \graphicspath{{figures/}}%
 \addbibresource{source/literature.bib}%
 \include{source/abbreviations}%
@@ -63,7 +65,7 @@
 \mainmatter%
 %\include{source/latex_tutorial}%
 \include{source/chapter01}%
-\include{source/chapter02}%
+\include{source/chapter02}%l
 \include{source/chapter03}%
 \include{source/chapter04}%
 \include{source/chapter05}%
@@ -73,6 +75,9 @@
 %\appendix%
 \include{source/appendixA}%
 %
+
+\listoffigures
+\listoftables
 % Glossary
 % ---------------------
 \printnoidxglossary[sort=standard,title={\IWBlangGlossary}]
@@ -80,6 +85,7 @@
 % References
 % ----------
 \printbibliography[heading=bibintoc, title={\IWBlangBibliography}]%
+
 %
 %
 \end{document}%
