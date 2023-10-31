@@ -2149,6 +2149,44 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2213846317300974
       \endverb
     \endentry
+    \entry{Hagane.2022}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7e06a7df6eb1b6e40b2618146f9a3b9e}{%
+           family={Hagane},
+           familyi={H\bibinitperiod},
+           given={Shohei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1cc24ceefe2dd00c422f199861a18aaa}{%
+           family={Venture},
+           familyi={V\bibinitperiod},
+           given={Gentiane},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{a015e11f92d916ab4a1babb70d6fd70c}
+      \strng{fullhash}{a015e11f92d916ab4a1babb70d6fd70c}
+      \strng{bibnamehash}{a015e11f92d916ab4a1babb70d6fd70c}
+      \strng{authorbibnamehash}{a015e11f92d916ab4a1babb70d6fd70c}
+      \strng{authornamehash}{a015e11f92d916ab4a1babb70d6fd70c}
+      \strng{authorfullhash}{a015e11f92d916ab4a1babb70d6fd70c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2075-1702}
+      \field{journaltitle}{Machines}
+      \field{number}{12}
+      \field{title}{Robotic Manipulator's Expressive Movements Control Using Kinematic Redundancy}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{1118}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/machines10121118
+      \endverb
+      \verb{file}
+      \verb Hagane, Venture 2022 - Robotic Manipulator's Expressive Movements Control:Attachments/Hagane, Venture 2022 - Robotic Manipulator's Expressive Movements Control.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{Hagele.2016}{incollection}{}
       \name{author}{4}{}{%
         {{hash=8cb8d00438891daee06979b28e5653e7}{%
@@ -3704,6 +3742,61 @@
       \endverb
       \verb{file}
       \verb Li, Zhang et al. 2018 - Error constraint optimization for corner:Attachments/Li, Zhang et al. 2018 - Error constraint optimization for corner.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Li.2018b}{article}{}
+      \name{author}{4}{}{%
+        {{hash=68665ecfb5ccb8c5ee836ad68610700a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Fang},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d120c46f0ec626eb3a4047596e853ea0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Shujun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b273b6ef26eddd426c7ad7f8ab65f5a5}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zhaoyang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=41eef4a05423dec00e6ba48a3e7e3304}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Zhihong},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e930507782918b7c105937ee6350bd7}
+      \strng{fullhash}{1e930507782918b7c105937ee6350bd7}
+      \strng{bibnamehash}{1e930507782918b7c105937ee6350bd7}
+      \strng{authorbibnamehash}{1e930507782918b7c105937ee6350bd7}
+      \strng{authornamehash}{1e930507782918b7c105937ee6350bd7}
+      \strng{authorfullhash}{1e930507782918b7c105937ee6350bd7}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In wire and arc additive manufacturing (WAAM), it is crucial to maintain a constant travel speed in order to achieve a uniform bead morphology along the tool-path. However, this requirement is always violated in practice because the welding robot has to slow down when sharp corners with high curvatures are encountered so as to satisfy the dynamic constraint. The consequence is excessive fillings (i.e. humps) around these sharp corners, which not only increase the required post processing, but also prevent the continuation of the deposition process if the accumulated errors in the build direction become too large. This issue greatly limits the application of WAAM in the fabrication of complex-shaped components. In this paper, an adaptive process control scheme (APCS) capable of guaranteeing a uniform bead morphology while still respecting the dynamic constraint is proposed. First, the APCS divides the tool-path into several segments depending on whether they contain sharp corners. Then, for each segment, the APCS automatically selects the allowable travel speed subjected to the dynamic constraint, and also the wire-feed rate according to a process model established in advance. Through the matching between the travel speed and the wire-feed rate, a uniform bead morphology among different segments is achieved. Experiments were conducted on a gantry robot using the Cold Metal Transfer (CMT) process, controlled by a self-developed computer numerical control (CNC) system, validating the efficacy of the proposed scheme.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{1-4}
+      \field{title}{Adaptive process control of wire and arc additive manufacturing for fabricating complex-shaped components}
+      \field{volume}{96}
+      \field{year}{2018}
+      \field{pages}{871\bibrangedash 879}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/s00170-018-1590-0
+      \endverb
+      \verb{file}
+      \verb Li, Chen et al. 2018 - Adaptive process control of wire:Attachments/Li, Chen et al. 2018 - Adaptive process control of wire.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-018-1590-0
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-018-1590-0
       \endverb
     \endentry
     \entry{Li.2019}{article}{}
@@ -5687,54 +5780,6 @@
       \verb 10.1007/978-3-540-73190-0{\textunderscore }7
       \endverb
     \endentry
-    \entry{Song.2017}{article}{}
-      \name{author}{4}{}{%
-        {{hash=23c37842799ad370a16062e7016d3125}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={De-ning},
-           giveni={D\bibinithyphendelim n\bibinitperiod}}}%
-        {{hash=b0b10d9329260384a6f2ace6dc92734f}{%
-           family={Ma},
-           familyi={M\bibinitperiod},
-           given={Jian-wei},
-           giveni={J\bibinithyphendelim w\bibinitperiod}}}%
-        {{hash=d261670f4ba5df509b360f3d91c5c892}{%
-           family={Jia},
-           familyi={J\bibinitperiod},
-           given={Zhen-yuan},
-           giveni={Z\bibinithyphendelim y\bibinitperiod}}}%
-        {{hash=8a6555b5238e6db6d9db7c23e2f7af70}{%
-           family={Gao},
-           familyi={G\bibinitperiod},
-           given={Yuan-yuan},
-           giveni={Y\bibinithyphendelim y\bibinitperiod}}}%
-      }
-      \strng{namehash}{511149fd00dbfa43e3bdb10788c86ea4}
-      \strng{fullhash}{511149fd00dbfa43e3bdb10788c86ea4}
-      \strng{bibnamehash}{511149fd00dbfa43e3bdb10788c86ea4}
-      \strng{authorbibnamehash}{511149fd00dbfa43e3bdb10788c86ea4}
-      \strng{authornamehash}{511149fd00dbfa43e3bdb10788c86ea4}
-      \strng{authorfullhash}{511149fd00dbfa43e3bdb10788c86ea4}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1433-3015}
-      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
-      \field{number}{5-8}
-      \field{title}{Estimation and compensation for continuous-path running trajectory error in high-feed-speed machining}
-      \field{volume}{89}
-      \field{year}{2017}
-      \field{pages}{1495\bibrangedash 1508}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1007/s00170-016-9202-3
-      \endverb
-      \verb{file}
-      \verb Song, Ma et al. 2017 - Estimation and compensation for continuous-path:Attachments/Song, Ma et al. 2017 - Estimation and compensation for continuous-path.pdf:application/pdf
-      \endverb
-    \endentry
     \entry{Srinivasan.2022}{article}{}
       \name{author}{4}{}{%
         {{hash=7e5030f8ca26e8138c1e6a2c087ae816}{%
@@ -5784,6 +5829,47 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s2214785322021289
+      \endverb
+    \endentry
+    \entry{Sun.2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f7899b3d7177b76fea05939702943782}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Shujie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3619b105bb06370c5b34c30640b892f0}{%
+           family={Altintas},
+           familyi={A\bibinitperiod},
+           given={Yusuf},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{31437cabcea773be7f195a5fc098751e}
+      \strng{fullhash}{31437cabcea773be7f195a5fc098751e}
+      \strng{bibnamehash}{31437cabcea773be7f195a5fc098751e}
+      \strng{authorbibnamehash}{31437cabcea773be7f195a5fc098751e}
+      \strng{authornamehash}{31437cabcea773be7f195a5fc098751e}
+      \strng{authorfullhash}{31437cabcea773be7f195a5fc098751e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The chain of short linear tool path segments is the most common form for the five-axis machining by Computer Numerical Control (CNC) machines. The con$\ldots$}
+      \field{issn}{1755-5817}
+      \field{journaltitle}{CIRP Journal of Manufacturing Science and Technology}
+      \field{title}{A G3 continuous tool path smoothing method for 5-axis CNC machining}
+      \field{volume}{32}
+      \field{year}{2021}
+      \field{pages}{529\bibrangedash 549}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.cirpj.2020.11.002
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581720301280
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581720301280
       \endverb
     \endentry
     \entry{Svetlizky.2021}{article}{}
@@ -7066,6 +7152,71 @@
       \endverb
       \verb{file}
       \verb Zhang, Wang et al. 2020 - An analytical G3 continuous corner:Attachments/Zhang, Wang et al. 2020 - An analytical G3 continuous corner.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Zhao.2018}{article}{}
+      \name{author}{8}{}{%
+        {{hash=7765a0e084e07c0a499e19523aaedce3}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Haisen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=96d190c3380b091b066b505667adb1df}{%
+           family={Xin},
+           familyi={X\bibinitperiod},
+           given={Shiqing},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ca381c757ee90b1686fce5b32b8cdddd}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Yuanmin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=edbf10db49ec7131a46357066954d0c2}{%
+           family={Tu},
+           familyi={T\bibinitperiod},
+           given={Changhe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cbf9bd0c687428039fe025eced393d59}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wenping},
+           giveni={W\bibinitperiod}}}%
+        {{hash=cdf44d78713bc27a81394749a9d8bbdc}{%
+           family={Cohen-Or},
+           familyi={C\bibinithyphendelim O\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5f2cdf2c163110e212cb66e7aa399101}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Baoquan},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{11e5515314a2ba03a57be7c12ff42806}
+      \strng{fullhash}{11e5515314a2ba03a57be7c12ff42806}
+      \strng{bibnamehash}{11e5515314a2ba03a57be7c12ff42806}
+      \strng{authorbibnamehash}{11e5515314a2ba03a57be7c12ff42806}
+      \strng{authornamehash}{11e5515314a2ba03a57be7c12ff42806}
+      \strng{authorfullhash}{11e5515314a2ba03a57be7c12ff42806}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0730-0301}
+      \field{journaltitle}{ACM Transactions on Graphics}
+      \field{number}{4}
+      \field{title}{DSCarver}
+      \field{volume}{37}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/3197517.3201338
       \endverb
     \endentry
     \entry{Zhao.2021}{inproceedings}{}

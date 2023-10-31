@@ -166,12 +166,12 @@ Figure \ref{fig:CMT2} shows the clearly distinct parts in a CMT cycle. At first 
 In summary, WAAM and CMT are highly sophisticated processes that enable the creation of 3D printed metal parts with specifically designed parameters. CMT achieves precise welds with low heat input and minimal spatter. It is ideal for thinner materials and applications requiring high weld quality. Advanced process control systems can enhance the reliability of CMT welding~\cite{Rahul.2018, Pickin.2011}.
 
 
-I FEEL SOMETHING IS MISSING !!!!\newline
-PLZ HELP\newline
-PLZ HELP\newline
-PLZ HELP\newline
-PLZ HELP\newline
-PLZ HELP
+%I FEEL SOMETHING IS MISSING !!!!\newline
+%PLZ HELP\newline
+%PLZ HELP\newline
+%PLZ HELP\newline
+%PLZ HELP\newline
+%PLZ HELP
 
 
 \subsection{Industrial Robots}\label{IR}
@@ -226,58 +226,78 @@ Figure \ref{robot} shows the schematic design of a 6-DoF industrial robot with a
 
 Industrial robots with redundant degrees of freedom are robotic systems that have been designed with more degrees of freedom (DOF) than are necessary for a specific task \cite{Liu.2022}. This extra DOF allows the robots to perform additional joint movements or configurations beyond what is required for basic movement or manipulation.
 
-The primary advantage of these redundant robots is their increased flexibility and adaptability \cite{Duong.2021}. Robots with more DOF can access a wider range of positions and orientations, making it possible for them to complete complex tasks in constrained environments that would have been difficult or impossible otherwise. With this added flexibility, they can avoid obstacles and work around them without disrupting their duties. In industrial settings, redundant manipulators provide significant advantages. Their additional degrees of freedom enable them to improving accessibility to hard-to-reach areas and enhancing overall operational capabilities \cite{Shi.2021}.   
+The primary advantage of these redundant robots is their increased flexibility and adaptability \cite{Duong.2021}. Robots with more DOF can access a wider range of positions and orientations, making it possible for them to complete complex tasks in constrained environments that would have been difficult or impossible otherwise. With this added flexibility, they can avoid obstacles and work around them without disrupting their duties. In industrial settings, redundant manipulators provide significant advantages. Their additional degrees of freedom enable them to improve accessibility to hard-to-reach areas and enhance overall operational capabilities \cite{Shi.2021}.   
 
 Redundancy can take on many different forms in robotic systems. One option is to increase the number of joints in the serial kinematics of an articulated robot \cite{Milenkovic.2021}. Another approach to redundancy is the addition of a rotary tilt table, which is commonly used in WAAM in combination with a 6-DoF robot \cite{Yuan.2020}. This combined system enables the robot to manipulate the workpiece from various angles, enhancing the manufacturing process.
 
 Furthermore, the inclusion of a linear axis that the robot base can traverse on is yet another form of redundant DoF. This additional linear motion provides the robot with extended reach and the capability to access a larger workspace, making it suitable for tasks that require movement along a specific axis \cite{Boscariol.2019}.
 
-Additionally, redundancy can also be observed when using a generic 6-DoF system for operations that only necessitate 5 or fewer DoF \cite{Hanafusa.1981,Liu.2022}. Although the system possesses more flexibility than required for the specific task, it allows for adaptability and versatility in accommodating different operations without the need for reconfiguring the robot.
+Additionally, redundancy can also be observed when using a generic 6-DoF system for operations that only necessitate 5 or fewer DoF (for example, milling or WAAM) \cite{Hanafusa.1981,Liu.2022}. The system possesses more flexibility than required for the specific task and allows for adaptability and versatility, thus accommodating different operations without the need for reconfiguring the robot.
 
-In summary, redundancy in robotic systems can be achieved through various means such as increasing joint numbers, incorporating rotary tilt tables, including linear axes, or using a higher DoF system for tasks that demand fewer DoF. These redundant features enhance the capabilities and versatility of the robot, enabling it to perform a wide range of complex tasks efficiently.
+In summary, redundancy in robotic systems can be achieved through various means, such as increasing joint numbers, incorporating rotary tilt tables, including linear axes, or using a higher DoF system for tasks that demand fewer DoF. These redundant features enhance the capabilities and versatility of the robot, enabling it to perform a wide range of complex tasks efficiently.
 
-Figure \ref{linear} shows two industrial robots from the manufacturer KUKA GmbH that are placed on a linear axis. This enables the robots to use the additional and redundant DoF for optimizing the process. Multiple robots can be positioned on one linear unit. 
+Figure \ref{linear} shows two industrial robots from the manufacturer KUKA GmbH that are placed on a linear axis. This enables the robots to use the additional and redundant DoF to optimize the process. Multiple robots can be positioned on one linear unit. 
+Figure \ref{seven} shows how a 7-DoF robot can have multiple poses reaching the same position. In this case, only six DoF are necessary to achieve the position, while one DoF can be defined manually.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=.4]{figures/linear.png}}
-	\caption{6-DoF industrial Robot wit an additional linear axis \cite{linear}}
+	\caption{Industrial robots with an additional linear axis \cite{linear}}
 	\label{linear}
+\end{figure}
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.14]{figures/red.png}}
+	\caption{7 DoF robot \cite{Hagane.2022}}
+	\label{seven}
 \end{figure}
 
 
 
-While redundancy in industrial robots can provide increased flexibility and adaptability, it also comes with certain disadvantages. One major drawback is the increased complexity and cost associated with redundant systems \cite{Halevi.2011}. The addition of extra joints, axes, or mechanisms adds to the overall complexity of the robot, requiring more sophisticated control algorithms and hardware \cite{Duong.2021}. This complexity not only increases the initial cost of the robot but also adds to the maintenance and troubleshooting efforts \cite{Ahangar.2019}. Additionally, the presence of redundant DoF can make the robot more prone to mechanical failures, as more components are involved. This can result in increased downtime and higher maintenance costs. Moreover, the increased complexity of redundant systems can make programming and calibration more challenging, requiring specialized skills and expertise \cite{Erdos.2016}. Therefore, while redundancy can offer advantages in certain scenarios, careful consideration must be given to the cost, complexity, and maintenance implications before implementing it in industrial robotics applications.
+While redundancy in industrial robots can provide increased flexibility and adaptability, it also comes with certain disadvantages. One major drawback is the increased complexity and cost associated with redundant systems \cite{Halevi.2011}. The addition of extra joints, axes, or mechanisms adds to the overall complexity of the robot, requiring more sophisticated control algorithms and hardware \cite{Duong.2021}. This complexity not only increases the initial cost of the robot but also adds to the maintenance and troubleshooting efforts \cite{Ahangar.2019}. Additionally, the presence of redundant DoF can make the robot more susceptible to mechanical failures as more components are involved. This can result in increased downtime and higher maintenance costs. Moreover, the increased complexity of redundant systems can make programming and calibration more challenging, requiring specialized skills and expertise \cite{Erdos.2016}. Therefore, while redundancy can offer advantages in certain scenarios, careful consideration must be given to the cost, complexity, and maintenance implications before implementing it in industrial robotics applications.
 
 
 
 
 \subsubsection{Continuous-path mode}
-In the context of industrial robotics, continuous and smooth paths of a tool, plays a crucial role in achieving precise and smooth movements of robotic arms along a defined trajectory \cite{Jia.2018}. This ensures that the robot can execute complex tasks with accuracy and efficiency. By incorporating continuous paths mode into industrial robot programming, manufacturers can optimize production processes and improve the quality of manufactured products \cite{Zhang.2020}.
+In the context of industrial robotics, continuous paths without abrupt direction or velocity changes of a tool play a crucial role in achieving precise and smooth movements of robotic arms along a defined trajectory \cite{Jia.2018}. This ensures that the robot can execute complex tasks and movements with accuracy and efficiency. By incorporating continuous path mode into industrial robot programming, manufacturers can optimize production processes and improve the quality of manufactured products \cite{Zhang.2020}. Constant velocity of a tool is especially important in applications like WAAM where the quality of the layer is directly dependent on the federate \cite{Li.2018b}. In CNC machining, discontinuities in velocity, acceleration, and jerk result in non-optimal surface finishes \cite{Sun.2021}.
 
-Continuous path mode refers to a mode of operation in high-speed CNC machines where the goal is to achieve a smooth and uninterrupted movement of the machine along a toolpath. In this mode, the machine is expected to follow a path without any sudden changes in velocity, acceleration, or curvature. The purpose of continuous path mode is to minimize jerk spikes, machine vibrations, and other undesirable effects that can occur when there are discontinuities in the toolpath \cite{Jia.2018, Yang.2017}.
 
-Figure \ref{C1} shows where the smooth-path-requirement comes into conflict with the part geometry. Sharp corners and small radii can require significant acceleration to maintain a constant velocity. 
+Continuous path mode refers to a mode of operation in high-speed robotics as well as CNC machines where the goal is to achieve a smooth and uninterrupted movement of the machine along a toolpath. In this mode, the machine is expected to follow a path without any sudden changes in velocity, acceleration, or curvature. The purpose of continuous path mode is to minimize jerk spikes, machine vibrations, and other undesirable effects that can occur when there are discontinuities in the toolpath \cite{Jia.2018, Yang.2017}.
+
+Figure \ref{C1} shows where the smooth-path-requirement comes into conflict with the tool path, which is based on the part geometry. Sharp corners and small radii can require significant acceleration to maintain a constant velocity. 
+
+
  \begin{figure}[H]
- 	\centerline{\includegraphics[scale=.8]{figures/conti.png}}
+ 	\centerline{\includegraphics[scale=.25]{figures/conti.png}}
  	\caption{Desired path with constant velocity \cite{sinumericmanual}}
  	\label{C1}
  \end{figure}
  
-Figure \ref{C2} shows how specific G-code commands of the SINUMERIK 840D influences the targeted feedrate. When using the G60 command, the points are reached exactly but the feedrate is reducing to 0 at every way-point. When implementing the G64 command, the feedrate can be held at the desired value.
+Figure \ref{C2} shows how specific G-code commands of the SINUMERIK 840D influence the targeted feedrate. When using the G60 command, the points are reached exactly, but the feedrate is reducing to 0 at every waypoint. When implementing the G64 command, the feedrate can be held at the desired value.
  
  \begin{figure}[H]
- 	\centerline{\includegraphics[scale=1]{figures/conti1.png}}
- 	\caption{X \cite{sinumericmanual}}
+ 	\centerline{\includegraphics[scale=0.25]{figures/conti1.png}}
+ 	\caption{Influence of G-Code commands regarding feedrate compliance \cite{sinumericmanual}}
  	\label{C2}
  \end{figure}
  
-Figure \ref{C3} shows how the G-code command  G641 ADIS=0.5 of the SINUMERIK 840D is influencing the programmed contour. The rounding of the path begins no more than 0.5 mm before the programmed end of the block and must finish 0.5 mm after the end of the block. 
+Figure \ref{C3} shows how the G-code command G641 ADIS=0.5 of the SINUMERIK 840D is influencing the programmed contour. The rounding of the path begins no more than 0.5 mm before the programmed end of the block and must finish 0.5 mm after the end of the block. 
  
  \begin{figure}[H]
- 	\centerline{\includegraphics[scale=.9]{figures/conti2.png}}
- 	\caption{X \cite{sinumericmanual}}
+ 	\centerline{\includegraphics[scale=.25]{figures/conti2.png}}
+ 	\caption{Predetermined deviation of the programmed and executed path \cite{sinumericmanual}}
  	\label{C3}
  \end{figure}
+
+Figure \ref{C4} shows how commands G601 and 602 influence the executed trajectory. In this case, two different tolerance limits allow the tool to deviate from the programmed path.
+ 
+  \begin{figure}[H]
+ 	\centerline{\includegraphics[scale=.25]{figures/conti3.png}}
+ 	\caption{Influence of commands G601 and G602 \cite{sinumericmanual}}
+ 	\label{C4}
+ \end{figure}
+ 
+ 
  
 Continuous-path mode in CNC machining is a crucial aspect when it comes to processing parts with rapidly varied geometric features. These types of components, often found in high-end equipment, pose challenges due to their intricate structures and strict requirements. The presence of rapidly varied geometric features, coupled with the continuous-path running characteristic, gives rise to trajectory errors during the machining process, which severely hampers the overall machining accuracy of such parts \cite{Shahzadeh.2018}. This becomes even more critical in high-feed-speed machining scenarios, where existing studies struggle to effectively reduce this error without compromising machining efficiency \cite{Li.2018}.
 
@@ -288,23 +308,29 @@ Contouring errors are caused by factors such as servo lag, dynamics mismatch, ex
 To overcome these challenges and achieve a smooth and continuous toolpath, path smoothing techniques are necessary. Many path smoothing methods have been proposed in the literature, but most of them are limited to linear toolpaths. However, in high-speed CNC machines and industrial robots, the toolpaths often consist of both lines and arcs. Therefore, there is a need for a path smoothing method that can handle both line-to-line transitions and transitions involving arcs \cite{Shahzadeh.2018}.  
 
 
-To address this issue and enhance both the processing efficiency and precision, various estimation and compensation methods have been proposed for trajectory error in high-feed-speed continuous-path machining. The actual reachable feed speed is determined based on the geometry and drive constraints of the CNC machine tool. The continuous-path running trajectory error is estimated by approximating the desired toolpath using spline curves. Furthermore, a combination of mirror compensation and Taylor's expansion compensation can be employed as an error compensation approach \cite{Jia.2018}.
-
-One notable advantage of this proposed approach is its ease of estimation and compensation for continuous-path running trajectory errors by analyzing and modifying the NC codes. This implies a high level of feasibility for free-form toolpaths. Experimental results have demonstrated the favorable performance and effectiveness of these methods. By reducing the trajectory error in multi-axis high-speed machining, this study offers an effective approach to enhance the machining precision and efficiency of parts with rapidly varied geometric features in engineering applications. \cite{Song.2017}
-
-
-One approach to achieving continuous path mode is by using biclothoid fillets. These fillets are used for corner smoothing and can be fitted between two arcs or a line and an arc. The main advantage of using biclothoid fillets is that they result in a smoother curvature profile compared to other methods such as Bezier fillets. This smoother curvature profile allows for higher feedrates and shorter cycle times, ultimately improving the overall performance of the CNC machine \cite{Shahzadeh.2018}.  
+To address this issue and enhance both processing efficiency and precision, various estimation and compensation methods have been proposed for reducing trajectory error. These approaches can be divided into contouring-error estimation and contouring-error reduction approaches \cite{Jia.2018}. These approaches include the "Moving frame based method", "Analytical method", "Generalized method" or "Servo-tuning
+approach". While this review paper compares the representative algorithms commonly used for contouring-error estimation and reduction, it is important to note that the comparison results only offer relative significance. Each algorithm has its own optimal range of applications and may outperform other methods within that range. Additionally, it is important to note that not every approach can be implemented on every system.
 
 
+%The actual reachable feed speed is determined based on the geometry and drive constraints of the CNC machine tool.
+
+%The continuous-path running trajectory error is estimated by approximating the desired toolpath using spline curves. Furthermore, a combination of mirror compensation and Taylor's expansion compensation can be employed as an error compensation approach \cite{Jia.2018}.
+
+%One notable advantage of this proposed approach is its ease of estimation and compensation for continuous-path running trajectory errors by analyzing and modifying the NC codes. This implies a high level of feasibility for free-form toolpaths. Experimental results have demonstrated the favorable performance and effectiveness of these methods. By reducing the trajectory error in multi-axis high-speed machining, this study offers an effective approach to enhance the machining precision and efficiency of parts with rapidly varied geometric features in engineering applications. \cite{Song.2017}
+
+
+Another approach for achieving continuous path mode is by using biclothoid fillets. These fillets are used for corner smoothing and can be fitted between two arcs or a line and an arc. The main advantage of using biclothoid fillets is that they result in a smoother curvature profile compared to other methods, such as Bezier fillets. Especially with tight tolerance values, only a few biclothoid fillets are needed compared to Bezier fillets. Additionally, the biclothoid approach is more suitable in regards to the jerk and acceleration limits of the driving units. This smoother curvature profile allows for higher feedrates and shorter cycle times, ultimately improving the overall performance of the CNC machine \cite{Shahzadeh.2018}.  
 
 
 
 
 
-MORE SINUMERIC HERE \cite{sinumericmanual} ?????????
-gemeinsamkeitmnen \newline
-prozesskräfte \newline
-was ist wichtig bei fräsen unf WAAM \newline 
+
+
+%MORE SINUMERIC HERE \cite{sinumericmanual} ?????????
+%gemeinsamkeitmnen \newline
+%prozesskräfte \newline
+%was ist wichtig bei fräsen unf WAAM \newline 
 
 \section{Computer-Aided Manufacturing}\label{CAMmain}
 
@@ -314,7 +340,7 @@ CAM is a technology that uses computer software to automate and optimize manufac
 
 CAM software is a type of computer software used to automate and optimize the manufacturing process. CAM software takes the design data from computer-aided design (CAD) software and converts it into instructions that control machines and tools to produce the desired product \cite{Bi.2021}. It plays a critical role in modern manufacturing, helping to streamline production, improve efficiency, and reduce errors.
 
-CAM software enables manufacturers to generate toolpaths and machining instructions for a variety of manufacturing processes, including milling, turning, drilling, and 3D printing \cite{Kumar.2019}. It takes into account factors such as material properties, tool capabilities, and manufacturing constrayints to generate the most efficient and accurate instructions for the machines. CAM software can also simulate the machining process to detect any potential collisions or issues before the actual production begins, saving time and resources \cite{Bui.2019}.
+CAM software enables manufacturers to generate toolpaths and machining instructions for a variety of manufacturing processes, including milling, turning, drilling, and 3D printing \cite{Kumar.2019}. It takes into account factors such as material properties, tool capabilities, and manufacturing constraints to generate the most efficient and accurate instructions for the machines. CAM software can also simulate the machining process to detect any potential collisions or issues before actual production begins, saving time and resources \cite{Bui.2019}.
 
 One of the key features of CAM software is its ability to optimize the machining process. It can automatically optimize toolpaths to minimize machining time, reduce material waste, and improve surface finish. By analyzing the geometry of the part, the software can determine the most efficient toolpath strategies, such as contouring, pocketing, or adaptive machining. It can also optimize tool selection, toolpath sequencing, and cutting parameters to achieve the best possible results \cite{Kyratsis.2020}.
 
@@ -324,7 +350,7 @@ Furthermore, CAM software often integrates with other manufacturing software sys
 
 CAM software is a crucial tool for modern manufacturing. It automates and optimizes the manufacturing process, generating toolpaths and machining instructions based on CAD data. It enables manufacturers to improve efficiency, reduce errors, and achieve higher-quality products. With features such as optimization, simulation, multi-axis machining, and integration with other systems, CAM software empowers manufacturers to stay competitive in today's fast-paced and complex manufacturing environment \cite{Kappmeyer.2021}.
 
-Figure \ref{CAMinterface} shows the interface of Siemens NX, a CAM/CAD software that can be used to desing parts and generate the machine specific instructions for manufacturing. 
+Figure \ref{CAMinterface} shows the interface of Siemens NX, a CAM/CAD software that can be used to design parts and generate machine-specific instructions for manufacturing. 
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=.4]{figures/CAM.png}}
@@ -336,25 +362,28 @@ Figure \ref{CAMinterface} shows the interface of Siemens NX, a CAM/CAD software 
 \subsection{Path Planning}
 Path planning and generation are crucial features of CAM software. They involve establishing the most effective toolpaths for machining operations, guaranteeing efficient and precise production \cite{Brecher.2013}.
 
-Path planning involves determining the optimal sequence of movements for the machining tool to follow while producing a component. Path planning considers factors such as part geometry, tool capabilities, machining constraints, and desired parameters. Its goal is to minimize machining time, reduce waste, and improve the finished product \cite{Xu.2015}.
-
-Path generation generates the toolpath based on planned movements. CAM software employs algorithms and mathematical models to determine the tool's position and orientation on the toolpath. The toolpath generated by the software must precisely follow the desired shape and contour of the part while taking into account factors such as cutting direction, feed rate, and tool engagement \cite{Tunc.2017}.
+Path planning involves determining the optimal sequence of movements for the machining tool to follow while producing a component. It considers factors such as part geometry, tool capabilities, machining constraints, and desired parameters. Its goal is to minimize machining time, reduce waste, and improve the finished product \cite{Xu.2015}.  CAM software employs algorithms and mathematical models to determine the tool's position and orientation on the toolpath. Additionally, factors such as cutting direction, feed rate, and tool engagement need to be taken into account\cite{Tunc.2017}.
 
 Adaptive machining is a critical part of path planning and generation. It enables the CAM software to adjust the toolpath and cutting parameters in real-time based on material properties, tool wear, and other factors. This constant monitoring and adaptation ensure precise and dependable outcomes, even in difficult manufacturing conditions \cite{Liu.2017}.
 
 Multi-axis machining is an advanced function of CAM software, ideal for intricate cuts and shapes on complex geometries. By allowing the tool to move simultaneously along multiple axes, it delivers greater precision and accuracy during the machining of curved surfaces, freeform shapes, or parts with undercuts \cite{Takeuchi.2014}.
 
-Simulation is vital in planning and generating paths for this process. CAM software typically includes simulation tools that enable users to visualize and verify the toolpath prior to production. These simulations can detect and resolve potential collisions, interferences, or errors that may occur during machining, leading to cost savings and increased safety \cite{Dubovska.2014}. 
+Simulation is vital in planning and generating paths for this process. CAM software typically includes simulation tools that enable users to visualize and verify the toolpath prior to production. These simulations can detect and resolve potential collisions, interference, or errors that may occur during machining, leading to cost savings and increased safety \cite{Dubovska.2014}. 
 
-In summary, path planning and path generation are essential components of CAM software. The process involves determining the optimal series of movements and creating toolpaths to enhance machining operations. Utilizing approaches like contouring, pocketing, adaptive and multi-axis machining enables efficient and precise outcomes. Simulation tools facilitate visualization and confirmation of the toolpath before implementation, guaranteeing a flawless and secure machining process.
+Figure \ref{3path} shows three different path trajectories for planar milling operations. Depending on the area of application, different paths can be optimal. 
 
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.35]{figures/path.png}}
+	\caption{Three exemplary tool paths for iso-planar milling \cite{Zhao.2018}}
+	\label{3path}
+\end{figure}
 
 \section{Optimization Algorithms}%
 
-Optimization algorithms are computational methods used to find the best possible solution to a problem within a given set of constraints. These algorithms aim to minimize or maximize an objective function by iteratively adjusting the values of decision variables \cite{Sivanandam.2007b}. They are widely used in various fields, including engineering, operations research, finance, and machine learning, to optimize resource allocation, scheduling, parameter tuning, and other complex tasks.
+Optimization algorithms are computational methods used to find the best possible solution to a problem within a given set of constraints. These algorithms aim to minimize or maximize an objective function by iteratively adjusting the values of decision variables \cite{Sivanandam.2007b}. They are widely used in various fields, including engineering, operations research, finance, and machine learning, to optimize resource allocation, scheduling, parameter tuning, and other complex tasks. For the problem described in \ref{Problem Formulation} optimization algorithms can be used for determining optimal parameters for the redundant degrees of freedom while considering the defined objective, like reduction of direction changes or energy optimization. 
 
 
-Optimization algorithms are computational techniques employed to identify the optimal solution or set of solutions for a given problem. There exists several types of optimization algorithms, each exhibiting a unique methodology and characteristics.   Gradient-based optimization algorithms, like gradient descent, update the solution iteratively by following the direction of the steepest ascent or descent of the objective function \cite{Ruder.2017}. These algorithms are efficient for convex optimization problems where the objective function is smooth and has a unique global minimum or maximum.
+Optimization algorithms are computational techniques employed to identify the optimal solution or set of solutions for a given problem. There are several types of optimization algorithms, each exhibiting a unique methodology and characteristics.   Gradient-based optimization algorithms, like gradient descent, update the solution iteratively by following the direction of the steepest ascent or descent of the objective function \cite{Ruder.2017}. These algorithms are efficient for convex optimization problems where the objective function is smooth and has a unique global minimum or maximum.
 
 Another type of optimization algorithm is the evolutionary algorithm, which is inspired by biological evolution. Evolutionary algorithms employ mutation, crossover, and selection to progressively shape a population of solutions over time. These techniques are especially applicable to resolving intricate optimization problems characterized by non-linear and non-convex objective functions. By reading a wider range of the search space, evolutionary algorithms can uncover tier-one solutions that draw near to the global optimum, although they may necessitate enhanced computational resources \cite{Back.1993}.
 
@@ -364,7 +393,7 @@ Genetic algorithms are evolutionary algorithms that use genetic operators, like 
 
 In recent years, there has been an increasing interest in metaheuristic optimization algorithms. Examples of such algorithms are ant colony optimization, differential evolution, and harmony search, which draw inspiration from natural phenomena or human behavior. These general-purpose algorithms can be applied to various optimization problems and provide efficient and flexible approaches to finding optimal solutions \cite{Yang.2011}.
 
-Optimization algorithms prove to be formidable resources in uncovering optimal solutions to intricate issues. Be it via gradient-based means, evolutionary algorithms, metaheuristics, or other customized mechanisms, optimization algorithms effectively fine-tune objectives, meet requirements, and refine decision-making processes across a broad spectrum of industries. The algorithm choice relies on the problem's characteristics, the available computational resources, and the desired balance between solution quality and computational efficiency.
+Optimization algorithms prove to be formidable resources for uncovering optimal solutions to intricate issues. Be it via gradient-based means, evolutionary algorithms, metaheuristics, or other customized mechanisms. Optimization algorithms effectively fine-tune objectives, meet requirements, and refine decision-making processes across a broad spectrum of industries. The algorithm choice relies on the problem's characteristics, the available computational resources, and the desired balance between solution quality and computational efficiency.
 
 
 \begin{comment}
