@@ -331,7 +331,7 @@ Another approach for achieving continuous path mode is by using biclothoid fille
 %gemeinsamkeitmnen \newline
 %prozesskräfte \newline
 %was ist wichtig bei fräsen unf WAAM \newline 
-
+\newpage
 \section{Computer-Aided Manufacturing}\label{CAMmain}
 
 CAM is a technology that uses computer software to automate and optimize manufacturing processes. It involves the use of computer systems to control and operate machinery, such as CNC machines, robots, and 3D printers. CAM software can generate tool paths and instructions for machines based on Computer-Aided Design (CAD) models, allowing for precise and efficient production. By reducing manual labor, CAM helps improve productivity, accuracy, and consistency in manufacturing. It is widely used in industries like aerospace, automotive, and electronics to streamline production and reduce costs \cite{Bi.2021}.
@@ -370,7 +370,7 @@ Multi-axis machining is an advanced function of CAM software, ideal for intricat
 
 Simulation is vital in planning and generating paths for this process. CAM software typically includes simulation tools that enable users to visualize and verify the toolpath prior to production. These simulations can detect and resolve potential collisions, interference, or errors that may occur during machining, leading to cost savings and increased safety \cite{Dubovska.2014}. 
 
-Figure \ref{3path} shows three different path trajectories for planar milling operations. Depending on the area of application, different paths can be optimal. 
+Figure \ref{3path} shows three different path trajectories for planar milling operations. Depending on the area of application, different paths can be optimal.  
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=.35]{figures/path.png}}
@@ -437,10 +437,10 @@ Furthermore, ML can be used to solve combinatorial optimization problems. These 
 
 In conclusion, ML techniques offer powerful tools for solving optimization problems. By automating parameter tuning, building surrogate models, learning heuristics, or solving combinatorial optimization problems, ML can enhance the efficiency and accuracy of optimization algorithms. These advancements in ML for optimization problems have the potential to revolutionize industries such as logistics, manufacturing, finance, and many others by enabling faster, more accurate decision-making and resource allocation.
 \end{comment}
-
+\newpage
 \section{Comparison of the State of the Art }%
 
-In the following a literature analysis is performed regarding the optimization of various process parameters. The focus lies on manufacturing systems with redundant degrees of freedom for tasks such as milling and WAAM.
+In the following, a literature analysis is performed regarding the optimization of various process parameters. The focus lies on manufacturing systems with redundant degrees of freedom for tasks such as milling and WAAM. 
 Table \ref{parameter} summarizes the analyzed parameters. 
 
 
@@ -449,11 +449,9 @@ Table \ref{parameter} summarizes the analyzed parameters.
 	\begin{tabular}{|l|l|}
 		\hline
 		\hline
-		Singularity avoidance \cite{Huo.2008b} & Joint accelerations \cite{Gasparetto.2010}\\
-		Joint jerks \cite{Gasparetto.2010} & Extension \\
-		Energy use \cite{Paryanto.2015} & Direction changes \cite{Halbauer.2013}\\
-		Transfer time \cite{Hirzinger.2005} & Precision \cite{Pham.2018}\\
-		Maximum load capacity \cite{Breaz.2017} & Stiffness \cite{Cvitanic.2020}\\
+		Singularity avoidance \cite{Huo.2008} & Joint accelerations \cite{Gasparetto.2010}\\
+		Joint jerks \cite{Gasparetto.2010} & Stiffness \cite{Cvitanic.2020} \\
+		Energy use \cite{Paryanto.2015} & \\
 		\hline
 		\hline
 		
@@ -464,16 +462,57 @@ Table \ref{parameter} summarizes the analyzed parameters.
 	\label{parameter}
 \end{table}
 
+Additional parameters like transfer time, precision and maximum load capacity can also be analyzed but are omitted from the detailed analysis due to the limitation of scope \cite{Breaz.2017, Hirzinger.2005, Pham.2018}. Direction changes in the joint are briefly mentioned in \cite{Halbauer.2013} but not discussed in detail in any other publication.
+
 \subsubsection{Singularity avoidance}
 As mentioned in Chapter \ref{Problem Formulation}, Singularities occur when the robot manipulator loses control or achieves limited mobility due to certain configurations~\cite{Malyshev.2022}. This result in the loss of a DoF or make the system highly sensitive to small changes~\cite{Zhao.2021, Milenkovic.2021}.
+Image \ref{wristsingular} shows how the 5th joint needs to rotate significantly when moving along a straight line in Cartesian space. 
 
-Tasks that involve functional redundancy, as where the manipulator has more DoF than required for the task, the general projection method cannot be applied. Robotic industrial welding processes often have functional redundancy due to the presence of symmetry axes when using generic 6-DoF industrial robots. Different approaches have been proposed to solve functional redundancy, including adding a virtual joint to the manipulator or using the twist decomposition approach (TWA). \cite{Huo.2008b} proposes kinetostatic performance index for evaluating the quality of robotic postures which includes singularity avoidance and joint limit consideration. This method is also transferable to applications like milling. A parameter called "condition number" and "manipulability" is introduced which are used to calculate the "kinetostatic performance index". The presented method can increase the
-distance from singularities and lower the the maximum rotation velocity of the fourth joint. One disadvantage of the proposed method is the manual selection of a parameter. This parameter is responsible for avoiding the joint-limits and minimizing joint velocities. Manual fine-tuning of that parameter is required for optimal performance. 
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.25]{figures/wristsingular.png}}
+	\caption{Passing trough a wrist singularity \cite{meca}}
+	\label{wristsingular}
+\end{figure}
+
+
+
+Tasks that involve functional redundancy, as where the manipulator has more DoF than required for the task, the general projection method cannot be applied. Robotic industrial welding processes often have functional redundancy due to the presence of symmetry axes when using generic 6-DoF industrial robots. Different approaches have been proposed to solve functional redundancy, including adding a virtual joint to the manipulator or using the twist decomposition approach (TWA).
+
+Most of the research is limited to the mathematical analysis of singularities and does not  consider the industrial implementation of the proposed algorithms in a industrial setting. The manipulability measure and maximization of Jacobian minors are commonly used methods to avoid singularities. Other methods such as condition number and singular value decomposition can also be used \cite{Stevenson.}. Another mathematical analysis performs a differentiation between non-recoverable singularities and reconfiguration by self motion into a nonsingular configuration is possible \cite{Bedrossian.2002}
+
+Another approach proposes a kinetostatic performance index for evaluating the quality of robotic postures which includes singularity avoidance and joint limit consideration \cite{Huo.2008}. This method is also transferable to applications like milling. A parameter called "condition number" and "manipulability" is introduced which are used to calculate the "kinetostatic performance index". The presented method can increase the distance from singularities and lower the the maximum rotation velocity of the fourth joint. One disadvantage of the proposed method is the manual selection of a parameter. This parameter is responsible for avoiding the joint-limits and minimizing joint velocities. Manual fine-tuning of that parameter is required for optimal performance. 
+
+Further approaches are introducing roll motion around the tool's symmetry axis to counter the loss of a degree of freedom at the singularity. Paths with varying tool roll or fixed roll angles can be chosen, with considerations for tool elevation changes and mechanical interference. Selecting paths with a fixed roll angle simplifies implementation for existing robot controllers \cite{Milenkovic.2021}.
 
 \subsubsection{Optimization of Joint Accelerations and Jerk}
 
-Jerk and accelerations control is critical because high values can wear out the robot structure and significantly stimulate its resonance frequencies. Vibrations caused by non-smooth trajectories can harm the robot's actuators and produce substantial deviations when completing tasks like trajectory tracking. Furthermore, low-jerk trajectories may be accomplished more quickly and precisely \cite{Gasparetto.2010}.
+Jerk and accelerations control is critical because high values can wear out the robot structure and significantly stimulate its resonance frequencies. Vibrations caused by non-smooth trajectories can harm the robot's actuators and produce substantial deviations when completing tasks like trajectory tracking. Furthermore, low-jerk trajectories can be accomplished more quickly and precisely \cite{Gasparetto.2010}.
+  
+  
+One recently published approach uses a adaptive greedy algorithm to generate the jerkoptimized trajectory with discrete time constraints. The proposed algorithm improves the trajectory in an iterative routine after obtaining an initial trajectory by a graph-search method \cite{Dai.2020}.
+A further method  proposes a sequential quadratic programming method. The results show that optimal time-jerk trajectories which the traveling time constraints can be obtained \cite{Jiang.2017}. 
+  
+Another method is proposing a method of reconstructing the path by a sequence of via-points that define the positions and orientations of the robot's end-effector. Unlike most minimum-jerk trajectory planning techniques, this algorithm does not force an execution time beforehand and takes into account constraints such as upper bounds on velocity, acceleration, and jerk. The algorithm uses a hybrid objective function that balances execution time and smoothness of the trajectory. The output of the algorithm is a vector of time intervals between consecutive via-points that minimizes the objective function \cite{Gasparetto.2010}. 
 
-\cite{Gasparetto.2010} proposes a method that aims to achieve a minimum-jerk trajectory.   
-The resulting path consists of a sequence of via-points that define the positions and orientations of the robot's end-effector. Unlike most minimum-jerk trajectory planning techniques, this algorithm does not force an execution time beforehand and takes into account constraints such as upper bounds on velocity, acceleration, and jerk. The algorithm uses a hybrid objective function that balances execution time and smoothness of the trajectory. The output of the algorithm is a vector of time intervals between consecutive via-points that minimizes the objective function. 
 
+\subsubsection{Optimization of Stiffens}
+
+A recent publication is evaluating the stiffness of a robot using a newly defined performance index, which is maximized to optimize the robot's posture. The problem is solved using a discretization search algorithm, taking into account joint limits, singularity avoidance, and trajectory smoothness. 
+Each joint of the robot is modeled as a linear torsion spring which are transferred into a stiffness matrix. This method is applied to a 6-DoF robot that is used for a milling operation. The goal of this 
+method is to set the redundant angle  such that stiffness is maximized. Simulations and experiments on an industrial robot validate the performance index and optimization algorithm, demonstrating improved machining accuracy using this method \cite{Xiong.2019}.
+
+
+Another approach is working with a dynamic model to reduce the regenerative chatter in a milling operation with a 6-DoF robot. By considering the frequency response function the limiting cutting depth can be determined. The cutting depth is a function of the redundant degree of freedom, which is the rotation around the axis of the spindle. A experimental analysis of o full-slut cut is performed. The results show that a significant reduction in chatter can be achieved by setting the redundant degree of freedom to the optimal value \cite{Wang.2022}.
+
+A further publication performs a comparative study of robot pose optimization using static and dynamic stiffness models. The results suggest that static stiffness model can achieve close to optimal results for pose selection for tasks where the process forces do not approach the resonant frequencies of the robot. It is also discussed  that static and dynamic stiffness-based optimizations cannot reduce the deflections ot the cutting tool to a range smaller of the robot's repeatability \cite{Cvitanic.2020}.
+
+
+\subsubsection{Optimization of Energy use}
+
+It is shown that in a setting where a 6-DoF is used to perform a 5-doF task, energy savings up to 20.8\% can be expected. The proposed method is using the yaw angle as a optimization variable that can be set to a value in a certain range \cite{Boscariol.2020}. 
+
+Another publication analyzes the general energy consumption of a industrial robot. The results show that cooling and the movement speed have the most significant impact on the energy consumption. The axis drives are responsible for 23\% of the energy consumption. Based on this result, it is shown that optimizing the robots movement in regards to optimal cycle time will significantly reduce its energy usage \cite{Uhlmann.2016}. 
+
+
+\subsubsection{Summery}
+Setting the appropriate process parameters directly impacts the performance and efficiency of a production system. By carefully fine-tuning parameters such as singularity avoidance, joint accelerations, and jerks, the system can operate smoothly, minimizing wear structure while achieving precise trajectory tracking. Moreover, optimizing energy usage through the adjustment of parameters related to movement speed not only contributes to environmental sustainability but also leads to economic benefits by reducing long-term operational costs. Additionally, the consideration of parameters like stiffness and joint limits ensures the safety of both the manufacturing system and its operators. The optimization of stiffness, for instance, enables the maximization of the system's performance and the attainment of improved machining accuracy. In conclusion, the careful selection and optimization of process parameters play a significant role in achieving optimal performance, efficiency, safety, and utilization of manufacturing systems, thereby contributing to overall operational success.

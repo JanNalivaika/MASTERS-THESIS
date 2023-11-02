@@ -14,27 +14,30 @@
 \contentsline {subsection}{\numberline {2.1.3}Industrial Robots}{13}{subsection.2.1.3}%
 \contentsline {subsubsection}{Redundancy in robotic systems}{15}{subsubsection*.15}%
 \contentsline {subsubsection}{Continuous-path mode}{17}{subsubsection*.18}%
-\contentsline {section}{\numberline {2.2}Computer-Aided Manufacturing}{20}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}CAM Software}{20}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Path Planning}{21}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Optimization Algorithms}{22}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Comparison of the State of the Art }{23}{section.2.4}%
-\contentsline {subsubsection}{Singularity avoidance}{23}{subsubsection*.26}%
-\contentsline {subsubsection}{Optimization of Joint Accelerations and Jerk}{24}{subsubsection*.27}%
-\contentsline {chapter}{\numberline {3}Methodology}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Selection of Process Parameters}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Optimization of Boundary Conditions}{25}{section.3.2}%
-\contentsline {section}{\numberline {3.3}MAGIC}{25}{section.3.3}%
-\contentsline {section}{\numberline {3.4}MAGIC}{25}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{27}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{27}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{27}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{29}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{29}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{29}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{31}{chapter.6}%
-\contentsline {chapter}{Bibliography}{37}{chapter*.30}%
+\contentsline {section}{\numberline {2.2}Computer-Aided Manufacturing}{21}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}CAM Software}{21}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Path Planning}{22}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Optimization Algorithms}{23}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Comparison of the State of the Art }{25}{section.2.4}%
+\contentsline {subsubsection}{Singularity avoidance}{25}{subsubsection*.26}%
+\contentsline {subsubsection}{Optimization of Joint Accelerations and Jerk}{26}{subsubsection*.28}%
+\contentsline {subsubsection}{Optimization of Stiffens}{26}{subsubsection*.29}%
+\contentsline {subsubsection}{Optimization of Energy use}{27}{subsubsection*.30}%
+\contentsline {subsubsection}{Summery}{27}{subsubsection*.31}%
+\contentsline {chapter}{\numberline {3}Methodology}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Selection of Process Parameters}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Optimization of Boundary Conditions}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}MAGIC}{29}{section.3.3}%
+\contentsline {section}{\numberline {3.4}MAGIC}{29}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{31}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{33}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Appendix}{35}{chapter.6}%
+\contentsline {chapter}{Bibliography}{41}{chapter*.34}%
 \contentsfinish 
