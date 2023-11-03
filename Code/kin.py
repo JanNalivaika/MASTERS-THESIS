@@ -3,10 +3,12 @@ from random import random
 import matplotlib.pyplot as plt
 
 def forward_kinematics(theta):
-    # Define DH parameters
-    d = [1, 0, 0, 1, 0, 1]  # link offsets
-    a = [0, 1, 1, 0, 0, 0]  # link lengths
-    alpha = [np.pi / 2, 0, 0, np.pi / 2, -np.pi / 2, 0]  # link twists
+
+
+    # DH parameters
+    a = [180, 600, 120, 0, 0, 0]
+    alpha = [0.5 * np.pi, 0, 0.5 * np.pi, 0.5 * np.pi, 0.5 * np.pi, 0]
+    d = [400, 0, 0, 620, 0, 115]
 
     # Create transformation matrices for each joint
     T = []
@@ -34,7 +36,7 @@ def forward_kinematics(theta):
 
     return position
 
-def acc_calc(positions):
+def acc_calc(positions, time):
     # Differentiate position data twice to get acceleration data
     position_x = np.asarray(positions)[:,0]
     position_y = np.asarray(positions)[:,1]
@@ -78,65 +80,69 @@ def calculate_total_distance(coordinates):
     return total_distance
 
 
+for tests in range(100):
+    pos = []
+    ang = []
+    all_pos = np.load(f"{tests}_angles.npy")
 
-pos = []
-ang = []
-time = np.arange(0, 15, 0.02)
-# Calculate forward kinematics
-for x in time:
-    # Example joint angles (in radians)
+    time = np.linspace(0, 2.0, num=len(all_pos))
+    # Calculate forward kinematics
+    for x in range(len(all_pos)):
+        # Example joint angles (in radians)
 
-    theta = [np.cos(x)*np.sin(x**2-x), np.sin(x * 2), np.cos(x), 3 * np.cos(x), np.sin(x) * np.cos(x), np.sin(x) * np.sin(x)]
-    ang.append(theta)
-    end_effector_pose = forward_kinematics(theta)
-    pos.append(end_effector_pose)
-
-
-
-
-
-acc = acc_calc(pos)
-
-#time = np.array(range(len(acc)))  # Time value
-jerk = np.gradient(np.gradient(acc, time), time)
-
-dirchange = count_direction_changes(np.asarray(ang)[:,0])
-dist = calculate_total_distance(pos)
-
-total_changes = 0
-for x in range(6):
-    total_changes += count_direction_changes(np.asarray(ang)[:, x])
+        #theta = [np.cos(x)*np.sin(x**2-x), np.sin(x * 2), np.cos(x), 3 * np.cos(x), np.sin(x) * np.cos(x), np.sin(x) * np.sin(x)]
+        theta = all_pos[x]
+        #theta = np.degrees(theta)
+        ang.append(list(theta))
+        end_effector_pose = forward_kinematics(theta)
+        pos.append(end_effector_pose)
 
 
-# Print the resulting transformation matrix
-#print("End Effector Pose:")
-#print(pos)
 
 
-# Create a figure with three subplots stacked vertically
-fig, (ax1, ax2, ax3, ax4) = plt.subplots(4, 1, figsize=(8, 10), sharex=True)
-plt.suptitle(f"Changes in Joint 1: {dirchange}, Total changes = {total_changes},  Distance = {dist}")
-# Plot the first time series on the top subplot
-ax1.plot(np.asarray(ang)[:,0])
-ax1.set_ylabel('Angle 1')
 
-# Plot the second time series on the middle subplot
-ax2.plot(np.asarray(pos)[:,0])
-ax2.set_ylabel('X pos')
+    acc = acc_calc(pos,time)
 
-# Plot the third time series on the bottom subplot
-ax3.plot(np.asarray(acc))
-ax3.set_ylabel('Acc')
+    #time = np.array(range(len(acc)))  # Time value
+    jerk = np.gradient(np.gradient(acc, time), time)
 
-ax4.plot(np.asarray(jerk))
-ax4.set_ylabel('Jerk')
+    dirchange = count_direction_changes(np.asarray(ang)[:,0])
+    dist = calculate_total_distance(pos)
 
-# Set the x-axis label for the bottom subplot
-ax3.set_xlabel('Time')
-
-# Adjust the spacing between subplots
-plt.tight_layout()
+    total_changes = 0
+    for x in range(6):
+        total_changes += count_direction_changes(np.asarray(ang)[:, x])
 
 
-# Show the plot
-plt.show()
+    # Print the resulting transformation matrix
+    #print("End Effector Pose:")
+    #print(pos)
+
+
+    # Create a figure with three subplots stacked vertically
+    fig, (ax1, ax2, ax3, ax4) = plt.subplots(4, 1, figsize=(8, 10), sharex=True)
+    plt.suptitle(f"Changes in Joint 1: {dirchange}, Total changes = {total_changes},  Distance = {dist}")
+    # Plot the first time series on the top subplot
+    ax1.plot(np.asarray(ang)[:,0])
+    ax1.set_ylabel('Angle 1')
+
+    # Plot the second time series on the middle subplot
+    ax2.plot(np.asarray(pos)[:,0])
+    ax2.set_ylabel('X pos')
+
+    # Plot the third time series on the bottom subplot
+    ax3.plot(np.asarray(acc))
+    ax3.set_ylabel('Acc')
+
+    ax4.plot(np.asarray(jerk))
+    ax4.set_ylabel('Jerk')
+
+    # Set the x-axis label for the bottom subplot
+    ax3.set_xlabel('Time')
+
+    # Adjust the spacing between subplots
+    plt.tight_layout()
+
+
+    # Show the plot
+    plt.show()
