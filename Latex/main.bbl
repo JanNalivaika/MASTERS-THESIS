@@ -22,7 +22,6 @@
     \entry{5ax}{misc}{}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labeldatesource}{nodate}
       \field{labeltitlesource}{title}
       \field{abstract}{Machining where a workpiece is processed by a rotating tool with computer-controlled movement usually in 5 or more axes.}
       \field{title}{5-axis milling: Last access: 30.10.2023}
@@ -56,16 +55,14 @@
            given={Syed\bibnamedelima Hammad},
            giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
       }
-      \strng{namehash}{2ecce7694682ab132a43ac23e3d4b3bf}
+      \strng{namehash}{cc9c04431002f086e4053c57bb80b162}
       \strng{fullhash}{cc9c04431002f086e4053c57bb80b162}
       \strng{bibnamehash}{cc9c04431002f086e4053c57bb80b162}
       \strng{authorbibnamehash}{cc9c04431002f086e4053c57bb80b162}
-      \strng{authornamehash}{2ecce7694682ab132a43ac23e3d4b3bf}
+      \strng{authornamehash}{cc9c04431002f086e4053c57bb80b162}
       \strng{authorfullhash}{cc9c04431002f086e4053c57bb80b162}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Additive manufacturing is a recent trend in production processes owing to its many benefits. It can be defined as the process of producing parts through the deposition of material in a layer-by-lay...}
@@ -104,16 +101,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{0f9ec7e689f76a49b33fe5a49bb23ace}
+      \strng{namehash}{3f12afede3b73c37a62d5fc515b916a7}
       \strng{fullhash}{3f12afede3b73c37a62d5fc515b916a7}
       \strng{bibnamehash}{3f12afede3b73c37a62d5fc515b916a7}
       \strng{authorbibnamehash}{3f12afede3b73c37a62d5fc515b916a7}
-      \strng{authornamehash}{0f9ec7e689f76a49b33fe5a49bb23ace}
+      \strng{authornamehash}{3f12afede3b73c37a62d5fc515b916a7}
       \strng{authorfullhash}{3f12afede3b73c37a62d5fc515b916a7}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2019 5th Conference on Knowledge Based Engineering and Innovation (KBEI)}
@@ -144,16 +139,14 @@
            given={Raisuddin},
            giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{233019b0298e20c39f6681336900fcde}
+      \strng{namehash}{90cbb7a9e874f42b6123457735142297}
       \strng{fullhash}{90cbb7a9e874f42b6123457735142297}
       \strng{bibnamehash}{90cbb7a9e874f42b6123457735142297}
       \strng{authorbibnamehash}{90cbb7a9e874f42b6123457735142297}
-      \strng{authornamehash}{233019b0298e20c39f6681336900fcde}
+      \strng{authornamehash}{90cbb7a9e874f42b6123457735142297}
       \strng{authorfullhash}{90cbb7a9e874f42b6123457735142297}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1877-7058}
@@ -200,16 +193,14 @@
            given={Reza},
            giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{94fdc7418a5989d0fdcd9791233aa266}
+      \strng{namehash}{cc9ebca48c5f1514888234ae5ffc99e5}
       \strng{fullhash}{cc9ebca48c5f1514888234ae5ffc99e5}
       \strng{bibnamehash}{cc9ebca48c5f1514888234ae5ffc99e5}
       \strng{authorbibnamehash}{cc9ebca48c5f1514888234ae5ffc99e5}
-      \strng{authornamehash}{94fdc7418a5989d0fdcd9791233aa266}
+      \strng{authornamehash}{cc9ebca48c5f1514888234ae5ffc99e5}
       \strng{authorfullhash}{cc9ebca48c5f1514888234ae5ffc99e5}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Design and Modeling of 9 Degrees of Freedom Redundant Robotic Manipulator}
@@ -237,7 +228,6 @@
     \entry{3D}{misc}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labeldatesource}{nodate}
       \field{labeltitlesource}{title}
       \field{abstract}{AnkerMake M5C 3D-Drucker + 2kg Filament - Mühelose Steuerung von mehreren Geräten aus Anpassbare {"}One-Click{"}-Taste 500mm/s Hochgeschwindigkeitsdruck[1] 35mm$^3$/s Extrusionsfluss 0,1mm Druckpräzision[2] 7$\times$7 Auto-Nivellierung Mühelose Einrichtung in nur 15 Minuten Struktur aus Aluminiumlegierung 220$\times$220$\times$220mm$^3$ Druckvolumen}
       \field{title}{AnkerMake M5C 3D-Drucker + 2kg Filament: Last access: 30.10.2023}
@@ -269,8 +259,6 @@
       \strng{authorfullhash}{723a1a667c728310c90897dfffcf7c1e}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents an on-line chatter detection method in milling using drive motor current commands supplied by the CNC system in real-time. The met$\ldots$}
@@ -307,8 +295,6 @@
       \strng{authorfullhash}{8c8a21b012b156aa7db82008f63d4570}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The use of additive manufacturing technologies in different industries has increased substantially during the past years. Henry Ford introduced the mo$\ldots$}
@@ -351,16 +337,14 @@
            given={Ahmet},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{c02c798569866a2a57482f2cee714e78}
+      \strng{namehash}{b1f672c9f862679a70ddddaa8c4a9a37}
       \strng{fullhash}{b1f672c9f862679a70ddddaa8c4a9a37}
       \strng{bibnamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
       \strng{authorbibnamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
-      \strng{authornamehash}{c02c798569866a2a57482f2cee714e78}
+      \strng{authornamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
       \strng{authorfullhash}{b1f672c9f862679a70ddddaa8c4a9a37}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents an optimization technique to develop minimum energy consumption trajectories for redundant/hyper-redundant manipulators with pre-d$\ldots$}
@@ -403,8 +387,6 @@
       \strng{authorfullhash}{0894e01ab73f8d3b41f6fb8fa497bbf0}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1063-6560}
@@ -441,8 +423,6 @@
       \strng{authorfullhash}{14021f8564f7cc82b9d61c8b827e564b}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The field of additive manufacturing is growing dynamically as the interest is persisting from manufacturing sector, including other sectors as well. Conceptually, additive manufacturing is a way to build parts without using any part-specific tooling or dies from the computer-aided design (CAD) file of the part. Second edition of Additive Manufacturing highlights the latest advancements in the field, taking an application oriented approach. It includes new material on traditional polymer based rapid prototyping technologies, additive manufacturing of metals and alloys including related design issues. Each chapter comes with suggested reading, questions for instructors and PowerPoint slides.}
@@ -473,8 +453,6 @@
       \strng{authorfullhash}{298cbea50f0726ed213e1fc7304830d6}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings, IEEE International Conference on Robotics and Automation}
@@ -506,8 +484,6 @@
       \strng{authorfullhash}{93c8b1c5accaeea2d4c801365e52e2ba}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In a manufacturing system, manufacturing processes are the operations through which raw materials are transformed into final products. Manufacturing processes use machines, tools, and labors to implement the transformation of materials. Design of manufacturing...}
@@ -558,8 +534,6 @@
       \strng{authorfullhash}{a6f294fd01cdd407752db15640c48140}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{{<}b{>}Broad coverage of digital product creation, from design to manufacture and process optimization{<}/b{>}{<}/p{>} This book addresses the need to provide up-to-date coverage of current CAD/CAM usage and implementation. It covers, in one source, the entire design-to-manufacture process, reflecting the industry trend to further integrate CAD and CAM into a single, unified process. It also updates the computer aided design theory and methods in modern manufacturing systems and examines the most advanced computer-aided tools used in digital manufacturing.{<}/p{>} {<}i{>}Computer Aided Design and Manufacturing {<}/i{>}consists of three parts. The first part on Computer Aided Design (CAD) offers the chapters on Geometric Modelling; Knowledge Based Engineering; Platforming Technology; Reverse Engineering; and Motion Simulation. The second part on Computer Aided Manufacturing (CAM) covers Group Technology and Cellular Manufacturing; Computer Aided Fixture Design; Computer Aided Manufacturing; Simulation of Manufacturing Processes; and Computer Aided Design of Tools, Dies and Molds (TDM). The final part includes the chapters on Digital Manufacturing; Additive Manufacturing; and Design for Sustainability. The book is also featured for{<}/p{>} {<}ul{>} {<}li{>}being uniquely structured to classify and align engineering disciplines and computer aided technologies from the perspective of the design needs in whole product life cycles,{<}/li{>} {<}li{>}utilizing a comprehensive Solidworks package (add-ins, toolbox, and library) to showcase the most critical functionalities of modern computer aided tools, and{<}/li{>} {<}li{>}presenting real-world design projects and case studies so that readers can gain CAD and CAM problem-solving skills upon the CAD/CAM theory.{<}/li{>} {<}/ul{>} {<}i{>}Computer Aided Design and Manufacturing {<}/i{>}is an ideal textbook for undergraduate and graduate students in mechanical engineering, manufacturing engineering, and industrial engineering. It can also be used as a technical reference for researchers and engineers in mechanical and manufacturing engineering or computer-aided technologies.{<}/p{>}}
@@ -590,8 +564,6 @@
       \strng{authorfullhash}{d699cab32d6a8acb7dbb7ba3d2f00f09}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{1. The future of manufacturing organisations is being transformed globally by the development of a more digitalised environment, where value chains are connected and production systems are increasi...}
@@ -630,8 +602,6 @@
       \strng{authorfullhash}{17a114522a9a892d516c37aaa1200bfa}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Dexterous manipulation is one of the primary goals in robotics. Robots with this capability could sort and package objects, chop vegetables, and fold clothes. As robots come to work side by side with humans, they must also become human-aware. Over the past decade, research has made strides toward these goals. Progress has come from advances in visual and haptic perception and in mechanics in the form of soft actuators that offer a natural compliance. Most notably, immense progress in machine learning has been leveraged to encapsulate models of uncertainty and to support improvements in adaptive and robust control. Open questions remain in terms of how to enable robots to deal with the most unpredictable agent of all, the human.}
@@ -666,8 +636,6 @@
       \strng{authorfullhash}{c7032cac6f721f28d0a620af7c4c0981}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Delta parallel robot-the story of success}
@@ -705,16 +673,14 @@
            given={Alberto},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{3888aa627a18bea58cd6e66c0457ee6f}
+      \strng{namehash}{fbfdfcef58711df33d90b84cd4b571bb}
       \strng{fullhash}{fbfdfcef58711df33d90b84cd4b571bb}
       \strng{bibnamehash}{fbfdfcef58711df33d90b84cd4b571bb}
       \strng{authorbibnamehash}{fbfdfcef58711df33d90b84cd4b571bb}
-      \strng{authornamehash}{3888aa627a18bea58cd6e66c0457ee6f}
+      \strng{authornamehash}{fbfdfcef58711df33d90b84cd4b571bb}
       \strng{authorfullhash}{fbfdfcef58711df33d90b84cd4b571bb}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Sciences}
@@ -755,8 +721,6 @@
       \strng{authorfullhash}{d048c80dd29fec0fb2aeba1344688399}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This work proposes a method to increase the energy efficiency of robotic cells by exploiting redundancy. The test case proposed for validation is a system typically used for fast pick and placements operations: a three degrees of freedom SCARA robot integrated with a...}
@@ -800,16 +764,14 @@
            given={Amit},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{cf94d10d23cb6f37509252904bb2c739}
+      \strng{namehash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
       \strng{fullhash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
       \strng{bibnamehash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
       \strng{authorbibnamehash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
-      \strng{authornamehash}{cf94d10d23cb6f37509252904bb2c739}
+      \strng{authornamehash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
       \strng{authorfullhash}{5ff8bee12739060d8c56bcf6e4ee3e3d}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Biomaterials are used to engineer functional restoration of different tissues to improve human health and the quality of life. Biomaterials can be natural or synthetic. Additive manufacturing (AM) is a novel materials processing approach to create parts or prototypes layer-by-layer directly from a computer aided design (CAD) file. The combination of additive manufacturing and biomaterials is very promising, especially towards patient specific clinical applications. Challenges of AM technology along with related materials issues need to be realized to make this approach feasible for broader clinical needs. This approach is already making a significant gain towards numerous commercial biomedical devices. In this review, key additive manufacturing methods are first introduced followed by AM of different materials, and finally applications of AM in various treatment options. Realization of critical challenges and technical issues for different AM methods and biomaterial selections based on clinical needs are vital. Multidisciplinary research will be necessary to face those challenges and fully realize the potential of AM in the coming days. Biomaterials are used to engineer functional restoration of different tissues to improve human health and the quality of life. Biomaterials can be natural or synthetic. Additive manufacturing (AM) is a novel materials processing approach to create parts or prototypes layer-by-layer directly from a computer aided design (CAD) file. The combination of additive manufacturing and biomaterials is very promising, especially towards patient specific clinical applications. Challenges of AM technology along with related materials issues need to be realized to make this approach feasible for broader clinical needs. This approach is already making a significant gain towards numerous commercial biomedical devices. In this review, key additive manufacturing methods are first introduced followed by AM of different materials, and finally applications of AM in various treatment options. Realization of critical challenges and technical issues for different AM methods and biomaterial selections based on clinical needs are vital. Multidisciplinary research will be necessary to face those challenges and fully realize the potential of AM in the coming days. // Biomaterials are used to engineer functional restoration of different tissues to improve human health and the quality of life. Biomaterials can be natural or synthetic. Additive manufacturing (AM) is a novel materials processing approach to create parts or prototypes layer-by-layer directly from a computer aided design (CAD) file. The combination of additive manufacturing and biomaterials is very promising, especially towards patient specific clinical applications. Challenges of AM technology along with related materials issues need to be realized to make this approach feasible for broader clinical needs. This approach is already making a significant gain towards numerous commercial biomedical devices. In this review, key additive manufacturing methods are first introduced followed by AM of different materials, and finally applications of AM in various treatment options. Realization of critical challenges and technical issues for different AM methods and biomaterial selections based on clinical needs are vital. Multidisciplinary research will be necessary to face those challenges and fully realize the potential of AM in the coming days.}
@@ -845,8 +807,6 @@
       \strng{authorfullhash}{3afbaab16a5a0049cd269185a6432310}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Real--time collision avoidance algorithm for robotic manipulators - Author: Paul Bosscher, Daniel Hedman}
@@ -890,16 +850,14 @@
            given={B.},
            giveni={B\bibinitperiod}}}%
       }
-      \strng{namehash}{c93179ea12cb50f1d67fee167cd89826}
+      \strng{namehash}{ac90faadb1a00c65b63dc169bc661c49}
       \strng{fullhash}{ac90faadb1a00c65b63dc169bc661c49}
       \strng{bibnamehash}{ac90faadb1a00c65b63dc169bc661c49}
       \strng{authorbibnamehash}{ac90faadb1a00c65b63dc169bc661c49}
-      \strng{authornamehash}{c93179ea12cb50f1d67fee167cd89826}
+      \strng{authornamehash}{ac90faadb1a00c65b63dc169bc661c49}
       \strng{authorfullhash}{ac90faadb1a00c65b63dc169bc661c49}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0890-6955}
@@ -932,16 +890,14 @@
            given={Sever\bibnamedelima Gabriel},
            giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
       }
-      \strng{namehash}{4696cd8ab7e9109da28d6a751e5b5f57}
+      \strng{namehash}{ba565516a419cd0c457ce26f96f63bd9}
       \strng{fullhash}{ba565516a419cd0c457ce26f96f63bd9}
       \strng{bibnamehash}{ba565516a419cd0c457ce26f96f63bd9}
       \strng{authorbibnamehash}{ba565516a419cd0c457ce26f96f63bd9}
-      \strng{authornamehash}{4696cd8ab7e9109da28d6a751e5b5f57}
+      \strng{authornamehash}{ba565516a419cd0c457ce26f96f63bd9}
       \strng{authorfullhash}{ba565516a419cd0c457ce26f96f63bd9}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industrial robots are usually used for pick-and-place applications, which require only point-to-point motion control. However, the recent developments$\ldots$}
@@ -983,8 +939,6 @@
       \strng{authorfullhash}{d6ca83a335d93d5d8b20d67198eeaf48}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Complex machining technologies such as simultaneous five-axis milling become increasingly significant for today's production industry. Although most e$\ldots$}
@@ -1029,16 +983,14 @@
            given={Kelly\bibnamedelima M.},
            giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
-      \strng{namehash}{43c945ac2f8af711eaf80d611e802824}
+      \strng{namehash}{f0891075dd896e78117f9ed9f0048cbe}
       \strng{fullhash}{f0891075dd896e78117f9ed9f0048cbe}
       \strng{bibnamehash}{f0891075dd896e78117f9ed9f0048cbe}
       \strng{authorbibnamehash}{f0891075dd896e78117f9ed9f0048cbe}
-      \strng{authornamehash}{43c945ac2f8af711eaf80d611e802824}
+      \strng{authornamehash}{f0891075dd896e78117f9ed9f0048cbe}
       \strng{authorfullhash}{f0891075dd896e78117f9ed9f0048cbe}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Additive manufacturing (AM) has revolutionized the way industries manufacture and prototype products. A significant drawback that prevents 3D printing$\ldots$}
@@ -1085,16 +1037,14 @@
            family={{López de Lacalle, Luis Norberto}},
            familyi={L\bibinitperiod}}}%
       }
-      \strng{namehash}{0d6d74827fda53cdd2e55eebef9b7c73}
+      \strng{namehash}{bffa1a85f346d2c224139c9148544090}
       \strng{fullhash}{bffa1a85f346d2c224139c9148544090}
       \strng{bibnamehash}{bffa1a85f346d2c224139c9148544090}
       \strng{authorbibnamehash}{bffa1a85f346d2c224139c9148544090}
-      \strng{authornamehash}{0d6d74827fda53cdd2e55eebef9b7c73}
+      \strng{authornamehash}{bffa1a85f346d2c224139c9148544090}
       \strng{authorfullhash}{bffa1a85f346d2c224139c9148544090}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A new method for 5-axis flank computer numerically controlled (CNC) machining is proposed. A set of tappered ball-end-mill tools (aka conical milling tools) is given as the input and the flank milling paths within user-defined tolerance are returned. Thespace of lines that admit tangential motion of an associated truncated cone along a general, doubly curved, free-form surface is explored. These lines serve as discrete positions of conical axes in 3D space. Spline surface fitting is used to generate a ruled surface that represents a single continuous sweep of a rigid conical milling tool. An optimization-based approach is then applied to globally minimize the error between the design surface and the conical envelope. The milling simulations are validated with physical experiments on two benchmark industrial datasets, reducing significantly the execution times while preserving or even reducing the milling error when compared to the state-of-the-art industrial software.}
@@ -1141,16 +1091,14 @@
            given={Sun-Han},
            giveni={S\bibinithyphendelim H\bibinitperiod}}}%
       }
-      \strng{namehash}{c38c6e9988b9792602757052f341045e}
+      \strng{namehash}{7202dd683adbf52ae463bfecd6a7f600}
       \strng{fullhash}{7202dd683adbf52ae463bfecd6a7f600}
       \strng{bibnamehash}{7202dd683adbf52ae463bfecd6a7f600}
       \strng{authorbibnamehash}{7202dd683adbf52ae463bfecd6a7f600}
-      \strng{authornamehash}{c38c6e9988b9792602757052f341045e}
+      \strng{authornamehash}{7202dd683adbf52ae463bfecd6a7f600}
       \strng{authorfullhash}{7202dd683adbf52ae463bfecd6a7f600}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Robot kinematics calibration is of great significance for improving robot absolute pose accuracy, which can be divided into modelbased and non-parametric kinematics calibration. For model-based kinematics calibration, kinematics calibration modeling, pose measurement of end-effector, kinematics parameters calibration and error compensation are systematically analyzed. And with the increasing demand for autonomy, the autonomous kinematics calibration is introduced. On the other hand, research status of nonparametric kinematics calibration is elaborated, the advantages and disadvantage of which are discussed respectively. On the basis, comprehensive and organized description and summarization of the three kinds of calibrations are given. Overall, aiming at robot kinematics calibration, existing achievements are summarized, a typical calibration process is carried out and calibration precautions are detailed, then calibration results of various methods are compared and analyzed. Finally, existing problems in kinematics calibration are analyzed and development prospects are presented.}
@@ -1189,8 +1137,6 @@
       \strng{authorfullhash}{b64610ea8e0d2049016d9d9f490951cf}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this buyer's guide we cover each type of CNC machine like mills, lathes, plasma cutters, and more and discuss their uses, prices, and must-have features}
@@ -1226,16 +1172,14 @@
            given={Jialuo},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{417d37ed9ff4dd4e57d50c20ab83ae5e}
+      \strng{namehash}{c00fa8eaac4e7de096b466f41f86e701}
       \strng{fullhash}{c00fa8eaac4e7de096b466f41f86e701}
       \strng{bibnamehash}{c00fa8eaac4e7de096b466f41f86e701}
       \strng{authorbibnamehash}{c00fa8eaac4e7de096b466f41f86e701}
-      \strng{authornamehash}{417d37ed9ff4dd4e57d50c20ab83ae5e}
+      \strng{authornamehash}{c00fa8eaac4e7de096b466f41f86e701}
       \strng{authorfullhash}{c00fa8eaac4e7de096b466f41f86e701}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The weld bead geometry and the porosity of AA2219-T851 high strength aluminum alloy welds with ER2319 wire produced by different cold metal transfer ($\ldots$}
@@ -1260,7 +1204,6 @@
     \entry{sinumericmanual}{misc}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labeldatesource}{nodate}
       \field{labeltitlesource}{title}
       \field{title}{Continuous-path mode (G64, G641, G642, G643, G644, G645, ADIS, ADISPOS) - SINUMERIK $\ldots$ - ID: 28705635 - Industry Support Siemens: Last Access: 24/10/2023}
       \verb{urlraw}
@@ -1298,16 +1241,14 @@
            given={S.\bibnamedelimi T.},
            giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
       }
-      \strng{namehash}{56cdb8027a3f5b769309c4a5277d14f0}
+      \strng{namehash}{acdd67a5a27090f31f58eccf7f7bd705}
       \strng{fullhash}{acdd67a5a27090f31f58eccf7f7bd705}
       \strng{bibnamehash}{acdd67a5a27090f31f58eccf7f7bd705}
       \strng{authorbibnamehash}{acdd67a5a27090f31f58eccf7f7bd705}
-      \strng{authornamehash}{56cdb8027a3f5b769309c4a5277d14f0}
+      \strng{authornamehash}{acdd67a5a27090f31f58eccf7f7bd705}
       \strng{authorfullhash}{acdd67a5a27090f31f58eccf7f7bd705}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Wire Arc Additive Manufacturing (WAAM) is attracting significant attention in industry and academia due to its ability to capture the benefits of addi$\ldots$}
@@ -1349,16 +1290,14 @@
            given={Shreyes\bibnamedelima N.},
            giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
       }
-      \strng{namehash}{8be65f0839fa082b9cfcbe86cb72d77d}
+      \strng{namehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
       \strng{fullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
       \strng{bibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
       \strng{authorbibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
-      \strng{authornamehash}{8be65f0839fa082b9cfcbe86cb72d77d}
+      \strng{authornamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
       \strng{authorfullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industrial robots are typically not used for milling of hard materials due to their low stiffness compared to traditional machine tools. Due to millin$\ldots$}
@@ -1407,16 +1346,14 @@
            given={Charlie\bibnamedelimb C.\bibnamedelimi L.},
            giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
-      \strng{namehash}{5b69a50dd5acfde6d2455e2a4c389ac3}
+      \strng{namehash}{c671eed5abbc8a9f2821039c27c4a793}
       \strng{fullhash}{c671eed5abbc8a9f2821039c27c4a793}
       \strng{bibnamehash}{c671eed5abbc8a9f2821039c27c4a793}
       \strng{authorbibnamehash}{c671eed5abbc8a9f2821039c27c4a793}
-      \strng{authornamehash}{5b69a50dd5acfde6d2455e2a4c389ac3}
+      \strng{authornamehash}{c671eed5abbc8a9f2821039c27c4a793}
       \strng{authorfullhash}{c671eed5abbc8a9f2821039c27c4a793}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1545-5955}
@@ -1452,8 +1389,6 @@
       \strng{authorfullhash}{eda2d8561a74c2b62d900bb5a4903bb0}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A complete mathematical model of SCARA robot (Serpent 1) is developed including servo actuator dynamics and presented together with dynamic simulation$\ldots$}
@@ -1501,16 +1436,14 @@
            given={Melik},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{6722977d5da207c1f484ec26e479cb32}
+      \strng{namehash}{3d064cce84551d56eeab7a21964f59ed}
       \strng{fullhash}{3d064cce84551d56eeab7a21964f59ed}
       \strng{bibnamehash}{3d064cce84551d56eeab7a21964f59ed}
       \strng{authorbibnamehash}{3d064cce84551d56eeab7a21964f59ed}
-      \strng{authornamehash}{6722977d5da207c1f484ec26e479cb32}
+      \strng{authornamehash}{3d064cce84551d56eeab7a21964f59ed}
       \strng{authorfullhash}{3d064cce84551d56eeab7a21964f59ed}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The latest industrial revolution, Industry 4.0, is encouraging the integration of intelligent production systems and advanced information technologies$\ldots$}
@@ -1540,7 +1473,6 @@
       }
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labeldatesource}{nodate}
       \field{labeltitlesource}{title}
       \field{title}{DIN EN ISO/ASTM 52900:2022-03, Additive Fertigung{\_}- Grundlagen{\_}- Terminologie (ISO/ASTM 52900:2021); Deutsche Fassung EN{\_}ISO/ASTM 52900:2021}
       \verb{doi}
@@ -1570,16 +1502,14 @@
            given={Huijun},
            giveni={H\bibinitperiod}}}%
       }
-      \strng{namehash}{9dfe31957bae9109ae3b15fff5969d15}
+      \strng{namehash}{aafd04ab6b37bd187b72b7b014edabae}
       \strng{fullhash}{aafd04ab6b37bd187b72b7b014edabae}
       \strng{bibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
       \strng{authorbibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
-      \strng{authornamehash}{9dfe31957bae9109ae3b15fff5969d15}
+      \strng{authornamehash}{aafd04ab6b37bd187b72b7b014edabae}
       \strng{authorfullhash}{aafd04ab6b37bd187b72b7b014edabae}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Wire-feed additive manufacturing (AM) is a promising alternative to traditional subtractive manufacturing for fabricating large expensive metal components with complex geometry. The current research focus on wire-feed AM is trying to produce complex-shaped functional metal components with good geometry accuracy, surface finish and material property to meet the demanding requirements from aerospace, automotive and rapid tooling industry. Wire-feed AM processes generally involve high residual stresses and distortions due to the excessive heat input and high deposition rate. The influences of process conditions, such as energy input, wire-feed rate, welding speed, deposition pattern and deposition sequences, etc., on thermal history and resultant residual stresses of AM-processed components needs to be further understood. In addition, poor accuracy and surface finish of the process limit the applications of wire-feed AM technology. In this paper, after an introduction of various wire-feed AM technologies and its characteristics, an in depth review of various process aspects of wire-feed AM, including quality and accuracy of wire-feed AM processed components, will be presented. The overall objective is to identify the current challenges for wire-feed AM as well as point out the future research direction.}
@@ -1625,16 +1555,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{f3b9ce3511e131902ba9d06d2b6c8e75}
+      \strng{namehash}{230fad4674b711abc88a74178775c6d3}
       \strng{fullhash}{230fad4674b711abc88a74178775c6d3}
       \strng{bibnamehash}{230fad4674b711abc88a74178775c6d3}
       \strng{authorbibnamehash}{230fad4674b711abc88a74178775c6d3}
-      \strng{authornamehash}{f3b9ce3511e131902ba9d06d2b6c8e75}
+      \strng{authornamehash}{230fad4674b711abc88a74178775c6d3}
       \strng{authorfullhash}{230fad4674b711abc88a74178775c6d3}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2016 IEEE International Conference on Advanced Intelligent Mechatronics (AIM)}
@@ -1660,8 +1588,6 @@
       \strng{authorfullhash}{7534398e903c1d4461a982bd1cc72ae1}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{J-STAGE}
@@ -1704,16 +1630,14 @@
            given={Jozef},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{9edc365ddcfeef384f45f2664fff7221}
+      \strng{namehash}{5ff879be89ff3c14aac009d569f10950}
       \strng{fullhash}{5ff879be89ff3c14aac009d569f10950}
       \strng{bibnamehash}{5ff879be89ff3c14aac009d569f10950}
       \strng{authorbibnamehash}{5ff879be89ff3c14aac009d569f10950}
-      \strng{authornamehash}{9edc365ddcfeef384f45f2664fff7221}
+      \strng{authornamehash}{5ff879be89ff3c14aac009d569f10950}
       \strng{authorfullhash}{5ff879be89ff3c14aac009d569f10950}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents improved methodology of the virtual simulation of turning and milling technological process of the selected components in the grap$\ldots$}
@@ -1750,8 +1674,6 @@
       \strng{authorfullhash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper is focused on investigating the joints jerk of industrial serial redundant manipulators with 6 degrees of freedom (6-DOF) under the variation of the end-effector point (EEP) trajectory in the workspace. The EEP trajectories are initially built in the basic planes because of their simplicity, verification and experimentation are smooth, and most of the actual welded structures are performed on these basic planes. The jerk is determined by solving the inverse kinematics problem of the redundant system. This problem is solved based on the algorithm which is used for adjusting the increments of the generalized coordinate vector (AGV). The efficiency of this algorithm is shown through the error between a given trajectory and the recalculated trajectory through the forward kinematics problem. The result of this study allows us to evaluate the effect of the change of the trajectory on the kinematics characteristics of the robot in general and the jerk of the joints in particular. On the other hand, these results can be used as the basis for planning the EEP trajectory for redundant robots, developing algorithms to reduce joint jerky, increase the life of robot systems, and improve the accuracy of the redundant robot movement.}
@@ -1794,16 +1716,14 @@
            given={Cleber},
            giveni={C\bibinitperiod}}}%
       }
-      \strng{namehash}{4672b3e58131284a3e6714fe9d4c276b}
+      \strng{namehash}{d46aaec18c55208e4ebcc7a89159c774}
       \strng{fullhash}{d46aaec18c55208e4ebcc7a89159c774}
       \strng{bibnamehash}{d46aaec18c55208e4ebcc7a89159c774}
       \strng{authorbibnamehash}{d46aaec18c55208e4ebcc7a89159c774}
-      \strng{authornamehash}{4672b3e58131284a3e6714fe9d4c276b}
+      \strng{authornamehash}{d46aaec18c55208e4ebcc7a89159c774}
       \strng{authorfullhash}{d46aaec18c55208e4ebcc7a89159c774}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Although it emerged more than six decades ago, the MIG/MAG welding process continues to generate new expectations and is often a topic of discussion. For a layperson examining the entire process, i...}
@@ -1836,16 +1756,14 @@
            given={József},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{bec47464a2af6dbc3915bd999c357930}
+      \strng{namehash}{d0becc3a8fd1c021716d3616bf22f4df}
       \strng{fullhash}{d0becc3a8fd1c021716d3616bf22f4df}
       \strng{bibnamehash}{d0becc3a8fd1c021716d3616bf22f4df}
       \strng{authorbibnamehash}{d0becc3a8fd1c021716d3616bf22f4df}
-      \strng{authornamehash}{bec47464a2af6dbc3915bd999c357930}
+      \strng{authornamehash}{d0becc3a8fd1c021716d3616bf22f4df}
       \strng{authorfullhash}{d0becc3a8fd1c021716d3616bf22f4df}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The paper presents a model and solution method for optimized robot joint motion planning of redundant industrial robots that execute a set of tasks in$\ldots$}
@@ -1873,7 +1791,6 @@
     \entry{WAAMba}{misc}{}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labeldatesource}{nodate}
       \field{labeltitlesource}{title}
       \field{title}{Fabricación aditiva en metales - WAAM | Lortek: Last access: 30.10.2023}
       \verb{urlraw}
@@ -1906,16 +1823,14 @@
            given={Myles},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{d9e42668301b578a204ead7bf2568458}
+      \strng{namehash}{90446b743a21e8fbefe3aee8b61428ac}
       \strng{fullhash}{90446b743a21e8fbefe3aee8b61428ac}
       \strng{bibnamehash}{90446b743a21e8fbefe3aee8b61428ac}
       \strng{authorbibnamehash}{90446b743a21e8fbefe3aee8b61428ac}
-      \strng{authornamehash}{d9e42668301b578a204ead7bf2568458}
+      \strng{authornamehash}{90446b743a21e8fbefe3aee8b61428ac}
       \strng{authorfullhash}{90446b743a21e8fbefe3aee8b61428ac}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Comparing environmental impacts of additive manufacturing vs traditional machining via life-cycle assessment - Author: Jeremy Faludi, Cindy Bayley, Suraj Bhogal, Myles Iribarne}
@@ -1967,16 +1882,14 @@
            given={Estela},
            giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{7304253e3359366e1d093cc59a7c58ea}
+      \strng{namehash}{4136ab05678bd5960bbfe82dc7147620}
       \strng{fullhash}{4136ab05678bd5960bbfe82dc7147620}
       \strng{bibnamehash}{4136ab05678bd5960bbfe82dc7147620}
       \strng{authorbibnamehash}{4136ab05678bd5960bbfe82dc7147620}
-      \strng{authornamehash}{7304253e3359366e1d093cc59a7c58ea}
+      \strng{authornamehash}{4136ab05678bd5960bbfe82dc7147620}
       \strng{authorfullhash}{4136ab05678bd5960bbfe82dc7147620}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents a novel analytic method to uniquely solve inverse kinematics of 7 degrees-of-freedom manipulators while avoiding joint limits and $\ldots$}
@@ -2043,16 +1956,14 @@
            given={Lonnie},
            giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{4c697cd29d434b0acfc357b7990a8997}
+      \strng{namehash}{a39fb9c2ced0266507b84ea8862589c2}
       \strng{fullhash}{a39fb9c2ced0266507b84ea8862589c2}
       \strng{bibnamehash}{a39fb9c2ced0266507b84ea8862589c2}
       \strng{authorbibnamehash}{a39fb9c2ced0266507b84ea8862589c2}
-      \strng{authornamehash}{4c697cd29d434b0acfc357b7990a8997}
+      \strng{authornamehash}{a39fb9c2ced0266507b84ea8862589c2}
       \strng{authorfullhash}{a39fb9c2ced0266507b84ea8862589c2}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2214-8604}
@@ -2084,16 +1995,14 @@
            given={Giovanni},
            giveni={G\bibinitperiod}}}%
       }
-      \strng{namehash}{c52f12bf1fedb549bf5ca3e0e3237fb4}
+      \strng{namehash}{899081cccc02beb53eee3ab6caa967d2}
       \strng{fullhash}{899081cccc02beb53eee3ab6caa967d2}
       \strng{bibnamehash}{899081cccc02beb53eee3ab6caa967d2}
       \strng{authorbibnamehash}{899081cccc02beb53eee3ab6caa967d2}
-      \strng{authornamehash}{c52f12bf1fedb549bf5ca3e0e3237fb4}
+      \strng{authornamehash}{899081cccc02beb53eee3ab6caa967d2}
       \strng{authorfullhash}{899081cccc02beb53eee3ab6caa967d2}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{At present, energy consumption strongly affects the financial payback period of industrial robots, as well as the related manufacturing process sustai$\ldots$}
@@ -2138,8 +2047,6 @@
       \strng{authorfullhash}{8007fcacd991e3142712a21847874a2b}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{An analysis of the results of an algorithm for optimal trajectory planning of robot manipulators is described in this paper. The objective function to$\ldots$}
@@ -2177,8 +2084,6 @@
       \strng{authorfullhash}{b963f11ee19f34f2782fe4268d3c630e}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The fourth industrial revolution and the underlying digital transformation, known as Industry 4.0, is progressing exponentially. The digital revolutio$\ldots$}
@@ -2217,16 +2122,14 @@
            given={Paolo},
            giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{48bc69c1888e0736c6426bdd8ce7f8d3}
+      \strng{namehash}{26baba62ff4a65a6c550bd617ec5f7ec}
       \strng{fullhash}{26baba62ff4a65a6c550bd617ec5f7ec}
       \strng{bibnamehash}{26baba62ff4a65a6c550bd617ec5f7ec}
       \strng{authorbibnamehash}{26baba62ff4a65a6c550bd617ec5f7ec}
-      \strng{authornamehash}{48bc69c1888e0736c6426bdd8ce7f8d3}
+      \strng{authornamehash}{26baba62ff4a65a6c550bd617ec5f7ec}
       \strng{authorfullhash}{26baba62ff4a65a6c550bd617ec5f7ec}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Seeking a higher level of automation, according to Intelligent Manufacturing paradigm, an optimal process control for milling process has been develop$\ldots$}
@@ -2271,8 +2174,6 @@
       \strng{authorfullhash}{888127026b642e0048ca55f4aacc9adc}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industry 4.0 also known as fourth revolution is a new era in which industry will deal with technologies like Robotics, Automation, Artificial Intelligence (AI), and many more. The adoption of robots in Industries worldwide is on the high rise. Robots and human both...}
@@ -2312,8 +2213,6 @@
       \strng{authorfullhash}{54a91a441090ca3b1aa4100644ad8611}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Globalization and social networks are dramatically changing the producer-buyer landscape. Consumers have an increasing desire to buy unique products t$\ldots$}
@@ -2355,8 +2254,6 @@
       \strng{authorfullhash}{a015e11f92d916ab4a1babb70d6fd70c}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2075-1702}
@@ -2397,16 +2294,14 @@
       \list{publisher}{1}{%
         {Springer, Cham}%
       }
-      \strng{namehash}{f286c7f08088c6a356b07b07d1a435a0}
+      \strng{namehash}{ea0add2efdd317b0499da88d01300dbd}
       \strng{fullhash}{ea0add2efdd317b0499da88d01300dbd}
       \strng{bibnamehash}{ea0add2efdd317b0499da88d01300dbd}
       \strng{authorbibnamehash}{ea0add2efdd317b0499da88d01300dbd}
-      \strng{authornamehash}{f286c7f08088c6a356b07b07d1a435a0}
+      \strng{authornamehash}{ea0add2efdd317b0499da88d01300dbd}
       \strng{authorfullhash}{ea0add2efdd317b0499da88d01300dbd}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Much of the technology that makes robots reliable, human friendly, and industrialroboticsadaptable for numerous applications has emerged from manufacturers of industrial robots. With an estimated installation base in 2014 of about 1.5 million units, some...}
@@ -2456,16 +2351,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{522fb12866591f1661c19ce8766c1683}
+      \strng{namehash}{4c5a06dc5639feba757f0713b94016f4}
       \strng{fullhash}{4c5a06dc5639feba757f0713b94016f4}
       \strng{bibnamehash}{4c5a06dc5639feba757f0713b94016f4}
       \strng{authorbibnamehash}{4c5a06dc5639feba757f0713b94016f4}
-      \strng{authornamehash}{522fb12866591f1661c19ce8766c1683}
+      \strng{authornamehash}{4c5a06dc5639feba757f0713b94016f4}
       \strng{authorfullhash}{4c5a06dc5639feba757f0713b94016f4}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2013 IEEE 18th Conference on Emerging Technologies {\&} Factory Automation (ETFA)}
@@ -2496,8 +2389,6 @@
       \strng{authorfullhash}{1528511380f2d45e6a33763273aeaf73}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Additive manufacturing (AM) is a set of technologies and are vital to fulfilling different requirements of Industry 4.0. So, there is a need to study different additive manufacturing applications t...}
@@ -2536,16 +2427,14 @@
            given={Yoram},
            giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{128a7218c47024e157a60eaa1de46dc6}
+      \strng{namehash}{08147dea9151c4c9c8f19c04f7b55c54}
       \strng{fullhash}{08147dea9151c4c9c8f19c04f7b55c54}
       \strng{bibnamehash}{08147dea9151c4c9c8f19c04f7b55c54}
       \strng{authorbibnamehash}{08147dea9151c4c9c8f19c04f7b55c54}
-      \strng{authornamehash}{128a7218c47024e157a60eaa1de46dc6}
+      \strng{authornamehash}{08147dea9151c4c9c8f19c04f7b55c54}
       \strng{authorfullhash}{08147dea9151c4c9c8f19c04f7b55c54}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00078506}
@@ -2578,16 +2467,14 @@
            given={Y.},
            giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{d7da52ea5695b0124517ee00b31b6605}
+      \strng{namehash}{ea35c350fba795195c78a43942606c70}
       \strng{fullhash}{ea35c350fba795195c78a43942606c70}
       \strng{bibnamehash}{ea35c350fba795195c78a43942606c70}
       \strng{authorbibnamehash}{ea35c350fba795195c78a43942606c70}
-      \strng{authornamehash}{d7da52ea5695b0124517ee00b31b6605}
+      \strng{authornamehash}{ea35c350fba795195c78a43942606c70}
       \strng{authorfullhash}{ea35c350fba795195c78a43942606c70}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industrial robot applications have seen remarkable growth in numbers and in diversity of uses. In configuration, it is also slowly changing from carte$\ldots$}
@@ -2633,8 +2520,6 @@
       \strng{authorfullhash}{3fe622c3c9a8a357daa502d08fac23fc}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 25th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA)}
@@ -2665,8 +2550,6 @@
       \strng{authorfullhash}{de414718a8ff5c61ccda1ee4d97916a5}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Predictive maintenance, in contrast to preventive maintenance, raises the manufacturing quality and reliability, where the integrity is monitored cont$\ldots$}
@@ -2706,8 +2589,6 @@
       \strng{authorfullhash}{50d1fe7f81ea7b03a3098fea2b0028b0}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2010 IEEE/RSJ International Conference on Intelligent Robots and Systems}
@@ -2743,16 +2624,14 @@
            given={J.},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{60e79baebec1bd1fd7aa09485488ac10}
+      \strng{namehash}{4972993ea3de57a39cc325fd45a8ebc5}
       \strng{fullhash}{4972993ea3de57a39cc325fd45a8ebc5}
       \strng{bibnamehash}{4972993ea3de57a39cc325fd45a8ebc5}
       \strng{authorbibnamehash}{4972993ea3de57a39cc325fd45a8ebc5}
-      \strng{authornamehash}{60e79baebec1bd1fd7aa09485488ac10}
+      \strng{authornamehash}{4972993ea3de57a39cc325fd45a8ebc5}
       \strng{authorfullhash}{4972993ea3de57a39cc325fd45a8ebc5}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The DLR-KUKA Success Story}
@@ -2783,8 +2662,6 @@
       \strng{authorfullhash}{8bb246f39064ca5180efc9e4e567d66e}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The joint--limits and singularity avoidance in robotic welding - Author: Liguo Huo, Luc Baron}
@@ -2833,16 +2710,14 @@
            given={Keivan},
            giveni={K\bibinitperiod}}}%
       }
-      \strng{namehash}{b66a5f5e3fe37de49581740eff2a63fd}
+      \strng{namehash}{2fea5c5d575befa8a2b30fc3496ca329}
       \strng{fullhash}{2fea5c5d575befa8a2b30fc3496ca329}
       \strng{bibnamehash}{2fea5c5d575befa8a2b30fc3496ca329}
       \strng{authorbibnamehash}{2fea5c5d575befa8a2b30fc3496ca329}
-      \strng{authornamehash}{b66a5f5e3fe37de49581740eff2a63fd}
+      \strng{authornamehash}{2fea5c5d575befa8a2b30fc3496ca329}
       \strng{authorfullhash}{2fea5c5d575befa8a2b30fc3496ca329}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Using industrial robots as machine tools is targeted by many industries for their lower cost and larger workspace. Nevertheless, performance of indust$\ldots$}
@@ -2878,16 +2753,14 @@
            family={{Olivier Verlinden}},
            familyi={O\bibinitperiod}}}%
       }
-      \strng{namehash}{b66a5f5e3fe37de49581740eff2a63fd}
+      \strng{namehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
       \strng{fullhash}{412fbedda8ee8955e6ddfb5ba6f05acb}
       \strng{bibnamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
       \strng{authorbibnamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
-      \strng{authornamehash}{b66a5f5e3fe37de49581740eff2a63fd}
+      \strng{authornamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
       \strng{authorfullhash}{412fbedda8ee8955e6ddfb5ba6f05acb}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{PDF | As robots are increasingly involved in industry, robotic manufacturing techniques arise in order to replace their conventional counterpart.... | Find, read and cite all the research you need on ResearchGate}
@@ -2921,16 +2794,14 @@
            given={J.\bibnamedelimi E.},
            giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
-      \strng{namehash}{3656c43013ec9f820c12fb1a0cca995a}
+      \strng{namehash}{749e05a950c719602aa7befa804aa4cd}
       \strng{fullhash}{749e05a950c719602aa7befa804aa4cd}
       \strng{bibnamehash}{749e05a950c719602aa7befa804aa4cd}
       \strng{authorbibnamehash}{749e05a950c719602aa7befa804aa4cd}
-      \strng{authornamehash}{3656c43013ec9f820c12fb1a0cca995a}
+      \strng{authornamehash}{749e05a950c719602aa7befa804aa4cd}
       \strng{authorfullhash}{749e05a950c719602aa7befa804aa4cd}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nowadays industrial robots are an appropriate technology for developing flexible and reconfigurable manufacturing systems which contribute to perform $\ldots$}
@@ -2984,16 +2855,14 @@
            given={Wei},
            giveni={W\bibinitperiod}}}%
       }
-      \strng{namehash}{951ad53b8aa5967a81f140cb28a33d87}
+      \strng{namehash}{cfcc504cfa0c51ee31a690bc217a7129}
       \strng{fullhash}{cfcc504cfa0c51ee31a690bc217a7129}
       \strng{bibnamehash}{cfcc504cfa0c51ee31a690bc217a7129}
       \strng{authorbibnamehash}{cfcc504cfa0c51ee31a690bc217a7129}
-      \strng{authornamehash}{951ad53b8aa5967a81f140cb28a33d87}
+      \strng{authornamehash}{cfcc504cfa0c51ee31a690bc217a7129}
       \strng{authorfullhash}{cfcc504cfa0c51ee31a690bc217a7129}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The successful realization of Industry 4.0 depends much on how coherently the cyber and physical realms are conjoined in cyber-physical systems. In the context of the fourth industrial revolution, research efforts have mostly been channeled toward the cyber domain, whereas the physical domain has received significantly lesser consideration. A physical domain generally comprises material shaping equipment, work material, tools, working medium, sensors, automation technology, and connectivity mechanisms. The article provides a comprehensive review of the published literature to establish the states of readiness of the two most important manufacturing technologies: subtractive and additive and their sustainable merger from the perspective of Industry 4.0. Rich potentials in the four characteristics at the process level: speed, sustainability, agility, and customer centricity and three at the system level: connectivity, data collection, and automation are required for a manufacturing system (physical domain) to be Industry 4.0 compatible. The review establishes that the subtractive manufacturing domain is nearly compatible regarding speed and agility but needs improvements in respect of sustainability and customer centricity. Additive manufacturing, on the other hand, appears strong on agility and customer-centricity fronts but needs amelioration regarding production speed and sustainability. In respect of the system level characteristics, both technologies seem to be compatible regarding automation, whereas significant improvements are required in connectivity and data sensing and collection. For the sake of raising compatibility levels of the manufacturing systems, subtractive-additive amalgamation is scrutinized. The amalgamation, especially in a done-in-one configuration, has, reportedly, succeeded to retain the favorable traits of the two manufacturing technologies, thus, bringing the merger much closer to the Industry 4.0 requirements. Proper process planning and optimal work distribution between the subtractive and additive modes are critical for operating an amalgamated system at high levels of the key characteristics.}
@@ -3036,16 +2905,14 @@
            given={Alfredo},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{54fb37b12685df34d7a5f09bd6cd72e1}
+      \strng{namehash}{794c68866bf2a75d46beecbb81015c24}
       \strng{fullhash}{794c68866bf2a75d46beecbb81015c24}
       \strng{bibnamehash}{794c68866bf2a75d46beecbb81015c24}
       \strng{authorbibnamehash}{794c68866bf2a75d46beecbb81015c24}
-      \strng{authornamehash}{54fb37b12685df34d7a5f09bd6cd72e1}
+      \strng{authornamehash}{794c68866bf2a75d46beecbb81015c24}
       \strng{authorfullhash}{794c68866bf2a75d46beecbb81015c24}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Although Additive Manufacturing implementation is rapidly growing, industrial sectors are demanding an increase of manufactured part size which most e$\ldots$}
@@ -3084,16 +2951,14 @@
            given={J.\bibnamedelimi C.},
            giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
-      \strng{namehash}{a61fe8fc37528ed8bf31b4f47bb8f38c}
+      \strng{namehash}{9d3937b75a5dd8038e7cf0a75a398266}
       \strng{fullhash}{9d3937b75a5dd8038e7cf0a75a398266}
       \strng{bibnamehash}{9d3937b75a5dd8038e7cf0a75a398266}
       \strng{authorbibnamehash}{9d3937b75a5dd8038e7cf0a75a398266}
-      \strng{authornamehash}{a61fe8fc37528ed8bf31b4f47bb8f38c}
+      \strng{authornamehash}{9d3937b75a5dd8038e7cf0a75a398266}
       \strng{authorfullhash}{9d3937b75a5dd8038e7cf0a75a398266}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1757-899X}
@@ -3145,16 +3010,14 @@
            given={Mir\bibnamedelima Irfan},
            giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
       }
-      \strng{namehash}{68567a359e7e434bfecc01a8a044adb8}
+      \strng{namehash}{5f6ee5da25b8457624d23ee7625c45e3}
       \strng{fullhash}{5f6ee5da25b8457624d23ee7625c45e3}
       \strng{bibnamehash}{5f6ee5da25b8457624d23ee7625c45e3}
       \strng{authorbibnamehash}{5f6ee5da25b8457624d23ee7625c45e3}
-      \strng{authornamehash}{68567a359e7e434bfecc01a8a044adb8}
+      \strng{authornamehash}{5f6ee5da25b8457624d23ee7625c45e3}
       \strng{authorfullhash}{5f6ee5da25b8457624d23ee7625c45e3}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{3D printing, unlike other manufacturing processes, being an additive process has emerged as a viable technology for the production of engineering comp$\ldots$}
@@ -3203,16 +3066,14 @@
            given={Wahidul\bibnamedelima K.},
            giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
       }
-      \strng{namehash}{1c558ddec7bf320f2ddb8870d4f2b7e8}
+      \strng{namehash}{d3bc66acb7645b81271d40f6dc1e7857}
       \strng{fullhash}{d3bc66acb7645b81271d40f6dc1e7857}
       \strng{bibnamehash}{d3bc66acb7645b81271d40f6dc1e7857}
       \strng{authorbibnamehash}{d3bc66acb7645b81271d40f6dc1e7857}
-      \strng{authornamehash}{1c558ddec7bf320f2ddb8870d4f2b7e8}
+      \strng{authornamehash}{d3bc66acb7645b81271d40f6dc1e7857}
       \strng{authorfullhash}{d3bc66acb7645b81271d40f6dc1e7857}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2667-3444}
@@ -3247,8 +3108,6 @@
       \strng{authorfullhash}{b59a681cd799738839a9b94800534113}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{For the past three decades, robotic machining has attracted a large amount of research interest owning to the benefit of cost efficiency, high flexibility and multi-functionality of industrial robot. Covering articles published on the subjects of robotic machining in the past 30 years or so; this paper aims to provide an up-to-date review of robotic machining research works, a critical analysis of publications that publish the research works, and an understanding of the future directions in the field. The research works are organised into two operation categories, low material removal rate (MRR) and high MRR, according their machining properties, and the research topics are reviewed and highlighted separately. Then, a set of statistical analysis is carried out in terms of published years and countries. Towards an applicable robotic machining, the future trends and key research points are identified at the end of this paper.}
@@ -3301,16 +3160,14 @@
            given={Wei},
            giveni={W\bibinitperiod}}}%
       }
-      \strng{namehash}{0b314af1bd8f7a612f77d70ba600984a}
+      \strng{namehash}{24e259e144cc073d439a0cb0fd392b11}
       \strng{fullhash}{24e259e144cc073d439a0cb0fd392b11}
       \strng{bibnamehash}{24e259e144cc073d439a0cb0fd392b11}
       \strng{authorbibnamehash}{24e259e144cc073d439a0cb0fd392b11}
-      \strng{authornamehash}{0b314af1bd8f7a612f77d70ba600984a}
+      \strng{authornamehash}{24e259e144cc073d439a0cb0fd392b11}
       \strng{authorfullhash}{24e259e144cc073d439a0cb0fd392b11}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0890-6955}
@@ -3347,16 +3204,14 @@
            given={Jingdong},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{d69f5f1a2be8a0507d4e511dc700b68c}
+      \strng{namehash}{a73a70d96946f2f6de401149132fa2be}
       \strng{fullhash}{a73a70d96946f2f6de401149132fa2be}
       \strng{bibnamehash}{a73a70d96946f2f6de401149132fa2be}
       \strng{authorbibnamehash}{a73a70d96946f2f6de401149132fa2be}
-      \strng{authornamehash}{d69f5f1a2be8a0507d4e511dc700b68c}
+      \strng{authornamehash}{a73a70d96946f2f6de401149132fa2be}
       \strng{authorfullhash}{a73a70d96946f2f6de401149132fa2be}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Time-Jerk Optimal Trajectory Planning for a 7-DOF Redundant Robot Using the Sequential Quadratic Programming Method}
@@ -3401,16 +3256,14 @@
            given={Wen},
            giveni={W\bibinitperiod}}}%
       }
-      \strng{namehash}{c818ee6336ddd66a82269a691699df1d}
+      \strng{namehash}{5c64c23b1c0c9697e4296286aa74f9c5}
       \strng{fullhash}{5c64c23b1c0c9697e4296286aa74f9c5}
       \strng{bibnamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
       \strng{authorbibnamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
-      \strng{authornamehash}{c818ee6336ddd66a82269a691699df1d}
+      \strng{authornamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
       \strng{authorfullhash}{5c64c23b1c0c9697e4296286aa74f9c5}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Sciences}
@@ -3450,16 +3303,14 @@
            given={Rahul},
            giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{32cd1054fc2bef6a3bdd7c5f55025d59}
+      \strng{namehash}{143109c61834e0680112814aaa06a23e}
       \strng{fullhash}{143109c61834e0680112814aaa06a23e}
       \strng{bibnamehash}{143109c61834e0680112814aaa06a23e}
       \strng{authorbibnamehash}{143109c61834e0680112814aaa06a23e}
-      \strng{authornamehash}{32cd1054fc2bef6a3bdd7c5f55025d59}
+      \strng{authornamehash}{143109c61834e0680112814aaa06a23e}
       \strng{authorfullhash}{143109c61834e0680112814aaa06a23e}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The production of power transmission components such as gears and bearing rings involves precision finishing of highly specialized and dedicated preci$\ldots$}
@@ -3501,8 +3352,6 @@
       \strng{authorfullhash}{78246931f4ca55377b1ea55e749ea976}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In recent years, the global rapid expansion of industrial robots has induced ever-increasing concerns for the cause and effect of such growth, particu$\ldots$}
@@ -3544,16 +3393,14 @@
       \list{publisher}{1}{%
         {Springer, Cham}%
       }
-      \strng{namehash}{6250b5083891d358eb2b2adc24bed97d}
+      \strng{namehash}{6fa1a5ed369ad121a292a6e4430a351d}
       \strng{fullhash}{6fa1a5ed369ad121a292a6e4430a351d}
       \strng{bibnamehash}{6fa1a5ed369ad121a292a6e4430a351d}
       \strng{authorbibnamehash}{6fa1a5ed369ad121a292a6e4430a351d}
-      \strng{authornamehash}{6250b5083891d358eb2b2adc24bed97d}
+      \strng{authornamehash}{6fa1a5ed369ad121a292a6e4430a351d}
       \strng{authorfullhash}{6fa1a5ed369ad121a292a6e4430a351d}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{With the advancement of the technology, the computer aided design (CAD) has encountered developments which require the collaborative plan and the circulated configuration. The increasing necessity and intricacy of the product requires a new approach strategy to...}
@@ -3595,8 +3442,6 @@
       \strng{authorfullhash}{05446d9dc05cd74afe38a22b233f828d}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Production technology research is a vital building block for enabling efficient and cost-effective aerospace component manufacturing. This paper descr$\ldots$}
@@ -3635,16 +3480,14 @@
            given={Vijay},
            giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{86113fb12d1dc35bee14bbcd5939eef1}
+      \strng{namehash}{cd1ac3ca133eb3560ff89df4cf058d81}
       \strng{fullhash}{cd1ac3ca133eb3560ff89df4cf058d81}
       \strng{bibnamehash}{cd1ac3ca133eb3560ff89df4cf058d81}
       \strng{authorbibnamehash}{cd1ac3ca133eb3560ff89df4cf058d81}
-      \strng{authornamehash}{86113fb12d1dc35bee14bbcd5939eef1}
+      \strng{authornamehash}{cd1ac3ca133eb3560ff89df4cf058d81}
       \strng{authorfullhash}{cd1ac3ca133eb3560ff89df4cf058d81}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, the analysis of recent advances in genetic algorithms is discussed. The genetic algorithms of great interest in research community are selected for analysis. This review will help the new and demanding researchers to provide the wider vision of genetic algorithms. The well-known algorithms and their implementation are presented with their pros and cons. The genetic operators and their usages are discussed with the aim of facilitating new researchers. The different research domains involved in genetic algorithms are covered. The future research directions in the area of genetic operators, fitness function and hybrid algorithms are discussed. This structured review will be helpful for research and graduate teaching.}
@@ -3690,8 +3533,6 @@
       \strng{authorfullhash}{53fc83410e090aa88cbf67d7d56a80bb}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper introduces a 3-DOF translational parallel manipulator called Cartesian Parallel Manipulator (CPM). The manipulator consists of a moving platform that is connected to a fixed base by three limbs. Each limb is made up of one prismatic and three revolute joints and all joint axes are parallel to one another. In this way, each limb provides two rotational constraints to the moving platform and the combined effects of the three limbs lead to an over-constrained mechanism with three translational degrees of freedom. The manipulator behaves like a conventional X-Y-Z Cartesian machine due to the orthogonal arrangement of the three limbs. Two actuation methods are analyzed. However, the rotary actuation method is discarded because of the existence of singularities within the workspace. For the linear actuation method, there exists a one-to-one correspondence between the input and output displacements of the manipulator. The effects of misalignment of linear actuators on the motion of the moving platform are discussed. Each limb structure is exposed to a bending moment induced by external forces exerted on the moving platform. In order to minimize the deflection at the joints caused by the bending moment, a method to maximize the stiffness is suggested. A numerical example of the optimal design is presented.}
@@ -3728,16 +3569,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{d486c558ee2d31bd3f466e4b94fed835}
+      \strng{namehash}{467779ade334debe739dca8848f376fd}
       \strng{fullhash}{467779ade334debe739dca8848f376fd}
       \strng{bibnamehash}{467779ade334debe739dca8848f376fd}
       \strng{authorbibnamehash}{467779ade334debe739dca8848f376fd}
-      \strng{authornamehash}{d486c558ee2d31bd3f466e4b94fed835}
+      \strng{authornamehash}{467779ade334debe739dca8848f376fd}
       \strng{authorfullhash}{467779ade334debe739dca8848f376fd}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2016 IEEE International Power Electronics and Motion Control Conference (PEMC)}
@@ -3750,7 +3589,6 @@
     \entry{linear}{article}{}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labeldatesource}{nodate}
       \field{labeltitlesource}{title}
       \field{abstract}{With KUKA linear axis, you can also use your robot over long distances and at multiple machines. Find out more here!}
       \field{title}{KUKA linear units: Last access: 30.10.2023}
@@ -3789,17 +3627,14 @@
         {Springer International Publishing}%
         {Imprint: Springer}%
       }
-      \strng{namehash}{67e12ad1898e517a8c1153aed6275007}
+      \strng{namehash}{133528a60c160e56aff3204212bb95cf}
       \strng{fullhash}{133528a60c160e56aff3204212bb95cf}
       \strng{bibnamehash}{133528a60c160e56aff3204212bb95cf}
       \strng{authorbibnamehash}{133528a60c160e56aff3204212bb95cf}
-      \strng{authornamehash}{67e12ad1898e517a8c1153aed6275007}
+      \strng{authornamehash}{133528a60c160e56aff3204212bb95cf}
       \strng{authorfullhash}{133528a60c160e56aff3204212bb95cf}
-      \field{extraname}{1}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1st ed. 2020}
@@ -3838,17 +3673,14 @@
       \list{publisher}{1}{%
         {Springer Singapore}%
       }
-      \strng{namehash}{6e016596fd212b7b95f1de634354368c}
+      \strng{namehash}{9c3a23b751632bdbdf650e2d38908dce}
       \strng{fullhash}{9c3a23b751632bdbdf650e2d38908dce}
       \strng{bibnamehash}{9c3a23b751632bdbdf650e2d38908dce}
       \strng{editorbibnamehash}{9c3a23b751632bdbdf650e2d38908dce}
-      \strng{editornamehash}{6e016596fd212b7b95f1de634354368c}
+      \strng{editornamehash}{9c3a23b751632bdbdf650e2d38908dce}
       \strng{editorfullhash}{9c3a23b751632bdbdf650e2d38908dce}
-      \field{extraname}{2}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{abstract}{This book presents a selection of papers on advanced technologies for 3D printing and additive manufacturing, and demonstrates how these technologies have changed the face of direct, digital technologies for the rapid production of models, prototypes and patterns. Because of their wide range of applications, 3D printing and additive manufacturing technologies have sparked a powerful new industrial revolution in the field of manufacturing. The evolution of 3D printing and additive manufacturing technologies has changed design, engineering and manufacturing processes across such diverse industries as consumer products, aerospace, medical devices and automotive engineering. This book will help designers, R{\&}D personnel, and practicing engineers grasp the latest developments in the field of 3D Printing and Additive Manufacturing Chapter 1: Finite Element Analysis of Melt Pool Characteristics in Selective Laser Spot Melting on a Powder Layer -- Chapter 2: Thermal Transport Phenomena in Multi-Layer Deposition using Arc Welding Process -- Chapter 3: Comparison of Bonding strength of Ti-6Al-4V alloy deposit and substrate processed by laser metal deposition -- Chapter 4: Study on Rayleigh-Bénard convection in Laser Melting process -- Chapter 5: ENHANCING SURFACE FINISH OF FUSED DEPOSITION MODELLING PARTS -- Chapter 6: Development and Analysis of Accurate and Adaptive FDM Post Finishing Approach -- Chapter 7: Toolpath Generation for Additive Manufacturing using CNC Milling Machine -- Chapter 8: Modelling of Heat Transfer in Powder Bed Based Additive Manufacturing Process using Lattice Boltzmann Method -- Chapter 9: Effect of process parameters on mechanical properties of solidified PLA parts fabricated by 3D Printing process -- Chapter 10: Metal Powder Based Additive Manufacturing Technologies - Business Forecast}
@@ -3881,16 +3713,14 @@
            given={Angelos\bibnamedelima P.},
            giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
       }
-      \strng{namehash}{1bca2d55664b39579cca711f4dbb7f1d}
+      \strng{namehash}{6c808711020e6242cf71b7fee55be8c0}
       \strng{fullhash}{6c808711020e6242cf71b7fee55be8c0}
       \strng{bibnamehash}{6c808711020e6242cf71b7fee55be8c0}
       \strng{authorbibnamehash}{6c808711020e6242cf71b7fee55be8c0}
-      \strng{authornamehash}{1bca2d55664b39579cca711f4dbb7f1d}
+      \strng{authornamehash}{6c808711020e6242cf71b7fee55be8c0}
       \strng{authorfullhash}{6c808711020e6242cf71b7fee55be8c0}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Computer-aided design, computer-aided manufacturing and computer-aided engineering (CAD/CAM/CAE) technologies find more and more applications in today's industry, e [...]}
@@ -3939,16 +3769,14 @@
       \list{publisher}{1}{%
         {PHI Learning Private Limited}%
       }
-      \strng{namehash}{7f03e4bcab13767622a308f07f661fdd}
+      \strng{namehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
       \strng{fullhash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
       \strng{bibnamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
       \strng{authorbibnamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
-      \strng{authornamehash}{7f03e4bcab13767622a308f07f661fdd}
+      \strng{authornamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
       \strng{authorfullhash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The impact of the technology of Computer-Aided Design and Manufacturing in automobile engineering, marine engineering and aerospace engineering has been tremendous. Using computers in manufacturing is receiving particular prominence as industries seek to improve product quality, increase productivity and to reduce inventory costs. Therefore, the emphasis has been attributed to the subject of CAD and its integration with CAM. Designed as a textbook for the undergraduate students of mechanical engineering, production engineering and industrial engineering, it provides a description of both the hardware and software of CAD/CAM systems. The Coverage Includes  Principles of interactive computer graphics  Wireframe, surface and solid modelling  Finite element modelling and analysis  NC part programming and computer-aided part programming  Machine vision systems  Robot technology and automated guided vehicles  Flexible manufacturing systems  Computer integrated manufacturing  Artificial intelligence and expert systems  Communication systems in manufacturing PEDAGOGICAL FEATURES  CNC program examples and APT program examples  Review questions at the end of every chapter  A comprehensive Glossary  A Question Bank at the end of the chapters}
@@ -3978,16 +3806,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{a2b02f16c9eb9c7c44bf554fbcc99dff}
+      \strng{namehash}{5183eb6b2e8048e5773b526da3daeda7}
       \strng{fullhash}{5183eb6b2e8048e5773b526da3daeda7}
       \strng{bibnamehash}{5183eb6b2e8048e5773b526da3daeda7}
       \strng{authorbibnamehash}{5183eb6b2e8048e5773b526da3daeda7}
-      \strng{authornamehash}{a2b02f16c9eb9c7c44bf554fbcc99dff}
+      \strng{authornamehash}{5183eb6b2e8048e5773b526da3daeda7}
       \strng{authorfullhash}{5183eb6b2e8048e5773b526da3daeda7}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2019 International Conference on Machine Learning, Big Data, Cloud and Parallel Computing (COMITCon)}
@@ -3998,7 +3824,7 @@
       \endverb
     \endentry
     \entry{Li.2018}{article}{}
-      \name{author}{3}{ul=2}{%
+      \name{author}{3}{}{%
         {{hash=ff213be97eb3b2d1e78206bc322693ee}{%
            family={Li},
            familyi={L\bibinitperiod},
@@ -4015,16 +3841,14 @@
            given={Peiqing},
            giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{3669e4271286e8d5aedbc0d4596ffb2d}
+      \strng{namehash}{3cc18df4b1499b3779d6372bacce0bef}
       \strng{fullhash}{3cc18df4b1499b3779d6372bacce0bef}
       \strng{bibnamehash}{3cc18df4b1499b3779d6372bacce0bef}
       \strng{authorbibnamehash}{3cc18df4b1499b3779d6372bacce0bef}
-      \strng{authornamehash}{3669e4271286e8d5aedbc0d4596ffb2d}
+      \strng{authornamehash}{3cc18df4b1499b3779d6372bacce0bef}
       \strng{authorfullhash}{3cc18df4b1499b3779d6372bacce0bef}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1433-3015}
@@ -4043,7 +3867,7 @@
       \endverb
     \endentry
     \entry{Li.2018b}{article}{}
-      \name{author}{4}{ul=2}{%
+      \name{author}{4}{}{%
         {{hash=68665ecfb5ccb8c5ee836ad68610700a}{%
            family={Li},
            familyi={L\bibinitperiod},
@@ -4065,16 +3889,14 @@
            given={Zhihong},
            giveni={Z\bibinitperiod}}}%
       }
-      \strng{namehash}{789bc3fba5bed05d3e080d4de110c85c}
+      \strng{namehash}{1e930507782918b7c105937ee6350bd7}
       \strng{fullhash}{1e930507782918b7c105937ee6350bd7}
       \strng{bibnamehash}{1e930507782918b7c105937ee6350bd7}
       \strng{authorbibnamehash}{1e930507782918b7c105937ee6350bd7}
-      \strng{authornamehash}{789bc3fba5bed05d3e080d4de110c85c}
+      \strng{authornamehash}{1e930507782918b7c105937ee6350bd7}
       \strng{authorfullhash}{1e930507782918b7c105937ee6350bd7}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In wire and arc additive manufacturing (WAAM), it is crucial to maintain a constant travel speed in order to achieve a uniform bead morphology along the tool-path. However, this requirement is always violated in practice because the welding robot has to slow down when sharp corners with high curvatures are encountered so as to satisfy the dynamic constraint. The consequence is excessive fillings (i.e. humps) around these sharp corners, which not only increase the required post processing, but also prevent the continuation of the deposition process if the accumulated errors in the build direction become too large. This issue greatly limits the application of WAAM in the fabrication of complex-shaped components. In this paper, an adaptive process control scheme (APCS) capable of guaranteeing a uniform bead morphology while still respecting the dynamic constraint is proposed. First, the APCS divides the tool-path into several segments depending on whether they contain sharp corners. Then, for each segment, the APCS automatically selects the allowable travel speed subjected to the dynamic constraint, and also the wire-feed rate according to a process model established in advance. Through the matching between the travel speed and the wire-feed rate, a uniform bead morphology among different segments is achieved. Experiments were conducted on a gantry robot using the Cold Metal Transfer (CMT) process, controlled by a self-developed computer numerical control (CNC) system, validating the efficacy of the proposed scheme.}
@@ -4132,16 +3954,14 @@
            given={Faiz\bibnamedelima Redza},
            giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
-      \strng{namehash}{2648de279c3ffd6885538ee3fc2c30d3}
+      \strng{namehash}{8400c5be863b965578ca6d7f4b3b26e8}
       \strng{fullhash}{8400c5be863b965578ca6d7f4b3b26e8}
       \strng{bibnamehash}{8400c5be863b965578ca6d7f4b3b26e8}
       \strng{authorbibnamehash}{8400c5be863b965578ca6d7f4b3b26e8}
-      \strng{authornamehash}{2648de279c3ffd6885538ee3fc2c30d3}
+      \strng{authornamehash}{8400c5be863b965578ca6d7f4b3b26e8}
       \strng{authorfullhash}{8400c5be863b965578ca6d7f4b3b26e8}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{J-STAGE}
@@ -4184,16 +4004,14 @@
            given={Fengzhou},
            giveni={F\bibinitperiod}}}%
       }
-      \strng{namehash}{613adbae80725e157d429e65b2fc3393}
+      \strng{namehash}{0610aff6faed6cd49c17be67804f1399}
       \strng{fullhash}{0610aff6faed6cd49c17be67804f1399}
       \strng{bibnamehash}{0610aff6faed6cd49c17be67804f1399}
       \strng{authorbibnamehash}{0610aff6faed6cd49c17be67804f1399}
-      \strng{authornamehash}{613adbae80725e157d429e65b2fc3393}
+      \strng{authornamehash}{0610aff6faed6cd49c17be67804f1399}
       \strng{authorfullhash}{0610aff6faed6cd49c17be67804f1399}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{1. With the rapid development of optics, dies and aerospace industries, complex surfaces usually constructed with free-form geometries have been widely used to improve the performance of equipment ...}
@@ -4241,17 +4059,14 @@
            given={Ming},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{045f94faf60902fc13d7a4e43d67730b}
+      \strng{namehash}{284a17c8d48865dc2b5c151e0fea6817}
       \strng{fullhash}{284a17c8d48865dc2b5c151e0fea6817}
       \strng{bibnamehash}{284a17c8d48865dc2b5c151e0fea6817}
       \strng{authorbibnamehash}{284a17c8d48865dc2b5c151e0fea6817}
-      \strng{authornamehash}{045f94faf60902fc13d7a4e43d67730b}
+      \strng{authornamehash}{284a17c8d48865dc2b5c151e0fea6817}
       \strng{authorfullhash}{284a17c8d48865dc2b5c151e0fea6817}
-      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Robot manipulators with 6 degree-of-freedom (DOF) have advantages of good flexibility and large working space. However, the relatively low stiffness d$\ldots$}
@@ -4290,17 +4105,14 @@
            given={Han},
            giveni={H\bibinitperiod}}}%
       }
-      \strng{namehash}{c3deac09827a65502c178a3548134aa0}
+      \strng{namehash}{ba5a5191382653af84e194da71396f4d}
       \strng{fullhash}{ba5a5191382653af84e194da71396f4d}
       \strng{bibnamehash}{ba5a5191382653af84e194da71396f4d}
       \strng{authorbibnamehash}{ba5a5191382653af84e194da71396f4d}
-      \strng{authornamehash}{c3deac09827a65502c178a3548134aa0}
+      \strng{authornamehash}{ba5a5191382653af84e194da71396f4d}
       \strng{authorfullhash}{ba5a5191382653af84e194da71396f4d}
-      \field{extraname}{2}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industrial robots are increasingly used in machining of large-scale components due to advantages of high repeatability, large workspace and low cost. $\ldots$}
@@ -4339,17 +4151,14 @@
            given={Xiaozhong},
            giveni={X\bibinitperiod}}}%
       }
-      \strng{namehash}{1196bce8de9d4ad2968c5760a8d5bfb0}
+      \strng{namehash}{e10ad4b43b370fbe9f114d4a0c1e2053}
       \strng{fullhash}{e10ad4b43b370fbe9f114d4a0c1e2053}
       \strng{bibnamehash}{e10ad4b43b370fbe9f114d4a0c1e2053}
       \strng{authorbibnamehash}{e10ad4b43b370fbe9f114d4a0c1e2053}
-      \strng{authornamehash}{1196bce8de9d4ad2968c5760a8d5bfb0}
+      \strng{authornamehash}{e10ad4b43b370fbe9f114d4a0c1e2053}
       \strng{authorfullhash}{e10ad4b43b370fbe9f114d4a0c1e2053}
-      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1433-3015}
@@ -4368,7 +4177,7 @@
       \endverb
     \endentry
     \entry{Liu.2022b}{article}{}
-      \name{author}{4}{ul=2}{%
+      \name{author}{4}{}{%
         {{hash=fa3e4da50b3416b1a04c39a932b2344c}{%
            family={Liu},
            familyi={L\bibinitperiod},
@@ -4390,16 +4199,14 @@
            given={Vincent\bibnamedelima G.},
            giveni={V\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
       }
-      \strng{namehash}{48d34b720cb4b5876cfa949acfc40ed1}
+      \strng{namehash}{6d495016ef996087a7d59599e473be21}
       \strng{fullhash}{6d495016ef996087a7d59599e473be21}
       \strng{bibnamehash}{6d495016ef996087a7d59599e473be21}
       \strng{authorbibnamehash}{6d495016ef996087a7d59599e473be21}
-      \strng{authornamehash}{48d34b720cb4b5876cfa949acfc40ed1}
+      \strng{authornamehash}{6d495016ef996087a7d59599e473be21}
       \strng{authorfullhash}{6d495016ef996087a7d59599e473be21}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{1. With the development of Industry 4.0, manufacturing is required to respond to the needs of consumers in a timely and rapid manner. In this context, the emergence of collaborative robots (cobots)...}
@@ -4440,17 +4247,14 @@
            given={Wei-Hong},
            giveni={W\bibinithyphendelim H\bibinitperiod}}}%
       }
-      \strng{namehash}{df83681b9acfd53a0c867d0eb509f8f3}
+      \strng{namehash}{4db17cef300ba63076a0f188058c0553}
       \strng{fullhash}{4db17cef300ba63076a0f188058c0553}
       \strng{bibnamehash}{4db17cef300ba63076a0f188058c0553}
       \strng{authorbibnamehash}{4db17cef300ba63076a0f188058c0553}
-      \strng{authornamehash}{df83681b9acfd53a0c867d0eb509f8f3}
+      \strng{authornamehash}{4db17cef300ba63076a0f188058c0553}
       \strng{authorfullhash}{4db17cef300ba63076a0f188058c0553}
-      \field{extraname}{2}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00207403}
@@ -4465,7 +4269,7 @@
       \endverb
     \endentry
     \entry{Liu.2022}{article}{}
-      \name{author}{5}{ul=2}{%
+      \name{author}{5}{}{%
         {{hash=93c82128aca25c57cfb17e90d02136d5}{%
            family={Liu},
            familyi={L\bibinitperiod},
@@ -4492,16 +4296,14 @@
            given={Bin},
            giveni={B\bibinitperiod}}}%
       }
-      \strng{namehash}{5dee70210159f3dc690ba2e0ea6a8cbb}
+      \strng{namehash}{cd91c890768d719b7a2eb9ff967f8fed}
       \strng{fullhash}{cd91c890768d719b7a2eb9ff967f8fed}
       \strng{bibnamehash}{cd91c890768d719b7a2eb9ff967f8fed}
       \strng{authorbibnamehash}{cd91c890768d719b7a2eb9ff967f8fed}
-      \strng{authornamehash}{5dee70210159f3dc690ba2e0ea6a8cbb}
+      \strng{authornamehash}{cd91c890768d719b7a2eb9ff967f8fed}
       \strng{authorfullhash}{cd91c890768d719b7a2eb9ff967f8fed}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Aiming at the redundant degree of freedom problem of six axis industrial robot performing five axis milling task, a new optimization method of robot milling redundant degrees of freedom considering chatter stability was proposed. Taking the limit cutting depth of robot milling regenerative cha...}
@@ -4542,8 +4344,6 @@
       \strng{authorfullhash}{159334c0584644af762e2a392ff063b6}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Cover -- Half Title -- Title Page -- Copyright Page -- Dedication -- Table of Contents -- Preface -- 1: Introduction -- 1.1 The Need -- 1.2 Role of TCAD -- 1.3 TCAD: Challenges -- 1.4 TCAD: 2D versus 3D -- 1.5 TCAD: Design Flow -- 1.6 Extending TCAD -- 1.7 Process Compact Model -- 1.8 Process-Aware Design -- 1.9 Design for Manufacturing -- 1.10 TCAD Calibration -- 1.11 TCAD Tools -- 1.12 Technology Boosters -- 1.13 BiCMOS Process Simulation -- 1.14 SiGe and SiGeC HBTs -- 1.15 Silicon Hetero-FETs -- 1.16 FinFETs -- 1.17 Advanced Devices -- 1.18 Memory Devices -- 1.19 Power Devices -- 1.20 Solar Cells -- 1.21 TCAD for SPICE Parameter Extraction -- 1.22 TCAD for DFM -- 1.23 VWF and Online Laboratory -- 1.24 Summary -- 2: Technology CAD Tools -- 2.1 History of Process and Device Simulation Tools -- 2.2 Commercial TCAD Tools -- 2.3 Silvaco Tool Overview -- 2.3.1 MaskViews -- 2.4 ATHENA -- 2.5 ATLAS -- 2.5.1 Physical Structure -- 2.5.2 Structure Editing -- 2.5.3 Meshing -- 2.5.4 Mesh Definition -- 2.5.5 Regions and Materials -- 2.5.6 Physical Models -- 2.5.6.1 Models -- 2.5.7 Impact Ionization Models -- 2.5.7.1 C-Interpreter functions -- 2.5.8 Gate Current Models -- 2.5.9 Bandgap Narrowing -- 2.5.10 Solution Methods -- 2.5.11 VictoryCell -- 2.5.12 VictoryProcess -- 2.5.13 VictoryStress -- 2.5.13.1 VictoryStress features and capabilities -- 2.5.14 VictoryDevice -- 2.6 Stress Modeling -- 2.6.1 Stress-Strain Relationship -- 2.6.2 Mobility -- 2.6.3 SmartSpice -- 2.7 Synopsys TCAD Platforms -- 2.7.1 Taurus-Device -- 2.7.2 Taurus-Process -- 2.7.3 Device Simulation -- 2.7.4 Carrier Recombination-Generation -- 2.7.4.1 Thin-layer mobility -- 2.7.4.2 High-k degradation mobility -- 2.7.5 Stress Effects -- 2.7.5.1 Band-to-band tunneling leakage current -- 2.8 Atomistic Simulation -- 2.8.1 GARAND -- 2.8.2 MYSTIC -- 2.8.3 RandomSPICE -- 2.9 Summary.}
@@ -4596,19 +4396,17 @@
         {Springer International Publishing}%
         {Imprint: Springer}%
       }
-      \strng{namehash}{9e4f3baaf3d44496e0f6a4b853b47a42}
+      \strng{namehash}{5719c16169230b9e69b09f46c6a0af02}
       \strng{fullhash}{5719c16169230b9e69b09f46c6a0af02}
       \strng{bibnamehash}{5719c16169230b9e69b09f46c6a0af02}
       \strng{authorbibnamehash}{5719c16169230b9e69b09f46c6a0af02}
-      \strng{authornamehash}{9e4f3baaf3d44496e0f6a4b853b47a42}
+      \strng{authornamehash}{5719c16169230b9e69b09f46c6a0af02}
       \strng{authorfullhash}{5719c16169230b9e69b09f46c6a0af02}
       \strng{editorbibnamehash}{a9ff748c17b8d12fc25970e4653186a7}
       \strng{editornamehash}{a9ff748c17b8d12fc25970e4653186a7}
       \strng{editorfullhash}{a9ff748c17b8d12fc25970e4653186a7}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Service and Industrial Robotics}
@@ -4640,7 +4438,6 @@
       \strng{authorfullhash}{343224ab97ddc937f2c27728c181eb4b}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Learn about singularities in a six-axis robot arm, their impact on robot movements, and how to avoid them for optimal performance.}
@@ -4680,16 +4477,14 @@
            given={A.\bibnamedelimi John},
            giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
-      \strng{namehash}{117e209842a8a6e9d50574a10dff4b02}
+      \strng{namehash}{d422d15b7cac80285994e3af76ac9688}
       \strng{fullhash}{d422d15b7cac80285994e3af76ac9688}
       \strng{bibnamehash}{d422d15b7cac80285994e3af76ac9688}
       \strng{authorbibnamehash}{d422d15b7cac80285994e3af76ac9688}
-      \strng{authornamehash}{117e209842a8a6e9d50574a10dff4b02}
+      \strng{authornamehash}{d422d15b7cac80285994e3af76ac9688}
       \strng{authorfullhash}{d422d15b7cac80285994e3af76ac9688}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1049-0787}
@@ -4729,8 +4524,6 @@
       \strng{authorfullhash}{a534dddef54a82e5640f139a110dfb8b}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Novel high-order procedures follow finite displacements avoiding the adverse effects of the wrist singularity of a serial robot manipulating a curved $\ldots$}
@@ -4769,16 +4562,14 @@
            given={Visvalingam},
            giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{80989542110088a14bda0778ef178826}
+      \strng{namehash}{6abc97353bef5855cea6b9e94e9f2457}
       \strng{fullhash}{6abc97353bef5855cea6b9e94e9f2457}
       \strng{bibnamehash}{6abc97353bef5855cea6b9e94e9f2457}
       \strng{authorbibnamehash}{6abc97353bef5855cea6b9e94e9f2457}
-      \strng{authornamehash}{80989542110088a14bda0778ef178826}
+      \strng{authornamehash}{6abc97353bef5855cea6b9e94e9f2457}
       \strng{authorfullhash}{6abc97353bef5855cea6b9e94e9f2457}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In recent decades, Additive Manufacturing (AM) has become a viable alternative to the manufacture of metal parts. Wire arc additive manufacturing (WAA$\ldots$}
@@ -4822,8 +4613,6 @@
       \strng{authorfullhash}{b3604a39c6bc91d6f9eb3e0a91070a56}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1st ed. 2015}
@@ -4851,8 +4640,6 @@
       \strng{authorfullhash}{0d7e2feca91fc5161ec9d59586cc8a87}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Did you know that you can drive next generation hybrid machine tools with NX CAM? View this approximately two minute video, ``Hybrid Additive Manufacturing with NX CAM{\&}nbsp;Overview,'' to glimpse the h...}
@@ -4893,16 +4680,14 @@
            given={T.},
            giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{02f5aac49b8c923fa9d11174e1b09714}
+      \strng{namehash}{eef4eb6956add0c853e9a8d21118a9f4}
       \strng{fullhash}{eef4eb6956add0c853e9a8d21118a9f4}
       \strng{bibnamehash}{eef4eb6956add0c853e9a8d21118a9f4}
       \strng{authorbibnamehash}{eef4eb6956add0c853e9a8d21118a9f4}
-      \strng{authornamehash}{02f5aac49b8c923fa9d11174e1b09714}
+      \strng{authornamehash}{eef4eb6956add0c853e9a8d21118a9f4}
       \strng{authorfullhash}{eef4eb6956add0c853e9a8d21118a9f4}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Structure, properties and serviceability of components made by wire arc additive manufacturing (WAAM) depend on the process parameters such as arc pow$\ldots$}
@@ -4954,16 +4739,14 @@
            given={John},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{866d54d0005f1e4045db90a208139b8a}
+      \strng{namehash}{f761a4be96bfa54e38efc7abe3f55986}
       \strng{fullhash}{f761a4be96bfa54e38efc7abe3f55986}
       \strng{bibnamehash}{f761a4be96bfa54e38efc7abe3f55986}
       \strng{authorbibnamehash}{f761a4be96bfa54e38efc7abe3f55986}
-      \strng{authornamehash}{866d54d0005f1e4045db90a208139b8a}
+      \strng{authornamehash}{f761a4be96bfa54e38efc7abe3f55986}
       \strng{authorfullhash}{f761a4be96bfa54e38efc7abe3f55986}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Although an automated flexible production cell is an intriguing prospect for small to median enterprises (SMEs) in current global market conditions, t$\ldots$}
@@ -5009,16 +4792,14 @@
            given={Jörg},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{53eb9b62e0d5b9435e3d156a1c6eaaf2}
+      \strng{namehash}{e969e4995806b4e27aea8e45b8f9ad51}
       \strng{fullhash}{e969e4995806b4e27aea8e45b8f9ad51}
       \strng{bibnamehash}{e969e4995806b4e27aea8e45b8f9ad51}
       \strng{authorbibnamehash}{e969e4995806b4e27aea8e45b8f9ad51}
-      \strng{authornamehash}{53eb9b62e0d5b9435e3d156a1c6eaaf2}
+      \strng{authornamehash}{e969e4995806b4e27aea8e45b8f9ad51}
       \strng{authorfullhash}{e969e4995806b4e27aea8e45b8f9ad51}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Reducing the energy consumption of industrial robots (IR) that are used in manufacturing systems has become a main focus in the development of green production systems. This is due to the reality that almost all automated manufacturing processes are using IR as the main component. Thus, reducing the energy consumption of IR will automatically reduce operating costs and CO2 emissions. Therefore, a method for reducing the energy consumption of IR in manufacturing systems is desired. Firstly, this paper presents a literature survey of the research in energy consumption analysis of IR that is used in manufacturing processes. The survey found that current research in this field is focused on the development of simulation models of IR that are able to be used to predict its energy consumption. Secondly, a modular model to analyze power consumption and dynamic behavior of IR is developed. Afterward, an experimental investigation is carried out to validate and estimate the accuracy of the model developed. The investigation shows that the developed modular model can be conveniently used to optimize the industrial robot's operating parameters, which are commonly needed for production planning and at the process optimization stage. In addition, the investigation shows that the process constraints, environment layout, productivity requirement, as well as the robot payload and operating speed are the key factors that must be considered for optimizing the productivity and efficiency of IR.}
@@ -5064,8 +4845,6 @@
       \strng{authorfullhash}{2624fdcf6f820a7bc01832e63b91ffa5}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{New industrial revolution - ``The 4th industrial revolution'' must be a remarkable milestone for the second decade of the twenty-first century. Many countries are competing to innovate their manufacturing chains for eco-friendly and energy-efficient productions. Although this green or sustainable manufacturing system evolves under the support of cyber-physical system (or digital twin) based on ICT technology, industrial robots also play important roles in this speedy, flexible and effective manufacturing chains. Recently, low-cost industrial robots or collaborative robots, are rising in a highly interactive environment with humans. Although an industrial robot consists of many important components such as mechanical parts (kinematic structure and reducer) and electric parts (servo motor, driver, sensors, and controller), precision reducer takes approximately 25{\%} of material-cost and governs important performance indices of industrial robots. This paper presents review of high precision reducers (HPRs) for industrial robots driving 4th industrial revolution. First, we provide HPRs market along with industrial robots. According to previous studies, HPRs for industrial robots can be classified based on their principles: planetary reducer, cycloid reducer, and harmonic drive (HD). Then, principle, characteristics, and three main performances (hysteresis, rotational transmission error (RTE) and efficiency) of HPRs are discussed. In addition, compensation methods overcoming accuracy limits of HPRs are summarized. Finally, other applications of HPRs except industrial robots are presented.}
@@ -5108,16 +4887,14 @@
            given={M.},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{b577cb151cd5b88f61bc77ad7c4d2e0a}
+      \strng{namehash}{e27fb4070f96cb184cdd1f0a9e7e5205}
       \strng{fullhash}{e27fb4070f96cb184cdd1f0a9e7e5205}
       \strng{bibnamehash}{e27fb4070f96cb184cdd1f0a9e7e5205}
       \strng{authorbibnamehash}{e27fb4070f96cb184cdd1f0a9e7e5205}
-      \strng{authornamehash}{b577cb151cd5b88f61bc77ad7c4d2e0a}
+      \strng{authornamehash}{e27fb4070f96cb184cdd1f0a9e7e5205}
       \strng{authorfullhash}{e27fb4070f96cb184cdd1f0a9e7e5205}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The process characteristics of the synergic cold metal transfer (CMT) process have been examined for welding aluminium alloy. Utilising a simple backl$\ldots$}
@@ -5163,8 +4940,6 @@
       \strng{authorfullhash}{803bf4f7d6db8dbde892a32716a06ae4}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Cold metal transfer (CMT) is an automated welding process based on dip transfer welding, characterised by controlled material deposition during the short circuit of the wire electrode to the workpi...}
@@ -5200,8 +4975,6 @@
       \strng{authorfullhash}{564d36e6e33d98edb77523d3477cf31d}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{02641275}
@@ -5233,16 +5006,14 @@
            given={V.\bibnamedelimi SubbaV.},
            giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
-      \strng{namehash}{ccbb7813590043371637d8034646d416}
+      \strng{namehash}{d37989ad579cf4ece400f1ee9f3913ce}
       \strng{fullhash}{d37989ad579cf4ece400f1ee9f3913ce}
       \strng{bibnamehash}{d37989ad579cf4ece400f1ee9f3913ce}
       \strng{authorbibnamehash}{d37989ad579cf4ece400f1ee9f3913ce}
-      \strng{authornamehash}{ccbb7813590043371637d8034646d416}
+      \strng{authornamehash}{d37989ad579cf4ece400f1ee9f3913ce}
       \strng{authorfullhash}{d37989ad579cf4ece400f1ee9f3913ce}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Research projects have been taken up on additive manufacturing (AM) technology and has been getting developed for more than 25 years, but without remo$\ldots$}
@@ -5285,16 +5056,14 @@
       \list{publisher}{1}{%
         {IEEE Computer Society Press}%
       }
-      \strng{namehash}{cd9123c297d31bd7d64d46d2c2731924}
+      \strng{namehash}{667838421ce2a9bf23db5846c442b516}
       \strng{fullhash}{667838421ce2a9bf23db5846c442b516}
       \strng{bibnamehash}{667838421ce2a9bf23db5846c442b516}
       \strng{authorbibnamehash}{667838421ce2a9bf23db5846c442b516}
-      \strng{authornamehash}{cd9123c297d31bd7d64d46d2c2731924}
+      \strng{authornamehash}{667838421ce2a9bf23db5846c442b516}
       \strng{authorfullhash}{667838421ce2a9bf23db5846c442b516}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0818608528}
@@ -5345,16 +5114,14 @@
            given={Liang},
            giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{693c6e52b99f69d13e3bd34dd12a001f}
+      \strng{namehash}{1912e9df0d49b485cf05691e28b2c171}
       \strng{fullhash}{1912e9df0d49b485cf05691e28b2c171}
       \strng{bibnamehash}{1912e9df0d49b485cf05691e28b2c171}
       \strng{authorbibnamehash}{1912e9df0d49b485cf05691e28b2c171}
-      \strng{authornamehash}{693c6e52b99f69d13e3bd34dd12a001f}
+      \strng{authornamehash}{1912e9df0d49b485cf05691e28b2c171}
       \strng{authorfullhash}{1912e9df0d49b485cf05691e28b2c171}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, an adaptive control scheme is employed for joining Aluminium 6061 alloy sheets by Cold Metal Transfer (CMT) process. The transfer funct$\ldots$}
@@ -5403,16 +5170,14 @@
            given={Volodymyr},
            giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{ea59694fafaaa1f2d58eaee43eb9ae1a}
+      \strng{namehash}{1cece44a04bd3e5bce52d51f3753eca3}
       \strng{fullhash}{1cece44a04bd3e5bce52d51f3753eca3}
       \strng{bibnamehash}{1cece44a04bd3e5bce52d51f3753eca3}
       \strng{authorbibnamehash}{1cece44a04bd3e5bce52d51f3753eca3}
-      \strng{authornamehash}{ea59694fafaaa1f2d58eaee43eb9ae1a}
+      \strng{authornamehash}{1cece44a04bd3e5bce52d51f3753eca3}
       \strng{authorfullhash}{1cece44a04bd3e5bce52d51f3753eca3}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Developed an integrated intellectual computerized system of ecological-economic monitoring, modeling, and managing the life cycle of the products of technogenic enterprises of transport engineering, which is presented in the form of a 3-equation structure, functioning in conditions of instability. The proposed paradigm system life cycle management applicable to any other control system of large and complex systems, such as techno-genic type. This new paradigm of complex systems and process management, including technical systems. The system is based on the following findings: concepts, principles, a set of non-linear models, decision-making methods, and the environmental and economic governance, integral criteria. As an example, in this paper offer solution to the problem of estimating the cost of the product life cycle of railway transport.}
@@ -5458,16 +5223,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{426015a11e53bf63889ceab82dddfd32}
+      \strng{namehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
       \strng{fullhash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
       \strng{bibnamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
       \strng{authorbibnamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
-      \strng{authornamehash}{426015a11e53bf63889ceab82dddfd32}
+      \strng{authornamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
       \strng{authorfullhash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{IECON 2016 - 42nd Annual Conference of the IEEE Industrial Electronics Society}
@@ -5493,8 +5256,6 @@
       \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Gradient descent optimization algorithms, while increasingly popular, are often used as black-box optimizers, as practical explanations of their strengths and weaknesses are hard to come by. This article aims to provide the reader with intuitions with regard to the behaviour of different algorithms that will allow her to put them to use. In the course of this overview, we look at different variants of gradient descent, summarize challenges, introduce the most common optimization algorithms, review architectures in a parallel and distributed setting, and investigate additional strategies for optimizing gradient descent.}
@@ -5527,16 +5288,14 @@
            given={Konstantinos},
            giveni={K\bibinitperiod}}}%
       }
-      \strng{namehash}{58a6e1ff090569d4e6e5179fb762dc70}
+      \strng{namehash}{e96f1e2246db84d5dcb104b3e5bfc11c}
       \strng{fullhash}{e96f1e2246db84d5dcb104b3e5bfc11c}
       \strng{bibnamehash}{e96f1e2246db84d5dcb104b3e5bfc11c}
       \strng{authorbibnamehash}{e96f1e2246db84d5dcb104b3e5bfc11c}
-      \strng{authornamehash}{58a6e1ff090569d4e6e5179fb762dc70}
+      \strng{authornamehash}{e96f1e2246db84d5dcb104b3e5bfc11c}
       \strng{authorfullhash}{e96f1e2246db84d5dcb104b3e5bfc11c}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Sustainability is becoming more and more important as a decision attribute in the manufacturing environment. However, quantitative metrics for all the aspects of the triple bottom line are difficult to assess. Within the present paper, the sustainability metrics are considered in tandem with other traditional manufacturing metrics such as time, flexibility, and quality and a novel framework is presented that integrates information and requirements from Computer-Aided Technologies (CAx) systems. A novel tool is outlined for considering a number of key performance indicators related to the triple bottom line when deciding the most appropriate process route. The implemented system allows the assessment of alternative process plans considering the market demands and available resources.}
@@ -5594,16 +5353,14 @@
            given={Mathias},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{6a8a8cb89af67530b88a8b72a975d01e}
+      \strng{namehash}{24a8c90dc924e8aa048113888d25e12e}
       \strng{fullhash}{24a8c90dc924e8aa048113888d25e12e}
       \strng{bibnamehash}{24a8c90dc924e8aa048113888d25e12e}
       \strng{authorbibnamehash}{24a8c90dc924e8aa048113888d25e12e}
-      \strng{authornamehash}{6a8a8cb89af67530b88a8b72a975d01e}
+      \strng{authornamehash}{24a8c90dc924e8aa048113888d25e12e}
       \strng{authorfullhash}{24a8c90dc924e8aa048113888d25e12e}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Previous algorithms for slicing, path planning or trajectory planning of additive manufacturing cannot be used consistently for multidirectional additive manufacturing with pure object manipulation in wire-arc additive manufacturing. This work presents a novel path planning approach that directly takes robot kinematics into account and thus ensures the reachability of all critical path poses. In an additional step, the planned path segments are smoothed so that joint velocity limits are respected. It is shown that the implemented path planner generates executable robot paths and at the same time maintains the process quality (in this case, sufficient coverage of the slice area). While the introduced method enables the generation of reachable printing paths, the smoothing algorithm allows for the execution of the path with respect to the robot's velocity limits and at the same time improves the slice coverage. Future experiments will show the realization of the real robot setup presented.}
@@ -5662,16 +5419,14 @@
            given={Américo},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{b1e167489dc36c0c1055c2f17be633f3}
+      \strng{namehash}{bbbb4f0647086ebc344b727fd1980cd8}
       \strng{fullhash}{bbbb4f0647086ebc344b727fd1980cd8}
       \strng{bibnamehash}{bbbb4f0647086ebc344b727fd1980cd8}
       \strng{authorbibnamehash}{bbbb4f0647086ebc344b727fd1980cd8}
-      \strng{authornamehash}{b1e167489dc36c0c1055c2f17be633f3}
+      \strng{authornamehash}{bbbb4f0647086ebc344b727fd1980cd8}
       \strng{authorfullhash}{bbbb4f0647086ebc344b727fd1980cd8}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Thermal management is a key factor in wire + arc additive manufacturing (WAAM) in order to mitigate heat accumulation and cope with limitations regard$\ldots$}
@@ -5710,16 +5465,14 @@
            given={E.},
            giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{63f8af064104cc1a7b92622cc10a0c10}
+      \strng{namehash}{9ee5290791b19a907ea91d03bb31700f}
       \strng{fullhash}{9ee5290791b19a907ea91d03bb31700f}
       \strng{bibnamehash}{9ee5290791b19a907ea91d03bb31700f}
       \strng{authorbibnamehash}{9ee5290791b19a907ea91d03bb31700f}
-      \strng{authornamehash}{63f8af064104cc1a7b92622cc10a0c10}
+      \strng{authornamehash}{9ee5290791b19a907ea91d03bb31700f}
       \strng{authorfullhash}{9ee5290791b19a907ea91d03bb31700f}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Cold Metal Transfer technology has revolutionized the welding of dissimilar metals and thicker materials by producing improved weld bead aesthetics wi$\ldots$}
@@ -5764,16 +5517,14 @@
            given={Saeid},
            giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{a76edf9bb283b3dbb99dbffa25bdb9a0}
+      \strng{namehash}{ec89bb4d3ac418e8cc3b00a4d3d9e701}
       \strng{fullhash}{ec89bb4d3ac418e8cc3b00a4d3d9e701}
       \strng{bibnamehash}{ec89bb4d3ac418e8cc3b00a4d3d9e701}
       \strng{authorbibnamehash}{ec89bb4d3ac418e8cc3b00a4d3d9e701}
-      \strng{authornamehash}{a76edf9bb283b3dbb99dbffa25bdb9a0}
+      \strng{authornamehash}{ec89bb4d3ac418e8cc3b00a4d3d9e701}
       \strng{authorfullhash}{ec89bb4d3ac418e8cc3b00a4d3d9e701}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In high speed Computer Numerical Control (CNC) machines, cut velocities greater than 60 m per minute and accelerations higher than 2 g are used. In su$\ldots$}
@@ -5818,16 +5569,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{d26c09e023f746be2a109e8d2265e197}
+      \strng{namehash}{ab02489726a9d5fb9051764243c03bac}
       \strng{fullhash}{ab02489726a9d5fb9051764243c03bac}
       \strng{bibnamehash}{ab02489726a9d5fb9051764243c03bac}
       \strng{authorbibnamehash}{ab02489726a9d5fb9051764243c03bac}
-      \strng{authornamehash}{d26c09e023f746be2a109e8d2265e197}
+      \strng{authornamehash}{ab02489726a9d5fb9051764243c03bac}
       \strng{authorfullhash}{ab02489726a9d5fb9051764243c03bac}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 International Conference on Emerging Trends in Smart Technologies (ICETST)}
@@ -5865,16 +5614,14 @@
            given={Zhiwei},
            giveni={Z\bibinitperiod}}}%
       }
-      \strng{namehash}{3e7c41bfaa483905afba3bc8bf0a1154}
+      \strng{namehash}{24d7309417112ffae6d00aab4715847f}
       \strng{fullhash}{24d7309417112ffae6d00aab4715847f}
       \strng{bibnamehash}{24d7309417112ffae6d00aab4715847f}
       \strng{authorbibnamehash}{24d7309417112ffae6d00aab4715847f}
-      \strng{authornamehash}{3e7c41bfaa483905afba3bc8bf0a1154}
+      \strng{authornamehash}{24d7309417112ffae6d00aab4715847f}
       \strng{authorfullhash}{24d7309417112ffae6d00aab4715847f}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A new method of kinematic analysis and singularity analysis is proposed for a 7-DOF redundant manipulator with three consecutive parallel axes. First, the redundancy angle is described according to the self-motion characteristics of the manipulator, the position and orientation of the end-effector are separated, and the inverse kinematics of this manipulator is analyzed by geometric methods with the redundancy angle as a constraint. Then, the Jacobian matrix is established to derive the conditions for the kinematic singularities of the robotic arm by using the primitive matrix method and the block matrix method. Then, the kinematic singularities conditions in the joint space are mapped to the Cartesian space, and the singular configuration is described using the end poses and redundancy angles of the robotic arm, and a singularity avoidance method based on the redundancy angles and end pose is proposed. Finally, the correctness and feasibility of the inverse kinematics algorithm and the singularity avoidance method are verified by simulation examples.}
@@ -5930,8 +5677,6 @@
       \strng{authorfullhash}{0bdecfa7d3574a8d04c99af970a7506e}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2nd edition}
@@ -5963,16 +5708,14 @@
            given={T.},
            giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{3b30b989dbec8b9feba4ee7a37649ed9}
+      \strng{namehash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
       \strng{fullhash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
       \strng{bibnamehash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
       \strng{authorbibnamehash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
-      \strng{authornamehash}{3b30b989dbec8b9feba4ee7a37649ed9}
+      \strng{authornamehash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
       \strng{authorfullhash}{20ec25cb77f27c8d8ed6b64e1f6523c7}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1757-899X}
@@ -5997,7 +5740,7 @@
       \endverb
     \endentry
     \entry{Singh.2021}{article}{}
-      \name{author}{6}{ul=2}{%
+      \name{author}{6}{}{%
         {{hash=fcdac3d1c0370d50d9ade1c68adf53e7}{%
            family={Singh},
            familyi={S\bibinitperiod},
@@ -6029,16 +5772,14 @@
            given={Declan},
            giveni={D\bibinitperiod}}}%
       }
-      \strng{namehash}{e178cf79353e0c14658f8c9c3f2948d5}
+      \strng{namehash}{4e88214af3ad8296ecc986b9a7083d81}
       \strng{fullhash}{4e88214af3ad8296ecc986b9a7083d81}
       \strng{bibnamehash}{4e88214af3ad8296ecc986b9a7083d81}
       \strng{authorbibnamehash}{4e88214af3ad8296ecc986b9a7083d81}
-      \strng{authornamehash}{e178cf79353e0c14658f8c9c3f2948d5}
+      \strng{authornamehash}{4e88214af3ad8296ecc986b9a7083d81}
       \strng{authorfullhash}{4e88214af3ad8296ecc986b9a7083d81}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Digital Twin (DT) refers to the virtual copy or model of any physical entity (physical twin) both of which are interconnected via exchange of data in real time. Conceptually, a DT mimics the state of its physical twin in real time and vice versa. Application of DT includes real-time monitoring, designing/planning, optimization, maintenance, remote access, etc. Its implementation is expected to grow exponentially in the coming decades. The advent of Industry 4.0 has brought complex industrial systems that are more autonomous, smart, and highly interconnected. These systems generate considerable amounts of data useful for several applications such as improving performance, predictive maintenance, training, etc. A sudden influx in the number of publications related to `Digital Twin' has led to confusion between different terminologies related to the digitalization of industries. Another problem that has arisen due to the growing popularity of DT is a lack of consensus on the description of DT as well as so many different types of DT, which adds to the confusion. This paper intends to consolidate the different types of DT and different definitions of DT throughout the literature for easy identification of DT from the rest of the complimentary terms such as `product avatar', `digital thread', `digital model', and `digital shadow'. The paper looks at the concept of DT since its inception to its predicted future to realize the value it can bring to certain sectors. Understanding the characteristics and types of DT while weighing its pros and cons is essential for any researcher, business, or sector before investing in the technology.}
@@ -6064,7 +5805,7 @@
       \endverb
     \endentry
     \entry{Singh.2021b}{incollection}{}
-      \name{author}{3}{ul=2}{%
+      \name{author}{3}{}{%
         {{hash=f156380c696d5f61b23aea2c72461500}{%
            family={Singh},
            familyi={S\bibinitperiod},
@@ -6105,19 +5846,17 @@
         {Springer Singapore}%
         {Imprint: Springer}%
       }
-      \strng{namehash}{5abd89698ef3032b32f8c2f8c7d994eb}
+      \strng{namehash}{464ca31342ee0433977ec124ac78b8a3}
       \strng{fullhash}{464ca31342ee0433977ec124ac78b8a3}
       \strng{bibnamehash}{464ca31342ee0433977ec124ac78b8a3}
       \strng{authorbibnamehash}{464ca31342ee0433977ec124ac78b8a3}
-      \strng{authornamehash}{5abd89698ef3032b32f8c2f8c7d994eb}
+      \strng{authornamehash}{464ca31342ee0433977ec124ac78b8a3}
       \strng{authorfullhash}{464ca31342ee0433977ec124ac78b8a3}
       \strng{editorbibnamehash}{c1e6a6ca5bdb07cb5b892821cf5a5552}
-      \strng{editornamehash}{c3ee6d10340d477a0a3027ea2c88e648}
+      \strng{editornamehash}{c1e6a6ca5bdb07cb5b892821cf5a5552}
       \strng{editorfullhash}{c1e6a6ca5bdb07cb5b892821cf5a5552}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Engineering Design}
@@ -6176,8 +5915,6 @@
       \strng{editorfullhash}{9443722c9c7f4ec6541d0ab0e26b566e}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Introduction to genetic algorithms}
@@ -6213,16 +5950,14 @@
            given={P.},
            giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{657c243c9c45ea8264ba43eed51f72fa}
+      \strng{namehash}{770d429c6a651550eed2727e1e0d7f86}
       \strng{fullhash}{770d429c6a651550eed2727e1e0d7f86}
       \strng{bibnamehash}{770d429c6a651550eed2727e1e0d7f86}
       \strng{authorbibnamehash}{770d429c6a651550eed2727e1e0d7f86}
-      \strng{authornamehash}{657c243c9c45ea8264ba43eed51f72fa}
+      \strng{authornamehash}{770d429c6a651550eed2727e1e0d7f86}
       \strng{authorfullhash}{770d429c6a651550eed2727e1e0d7f86}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Cold metal transfer (CMT) is a novel technique of joining, which is an improvised version of the gas metal arc welding (GMAW) techniques, in which the$\ldots$}
@@ -6261,16 +5996,14 @@
            given={G.},
            giveni={G\bibinitperiod}}}%
       }
-      \strng{namehash}{8881e9fb7da9eaa51018d3d3d2ba7cb8}
+      \strng{namehash}{3bd84671bd37bbf14b8d5ec3776be6af}
       \strng{fullhash}{3bd84671bd37bbf14b8d5ec3776be6af}
       \strng{bibnamehash}{3bd84671bd37bbf14b8d5ec3776be6af}
       \strng{authorbibnamehash}{3bd84671bd37bbf14b8d5ec3776be6af}
-      \strng{authornamehash}{8881e9fb7da9eaa51018d3d3d2ba7cb8}
+      \strng{authornamehash}{3bd84671bd37bbf14b8d5ec3776be6af}
       \strng{authorfullhash}{3bd84671bd37bbf14b8d5ec3776be6af}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Singularity avoidance and aspect maintenance in redundant manipulators}
@@ -6308,8 +6041,6 @@
       \strng{authorfullhash}{31437cabcea773be7f195a5fc098751e}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The chain of short linear tool path segments is the most common form for the five-axis machining by Computer Numerical Control (CNC) machines. The con$\ldots$}
@@ -6378,16 +6109,14 @@
            given={Noam},
            giveni={N\bibinitperiod}}}%
       }
-      \strng{namehash}{6cf909870c493574f54e8aa33cabea5a}
+      \strng{namehash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
       \strng{fullhash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
       \strng{bibnamehash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
       \strng{authorbibnamehash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
-      \strng{authornamehash}{6cf909870c493574f54e8aa33cabea5a}
+      \strng{authornamehash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
       \strng{authorfullhash}{eb0fa8cc07ae2d87da0db564cfc7ca88}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Directed energy deposition (DED) is a branch of additive manufacturing (AM) processes in which a feedstock material in the form of powder or wire is d$\ldots$}
@@ -6424,8 +6153,6 @@
       \strng{authorfullhash}{46fcfc009770bd4589777e2c45fc1d18}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{J-STAGE}
@@ -6483,16 +6210,14 @@
            given={Trinh\bibnamedelima Nguyen},
            giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
       }
-      \strng{namehash}{b64f21d0221156038dd57d5374896d8a}
+      \strng{namehash}{7af71fa42f7a59a948c20079ca3bf22f}
       \strng{fullhash}{7af71fa42f7a59a948c20079ca3bf22f}
       \strng{bibnamehash}{7af71fa42f7a59a948c20079ca3bf22f}
       \strng{authorbibnamehash}{7af71fa42f7a59a948c20079ca3bf22f}
-      \strng{authornamehash}{b64f21d0221156038dd57d5374896d8a}
+      \strng{authornamehash}{7af71fa42f7a59a948c20079ca3bf22f}
       \strng{authorfullhash}{7af71fa42f7a59a948c20079ca3bf22f}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Online monitoring and optimisation of technological parameters are very effective methods of improving productivity and machining surface quality, especially in high-speed milling. During high-speed milling processes, cutting tools wear fast, leading to increased cutting forces and vibrations and decreased surface quality with increased power consumption. To investigate the effect of cutting forces and vibrations on high-speed milling processes, models for determining cutting forces and vibrations are presented in this paper. Stochastic tool wear was obtained from a probabilistic approach based on the combination of cutting force and systematic single-point vibration analyses. The singularity obtained from the vibration sensor signal is determined by the holder exponent (HE) through the wavelet transform maximum module. In addition, the nonlinear processes caused by the deformation and geometry of the cutting blade, the basis of selecting HE as an indicator to estimate the singularity points of the vibration signal, are also considered. To provide a model for predicting and optimising cutting forces, tool wear, vibrations, surface quality and power consumption, a new hybrid algorithm, i.e. back-propagation neural network and multi-objective particle swarm optimisation, was developed to determine the optimal cutting parameters to minimise the total power consumption, improve surface quality and increase tool life. High-speed milling experiments were conducted to confirm the accuracy and availability of the proposed multi-objective prediction and optimisation model. The improved optimisation method based on the proposed model can increase the surface quality and tool life by 5.95{\%} and 9.87{\%}, respectively. The power consumption can be reduced by 10.49{\%} compared to empirical selection.}
@@ -6538,16 +6263,14 @@
       \list{publisher}{1}{%
         {Springer, Singapore}%
       }
-      \strng{namehash}{b3bd782ae628c63309d63505092d5ebc}
+      \strng{namehash}{5c0cdd815ae0aed91df980c76448d6ad}
       \strng{fullhash}{5c0cdd815ae0aed91df980c76448d6ad}
       \strng{bibnamehash}{5c0cdd815ae0aed91df980c76448d6ad}
       \strng{authorbibnamehash}{5c0cdd815ae0aed91df980c76448d6ad}
-      \strng{authornamehash}{b3bd782ae628c63309d63505092d5ebc}
+      \strng{authornamehash}{5c0cdd815ae0aed91df980c76448d6ad}
       \strng{authorfullhash}{5c0cdd815ae0aed91df980c76448d6ad}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Composite material~is a~material~made by the combination of two or more constituent~materials~with considerably distinct properties resulting in a~material~that presents chemical and physical properties that are not seem in any...}
@@ -6587,8 +6310,6 @@
       \strng{authorfullhash}{b378c0e4dbbbe5726be07462c7f81eaf}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Robotic milling becomes increasingly relevant to large-scale part manufacturing industries thanks to its cost-effective and portable manufacturing concept compared to large-scale CNC machine tools. Integration of milling processes with industrial robots is proposed to be well aligned with the aims and objective of the recent fourth industrial revolution. However, the industrial robots introduce position-dependent and asymmetrical dynamic flexibility, which may reflect to the tool tip dynamics under several conditions. Under such circumstances, the stability limits become dependent on the machining location and the feed direction. In this respect, selection of machining tool path patterns is crucial for increased chatter-free material removal rates (MRR). This paper proposes an approach to evaluate and select tool path patterns, offered by the existing CAM packages, for increased chatter-free MRR. The machining area is divided into number of machining locations. The optimal feed direction is decided based on the absolute stability at each region considering the asymmetrical and position-dependent tool tip dynamics. Then, the alternative tool path patterns are evaluated and the corresponding optimum feed direction is decided for increased chatter-free material removal. The application of the proposed approach is demonstrated through simulations and representative experiments.}
@@ -6631,16 +6352,14 @@
            given={Tobias},
            giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{c4bcc67a3ae41e789eeb8b47a6d1b7e8}
+      \strng{namehash}{dd61e7fe220fe654819a05eb3587df83}
       \strng{fullhash}{dd61e7fe220fe654819a05eb3587df83}
       \strng{bibnamehash}{dd61e7fe220fe654819a05eb3587df83}
       \strng{authorbibnamehash}{dd61e7fe220fe654819a05eb3587df83}
-      \strng{authornamehash}{c4bcc67a3ae41e789eeb8b47a6d1b7e8}
+      \strng{authornamehash}{dd61e7fe220fe654819a05eb3587df83}
       \strng{authorfullhash}{dd61e7fe220fe654819a05eb3587df83}
       \field{sortinit}{U}
       \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Robot guided machining has a great potential to substitute or supplement machining with expensive machine tools as well as the inaccurate manual proce$\ldots$}
@@ -6679,16 +6398,14 @@
            given={Emanuele},
            giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{a97840d2d49168c6e0fb52d30355339c}
+      \strng{namehash}{bded384bbae07aa8c44cc16666d0c831}
       \strng{fullhash}{bded384bbae07aa8c44cc16666d0c831}
       \strng{bibnamehash}{bded384bbae07aa8c44cc16666d0c831}
       \strng{authorbibnamehash}{bded384bbae07aa8c44cc16666d0c831}
-      \strng{authornamehash}{a97840d2d49168c6e0fb52d30355339c}
+      \strng{authornamehash}{bded384bbae07aa8c44cc16666d0c831}
       \strng{authorfullhash}{bded384bbae07aa8c44cc16666d0c831}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industrial robots conceived for high-precision assembly processes are demanded to match the best trade-off between precision and speed. This research $\ldots$}
@@ -6731,16 +6448,14 @@
            given={Guillaume},
            giveni={G\bibinitperiod}}}%
       }
-      \strng{namehash}{96d305347aa317604a119d55f2d6099c}
+      \strng{namehash}{e1f0ff190f1704c78b9f97bbfa266177}
       \strng{fullhash}{e1f0ff190f1704c78b9f97bbfa266177}
       \strng{bibnamehash}{e1f0ff190f1704c78b9f97bbfa266177}
       \strng{authorbibnamehash}{e1f0ff190f1704c78b9f97bbfa266177}
-      \strng{authornamehash}{96d305347aa317604a119d55f2d6099c}
+      \strng{authornamehash}{e1f0ff190f1704c78b9f97bbfa266177}
       \strng{authorfullhash}{e1f0ff190f1704c78b9f97bbfa266177}
       \field{sortinit}{v}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Recently, the combination of additive and subtractive manufacturing technologies is gaining significant attention from both the industrial and academi$\ldots$}
@@ -6782,16 +6497,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{7a93549feaa4a0576d1f3848a679d5e8}
+      \strng{namehash}{c77de54242eca57385f84e2551fd674f}
       \strng{fullhash}{c77de54242eca57385f84e2551fd674f}
       \strng{bibnamehash}{c77de54242eca57385f84e2551fd674f}
       \strng{authorbibnamehash}{c77de54242eca57385f84e2551fd674f}
-      \strng{authornamehash}{7a93549feaa4a0576d1f3848a679d5e8}
+      \strng{authornamehash}{c77de54242eca57385f84e2551fd674f}
       \strng{authorfullhash}{c77de54242eca57385f84e2551fd674f}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2007 7th IEEE-RAS International Conference on Humanoid Robots}
@@ -6837,16 +6550,14 @@
            given={Xiaoliang},
            giveni={X\bibinitperiod}}}%
       }
-      \strng{namehash}{53401f6724d0bbad6298f417d4b5e204}
+      \strng{namehash}{c8cc80f102140a20b53625da14b492a5}
       \strng{fullhash}{c8cc80f102140a20b53625da14b492a5}
       \strng{bibnamehash}{c8cc80f102140a20b53625da14b492a5}
       \strng{authorbibnamehash}{c8cc80f102140a20b53625da14b492a5}
-      \strng{authornamehash}{53401f6724d0bbad6298f417d4b5e204}
+      \strng{authornamehash}{c8cc80f102140a20b53625da14b492a5}
       \strng{authorfullhash}{c8cc80f102140a20b53625da14b492a5}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Self-excited vibration, widely referred to as chatter, has always been a limitation and challenge in machining. To suppress milling chatter vibration $\ldots$}
@@ -6890,17 +6601,14 @@
            given={Abdul\bibnamedelima W.},
            giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
       }
-      \strng{namehash}{f94a4355da23aa07bd6eac7dffc0ca80}
+      \strng{namehash}{65d7ce77db5d1a8df217172dc0b42048}
       \strng{fullhash}{65d7ce77db5d1a8df217172dc0b42048}
       \strng{bibnamehash}{65d7ce77db5d1a8df217172dc0b42048}
       \strng{authorbibnamehash}{65d7ce77db5d1a8df217172dc0b42048}
-      \strng{authornamehash}{f94a4355da23aa07bd6eac7dffc0ca80}
+      \strng{authornamehash}{65d7ce77db5d1a8df217172dc0b42048}
       \strng{authorfullhash}{65d7ce77db5d1a8df217172dc0b42048}
-      \field{extraname}{1}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The aim of this work was to evaluate the suitability of stereolithography (SLA) to fabricate drug-loaded tablets with modified-release characteristics. The SLA printer creates solid objects by using a laser beam to photopolymerise monomers. In this work polyethylene glycol diacrylate (PEGDA) was used as a monomer and diphenyl(2,4,6-trimethylbenzoyl)phosphine oxide was used as a photo-initiator. 4-aminosalicylic acid (4-ASA) and paracetamol (acetaminophen) were selected as model drugs. Tablets were successfully printed and formulations with different properties were fabricated by adding polyethylene glycol 300 (PEG 300) to the printing solution. The loading of paracetamol and 4-ASA in the printed tablets was 5.69{\%} and 5.40{\%} respectively. In a realistic dynamic dissolution simulation of the gastrointestinal tract, drug release from the tablets was dependent on the composition of the formulations, but independent of dissolution pH. In conclusion SLA 3DP technology allows the manufacture of drug loaded tablets with specific extended-release profiles. In the future this technology could become a manufacturing technology for the elaboration of oral dosage forms, for industrial production or even for personalised dose.}
@@ -6953,17 +6661,14 @@
            given={Bin},
            giveni={B\bibinitperiod}}}%
       }
-      \strng{namehash}{3242f839ed2d86478cdc05c8f948031c}
+      \strng{namehash}{73714cc52cde9b8eedd588da9d6307b6}
       \strng{fullhash}{73714cc52cde9b8eedd588da9d6307b6}
       \strng{bibnamehash}{73714cc52cde9b8eedd588da9d6307b6}
       \strng{authorbibnamehash}{73714cc52cde9b8eedd588da9d6307b6}
-      \strng{authornamehash}{3242f839ed2d86478cdc05c8f948031c}
+      \strng{authornamehash}{73714cc52cde9b8eedd588da9d6307b6}
       \strng{authorfullhash}{73714cc52cde9b8eedd588da9d6307b6}
-      \field{extraname}{2}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1433-3015}
@@ -7006,17 +6711,14 @@
            given={Jinting},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{70e2a29b78e1dc7725f9f446938da97f}
+      \strng{namehash}{432e136537b0847567b68759efbcf4d5}
       \strng{fullhash}{432e136537b0847567b68759efbcf4d5}
       \strng{bibnamehash}{432e136537b0847567b68759efbcf4d5}
       \strng{authorbibnamehash}{432e136537b0847567b68759efbcf4d5}
-      \strng{authornamehash}{70e2a29b78e1dc7725f9f446938da97f}
+      \strng{authornamehash}{432e136537b0847567b68759efbcf4d5}
       \strng{authorfullhash}{432e136537b0847567b68759efbcf4d5}
-      \field{extraname}{3}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Milling refers to a class of material processing methods that relies on a high-speed rotating milling cutter removing extra material to get desired sh$\ldots$}
@@ -7058,8 +6760,6 @@
       \strng{authorfullhash}{15e5fdafb066c55b8199c3c3b3d7d97d}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents a simple computational model for determining whether additive manufacturing or subtractive manufacturing is more energy efficient for production of a given metallic part. The key discriminating variable is the fraction of the bounding envelope that contains material - i.e. the volume fraction of solid material. For both the additive process and the subtractive process, the total energy associated with the production of a part is defined in terms of the volume fraction of that part. The critical volume fraction is that for which the energy consumed by subtractive manufacturing equals the energy consumed by additive manufacturing. For volume fractions less than the critical value, additive manufacturing is more energy efficient. For volume fractions greater than the critical value, subtractive manufacturing is more efficient. The model considers the entire manufacturing lifecycle - from production and transport of feedstock material through processing to return of post-production scrap for recycling. Energy consumed by processing equipment while idle is also accounted for in the model. Although the individual energy components in the model are identified and accounted for in the expressions for additive and subtractive manufacturing, values for many of these components may not be currently available. Energy values for some materials' production and subtractive and additive manufacturing processes can be found in the literature. However, since many of these data are reported for a very specific application, it may be difficult, if not impossible, to reliably apply these data to new process-material manufacturing scenarios since, very often, insufficient information is provided to enable extrapolation to broader use. Consequently, this paper also highlights the need to develop improved knowledge of the energy embodied in each phase of the manufacturing process. To be most valuable, users of the model should determine the energy consumed by their manufacturing process equipment on the basis of energy-per-unit-volume of production for each material of interest - considering both alloy composition and form. Energy consumed during machine idle per unit time should also be determined by the user then scaled to specific processing scenarios. Energy required to generate feedstock material (billet, plate, bar, wire, powder) must be obtained from suppliers.}
@@ -7083,6 +6783,50 @@
       \verb https://www.sciencedirect.com/science/article/pii/s0959652615018247
       \endverb
     \endentry
+    \entry{Wei.2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b776d95c77c10edd3b69c4d4b3bca3ef}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Yanhui},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=dbc9a408ae134b4cbcaf2346442669ff}{%
+           family={Jian},
+           familyi={J\bibinitperiod},
+           given={Shengqi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6b0027ab5b2ab9fedc846971f3bde20e}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9a77c75cd895982edeea3643a0cc326d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhepeng},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{768c70f2a46e422474b531bb77c7c1f5}
+      \strng{fullhash}{768c70f2a46e422474b531bb77c7c1f5}
+      \strng{bibnamehash}{768c70f2a46e422474b531bb77c7c1f5}
+      \strng{authorbibnamehash}{768c70f2a46e422474b531bb77c7c1f5}
+      \strng{authornamehash}{768c70f2a46e422474b531bb77c7c1f5}
+      \strng{authorfullhash}{768c70f2a46e422474b531bb77c7c1f5}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0094-114X}
+      \field{journaltitle}{Mechanism and Machine Theory}
+      \field{title}{General approach for inverse kinematics of nR robots}
+      \field{volume}{75}
+      \field{year}{2014}
+      \field{pages}{97\bibrangedash 106}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.mechmachtheory.2014.01.008
+      \endverb
+    \endentry
     \entry{Wickramasinghe.2020}{article}{}
       \name{author}{3}{}{%
         {{hash=5157cc30075e480810afa98de86fc492}{%
@@ -7101,16 +6845,14 @@
            given={Phuong},
            giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{92deced8bd98b4ccdacccab0a8ac694a}
+      \strng{namehash}{d91e3ea01974fff8a28158a3c0eac1e2}
       \strng{fullhash}{d91e3ea01974fff8a28158a3c0eac1e2}
       \strng{bibnamehash}{d91e3ea01974fff8a28158a3c0eac1e2}
       \strng{authorbibnamehash}{d91e3ea01974fff8a28158a3c0eac1e2}
-      \strng{authornamehash}{92deced8bd98b4ccdacccab0a8ac694a}
+      \strng{authornamehash}{d91e3ea01974fff8a28158a3c0eac1e2}
       \strng{authorfullhash}{d91e3ea01974fff8a28158a3c0eac1e2}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Fused deposition modelling (FDM) is one of the fastest-growing additive manufacturing methods used in printing fibre-reinforced composites (FRC). The performances of the resulting printed parts are limited compared to those by other manufacturing methods due to their inherent defects. Hence, the effort to develop treatment methods to overcome these drawbacks has accelerated during the past few years. The main focus of this study is to review the impact of those defects on the mechanical performance of FRC and therefore to discuss the available treatment methods to eliminate or minimize them in order to enhance the functional properties of the printed parts. As FRC is a combination of polymer matrix material and continuous or short reinforcing fibres, this review will thoroughly discuss both thermoplastic polymers and FRCs printed via FDM technology, including the effect of printing parameters such as layer thickness, infill pattern, raster angle and fibre orientation. The most common defects on printed parts, in particular, the void formation, surface roughness and poor bonding between fibre and matrix, are explored. An inclusive discussion on the effectiveness of chemical, laser, heat and ultrasound treatments to minimize these drawbacks is provided by this review.}
@@ -7173,17 +6915,14 @@
            given={John},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{4633050da0a161521352492689ecd0eb}
+      \strng{namehash}{c2c8475891c61013642a27250169588c}
       \strng{fullhash}{c2c8475891c61013642a27250169588c}
       \strng{bibnamehash}{c2c8475891c61013642a27250169588c}
       \strng{authorbibnamehash}{c2c8475891c61013642a27250169588c}
-      \strng{authornamehash}{4633050da0a161521352492689ecd0eb}
+      \strng{authornamehash}{c2c8475891c61013642a27250169588c}
       \strng{authorfullhash}{c2c8475891c61013642a27250169588c}
-      \field{extraname}{1}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Due to the feasibility of economically producing large-scale metal components with relatively high deposition rates, significant progress has been mad$\ldots$}
@@ -7230,17 +6969,14 @@
            given={Yong},
            giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{a3231d57a15fd159e0a480f54ba37348}
+      \strng{namehash}{ef7a0310d754c94bfb8bd4545a5a7e12}
       \strng{fullhash}{ef7a0310d754c94bfb8bd4545a5a7e12}
       \strng{bibnamehash}{ef7a0310d754c94bfb8bd4545a5a7e12}
       \strng{authorbibnamehash}{ef7a0310d754c94bfb8bd4545a5a7e12}
-      \strng{authornamehash}{a3231d57a15fd159e0a480f54ba37348}
+      \strng{authornamehash}{ef7a0310d754c94bfb8bd4545a5a7e12}
       \strng{authorfullhash}{ef7a0310d754c94bfb8bd4545a5a7e12}
-      \field{extraname}{2}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Due to their high flexibility, large workspace, and high repeatability, industrial robots are widely used in roughing and semifinishing fields. However, their low machining accuracy and low stability limit further development of industrial robots in the machining field, with low stiffness being the most significant factor. The stiffness of industrial robots is affected by the joint deformation, transmission mechanism, friction, environment, and coupling of these factors. Moreover, the stiffness of a robot has a nonlinear distribution throughout the workspace, and external forces during processing cause irregular deviations of the robot, thereby affecting the machining accuracy and surface quality of the workpiece. Many scholars have researched identifying the stiffness of industrial robots and have proposed methods for improving the performance of industrial robots, mainly by optimizing the body structure of the robot and compensating for deformation errors with stiffness models. This paper reviews recent research on the stiffness modelling of industrial robots, which can be broadly classified as finite element analysis (FEA), matrix structure analysis (MSA), and virtual joint modelling (VJM) methods. Each method is studied from three aspects: algorithms, implementation, and limitations. In addition, common measurement techniques have been introduced for measuring deformation. Further research directions are also discussed.}
@@ -7282,16 +7018,14 @@
            given={LiMin},
            giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{b962a1fe2ecff6dc362ba51abe08f763}
+      \strng{namehash}{75ac0c8f58119b4a6c7a3db610110358}
       \strng{fullhash}{75ac0c8f58119b4a6c7a3db610110358}
       \strng{bibnamehash}{75ac0c8f58119b4a6c7a3db610110358}
       \strng{authorbibnamehash}{75ac0c8f58119b4a6c7a3db610110358}
-      \strng{authornamehash}{b962a1fe2ecff6dc362ba51abe08f763}
+      \strng{authornamehash}{75ac0c8f58119b4a6c7a3db610110358}
       \strng{authorfullhash}{75ac0c8f58119b4a6c7a3db610110358}
       \field{sortinit}{X}
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industrial robot provides an optimistic alternative of traditional CNC machine tool due to its advantages of large workspace, low cost and great flexi$\ldots$}
@@ -7338,16 +7072,14 @@
            given={Xiaoguang},
            giveni={X\bibinitperiod}}}%
       }
-      \strng{namehash}{de130e1107ae3241744c505b42d9c1f6}
+      \strng{namehash}{d362aa60c927ba2cfd48032320a0c493}
       \strng{fullhash}{d362aa60c927ba2cfd48032320a0c493}
       \strng{bibnamehash}{d362aa60c927ba2cfd48032320a0c493}
       \strng{authorbibnamehash}{d362aa60c927ba2cfd48032320a0c493}
-      \strng{authornamehash}{de130e1107ae3241744c505b42d9c1f6}
+      \strng{authornamehash}{d362aa60c927ba2cfd48032320a0c493}
       \strng{authorfullhash}{d362aa60c927ba2cfd48032320a0c493}
       \field{sortinit}{X}
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nowadays, machining process information from CAPP cannot yet be directly interpreted and utilized in CAM systems. It is the NC programmers who decipher the information and link up CAPP and CAM, which is inefficient. In order to reduce the tool path editing and programming time, this paper describes the implementation of an automatic tool path generation from the structuralized machining process (SMP). An intelligent agent named KMAIMOD was developed to automate SMP analysis and tool path generation based on operation controlled template (OCT) and feature machining volume semantics (FMVS). The framework of CAD/CAPP/CAM integration was introduced for automatic tool path generation. Then the working principle and machining process data analysis of KMAIMOD was proposed. And three categories of FMVS construction with machining elements were discussed to automatic determine machining position and range. In the experiments, some part models are utilized to verify the approach for automatic tool path generation, and the experimental results are analyzed at length to show the application effectiveness of the method.}
@@ -7395,16 +7127,14 @@
            given={Hui},
            giveni={H\bibinitperiod}}}%
       }
-      \strng{namehash}{166ce9d007168b640c509f2403f18968}
+      \strng{namehash}{e8f738c7a52fe62173f4d6069461b546}
       \strng{fullhash}{e8f738c7a52fe62173f4d6069461b546}
       \strng{bibnamehash}{e8f738c7a52fe62173f4d6069461b546}
       \strng{authorbibnamehash}{e8f738c7a52fe62173f4d6069461b546}
-      \strng{authornamehash}{166ce9d007168b640c509f2403f18968}
+      \strng{authornamehash}{e8f738c7a52fe62173f4d6069461b546}
       \strng{authorfullhash}{e8f738c7a52fe62173f4d6069461b546}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents the solution to evaluate and predict machining precision of a multi-axis computer numerical control (CNC) machine tool. The {\grqq}funct$\ldots$}
@@ -7446,8 +7176,6 @@
       \strng{authorfullhash}{5781b27ab5a26715eaffd0083303177c}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0890-6955}
@@ -7480,8 +7208,6 @@
       \strng{authorfullhash}{8b9a8afb4153d569a17f211b83af9fac}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Metaheuristic algorithms are becoming an important part of modern optimization. A wide range of metaheuristic algorithms have emerged over the last two decades, and many metaheuristics such as particle swarm optimization are becoming increasingly popular. Despite...}
@@ -7521,8 +7247,6 @@
       \strng{authorfullhash}{4562bb82062afd836cfea40bbd07e085}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2022 7th International Conference on Mechatronics System and Robots (ICMSR)}
@@ -7570,16 +7294,14 @@
            given={Weihua},
            giveni={W\bibinitperiod}}}%
       }
-      \strng{namehash}{9db7e219dd4323663bea770950689d14}
+      \strng{namehash}{d5b26f333b5156828e426f7c17716dfd}
       \strng{fullhash}{d5b26f333b5156828e426f7c17716dfd}
       \strng{bibnamehash}{d5b26f333b5156828e426f7c17716dfd}
       \strng{authorbibnamehash}{d5b26f333b5156828e426f7c17716dfd}
-      \strng{authornamehash}{9db7e219dd4323663bea770950689d14}
+      \strng{authornamehash}{d5b26f333b5156828e426f7c17716dfd}
       \strng{authorfullhash}{d5b26f333b5156828e426f7c17716dfd}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Wire Arc Additive Manufacturing (WAAM) is a promising technology for fabricating medium to large scale metallic parts with excellent productivity and $\ldots$}
@@ -7628,16 +7350,14 @@
            given={Lihui},
            giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{a5976ee0ba38c469454f95c221adc1aa}
+      \strng{namehash}{ec585e8fc77e49c3183bf4d80c0931ea}
       \strng{fullhash}{ec585e8fc77e49c3183bf4d80c0931ea}
       \strng{bibnamehash}{ec585e8fc77e49c3183bf4d80c0931ea}
       \strng{authorbibnamehash}{ec585e8fc77e49c3183bf4d80c0931ea}
-      \strng{authornamehash}{a5976ee0ba38c469454f95c221adc1aa}
+      \strng{authornamehash}{ec585e8fc77e49c3183bf4d80c0931ea}
       \strng{authorfullhash}{ec585e8fc77e49c3183bf4d80c0931ea}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Chatter is a self-excited vibration of parts in machining systems. It is widely present across a range of cutting processes, and has an impact upon bo$\ldots$}
@@ -7692,16 +7412,14 @@
            given={Runji},
            giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{2b2e10a08c2eb1d84a7d909cd22167d0}
+      \strng{namehash}{a7e6b0a3009e8c16d6b36163db4f3871}
       \strng{fullhash}{a7e6b0a3009e8c16d6b36163db4f3871}
       \strng{bibnamehash}{a7e6b0a3009e8c16d6b36163db4f3871}
       \strng{authorbibnamehash}{a7e6b0a3009e8c16d6b36163db4f3871}
-      \strng{authornamehash}{2b2e10a08c2eb1d84a7d909cd22167d0}
+      \strng{authornamehash}{a7e6b0a3009e8c16d6b36163db4f3871}
       \strng{authorfullhash}{a7e6b0a3009e8c16d6b36163db4f3871}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1433-3015}
@@ -7762,17 +7480,14 @@
            given={Baoquan},
            giveni={B\bibinitperiod}}}%
       }
-      \strng{namehash}{ae772a6da4325e6ca6181a796a146522}
+      \strng{namehash}{11e5515314a2ba03a57be7c12ff42806}
       \strng{fullhash}{11e5515314a2ba03a57be7c12ff42806}
       \strng{bibnamehash}{11e5515314a2ba03a57be7c12ff42806}
       \strng{authorbibnamehash}{11e5515314a2ba03a57be7c12ff42806}
-      \strng{authornamehash}{ae772a6da4325e6ca6181a796a146522}
+      \strng{authornamehash}{11e5515314a2ba03a57be7c12ff42806}
       \strng{authorfullhash}{11e5515314a2ba03a57be7c12ff42806}
-      \field{extraname}{1}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0730-0301}
@@ -7823,17 +7538,14 @@
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{5ec0e7ebffac08319cf42f86637f670c}
+      \strng{namehash}{d1694b68d78ce00a948b9394625fbe3f}
       \strng{fullhash}{d1694b68d78ce00a948b9394625fbe3f}
       \strng{bibnamehash}{d1694b68d78ce00a948b9394625fbe3f}
       \strng{authorbibnamehash}{d1694b68d78ce00a948b9394625fbe3f}
-      \strng{authornamehash}{5ec0e7ebffac08319cf42f86637f670c}
+      \strng{authornamehash}{d1694b68d78ce00a948b9394625fbe3f}
       \strng{authorfullhash}{d1694b68d78ce00a948b9394625fbe3f}
-      \field{extraname}{2}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2021 China Automation Congress (CAC)}

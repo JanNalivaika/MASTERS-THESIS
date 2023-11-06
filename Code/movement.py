@@ -37,15 +37,17 @@ def forward_kinematics(a, alpha, d, theta):
 # Plotting
 
 fig = plt.figure()
-pos = np.load("0_angles.npy")
+pos = np.load("6_angles.npy")
 
-for iter in range(int(len(pos)/2)):
-    iter*=2
+for iter in range(int(len(pos))):
+    #iter*=2
     #print(iter)
     plt.clf()
 
     theta = [iter, iter, iter, iter, iter, iter]
     theta = pos[iter]
+    #theta[0] += np.pi/2
+    #theta[1] -= np.pi/2
     theta = np.degrees(theta)
     # Compute transformations
     transformations, [x, y, z] = forward_kinematics(a, alpha, d, theta)

@@ -79,10 +79,11 @@ def calculate_total_distance(coordinates):
 
     return total_distance
 
-
-for tests in range(100):
+momory =[]
+for tests in range(80):
     pos = []
     ang = []
+
     all_pos = np.load(f"{tests}_angles.npy")
 
     time = np.linspace(0, 2.0, num=len(all_pos))
@@ -142,7 +143,13 @@ for tests in range(100):
 
     # Adjust the spacing between subplots
     plt.tight_layout()
+    momory.append(dirchange)
 
 
     # Show the plot
-    plt.show()
+    #plt.show()
+    plt.close()
+
+
+plt.plot(momory)
+plt.show()
