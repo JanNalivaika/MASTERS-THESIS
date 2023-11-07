@@ -14,7 +14,7 @@ def main(reps):
         plt.close()
         dh_params = np.array([[400,   180.,     0.5 * pi,   0],
                               [0.,      600,  0,         0],
-                              [0.,      120, 0.5 * pi,         0],
+                              [0.,      120, 0,         0],
                               [620,  0.,     0.5 * pi,  0],
                               [0,   0.,     0.5 * pi,   0],
                               [115,   0.,     0.,         0]])
@@ -25,9 +25,10 @@ def main(reps):
         # inverse
         # =====================================
 
-        xyz = np.array([[np.sin(np.deg2rad(iter))*400+0], [np.cos(np.deg2rad(iter))*200+500], [100+iter*2]])
-        #if iter%100 == 0: print(iter)
-        abc = np.array([0,reps,  0])
+        xyz = np.array([[np.sin(np.deg2rad(iter))*10+200], [500], [400]])
+        #xyz = np.array([[np.sin(np.deg2rad(iter))*400+500], [np.cos(np.deg2rad(iter))*200+500], [100+iter*2]])
+        if iter%10 == 0: print(iter)
+        abc = np.array([0,0,  0])
         end = Frame.from_euler_3(abc, xyz)
         robot.inverse(end)
 
@@ -51,5 +52,5 @@ def main(reps):
     #robot.show()
 
 if __name__ == "__main__":
-    for reps in range(100):
+    for reps in range(1):
         main(reps)

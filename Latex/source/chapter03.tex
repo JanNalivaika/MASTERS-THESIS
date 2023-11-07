@@ -7,8 +7,83 @@ The proposed method aims to provide a framework for optimizing various parameter
 
 The first step involves constructing a basic model that captures the kinematics and dynamics a the industrial robot. To test the method in a simple case, the first tests are performed on a non-redundant 6-DoF model. After validation on this simple model, redundant degrees of freedom are introduced. After that the method is connected with CAM software to be tested in more complex scenarios.
 
-Once the mathematical model is established, various optimization algorithms are implemented to determine the optimal values for each parameter associated with the redundant degrees of freedom. These method and optimization algorithms will consider the industrial robot's specific objectives and constraints, like energy consumption, feed rates and accelerations.
-The validation process entails conducting real-world tests and simulations to evaluate optimized parameter performance and verify the effectiveness of our proposed methodology.
+Once the basic mathematical model is established, various optimization algorithms are implemented to determine the optimal values for each parameter associated with the redundant degrees of freedom. These method and optimization algorithms will consider the industrial robot's specific objectives and constraints, like energy consumption, feed rates and accelerations. The validation process entails conducting real-world tests and simulations to evaluate optimized parameter performance and verify the effectiveness of our proposed methodology.
 
 
-\section{General Methodology}
+\section{General Methodology for Process Analysis}
+\subsection{General Methodology}\label{general}
+
+The flowchart in figure \ref{BasicScore} shows the interdependence of a tool-path, the used manufacturing machine, the material and set boundary conditions. The machine defines general parameters like reach, DoF, maximum feed rates and manufacturing process (additive or subtractive). It can be a 6-axis CNC machine or a 8-DoF industrial robot. The part is referred to as the finished geometry as designed in CAD. The material is a user defined element from which the part should be manufactured. The elements "Machine", "Part" and "Material" directly influence the toolpath that is necessary for manufacturing. The machine for example, defines if the spindle or the work piece itself needs to be tilted to achieve the desired geometric features. The material and available end-mills is also influencing the depth of cut and thus required passes to achieve the desired geometries. 
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.6]{figures/BasicScore.png}}
+	\caption{Interdependence of various parameters}
+	\label{BasicScore}
+\end{figure}
+
+As the tool path is only a relative movement in regards to the work piece, the user is required to define further parameters before starting the manufacturing process. One example is the positioning of the raw stock material in the machine itself and defining the coordinate system that is used as a reference for the tool center point (TCP). These two boundary conditions have to be in accordance with the machines capabilities and can require extensive knowledge about the machine as well as performed process.
+
+One of the other parameters that needs to be defined, is the positioning or constraining of redundant DoF. One of the simplest cases to illustrate this constraining, is when using a 6-DoF robot for milling operations. In milling, the TCP position is defined by 3 coordinates, namely by X Y and Z, as well as the rotation around the X and Y-axis. The rotation around the Z-axis is needs to defined manually as the spindle has rotatory symmetry around that axis. This constraint ensures that the robot maintains a specified pose while performing milling the milling operations. The rotation around the Z axis can be set to any arbitrarily set value but can influence the overall process parameters significantly. 
+
+After the constraints are set and the toolpath is generated, various process parameters can be analyzed. Some of the more prominent parameters are the total angular travel of specific joint or the total angular acceleration. Additional to these numerical values, the user can define a specific importance for the analyzed process parameters and with a weighting of all available process parameters, calculate a overall score of the determined toolpath.
+
+
+%More information regarding the parameters and weights is presented in chapter \ref{pp}.
+
+\subsection{Process Parameter and User-Defined Weights}\label{pp}
+
+Table \ref{procesparameters} shows the different process parameters that can be extracted from a tool path that is executed by a industrial robot. The first parameter is the position of each of the joints. This information is present in form of an array that stores the rotation or extension of a rotary or linear joint at each time-step. From that information the velocity, acceleration and jerk can be determined. With a forward kinematics approach, the position of the TCP can be determined. The acceleration is determine by derivative of the TCP position with respect to time.
+
+
+  
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|r|}
+		Process Parameter & Numerical Form\\
+		\hline
+		\hline
+		\hline
+		
+		Angular Position of each joint & Time series\\
+		Angular Velocity of each joint & Time series\\
+		Angular Acceleration of each joint& Time series\\
+		Angular Jerk of each joint& Time series\\
+		\hline
+		\hline	
+		
+		TCP Coordinates X & Time series\\
+		TCP Coordinates Y & Time series\\
+		TCP Coordinates Z & Time series\\
+		\hline
+		\hline
+		TCP Acceleration in X & Time series\\
+		TCP Acceleration in Y & Time series\\
+		TCP Acceleration in Z & Time series\\
+		\hline
+		\hline
+		Stiffness value & Time series\\
+		
+		
+		Continuous energy usage & Time series\\
+		\hline
+		\hline
+		Direction changes of each joint& Scalar value\\
+		Total energy usage & Scalar value\\
+		Singularity Analysis & Scalar value\\
+		Cycle time & Scalar value\\
+		\hline
+		\hline
+		Reachability index & Binary value\\
+		Collision index & Binary value\\
+		\hline
+		\hline
+		
+	\end{tabular}
+	
+	
+	\caption{Process parameter and their numerical form}
+	\label{procesparameters}
+\end{table}
+

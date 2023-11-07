@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # DH parameters
 a = [180, 600, 120, 0, 0, 0]
-alpha = [90, 0, 90, 90, 90, 0]
+alpha = [90, 0, 0, 90, 90, 0]
 d = [400, 0, 0, 620, 0, 115]
 
 
@@ -29,28 +29,24 @@ def forward_kinematics(a, alpha, d, theta):
         transformations.append(T)
 
     position = T[:3, 3]
-    return transformations, position
+    rmatrix = T[:3, :3]
+    return transformations, position,rmatrix
 
 
-# Joint angles (in degrees)
-#theta = [0, 0, 0, 0, 0, 0]
-# Plotting
+pos = np.load("0_angles.npy")
 
-fig = plt.figure()
-pos = np.load("6_angles.npy")
+fig = plt.figure(figsize=(8, 8), dpi=100)
 
-for iter in range(int(len(pos))):
-    #iter*=2
-    #print(iter)
+
+for iter in range(360):
     plt.clf()
 
-    theta = [iter, iter, iter, iter, iter, iter]
+    theta = [iter, 45, -90, 0, 90, 0]
+    theta = [iter, iter+45, iter-90, iter, iter+180, iter-45]
     theta = pos[iter]
-    #theta[0] += np.pi/2
-    #theta[1] -= np.pi/2
-    theta = np.degrees(theta)
+    theta = np.deg2rad(theta)
     # Compute transformations
-    transformations, [x, y, z] = forward_kinematics(a, alpha, d, theta)
+    transformations, [x, y, z], rotM = forward_kinematics(a, alpha, d, theta)
 
     # axCOORD = fig.add_subplot(111, projection='3d')
     ax = fig.add_subplot(111, projection='3d')
@@ -67,8 +63,21 @@ for iter in range(int(len(pos))):
                 [positions[i][1], positions[i + 1][1]],
                 [positions[i][2], positions[i + 1][2]], 'b')
 
+    ax.plot([0, np.cos(np.radians(theta[0]))*a[0]],
+            [0, np.sin(np.radians(theta[0]))*a[0]],
+            [0, 0], 'g')
+
+    ax.plot([np.cos(np.radians(theta[0])) * a[0], np.cos(np.radians(theta[0])) * a[0]],
+            [np.sin(np.radians(theta[0])) * a[0], np.sin(np.radians(theta[0])) * a[0]],
+            [0, d[0]], 'g')
+
+
+
+
+
     # Plot robot joints
     ax.scatter(positions[:, 0], positions[:, 1], positions[:, 2], c='r', marker='o')
+    ax.scatter(0, 0, 0, c='r', marker='o')
 
     # Plot robot end-effector
     ax.scatter(positions[-1][0], positions[-1][1], positions[-1][2], c='g', marker='o')
@@ -78,9 +87,14 @@ for iter in range(int(len(pos))):
     ax.set_ylim([-1000, 1000])
     ax.set_zlim([-1000, 1000])
 
-    ax.quiver(x, y, z, 1, 0, 0, length=300, normalize=False, color='r', linewidth=5)  # x-axis
-    ax.quiver(x, y, z, 0, 1, 0, length=300, normalize=False, color='g', linewidth=5)  # y-axis
-    ax.quiver(x, y, z, 0, 0, 1, length=300, normalize=False, color='b', linewidth=5)  # z-axis
+    pointer1 = np.dot(rotM,[1, 0, 0])
+    pointer2 = np.dot(rotM, [0, 1, 0])
+    pointer3 = np.dot(rotM, [0, 0, 1])
+
+
+    ax.quiver(x, y, z, pointer1[0], pointer1[1], pointer1[2], length=300, normalize=True, color='r', linewidth=3)  # x-axis
+    ax.quiver(x, y, z, pointer2[0], pointer2[1], pointer2[2], length=300, normalize=True, color='g', linewidth=3)  # y-axis
+    ax.quiver(x, y, z, pointer3[0], pointer3[1], pointer3[2], length=300, normalize=True, color='b', linewidth=3)  # z-axis
     # ax.view_init(elev=30, azim=45)
     # ax.elev = 30  # Set the elevation angle (vertical rotation)
     # ax.azim = 45  # Set the azimuth angle (horizontal rotation
@@ -88,10 +102,12 @@ for iter in range(int(len(pos))):
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
-    print(iter, x, y, z)
+    #print(iter, x, y, z)
 
     # Show plot
 
     plt.pause(0.001)
+    #print(pointer1)
+    #plt.show()
 
 plt.show()
