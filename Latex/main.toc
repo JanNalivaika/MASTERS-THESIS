@@ -29,16 +29,17 @@
 \contentsline {section}{\numberline {3.1}Introduction}{29}{section.3.1}%
 \contentsline {section}{\numberline {3.2}General Methodology for Process Analysis}{29}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}General Methodology}{29}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Process Parameter and User-Defined Weights}{30}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{33}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{33}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{33}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{33}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{33}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{35}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{35}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{37}{chapter.6}%
-\contentsline {chapter}{Bibliography}{43}{chapter*.38}%
+\contentsline {subsection}{\numberline {3.2.2}Process Parameters}{30}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}User-Defined Weights}{34}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{37}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{37}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{37}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{39}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Appendix}{41}{chapter.6}%
+\contentsline {chapter}{Bibliography}{47}{chapter*.41}%
 \contentsfinish 
