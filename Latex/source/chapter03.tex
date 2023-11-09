@@ -138,16 +138,16 @@ Figure \ref{ParamsFlow} visualizes how the different parameters are interconnect
 \end{figure}
 
 
-\subsection{User-Defined Weights}\label{weights}
+\section{User-Defined Weights and Rating Calculation}\label{weights}
 To assess if a tool path is optimal or offers the possibility for improvement, a score or rating value is required that takes the process parameters and their importance into account. 
 
 Determining the relative importance of different parameters can involve subjective judgments, expert knowledge, and consideration of specific manufacturing constraints. For example, in some cases, minimizing cycle time may be the primary objective, while in others, energy usage may take precedence.
 
-To quantify the optimality of a tool path, manufacturers may assign weights or importance factors to each parameter based on their specific requirements. These weights can reflect the relative significance of each parameter in achieving the desired manufacturing outcomes. A weighted sum or scoring method can then be used to evaluate and compare different tool paths based on the aggregated scores of the individual parameters.
+To quantify the optimality of a tool path, manufacturers may assign weights or importance factors to each parameter based on their specific requirements. These weights can reflect the relative significance of each parameter in achieving the desired manufacturing outcomes. A weighted sum or scoring method can then be used to evaluate and compare different tool paths based on the aggregated scores of the individual parameters. The sum of all defined importance values must add up to 1 so that the most optimal tool path has the global score of 100.
 
 It's important to note that the subjective weighing of parameters can vary between different manufacturing scenarios and may require continuous evaluation and adjustment based on changing priorities or goals.
 
-The score of a tool path is then calculated as shown in table \ref{weighting}. Each process parameter can take a value in the range 0-100. 0 being the least optimal, while 100 represents the optimal.
+The score of a tool path is then calculated as shown in table \ref{weighting}. Each process parameter can take a value in the range 0-100. 0 being the least optimal, while 100 represents the optimal.The local rating is multiplied with the importance factor and returns the local score. All local score are summed up and result in the overall global score of a that specific tool path.
 
 \begin{table}[H]
 	\centering
@@ -183,16 +183,56 @@ Figure \ref{Localscore} shows how a local score can be calculated by means of va
 	\label{Localscore}
 \end{figure}
 
-The second problem is connected to the time-series format of the recorded parameters. To acquire a local score, the time series need to be transformed into a scalar value.
 
 
-Each time series requires individual analysis
+\section{Information Extraction form Time-Series Data}\label{extraction}
+\subsection{Information from Angular Velocity, Acceleration and Jerk}
+The next problem is connected to the time-series format of the recorded parameters. To acquire a local score, the time-series needs to be transformed into a scalar value.
+As each time series is capturing different phenomena, each one requires a individual analysis.
 
 
-What time series is even necessary ? 
+The angular position of a joint by itself does not provide much information from which much qualitative analysis can be performed. But by adding information like a temporal component it can serve as a significant information source. 
+
+Figure \ref{agularstuff} visualizes what information needs to be added to enhance the information content of process parameters that are directly related to the angular position of joints.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.55]{figures/angularstuff.png}}
+	\caption{Additional Information for angular position of each joint}
+	\label{agularstuff}
+\end{figure}
 
 
-What parameters form a time series needs to be extracted ?
+
+The first additional required information is the temporal element that specifies the time when a joint is supposed to be at which rotational position. This can either be recorded in equidistant time steps as shown in figure \ref{equi} or adapted to only record the change of of position as shown in figure \ref{onchange}. Recording only the change of position is not optimal as it does not encompass the physical system where the position can not change from one time step to the other. Additionally it is no defined with which rotational velocity the joint need to change position. On the other hand, the continuous recording in equidistant time steps can result in significantly more recorded values and thus longer time-series.
+
+Figure \ref{equi} shows the rotational position of a rotary joint in radians recorded with equidistant steps. Figure \ref{onchange} chows how a time-series looks like if only the destination positions and the associate times are recorded.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.55]{figures/equi.png}}
+	\caption{Time-series of a rotary joint with equidistant time steps}
+	\label{equi}
+\end{figure}
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.55]{figures/onchange.png}}
+	\caption{Time-series of a rotary joint with only the recorded end positions}
+	\label{onchange}
+\end{figure}
+
+
+Parameters that can be analyzed without any additional information is the number of direction changes as well as the total travel of a joint. The total travel is easily obtained by subtracting the position on two adjacent recorded points and summing up the absolute value. Additionally more information can be extracted by summing up, for example, the clockwise and anti-clockwise rotation individually. By combing the absolute value of these to values, the total travel of that cont is calculated.
+Figure \ref{travel} gives a visual representation on how the total travel can calculated. Summing up the length of the green arrows result in the total forward rotation, while the sum of the length of the orange arrows is the backwards rotation.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.55]{figures/travel.png}}
+	\caption{Summing up the rotation in the clockwise and anti-clockwise direction }
+	\label{travel}
+\end{figure}
+
+The number of direction changes can also be determined by just analyzing the joint position. This value can be determined by finding all points where the position before and after is either smaller or larger. But this method does not apply to points where multiple positions are recorded at the same value right after each other. The solution to that problem is to introduce a tracking value that indicates if the previous change in direction was either up or down. If the direction of two positions is different form the tracking value, the direction change counter is incremented by 1. If the direction is in the same as the previous points or neutral, which means that two positions were identical, the counter is not changed.
+
+
+Lastly, a simple analysis regarding the rotational limits can be performed, for that two different values need to be known. The fist one is the physical limit that a joint can not exceed. Trying to drive the robot joint past that point can result in significant damage. The second value are possible soft limits that exist to prevent the joint from over rotation into its physical limits. To validate if any rotational positions are exceeded a simple comparison of all the values can be made.
 
 
 
