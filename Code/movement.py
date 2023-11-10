@@ -43,8 +43,8 @@ for iter in range(360):
 
     theta = [iter, 45, -90, 0, 90, 0]
     theta = [iter, iter+45, iter-90, iter, iter+180, iter-45]
-    theta = pos[iter]
-    theta = np.deg2rad(theta)
+    #theta = pos[iter]
+    #theta = np.deg2rad(theta)
     # Compute transformations
     transformations, [x, y, z], rotM = forward_kinematics(a, alpha, d, theta)
 

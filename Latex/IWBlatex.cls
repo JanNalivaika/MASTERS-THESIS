@@ -4809,16 +4809,16 @@
 % Select backend
 % --------------
 \ifdefined\optBiber% Load biblatex package with biber as backend
-    \PassOptionsToPackage{backend=biber,defernumbers=true}{biblatex}%
+    \PassOptionsToPackage{backend=biber,defernumbers=true, sorting=none}{biblatex}%
 \else\fi%
 \ifdefined\optBibtex% Load biblatex package with bibtex as backend
-    \PassOptionsToPackage{backend=bibtex}{biblatex}%
+    \PassOptionsToPackage{backend=bibtex, sorting=none}{biblatex}%
 \else\fi%
 %
 % Select citation style
 % ---------------------
 \ifdefined\optBibstyleNumeric%
-    \PassOptionsToPackage{style=numeric-comp}{biblatex}%
+    \PassOptionsToPackage{style=numeric-comp, sorting=none}{biblatex}%
 \else\fi%
 \ifdefined\optBibstyleAlphabetic%
     \PassOptionsToPackage{style=alphabetic}{biblatex}%

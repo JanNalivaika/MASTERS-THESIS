@@ -84,7 +84,7 @@ for tests in range(80):
     pos = []
     ang = []
 
-    all_pos = np.load(f"{tests}_angles.npy")
+    all_pos = np.load(f"{0}_angles.npy")
 
     time = np.linspace(0, 2.0, num=len(all_pos))
     # Calculate forward kinematics
@@ -147,7 +147,7 @@ for tests in range(80):
 
 
     # Show the plot
-    #plt.show()
+    plt.show()
     plt.close()
 
 

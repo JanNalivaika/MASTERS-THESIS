@@ -1069,6 +1069,35 @@
       \verb https://link.springer.com/article/10.1007/s00170-018-2033-7
       \endverb
     \endentry
+    \entry{Chaurasia.}{book}{}
+      \name{editor}{2}{}{%
+        {{hash=4de0a4f96f22bd9b0f3df741fa7b340d}{%
+           family={Chaurasia},
+           familyi={C\bibinitperiod},
+           given={Mayank},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eb94f93813383c566143a8d54f93a29b}{%
+           family={Sinha},
+           familyi={S\bibinitperiod},
+           given={Manoj\bibnamedelima Kumar},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee9c763c45cd7f0a7c18903021ced9c7}
+      \strng{fullhash}{ee9c763c45cd7f0a7c18903021ced9c7}
+      \strng{bibnamehash}{ee9c763c45cd7f0a7c18903021ced9c7}
+      \strng{editorbibnamehash}{ee9c763c45cd7f0a7c18903021ced9c7}
+      \strng{editornamehash}{ee9c763c45cd7f0a7c18903021ced9c7}
+      \strng{editorfullhash}{ee9c763c45cd7f0a7c18903021ced9c7}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Investigations on Process Parameters of Wire Arc Additive Manufacturing (WAAM): A Review}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1007/978-981-15-8542-5{\textunderscore }74
+      \endverb
+    \endentry
     \entry{ChenGang.2014}{article}{}
       \name{author}{5}{}{%
         {{hash=ce27d38a9b96ffca656bd49a0591a1c4}{%
@@ -1366,6 +1395,33 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1109/TASE.2020.2974771
+      \endverb
+    \endentry
+    \entry{Dalton.28102023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=735b4302940f5ca514012172355617a8}{%
+           family={Dalton},
+           familyi={D\bibinitperiod},
+           given={Rachel},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{735b4302940f5ca514012172355617a8}
+      \strng{fullhash}{735b4302940f5ca514012172355617a8}
+      \strng{bibnamehash}{735b4302940f5ca514012172355617a8}
+      \strng{authorbibnamehash}{735b4302940f5ca514012172355617a8}
+      \strng{authornamehash}{735b4302940f5ca514012172355617a8}
+      \strng{authorfullhash}{735b4302940f5ca514012172355617a8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It can be difficult to capture a clear video of cold metal transfer welds due variation in light. Using a Xiris weld camera can help solve this.}
+      \field{title}{Imaging CMT Welding with a Weld Camera: Last access: 30.10.2023}
+      \verb{urlraw}
+      \verb https://blog.xiris.com/blog/imaging-cmt-welding-with-a-weld-camera
+      \endverb
+      \verb{url}
+      \verb https://blog.xiris.com/blog/imaging-cmt-welding-with-a-weld-camera
       \endverb
     \endentry
     \entry{Das.2005}{article}{}
@@ -3221,63 +3277,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1007/978-3-319-65298-6{\textunderscore }32
-      \endverb
-    \endentry
-    \entry{Jin.2020}{article}{}
-      \name{author}{6}{}{%
-        {{hash=a995b78eaf6da41e837735bef5f6b5b1}{%
-           family={Jin},
-           familyi={J\bibinitperiod},
-           given={Wanwan},
-           giveni={W\bibinitperiod}}}%
-        {{hash=c197cc091413d9f319a56849f146d0bd}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Chaoqun},
-           giveni={C\bibinitperiod}}}%
-        {{hash=d6794c6e68679bb71c3f8ba95004ef36}{%
-           family={Jin},
-           familyi={J\bibinitperiod},
-           given={Shuoya},
-           giveni={S\bibinitperiod}}}%
-        {{hash=dc72897b4df57c9db5033d7ac8b358b4}{%
-           family={Tian},
-           familyi={T\bibinitperiod},
-           given={Yingtao},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=37af96673bb985dbd8a4b7b81e19bb11}{%
-           family={Wellmann},
-           familyi={W\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=4d7b40882a0f3cad65155854ac2add23}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Wen},
-           giveni={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{5c64c23b1c0c9697e4296286aa74f9c5}
-      \strng{fullhash}{5c64c23b1c0c9697e4296286aa74f9c5}
-      \strng{bibnamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
-      \strng{authorbibnamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
-      \strng{authornamehash}{5c64c23b1c0c9697e4296286aa74f9c5}
-      \strng{authorfullhash}{5c64c23b1c0c9697e4296286aa74f9c5}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Applied Sciences}
-      \field{number}{5}
-      \field{title}{Wire Arc Additive Manufacturing of Stainless Steels: A Review}
-      \field{volume}{10}
-      \field{year}{2020}
-      \field{pages}{1563}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/app10051563
-      \endverb
-      \verb{file}
-      \verb Jin, Zhang et al. 2020 - Wire Arc Additive Manufacturing:Attachments/Jin, Zhang et al. 2020 - Wire Arc Additive Manufacturing.pdf:application/pdf
       \endverb
     \endentry
     \entry{Joshi.2021}{article}{}
