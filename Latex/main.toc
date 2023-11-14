@@ -31,18 +31,18 @@
 \contentsline {section}{\numberline {3.2}General Methodology for Process Analysis}{31}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}General Methodology}{31}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Process Parameters}{33}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}User-Defined Weights and Rating Calculation}{37}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Information Extraction form Time-Series Data}{38}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Information from Angular Velocity, Acceleration and Jerk}{38}{subsection.3.4.1}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{43}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{43}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{43}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{43}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{43}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{43}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{45}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{45}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{45}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{47}{chapter.6}%
-\contentsline {chapter}{Bibliography}{53}{chapter*.46}%
+\contentsline {section}{\numberline {3.3}User-Defined Weights and Rating Calculation}{36}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Information Extraction form Time-Series Data}{37}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Information from Angular Velocity, Acceleration and Jerk}{37}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{41}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{41}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{41}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{43}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Appendix}{45}{chapter.6}%
+\contentsline {chapter}{Bibliography}{51}{chapter*.46}%
 \contentsfinish 
