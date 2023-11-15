@@ -465,7 +465,7 @@ Table \ref{parameter} summarizes the analyzed parameters.
 
 Additional parameters like transfer time, precision, and maximum load capacity can also be analyzed but are omitted from the detailed analysis due to the limitations of scope \cite{Breaz.2017, Hirzinger.2005, Pham.2018}. Direction changes in the joint are briefly mentioned in \cite{Halbauer.2013} but not discussed in detail in any other publication.
 
-\subsubsection{Singularity avoidance}
+\subsection{Singularity avoidance}
 As mentioned in Chapter \ref{Problem Formulation}, singularities occur when the robot manipulator loses control or achieves limited mobility due to certain configurations~\cite{Malyshev.2022}. This results in the loss of a DoF or makes the system highly sensitive to small changes~\cite{Zhao.2021, Milenkovic.2021}.
 Image \ref{wristsingular} shows how the 5th joint needs to rotate significantly when moving along a straight line in Cartesian space. When an additional velocity boundary condition is set that defines the feed rate of that path, the rotation is very difficult to perform as the motor joints cannot keep up with the required angular acceleration. This is unnecessary movement that increases energy consumption and adds unnecessary wear to the joints. 
 
@@ -492,7 +492,7 @@ A singular configuration avoidance algorithm is used to avoid singular patterns 
 
 Neural networks and other machine learning approaches are commonly used to solve the issue of inverse kinematics. In this case, the optimization variable is not only limited to singularity avoidance but can also be focused on precision or optimization of feed rate \cite{Wei.2014}.
 
-\subsubsection{Optimization of Joint Accelerations and Jerk}
+\subsection{Optimization of Joint Accelerations and Jerk}
 
 Jerk and acceleration control are critical because high values can wear out the robot structure and significantly stimulate its resonance frequencies. Vibrations caused by non-smooth trajectories can harm the robot's actuators and produce substantial deviations when completing tasks like trajectory tracking. Furthermore, low-jerk trajectories can be accomplished more quickly and precisely \cite{Gasparetto.2010}.
 
@@ -505,7 +505,7 @@ Another method is proposing a method of reconstructing the path by a sequence of
 
 A further method is using an algorithm for adjusting the increments of the generalized coordinate vector. By using a pseudo-inverse of the Jacobi matrix and a Taylor’s expansion, the robot's acceleration and jerk can be calculated. Results show that when the end effector is closer to the center of the robot, joint jerk increases. It is also shown that if trajectories are designed on the OXZ plane and directed away from the robot's center, the jerk decreases \cite{Duong.2021}.
 
-\subsubsection{Optimization of Stiffens}
+\subsection{Optimization of Stiffens}
 Stiffness plays a crucial role in machining with industrial robots. It refers to the ability of a machine or structure to resist deformation under an applied load. In the context of machining, stiffness directly affects the accuracy, precision, and overall performance of the robot. A high level of stiffness ensures that the robot remains stable and rigid during machining operations, minimizing unwanted vibrations, deflections, and inaccuracies \cite{Wu.2022}. This is particularly important when dealing with high-speed or heavy-duty machining tasks, as any lack of stiffness can result in poor surface finish, dimensional inaccuracies, and reduced tool life. 
 
 
@@ -520,7 +520,7 @@ A further publication performs a comparative study of robot pose optimization us
 There are many more methods, like finite element analysis, matrix structure analysis, and virtual joint modeling. 
 To enhance stiffness models, further investigation needs to be conducted. The current state of the art shows a need for standardization in stiffness modeling, as there is currently no universally accepted procedure for establishing such models. Developing a modeling process with standard principles, evaluation indicators, and measuring techniques can simplify the selection and application of modeling methods. Additionally, the application of machine learning techniques, such as artificial neural networks, can be explored for stiffness modeling. Processing experimental data using machine learning algorithms can yield high-precision stiffness models \cite{Wu.2022}.
 
-\subsubsection{Optimization of Energy use}
+\subsection{Optimization of Energy use}
 Energy-efficient usage of industrial robots is essential for achieving cost savings and sustainable manufacturing processes. Manufacturers can achieve this by implementing strategies such as optimizing robot movement paths, reducing idle time, and using energy-efficient components, resulting in significant reductions in energy consumption of their robotic systems. Incorporating advanced algorithms enables robots to adapt to changing conditions and operate at their most efficient levels, optimizing energy usage \cite{Uhlmann.2016}. 
 
 One paper analyzed the different methods at different development stages of a production environment in regards to energy optimization. The results show that operating speed and payload strongly influence power consumption, and reducing it can be achieved through optimizing speed, reducing weight, and smoothing motion \cite{Paryanto.2015}.
@@ -533,5 +533,5 @@ Another publication analyzes the general energy consumption of an industrial rob
 
 
 
-\subsubsection{Summery}
+\subsection{Summery}
 Setting the appropriate process parameters directly impacts the performance and efficiency of a production system. By carefully fine-tuning parameters such as singularity avoidance, joint accelerations, and jerks, the system can operate smoothly, minimizing wear on the structure while achieving precise trajectory tracking. Moreover, optimizing energy usage through the adjustment of parameters related to movement speed not only contributes to environmental sustainability but also leads to economic benefits by reducing long-term operational costs. Additionally, the consideration of parameters like stiffness and joint limits ensures the safety of both the manufacturing system and its operators. The optimization of stiffness, for instance, enables the maximization of the system's performance and the attainment of improved machining accuracy. In conclusion, the careful selection and optimization of process parameters play a significant role in achieving optimal performance, efficiency, safety, and utilization of manufacturing systems, thereby contributing to overall operational success.

@@ -21,28 +21,37 @@
 \contentsline {subsection}{\numberline {2.2.2}Path Planning}{23}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Optimization Algorithms}{24}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Comparison of the State of the Art }{26}{section.2.4}%
-\contentsline {subsubsection}{Singularity avoidance}{26}{subsubsection*.29}%
-\contentsline {subsubsection}{Optimization of Joint Accelerations and Jerk}{28}{subsubsection*.31}%
-\contentsline {subsubsection}{Optimization of Stiffens}{28}{subsubsection*.32}%
-\contentsline {subsubsection}{Optimization of Energy use}{29}{subsubsection*.33}%
-\contentsline {subsubsection}{Summery}{30}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {2.4.1}Singularity avoidance}{26}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Optimization of Joint Accelerations and Jerk}{28}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Optimization of Stiffens}{28}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Optimization of Energy use}{29}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Summery}{30}{subsection.2.4.5}%
 \contentsline {chapter}{\numberline {3}Methodology}{31}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{31}{section.3.1}%
 \contentsline {section}{\numberline {3.2}General Methodology for Process Analysis}{31}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}General Methodology}{31}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Process Parameters}{33}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}User-Defined Weights and Rating Calculation}{36}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Information Extraction form Time-Series Data}{37}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Information from Angular Velocity, Acceleration and Jerk}{37}{subsection.3.4.1}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{41}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{41}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{41}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{41}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{41}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{43}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{43}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{45}{chapter.6}%
-\contentsline {chapter}{Bibliography}{51}{chapter*.46}%
+\contentsline {section}{\numberline {3.3}User-Defined Weights and Score Calculation}{36}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Local Rating and Global Score}{36}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Local Rating Calculation}{36}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Information Extraction form Time-Series Data}{38}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Information from Angular Position}{38}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Total Joint Travel}{39}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Direction changes}{40}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Rotation Limits}{41}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Velocity, Acceleration and Jerk}{41}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Energy Usage}{42}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Reach, Singular, Torch Orientation}{42}{section.3.6}%
+\contentsline {section}{\numberline {3.7}General Methodology for Process Optimization}{42}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{43}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{43}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{45}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{45}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{45}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Appendix}{47}{chapter.6}%
+\contentsline {chapter}{Bibliography}{53}{chapter*.46}%
 \contentsfinish 

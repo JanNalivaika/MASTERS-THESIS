@@ -10,7 +10,7 @@ def main(reps):
     pos = []
     sol = [0,0,0,0,0,0]
 
-    for iter in range(360):
+    for iter in range(3600):
         plt.close()
         dh_params = np.array([[400,   180.,     0.5 * pi,   0],
                               [0.,      600,  0,         0],
@@ -25,8 +25,8 @@ def main(reps):
         # inverse
         # =====================================
 
-        xyz = np.array([[np.sin(np.deg2rad(iter))*10+200], [500], [400]])
-        #xyz = np.array([[np.sin(np.deg2rad(iter))*400+500], [np.cos(np.deg2rad(iter))*200+500], [100+iter*2]])
+        #xyz = np.array([[100], [100], [100]])
+        xyz = np.array([[np.sin(np.deg2rad(iter))*400+500], [np.cos(np.deg2rad(iter))*200+500], [100+iter*2]])
         if iter%10 == 0: print(iter)
         abc = np.array([0,0,  0])
         end = Frame.from_euler_3(abc, xyz)
