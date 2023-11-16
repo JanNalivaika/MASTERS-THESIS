@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # DH parameters
 a = [180, 600, 120, 0, 0, 0]
-alpha = [90, 0, 0, 90, 90, 0]
+alpha = [90, 0, 90, 90, 90, 0]
 d = [400, 0, 0, 620, 0, 115]
 
 
@@ -33,17 +33,21 @@ def forward_kinematics(a, alpha, d, theta):
     return transformations, position,rmatrix
 
 
-pos = np.load("0_angles.npy")
+x_coords = []
+y_coords = []
+z_coords = []
+
 
 fig = plt.figure(figsize=(8, 8), dpi=100)
+pos = np.load("5_angles.npy")
 
-
-for iter in range(360):
+for iter in range(0,1000,10):
     plt.clf()
 
-    theta = [iter, 45, -90, 0, 90, 0]
-    theta = [iter, iter+45, iter-90, iter, iter+180, iter-45]
-    #theta = pos[iter]
+    #theta = [iter, 45, -90, 0, 90, 0]
+    #theta = [iter, iter+45, iter-90, iter, iter+180, iter-45]
+    theta = pos[iter]
+    theta = np.degrees(theta)
     #theta = np.deg2rad(theta)
     # Compute transformations
     transformations, [x, y, z], rotM = forward_kinematics(a, alpha, d, theta)
@@ -77,10 +81,15 @@ for iter in range(360):
 
     # Plot robot joints
     ax.scatter(positions[:, 0], positions[:, 1], positions[:, 2], c='r', marker='o')
-    ax.scatter(0, 0, 0, c='r', marker='o')
 
-    # Plot robot end-effector
-    ax.scatter(positions[-1][0], positions[-1][1], positions[-1][2], c='g', marker='o')
+    x_coords.append(x)
+    y_coords.append(y)
+    z_coords.append(z)
+
+    ax.scatter(x_coords,y_coords,z_coords, c='r', marker='o', s=2)
+
+
+
 
     # Set plot limits
     ax.set_xlim([-1000, 1000])
@@ -91,10 +100,13 @@ for iter in range(360):
     pointer2 = np.dot(rotM, [0, 1, 0])
     pointer3 = np.dot(rotM, [0, 0, 1])
 
+    # Plot robot end-effector
+    ax.scatter(x, y, z, c='black', marker='o', s=20)
 
-    ax.quiver(x, y, z, pointer1[0], pointer1[1], pointer1[2], length=300, normalize=True, color='r', linewidth=3)  # x-axis
+
+    ax.quiver(x, y, z, -pointer1[0], -pointer1[1], -pointer1[2], length=300, normalize=True, color='r', linewidth=3)  # x-axis
     ax.quiver(x, y, z, pointer2[0], pointer2[1], pointer2[2], length=300, normalize=True, color='g', linewidth=3)  # y-axis
-    ax.quiver(x, y, z, pointer3[0], pointer3[1], pointer3[2], length=300, normalize=True, color='b', linewidth=3)  # z-axis
+    ax.quiver(x, y, z, -pointer3[0], -pointer3[1], -pointer3[2], length=300, normalize=True, color='b', linewidth=3)  # z-axis
     # ax.view_init(elev=30, azim=45)
     # ax.elev = 30  # Set the elevation angle (vertical rotation)
     # ax.azim = 45  # Set the azimuth angle (horizontal rotation
@@ -106,7 +118,7 @@ for iter in range(360):
 
     # Show plot
 
-    plt.pause(0.001)
+    plt.pause(0.01)
     #print(pointer1)
     #plt.show()
 

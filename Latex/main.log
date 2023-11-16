@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  15 NOV 2023 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  16 NOV 2023 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2825,9 +2825,14 @@ Package cleveref Info: loaded `english' language definitions on input line 306.
 Package cleveref Info: loaded `english' language definitions on input line 335.
 
  [21]
+Overfull \hbox (21.48602pt too wide) in paragraph at lines 350--351
+\T1/bch/m/n/10.95 such as computer-aided en-gi-neer-ing (CAE) and en-ter-prise 
+re-source plan-ning (ERP) sys-tems [[]136[]].
+ []
+
 Package cleveref Info: loaded `english' language definitions on input line 353.
 
- [22]
+[22]
 <figures/CAM.png, id=795, 1053.33525pt x 529.37775pt>
 File: figures/CAM.png Graphic file (type png)
 <use figures/CAM.png>
@@ -2861,11 +2866,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package cleveref Info: loaded `english' language definitions on input line 498.
 
  [27]
+Overfull \hbox (17.15123pt too wide) in paragraph at lines 500--502
+\T1/bch/m/n/10.95 jec-tory in an it-er-a-tive rou-tine af-ter ob-tain-ing an in
+i-tial tra-jec-tory by a graph-search method [[]163[]].
+ []
+
 Package cleveref Info: loaded `english' language definitions on input line 514.
 
-
 [28]
-Package cleveref Info: loaded `english' language definitions on input line 527.
+Package cleveref Info: loaded `english' language definitions on input line 528.
 
  [29])
 Package cleveref Info: loaded `english' language definitions on input line 68.
@@ -3169,7 +3178,7 @@ pe1/bitstrea/charter/bchri8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/z0041bmr/AppData/Local/Program
 s/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/z0041bmr/AppData/Local/P
 rograms/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (83 pages, 9095352 bytes).
+Output written on main.pdf (83 pages, 9095444 bytes).
 PDF statistics:
  1692 PDF objects out of 1728 (max. 8388607)
  345 named destinations out of 1000 (max. 500000)
