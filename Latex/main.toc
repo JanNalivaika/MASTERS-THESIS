@@ -33,25 +33,27 @@
 \contentsline {subsection}{\numberline {3.2.2}Process Parameters}{33}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}User-Defined Weights and Score Calculation}{36}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Local Rating and Global Score}{36}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Local Rating Calculation}{36}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Local Rating Calculation}{37}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Information Extraction form Time-Series Data}{38}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Information from Angular Position}{38}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Total Joint Travel}{39}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Direction changes}{40}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Rotation Limits}{41}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Velocity, Acceleration and Jerk}{41}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Energy Usage}{42}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Reach, Singular, Torch Orientation}{42}{section.3.6}%
-\contentsline {section}{\numberline {3.7}General Methodology for Process Optimization}{42}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{43}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{43}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{43}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{43}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{43}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{43}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{45}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{45}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{45}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{47}{chapter.6}%
-\contentsline {chapter}{Bibliography}{53}{chapter*.46}%
+\contentsline {section}{\numberline {3.4}Information from Angular Position}{39}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{40}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{42}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk}{42}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{43}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Energy Usage}{43}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Reach, Singular, Torch Orientation}{43}{section.3.7}%
+\contentsline {section}{\numberline {3.8}General Methodology for Process Optimization}{43}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Without NX}{43}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}With NX}{43}{subsection.3.8.2}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{45}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation}{45}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{45}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{45}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{45}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{45}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{47}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{47}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Appendix}{49}{chapter.6}%
+\contentsline {chapter}{Bibliography}{55}{chapter*.46}%
 \contentsfinish 

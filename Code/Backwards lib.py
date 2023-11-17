@@ -41,6 +41,8 @@ def rotate_x_axis(x, y, z, angle, origin_x=0, origin_y=0, origin_z=0):
 
     return x_rotated, y_rotated, z_rotated
 
+
+
 #spiral_coords  = tilting_spiral(1000, 100, 10, 30, 1)
 def main(reps):
     np.set_printoptions(precision=5, suppress=True)

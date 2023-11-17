@@ -16,8 +16,28 @@ def dh_transform(a, alpha, d, theta):
          [0, 0, 0, 1]])
     return transform
 
+def jacobian(a, alpha, d, theta):
+    # Calculate the forward kinematics to get the transformation matrix T
+    transformations, _, _ = forward_kinematics(a, alpha, d, theta)
+    T = transformations[-1]  # Use the final transformation matrix
 
-# Forward kinematics
+    # Calculate the Jacobian matrix
+    J = np.zeros((6, len(theta)))  # Assuming a 6-DOF manipulator
+
+    for i in range(len(theta)):
+        # Calculate the partial derivatives of the position and orientation
+        # with respect to the joint variables
+        T_i = transformations[i]
+        z_i = T_i[:3, 2]  # Z-axis of the i-th link
+        p_i = T_i[:3, 3]  # Position of the i-th link
+
+        J[:3, i] = np.cross(z_i, T[:3, 3] - p_i)
+        J[3:, i] = z_i
+
+    return J
+
+
+    # Forward kinematics
 def forward_kinematics(a, alpha, d, theta):
     num_links = len(a)
     T = np.eye(4)
@@ -36,10 +56,10 @@ def forward_kinematics(a, alpha, d, theta):
 x_coords = []
 y_coords = []
 z_coords = []
-
-
+EV = []
+col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("5_angles.npy")
+pos = np.load("4_angles.npy")
 
 for iter in range(0,1000,10):
     plt.clf()
@@ -48,9 +68,20 @@ for iter in range(0,1000,10):
     #theta = [iter, iter+45, iter-90, iter, iter+180, iter-45]
     theta = pos[iter]
     theta = np.degrees(theta)
+    #theta = [iter, 0, 0, 0, 0, 0]
     #theta = np.deg2rad(theta)
     # Compute transformations
     transformations, [x, y, z], rotM = forward_kinematics(a, alpha, d, theta)
+
+    det_jacob = np.linalg.det(jacobian(a, alpha, d, theta))
+    print(det_jacob)
+    if det_jacob == 0:
+        col.append("red")
+    else:
+        col.append("green")
+    EV.append(det_jacob)
+
+
 
     # axCOORD = fig.add_subplot(111, projection='3d')
     ax = fig.add_subplot(111, projection='3d')
@@ -86,7 +117,7 @@ for iter in range(0,1000,10):
     y_coords.append(y)
     z_coords.append(z)
 
-    ax.scatter(x_coords,y_coords,z_coords, c='r', marker='o', s=2)
+    ax.scatter(x_coords,y_coords,z_coords, c=col, marker='o', s=2)
 
 
 
