@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {2.4.5}Summery}{30}{subsection.2.4.5}%
 \contentsline {chapter}{\numberline {3}Methodology}{31}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{31}{section.3.1}%
-\contentsline {section}{\numberline {3.2}General Methodology for Process Analysis}{31}{section.3.2}%
+\contentsline {section}{\numberline {3.2}General Methodology for Process Analysis and Evaluation}{31}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}General Methodology}{31}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Process Parameters}{33}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}User-Defined Weights and Score Calculation}{36}{section.3.3}%
@@ -38,22 +38,28 @@
 \contentsline {section}{\numberline {3.4}Information from Angular Position}{39}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{40}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{42}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk}{42}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{43}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Energy Usage}{43}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Reach, Singular, Torch Orientation}{43}{section.3.7}%
-\contentsline {section}{\numberline {3.8}General Methodology for Process Optimization}{43}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Without NX}{43}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}With NX}{43}{subsection.3.8.2}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{45}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{45}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{45}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{45}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{45}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{45}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{47}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{47}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{47}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{49}{chapter.6}%
-\contentsline {chapter}{Bibliography}{55}{chapter*.46}%
+\contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk of the Joints}{43}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{44}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Energy Usage}{46}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Continuous Energy-Usage}{46}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{46}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Reach, Singular, Torch Orientation}{46}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Possible Reach}{46}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Singularities }{46}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Torch Orientation}{46}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Summery for Boundary Condition Evaluation}{46}{section.3.8}%
+\contentsline {section}{\numberline {3.9}General Methodology for Process Optimization}{46}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Without NX}{46}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}With NX}{46}{subsection.3.9.2}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{47}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{47}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{47}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{47}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{49}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{49}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Appendix}{51}{chapter.6}%
+\contentsline {chapter}{Bibliography}{57}{chapter*.49}%
 \contentsfinish 
