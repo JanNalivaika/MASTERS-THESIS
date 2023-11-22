@@ -42,24 +42,24 @@
 \contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{44}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Energy Usage}{46}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Continuous Energy-Usage}{46}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{46}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Reach, Singular, Torch Orientation}{46}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Possible Reach}{46}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Singularities }{46}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Torch Orientation}{46}{subsection.3.7.3}%
-\contentsline {section}{\numberline {3.8}Summery for Boundary Condition Evaluation}{46}{section.3.8}%
-\contentsline {section}{\numberline {3.9}General Methodology for Process Optimization}{46}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Without NX}{46}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}With NX}{46}{subsection.3.9.2}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{47}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{47}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{47}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{47}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{47}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{47}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{49}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{49}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{49}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{51}{chapter.6}%
-\contentsline {chapter}{Bibliography}{57}{chapter*.49}%
+\contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{47}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Reach, Singularities, Torch Orientation}{48}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Reach}{48}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Singularities }{49}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Torch Orientation}{49}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Summery for Boundary Condition Evaluation}{50}{section.3.8}%
+\contentsline {section}{\numberline {3.9}General Methodology for Process Optimization}{50}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Without NX}{50}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}With NX}{50}{subsection.3.9.2}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{51}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation}{51}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{51}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{51}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{51}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{51}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{53}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{53}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Appendix}{55}{chapter.6}%
+\contentsline {chapter}{Bibliography}{61}{chapter*.53}%
 \contentsfinish 

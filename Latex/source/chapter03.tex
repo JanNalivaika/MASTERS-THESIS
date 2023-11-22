@@ -92,7 +92,7 @@ By employing a forward kinematics approach or extracting it directly from the G-
 
 Estimating the energy usage in industrial robot applications is another crucial aspect that is becoming more important in the current manufacturing environment. One option to accurately estimate energy consumption is to perform a multi-body simulation. For that, it is essential to have a correct 3D model that includes information about the weight and its distribution of the robot joints. Another option is to employ machine learning (ML) approaches or any other intermediate analysis.
 
-Furthermore, in cases where the industrial robot is utilized for WAAM, the power required for welding can be extracted from the G-code by analyzing the duration for which the welding torch remains active. The continuous energy usage is measured in Watts and, similar to the other parameters mentioned earlier, is also represented in the form of an array to capture the variations in energy consumption over time.
+Furthermore, in cases where the industrial robot is utilized for WAAM, the power required for welding can be extracted from the G-code by analyzing the duration for which the welding torch remains active. The continuous energy similarly to the other parameters mentioned earlier, is also represented in the form of an array to capture the variations over time.
 
 Total energy usage, measured in kWh, is a key parameter that can be measured directly during the manufacturing process. It provides valuable insights into the overall energy consumption of the industrial robot system. This parameter can be obtained by monitoring the energy usage in real-time or by integrating the time-series data of the continuous energy consumption. By analyzing energy usage, manufacturers can identify energy-intensive processes or operations, optimize energy consumption, and implement strategies to reduce overall energy consumption, leading to cost savings and environmental benefits.
 
@@ -302,7 +302,7 @@ This factor can be combined with the direction changes to form one parameter. Th
 	\label{dirchangeSTD}
 \end{figure}
 
-\subsection{Rotation Limits}
+\subsection{Rotation Limits}\label{RotLim}
 Further, a simple analysis regarding the rotational limits can be performed, for which two different values need to be known. The first one is the physical limit that a joint can not exceed. Trying to drive the robot joint past that point can result in significant damage. The second value are possible soft limits that exist to prevent the joint from over-rotation into its physical limits. To validate if any rotational positions come close to the limits or are exceeded, a simple comparison of all the values can be made. If necessary, additional limits can be defined in cases where it is known that a joint is most stable in a specific range. After a tool path with set boundary conditions is defined, the joint angles can be analyzed and a simple comparison can be made. If the joint positions exceed the soft limits or deviate too much from their desired orientation, a "No-Go" exception is issued. The analysis of the rotation limits does not contribute to the calculation of the global score but rather serves as a validity analysis to determine if the movement necessary for the toolpath is physically possible.
 \newpage
 \subsection{Velocity, Acceleration and Jerk of the Joints}
@@ -357,7 +357,7 @@ Table \ref{VAJ} shows the calculation of a global score with a weighting that pr
 \end{table}
 
 
-\section{TCP Coordinates, Velocity and Acceleration}
+\section{TCP Coordinates, Velocity and Acceleration}\label{CVA}
 As mentioned in Chapter \ref{pp}, with the help of a forward kinematics approach it is possible to determine the X-Y-Z coordinates and orientation of the TCP. Alternatively this information can also be directly extracted from the G-code.
 
 By calculating the time derivative of the positions, the velocity of the TCP can be determined, and subsequently, the acceleration can be obtained as well. These two parameters play a crucial role in milling applications, particularly when the goal is to fabricate precise corners. It is important to note that both robotic systems and CNC machines have limitations on their acceleration capabilities. As highlighted in Chapter \ref{CPM}, these limitations result in slight deviations occurring in the path, especially at corners. These deviations occur due to the inability of the systems to instantaneously change their velocity or direction. Consequently, the path followed by the TCP will not be perfectly smooth and will exhibit minor variations in the corners.
@@ -397,19 +397,97 @@ THIS WHOLE PARAGRAPH IS USELESS !!
 
 
 \section{Energy Usage}
-Energy usage is one of the most important factors in manufacturing today. By carefully selecting optimal boundary conditions, the robot can avoid unnecessary or energy-intensive movements. The energy usage can be analyzed in two different ways. First, there is the continuous energy analysis where each movement can be attribute to a specific energy consumption. Secondly, considering the overall energy requirements spanning the entire manufacturing process, from its initiation to its completion, provides a holistic perspective on energy utilization. 
+Energy usage is one of the most important factors in manufacturing today. By carefully selecting optimal boundary conditions, the robot can avoid unnecessary and energy-intensive movements. The energy usage can be analyzed in two different ways. First, there is the continuous energy analysis where each movement can be attribute to a specific energy consumption. Secondly, there is to option for considering the overall energy requirement spanning the entire manufacturing process. This provides a holistic perspective on energy utilization. 
+
 \subsection{Continuous Energy-Usage}
-One of the simplest approaches is do measure the average energy required to change the p
+One of the simplest approaches to track energy consumption is by monitoring the velocity and acceleration of individual joints. The energy demand can be divided into two parts: the rotation of a joint with a set velocity and the acceleration of the joint.
 
-This information coupled with the joint position enables to calculate a fist estimate for the continuous energy consumption. The 
+To calculate the energy consumption of each joint, the time-series of joint velocity can be multiplied by an average energy consumption value for that specific joint. The same principle applies to the time-series of joint acceleration. By summing up these resulting time-series, an energy consumption time-series for each joint can be obtained. Adding up the time-series of all joints gives the overall energy consumption of the robot. Table \ref{scalers} gives exemplary  values for the scaling factors.\newline
 
-  
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{||l|r|r||}
+		Joint Nr.  & Velocity Scaling in \(\frac{\si[per-mode=symbol]{\kWh}}{\si[per-mode=symbol]{\m\per\sec }}\)& Acceleration Scaling in \(\frac{\si[per-mode=symbol]{\kWh}}{\si[per-mode=symbol]{\m\per\sec\squared }}\) \\
+		\hline
+		\hline
+		\hline
+		Joint 1	& 0.1 & 0.5\\
+		Joint 2	&  0.4& 0.3 \\
+		Joint 3	& 0.3& 0.2\\
+		...& ...& ...\\
+		
+		\hline
+		\hline
+	\end{tabular}
+	
+	\caption{Average scaling factors for energy calculations}
+	\label{scalers}
+\end{table}
+
+
+The main advantage of this approach lies in its simplicity. However, its main drawback is the potential inaccuracy due to working with an average scaling value. If this value is calculated by averaging all possible positions, but only a few are actually traversed by the robot, significant differences may arise.
+
+
+To overcome these limitations, more sophisticated approaches are required. For instance, implementing multi-body simulations in the CAM software allows for a direct analysis of the precise amount of energy needed for a robot to transition between poses. This method necessitates accurate modeling of weight distribution but yields highly precise results. However, it's important to note that this implementation may require significant computation time.
+
+
+Another option to consider is utilizing a ML approach for calculating energy consumption during transitions between discrete poses.  By employing a supervised learning technique, where the input data includes the current pose (joint positions and velocities) as well as the target pose, an ML model can be trained to predict the energy required for each transition. This approach offers the advantage of leveraging ML algorithms to provide accurate energy consumption estimates in a more efficient manner. However, it is important to acknowledge that generating high-quality training data and training the ML model can be time-intensive processes.
+Figure \ref{ENERGYOPTIONS} shows the three mentioned options with their main requirements. It is important to note that these examples do not covet all possibilities to solve this problem.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=.8\textwidth]{figures/ENERGYOPTIONS.png}}
+	\caption{Exemplary methods for energy usage calculations}
+	\label{ENERGYOPTIONS}
+\end{figure}
+
+After the time-series for the energy consumption is obtained, it is possible to find peaks and relate them to specific movements. Based on the optimization goal, it is also possible to set analogue threshold values as mentioned in chapter \ref{CVA}, to optimize for a constant energy consumption.
+
+
+WAMM GCODE
  
-The continuous energy consumption 
-
 \subsection{Total Energy-Usage}
-\section{Reach, Singular, Torch Orientation}
-\subsection{Possible Reach}
+When the objective is to obtain a single scalar value for energy consumption, the same processes described in the previous chapter can be employed, and the values from the time series can be summed up.
+
+However, in cases where the temporal information in energy consumption is considered irrelevant, alternative machine learning approaches can be implemented. For instance, Recurrent Neural Networks (RNNs) can be utilized, which have the ability to take a whole time series as input and return a scalar value representing the total energy consumption. RNNs are capable of capturing dependencies and patterns in sequential data, making them suitable for modeling the energy consumption over time. By training an RNN model using a time series dataset, it can learn to predict the total energy consumption based on the given input. But just as with most ML approaches, this method requires significant upfront effort and time for generating training data and training itself.
+
+
+\section{Reach, Singularities, Torch Orientation}
+In the following, the robot poses with respect to reach, singularity avoidance, and torch orientation is discussed. These are essential factors in ensuring successful and efficient robotic operations.
+\subsection{Reach} 
+
+As mentioned in Chapter \ref{pp}, the analysis of the reachability index can be done in multiple formats. The first format involves a simple analysis to determine if all the points that the robot needs to traverse, lie within its work volume  without any collisions occurring with itself or exceeding the hard joint limits. This aspect is closely related to the joint limits, as discussed in Chapter \ref{RotLim}. Further it is necessary to analyze that no collision of the robot with the piecework occurs. Ensuring that the robot's joint configurations are within the specified limits is crucial for maintaining reachability and avoiding any potential collisions or constraints during its operation. If all these parameters are met, a binary index can be used to indicate the feasibility that signifies the program's safety to execute. This index however, can not be used for optimizing the robots movement as the parameters that influence this index are mostly defined by the G-Code.
+
+When utilizing a robotic system with a specific tool, such as a spindle for milling or a welding torch for WAAM, it is crucial to consider the boundary conditions associated with that tool. In many cases, the spindle and welding torch come with cables that provide power from an external power supply. These cables have an optimal orientation where bending and wear are minimized. By positioning the cables in an optimal orientation, the robotic system can operate efficiently and effectively without any interference or limitations due to cable movement or any potential damage or wear caused by excessive bending or twisting.
+
+Figure \ref{rot} visualizes the rotation around the C-axis of the welding torch. Each of the rotations strains the wire differently.
+
+\begin{figure}[H]%
+	\centering
+	\subfloat[\centering No rotation]{{\includegraphics[width=.4\textwidth]{figures/rot0.png} }}%
+	\qquad
+	\subfloat[\centering 30 degree rotation]{{ \includegraphics[width=.4\textwidth]{figures/rot1.png}}}%
+	\caption{Rotation around the C-axis of a welding torch }%
+	\label{rot}%
+\end{figure}
+ 
+To determine how optimal the pose of the robot is for the cables it is necessary to know additional parameters. 
+In some cases, the cable routing is preferably in a certain orientation along a vector in space and can be translated parallel in direction of that vector. in this case that angle between the planes of the base coordinate system of the robot is constant. 
+
+
+In other cases it is most optimal for the routing to bo directed towards a specific point in space. This can for example a mounting point of the cables on a wall.  
+
+
+\begin{figure}[H]%
+	\centering
+	\subfloat[\centering XXX]{{\includegraphics[width=.4\textwidth]{figures/paralell.png} }}%
+	\qquad
+	\subfloat[\centering XX]{{ \includegraphics[width=.4\textwidth]{figures/angle.png}}}%
+	\caption{ss }%
+	\label{sss}%
+\end{figure}
+
+
 \subsection{Singularities }
 \subsection{Torch Orientation}
 \section{Summery for Boundary Condition Evaluation}
