@@ -36,8 +36,7 @@ def jacobian(a, alpha, d, theta):
 
     return J
 
-
-    # Forward kinematics
+# Forward kinematics
 def forward_kinematics(a, alpha, d, theta):
     num_links = len(a)
     T = np.eye(4)
@@ -59,9 +58,9 @@ z_coords = []
 EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("4_angles.npy")
+pos = np.load("0_angles.npy")
 
-for iter in range(0,1000,10):
+for iter in range(0,1000,3):
     plt.clf()
 
     #theta = [iter, 45, -90, 0, 90, 0]

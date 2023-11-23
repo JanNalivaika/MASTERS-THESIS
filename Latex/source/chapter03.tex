@@ -305,7 +305,7 @@ This factor can be combined with the direction changes to form one parameter. Th
 \subsection{Rotation Limits}\label{RotLim}
 Further, a simple analysis regarding the rotational limits can be performed, for which two different values need to be known. The first one is the physical limit that a joint can not exceed. Trying to drive the robot joint past that point can result in significant damage. The second value are possible soft limits that exist to prevent the joint from over-rotation into its physical limits. To validate if any rotational positions come close to the limits or are exceeded, a simple comparison of all the values can be made. If necessary, additional limits can be defined in cases where it is known that a joint is most stable in a specific range. After a tool path with set boundary conditions is defined, the joint angles can be analyzed and a simple comparison can be made. If the joint positions exceed the soft limits or deviate too much from their desired orientation, a "No-Go" exception is issued. The analysis of the rotation limits does not contribute to the calculation of the global score but rather serves as a validity analysis to determine if the movement necessary for the toolpath is physically possible.
 \newpage
-\subsection{Velocity, Acceleration and Jerk of the Joints}
+\subsection{Velocity, Acceleration and Jerk of the Joints}\label{VAJJ}
 To specifically analyze the rotational velocity, acceleration and jerk of the joints, a time derivative needs to be performed. After that, simple comparisons of the time-series values are enough to determine whether the maximum capabilities of the motor driving the joint are exceeded.
 
 Figure \ref{velo} shows how the velocity aspect can be transformed into a scalar value that can be used for a local score calculation. First, the joint velocity is obtained by taking a time derivative of the joint position. Then it is analyzed for how long the absolute velocity exceeded a certain threshold value. In the example, the threshold is set at 80\%. Further, it is possible to add multiple thresholds and weigh them exponentially in relation to each other. The combined result is then used as a local score.
@@ -452,9 +452,9 @@ When the objective is to obtain a single scalar value for energy consumption, th
 However, in cases where the temporal information in energy consumption is considered irrelevant, alternative machine learning approaches can be implemented. For instance, Recurrent Neural Networks (RNNs) can be utilized, which have the ability to take a whole time series as input and return a scalar value representing the total energy consumption. RNNs are capable of capturing dependencies and patterns in sequential data, making them suitable for modeling the energy consumption over time. By training an RNN model using a time series dataset, it can learn to predict the total energy consumption based on the given input. But just as with most ML approaches, this method requires significant upfront effort and time for generating training data and training itself.
 
 
-\section{Reach, Singularities, Torch Orientation}
+\section{Reach, Singularities and Torch Orientation}
 In the following, the robot poses with respect to reach, singularity avoidance, and torch orientation is discussed. These are essential factors in ensuring successful and efficient robotic operations.
-\subsection{Reach} 
+\subsection{Reach and Orientation}\label{RO}
 
 As mentioned in Chapter \ref{pp}, the analysis of the reachability index can be done in multiple formats. The first format involves a simple analysis to determine if all the points that the robot needs to traverse, lie within its work volume  without any collisions occurring with itself or exceeding the hard joint limits. This aspect is closely related to the joint limits, as discussed in Chapter \ref{RotLim}. Further it is necessary to analyze that no collision of the robot with the piecework occurs. Ensuring that the robot's joint configurations are within the specified limits is crucial for maintaining reachability and avoiding any potential collisions or constraints during its operation. If all these parameters are met, a binary index can be used to indicate the feasibility that signifies the program's safety to execute. This index however, can not be used for optimizing the robots movement as the parameters that influence this index are mostly defined by the G-Code.
 
@@ -471,25 +471,72 @@ Figure \ref{rot} visualizes the rotation around the C-axis of the welding torch.
 	\label{rot}%
 \end{figure}
  
-To determine how optimal the pose of the robot is for the cables it is necessary to know additional parameters. 
-In some cases, the cable routing is preferably in a certain orientation along a vector in space and can be translated parallel in direction of that vector. in this case that angle between the planes of the base coordinate system of the robot is constant. 
+In order to assess the efficiency of the robot's pose for the cables, it is important to consider additional parameters. In certain cases, it is preferable to route the cables in a specific orientation along a spatial vector, allowing for parallel translation or movement in the direction of that vector. In this case that angle between the planes of the base coordinate system of the robot is constant.
 
+Figure \ref{OOPti}a gives a visual representation for that example. The wire, shown in red, has a optimal orientation where the least amount of strain is present. Any position along that vector where the cable transitions to the welding torch is tangential is regards as a optimal one. It is worth noting that this vector can be translated parallel to space and still maintain its optimal status.
 
-In other cases it is most optimal for the routing to bo directed towards a specific point in space. This can for example a mounting point of the cables on a wall.  
+In certain scenarios, it is more efficient to route the cables towards a specific point in space, such as a mounting point on a wall. Figure \ref{OOPti}b illustrates an example where the optimal orientation of a milling spindle is directed towards a designated point where the cables originate. In this case, any position is considered optimal as long as the extended spindle vector aligns with the vanishing point.
 
 
 \begin{figure}[H]%
 	\centering
-	\subfloat[\centering XXX]{{\includegraphics[width=.4\textwidth]{figures/paralell.png} }}%
+	\subfloat[\centering Optimal orientation along a vector ]{{\includegraphics[width=.5\textwidth]{figures/paralell.png} }}%
 	\qquad
-	\subfloat[\centering XX]{{ \includegraphics[width=.4\textwidth]{figures/angle.png}}}%
-	\caption{ss }%
-	\label{sss}%
+	\subfloat[\centering Optimal orientation towards a defined points ]{{ \includegraphics[width=.3\textwidth]{figures/angle.png}}}%
+	\caption{Two examples for optimal orientation along a vector}%
+	\label{OOPti}%
 \end{figure}
 
 
-\subsection{Singularities }
+
+To optimize, or in other words minimize, the deviation from the optimal vector or vanishing point, the redundant degrees of freedom can be utilized. One approach is to analyze the deviation and track it over time, creating a time series. Each element in this time series can be squared or cubed, depending on the weight assigned to small and constant deviations versus large but short offsets. The time series is then summed up to form a scalar value, which can be used to calculate the local score through variation.
+
+
+Figure \ref{deviation} shows an example on how the scalar value is calculated. It is clearly visible that when cubing the time series more importance is set on the larger deviations, rather then small deviations.
+
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=.8\textwidth]{figures/devi.png}}
+	\caption{From time-series of the deviation vector to scalar value}
+	\label{deviation}
+\end{figure}
+ 
+
+\subsection{Singularities}
+In Chapter \ref{Singularity avoidance}, the concept of singularities in robotic manipulators is discussed. Singularities occur when the robot's joints align in a way that limits its motion by reducing one or more degrees of freedom. To avoid singularities, it is important to set the boundary conditions optimally in the redundant degrees of freedom. The singularity analysis, as described in table \ref{procesparameters}, can be represented either as a scalar value or as a time-series that classifies each position based on its proximity to a singularity.
+
+The scalar value can represent to overall smallest eigenvalue of every Jacobi-matrix. For that every pose needs to be analyzed. After calculating the Jacobi matrix it is possible to extract all eigenvalues. From all eigenvalues encountered, only the smallest is recorded and used to calculate the local score. With this approach it is not possible to analyse specific poses but only the overall toolpath
+
+
+
+
+If a time series is used instead, the determinant, not the eigenvalues, is recorded and stored in the time series. By analyzing this time-series, it becomes possible to directly associate the robot's movements with its proximity to a singularity. This allows for a more precise understanding of where exactly the robot's motions are close to a singularity and perform subsequent optimizations. To transform the time series into a scalar value, the same threshold-method can be applies ad described in Chapter \ref{VAJJ}.
+  
+  
+
+
+
+
 \subsection{Torch Orientation}
+The torch orientation parameter in WAAM, similar to the cable routing orientation parameter, analyzes the angle at which the welding torch is positioned during the process. This parameter is specific to WAAM and ensures that the torch is at the optimal angle for welding. Achieving material deposition in the direction of gravity is crucial for obtaining the best results. The orientation of the TCP (welding torch tip) can be determined either through the forward kinematics approach or by extracting it directly from the G-code.
+
+
+In both the forward kinematics approach and the G-code, the rotation is described as the rotation around the A, B, and C axes. However, the necessary information for torch orientation is simply the angle between the tilted Z-axis of the tool and the vector of gravity. To obtain this information, a dot product is performed between the rotation matrix and the Z-axis of the base coordinate system. This yields a vector corresponding to the tilted Z-axis of the tool. The enclosed angle can then be calculated using the scalar product. This step assumes that the defined coordinate system is oriented in a way that aligns the Z-axis parallel to the gravity vector.
+
+To quantify the torch orientation parameter, it is recorded in a time series format. To obtain a scalar value for this parameter, all the values can be squared, cubed, or subjected to other mathematical operations, and then summed up. This process is similar to the one described in Chapter \ref{RO} for the cable routing orientation parameter.
+
+Figure \ref{tilt} gives a visual example in 2D on how the Z-axis of the tool is deviating from the vector of gravity.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=.5\textwidth]{figures/ttilt.png}}
+	\caption{Example of non-optimal tilt in the welding torch}
+	\label{tilt}
+\end{figure}
+
+
+
+
+
 \section{Summery for Boundary Condition Evaluation}
 \section{General Methodology for Process Optimization}
 \subsection{Without NX}
