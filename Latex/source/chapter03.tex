@@ -208,9 +208,11 @@ It is important to note that for a local score computation, as mentioned in Chap
 
 
 \section{Information from Angular Position}
-The angular position of a joint by itself does not provide much information from which much qualitative analysis can be performed. But by adding information, like a temporal component, it can serve as a significant information source. 
+In its isolated form, the angular position of a joint does not provide information to enable extensive qualitative analysis. However, when supplemented with temporal information, it becomes a valuable source of information. By considering the angular position in conjunction with the temporal dimension, a more comprehensive understanding of joint behavior can be obtained, allowing for more in depth analysis.
 
-Figure \ref{agularstuff} visualizes what information needs to be added to enhance the information content of process parameters that are directly related to the angular position of joints.
+
+
+Figure \ref{agularstuff} visualizes what information needs to be added to enrich the analysis of these process parameters that are directly related to the angular position of joints.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.8\textwidth]{figures/angularstuff.png}}
@@ -220,9 +222,9 @@ Figure \ref{agularstuff} visualizes what information needs to be added to enhanc
 
 
 
-The first additional piece of required information is the temporal element, which specifies the time when a joint is supposed to be in what rotational position. This information can either be recorded in equidistant time steps as shown in figure \ref{equi} on the left or adapted to only record the change of position as shown on the right. Recording only the change of position is not optimal as it does not correspond to the physical system, where the position cannot significantly change from one time step to the next. Additionally, it is not defined with which rotational velocity the joint needs to change position. On the other hand, continuous recording in small equidistant time steps can result in significantly more recorded values and thus, a longer time-series.
+The first additional piece of required information is the temporal element, which specifies the specific time at which a joint should be in a particular rotational position. This information can be recorded in equidistant time steps, as shown in figure \ref{equi} on the left, or it can be adapted to only record the change in position, as shown on the right. However, recording only the change in position is not ideal because it does not accurately represent the physical system, where the position cannot change significantly from one time step to the next. Moreover, this method does not specify the rotational velocity at which the joint should change position. On the other hand, continuous recording in small equidistant time steps can result in a larger number of recorded values and, consequently, a longer time-series.
 
-Figure \ref{equi} shows the rotational position of a rotary joint in radians recorded with equidistant steps as well as a time-series where only the destination positions and the associate times are recorded.
+Figure \ref{equi} illustrates the rotational position of a rotary joint in radians. The left side of the figure displays the position recorded with equidistant time steps, while the right side shows a time-series where only the destination positions and their corresponding times are recorded.
 
 
 \begin{figure}[H]
@@ -239,9 +241,9 @@ Figure \ref{equi} shows the rotational position of a rotary joint in radians rec
 %\end{figure}
 
 \subsection{Total Joint Travel and Direction Changes}
-Parameters that can be analyzed without any additional information are the number of direction changes as well as the total travel of a joint. The total travel is easily obtained by subtracting the position from two adjacent recorded points and summing up the absolute value. Additionally, more information can be extracted by summing up, for example, the clockwise and anti-clockwise rotations individually. By combining the absolute values of these, the total travel of that joint is calculated.
+Parameters that can be analyzed without requiring any additional information include the number of direction changes and the total travel of a joint. The total travel can be determined by subtracting the position of two adjacent recorded points and summing up the absolute values. Furthermore, additional information can be extracted by separately summing up the clockwise and anti-clockwise rotations. By combining the absolute values of these rotations, the total travel of the joint can be calculated.
 
-Figure \ref{travel} gives a visual representation of how the total travel can be calculated. Summing up the length of the green arrows results in the total forward rotation, while the sum of the length of the orange arrows is the backward rotation.
+igure \ref{travel} provides a visual representation of the calculation of total travel. The total forward rotation can be obtained by summing up the lengths of the green arrows, while the total backward rotation is determined by summing up the lengths of the orange arrows.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.5\textwidth]{figures/travel.png}}
@@ -249,10 +251,9 @@ Figure \ref{travel} gives a visual representation of how the total travel can be
 	\label{travel}
 \end{figure}
 
-The number of direction changes is a parameter that can also be determined by just analyzing the joint position without having the temporal information. This value can be determined by finding all points where the position before and after is either smaller or larger. 
-But this method is not applicable to points where multiple positions are recorded at the same value right after each other.
+The number of direction changes is a parameter that can be determined by analyzing the joint position alone, without the need for temporal information. This can be done by identifying all points where the position before and after is either smaller or larger. However, it is important to note that this method may not be applicable to points where multiple positions are recorded at the same value right after each other.
 
-The solution to that problem is to introduce a tracking value that indicates if the previous change in direction of two adjacent positions was either up or down. If the direction of two positions is different from the tracking value, the direction change counter is incremented by 1. If the direction is the same as the previous points or neutral, which means that two positions were identical, the direction change counter and tracking values are not changed.
+To address the issue of multiple positions recorded at the same value, a possible solution is to introduce a tracking value that indicates whether the previous change in direction of two adjacent positions was either up or down. If the direction of two positions is different from the tracking value, the direction change counter is incremented by 1. However, if the direction is the same as the previous points or if the positions are identical (neutral), the direction change counter and tracking values remain unchanged.
 
 Figure \ref{dirchange} gives a visual representation of where the direction-change-counter is incremented.
 
@@ -262,9 +263,9 @@ Figure \ref{dirchange} gives a visual representation of where the direction-chan
 	\label{dirchange}
 \end{figure}
 
-The counter of the direction changes and total travel of each joint are the values that are then transformed into a local sore as explained in Chapter \ref{LRC} and then multiplied with an importance factor to result in the local score. The direction changes can either be summed up over all joints or specifically grouped.  
+The counters for direction changes and total travel of each joint can be transformed into a local score, as explained in Chapter \ref{LRC}. This local score can then be multiplied by an importance factor to calculate the overall local score. The direction changes can be summed up over all joints, or they can be specifically grouped based on certain criteria or categories.  
 
-Table \ref{exampleDirTravel} gives an example of how a global score can be calculated based only on the number of direction changes and total travel. In this example, the highest importance is assigned to the direction changes of joint 1. Direction changes in joints 2 to 6 are grouped together. Further, the total travel in joint 4 is also explicitly weighted, while the total travel of the other joints is grouped together. It is important to note that only the local score is multiplied by the importance factor, not the actual counted direction changes or total travel. This is why the values lie in an interval between 0 and 100. As the direction changes in joint 1 have a high local score and a high importance factor, the overall global score is also very high. This again indicates the significance of setting the imortance factor in accordance with the desired outcome. 
+Table \ref{exampleDirTravel} gives an example of how a global score can be calculated based only on the number of direction changes and total travel. This table demonstrates how different joints and parameters can be weighted and grouped together to calculate the global score. By assigning different importance factors to each parameter, the overall global score can reflect the desired outcome. It is important to note that only the local scores are multiplied by the importance factor, not the actual counted direction changes or total travel values. This allows the local score to fall within the range of 0 to 100. In this example, due to the high local score and importance factor for the direction changes in joint 1, the overall global score is also very high, indicating its significance in the calculation.
 
 
 \begin{table}[H]
@@ -291,10 +292,15 @@ Table \ref{exampleDirTravel} gives an example of how a global score can be calcu
 	\label{exampleDirTravel}
 \end{table}
 
-In some cases, it is not possible to reduce the number of direction changes by adapting the boundary conditions. But having the same number of direction changes does not make two time-series identical. Figure \ref{dirchangeSTD} shows how two time-series have the same number of direction changes but have significantly different characteristics. To differentiate these cases, a value corresponding to the standard deviation can be employed. Tool paths that result in frequent and temporally close-positioned direction changes are generally not advisable. 
+In certain cases, it may not be possible to reduce the number of direction changes by adjusting the boundary conditions. It is important to note that having the same number of direction changes does not imply that two time-series are identical. Figure \ref{dirchangeSTD} provides a visual representation of two time-series with the same number of direction changes but distinct characteristics.
 
+To distinguish between these cases, the standard deviation can be utilized. By incorporating the standard deviation, tool paths that result in frequent and closely spaced direction changes can be identified and generally considered less desirable.
 
-This factor can be combined with the direction changes to form one parameter. This is done by dividing the direction changes by the standard deviation before calculating the local score by means of variation. Few direction changes with a high variance will lead to a low number, which is opposed by many direction changes with a low variance.
+To combine the factor of standard deviation with the number of direction changes, they can be integrated into a single parameter. This is achieved by dividing the number of direction changes by the standard deviation. By incorporating this variation-based calculation, a local score can be determined.
+
+When there are only a few direction changes but with a high variance, the resulting parameter value will be low. Conversely, when there are numerous direction changes but with a low variance, the parameter value will be high.
+
+This approach provides a evaluation method that considers both the quantity of direction changes and the variability within the time-series data.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.7\textwidth]{figures/DirSTD.png}}
@@ -303,12 +309,14 @@ This factor can be combined with the direction changes to form one parameter. Th
 \end{figure}
 
 \subsection{Rotation Limits}\label{RotLim}
-Further, a simple analysis regarding the rotational limits can be performed, for which two different values need to be known. The first one is the physical limit that a joint can not exceed. Trying to drive the robot joint past that point can result in significant damage. The second value are possible soft limits that exist to prevent the joint from over-rotation into its physical limits. To validate if any rotational positions come close to the limits or are exceeded, a simple comparison of all the values can be made. If necessary, additional limits can be defined in cases where it is known that a joint is most stable in a specific range. After a tool path with set boundary conditions is defined, the joint angles can be analyzed and a simple comparison can be made. If the joint positions exceed the soft limits or deviate too much from their desired orientation, a "No-Go" exception is issued. The analysis of the rotation limits does not contribute to the calculation of the global score but rather serves as a validity analysis to determine if the movement necessary for the toolpath is physically possible.
+In addition, a straightforward analysis of the rotational limits can be conducted, requiring knowledge of two distinct values. The first value are the physical limit that a joint cannot surpass, as surpassing this limit can cause significant damage to the robot. The second value relates to potential soft limits in place to prevent over-rotation of the joint beyond its physical limits. To validate whether any rotational positions approach or exceed these limits, a simple comparison of all values can be performed. In cases where it is known that a joint is most stable within a specific range, additional limits can be defined accordingly.
+
+Once a tool path with defined boundary conditions is established, the joint angles can be analyzed through a simple comparison process. If the joint positions surpass the soft limits or deviate excessively from the desired orientation, a "No-Go" exception is triggered. It's worth noting that the analysis of rotation limits does not contribute to the calculation of the global score but serves as a validity assessment to determine if the required movement for the tool path is physically feasible.
 \newpage
 \subsection{Velocity, Acceleration and Jerk of the Joints}\label{VAJJ}
-To specifically analyze the rotational velocity, acceleration and jerk of the joints, a time derivative needs to be performed. After that, simple comparisons of the time-series values are enough to determine whether the maximum capabilities of the motor driving the joint are exceeded.
+To conduct a specific analysis of the rotational velocity, acceleration, and jerk of the joints, a time derivative needs to be applied. By performing simple comparisons of the time-series values, it becomes possible to determine whether the maximum capabilities of the motor driving the joint are being exceeded.
 
-Figure \ref{velo} shows how the velocity aspect can be transformed into a scalar value that can be used for a local score calculation. First, the joint velocity is obtained by taking a time derivative of the joint position. Then it is analyzed for how long the absolute velocity exceeded a certain threshold value. In the example, the threshold is set at 80\%. Further, it is possible to add multiple thresholds and weigh them exponentially in relation to each other. The combined result is then used as a local score.
+Figure \ref{velo} demonstrates how the velocity aspect can be transformed into a scalar value, which can then be utilized in the calculation of a local score. Firstly, the joint velocity is obtained by taking the time derivative of the joint position. Subsequently, an analysis is conducted to determine the duration for which the absolute velocity exceeds a certain threshold value. In the given example, the threshold is set at 80\%. Additionally, it is feasible to incorporate multiple thresholds and assign exponential weights to them relative to each other. The combined outcome is then utilized to calculate the local score.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/veloy.png}}
@@ -316,7 +324,7 @@ Figure \ref{velo} shows how the velocity aspect can be transformed into a scalar
 	\label{velo}
 \end{figure}
 
-It is also possible to define if a short but significant peak over the threshold values is more desirable than a constant but small overstep. Figure \ref{peaklong} gives a visualization of these two cases.
+It is also possible to define if a short but significant peak over the threshold values is more desirable than a constant but small overstep. Figure \ref{peaklong} gives a visualization of these two cases. In the former case, where peaks are more desirable, it is enough to sum up The area between the velocity and set threshold. If the avoidance peaks is the first priority, all elements in the velocity time series can be cubed and summed up. By cubing the values, peaks will be weight exponentially and thus easier to optimize for.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/peaklong.png}}
@@ -324,12 +332,13 @@ It is also possible to define if a short but significant peak over the threshold
 	\label{peaklong}
 \end{figure}
 
-In the former case, where peaks are more desirable, it is enough to count the time-steps where the threshold was overstepped. If the avoidance of limits is the first priority, it must be analyzed how close the velocity, acceleration, and jerk came to the maximum limit. The simplest case however, is to just simply square all values and sum them up. By employing this method, no threshold boundaries have to be defined, and high peaks will influence the resulting value more than small constant values.
 
-In the case that the velocity exceeds the maximum velocity, a "No-Go" exception must be thrown as that movement is not possible. The same rating principle is applicable to acceleration and jerk. The derivative of the velocity returns the acceleration, and the next derivative returns the jerk. Individual limits and thresholds can be set to calculate how optimal the robot's movement is. In cases where the maximum acceleration or jerk is exceeded, a "No-Go" error is also thrown.
+The simplest case, however, is to square all values and sum them. By employing this method, there is no need to define threshold boundaries. Additionally, high peaks will have a greater influence on the resulting value compared to small constant values, without overshadowing the final result.
+
+If the velocity exceeds the maximum velocity, an exception called "No-Go" must be thrown, indicating that the movement is not possible. The same rating principle can be applied to acceleration and jerk. The acceleration is obtained by taking the derivative of the velocity, while the jerk is obtained by taking the next derivative. Individual limits and thresholds can be set to determine the optimality of the robot's movement. If the maximum acceleration or jerk is exceeded, a "No-Go" error is also thrown.
 
 
-Table \ref{VAJ} shows the calculation of a global score with a weighting that prefers low acceleration in joint 2 and accepts high velocity in all joints. The acceleration in joint 1 and 3-6 are also of low importance. The jerk is completely omitted from the rating.
+Table \ref{VAJ} presents the calculation of a global score, which incorporates a weighting that prioritizes low acceleration in joint 2 and allows for high velocity in all joints. The acceleration in joint 1 and joints 3 to 6 are considered to be of lesser significance. The jerk is completely omitted from the rating in this example.
 
 
 \begin{table}[H]
@@ -358,14 +367,13 @@ Table \ref{VAJ} shows the calculation of a global score with a weighting that pr
 
 
 \section{TCP Coordinates, Velocity and Acceleration}\label{CVA}
-As mentioned in Chapter \ref{pp}, with the help of a forward kinematics approach it is possible to determine the X-Y-Z coordinates and orientation of the TCP. Alternatively this information can also be directly extracted from the G-code.
+As discussed in Chapter \ref{pp}, the forward kinematics approach allows for the calculation of the TCP's X-Y-Z coordinates and orientation. Alternatively, this information can be directly extracted from the G-code.
 
-By calculating the time derivative of the positions, the velocity of the TCP can be determined, and subsequently, the acceleration can be obtained as well. These two parameters play a crucial role in milling applications, particularly when the goal is to fabricate precise corners. It is important to note that both robotic systems and CNC machines have limitations on their acceleration capabilities. As highlighted in Chapter \ref{CPM}, these limitations result in slight deviations occurring in the path, especially at corners. These deviations occur due to the inability of the systems to instantaneously change their velocity or direction. Consequently, the path followed by the TCP will not be perfectly smooth and will exhibit minor variations in the corners.
+By calculating the time derivative of the positions, it is possible to determine both the velocity and acceleration of the TCP. These parameters play a significant role in milling applications, particularly when precise corners need to be fabricated. It is important to note that both robotic systems and CNC machines have limitations on their acceleration capabilities. As highlighted in Chapter \ref{CPM}, these limitations result in slight deviations occurring in the path, especially at corners. These deviations arise from the systems' inability to instantaneously change velocity or direction. Consequently, the TCP's path will not be perfectly followed as demanded by the G-Code and will exhibit minor variations in the corners.
 
+To quantitatively analyze the magnitude and frequency of these deviations, it is crucial to examine the endpoints of the linear toolpath as defined in the G-code. When the endpoints are aligned along a vector in space, it indicates that no deviation from the desired toolpath is expected. However, a misalignment between the endpoints suggests an anticipated deviation.
 
-To quantitatively analyze the magnitude and frequency of these deviations, it is crucial to examine the endpoints of the linear toolpath as defined in the G-code. When the endpoints are aligned, it indicates that no deviation from the desired toolpath is expected. However, when there is a misalignment between the endpoints, it indicates that a deviation is expected.
-
-Figure \ref{devi} gives a visual example of the position in th X-Y plane that the robot needs to pass. The expected deviation is shown in red.
+Figure \ref{devi} gives a visual example of the position in th X-Y plane that the robot needs to traverse. The expected deviation is shown in red.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=.651\textwidth]{figures/uber.png}}
@@ -373,36 +381,25 @@ Figure \ref{devi} gives a visual example of the position in th X-Y plane that th
 	\label{devi}
 \end{figure}
 
-To obtain a qualitative estimate of the total deviation, it is necessary to analyze the individual velocity vectors that characterize the toolpath. When the velocity vectors are perfectly aligned, it indicates that no deviation is expected. However, as the angle between two consecutive velocity vectors increases, the deviation also increases.
+In order to obtain a qualitative estimate of the total deviation, it is necessary to analyze the individual velocity vectors that characterize the toolpath. Perfect alignment of the velocity vectors indicates no expected deviation. However, as the angle between consecutive velocity vectors increases, the deviation also increases.
 
-To quantitatively represent this information, the sine of each angle can be calculated and summed. An angle of 0 or 180 degrees will return 0, while an angle of 90 degrees will return 1. This scalar value provides an indication of the overall magnitude of the expected deviation.
+To quantitatively represent this information, the sine of each angle can be calculated and summed. An angle of 0 or 180 degrees will result in a value of 0, while an angle of 90 degrees will yield a value of 1. This scalar value provides an indication of the overall magnitude of the expected deviation.
 
-Furthermore, it is essential to consider the magnitude or speed of the velocity vectors. In the case of sharp corners with high velocities, the deviation is expected to be more significant compared to corners with lower velocities. To account for this, the result obtained from the sine calculation can be multiplied by the smaller of the two velocities.
+Additionally, it is crucial to consider the magnitude or speed of the velocity vectors. In cases involving sharp corners with high velocities, the deviation is anticipated to be more significant compared to corners with lower velocities. To account for this, the result obtained from the sine calculation can be multiplied by the smaller of the two velocities.
 
-This analysis is helpful for the operator to define more optimal machining strategies but is not related to the optimization with the redundant DoF.
+This analysis is useful for operators in defining more optimal machining strategies. However, it is important to note that this analysis is separate from the optimization involving the redundant DoF.
 
-In the context of WAAM, the acceleration of the welding torch can have a significant impact on the process. This is particularly true when using CMT technology, which involves wire retraction, as discussed in Chapter \ref{CMT}. A sharp acceleration of the welding torch can lead to unintended drop detachment and imprecise drop placement. This phenomenon can negatively affect the quality and accuracy of the additive manufacturing process, resulting in defects and deviations from the desired geometry.
+In the context of WAAM, the acceleration of the welding torch plays a crucial role in the process. This is particularly evident when utilizing CMT technology, which involves wire retraction, as discussed in Chapter \ref{CMT}. A rapid acceleration of the welding torch can lead to unintended drop detachment and imprecise drop placement. Consequently, the quality and accuracy of the additive manufacturing process may be compromised, resulting in defects and deviations from the desired geometry.
 
-However, it is important to note that this issue, similar to the deviation in the toolpath as discussed earlier, is not something that can be directly optimized by simply setting specific boundary conditions. 
-
-
-THIS WHOLE PARAGRAPH IS USELESS !!
-
-
-THIS WHOLE PARAGRAPH IS USELESS !!
-
-
-THIS WHOLE PARAGRAPH IS USELESS !!
-
-
+However, it is worth noting that, similar to the deviation in the toolpath discussed earlier, this issue cannot be directly optimized by simply defining specific boundary conditions.
 
 \section{Energy Usage}
-Energy usage is one of the most important factors in manufacturing today. By carefully selecting optimal boundary conditions, the robot can avoid unnecessary and energy-intensive movements. The energy usage can be analyzed in two different ways. First, there is the continuous energy analysis where each movement can be attribute to a specific energy consumption. Secondly, there is to option for considering the overall energy requirement spanning the entire manufacturing process. This provides a holistic perspective on energy utilization. 
+Energy usage is a crucial aspect of modern manufacturing. To minimize unnecessary and energy-intensive movements, it is essential to select appropriate boundary conditions for robots. The analysis of energy usage can be approached in two distinct ways. Firstly, a continuous energy analysis allows to attribute specific energy consumption to each movement. Secondly, it is possible to consider the overall energy requirement throughout the entire manufacturing process, providing a holistic perspective on energy utilization. These approaches can optimize energy usage and make informed decisions regarding energy efficiency in manufacturing. 
 
 \subsection{Continuous Energy-Usage}
-One of the simplest approaches to track energy consumption is by monitoring the velocity and acceleration of individual joints. The energy demand can be divided into two parts: the rotation of a joint with a set velocity and the acceleration of the joint.
+Tracking energy consumption can be achieved through a straightforward method of monitoring the velocity and acceleration of individual joints. The energy demand is composed of two components: the rotational movement of a joint at a predetermined speed and the joint's acceleration.
 
-To calculate the energy consumption of each joint, the time-series of joint velocity can be multiplied by an average energy consumption value for that specific joint. The same principle applies to the time-series of joint acceleration. By summing up these resulting time-series, an energy consumption time-series for each joint can be obtained. Adding up the time-series of all joints gives the overall energy consumption of the robot. Table \ref{scalers} gives exemplary  values for the scaling factors.\newline
+To determine the energy consumed by each joint, the time-series data of joint velocity can be multiplied by the average energy consumption value associated with that particular joint. The same principle is applied to the time-series data of joint acceleration. By summing up these resultant time-series, an energy consumption profile for each joint can be obtained. Aggregating the time-series data from all joints provides an overall estimation of the robot's energy consumption. Table \ref{scalers} gives exemplary values for the scaling factors.\newline
 
 
 \begin{table}[H]
@@ -426,14 +423,15 @@ To calculate the energy consumption of each joint, the time-series of joint velo
 \end{table}
 
 
-The main advantage of this approach lies in its simplicity. However, its main drawback is the potential inaccuracy due to working with an average scaling value. If this value is calculated by averaging all possible positions, but only a few are actually traversed by the robot, significant differences may arise.
+This approach offers a notable advantage in its simplicity. Nevertheless, its primary limitation stems from the potential inaccuracies that may arise when working with an average scaling value. If this value is derived by averaging all possible positions, but only a limited number of positions are actually traversed by the robot, significant discrepancies can occur.
 
 
-To overcome these limitations, more sophisticated approaches are required. For instance, implementing multi-body simulations in the CAM software allows for a direct analysis of the precise amount of energy needed for a robot to transition between poses. This method necessitates accurate modeling of weight distribution but yields highly precise results. However, it's important to note that this implementation may require significant computation time.
+To address these limitations, more advanced approaches are necessary. For instance, the utilization of multi-body simulations in CAM software enables a direct analysis of the exact energy requirements for a robot to move between different poses. This method involves precise modeling of weight distribution, resulting in highly accurate outcomes. However, it is important to consider that implementing this approach may require substantial computation and development time.
 
 
-Another option to consider is utilizing a ML approach for calculating energy consumption during transitions between discrete poses.  By employing a supervised learning technique, where the input data includes the current pose (joint positions and velocities) as well as the target pose, an ML model can be trained to predict the energy required for each transition. This approach offers the advantage of leveraging ML algorithms to provide accurate energy consumption estimates in a more efficient manner. However, it is important to acknowledge that generating high-quality training data and training the ML model can be time-intensive processes.
-Figure \ref{ENERGYOPTIONS} shows the three mentioned options with their main requirements. It is important to note that these examples do not covet all possibilities to solve this problem.
+Another viable option to consider is the utilization of a machine learning (ML) approach for estimating energy consumption during transitions between discrete poses. By employing a supervised learning technique, where the input data includes the current pose (joint positions and velocities) as well as the target pose, an ML model can be trained to predict the energy required for each transition. This approach offers the advantage of leveraging ML algorithms to provide accurate energy consumption estimates in a more efficient manner. However, it is important to acknowledge that generating high-quality training data and training the ML model can be time-intensive processes.
+
+Figure \ref{ENERGYOPTIONS} illustrates the three aforementioned options along with their key requirements. It is important to note that these examples only give an example on how to get a energy estimation and do not cover all possible solutions to address this problem. 
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=.8\textwidth]{figures/ENERGYOPTIONS.png}}
@@ -441,26 +439,30 @@ Figure \ref{ENERGYOPTIONS} shows the three mentioned options with their main req
 	\label{ENERGYOPTIONS}
 \end{figure}
 
-After the time-series for the energy consumption is obtained, it is possible to find peaks and relate them to specific movements. Based on the optimization goal, it is also possible to set analogue threshold values as mentioned in chapter \ref{CVA}, to optimize for a constant energy consumption.
+Once the time-series data for energy consumption is obtained, it becomes possible to identify peaks and associate them with specific movements. In line with the optimization objective, it is also feasible to establish threshold values, as discussed in Chapter \ref{CVA}, to optimize for a consistent energy consumption.
 
 
-WAMM GCODE
- 
 \subsection{Total Energy-Usage}
-When the objective is to obtain a single scalar value for energy consumption, the same processes described in the previous chapter can be employed, and the values from the time series can be summed up.
+When the aim is to obtain a single scalar value for energy consumption, the same procedures outlined in the preceding chapter can be applied, and the values from the time series can be aggregated through summation.
 
-However, in cases where the temporal information in energy consumption is considered irrelevant, alternative machine learning approaches can be implemented. For instance, Recurrent Neural Networks (RNNs) can be utilized, which have the ability to take a whole time series as input and return a scalar value representing the total energy consumption. RNNs are capable of capturing dependencies and patterns in sequential data, making them suitable for modeling the energy consumption over time. By training an RNN model using a time series dataset, it can learn to predict the total energy consumption based on the given input. But just as with most ML approaches, this method requires significant upfront effort and time for generating training data and training itself.
+In situations where the temporal information in energy consumption is considered irrelevant, alternative machine learning approaches can be employed. For example, Recurrent Neural Networks (RNNs) can be utilized, as they have the ability to take an entire time series as input and generate a scalar value representing the total energy consumption. RNNs excel at capturing dependencies and patterns in sequential data. By training an RNN model using a time series dataset, it can learn to predict the total energy consumption based on the provided input. However, it is important to note that, like most machine learning approaches, this method requires substantial effort and time for generating training data and conducting the training process.
+
+In WAAM, it is important to consider the energy consumption associated with the welding process itself. The determination of energy use in welding involves various factors. The G-code, which comprises instructions for the welding process, can provide information on the movement, voltage and the desired power input. By analyzing this code, it becomes possible to estimate the energy consumption during each welding operation. Alternatively, these parameters are often pre-defined as constants on the welding appliance, with the G-code solely specifying the turn-on and turn-off points.
+
+In addition to the factors mentioned earlier, the duration of the welding process and the parameters of the welding equipment play crucial roles in determining energy consumption. By considering these factors, it is possible to accurately assess the energy usage during welding operations.
+
+However, this specific part of the total energy consumption cannot be optimized by defining the boundary conditions of redundant DoFs. The energy required for the welding process is solely defined by the welding parameters and G-code.
 
 
 \section{Reach, Singularities and Torch Orientation}
-In the following, the robot poses with respect to reach, singularity avoidance, and torch orientation is discussed. These are essential factors in ensuring successful and efficient robotic operations.
+The following discusses the robot poses with respect to reach, singularity avoidance, and torch orientation. These factors are essential in ensuring successful and efficient robotic operations.
 \subsection{Reach and Orientation}\label{RO}
 
-As mentioned in Chapter \ref{pp}, the analysis of the reachability index can be done in multiple formats. The first format involves a simple analysis to determine if all the points that the robot needs to traverse, lie within its work volume  without any collisions occurring with itself or exceeding the hard joint limits. This aspect is closely related to the joint limits, as discussed in Chapter \ref{RotLim}. Further it is necessary to analyze that no collision of the robot with the piecework occurs. Ensuring that the robot's joint configurations are within the specified limits is crucial for maintaining reachability and avoiding any potential collisions or constraints during its operation. If all these parameters are met, a binary index can be used to indicate the feasibility that signifies the program's safety to execute. This index however, can not be used for optimizing the robots movement as the parameters that influence this index are mostly defined by the G-Code.
+As mentioned in Chapter \ref{pp}, the analysis of the reachability index can be conducted in various formats. The first format involves a simple analysis to determine if all the points that the robot needs to traverse lie within its work volume, without any self-collisions or exceeding the hard joint limits. This aspect is closely related to the joint limits, as discussed in Chapter \ref{RotLim}. Additionally, it is necessary to analyze that there are no collisions between the robot and the workpiece. If all these parameters are met, a binary index can be used to indicate the feasibility and safety of executing the program. However, this index cannot be used for optimizing the robot's movement, as the parameters influencing this index are mostly defined by the G-Code.
 
-When utilizing a robotic system with a specific tool, such as a spindle for milling or a welding torch for WAAM, it is crucial to consider the boundary conditions associated with that tool. In many cases, the spindle and welding torch come with cables that provide power from an external power supply. These cables have an optimal orientation where bending and wear are minimized. By positioning the cables in an optimal orientation, the robotic system can operate efficiently and effectively without any interference or limitations due to cable movement or any potential damage or wear caused by excessive bending or twisting.
+When utilizing a robotic system with a specific tool, such as a milling spindle or a welding torch for WAAM, it is crucial to consider the boundary conditions associated with that tool. In many cases, the spindle and welding torch come with cables that provide power from an external power supply. These cables have an optimal orientation where bending and wear are minimized. By positioning the cables in an optimal orientation, the robotic system can operate efficiently and effectively without any interference or limitations due to cable movement, potential damage, or excessive bending or twisting.
 
-Figure \ref{rot} visualizes the rotation around the C-axis of the welding torch. Each of the rotations strains the wire differently.
+Figure \ref{rot} illustrates the rotation around the C-axis of the welding torch, which leads to different strains on the wire with each rotation.
 
 \begin{figure}[H]%
 	\centering
@@ -471,9 +473,9 @@ Figure \ref{rot} visualizes the rotation around the C-axis of the welding torch.
 	\label{rot}%
 \end{figure}
  
-In order to assess the efficiency of the robot's pose for the cables, it is important to consider additional parameters. In certain cases, it is preferable to route the cables in a specific orientation along a spatial vector, allowing for parallel translation or movement in the direction of that vector. In this case that angle between the planes of the base coordinate system of the robot is constant.
+To assess the efficiency of the robot's cable pose, it is important to consider additional parameters. In certain cases, it is preferable to route the cables in a specific orientation along a spatial vector, allowing for parallel translation or movement in the direction of that vector. In this case, the angle between the planes of the robot's base coordinate system remains constant.
 
-Figure \ref{OOPti}a gives a visual representation for that example. The wire, shown in red, has a optimal orientation where the least amount of strain is present. Any position along that vector where the cable transitions to the welding torch is tangential is regards as a optimal one. It is worth noting that this vector can be translated parallel to space and still maintain its optimal status.
+Figure \ref{OOPti}a provides a visual representation of this example. The wire, shown in red, has an optimal orientation where the least amount of strain is present. Any position along that vector where the cable transitions to the welding torch tangentially is considered optimal. It is worth noting that this vector can be translated parallel in space while still maintaining its optimal status.
 
 In certain scenarios, it is more efficient to route the cables towards a specific point in space, such as a mounting point on a wall. Figure \ref{OOPti}b illustrates an example where the optimal orientation of a milling spindle is directed towards a designated point where the cables originate. In this case, any position is considered optimal as long as the extended spindle vector aligns with the vanishing point.
 
@@ -482,48 +484,40 @@ In certain scenarios, it is more efficient to route the cables towards a specifi
 	\centering
 	\subfloat[\centering Optimal orientation along a vector ]{{\includegraphics[width=.5\textwidth]{figures/paralell.png} }}%
 	\qquad
-	\subfloat[\centering Optimal orientation towards a defined points ]{{ \includegraphics[width=.3\textwidth]{figures/angle.png}}}%
-	\caption{Two examples for optimal orientation along a vector}%
+	\subfloat[\centering Optimal orientation towards a defined points ]{{ \includegraphics[width=.35\textwidth]{figures/angle.png}}}%
+	\caption{Two examples for optimal orientation along a vector in 2D}%
 	\label{OOPti}%
 \end{figure}
 
 
 
-To optimize, or in other words minimize, the deviation from the optimal vector or vanishing point, the redundant degrees of freedom can be utilized. One approach is to analyze the deviation and track it over time, creating a time series. Each element in this time series can be squared or cubed, depending on the weight assigned to small and constant deviations versus large but short offsets. The time series is then summed up to form a scalar value, which can be used to calculate the local score through variation.
+To minimize the deviation from the optimal vector or vanishing point, the redundant degrees of freedom can be utilized. One approach is to analyze the deviation and track it over time, creating a time series. Each element in this time series can be squared or cubed, depending on the weight assigned to small and constant deviations versus large but short offsets. The time series is then summed up to form a scalar value, which can be used to calculate the local score through the variation method.
 
 
-Figure \ref{deviation} shows an example on how the scalar value is calculated. It is clearly visible that when cubing the time series more importance is set on the larger deviations, rather then small deviations.
+Figure \ref{deviation} illustrates an example of how the scalar value is calculated. It is evident that when cubing the time series, more importance is placed on the larger deviations rather than small deviations.
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=.8\textwidth]{figures/devi.png}}
+	\centerline{\includegraphics[width=.9\textwidth]{figures/devi.png}}
 	\caption{From time-series of the deviation vector to scalar value}
 	\label{deviation}
 \end{figure}
  
 
 \subsection{Singularities}
-In Chapter \ref{Singularity avoidance}, the concept of singularities in robotic manipulators is discussed. Singularities occur when the robot's joints align in a way that limits its motion by reducing one or more degrees of freedom. To avoid singularities, it is important to set the boundary conditions optimally in the redundant degrees of freedom. The singularity analysis, as described in table \ref{procesparameters}, can be represented either as a scalar value or as a time-series that classifies each position based on its proximity to a singularity.
 
-The scalar value can represent to overall smallest eigenvalue of every Jacobi-matrix. For that every pose needs to be analyzed. After calculating the Jacobi matrix it is possible to extract all eigenvalues. From all eigenvalues encountered, only the smallest is recorded and used to calculate the local score. With this approach it is not possible to analyse specific poses but only the overall toolpath
+In Chapter \ref{Singularity avoidance}, the concept of singularities in robotic manipulators is discussed. Singularities occur when the robot's joints align in a way that limits its motion by reducing one or more degrees of freedom. To avoid singularities, it is important to optimize the boundary conditions in the redundant degrees of freedom. The singularity analysis, as described in Table \ref{procesparameters}, can be represented either as a scalar value or as a time series that classifies each position based on its proximity to a singularity.
 
+The scalar value can represent the overall smallest eigenvalue of every Jacobi matrix. For this, every pose needs to be analyzed. After calculating the Jacobi matrix, all eigenvalues encountered are examined, and only the smallest one is recorded and used to calculate the local score. This approach allows for an analysis of the overall toolpath rather than specific poses.
 
-
-
-If a time series is used instead, the determinant, not the eigenvalues, is recorded and stored in the time series. By analyzing this time-series, it becomes possible to directly associate the robot's movements with its proximity to a singularity. This allows for a more precise understanding of where exactly the robot's motions are close to a singularity and perform subsequent optimizations. To transform the time series into a scalar value, the same threshold-method can be applies ad described in Chapter \ref{VAJJ}.
+Alternatively, a time series can be used where the determinant, not the eigenvalues, is recorded and stored. By analyzing this time series, it becomes possible to directly associate the robot's movements with its proximity to a singularity. This enables a more precise understanding of where the robot's motions are close to a singularity, allowing for subsequent optimizations. To transform the time series into a scalar value, the same threshold method described in Chapter \ref{VAJJ} can be applied.
   
   
 
-
-
-
-\subsection{Torch Orientation}
-The torch orientation parameter in WAAM, similar to the cable routing orientation parameter, analyzes the angle at which the welding torch is positioned during the process. This parameter is specific to WAAM and ensures that the torch is at the optimal angle for welding. Achieving material deposition in the direction of gravity is crucial for obtaining the best results. The orientation of the TCP (welding torch tip) can be determined either through the forward kinematics approach or by extracting it directly from the G-code.
-
+\subsection{Torch Orientation in WAAM}
+The torch orientation parameter in Wire Arc Additive Manufacturing (WAAM), similar to the cable routing orientation parameter, analyzes the angle at which the welding torch is positioned during the process. This parameter is specific to WAAM and ensures that the torch is at the optimal angle for welding. Achieving material deposition in the direction of gravity is crucial for obtaining the best results. The orientation of the Tool Center Point (TCP), which represents the welding torch tip, can be determined either through the forward kinematics approach or by extracting it directly from the G-code.
 
 In both the forward kinematics approach and the G-code, the rotation is described as the rotation around the A, B, and C axes. However, the necessary information for torch orientation is simply the angle between the tilted Z-axis of the tool and the vector of gravity. To obtain this information, a dot product is performed between the rotation matrix and the Z-axis of the base coordinate system. This yields a vector corresponding to the tilted Z-axis of the tool. The enclosed angle can then be calculated using the scalar product. This step assumes that the defined coordinate system is oriented in a way that aligns the Z-axis parallel to the gravity vector.
-
-To quantify the torch orientation parameter, it is recorded in a time series format. To obtain a scalar value for this parameter, all the values can be squared, cubed, or subjected to other mathematical operations, and then summed up. This process is similar to the one described in Chapter \ref{RO} for the cable routing orientation parameter.
 
 Figure \ref{tilt} gives a visual example in 2D on how the Z-axis of the tool is deviating from the vector of gravity.
 
@@ -533,7 +527,7 @@ Figure \ref{tilt} gives a visual example in 2D on how the Z-axis of the tool is 
 	\label{tilt}
 \end{figure}
 
-
+To quantify the torch orientation parameter, it is recorded in a time series format. To obtain a scalar value for this parameter, all the values can be squared, cubed, or subjected to other mathematical operations, and then summed up. This process is similar to the one described in Chapter \ref{RO} for the cable routing orientation parameter.
 
 
 
