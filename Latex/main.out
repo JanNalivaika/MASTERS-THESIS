@@ -41,8 +41,8 @@
 \BOOKMARK [2][-]{subsection.3.7.3}{Torch\040Orientation\040in\040WAAM}{section.3.7}% 41
 \BOOKMARK [1][-]{section.3.8}{Summery\040for\040Boundary\040Condition\040Evaluation}{chapter.3}% 42
 \BOOKMARK [1][-]{section.3.9}{General\040Methodology\040for\040Process\040Optimization}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.9.1}{Without\040NX}{section.3.9}% 44
-\BOOKMARK [2][-]{subsection.3.9.2}{With\040NX}{section.3.9}% 45
+\BOOKMARK [2][-]{subsection.3.9.1}{Optimization\040Loop\040without\040CAM-software}{section.3.9}% 44
+\BOOKMARK [2][-]{subsection.3.9.2}{Optimization\040Loop\040with\040CAM-software}{section.3.9}% 45
 \BOOKMARK [0][-]{chapter.4}{Implementation\040and\040Validation}{}% 46
 \BOOKMARK [1][-]{section.4.1}{Implementation}{chapter.4}% 47
 \BOOKMARK [1][-]{section.4.2}{Testing\040and\040Validation}{chapter.4}% 48
@@ -53,4 +53,4 @@
 \BOOKMARK [1][-]{section.5.1}{Summary}{chapter.5}% 53
 \BOOKMARK [1][-]{section.5.2}{Outlook}{chapter.5}% 54
 \BOOKMARK [0][-]{chapter.6}{Appendix}{}% 55
-\BOOKMARK [0][-]{chapter*.55}{Bibliography}{}% 56
+\BOOKMARK [0][-]{chapter*.58}{Bibliography}{}% 56

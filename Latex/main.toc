@@ -31,35 +31,35 @@
 \contentsline {section}{\numberline {3.2}General Methodology for Process Analysis and Evaluation}{31}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}General Methodology}{31}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Process Parameters}{33}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}User-Defined Weights and Score Calculation}{36}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Local Rating and Global Score}{36}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Local Rating Calculation}{37}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Information Extraction form Time-Series Data}{38}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Information from Angular Position}{39}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{40}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{42}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk of the Joints}{43}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{44}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Energy Usage}{45}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Continuous Energy-Usage}{46}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{47}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Reach, Singularities and Torch Orientation}{48}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Reach and Orientation}{48}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Singularities}{50}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Torch Orientation in WAAM}{51}{subsection.3.7.3}%
-\contentsline {section}{\numberline {3.8}Summery for Boundary Condition Evaluation}{52}{section.3.8}%
-\contentsline {section}{\numberline {3.9}General Methodology for Process Optimization}{52}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Without NX}{52}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}With NX}{52}{subsection.3.9.2}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{53}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{53}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{53}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{53}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{53}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{53}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{55}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{55}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{55}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{57}{chapter.6}%
-\contentsline {chapter}{Bibliography}{63}{chapter*.55}%
+\contentsline {section}{\numberline {3.3}User-Defined Weights and Score Calculation}{37}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Local Rating and Global Score}{37}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Local Rating Calculation}{38}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Information Extraction form Time-Series Data}{39}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Information from Angular Position}{40}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{41}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{43}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk of the Joints}{44}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{46}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Energy Usage}{47}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Continuous Energy-Usage}{48}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{50}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Reach, Singularities and Torch Orientation}{50}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Reach and Orientation}{50}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Singularities}{53}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Torch Orientation in WAAM}{53}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Summery for Boundary Condition Evaluation}{55}{section.3.8}%
+\contentsline {section}{\numberline {3.9}General Methodology for Process Optimization}{57}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Optimization Loop without CAM-software}{57}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Optimization Loop with CAM-software}{57}{subsection.3.9.2}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{59}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation}{59}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{59}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{59}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{59}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{59}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{61}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{61}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{61}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Appendix}{63}{chapter.6}%
+\contentsline {chapter}{Bibliography}{69}{chapter*.58}%
 \contentsfinish 
