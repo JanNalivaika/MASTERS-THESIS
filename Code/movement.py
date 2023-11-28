@@ -111,6 +111,7 @@ for iter in range(0,len(pos),5):
 
     # Plot robot joints
     ax.scatter(positions[:, 0], positions[:, 1], positions[:, 2], c='r', marker='o')
+    ax.scatter(0, 0, 0, c='r', marker='o')
 
     x_coords.append(x)
     y_coords.append(y)
@@ -122,9 +123,9 @@ for iter in range(0,len(pos),5):
 
 
     # Set plot limits
-    ax.set_xlim([-1000, 1000])
-    ax.set_ylim([-1000, 1000])
-    ax.set_zlim([-1000, 1000])
+    ax.set_xlim([-100, 1000])
+    ax.set_ylim([-500, 500])
+    ax.set_zlim([-100, 1000])
 
     pointer1 = np.dot(rotM,[1, 0, 0])
     pointer2 = np.dot(rotM, [0, 1, 0])
