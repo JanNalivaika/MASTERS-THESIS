@@ -487,7 +487,13 @@ When the aim is to obtain a single scalar value for energy consumption, the same
 
 In situations where the temporal information in energy consumption is considered irrelevant, alternative ML approaches can be employed. For example, Recurrent Neural Networks (RNNs) can be utilized, as they have the ability to take an entire time-series as input and generate a scalar value representing the total energy consumption. RNNs excel at capturing dependencies and patterns in sequential data. By training an RNN model using a time-series dataset, it can learn to predict the total energy consumption based on the provided input. However, it is important to note that, like most ML approaches, this method requires substantial effort and time for generating training data and conducting the training process.
 
-In WAAM, it is important to consider the energy consumption associated with the welding process itself. The determination of energy use in welding involves various factors. The G-code, which comprises instructions for the welding process, can provide information on the wire-feed, voltage and the desired power input. By analyzing this code, it becomes possible to estimate the energy consumption during each welding operation. Alternatively, these parameters are often pre-defined as constants on the welding appliance, with the G-code solely specifying the turn-on and turn-off points.
+In WAAM, it is important to consider the energy consumption associated with the welding process itself. The determination of energy use in welding involves various factors. The G-code, which comprises instructions for the welding process, can provide information on the wire-feed, voltage and the desired power input. By analyzing this code, it becomes possible to estimate the energy consumption during each welding operation. Alternatively, these parameters are often pre-defined as constants on the welding appliance, with the G-code solely specifying the turn-on and turn-off points. Figure \ref{waamgcode} gives an example on how the turn-on and turn-off points can look in the G-code.
+ 
+\begin{figure}[H]
+	\centerline{\includegraphics[width=.75\textwidth]{figures/waamgcode.png}}
+	\caption{Turn-on and turn-off points in the G-code used in WAAM}
+	\label{waamgcode}
+\end{figure}
 
 In addition to the factors mentioned earlier, the duration of the welding process and the parameters of the welding equipment play crucial roles in determining energy consumption. By considering these factors, it is possible to accurately assess the energy usage during welding operations.
 
@@ -503,19 +509,23 @@ As mentioned in Chapter \ref{pp}, the analysis of the reachability index can be 
 
 Additionally, it is necessary to analyze that there are no collisions between the robot and the workpiece. If all these parameters are met, a binary index can be used to indicate the feasibility and safety of executing the program. However, this index cannot be used for optimizing the robot's movement, as the parameters influencing this index are mostly defined by the G-Code.
 
-When utilizing a robotic system with a specific tool, such as a milling spindle or a welding torch for WAAM, it is crucial to consider the boundary conditions associated with that tool. In many cases, the spindle and welding torch come with cables that provide power from an external power supply. These cables have an optimal orientation where bending and wear are minimized. By positioning the cables in an optimal orientation, the robotic system can operate efficiently and effectively without any interference or limitations due to cable movement, potential damage, or excessive bending or twisting.
+When utilizing a robotic system with a specific tool, such as a milling spindle or a welding torch for WAAM, it is crucial to consider the boundary conditions associated with that tool. 
+
+
+
 
 Figure \ref{rot} illustrates a case where the rotation around the C-axis of the welding torch can be manually defined. Each positions leads to different strains on the wire-feed system and power-cables.
 
 \begin{figure}[H]%
 	\centering
-	\subfloat[\centering No rotation]{{\includegraphics[width=.4\textwidth]{figures/rot0.png} }}%
+	\subfloat[\centering No rotation]{{\includegraphics[width=.45\textwidth]{figures/rot0.png} }}%
 	\qquad
-	\subfloat[\centering 30 degree rotation]{{ \includegraphics[width=.4\textwidth]{figures/rot1.png}}}%
+	\subfloat[\centering 30 degree rotation]{{ \includegraphics[width=.45\textwidth]{figures/rot1.png}}}%
 	\caption{Rotation around the C-axis of a welding torch }%
 	\label{rot}%
 \end{figure}
 
+In many cases, the spindle and welding torch come with cables that provide power from an external power supply. These cables have an optimal orientation where bending and wear are minimized. By positioning the cables in an optimal orientation, the robotic system can operate efficiently and effectively without any interference or limitations due to cable movement, potential damage, or excessive bending or twisting.
 
 To assess the optimality of the robot's cable pose, it is important to consider additional parameters. In certain cases, it is preferable to route the cables in a specific orientation along a spatial vector, allowing for parallel translation or movement in the direction of that vector. In this case, the angle between the planes of the robot's base coordinate system remains constant.
 
@@ -598,7 +608,7 @@ To calculate a local score, additional variations of the rotation around the C-A
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.95\textwidth]{figures/grob.png}}
-	\caption{x}
+	\caption{Process of evaluating a defined boundary condition}
 	\label{grob}
 \end{figure}
 
@@ -621,7 +631,71 @@ To calculate a local score, additional variations of the rotation around the C-A
 \section{General Methodology for Process Optimization}
 So far only the analysis of a tool path with set boundary conditions is discussed. In the following sections, two methods for optimizing boundary conditions towards a specific goal is presented. The main difference between these two methods lies in the different incorporation of a CAM software.
 
-It is important to note that optimizing certain process parameters may have a direct negative impact on others. For example, optimizing the orientation towards a specific vanishing point can significantly increase the total number of direction changes in the joints. Therefore, the user must be aware of these cross-influences and adjust the weights accordingly.
+It is important to note that optimizing certain process parameters may have a direct negative impact on others. For example, optimizing the tools orientation towards a specific vanishing point can significantly increase the total number of direction changes in the joints. Therefore, the user must be aware of these cross-influences and adjust the weights accordingly.
 
-\subsection{Optimization Loop without CAM-software}
+\subsection{Optimization Loop without CAM-software}\label{nocamchap}
+
+Figure \ref{nocam} illustrates the process of optimizing the redundant DoF based on a predefined goal determined by weighing the process parameters. In this method, the part and the robot are fixed components that are loaded into the CAM software. Before generating a toolpath, the redundant DoF must be set manually. These constraints can be set flexibly, as long as they do not lead to any "No-Go" exceptions caused by collisions or exceeding the joint limits.
+
+When the toolpath is generated, it is defined in all available DoF. To evaluate the set boundary conditions, the redundant DoF is varied, resulting in multiple toolpaths. In some cases, this variation simply involves varying the rotation around the C-Axis, while keeping all the coordinates (X-Y-Z) defined in the G-code unchanged.
+
+In other cases, the redundant DoFs involve the rotation and tilt of a rotary-tilt table. In such situations, every single point in the G-code needs to be rotated around the origin or the rotary-tilt table.
+
+After obtaining the multiple toolpaths, each one is subjected to an inverse kinematics algorithm. This algorithm utilizes the robot's parameters, such as arm length and joint sequence, to calculate the joint positions for every point. From these values, the score of the originally set boundary condition can be determined.
+
+Following the score calculation, an optimization algorithm is employed to generate a new boundary condition for the redundant DoF. This cycle of optimization continues either for a predetermined number of iterations or a specified duration. Alternatively, a desired minimal score can be defined as the target that the toolpath needs to achieve.
+ 
+
+Once the most optimal or close-to-optimal boundary condition is found, it is used as input for the CAM software to validate that no collisions or other exceptions are triggered. After this validation process, the G-code can be utilized in production.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=0.8\textwidth]{figures/nocam.png}}
+	\caption{Schematic process of optimization without CAM software}
+	\label{nocam}
+\end{figure}
+
+In this method, the optimization of boundary conditions occurs externally to the CAM software. The CAM software is solely utilized for generating the initial toolpath and validating the most optimal boundary condition. The inverse kinematics process is performed outside of the CAM software and can be implemented in various programming languages such as Python or C++. The same is applicable to the optimization algorithm.
+
+The advantage of this approach is that the external algorithms are independent and can be easily exchanged or modified. It does not necessitate in-depth knowledge or access to the source code of the CAM software. Therefore, any CAM software can be utilized with this approach, providing flexibility and compatibility.    
+
+However, it is important to note that one drawback of this approach is that the complete closure of the loop can only be achieved if the most optimal boundary condition can be automatically fed back to the CAM software for the final validation. If there is no Application Programming Interface (API) available or accessible for the CAM software, this step may need to be performed manually. This manual intervention can introduce additional time and effort into the optimization process.
+
+Depending on the chosen optimization algorithm, it may be necessary to calculate multiple scores for multiple boundary conditions before generating a new suggestion. In this scenario, the variations in the redundant DoF can be utilized to calculate multiple scores relative to each other. These scores can then be used as input for the optimization algorithm, allowing for a more comprehensive evaluation and selection of the most optimal boundary condition. By considering multiple scores, the algorithm can effectively explore different possibilities and make informed suggestions for improving the boundary conditions.
+
+Figure \ref{variation} illustrates the process of varying a simple toolpath. In this specific example, the toolpath is defined in six DoF, with the redundant DoF being the rotation around the C-axis. Initially, the toolpath is set at its original configuration with C = 0.0.
+
+To explore different possibilities, three variations of the toolpath are created by incrementing the rotation by 5 degrees for each variation. These variations allow for an examination of the impact of different orientations on the overall process. By systematically adjusting the rotation, the algorithm can evaluate the performance and effectiveness of each variation.
+
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=0.9\textwidth]{figures/gcodevariation.png}}
+	\caption{Variation of the redundant DoF in the G-code}
+	\label{variation}
+\end{figure}
+
+
 \subsection{Optimization Loop with CAM-software}
+
+The previously mentioned method in Chapter \ref{nocamchap} described a process that does not involve a CAM software within the optimization loop. However, another method can be employed that directly incorporates a CAM software into the optimization process.
+
+
+By directly including the CAM software, the optimization loop becomes more tightly integrated, enabling seamless feedback and iteration between the toolpath generation and the optimization of redundant DoF. This approach can significantly enhance the overall optimization process and improve the quality and efficiency of the final toolpath.
+
+
+
+ \begin{figure}[H]
+ 	\centerline{\includegraphics[width=0.9\textwidth]{figures/camloop.png}}
+ 	\caption{Schematic process of optimization with CAM software in the loop}
+ 	\label{camloop}
+ \end{figure}
+
+In this method, the CAM software plays a crucial role in the optimization process. It first generates the initial toolpath by automatically setting the redundant DoF based on the given part geometry and robot configuration. Unlike traditional approaches, the CAM software does not export G-code but utilizes its internal resources and algorithms to calculate the joint positions via inverse kinematics.
+
+The optimization process is performed iteratively, involving multiple variations in the redundant DoF. Each variation generates a different toolpath, which in turn results in different joint positions of the robot. The process parameters are then analyzed to calculate a score that represents the quality of the toolpath.
+
+The optimization algorithm, seamlessly integrated within the CAM software, utilizes the obtained scores to propose a new setting for the redundant DoF. This new setting aims to improve the toolpath and optimize the process parameters further. The iteration continues until a defined score or a predetermined number of iterations is reached, indicating that the optimization loop has converged.
+Once the optimization loop is terminated, the CAM software exports the G-code with the best-found boundary conditions, representing the optimized toolpath.
+
+The advantage of this approach lies in leveraging the CAM software's specialized capabilities and features for toolpath generation and optimization. By directly integrating with the software, the optimization process becomes more efficient and streamlined, eliminating the need for external scripts or algorithms.
+
+However, a significant disadvantage of this method is the requirement for access to the source code of the CAM software to add the optimization algorithm and the specific post-processor that calculates the joint positions. Adding the necessary features and functionalities necessitates modifying the software, which may not be feasible or practical in all situations. In this case the method has to implemented by the provider of the CAM software.
