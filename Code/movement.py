@@ -60,7 +60,7 @@ col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
 pos = np.load("0_angles.npy")
 
-for iter in range(0,1000,3):
+for iter in range(0,len(pos),5):
     plt.clf()
 
     #theta = [iter, 45, -90, 0, 90, 0]
@@ -150,6 +150,6 @@ for iter in range(0,1000,3):
 
     plt.pause(0.01)
     #print(pointer1)
-    #plt.show()
+    plt.show()
 
 plt.show()

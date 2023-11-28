@@ -52,14 +52,14 @@
 \contentsline {subsection}{\numberline {3.9.1}Optimization Loop without CAM-software}{57}{subsection.3.9.1}%
 \contentsline {subsection}{\numberline {3.9.2}Optimization Loop with CAM-software}{59}{subsection.3.9.2}%
 \contentsline {chapter}{\numberline {4}Implementation and Validation}{61}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation}{61}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{61}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{61}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{61}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{61}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.1}Simple Implementation}{61}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{62}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{62}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{62}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{62}{subsection.4.3.2}%
 \contentsline {chapter}{\numberline {5}Conclusion}{63}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Summary}{63}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Outlook}{63}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Appendix}{65}{chapter.6}%
-\contentsline {chapter}{Bibliography}{71}{chapter*.62}%
+\contentsline {chapter}{Bibliography}{71}{chapter*.63}%
 \contentsfinish 

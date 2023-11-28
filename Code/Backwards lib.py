@@ -49,7 +49,7 @@ def main(reps):
     pos = []
     sol = [0,0,0,0,0,0]
 
-    for iter in range(1000):
+    for iter in range(20):
         plt.close()
         dh_params = np.array([[400,   180.,     0.5 * pi,   0],
                               [0.,      600,  0,         0],
@@ -65,9 +65,9 @@ def main(reps):
         # =====================================
 
 
-        x = np.cos(np.deg2rad(iter))*(500 - iter/3) + 700
-        y = np.sin(np.deg2rad(iter))*(500 - iter/3)
-        z = 50+iter/3
+        x = np.cos(np.deg2rad(iter))*(500 - iter/3) + 300
+        y = np.sin(np.deg2rad(iter))*(200 - iter/3)
+        z = 500+iter/10
         #[x,y,z] = spiral_coords[iter]
         kippen = 10*reps
 
@@ -78,7 +78,7 @@ def main(reps):
 
 
 
-        if iter%10 == 0: print(iter)
+        if iter%30 == 0: print(iter)
         abc = np.array([0,-np.pi,-np.deg2rad(kippen)])
         end = Frame.from_euler_3(abc, xyz)
         robot.inverse(end)
