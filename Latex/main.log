@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  28 NOV 2023 14:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  29 NOV 2023 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2217,14 +2217,8 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
  (main.aux (source/Acknowledgment.aux)
 (source/task.aux) (source/abstract.aux) (source/chapter01.aux)
-(source/chapter02.aux) (source/chapter03.aux) (source/chapter04.aux
-
-LaTeX Warning: Label `xxxx' multiply defined.
-
-
-LaTeX Warning: Label `xxxx@cref' multiply defined.
-
-) (source/chapter05.aux) (source/appendixA.aux))
+(source/chapter02.aux) (source/chapter03.aux) (source/chapter04.aux)
+(source/chapter05.aux) (source/appendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -3168,42 +3162,38 @@ Chapter 4.
 
 
 ]
-<figures/robotprog.png, id=1249, 457.4691pt x 394.5942pt>
+<figures/robotprog.png, id=1249, 651.93562pt x 563.10374pt>
 File: figures/robotprog.png Graphic file (type png)
 <use figures/robotprog.png>
 Package pdftex.def Info: figures/robotprog.png  used on input line 40.
-(pdftex.def)             Requested size: 308.71106pt x 266.29742pt.
-<figures/path1.png, id=1250, 516.44142pt x 544.48218pt>
+(pdftex.def)             Requested size: 308.71106pt x 266.65219pt.
+<figures/path1.png, id=1253, 520.48854pt x 515.2851pt>
 File: figures/path1.png Graphic file (type png)
 <use figures/path1.png>
-Package pdftex.def Info: figures/path1.png  used on input line 50.
-(pdftex.def)             Requested size: 220.50887pt x 232.47775pt.
-<figures/path2.png, id=1251, 516.44142pt x 544.48218pt>
+Package pdftex.def Info: figures/path1.png  used on input line 54.
+(pdftex.def)             Requested size: 220.50887pt x 218.30528pt.
+<figures/path2.png, id=1254, 520.48854pt x 515.2851pt>
 File: figures/path2.png Graphic file (type png)
 <use figures/path2.png>
-Package pdftex.def Info: figures/path2.png  used on input line 55.
-(pdftex.def)             Requested size: 220.50887pt x 232.47775pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package cleveref Info: loaded `english' language definitions on input line 58.
- [62 <./figures/robotprog.png>]
-<figures/path3.png, id=1257, 516.44142pt x 544.48218pt>
+Package pdftex.def Info: figures/path2.png  used on input line 59.
+(pdftex.def)             Requested size: 220.50887pt x 218.30528pt.
+<figures/path3.png, id=1255, 520.92216pt x 515.2851pt>
 File: figures/path3.png Graphic file (type png)
 <use figures/path3.png>
-Package pdftex.def Info: figures/path3.png  used on input line 60.
-(pdftex.def)             Requested size: 220.50887pt x 232.47775pt.
+Package pdftex.def Info: figures/path3.png  used on input line 64.
+(pdftex.def)             Requested size: 220.50887pt x 218.12445pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package cleveref Info: loaded `english' language definitions on input line 64.
- [63 <./figures/path1.png> <./figures/path2.png>])
+Package cleveref Info: loaded `english' language definitions on input line 69.
+ [62 <./figures/robotprog.png>])
 Package cleveref Info: loaded `english' language definitions on input line 73.
- [64 <./figures/path3.png>]
+ [63 <./figures/path1.png> <./figures/path2.png> <./figures/path3.png>]
+Package cleveref Info: loaded `english' language definitions on input line 73.
+ [64]
 \openout2 = `source/chapter05.aux'.
 
-
-(source/chapter05.tex
+ (source/chapter05.tex
 Chapter 5.
 ) [65
 
@@ -3291,96 +3281,4 @@ ps : / / www . sciencedirect . com / science / article / pii / s037851731630215
 
 Overfull \hbox (15.29022pt too wide) in paragraph at lines 90--90
 \T1/bch/m/n/10.95 Re-view^^Q. In: \T1/bch/m/it/10.95 Jour-nal of In-dus-trial I
-n-te-gra-tion and Man-age-ment \T1/bch/m/n/10.95 04.04 (2019), p. 1930001.
- []
-
-Package cleveref Info: loaded `english' language definitions on input line 90.
-[80]
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [81]
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [82]
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [83]
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [84]
-Overfull \hbox (2.3547pt too wide) in paragraph at lines 90--90
-\T1/bch/m/sc/10.95 issn\T1/bch/m/n/10.95 : 0736-5845. \T1/bch/m/sc/10.95 doi\T1
-/bch/m/n/10.95 : []$10 . 1016 / j . rcim . 2019 . 101916$[]. \T1/bch/m/sc/10.95
- url\T1/bch/m/n/10.95 : []$https : / / www . sciencedirect .
- []
-
-Package cleveref Info: loaded `english' language definitions on input line 90.
-[85]
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [86]
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [87]
-Package cleveref Info: loaded `english' language definitions on input line 90.
- [88]
-Overfull \hbox (14.69502pt too wide) in paragraph at lines 90--90
-\T1/bch/m/n/10.95 101992$[]. \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 : []$https
- : / / www . sciencedirect . com / science / article / pii / s0736584520302039$
-[]. 
- []
-
-
-Overfull \hbox (0.60326pt too wide) in paragraph at lines 90--90
-\T1/bch/m/n/10.95 te-nance in re-dun-dant ma-nip-u-la-tors^^Q. In: (2002), pp. 
-857^^U862. \T1/bch/m/sc/10.95 doi\T1/bch/m/n/10.95 : []$10 . 1109 / ICARCV .
- []
-
-Package cleveref Info: loaded `english' language definitions on input line 90.
-[89]
-Package cleveref Info: loaded `english' language definitions on input line 94.
- [90] [91
-
-
-] (main.aux
-Package cleveref Info: loaded `english' language definitions on input line 24.
- (source/Acknowledgment.aux) (source/task.aux)
-(source/abstract.aux
-Package cleveref Info: loaded `english' language definitions on input line 4.
-) (source/chapter01.aux) (source/chapter02.aux)
-(source/chapter03.aux) (source/chapter04.aux) (source/chapter05.aux)
-(source/appendixA.aux)
-* soulpos - computing points - it may take a few seconds *
-\openout5 = `main.upb'.
-
- (main.upa))
- ***********
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-29>
- ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9AE8573EAA7A48E6BCB1A7E568A576AC;4657.
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 66831 strings out of 475247
- 1542178 string characters out of 5756376
- 2568817 words of memory out of 5000000
- 86799 multiletter control sequences out of 15000+600000
- 645081 words of font info for 135 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 109i,13n,131p,3570b,3472s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter
-/bchb8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstr
-ea/charter/bchr8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/bitstrea/charter/bchri8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKT
-eX/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/z0041bmr/AppData/Local/
-Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/z0041bmr/AppData/
-Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/z0041bmr/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (103 pages, 16757217 bytes).
-PDF statistics:
- 1964 PDF objects out of 2073 (max. 8388607)
- 401 named destinations out of 1000 (max. 500000)
- 735 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+n-te-gra-tion and Man-age-ment \T1/bch/m/n/10.95 04.04 (2019)

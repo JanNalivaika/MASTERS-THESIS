@@ -1,13 +1,13 @@
 % !TeX spellcheck = en_US
 \chapter{Implementation and Validation}%
 
-The first step of the validation involves constructing a basic model that captures the kinematics and dynamics of an industrial robot. To test the method in a simple case, the first tests are performed on a 6-DoF model with one redundant DoF. After validation on this simple model, additional redundant DoF are introduced. 
+The first step of the validation involves constructing a basic model that captures the kinematics and dynamics of an industrial robot. To test the method in a simple case, the first tests are performed on a 6-DoF model and a toolpath with one redundant DoF. After validation on this simple model, additional redundant DoF are introduced. 
 
 Once the basic mathematical model is established, various optimization algorithms are implemented to determine the optimal values for each parameter associated with the redundant DoF. These methods and optimization algorithms can consider the industrial robot's specific objectives and constraints, like energy consumption or joint accelerations. 
 
 After that, the goal is to incorporate this method with a selected CAM software to be tested in more complex scenarios.
 
-Further validation processes entails conducting real-world tests and simulations to evaluate optimized parameter performance and verify the effectiveness of the proposed methodology.
+%Further validation processes entails conducting real-world tests and simulations to evaluate optimized parameter performance and verify the effectiveness of the proposed methodology.
 \section{Simple Implementation}%
 \subsection{Modeling a 6-DoF robot}
 In order to test the proposed method, a simple articulated 6-DoF industrial robot is used as a model. A visualization of that robot is given in figure \ref{robotprog}. The Denavit-Hartenberg (DH) parameters for this robot can be found in Table \ref{DH}.
@@ -15,13 +15,13 @@ In order to test the proposed method, a simple articulated 6-DoF industrial robo
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{||l|l|r||}
+	\begin{tabular}{||l|l||}
 		  & Values \\
 		\hline
 		\hline
 		\hline
 		a	& [180, 600, 120, 0, 0, 0] \\
-		alpha	&  [90, 0, 90, 90, 90, 0] \\
+		alpha	&  [90, 0, 90, 90, -90, 90] \\
 		d	& [400, 0, 0, 620, 0, 115]\\
 		
 		\hline
@@ -46,21 +46,27 @@ The arrows represent the coordinate axis of the TCP. For simplicity, the TCP is 
 Before the process parameters can be analyzed, a toolpath needs to be defined for the TCP to follow. In this particular case, three possible options are presented. Each toolpath consists of 2500 coordinates. It is important to note that in these cases, the redundant DoF is the rotation around the C-Axis. This means that  this rotation will be adjusted to identify the most optimal value for the desired outcome.
 
 
- \begin{figure}[H]
-	\centerline{\includegraphics[width=0.5\textwidth]{figures/path1.png}}
-	\caption{xxx}
-	\label{xxx}
+The first toolpath, shown in Figure \ref{path1}, depicts a converging and diverging spiral. Figure \ref{path2} illustrates a converging loop, and Figure \ref{path3} displays a forward-moving sinusoidal curve. 
+
+\begin{figure}[H]% [H] is so declass\'e!
+	\centering
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/path1.png}
+		\caption{Toolpath 1: Converging-Diverging Spiral}
+		\label{path1}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/path2.png}
+		\caption{Toolpath 2: Converging Loop}
+		\label{path2}
+	\end{minipage}\par
+	\vskip\floatsep% normal separation between figures
+	\includegraphics[width=0.5\textwidth]{figures/path3.png}
+
+	\caption{Toolpath 3: Pendulum Oscillation}
+	\label{path3}
 \end{figure}
-\begin{figure}[H]
-	\centerline{\includegraphics[width=0.5\textwidth]{figures/path2.png}}
-	\caption{xxx}
-	\label{xxxx}
-\end{figure}
-\begin{figure}[H]
-	\centerline{\includegraphics[width=0.5\textwidth]{figures/path3.png}}
-	\caption{xxx}
-	\label{xxxx}
-\end{figure}
+
 
 \subsection{Extracting process parameters}
 

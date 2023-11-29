@@ -4,105 +4,66 @@ from visual_kinematics.RobotSerial import *
 import numpy as np
 from math import pi
 import math
+import os
+import shutil
+import time
 
 
-def tilting_spiral(num_points, radius, angle_increment, tilt_angle, rise_increment):
-    coordinates = []
-    current_angle = 0
-    current_height = 0
+dh_params = np.array([[570, 400, 0.5 * pi, 0],
+                      [0., 1200, 0, 0],
+                      [0, 400, 0.5 * pi, 0],
+                      [600, 0, 0.5 * pi, 0],
+                      [0, 200, 0.5 * pi, 0],
+                      [-500, 100, 0, 0]])
 
-    for _ in range(num_points):
-        x = radius * math.cos(math.radians(current_angle))
-        y = radius * math.sin(math.radians(current_angle)) * math.cos(math.radians(tilt_angle))
-        z = current_height
-        coordinates.append((x, y, z))
-        current_angle += angle_increment
-        current_height += rise_increment
-
-    return coordinates
-
-def rotate_x_axis(x, y, z, angle, origin_x=0, origin_y=0, origin_z=0):
-    # Adjust coordinates relative to the origin point
-    x -= origin_x
-    y -= origin_y
-    z -= origin_z
-
-    # Convert angle to radians
-    angle_rad = math.radians(angle)
-
-    # Apply rotation formulas
-    y_rotated = (y * math.cos(angle_rad)) - (z * math.sin(angle_rad))
-    z_rotated = (y * math.sin(angle_rad)) + (z * math.cos(angle_rad))
-
-    # Add back the origin point coordinates
-    x_rotated = x + origin_x
-    y_rotated += origin_y
-    z_rotated += origin_z
-
-    return x_rotated, y_rotated, z_rotated
+np.set_printoptions(precision=5, suppress=True)
 
 
 
-#spiral_coords  = tilting_spiral(1000, 100, 10, 30, 1)
-def main(reps):
-    np.set_printoptions(precision=5, suppress=True)
-    pos = []
-    sol = [0,0,0,0,0,0]
-
-    for iter in range(20):
-        plt.close()
-        dh_params = np.array([[400,   180.,     0.5 * pi,   0],
-                              [0.,      600,  0,         0],
-                              [0.,      120, 0.5* pi,         0],
-                              [620,  0.,     0.5 * pi,  0],
-                              [0,   0.,     0.5 * pi,   0],
-                              [115,   0.,     0.,         0]])
-
-        robot = RobotSerial(dh_params)
-
-        # =====================================
-        # inverse
-        # =====================================
+shutil.rmtree("Joint_angles", ignore_errors=True)
+os.mkdir("Joint_angles")
 
 
-        x = np.cos(np.deg2rad(iter))*(500 - iter/3) + 300
-        y = np.sin(np.deg2rad(iter))*(200 - iter/3)
-        z = 500+iter/10
-        #[x,y,z] = spiral_coords[iter]
-        kippen = 10*reps
+for selection in range(1,4):
+    for rot_winkel in range(1): #-25, 26
+        for kipp_winkel in range(1): #-25, 26 ,10
+            for c_axis in list(np.arange(-0.6,0.7,0.2)):  #list(np.arange(-0.6,0.7,0.2)) range(1)
+                c_axis = np.round(c_axis,2)
 
-        x, y,z = rotate_x_axis(x, y, z, kippen, 700, 0, 50)
+                print("Started")
+                t1 = time.time()
+                pos = []
 
-        xyz = np.array([[x], [y], [z]])
+                xyz = np.load(f"Toolpaths/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}.npy")
+
+                xyz[0]+= 1300
+                xyz[1] += 0
+                xyz[2] += 1000
+
+                #600*600 fläche
+
+
+                for iter in range(len(xyz[0])):
+
+                #for iter in range(1000):
+
+
+
+                    robot = RobotSerial(dh_params)
+
+                    if iter%1000 == 0: print(iter)
+                    #abc = np.array([c_axis,-np.pi*1.5,-np.deg2rad(kipp_winkel)])
+                    abc = np.array([np.deg2rad(kipp_winkel),0,c_axis])
+
+                    tcp = np.array([[xyz[0,iter]],[xyz[1,iter]],[xyz[2,iter]]])
+                    end = Frame.from_euler_3(abc, tcp)
+                    robot.inverse(end)
+                    pos.append(robot.axis_values)
+
+                np.save(f"Joint_angles/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{np.round(c_axis,2)}", pos)
+                print(f"working on element: path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}   TIME: {np.ceil(time.time()-t1)}s")
 
 
 
 
-        if iter%30 == 0: print(iter)
-        abc = np.array([0,-np.pi,-np.deg2rad(kippen)])
-        end = Frame.from_euler_3(abc, xyz)
-        robot.inverse(end)
 
-        #print(xyz)
-        #print("inverse is successful: {0}".format(robot.is_reachable_inverse))
-        #print("axis values: \n{0}".format(robot.axis_values))
-        sol = robot.axis_values
-        pos.append(robot.axis_values)
-        #print(robot.axis_values)
-        #robot.show()
-    #print(reps)
-    np.save(f"{reps}_angles", pos)
-
-
-    # example of unsuccessful inverse kinematics
-    #xyz = np.array([[2.2], [0.], [1.9]])
-    #end = Frame.from_euler_3(abc, xyz)
-    #robot.inverse(end)
-
-    #print("inverse is successful: {0}".format(robot.is_reachable_inverse))
-    #robot.show()
-
-
-for reps in range(10):
-    main(reps)
-    print(f"FINISHED {reps}")
