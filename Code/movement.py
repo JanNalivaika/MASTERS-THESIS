@@ -2,9 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # DH parameters
-a =     [400,    1200,    400,      0,    200,       100] # verschiebunf in X
-d =     [570,       0,      0,    600,      0,      -500] # verschiebunf in Z
-alpha = [90,        0,     -90,     90,     90,        00]
+
+d =     [570,       0,      0,   935,    0,     0]
+a =     [175,    890,    100,     0,    140,       50]
+alpha = [90,       0,    90,    -90,    90,      00]
 
 # Homogeneous transformation matrix
 def dh_transform(a, alpha, d, theta):
@@ -57,13 +58,13 @@ z_coords = []
 EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("Joint_angles/path_1_rot_0_tilt_0_C_-0.2.npy")
+pos = np.load("Joint_angles/path_1_rot_0_tilt_0_C_-0.6.npy")
 
-for iter in range(0,len(pos),100):
+for iter in range(0,len(pos),15):
     plt.clf()
     theta = pos[iter]
     theta = np.degrees(theta)
-    theta =     [0, 135, -135, 00, 0, 0]
+    #theta =     [0, 135, -45, 180, -90, 0]
     #explain =  [D,  K,   K, D,  K, D]
 
 
@@ -89,7 +90,7 @@ for iter in range(0,len(pos),100):
     orientations = np.array([t[:3, :3] for t in transformations])
 
     # Plot robot links
-    for i in range(len(positions) - 1):
+    for i in range(len(positions) - 1): #len(positions) - 1
         ax.plot([positions[i][0], positions[i + 1][0]],
                 [positions[i][1], positions[i + 1][1]],
                 [positions[i][2], positions[i + 1][2]], 'b')
@@ -151,4 +152,6 @@ for iter in range(0,len(pos),100):
     #print(pointer1)
     #plt.show()
 
+plt.show()
+plt.plot(EV)
 plt.show()

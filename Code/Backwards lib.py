@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 from visual_kinematics.RobotSerial import *
+
+
 import numpy as np
 from math import pi
 import math
@@ -9,12 +11,14 @@ import shutil
 import time
 
 
-dh_params = np.array([[570, 400, 0.5 * pi, 0],
-                      [0., 1200, 0, 0],
-                      [0, 400, 0.5 * pi, 0],
-                      [600, 0, 0.5 * pi, 0],
-                      [0, 200, 0.5 * pi, 0],
-                      [-500, 100, 0, 0]])
+d =     [570,       0,      0,   935,    0,     0]
+a =     [175,    890,    100,     0,    140,       50]
+alpha = [90,       0,    90,    -90,    90,      00]
+
+theta = [0,0,0,0,0,0]
+
+
+dh_params = np.array(np.transpose(np.vstack((d,a,np.radians(alpha),theta))))
 
 np.set_printoptions(precision=5, suppress=True)
 
@@ -38,14 +42,14 @@ for selection in range(1,4):
 
                 xyz[0]+= 1300
                 xyz[1] += 0
-                xyz[2] += 1000
+                xyz[2] += 800
 
                 #600*600 fläche
 
 
-                for iter in range(len(xyz[0])):
+                #for iter in range(len(xyz[0])):
 
-                #for iter in range(1000):
+                for iter in range(1000):
 
 
 
@@ -56,6 +60,7 @@ for selection in range(1,4):
                     abc = np.array([np.deg2rad(kipp_winkel),0,c_axis])
 
                     tcp = np.array([[xyz[0,iter]],[xyz[1,iter]],[xyz[2,iter]]])
+
                     end = Frame.from_euler_3(abc, tcp)
                     robot.inverse(end)
                     pos.append(robot.axis_values)
