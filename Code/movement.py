@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 # DH parameters
 
-d =     [570,       0,      0,   935,    0,     0]
-a =     [175,    890,    100,     0,    140,       50]
+d =     [600,       0,      0,   800,    0,     -100]
+a =     [200,    900,    150,     0,    150,       150]
 alpha = [90,       0,    90,    -90,    90,      00]
 
 # Homogeneous transformation matrix
@@ -58,24 +58,27 @@ z_coords = []
 EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("Joint_angles/path_1_rot_0_tilt_0_C_-0.6.npy")
+pos = np.load("Joint_angles/path_3_rot_0_tilt_-25_C_-0.55.npy")
 
-for iter in range(0,len(pos),15):
+for iter in range(0,len(pos),10):
     plt.clf()
     theta = pos[iter]
     theta = np.degrees(theta)
-    #theta =     [0, 135, -45, 180, -90, 0]
+    #print(theta)
+    #theta =     [0, 80, -27, 180, -128, 0]
+    #print(theta)
+    #theta = [0, 0, 0, 0, 0, 0]
     #explain =  [D,  K,   K, D,  K, D]
 
 
     transformations, [x, y, z], rotM = forward_kinematics(a, alpha, d, theta)
 
     det_jacob = np.linalg.det(jacobian(a, alpha, d, theta))
-    print(det_jacob)
+    #print(det_jacob)
     if det_jacob == 0:
         col.append("red")
     else:
-        col.append("green")
+        col.append("silver")
     EV.append(det_jacob)
 
 
@@ -121,9 +124,9 @@ for iter in range(0,len(pos),15):
 
 
     # Set plot limits
-    ax.set_xlim([-100, 2000])
-    ax.set_ylim([-1000, 1000])
-    ax.set_zlim([0, 2000])
+    ax.set_xlim([-100, 1500])
+    ax.set_ylim([-800, 800])
+    ax.set_zlim([0, 1600])
 
     pointer1 = np.dot(rotM,[1, 0, 0])
     pointer2 = np.dot(rotM, [0, 1, 0])
@@ -137,8 +140,8 @@ for iter in range(0,len(pos),15):
     ax.quiver(x, y, z, pointer2[0], pointer2[1], pointer2[2], length=300, normalize=True, color='g', linewidth=3)  # y-axis
     ax.quiver(x, y, z, pointer3[0], pointer3[1], pointer3[2], length=300, normalize=True, color='b', linewidth=3)  # z-axis
     # ax.view_init(elev=30, azim=45)
-    # ax.elev = 30  # Set the elevation angle (vertical rotation)
-    # ax.azim = 45  # Set the azimuth angle (horizontal rotation
+    ax.elev = 9#35  # Set the elevation angle (vertical rotation)
+    ax.azim = -64#-45  # Set the azimuth angle (horizontal rotation
     # Set plot labels
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
@@ -146,12 +149,16 @@ for iter in range(0,len(pos),15):
     #print(iter, x, y, z)
 
     # Show plot
-
+    #plt.savefig(f"../Latex/figures/robotprog.png", dpi=500, bbox_inches="tight", pad_inches=0.3)
     plt.pause(0.01)
     #print(theta[3]+theta[5])
     #print(pointer1)
     #plt.show()
 
+
+    if iter%100 ==0: print(iter)
+
+plt.savefig(f"../Latex/figures/robotANDpath3_-25.png", dpi=500, bbox_inches="tight", pad_inches=0.3)
 plt.show()
 plt.plot(EV)
 plt.show()

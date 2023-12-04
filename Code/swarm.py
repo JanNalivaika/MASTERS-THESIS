@@ -126,8 +126,8 @@ if __name__ == "__main__":
 
     initial = [0, 0]  # initial starting location [x1, x2]
     bounds = [(-40, 40), (-40, 40)]  # input bounds
-    num_particles = 50
-    max_iter = 50
+    num_particles = 3
+    max_iter = 100
 
     pso = PSO(sphere, initial, bounds, num_particles, max_iter)
 
