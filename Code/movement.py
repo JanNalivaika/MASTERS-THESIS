@@ -58,7 +58,7 @@ z_coords = []
 EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("Joint_angles/path_3_rot_0_tilt_-25_C_-0.55.npy")
+pos = np.load("Joint_angles/path_3_rot_0_tilt_-15_C_-5.npy")
 
 for iter in range(0,len(pos),10):
     plt.clf()
@@ -140,8 +140,8 @@ for iter in range(0,len(pos),10):
     ax.quiver(x, y, z, pointer2[0], pointer2[1], pointer2[2], length=300, normalize=True, color='g', linewidth=3)  # y-axis
     ax.quiver(x, y, z, pointer3[0], pointer3[1], pointer3[2], length=300, normalize=True, color='b', linewidth=3)  # z-axis
     # ax.view_init(elev=30, azim=45)
-    ax.elev = 9#35  # Set the elevation angle (vertical rotation)
-    ax.azim = -64#-45  # Set the azimuth angle (horizontal rotation
+    ax.elev = 45#35  # Set the elevation angle (vertical rotation)
+    ax.azim = -50#-45  # Set the azimuth angle (horizontal rotation
     # Set plot labels
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
@@ -158,7 +158,7 @@ for iter in range(0,len(pos),10):
 
     if iter%100 ==0: print(iter)
 
-plt.savefig(f"../Latex/figures/robotANDpath3_-25.png", dpi=500, bbox_inches="tight", pad_inches=0.3)
+#plt.savefig(f"../Latex/figures/robotANDpath3_25.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
 plt.show()
 plt.plot(EV)
 plt.show()
