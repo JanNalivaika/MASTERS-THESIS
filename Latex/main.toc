@@ -15,7 +15,6 @@
 \contentsline {subsection}{\numberline {2.1.3}Industrial Robots}{13}{subsection.2.1.3}%
 \contentsline {subsubsection}{Redundancy in robotic systems}{16}{subsubsection*.17}%
 \contentsline {subsubsection}{Continuous-path mode}{18}{subsubsection*.20}%
-\contentsline {subsubsection}{G-code}{21}{subsubsection*.25}%
 \contentsline {section}{\numberline {2.2}Computer-Aided Manufacturing}{22}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}CAM Software}{22}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Path Planning}{23}{subsection.2.2.2}%
@@ -59,13 +58,12 @@
 \contentsline {section}{\numberline {4.2}Testing and Validation}{66}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Toolpath Evaluation with one Redundant DoF}{66}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Toolpath Evaluation with two Redundant DoF}{70}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Boundary Condition Optimization }{72}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{72}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{72}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{72}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{73}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{73}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{73}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Appendix}{75}{chapter.6}%
-\contentsline {chapter}{Bibliography}{83}{chapter*.78}%
+\contentsline {subsection}{\numberline {4.2.3}Boundary Condition Optimization }{73}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{74}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{74}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{74}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{75}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{75}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{75}{section.5.2}%
+\contentsline {chapter}{Bibliography}{83}{chapter*.79}%
 \contentsfinish 
