@@ -58,7 +58,7 @@ z_coords = []
 EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("Joint_angles/path_3_rot_0_tilt_-15_C_-5.npy")
+pos = np.load("Joint_angles/path_1_rot_0_tilt_0_C_-25.npy")
 
 for iter in range(0,len(pos),10):
     plt.clf()

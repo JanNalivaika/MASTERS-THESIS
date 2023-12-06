@@ -28,7 +28,7 @@ np.set_printoptions(precision=5, suppress=True)
 #os.mkdir("Joint_angles")
 
 
-for selection in [3]:
+for selection in [3,2,1]:
     for rot_winkel in range(1): #-25, 26
         for kipp_winkel in range(-25, 26 ,1): #-25, 26 ,10
             for c_axis in range(-25, 26 ,1):  #np.arange(-0.8,0.81,0.01)
