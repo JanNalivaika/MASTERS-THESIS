@@ -24,32 +24,33 @@ def simplify_angle(angles):
 def basicplot():
 
     for tp in [1,2,3]:
-        fig = plt.figure(figsize=(10, 4), dpi=200)
-        for joint in range(6):
+        for C in [0]:
+            plt.figure(figsize=(10, 4), dpi=200)
+            for joint in range(6):
+                joint_positions = np.degrees(np.load(f'Joint_angles/path_{tp}_rot_0_tilt_0_C_{C}.npy')[:, joint])
+                #joint_positions = np.degrees(np.load(f'path_{tp}_rot_0_tilt_0_C_{C}.npy')[:, joint])
+                for i in range(6):
+                    joint_positions = simplify_angle(joint_positions)
 
-            joint_positions = np.degrees(np.load(f'Joint_angles/path_{tp}_rot_0_tilt_0_C_0.npy')[:, joint])
-
-            for i in range(6):
-                joint_positions = simplify_angle(joint_positions)
-
-            time = np.arange(len(joint_positions)*0.1,step = 0.1)
-            plt.plot(time, np.round(joint_positions, 2), label=f"Joint {joint+1}", lw=3)
+                time = np.arange(len(joint_positions)*0.1,step = 0.1)
+                plt.plot(time, np.round(joint_positions, 2), label=f"Joint {joint+1}", lw=3)
 
 
-        plt.legend(bbox_to_anchor=(1.04, 1), loc="upper left")
-        plt.title(f'Toolpath {tp}, A=B=C=0')
-        plt.xlabel('Time [s]')
-        plt.ylabel('Position in degrees [°] ')
+            plt.legend(bbox_to_anchor=(1.04, 1), loc="upper left")
+            plt.title(f'Toolpath {tp}, A=0 B=0 C={C}')
+            plt.xlabel('Time [s]')
+            plt.ylabel('Position in degrees [°] ')
 
-        plt.tight_layout()
-        plt.savefig(f"../Latex/figures/TP{tp}ABC0.png",dpi=1000)
-        #plt.show()
-        plt.close()
+            plt.tight_layout()
+            plt.savefig(f"../Latex/figures/TP{tp}ABC{C}.png",dpi=1000)
+            #plt.show()
+            plt.close()
 
 
 def count_direction_changes(time_series):
     direction_changes = 0
     remeber = 1
+    time_series = np.round(time_series,2)
     for i in range(1, len(time_series)):
         if time_series[i-1] < time_series[i] and remeber == -1:
             direction_changes += 1
@@ -65,7 +66,7 @@ def count_direction_changes(time_series):
 
 def basicscore():
     for path in [1,2,3]:
-        plt.figure(figsize=(10, 4), dpi=200)
+
         files = glob.glob(f'Joint_angles/*path_{path}_rot_0_tilt_0*')
         DC_tracker = []
         Travel_tracker = []
@@ -97,10 +98,17 @@ def basicscore():
 
                     accel_sore += np.sum(np.square(joint_acceleration))
 
+            #print(total_travel)
             DC_tracker.append(DC_total)
             Travel_tracker.append(total_travel)
             Acc_tracker.append(accel_sore)
             # print(DC_total,total_travel,accel_sore)
+
+        #plt.plot(DC_tracker)
+        #plt.show()
+        #plt.close()
+
+        plt.figure(figsize=(10, 4), dpi=200)
 
         scaled_DC_tracker = min_max_scaler.fit_transform(-np.array(DC_tracker).reshape(-1, 1))*100*0.2
         scaled_Travel_tracker = min_max_scaler.fit_transform(-np.array(Travel_tracker).reshape(-1, 1))*100*0.4
@@ -108,8 +116,8 @@ def basicscore():
 
         X_ax, scaled_DC_tracker, scaled_Travel_tracker, scaled_Acc_tracker = zip(*sorted(zip(X_ax, scaled_DC_tracker, scaled_Travel_tracker, scaled_Acc_tracker)))
 
-        plt.plot(X_ax,scaled_DC_tracker, lw = 0.5, label="Direction Canges in joints 4",linestyle='dashed', marker='o')
-        plt.plot(X_ax,scaled_Travel_tracker, lw = 0.5, label="Total travel in joint 3",linestyle='dashed', marker='o')
+        plt.plot(X_ax,scaled_DC_tracker, lw = 0.5, label="Direction Canges in joints 1-6",linestyle='dashed', marker='o')
+        plt.plot(X_ax,scaled_Travel_tracker, lw = 0.5, label="Total travel in joint 1-6",linestyle='dashed', marker='o')
         plt.plot(X_ax,scaled_Acc_tracker, lw = 0.5,  label="Acceleration in joint 1",linestyle='dashed', marker='o')
 
         plt.xlabel('Rotation around Z in degrees [°]')
@@ -144,16 +152,17 @@ def basicscore():
 
 
 def TWODplot():
-
+    a=  range(-45, 46, 2)
+    b = range(-135, 140, 5)
     DC_tracker234 = []
     DC_tracker1 = []
     V_tracker = []
     Acc_tracker = []
 
-    toolpath = 3
+    toolpath = 1
 
-    for kipp_winkel in range(-25, 26, 1):  # -25, 26 ,10
-        for c_axis in range(-25, 26, 1):
+    for kipp_winkel in range(-45, 46, 2):  # -25, 26 ,10
+        for c_axis in range(-135, 140, 5):
             #print(kipp_winkel,c_axis)
             try:
                 #if kipp_winkel==-15 and c_axis==2:
@@ -163,7 +172,7 @@ def TWODplot():
                 accel_sore = 0
                 v_score = 0
 
-                joints = np.load(f"Joint_angles/path_{toolpath}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy")
+                joints = np.load(f"Joint_angles_lowres/path_{toolpath}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy")
 
                 for j in range(6):
                     joint = joints[:,j]
@@ -174,10 +183,10 @@ def TWODplot():
 
                     if j==0:
                         DC1 = count_direction_changes(joint)
-                        joint_velocity = np.gradient(joint, np.arange(len(joint) * 0.1, step=0.1))
-                        joint_acceleration = np.gradient(joint_velocity,np.arange(len(joint) * 0.1, step=0.1))
+                        #joint_velocity = np.gradient(joint, np.arange(len(joint) * 0.1, step=0.1))
+                        #joint_acceleration = np.gradient(joint_velocity,np.arange(len(joint) * 0.1, step=0.1))
 
-                        accel_sore = np.sum(np.square(joint_acceleration))
+                        #accel_sore = np.sum(np.square(joint_acceleration))
 
                     if j == 1 or j==2 or j==4:
                         DC234+=count_direction_changes(joint)
@@ -210,7 +219,7 @@ def TWODplot():
     score = np.array(DC_tracker234) + np.array(DC_tracker1)+ np.array(V_tracker)+ np.array(Acc_tracker)
 
 
-    matrix = np.reshape(score, (-1, 51))
+    matrix = np.reshape(score, (-1, 55))
 
 
     #plt.rcParams["figure.figsize"] = [7.00, 3.50]
@@ -218,11 +227,12 @@ def TWODplot():
     plt.figure(figsize=(9, 9))
     plt.imshow(matrix)
     # Set xticks and yticks
-    plt.xticks(range(0,51,2), range(-25, 26 ,2))
+
+    plt.xticks(range(0,55,1), range(-135, 135 ,5))
     plt.xlabel("C in Degrees [°]")
     plt.ylabel("Tilting in Degrees [°]")
     plt.title("Score of the individual boundary conditions as a hyperplane")
-    plt.yticks(range(0,51,2), range(-25, 26 ,2))
+    #plt.yticks(range(0,47,2), range(-46, 48 ,4))
     plt.colorbar()
     plt.grid(color='black', linewidth=0.1)
     plt.savefig(f"../Latex/figures/best_2D_{toolpath}.png", bbox_inches='tight',dpi=1000)
@@ -232,6 +242,8 @@ def TWODplot():
     print(pos)
     print(matrix[pos[0],pos[1]])
     np.save(f"matrix.npy", matrix)
+
+
 #basicplot()
 #basicscore()
 TWODplot()

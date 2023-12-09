@@ -1,6 +1,8 @@
 import random
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.preprocessing import normalize
+
 
 class Particle:
     def __init__(self, x0):
@@ -11,7 +13,7 @@ class Particle:
         self.err_i = -1  # error individual
 
         for i in range(0, num_dimensions):
-            self.velocity_i.append(random.uniform(-0.5, 0.5))
+            self.velocity_i.append(random.uniform(-2, 2))
             self.position_i.append(x0[i])
 
             # evaluate current fitness
@@ -20,7 +22,10 @@ class Particle:
         self.err_i = costFunc(self.position_i)
         self.position_i[0] = int(self.position_i[0])
         self.position_i[1] = int(self.position_i[1])
-        self.err_i = -np.load("matrix.npy")[self.position_i[0],self.position_i[1]]
+        matrix = np.load("matrix.npy")
+        matrix = normalize(matrix, axis=0, norm='l1')
+        self.err_i = -matrix[self.position_i[0],self.position_i[1]]
+        #self.err_i = -self.position_i[0]-self.position_i[1]
 
         # check if current position is an individual best
         if self.err_i < self.err_best_i or self.err_best_i == -1:
@@ -30,16 +35,13 @@ class Particle:
             # update new particle velocity
 
     def update_velocity(self, pos_best_g):
-        w = 0.7  # inertia weight
-        c1 = 3 # cognitive constant
+        w = 0.5  # inertia weight
+        c1 = 0.6 # cognitive constant
         c2 = 0.5 # social constant
 
         for i in range(0, num_dimensions):
             r1 = random.random()
             r2 = random.random()
-
-            #r1 = 1
-            #r2 = 1
 
             vel_cognitive = c1 * r1 * (self.pos_best_i[i] - self.position_i[i])
             vel_social = c2 * r2 * (pos_best_g[i] - self.position_i[i])
@@ -114,10 +116,11 @@ class PSO:
                 ax.set_ylim((0, 50))
 
             matrix = np.load("matrix.npy")
+            matrix = normalize(matrix, axis=0, norm='l1')
             im = ax.imshow(matrix)
             if i == 0:
                 fig.colorbar(im)
-            plt.savefig(f"video/{i}.png", bbox_inches='tight',dpi=1000)
+            #plt.savefig(f"swarm/{i}.png", bbox_inches='tight',dpi=1000)
             plt.pause(0.9)
             #ax.cla()
             i+=1
@@ -152,3 +155,9 @@ if __name__ == "__main__":
 
 #initial = [5, 5]  # initial starting location [x1, x2]
 #bounds = [(-10, 10), (-10, 10)]  # input bounds
+
+
+#error with
+#path_2_rot_0_tilt_3_C_-23
+#path_2_rot_0_tilt_3_C_-22
+#path_1_rot_0_tilt_-1_C_15

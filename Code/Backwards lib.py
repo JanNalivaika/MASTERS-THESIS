@@ -11,9 +11,15 @@ import shutil
 import time
 
 
+"""
+Working but "wrong"
 d =     [600,       0,      0,   800,    0,     -100]
 a =     [200,    900,    150,     0,    150,       150]
-alpha = [90,       0,    90,    -90,    90,      00]
+alpha = [90,       0,    90,    -90,    90,      00]"""
+
+d =     [600,       0,      0,   800,    0,     200]
+a =     [200,    900,    150,     0,    150,       0]
+alpha = [90,       0,    90,    -90,    90,      -90]
 
 theta = [0,0,0,0,0,0]
 
@@ -28,21 +34,26 @@ np.set_printoptions(precision=5, suppress=True)
 #os.mkdir("Joint_angles")
 
 
-for selection in [3,2,1]:
-    for rot_winkel in range(1): #-25, 26
-        for kipp_winkel in range(-25, 26 ,1): #-25, 26 ,10
-            for c_axis in range(-25, 26 ,1):  #np.arange(-0.8,0.81,0.01)
-                #kipp_winkel = -15
-                #c_axis = 2
-                if os.path.exists(f"Joint_angles/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy"):
+for selection in [1,2,3]:
+    for rot_winkel in range(1):
+        for kipp_winkel in range(-45,46,2):
+            for c_axis in range(-135,140,5):
+
+                if os.path.exists(f"Joint_angles_lowres/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy"):
                     print("exists")
                     pass
                 else:
 
                     print("Started")
                     t1 = time.time()
-                    #sol =  [0, 80, -27, 180, -128, 0]
-                    sol =  [0, 00, 0, 0, 0, 0]
+                    if selection == 1:
+                        sol =  [0, 50, 0, 100, 100, -100]
+                    if selection == 2:
+                        sol = [0, 50, -50, 100, 100, 220]
+                    else:
+                        sol = [25, 75, -30, -75, -80, 75]
+
+                    sol = np.deg2rad(sol)
                     pos = []
 
                     xyz = np.load(f"Toolpaths/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}.npy")
@@ -54,9 +65,9 @@ for selection in [3,2,1]:
                     #600*600 fläche
 
 
-                    for iter in range(len(xyz[0])):
+                    #for iter in range(len(xyz[0])):
 
-                    #for iter in range(1000):
+                    for iter in range(0,len(xyz[0]),3):
 
 
 
@@ -73,7 +84,8 @@ for selection in [3,2,1]:
                         sol = robot.axis_values
                         pos.append(sol)
 
-                    np.save(f"Joint_angles/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
+                    #np.save(f"Joint_angles/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
+                    np.save(f"Joint_angles_lowres/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
                     print(f"DONE: path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}   TIME: {np.ceil(time.time()-t1)}s")
 
 

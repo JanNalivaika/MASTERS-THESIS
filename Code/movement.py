@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 
 # DH parameters
 
-d =     [600,       0,      0,   800,    0,     -100]
-a =     [200,    900,    150,     0,    150,       150]
-alpha = [90,       0,    90,    -90,    90,      00]
+d =     [600,       0,      0,   800,    0,     200]
+a =     [200,    900,    150,     0,    150,       0]
+alpha = [90,       0,    90,    -90,    90,      -90]
 
 # Homogeneous transformation matrix
 def dh_transform(a, alpha, d, theta):
@@ -58,16 +58,20 @@ z_coords = []
 EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("Joint_angles/path_1_rot_0_tilt_0_C_-25.npy")
+pos = np.load("Joint_angles/path_1_rot_0_tilt_0_C_0.npy")
+#pos = np.load("path_1_rot_0_tilt_0_C_26.npy")
 
-for iter in range(0,len(pos),10):
+for iter in range(0,len(pos),20):
     plt.clf()
     theta = pos[iter]
     theta = np.degrees(theta)
     #print(theta)
     #theta =     [0, 80, -27, 180, -128, 0]
+
     #print(theta)
-    #theta = [0, 0, 0, 0, 0, 0]
+    #theta = [0, 135, -45, 0, 0, 0]
+    #theta = [0, 0, -0, 0, 0, 0]
+    #theta = [0, 80, -27, 180, -128, iter]
     #explain =  [D,  K,   K, D,  K, D]
 
 
@@ -160,5 +164,5 @@ for iter in range(0,len(pos),10):
 
 #plt.savefig(f"../Latex/figures/robotANDpath3_25.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
 plt.show()
-plt.plot(EV)
+#plt.plot(EV)
 plt.show()

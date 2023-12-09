@@ -55,7 +55,7 @@ shutil.rmtree("Toolpaths", ignore_errors=True)
 os.mkdir("Toolpaths")
 
 for rot_winkel in range(1):
-    for kipp_winkel in range(-25, 26):
+    for kipp_winkel in range(-50, 50):
 
         for selection in range(1, 4):
 
