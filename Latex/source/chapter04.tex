@@ -19,9 +19,9 @@ In order to test the proposed method, a simple articulated 6-DoF industrial robo
 		\hline
 		\hline
 		\hline
-		a	&		[200, 900, 150, 0,   150, 150] \\
-		alpha	&  	[90,  0,   90,  -90, 90,  0] \\
-		d	& 		[600  0,   0,   800, 0,   -100]\\
+		a	&		[200, 900, 150, 0,   150, 0] \\
+		alpha	&  	[90,  0,   90,  -90, 90,  -90] \\
+		d	& 		[600  0,   0,   800, 0,   200]\\
 		
 		\hline
 		\hline
@@ -32,8 +32,8 @@ In order to test the proposed method, a simple articulated 6-DoF industrial robo
 \end{table}
 
 These parameters describe the geometry and kinematics of a robotic arm. They are used to define the relationship between adjacent links in a robot's kinematic chain. The DH parameters include values such as link lengths, link twists and link offsets. In this model, "a" represents the link lengths between adjacent joints, "alpha" represents the link twists or rotations around the Z-axis between adjacent joints and "d" represents the link offsets or distances along the Z-axis between adjacent joints. 
-It is important to note that the last offset is defined in the negative direction. This is done to ensure that the end of the last joint can be perceived as the tip of a tool without the need for any extra transformations.
-Figure \ref{robotprog} shows the robot modeled in Python. The joint positions are [0, 80, -27, 180, -128, 0] in degrees, for joint 1 to 6 respectively.
+It is important to note that the last rotation is defined in the negative direction. This is done to ensure that the end of the last joint can be perceived as the tip of a tool without the need for any extra transformations.
+Figure \ref{robotprog} shows the robot modeled in Python. The joint positions are [  2,  75, -45,  -88, -91,  61] in degrees, for joint 1 to 6 respectively.
 
  \begin{figure}[H]
 	\centerline{\includegraphics[width=0.9\textwidth]{figures/robotprog.png}}
@@ -134,17 +134,17 @@ As mentioned in Chapter \ref{MBT}, the toolpath is considered constant in regard
 	\caption{Visualization of the joint positions over time for toolpath 1 }
 	\label{TP1ABC0}
 \end{figure}
-Joints 1 and 6 oscillate out of phase relative to each other around a zero degrees. Joint 3 remains constantly at 180 degrees. Joint 2 and 5 also oscillate and slightly increase.
+%Joints 1 and 6 oscillate out of phase relative to each other around a zero degrees. Joint 3 remains constantly at 180 degrees. Joint 2 and 5 also oscillate and slightly increase.
 
  Figure \ref{TP1ABC0} shows the variation of each joint over time for toolpath 2.
- In this case all joints show a oscillation except joint 4.
+ %In this case all joints show a oscillation except joint 4.
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/TP2ABC0.png}}
 	\caption{Visualization of the joint positions over time for toolpath 2}
 	\label{TP2ABC0}
 \end{figure}
 
-ToDo: EXPLAIN WHY JOINT 4 IS AT 180 all the time!!!!!!!!\newline
+%ToDo: EXPLAIN WHY JOINT 4 IS AT 180 all the time!!!!!!!!\newline
 
 The next step is to select the process parameter of interest and establish their respective weights. Initially, a basic case is discussed. The selected process parameters can be found in table \ref{PPbasic}. The total number of direction changes in all joints and the total distance traveled are selected due to the simplicity in their implementation.
 
@@ -178,13 +178,13 @@ Figure \ref{TP1-25} and Figure \ref{TP1+25} show both limit cases at -25 and +25
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/robotANDpath1_-25.png}
-		\caption{Toolpath 1 with A=0, B=0 and C = -25°}
+		\includegraphics[width=\textwidth]{figures/robotANDpath1_-45.png}
+		\caption{Toolpath 1 with A=0, B=0 and C = -45°}
 		\label{TP1-25}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/robotANDpath1_25.png}
-		\caption{Toolpath 1 with A=0, B=0 and C = +25°}
+		\includegraphics[width=\textwidth]{figures/robotANDpath1_45.png}
+		\caption{Toolpath 1 with A=0, B=0 and C = 45}
 		\label{TP1+25}
 	\end{minipage}\par
 \end{figure}
@@ -219,12 +219,12 @@ The same analysis with the identical process parameters and weights can be perfo
 
 
 \begin{figure}[H]
-\centerline{\includegraphics[width=0.9\textwidth]{figures/best_c_2_combi.png}}
+\centerline{\includegraphics[width=1\textwidth]{figures/best_c_2_combi.png}}
 \caption{Global and local scores in toolpath 2 depending on the rotation around Z}
 \label{TP2_combi}
 \end{figure}
 \begin{figure}[H]
-\centerline{\includegraphics[width=0.9\textwidth]{figures/best_c_3_combi.png}}
+\centerline{\includegraphics[width=1\textwidth]{figures/best_c_3_combi.png}}
 \caption{Global and local scores in toolpath 3 depending on the rotation around Z}
 \label{TP3_combi}
 \end{figure}
@@ -274,7 +274,7 @@ Figure \ref{TP3_25_robot} show the robot and its orientation when following the 
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.9\textwidth]{figures/robotANDpath3_25.png}}
+	\centerline{\includegraphics[width=0.9\textwidth]{figures/robotANDpath3_45.png}}
 	\caption{Robot following the tilted toolpath 3}
 	\label{TP3_25_robot}
 \end{figure}
@@ -284,7 +284,7 @@ Now, for every tilt-position and every rotation, the joint angels are generated 
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=1\textwidth]{figures/best_2D_3.png}}
+	\centerline{\includegraphics[width=1\textwidth]{figures/best_2D_1.png}}
 	\caption{Hyperplane}
 	\label{best_2D}
 \end{figure}

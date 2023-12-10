@@ -159,7 +159,7 @@ def TWODplot():
     V_tracker = []
     Acc_tracker = []
 
-    toolpath = 1
+    toolpath = 3
 
     for kipp_winkel in range(-45, 46, 2):  # -25, 26 ,10
         for c_axis in range(-135, 140, 5):
@@ -228,11 +228,11 @@ def TWODplot():
     plt.imshow(matrix)
     # Set xticks and yticks
 
-    plt.xticks(range(0,55,1), range(-135, 135 ,5))
+    plt.xticks(range(0,55,4), range(-135, 140 ,20))
     plt.xlabel("C in Degrees [°]")
     plt.ylabel("Tilting in Degrees [°]")
     plt.title("Score of the individual boundary conditions as a hyperplane")
-    #plt.yticks(range(0,47,2), range(-46, 48 ,4))
+    plt.yticks(range(0,47,2), range(-46, 48 ,4))
     plt.colorbar()
     plt.grid(color='black', linewidth=0.1)
     plt.savefig(f"../Latex/figures/best_2D_{toolpath}.png", bbox_inches='tight',dpi=1000)

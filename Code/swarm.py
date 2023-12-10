@@ -80,7 +80,7 @@ class PSO:
         # establish the swarm
         self.swarm = []
         for i in range(0, num_particles):
-            self.swarm.append(Particle([np.random.randint(0, high=50),np.random.randint(0, high=50)]))
+            self.swarm.append(Particle([np.random.randint(0, high=40),np.random.randint(0, high=40)]))
 
             # for visualization
         fig = plt.figure()
@@ -112,11 +112,11 @@ class PSO:
 
                 # plot particles
                 ax.scatter(self.swarm[j].position_i[0], self.swarm[j].position_i[1], color='r', marker='o',edgecolors='black')
-                ax.set_xlim((0, 50))
-                ax.set_ylim((0, 50))
+                ax.set_xlim((0, 55))
+                ax.set_ylim((0, 45))
 
             matrix = np.load("matrix.npy")
-            matrix = normalize(matrix, axis=0, norm='l1')
+            #matrix = normalize(matrix, axis=0, norm='l1')
             im = ax.imshow(matrix)
             if i == 0:
                 fig.colorbar(im)
@@ -142,8 +142,8 @@ if __name__ == "__main__":
 
 
     initial = [45, 15]  # initial starting location [x1, x2]
-    bounds = [(0, 50), (0, 50)]  # input bounds
-    num_particles = 10
+    bounds = [(0, 45), (0, 54)]  # input bounds
+    num_particles = 20
     max_iter = 10
 
     pso = PSO(sphere, initial, bounds, num_particles, max_iter)

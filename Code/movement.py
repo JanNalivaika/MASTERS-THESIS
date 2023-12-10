@@ -58,10 +58,10 @@ z_coords = []
 EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("Joint_angles/path_1_rot_0_tilt_0_C_0.npy")
+pos = np.load("Joint_angles/path_3_rot_0_tilt_0_C_0.npy")
 #pos = np.load("path_1_rot_0_tilt_0_C_26.npy")
 
-for iter in range(0,len(pos),20):
+for iter in range(0,len(pos),15):
     plt.clf()
     theta = pos[iter]
     theta = np.degrees(theta)
@@ -71,7 +71,7 @@ for iter in range(0,len(pos),20):
     #print(theta)
     #theta = [0, 135, -45, 0, 0, 0]
     #theta = [0, 0, -0, 0, 0, 0]
-    #theta = [0, 80, -27, 180, -128, iter]
+    #theta = [  2,  75, -45,  -88, -91,  61]
     #explain =  [D,  K,   K, D,  K, D]
 
 
@@ -162,7 +162,7 @@ for iter in range(0,len(pos),20):
 
     if iter%100 ==0: print(iter)
 
-#plt.savefig(f"../Latex/figures/robotANDpath3_25.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
+#plt.savefig(f"../Latex/figures/robotANDpath3_45.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
 plt.show()
 #plt.plot(EV)
 plt.show()
