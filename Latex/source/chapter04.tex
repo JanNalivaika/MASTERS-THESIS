@@ -1,9 +1,9 @@
 % !TeX spellcheck = en_US
 \chapter{Implementation and Validation}%
 
-The first step of the validation involves constructing a basic model that captures the kinematics and dynamics of an industrial robot. To test the method in a simple case, the first tests are performed on a 6-DoF model and a  5-DoF toolpath with one redundant (unconstrained) DoF. After the validation on this simple model, an additional redundant DoF is introduced in form of a rotary-tilt table. 
+The first step of the validation involves constructing a basic model that captures the kinematics and dynamics of an industrial robot. To test the method in a simple case, the first tests are performed on a 6-DoF model and a 5-DoF toolpath. The sixth DoF (rotation around Z) is freely defined and is used for the optimzation. After the validation on this simple model, an additional redundant DoF is introduced in form of a rotary-tilt table. 
 
-Once the basic mathematical model is established, a optimization algorithm is implemented to determine the optimal values for each parameter associated with the redundant DoF. These methods and optimization algorithms can consider the industrial robot's specific objectives and constraints, like energy consumption or joint accelerations. 
+Once the basic mathematical model is established, a optimization algorithm is implemented to determine the optimal values for each parameter associated with the redundant DoF. These methods and optimization algorithms can consider the industrial robot's specific objectives and constraints, like direction changes or joint accelerations. 
 
 %After that, the goal is to incorporate this method with a selected CAM software to be tested in more complex scenarios.
 
@@ -58,7 +58,7 @@ Before the process parameters can be analyzed, a toolpath needs to be defined fo
 
 The first toolpath, shown in Figure \ref{path1}, depicts a converging-diverging spiral. Figure \ref{path2} illustrates a converging infinity-loop, and Figure \ref{path3} displays a forward-moving sinusoidal curve. 
 
-The corresponding equations are represented by Equation~\ref{eq1}, Equation~\ref{eq2}, and Equation~\ref{eq3}. The variable \textit{iter} increments from 0 to 3000 and is used to calculate the X-Y-Z coordinates. The trigonometric functions are implemented using the \textit{Numpy} library. No rotation (A,B~or~C) is defined so far. Only the coordinates are specified. All toolpaths have specifically selected dimensions and characteristics. Toolpath 1 and 2 are continuous while toolpath 3 has abrupt direction changes. Only toolpath 1 is rationally symmetric. 
+The corresponding equations are represented by Equation~\ref{eq1}, Equation~\ref{eq2}, and Equation~\ref{eq3}. The variable \textit{iter} increments from 0 to 3000 and is used to calculate the X-Y-Z coordinates. The trigonometric functions are implemented using the \textit{Numpy} library. No rotation (A,B~or~C) is defined so far. Only the coordinates are specified. All toolpaths have specifically selected dimensions and characteristics. Toolpath 1 and 2 are continuous while toolpath 3 has abrupt direction changes. Only toolpath 1 has rotational symmetry. 
 
 
 \begin{equation}\label{eq1}
@@ -81,7 +81,7 @@ z &= iter / 10
 \begin{equation}\label{eq3}
 \begin{split}
 x &= np.sin(np.deg2rad(iter)) * 200\\
-y &= iter / 3 - (2500/3/2)\\
+y &= iter / 3 - (2500/6)\\
 z &= np.sin(np.deg2rad(x))*100
 \end{split}
 \end{equation}
@@ -122,7 +122,7 @@ The coordinate axis of the toolpath are parallel to the axis of the robots coord
 
 
 \subsection{Extracting process parameters}
-With the assistance of an inverse kinematics algorithm from the Python library \textit{visual\_kinematics}, the joint angles for each coordinate can be computed. For that the rotation A, B and C needs to be defined. The outcome is a time series containing the corresponding joint positions. Currently, all coordinates must be traversed in equidistant timesteps. With this information, it becomes feasible to calculate the velocity and other related parameters. After transforming all the data from the time series into scalar values and calculating the local score, the global score can be determined.
+With the assistance of an inverse kinematics algorithm from the Python library \textit{visual\_kinematics}, the joint angles for each coordinate can be computed. For that the rotation A, B and C need to be defined. The outcome is a time series containing the corresponding joint positions. Currently, all coordinates must be traversed in equidistant timesteps. With this information, it becomes feasible to calculate the velocity and other related parameters. After transforming all the data from the time series into scalar values and calculating the local score, the global score can be determined.
 \newpage
 \section{Testing and Validation}%
 
@@ -131,12 +131,23 @@ As mentioned in Chapter \ref{MBT}, the toolpath is considered constant in regard
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/TP1ABC0.png}}
-	\caption{Visualization of the joint positions over time for toolpath 1 }
+	\caption{Visualization of the joint positions over time for toolpath 1 with C=0}
 	\label{TP1ABC0}
 \end{figure}
+
+Figure \ref{TP1ABC45} illustrates the positions of the joints over time for the toolpath, with a 45° rotation around the Z-axis (C = 45°). It is evident that joint 4 and 5 have experienced a change in their respective ranges. Additionally, joint 6 displays a considerably larger amplitude towards the end of the toolpath, compared to no rotation.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=1\textwidth]{figures/TP1ABC45.png}}
+	\caption{Visualization of the joint positions over time for toolpath 1 with C=45°}
+	\label{TP1ABC45}
+\end{figure}
+
+
 %Joints 1 and 6 oscillate out of phase relative to each other around a zero degrees. Joint 3 remains constantly at 180 degrees. Joint 2 and 5 also oscillate and slightly increase.
 
- Figure \ref{TP1ABC0} shows the variation of each joint over time for toolpath 2.
+Figure \ref{TP1ABC0} depicts the changes in each joint over time for toolpath 2 with no rotation. In contrast to toolpath 1, the amplitudes decrease notably towards the end of the toolpath. This observation aligns with the distinct characteristics of different toolpaths.
+ 
  %In this case all joints show a oscillation except joint 4.
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/TP2ABC0.png}}
@@ -148,7 +159,7 @@ As mentioned in Chapter \ref{MBT}, the toolpath is considered constant in regard
 
 The next step is to select the process parameter of interest and establish their respective weights. Initially, a basic case is discussed. The selected process parameters can be found in table \ref{PPbasic}. The total number of direction changes in all joints and the total distance traveled are selected due to the simplicity in their implementation.
 
-The number of direction changes are given an importance rating of 0.2.
+The number of direction changes is given an importance rating of 0.2.
 The total travel has a importance factor of 0.4. Additionally, the acceleration of joint 1 is analyzed. To obtain a scalar value for the acceleration, the individual values are squared and then summed up. The importance factor of the acceleration is 0.4.
 Velocity, acceleration, and jerk are disregarded for all other joints.
 
@@ -172,8 +183,8 @@ Velocity, acceleration, and jerk are disregarded for all other joints.
 \end{table}
 
 
-As only a single DoF is being analyzed, it is possible to display the individual local scores and global score as a one-dimensional graph. Initially, toolpath 1 is analyzed, with the redundant DoF incremented by 1 degree staring at -25 and ending at 25 degrees. 
-Figure \ref{TP1-25} and Figure \ref{TP1+25} show both limit cases at -25 and +25 degrees of rotation around the Z-axis.
+As only a single DoF is being analyzed, it is possible to display the individual local scores and global score as a one-dimensional graph. Initially, toolpath 1 is analyzed, with the redundant DoF incremented by 5 degree staring at -135 and ending at 135 degrees. 
+Figure \ref{TP1-25} and figure \ref{TP1+25} show two cases at -45 and +45 degrees of rotation around the Z-axis.
 
 \begin{figure}[H]
 	\centering
@@ -189,7 +200,9 @@ Figure \ref{TP1-25} and Figure \ref{TP1+25} show both limit cases at -25 and +25
 	\end{minipage}\par
 \end{figure}
 
-A total of 51 time series of joint positions are generated. The process parameters are extracted and scaled in relation to each other as described in Chapter \ref{LRC}. It is important to note that the selected process parameters are pre-multiplied by -1 because each process parameter should be minimized.
+A total of 55 time series of joint positions are generated. The inverse kinematics algorithm takes on average 30 seconds to calculate the joint values for all 3000 coordinates.
+
+The process parameters are extracted and scaled in relation to each other as described in Chapter \ref{LRC}. It is important to note that the selected process parameters are pre-multiplied by -1 because each process parameter should be minimized.
 
 The arrays of the local ratings are multiplied by the weights selected in table \ref{PPbasic}.
 Following this, the local scores of each process parameter can be plotted as a one-dimensional graph, as shown in figure \ref{LS1}. %It can be seen that the local scores of the selected process parameters have a significant variation in the range from -15 to 10 degrees.
@@ -200,8 +213,8 @@ Following this, the local scores of each process parameter can be plotted as a o
 	\label{LS1}
 \end{figure}
 
-
-Following that, the local scores are summed up to form the global score. The resulting array displayed in figure \ref{GS1}, shows the global score achieved by setting the rotation around the Z axis relative to all other analyzed values. The green cross indicates the maximum achievable score and its corresponding rotation in comparison to all analyzed boundary conditions.
+\newpage
+After that, the local scores are summed up to form the global score. The resulting array displayed in figure \ref{GS1}, shows the global score achieved by setting the rotation around the Z-axis relative to all other analyzed values. The green cross indicates the maximum achievable score and its corresponding rotation in comparison to all analyzed boundary conditions.
 
 
 \begin{figure}[H]
@@ -209,12 +222,9 @@ Following that, the local scores are summed up to form the global score. The res
 	\caption{Global score for toolpath 1}
 	\label{GS1}
 \end{figure}
-
-ToDo: EXPLAIN WHY JUMPS!!!!!!!!\newline
-
-In this case, the best possible achieved score is 99.77 at +25 degrees. This almost perfect score shows that setting the rotation to +25 degrees results in the most minimal direction changes, the most minimal total travel and the most minimal acceleration in joint 1. It is very important to stress that this rating is only in comparison to the other analyzed toolpaths.
-
-The same analysis with the identical process parameters and weights can be performer with toolpath 2 and toolpath 3. The figure \ref{TP2_combi} and figure \ref{TP3_combi} show the global and local scores for every analyzed value of the redundant DoF. In case of toolpath 2 the best score is 90.71 at -25.0 degrees, while with toolpath 3 the best score is 76.36 at 12 degrees.
+In this case, the best possible achieved score is 92.81 at -135 degrees. This almost perfect score shows that setting the rotation to -135 degrees results in almost the most minimal direction changes,  most minimal total travel and close to most minimal acceleration in joint~1. It is very important to stress that this rating is only in comparison to the other analyzed boundary conditions.
+\newpage
+The same analysis with the identical process parameters and weights can be performer with toolpath 2 and toolpath 3. The figure \ref{TP2_combi} and figure \ref{TP3_combi} show the global and local scores for every analyzed value of the redundant DoF. In case of toolpath 2 the best score is 93.4 at -115.0 degrees, while at toolpath 3 the best score is 88 at -80 degrees.
 
 
 
@@ -228,26 +238,27 @@ The same analysis with the identical process parameters and weights can be perfo
 \caption{Global and local scores in toolpath 3 depending on the rotation around Z}
 \label{TP3_combi}
 \end{figure}
+\newpage
 
-\subsection{Toolpath Evaluation with two Redundant DoF}
+\subsection{Toolpath Evaluation with two Redundant DoF}\label{2RDOF}
 
-To add another redundant DoF, a rotary-tilt table is simulated. For now only the tilting is analyzed. All coordinates can rotated by a set degree around the X-axis. Figure \ref{TP3_0} shows toolpath 3 with no rotation around the X-axis of its coordinate system. Figure \ref{TP3_25} on the other hand shows a rotation of +25 degrees.
+To add another redundant DoF, a rotary-tilt table is simulated. For now only the tilting is analyzed. All coordinates of the toolpath can be rotated by a set degree around the X-axis. Figure \ref{TP3_0} shows toolpath 3 with no rotation around the X-axis of its coordinate system. Figure \ref{TP3_25} on the other hand shows a rotation of +25 degrees.
 \begin{figure}[H]% [H] is so declass\'e!
 	\centering
 	\begin{minipage}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{figures/path3_kipp_0.png}
-		\caption{Toolpath 3 with no rotation around the X-axis}
+		\caption{Toolpath 3 with no rotation\newline around the X-axis}
 		\label{TP3_0}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/path3_kipp_25.png}
-		\caption{Toolpath 3 with a rotation of 25 degrees around the X-axis}
+		\includegraphics[width=\textwidth]{figures/path3_kipp_25_comparison.png}
+		\caption{Toolpath 3 with a rotation\newline of 25 degrees around the X-axis}
 		\label{TP3_25}
 	\end{minipage}\par
 \end{figure}
  
 
-Just as before, for a path analysis the same steps need to be performed. The newly selected process parameters are shown in table \ref{PP_2}.
+Just as before, for a analysis the same steps need to be performed. The newly selected process parameters are shown in table \ref{PP_2}. All the direction changes of the tilting joints (2+3+5) are summed up as one process parameter and weight with a factor of 0.3. Direction changes in joint 1 and acceleration in joint 4 are selected as individual parameters and are both weight with 0.25. The last parameter is the velocity in joint~6 with a weight of 0.2.  
 \begin{table}[H]
 	\centering
 	\begin{tabular}{||l|l||}
@@ -268,7 +279,7 @@ Just as before, for a path analysis the same steps need to be performed. The new
 \end{table}
 
 
-All the direction changes of the tilting joints (2+3+5) are summed up as one process parameter and weight with a factor of 0.3. Direction changes in joint 1 and acceleration in joint 4 are selected as individual parameters and are both weight with 0.25. The last parameter is the velocity in joint~6 with a weight of 0.2.  
+
 \newpage
 Figure \ref{TP3_25_robot} show the robot and its orientation when following the tilted toolpath. It is important to note that as the tooolpath is defined in 5 DoF, the frame of the TCP also hast to tilt by the same degree as the table. The two redundant DoF in this case are the rotation around the Z-axis in the frame of the tilted toolpath and the tilting of the toolpath itself. This adds another dimension as now 2 parameters can be optimized.
 
@@ -279,59 +290,93 @@ Figure \ref{TP3_25_robot} show the robot and its orientation when following the 
 	\label{TP3_25_robot}
 \end{figure}
 
-Now, for every tilt-position and every rotation, the joint angels are generated by inverse kinematics for toolpath 3. The extracted process parameters are again multiplied with -1 as the goal is to minimize them. After that the Min-Max scaler is applied. The individual values are summed up and are now represented in form of a matrix. The values of that matrix are visualized in figure \ref{best_2D}. The maximum score from possible combinations is 100. This score was achieved by setting the tiltig of the table to 0 degrees and the rotation around the Z-axis of the tool to 14 degrees.
+The range of possible tilt positions is ranging from -45° to 45° in 2 degrees increments. 
+Now, for every tilt-position and every rotation, the joint angels are generated by inverse kinematics for toolpath 3. To save time in computation, only every third coordinate is fed into the inverse kinematic algorithm. This reduces the toolpath by 2000 points and speeds up the calculation. Now it takes only 10 seconds on average to calculate the joint positions. 2530 individual combinations are analyzed.
+
+The extracted process parameters are again multiplied with -1 as the goal is to minimize them. After that the Min-Max scaler is applied. The individual values are summed up and are now represented in form of a matrix. The values of that matrix are visualized in figure \ref{best_2D}. The maximum achievable score from all possible combinations is 84.27. This score was achieved by setting the tiltig of the table to -3 degrees and the rotation around the Z-axis of the tool to -80 degrees.
 
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=1\textwidth]{figures/best_2D_1.png}}
-	\caption{Hyperplane}
+	\centerline{\includegraphics[width=1\textwidth]{figures/best_2D_3.png}}
+	\caption{Hyperplane representing the global score of toolpath 3}
 	\label{best_2D}
 \end{figure}
 
 \newpage
 \subsection{Boundary Condition Optimization }
-swarm
+So far only the analysis of the different boundary condition is performed. For that the defined range of the redundant DoF is explored. After that the best option for the boundary condition can be found. This approach is very time intensive and scales exponentially with additional redundant DoF and finer step size.  
+
+To optimally search this large space and propose the optimal values for the redundant DoF, a PSO-algorithm is proposed. The Individual particles move through the search space by adjusting their positions and velocities based on their own best position and the best position found by the swarm. This cooperation allows the particles to explore the search space more effectively and converge towards the best solution.
+
+The first test is conducted with the with the gobal score matrix of toolpath 3. 
+Initially 5 particles are randomly placed on the plane. Their individual scores are the corresponding global score at their respective position.
+
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=0.8\textwidth]{figures/swarm/3_1.png}}
+	\caption{PSO particles randomly distributed}
+	\label{PSO_1}
+\end{figure}
+
+After that each iteration, the particles update their positions and velocity based on their current velocity and the scores of all other particles.
+The more paricles and more iterations, the more densely the search space can be analyzed. 
+
+Figures \ref{0} to \ref{9} show how 5 particles converge to the found maximum. This convergence takes place in 10 iterations. The best position al all 5 particles is equal to the global maximum as mentioned in Chapter \ref{2RDOF}. This example shows that it is generally possible to search a high dimensional space without the necessity to compute all possible combinations.
+
+
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/0.png}
-		\caption{0}
+		\includegraphics[width=\textwidth]{figures/swarm/3_1.png}
+		\caption{PSO Iteration 1}
 		\label{0}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/2.png}
-		\caption{2}
+		\includegraphics[width=\textwidth]{figures/swarm/3_3.png}
+		\caption{PSO Iteration 3}
 		\label{2}
 	\end{minipage}\par
+\end{figure}	
+\begin{figure}[H]	
 		\centering
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/4.png}
-		\caption{4}
+		\includegraphics[width=\textwidth]{figures/swarm/3_5.png}
+		\caption{PSO Iteration 5}
 		\label{4}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/6.png}
-		\caption{6}
+		\includegraphics[width=\textwidth]{figures/swarm/3_7.png}
+		\caption{PSO Iteration 7}
 		\label{6}
 	\end{minipage}\par
 			\centering
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/8.png}
-		\caption{8}
+		\includegraphics[width=\textwidth]{figures/swarm/3_9.png}
+		\caption{PSO Iteration 9}
 		\label{8}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/9.png}
-		\caption{9}
+		\includegraphics[width=\textwidth]{figures/swarm/3_10.png}
+		\caption{PSO Iteration 10}
 		\label{9}
 	\end{minipage}\par
 \end{figure}
 
+One important factor in this test, is that the scores are already calculated. The Global score matrix is calculated realive to all possible combination of the different boundy conditions. In the indented scenario, where this method is used to find the optimal boundary condition such a matrix does not exist.
 
-\newpage
+For that the scores of the idividual positions have to be compared realtive to each other at each iteration and consider the past iterations. This method is shown in figure \ref{swarmloop}. At first a set number of particles is placed randomly on the plane. the X and Y values define the selected boundary conditions. For each selected boundary condition the joint angles are calculated with thehelp of the nverse kinematic approach. After that the analyzed prozess parameters are extracted and joint angleas are stored. The score for each current position is claculated realive to all stored toolpaths. It is possible that a particle once had a positioned that has a very high score compared to the other available toolpath at that time. After each iteration it is thus necessary to update that score of the most optimla position of the paricel as more boundary conditions are analyzed. This must be done to ensure that a inital realive score that is wrongfully selected as the best, does not influence the subsequent sarch directions.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=0.9\textwidth]{figures/swarmloop.png}}
+	\caption{PSO-Loop}
+	\label{swarmloop}
+\end{figure}
+
+
+
 \section{Analysis and Discussion of the results}%
-
+In the following the results are analyzed in more detail and critically discussed.
 
 \subsection{Analysis}
 \subsection{Discussion}%

@@ -2,6 +2,7 @@ import random
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.preprocessing import normalize
+from matplotlib import ticker
 
 
 class Particle:
@@ -13,19 +14,19 @@ class Particle:
         self.err_i = -1  # error individual
 
         for i in range(0, num_dimensions):
-            self.velocity_i.append(random.uniform(-2, 2))
+            self.velocity_i.append(random.uniform(-1, 1))
             self.position_i.append(x0[i])
 
             # evaluate current fitness
 
-    def evaluate(self, costFunc):
-        self.err_i = costFunc(self.position_i)
+    def evaluate(self, path):
+        # self.err_i = costFunc(self.position_i)
         self.position_i[0] = int(self.position_i[0])
         self.position_i[1] = int(self.position_i[1])
-        matrix = np.load("matrix.npy")
-        matrix = normalize(matrix, axis=0, norm='l1')
-        self.err_i = -matrix[self.position_i[0],self.position_i[1]]
-        #self.err_i = -self.position_i[0]-self.position_i[1]
+        matrix = np.load(f"matrix_{path}.npy")
+        # matrix = normalize(matrix, axis=0, norm='l1')
+        self.err_i = -matrix[self.position_i[0], self.position_i[1]]
+        # self.err_i = -self.position_i[0]-self.position_i[1]
 
         # check if current position is an individual best
         if self.err_i < self.err_best_i or self.err_best_i == -1:
@@ -35,9 +36,9 @@ class Particle:
             # update new particle velocity
 
     def update_velocity(self, pos_best_g):
-        w = 0.5  # inertia weight
-        c1 = 0.6 # cognitive constant
-        c2 = 0.5 # social constant
+        w = 0.6  # inertia weight
+        c1 = 1.5  # cognitive constant
+        c2 = 0.3  # social constant
 
         for i in range(0, num_dimensions):
             r1 = random.random()
@@ -64,33 +65,32 @@ class Particle:
 
 class PSO:
 
-
     def get_best_position(self):
         best_particle = min(self.swarm, key=lambda particle: particle.err_best_i)
         return best_particle.pos_best_i, best_particle.err_best_i
 
-
-    def __init__(self, costFunc, x0, bounds, num_particles, max_iter):
+    def __init__(self, bounds, num_particles, max_iter, path):
         global num_dimensions
 
         num_dimensions = 2
-        err_best_g = -1  # best error for group
+        err_best_g = 1  # best error for group
         pos_best_g = []  # best position for group
 
         # establish the swarm
         self.swarm = []
         for i in range(0, num_particles):
-            self.swarm.append(Particle([np.random.randint(0, high=40),np.random.randint(0, high=40)]))
+            self.swarm.append(Particle([np.random.randint(0, high=40), np.random.randint(0, high=40)]))
 
             # for visualization
+        plt.figure(figsize=(10, 10))
         fig = plt.figure()
         ax = fig.add_subplot(111)
-        #ax.set_xlim(bounds[0])
-        #ax.set_ylim(bounds[1])
-        ax.set_xlim((0,50))
-        ax.set_ylim((0,50))
-        plt.ion()
-        plt.show()
+        # ax.set_xlim(bounds[0])
+        # ax.set_ylim(bounds[1])
+        # ax.set_xlim((0,50))
+        # ax.set_ylim((0,49))
+        # plt.ion()
+        # plt.show()
 
         # begin optimization loop
         i = 0
@@ -98,7 +98,7 @@ class PSO:
             ax.cla()
             # evaluate fitness of each particle
             for j in range(0, num_particles):
-                self.swarm[j].evaluate(costFunc)
+                self.swarm[j].evaluate(path)
 
                 # determine if current particle is the best (globally)
                 if self.swarm[j].err_i < err_best_g or err_best_g == -1:
@@ -111,53 +111,61 @@ class PSO:
                 self.swarm[j].update_position(bounds)
 
                 # plot particles
-                ax.scatter(self.swarm[j].position_i[0], self.swarm[j].position_i[1], color='r', marker='o',edgecolors='black')
-                ax.set_xlim((0, 55))
+                ax.scatter(self.swarm[j].position_i[1], self.swarm[j].position_i[0], color='r', marker='o',
+                           edgecolors='black')
+                ax.set_xlim((0, 54))
                 ax.set_ylim((0, 45))
 
-            matrix = np.load("matrix.npy")
-            #matrix = normalize(matrix, axis=0, norm='l1')
+            matrix = np.load(f"matrix_{path}.npy")
+            # matrix = normalize(matrix, axis=0, norm='l1')
             im = ax.imshow(matrix)
             if i == 0:
                 fig.colorbar(im)
-            #plt.savefig(f"swarm/{i}.png", bbox_inches='tight',dpi=1000)
-            plt.pause(0.9)
-            #ax.cla()
-            i+=1
-        plt.show()
 
+            # plt.pause(0.5)
+            # ax.cla()
+            i += 1
 
+            x_org = list(range(0, 55, 4))
+            x_new = list(range(-135, 140, 20))
+            plt.xticks(x_org, x_new)
+            y_org = list(range(0, 46, 3))  # 1
+            y_new = list(range(-45, 46, 6))  # 2
+            plt.yticks(y_org, y_new)
+
+            # cb = plt.colorbar()
+            # tick_locator = ticker.MaxNLocator(nbins=12)
+            # cb.locator = tick_locator
+            # cb.update_ticks()
+
+            # plt.title(f"Traversing the hyperplane of toolpath {path} with a PSO-algorithm. Iteration: {i}")
+            plt.title(f"Toolpath {path}. PSO-algorithm iteration: {i}")
+
+            plt.xlabel("C in Degrees [°]")
+            plt.ylabel("Tilting in Degrees [°]")
+            plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+            print(i, path)
+        plt.close()
 
 
 if __name__ == "__main__":
-    # example usage
-    def sphere(x):
-        fitness = 0.4 / (1 + 0.02 * ((x[0] - (-20)) ** 2 + (x[1] - (-20)) ** 2)) \
-                     + 0.2 / (1 + 0.5 * ((x[0] - (-5)) ** 2 + (x[1] - (-25)) ** 2)) \
-                     + 0.7 / (1 + 0.01 * ((x[0] - (0)) ** 2 + (x[1] - (30)) ** 2)) \
-                     + 1 / (1 + 2 * ((x[0] - (30)) ** 2 + (x[1] - (0)) ** 2)) \
-                     + 0.05 / (1 + 0.1 * ((x[0] - (30)) ** 2 + (x[1] - (-30)) ** 2))
-        return -fitness
-        #return sum([xi ** 2 for xi in x])
 
-
-    initial = [45, 15]  # initial starting location [x1, x2]
     bounds = [(0, 45), (0, 54)]  # input bounds
-    num_particles = 20
+    num_particles = 5
     max_iter = 10
 
-    pso = PSO(sphere, initial, bounds, num_particles, max_iter)
+    for path in [1, 2, 3]:
+        pso = PSO(bounds, num_particles, max_iter, path)
 
-    best_position, best_value = pso.get_best_position()
-    print(f"Best Position: {best_position}")
-    print(f"Best Value: {-best_value}")
+        best_position, best_value = pso.get_best_position()
+        print(f"Best Position: {best_position}")
+        print(f"Best Value: {-best_value}")
+
+# initial = [5, 5]  # initial starting location [x1, x2]
+# bounds = [(-10, 10), (-10, 10)]  # input bounds
 
 
-#initial = [5, 5]  # initial starting location [x1, x2]
-#bounds = [(-10, 10), (-10, 10)]  # input bounds
-
-
-#error with
-#path_2_rot_0_tilt_3_C_-23
-#path_2_rot_0_tilt_3_C_-22
-#path_1_rot_0_tilt_-1_C_15
+# error with
+# path_2_rot_0_tilt_3_C_-23
+# path_2_rot_0_tilt_3_C_-22
+# path_1_rot_0_tilt_-1_C_15
