@@ -164,17 +164,17 @@ def TWODplot():
         V_tracker = []
         Acc_tracker = []
 
-        DC234 = 0
-        DC1 = 0
-        accel_sore = 0
-        v_score = 0
+
         for kipp_winkel in range(-45, 46, 2):  # -25, 26 ,10
             for c_axis in range(-135, 140, 5):
                 #print(kipp_winkel,c_axis)
                 try:
                     #if kipp_winkel==-15 and c_axis==2:
                     #    print("panic")
-
+                    DC234 = 0
+                    DC1 = 0
+                    accel_sore = 0
+                    v_score = 0
 
                     joints = np.load(f"Joint_angles_lowres/path_{toolpath}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy")
 

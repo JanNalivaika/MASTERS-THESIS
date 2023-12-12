@@ -3,7 +3,7 @@
 
 The first step of the validation involves constructing a basic model that captures the kinematics and dynamics of an industrial robot. To test the method in a simple case, the first tests are performed on a 6-DoF model and a 5-DoF toolpath. The sixth DoF (rotation around Z) is freely defined and is used for the optimzation. After the validation on this simple model, an additional redundant DoF is introduced in form of a rotary-tilt table. 
 
-Once the basic mathematical model is established, a optimization algorithm is implemented to determine the optimal values for each parameter associated with the redundant DoF. These methods and optimization algorithms can consider the industrial robot's specific objectives and constraints, like direction changes or joint accelerations. 
+Once the basic mathematical model is established, a optimization algorithm is implemented to determine the optimal values for each parameter associated with the redundant DoF. These methods and optimization algorithms can consider the industrial robot's specific objectives and constraints, like for example, minimizing direction changes or joint accelerations. 
 
 %After that, the goal is to incorporate this method with a selected CAM software to be tested in more complex scenarios.
 
@@ -127,6 +127,7 @@ With the assistance of an inverse kinematics algorithm from the Python library \
 \section{Testing and Validation}%
 
 \subsection{Toolpath Evaluation with one Redundant DoF}
+%\subsubsection{Obtaining Joint Positions}
 As mentioned in Chapter \ref{MBT}, the toolpath is considered constant in regards to the coordinates X-Y-Z. The fixed boundary conditions for the robot are that the rotations around the X and Y axes are 0. Thus A and B are both equal to zero. The user needs to set the DoF for the rotation around the Z axis, which is the redundant DoF. Figure \ref{TP1ABC0} illustrates the variation of each joint over time for toolpath 1. In this specific case, the rotations A, B, and C are set to~0. The whole toolpath is traversed in 300 seconds. 
 
 \begin{figure}[H]
@@ -135,7 +136,7 @@ As mentioned in Chapter \ref{MBT}, the toolpath is considered constant in regard
 	\label{TP1ABC0}
 \end{figure}
 
-Figure \ref{TP1ABC45} illustrates the positions of the joints over time for the toolpath, with a 45° rotation around the Z-axis (C = 45°). It is evident that joint 4 and 5 have experienced a change in their respective ranges. Additionally, joint 6 displays a considerably larger amplitude towards the end of the toolpath, compared to no rotation.
+Figure \ref{TP1ABC45} illustrates the positions of the joints over time for the toolpath, with a 45° rotation around the Z-axis (C = 45°). It is evident that joint 4 and 5 have experienced a change in their respective ranges. Additionally, joint 6 displays a considerably larger amplitude towards the end of the toolpath, compared to no rotation (C=0).
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/TP1ABC45.png}}
@@ -146,7 +147,7 @@ Figure \ref{TP1ABC45} illustrates the positions of the joints over time for the 
 
 %Joints 1 and 6 oscillate out of phase relative to each other around a zero degrees. Joint 3 remains constantly at 180 degrees. Joint 2 and 5 also oscillate and slightly increase.
 
-Figure \ref{TP1ABC0} depicts the changes in each joint over time for toolpath 2 with no rotation. In contrast to toolpath 1, the amplitudes decrease notably towards the end of the toolpath. This observation aligns with the distinct characteristics of different toolpaths.
+Figure \ref{TP1ABC0} depicts the changes in each joint over time for toolpath 2 (Eq. \ref{eq2}) with no rotation. In contrast to toolpath 1, the amplitudes decrease notably towards the end of the toolpath. This observation aligns with the distinct characteristics of different toolpaths.
  
  %In this case all joints show a oscillation except joint 4.
 \begin{figure}[H]
@@ -156,8 +157,8 @@ Figure \ref{TP1ABC0} depicts the changes in each joint over time for toolpath 2 
 \end{figure}
 
 %ToDo: EXPLAIN WHY JOINT 4 IS AT 180 all the time!!!!!!!!\newline
-
-The next step is to select the process parameter of interest and establish their respective weights. Initially, a basic case is discussed. The selected process parameters can be found in table \ref{PPbasic}. The total number of direction changes in all joints and the total distance traveled are selected due to the simplicity in their implementation.
+%\subsubsection{Selecting Process Parameters}
+The next step is to select the process parameter of interest and establish their respective weights. For that, a basic case is discussed. The selected process parameters can be found in table \ref{PPbasic}. The total number of direction changes in all joints and the total distance traveled are selected due to the simplicity in their implementation.
 
 The number of direction changes is given an importance rating of 0.2.
 The total travel has a importance factor of 0.4. Additionally, the acceleration of joint 1 is analyzed. To obtain a scalar value for the acceleration, the individual values are squared and then summed up. The importance factor of the acceleration is 0.4.
@@ -184,7 +185,7 @@ Velocity, acceleration, and jerk are disregarded for all other joints.
 
 
 As only a single DoF is being analyzed, it is possible to display the individual local scores and global score as a one-dimensional graph. Initially, toolpath 1 is analyzed, with the redundant DoF incremented by 5 degree staring at -135 and ending at 135 degrees. 
-Figure \ref{TP1-25} and figure \ref{TP1+25} show two cases at -45 and +45 degrees of rotation around the Z-axis.
+Figure \ref{TP1-25} and figure \ref{TP1+25} show two cases at -45 and +45 degrees of rotation around the Z-axis for toolpath 1.
 
 \begin{figure}[H]
 	\centering
@@ -281,7 +282,7 @@ Just as before, for a analysis the same steps need to be performed. The newly se
 
 
 \newpage
-Figure \ref{TP3_25_robot} show the robot and its orientation when following the tilted toolpath. It is important to note that as the tooolpath is defined in 5 DoF, the frame of the TCP also hast to tilt by the same degree as the table. The two redundant DoF in this case are the rotation around the Z-axis in the frame of the tilted toolpath and the tilting of the toolpath itself. This adds another dimension as now 2 parameters can be optimized.
+Figure \ref{TP3_25_robot} show the robot and its orientation when following the tilted toolpath 3. It is important to note that as the tooolpath is defined in 5 DoF in its own frame, the frame of the TCP also hast to tilt by the same degree as the table. The two redundant DoF in this case are the rotation around the Z-axis in the frame of the tilted toolpath and the tilting of the toolpath itself. This adds another dimension as now 2 parameters can be optimized.
 
 
 \begin{figure}[H]
@@ -291,9 +292,9 @@ Figure \ref{TP3_25_robot} show the robot and its orientation when following the 
 \end{figure}
 
 The range of possible tilt positions is ranging from -45° to 45° in 2 degrees increments. 
-Now, for every tilt-position and every rotation, the joint angels are generated by inverse kinematics for toolpath 3. To save time in computation, only every third coordinate is fed into the inverse kinematic algorithm. This reduces the toolpath by 2000 points and speeds up the calculation. Now it takes only 10 seconds on average to calculate the joint positions. 2530 individual combinations are analyzed.
+Now, for every tilt-position and every rotation, the joint angels are generated by inverse kinematics. To save time in computation, only every third coordinate is fed into the inverse kinematic algorithm. This reduces the toolpath by 2000 points and speeds up the calculation. Now it takes only 10 seconds on average to calculate the joint positions. 2530 individual combinations are analyzed.
 
-The extracted process parameters are again multiplied with -1 as the goal is to minimize them. After that the Min-Max scaler is applied. The individual values are summed up and are now represented in form of a matrix. The values of that matrix are visualized in figure \ref{best_2D}. The maximum achievable score from all possible combinations is 84.27. This score was achieved by setting the tiltig of the table to -3 degrees and the rotation around the Z-axis of the tool to -80 degrees.
+The extracted process parameters are again multiplied with -1 as the goal is to minimize them. After that the Min-Max scaler is applied. The individual values are summed up and are now represented in form of a matrix. The values of that matrix are visualized in figure~\ref{best_2D}. The maximum achievable score from all possible combinations is 72.96. This score was achieved by setting the tiltig of the table to -3 degrees and the rotation around the Z-axis of the tool to +35 degrees.
 
 
 
@@ -309,63 +310,54 @@ So far only the analysis of the different boundary condition is performed. For t
 
 To optimally search this large space and propose the optimal values for the redundant DoF, a PSO-algorithm is proposed. The Individual particles move through the search space by adjusting their positions and velocities based on their own best position and the best position found by the swarm. This cooperation allows the particles to explore the search space more effectively and converge towards the best solution.
 
-The first test is conducted with the with the gobal score matrix of toolpath 3. 
-Initially 5 particles are randomly placed on the plane. Their individual scores are the corresponding global score at their respective position.
+The first test is conducted with the with the gobal score matrix of toolpath 3. Initially 20 particles are randomly placed on the plane. Their individual scores are the corresponding global score at their respective position.
 
+In each iteration, the particles update their positions based on their current position, their individual best position and the scores of all other particles. The more particles and more iterations, the more densely the search space can be analyzed. 
+Figure \ref{PSO_1}
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.8\textwidth]{figures/swarm/3_1.png}}
-	\caption{PSO particles randomly distributed}
+	\caption{Distributed of particles after the first iteration}
 	\label{PSO_1}
 \end{figure}
 
-After that each iteration, the particles update their positions and velocity based on their current velocity and the scores of all other particles.
-The more paricles and more iterations, the more densely the search space can be analyzed. 
 
-Figures \ref{0} to \ref{9} show how 5 particles converge to the found maximum. This convergence takes place in 10 iterations. The best position al all 5 particles is equal to the global maximum as mentioned in Chapter \ref{2RDOF}. This example shows that it is generally possible to search a high dimensional space without the necessity to compute all possible combinations.
+
+Figures \ref{2} to \ref{5} show how the particles converge to the found maximum. This convergence takes place in 5 iterations. The best position of all 5 particles is equal to the global maximum as mentioned in Chapter \ref{2RDOF}. This example shows that it is generally possible to search a high dimensional space without the necessity to compute all possible combinations.
 
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/3_1.png}
-		\caption{PSO Iteration 1}
-		\label{0}
+		\includegraphics[width=\textwidth]{figures/swarm/3_2.png}
+		\caption{PSO Iteration 2}
+		\label{2}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{figures/swarm/3_3.png}
 		\caption{PSO Iteration 3}
-		\label{2}
+		\label{3}
 	\end{minipage}\par
 \end{figure}	
 \begin{figure}[H]	
 		\centering
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/3_5.png}
-		\caption{PSO Iteration 5}
+		\includegraphics[width=\textwidth]{figures/swarm/3_4.png}
+		\caption{PSO Iteration 4}
 		\label{4}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/3_7.png}
-		\caption{PSO Iteration 7}
-		\label{6}
-	\end{minipage}\par
-			\centering
-	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/3_9.png}
-		\caption{PSO Iteration 9}
-		\label{8}
-	\end{minipage}\hfill
-	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/swarm/3_10.png}
-		\caption{PSO Iteration 10}
-		\label{9}
+		\includegraphics[width=\textwidth]{figures/swarm/3_5.png}
+		\caption{PSO Iteration 5}
+		\label{5}
 	\end{minipage}\par
 \end{figure}
 
-One important factor in this test, is that the scores are already calculated. The Global score matrix is calculated realive to all possible combination of the different boundy conditions. In the indented scenario, where this method is used to find the optimal boundary condition such a matrix does not exist.
+One important factor in this test is that the scores are already calculated. The global score matrix is calculated relative to all possible combinations of the different boundary conditions. However, in the intended scenario where this method is used to find the optimal boundary condition, such a matrix does not exist.
 
-For that the scores of the idividual positions have to be compared realtive to each other at each iteration and consider the past iterations. This method is shown in figure \ref{swarmloop}. At first a set number of particles is placed randomly on the plane. the X and Y values define the selected boundary conditions. For each selected boundary condition the joint angles are calculated with thehelp of the nverse kinematic approach. After that the analyzed prozess parameters are extracted and joint angleas are stored. The score for each current position is claculated realive to all stored toolpaths. It is possible that a particle once had a positioned that has a very high score compared to the other available toolpath at that time. After each iteration it is thus necessary to update that score of the most optimla position of the paricel as more boundary conditions are analyzed. This must be done to ensure that a inital realive score that is wrongfully selected as the best, does not influence the subsequent sarch directions.
+Therefore, the scores of the individual positions have to be compared relative to each other at each iteration, taking into consideration the past iterations. This method is shown in Figure \ref{swarmloop}. Initially, a set number of particles is randomly placed on the plane, with the X and Y values defining the selected boundary conditions. For each selected boundary condition, the joint angles are calculated using the inverse kinematic approach. After that, the analyzed process parameters are extracted and the joint angles are stored. The score for each current position is calculated relative to all stored toolpaths.
+
+It is possible that a particle once had a position with a very high score compared to the other available toolpaths at that time. Therefore, after each iteration, it is necessary to update the score of the most optimal position of the particle as more boundary conditions are analyzed. This is done to ensure that an initially relative score, which may have been mistakenly selected as the best, does not influence the subsequent search directions.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.9\textwidth]{figures/swarmloop.png}}
@@ -373,8 +365,62 @@ For that the scores of the idividual positions have to be compared realtive to e
 	\label{swarmloop}
 \end{figure}
 
+Following this approach, the following results are calculated. It is important to note that the underlying colors from the global score matrix are not available to the PSO algorithm. They are only used to evaluate the behavior of the particles.
 
+Figures \ref{1_true} to \ref{4_true} show the progression of the individual particles. The green circle indicates the overall best position found by the particles so far.
 
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/swarm_true/3_1.png}
+		\caption{PSO Iteration 1}
+		\label{1_true}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/swarm_true/3_2.png}
+		\caption{PSO Iteration 2}
+		\label{2_true}
+	\end{minipage}\par
+\end{figure}	
+
+\begin{figure}[H]	
+	\centering
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/swarm_true/3_3.png}
+		\caption{PSO Iteration 3}
+		\label{3_true}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/swarm_true/3_4.png}
+		\caption{PSO Iteration 4}
+		\label{4_true}
+	\end{minipage}\par
+\end{figure}
+
+Figure \ref{5_true} shows the position of the particles after the final fifth iteration.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[width=0.9\textwidth]{figures/swarm_true/3_5.png}}
+	\caption{PSO iteration 5}
+	\label{5_true}
+\end{figure}
+
+Figures \ref{5_true_1} and \ref{5_true_2} show the final position of the particles when the first and second toolpath is analyzed, respectively. In both cases the PSO-algorithm succeeded to find the globally optimal condition.
+\begin{figure}[H]	
+	\centering
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/swarm_true/1_5.png}
+		\caption{PSO Iteration 5 on toolpath 1}
+		\label{5_true_1}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/swarm_true/2_5.png}
+		\caption{PSO Iteration 5 on toolpath 2}
+		\label{5_true_2}
+	\end{minipage}\par
+\end{figure}
+
+\newpage
 \section{Analysis and Discussion of the results}%
 In the following the results are analyzed in more detail and critically discussed.
 

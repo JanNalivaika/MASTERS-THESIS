@@ -36,9 +36,13 @@ class Particle:
             # update new particle velocity
 
     def update_velocity(self, pos_best_g):
-        w = 0.6  # inertia weight
+        """w = 0.6  # inertia weight
         c1 = 1.5  # cognitive constant
-        c2 = 0.3  # social constant
+        c2 = 0.3  # social constant"""
+
+        w = 0.4  # inertia weight
+        c1 = 1  # cognitive constant
+        c2 = 1  # social constant
 
         for i in range(0, num_dimensions):
             r1 = random.random()
@@ -47,7 +51,7 @@ class Particle:
             vel_cognitive = c1 * r1 * (self.pos_best_i[i] - self.position_i[i])
             vel_social = c2 * r2 * (pos_best_g[i] - self.position_i[i])
             self.velocity_i[i] = w * self.velocity_i[i] + vel_cognitive + vel_social
-
+            #print(w * self.velocity_i[i] + vel_cognitive + vel_social)
             # update the particle position based off new velocity updates
 
     def update_position(self, bounds):
@@ -144,17 +148,17 @@ class PSO:
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")
             plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
-            print(i, path)
+            #print(i, path)
         plt.close()
 
 
 if __name__ == "__main__":
 
     bounds = [(0, 45), (0, 54)]  # input bounds
-    num_particles = 5
-    max_iter = 10
+    num_particles = 20
+    max_iter = 5
 
-    for path in [1, 2, 3]:
+    for path in [1]:
         pso = PSO(bounds, num_particles, max_iter, path)
 
         best_position, best_value = pso.get_best_position()

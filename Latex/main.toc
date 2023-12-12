@@ -59,11 +59,11 @@
 \contentsline {subsection}{\numberline {4.2.1}Toolpath Evaluation with one Redundant DoF}{66}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Toolpath Evaluation with two Redundant DoF}{71}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Boundary Condition Optimization }{74}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{76}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis}{76}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{76}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{77}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{77}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{77}{section.5.2}%
-\contentsline {chapter}{Bibliography}{85}{chapter*.83}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the results}{79}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis}{79}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{79}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{81}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{81}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{81}{section.5.2}%
+\contentsline {chapter}{Bibliography}{89}{chapter*.87}%
 \contentsfinish 
