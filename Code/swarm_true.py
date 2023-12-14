@@ -178,18 +178,38 @@ class PSO:
             self.swarm.append(Particle([np.random.randint(0, high=54), np.random.randint(0, high=45)]))
 
             # for visualization
-        plt.figure(figsize=(10, 10))
-        fig = plt.figure()
-        ax = fig.add_subplot(111)
-        # ax.set_xlim(bounds[0])
-        # ax.set_ylim(bounds[1])
-        # ax.set_xlim((0,50))
-        # ax.set_ylim((0,49))
-        # plt.ion()
-        # plt.show()
 
-        # begin optimization loop
         i = 0
+        if i == 0:
+            fig = plt.figure(figsize=(8, 8))
+            ax = fig.add_subplot(111)
+            for j in range(0, num_particles):
+                ax.scatter(self.swarm[j].position_i[1], self.swarm[j].position_i[0], color='r', marker='o',
+                           edgecolors='black')
+            ax.set_xlim((0, 54))
+            ax.set_ylim((0, 45))
+
+            matrix = np.load(f"matrix_{path}.npy")
+            # matrix = normalize(matrix, axis=0, norm='l1')
+            im = ax.imshow(matrix)
+
+            # ax.cla()
+
+            x_org = list(range(0, 55, 4))
+            x_new = list(range(-135, 140, 20))
+            plt.xticks(x_org, x_new)
+            y_org = list(range(0, 46, 3))  # 1
+            y_new = list(range(-45, 46, 6))  # 2
+            plt.yticks(y_org, y_new)
+
+            plt.xlabel("C in Degrees [°]")
+            plt.ylabel("Tilting in Degrees [°]")
+            plt.savefig(f"../Latex/figures/swarm_true/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+            plt.close()
+            plt.close()
+
+        fig = plt.figure(figsize=(8, 8))
+        ax = fig.add_subplot(111)
         while i < max_iter:
             ax.cla()
             # evaluate fitness of each particle
@@ -236,13 +256,11 @@ class PSO:
                 ax.set_ylim((0, 45))
 
             matrix = np.load(f"matrix_{path}.npy")
-            # matrix = normalize(matrix, axis=0, norm='l1')
-            im = ax.imshow(matrix)
-            #if i == 0:
-            #    fig.colorbar(im)
 
-            # plt.pause(0.5)
-            # ax.cla()
+            ax.imshow(matrix)
+
+            #plt.pause(0.5)
+
             i += 1
 
             x_org = list(range(0, 55, 4))
@@ -252,18 +270,12 @@ class PSO:
             y_new = list(range(-45, 46, 6))  # 2
             plt.yticks(y_org, y_new)
 
-            # cb = plt.colorbar()
-            # tick_locator = ticker.MaxNLocator(nbins=12)
-            # cb.locator = tick_locator
-            # cb.update_ticks()
-
-            # plt.title(f"Traversing the hyperplane of toolpath {path} with a PSO-algorithm. Iteration: {i}")
             plt.title(f"Toolpath {path}. PSO-algorithm iteration: {i}")
 
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")
-            plt.savefig(f"delme/{path}_{i}.png", bbox_inches='tight', dpi=1000)
-            #print(i, path)
+            plt.savefig(f"../Latex/figures/swarm_true/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+            ax.cla()
         plt.close()
 
 
@@ -276,7 +288,7 @@ if __name__ == "__main__":
     num_particles = 20
     max_iter = 5
 
-    for path in [1,2,3]:
+    for path in [2]:
 
         Position_list = []
         File_list = []
@@ -287,13 +299,3 @@ if __name__ == "__main__":
         best_position, best_value = pso.get_best_position()
         print(f"Best Position: {best_position}")
         print(f"Best Value: {-best_value}")
-
-
-# initial = [5, 5]  # initial starting location [x1, x2]
-# bounds = [(-10, 10), (-10, 10)]  # input bounds
-
-
-# error with
-# path_2_rot_0_tilt_3_C_-23
-# path_2_rot_0_tilt_3_C_-22
-# path_1_rot_0_tilt_-1_C_15

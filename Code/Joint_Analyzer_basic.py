@@ -139,7 +139,7 @@ def basicscore():
 
 
         plt.plot(X_ax,SCORE, lw = 0.5, c="red", label = "Global score",linestyle='dashed', marker='o')
-        plt.scatter(max_index, max_value, s = 200, c="green", label="optimal boundary condition", marker = "2")
+        plt.scatter(max_index, max_value, s = 200, c="green", label="Optimal boundary condition", marker = "2")
         plt.ylim((-10, 110))
         plt.xlabel('Rotation around Z in degrees [°]')
         plt.ylabel('Score')
@@ -269,5 +269,5 @@ def TWODplot():
 
 
 #basicplot()
-#basicscore()
+basicscore()
 TWODplot()

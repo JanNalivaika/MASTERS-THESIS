@@ -3,33 +3,21 @@
 
 \section{Summary}%
 
+
+
+
 \section{Outlook}%
 
+This work focuses on a select number of process parameters, but this selection can be expanded to further optimize the real-world manufacturing process.
 
+One potential additional parameter that can be optimized, is the stiffness value of the robotic system based on its current pose. Maintaining high stiffness in the orthogonal cutting direction is crucial for minimizing deviations, while low stiffness combined with high contact forces can result in significant dimensional errors. Finite-element analysis or multi-body simulation can be used to determine the stiffness value and optimize it for better performance by specifically defining the redundant DoF.
 
-%Further validation processes entails conducting real-world tests and simulations to evaluate optimized parameter performance and verify the effectiveness of the proposed methodology.
+Another important parameter for future research is the collision index. The collision index is used to identify potential collisions between any part of the robot or the end-effector and the workpieces or other objects in the environment. This parameter is particularly significant in scenarios involving WAAM systems, where loose wires can change their position depending on the robots pose. Preventing collisions is essential to avoid damage to the workpiece, the robot, or other equipment. As of now the optimization algorithm does not consider this option.
 
+One area where the PSO optimization process can lead to significant advantages is section-wise optimization. The toolpath can be divided into sections, and for each section, the optimal settings of the redundant DoF can be determined. To make this approach work effectively, it is important to consider the boundary conditions at the transition points between the individual sections.
 
-		Cycle time 
-		%Another important parameter is the cycle time, which represents the time required to execute the G-code. Various factors can influence the cycle time, such as feed rates, engagement depth of a cutting tool, or wire feed rates in the case of additive manufacturing processes. By adjusting these parameters, manufacturers can significantly reduce or increase the cycle time, optimizing the efficiency and productivity of the manufacturing process.
-		
-		%Analyzing and optimizing the cycle time helps to streamline operations, reduce production time, and enhance overall productivity. It allows manufacturers to identify opportunities for improvement and make informed decisions regarding process parameters, leading to increased throughput and cost savings.
-		
-				Stiffness value
-				
-				%Another crucial factor in industrial robot tool path execution is the stiffness value. This value specifically refers to the stiffness in the direction of the highest contact forces, or the most critical direction. In certain machining scenarios, such as when cutting a slot with full engagement, the stiffness in the cutting direction may be of lesser importance compared to the stiffness in the perpendicular direction of the cut.
-				
-				%Maintaining high stiffness in the orthogonal cutting direction is vital, as it helps minimize deviations from the desired mid-axis of the slot. Conversely, when high contact forces are combined with low stiffness, it can result in significant deviations in the final dimensions of the machined part.
-				%To determine the stiffness value, a finite-element analysis, multi-body simulation or CAM simulation can be employed. These simulations provide the necessary data, which is also stored in the form of an array, to extract the stiffness values for analysis and optimization purposes.
-				
-				
-						Collision index
+Furthermore, implementing the proposed method in a CAM software can provide faster computation and enable the optimization of more complex toolpaths. Another option to speed up the computation is to program the algorithm in such a way that it is designed for multi-threading. Such implementation can result in significantly faster optimization.  
 
-%The collision index is used to determine if any potential collisions could occur between any part of the robot or the end-effector and the workpieces or other objects in the environment. This parameter is particularly important in scenarios involving WAAM systems, where loose wires can change their position depending on the robot's pose. It helps to prevent potential collisions that could lead to damage to the workpiece, the robot, or other equipment.
+Moving forward, it is necessary to conduct further validation processes, including real-world tests and simulations, to evaluate the performance of the optimized parameters and verify the effectiveness of the proposed methodology. Additionally, exploring the implementation of machine learning techniques for best-case calculations could be a valuable avenue for future research.
 
-Man kann im Ausblick zeigen, dass ein Bauteil-Verschieben auch eine Verbesserung bringen kann, aber das ist erstmal nicht der Fokus
-
-ML for best case calculations – Oultook?)
-
-
-ABSCHITTSWESEIE OPTIMIREB
+In conclusion, conducting additional tests and thorough validation can greatly enhance the efficiency, productivity, and safety of the manufacturing process.
