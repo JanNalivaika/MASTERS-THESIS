@@ -6233,46 +6233,6 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2351978920304601
       \endverb
     \endentry
-    \entry{Liang.2021}{article}{}
-      \name{author}{3}{}{%
-        {{hash=ec7fde3e8c2c43a9ee190f4f570fab08}{%
-           family={Liang},
-           familyi={L\bibinitperiod},
-           given={Fusheng},
-           giveni={F\bibinitperiod}}}%
-        {{hash=4d6c87baedb8dcba3c4bad5608281598}{%
-           family={Kang},
-           familyi={K\bibinitperiod},
-           given={Chengwei},
-           giveni={C\bibinitperiod}}}%
-        {{hash=b8b41b653c8ddd0332b0379432c93143}{%
-           family={Fang},
-           familyi={F\bibinitperiod},
-           given={Fengzhou},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{0610aff6faed6cd49c17be67804f1399}
-      \strng{fullhash}{0610aff6faed6cd49c17be67804f1399}
-      \strng{bibnamehash}{0610aff6faed6cd49c17be67804f1399}
-      \strng{authorbibnamehash}{0610aff6faed6cd49c17be67804f1399}
-      \strng{authornamehash}{0610aff6faed6cd49c17be67804f1399}
-      \strng{authorfullhash}{0610aff6faed6cd49c17be67804f1399}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{1. With the rapid development of optics, dies and aerospace industries, complex surfaces usually constructed with free-form geometries have been widely used to improve the performance of equipment ...}
-      \field{journaltitle}{International Journal of Production Research}
-      \field{number}{18}
-      \field{title}{A review on tool orientation planning in multi-axis machining}
-      \field{volume}{59}
-      \field{year}{2021}
-      \field{pages}{5690\bibrangedash 5720}
-      \range{pages}{31}
-      \verb{doi}
-      \verb 10.1080/00207543.2020.1786187
-      \endverb
-    \endentry
     \entry{Ramazanov.2020}{article}{}
       \name{author}{5}{}{%
         {{hash=d862a13cfb7e3e714b0590d48c1b2317}{%
