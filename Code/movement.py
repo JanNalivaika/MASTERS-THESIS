@@ -59,9 +59,9 @@ EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
 pos = np.load("Joint_angles/path_3_rot_0_tilt_0_C_0.npy")
-#pos = np.load("path_1_rot_0_tilt_0_C_26.npy")
+pos = np.load("RealA.npy")
 
-for iter in range(0,len(pos),15):
+for iter in range(0,len(pos),10):
     plt.clf()
     theta = pos[iter]
     theta = np.degrees(theta)

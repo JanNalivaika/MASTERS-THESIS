@@ -34,14 +34,14 @@ np.set_printoptions(precision=5, suppress=True)
 #os.mkdir("Joint_angles")
 
 
-for selection in [1,2,3]:
+for selection in [4]:
     for rot_winkel in range(1):
-        for kipp_winkel in range(-45,46,2):
-            for c_axis in range(-135,140,5):
+        for kipp_winkel in range(1): #-45,46,2
+            for c_axis in range(1): # -135,140,5
 
                 if os.path.exists(f"Joint_angles_lowres/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy"):
                     print("exists")
-                    pass
+                    #pass
                 else:
 
                     print("Started")
@@ -56,7 +56,8 @@ for selection in [1,2,3]:
                     sol = np.deg2rad(sol)
                     pos = []
 
-                    xyz = np.load(f"Toolpaths/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}.npy")
+                    #xyz = np.load(f"Toolpaths/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}.npy")
+                    xyz = np.load(f"RealG.npy")
 
                     xyz[0]+= 1000
                     xyz[1] += 0
@@ -67,9 +68,8 @@ for selection in [1,2,3]:
 
                     #for iter in range(len(xyz[0])):
 
-                    for iter in range(0,len(xyz[0]),3):
-
-
+                    for iter in range(0,len(xyz[0]),1):
+                        c_axis = xyz[5][iter]
 
                         robot = RobotSerial(dh_params)
 
@@ -85,7 +85,9 @@ for selection in [1,2,3]:
                         pos.append(sol)
 
                     #np.save(f"Joint_angles/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
-                    np.save(f"Joint_angles_lowres/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
+                    #np.save(f"Joint_angles_lowres/path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
+                    np.save(f"RealA.npy",pos)
+
                     print(f"DONE: path_{selection}_rot_{rot_winkel}_tilt_{kipp_winkel}_C_{c_axis}   TIME: {np.ceil(time.time()-t1)}s")
 
 

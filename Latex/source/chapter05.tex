@@ -2,7 +2,22 @@
 \chapter{Conclusion}%
 
 \section{Summary}%
+This thesis proposes a method for optimizing the execution of a toolpath on robotic systems with redundant DoF.
 
+Firstly, the problem formulation highlights the flexibility and various issues that arise with redundant DoF. It discusses how singularity avoidance can help industrial robots avoid sub-optimal poses that may lead to unexpected behavior. Redundant DoF can also affect joint accelerations and jerk, potentially causing excessive wear on parts and resulting in more downtime and sub-optimal part quality. Additionally, other factors such as extension control, precision, and energy use are mentioned, and their impact on the manufacturing process is discussed.
+
+The aim of this thesis is to propose and validate a systematic approach to leveraging these redundant DoF in order to optimize towards a user-defined goal. Currently, there is no publication available that presents a general solution to this problem.
+
+
+Chapter \ref{SST} provides a comprehensive discussion on the state of science and technology, aiming to provide a clear understanding of the individual components of manufacturing systems and optimization algorithms. Both subtractive and additive manufacturing are examined in detail, including a review of their respective strengths and weaknesses. An important focus is placed on one of the common processes in additive manufacturing, namely WAAM, which has a significant relationship with industrial robots. In Chapter \ref{IR}, the functionality of these robots is described in detail, with special attention given to the issue of redundancy in such robotic systems.
+
+Chapter \ref{comp} focuses on a comparative analysis of published research papers related to singularity avoidance, optimization of joint acceleration and jerk, optimization of energy use, and optimization of stiffness. Each section highlights the available options and approaches for leveraging redundant DoF to achieve improved performance in these specific areas. The examination of multiple methods serves as the foundation for understanding the current state of cutting-edge research and identifying any existing research gaps.
+
+Thus far, no global optimization approach has been proposed that can consider a user-defined input with specified goals, based on multiple process parameters, and providing the optimal settings for the redundant DoF. This represents an important research opportunity in the field.
+
+Chapter \ref{METmain} presents a solution for the identified research gap. In order to address this problem, a carefully selected list of process parameters is introduced and thoroughly discussed. These parameters are derived from the movement of the robot arm and include variables such as the rotational position of joints over time, as well as their subsequent derivatives and direction changes.
+
+After summarizing which process parameters can be extracted form a toolpth traversed by a industrial robot, the first main step of the methodology is presented. To calculate the global score it is necessary to calcualte the individual local shore 
 
 \newpage
 
@@ -20,4 +35,7 @@ Furthermore, implementing the proposed method in a CAM software can provide fast
 
 Moving forward, it is necessary to conduct further validation processes, including real-world tests and simulations, to evaluate the performance of the optimized parameters and verify the effectiveness of the proposed methodology. Additionally, exploring the implementation of machine learning techniques for best-case calculations could be a valuable avenue for future research.
 
-In conclusion, conducting additional tests and thorough validation can greatly enhance the efficiency, productivity, and safety of the manufacturing process.
+%In conclusion, conducting additional tests and thorough validation can greatly enhance the efficiency, productivity, and safety of the manufacturing process.
+
+%Energy Use:
+%Redundant degrees of freedom can increase energy consumption in manufacturing systems. Additional joints and actuators require more power, leading to higher energy costs and environmental impact. Efficient energy management strategies, such as optimizing control algorithms, utilizing regenerative braking, and incorporating energy-efficient components, are crucial to minimize energy use while maintaining system performance.

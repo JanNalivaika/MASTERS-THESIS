@@ -259,7 +259,7 @@ class PSO:
 
             ax.imshow(matrix)
 
-            #plt.pause(0.5)
+            plt.pause(0.5)
 
             i += 1
 
@@ -288,7 +288,7 @@ if __name__ == "__main__":
     num_particles = 20
     max_iter = 5
 
-    for path in [2]:
+    for path in [1,3]:
 
         Position_list = []
         File_list = []

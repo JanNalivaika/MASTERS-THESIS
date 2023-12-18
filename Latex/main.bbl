@@ -510,6 +510,51 @@
       \field{title}{Computer aided design and manufacturing}
       \field{year}{2020}
     \endentry
+    \entry{Liberman.2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a36964058a389ba95c1b58763351a3d0}{%
+           family={Liberman},
+           familyi={L\bibinitperiod},
+           given={Ya.\bibnamedelimi L.},
+           giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=fb2e2b88a0a61a358b0c0bd939f3f6e1}{%
+           family={Gorbunova},
+           familyi={G\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{fullhash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{bibnamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authorbibnamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authornamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authorfullhash}{27e66cb83001be261ac6d9fb06161a6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The quality of CNC machines and their control systems is assessed in terms of the contour accuracy, consisting of two components: the accuracy in sending the signal confirming that the working component has reached the specified coordinate; and the accuracy in executing the stop command, given the inertia of the actuators. Recommendations are made regarding the selection of the device for monitoring the motion of the working components in a CNC machine with a gapless gear transmission and a torsional motor. If the required positional accuracy is low, it is acceptable to disregard the error in the gear ratio of the mechanical transmission between the sensor and the guide screw (or any other device converting rotation into linear motion). When using a device for monitoring the motion of the working components in a CNC machine, the adjustment of the sensor at the center of the scale interval should be as precise as possible.}
+      \field{issn}{1934-8088}
+      \field{journaltitle}{Russian Engineering Research}
+      \field{number}{11}
+      \field{title}{Selection of Positioning Devices for the Components of CNC Machines}
+      \field{volume}{41}
+      \field{year}{2021}
+      \field{pages}{1067\bibrangedash 1070}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.3103/S1068798X21110204
+      \endverb
+      \verb{file}
+      \verb Liberman, Gorbunova 2021 - Selection of Positioning Devices:Attachments/Liberman, Gorbunova 2021 - Selection of Positioning Devices.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.3103/s1068798x21110204
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.3103/s1068798x21110204
+      \endverb
+    \endentry
     \entry{Jia.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=d261670f4ba5df509b360f3d91c5c892}{%
@@ -1557,8 +1602,8 @@
       \strng{authorbibnamehash}{24d7309417112ffae6d00aab4715847f}
       \strng{authornamehash}{24d7309417112ffae6d00aab4715847f}
       \strng{authorfullhash}{24d7309417112ffae6d00aab4715847f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A new method of kinematic analysis and singularity analysis is proposed for a 7-DOF redundant manipulator with three consecutive parallel axes. First, the redundancy angle is described according to the self-motion characteristics of the manipulator, the position and orientation of the end-effector are separated, and the inverse kinematics of this manipulator is analyzed by geometric methods with the redundancy angle as a constraint. Then, the Jacobian matrix is established to derive the conditions for the kinematic singularities of the robotic arm by using the primitive matrix method and the block matrix method. Then, the kinematic singularities conditions in the joint space are mapped to the Cartesian space, and the singular configuration is described using the end poses and redundancy angles of the robotic arm, and a singularity avoidance method based on the redundancy angles and end pose is proposed. Finally, the correctness and feasibility of the inverse kinematics algorithm and the singularity avoidance method are verified by simulation examples.}
@@ -2452,8 +2497,8 @@
       \strng{authorbibnamehash}{5c0cdd815ae0aed91df980c76448d6ad}
       \strng{authornamehash}{5c0cdd815ae0aed91df980c76448d6ad}
       \strng{authorfullhash}{5c0cdd815ae0aed91df980c76448d6ad}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Composite material~is a~material~made by the combination of two or more constituent~materials~with considerably distinct properties resulting in a~material~that presents chemical and physical properties that are not seem in any...}
@@ -2501,8 +2546,8 @@
       \strng{authorbibnamehash}{e8f738c7a52fe62173f4d6069461b546}
       \strng{authornamehash}{e8f738c7a52fe62173f4d6069461b546}
       \strng{authorfullhash}{e8f738c7a52fe62173f4d6069461b546}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents the solution to evaluate and predict machining precision of a multi-axis computer numerical control (CNC) machine tool. The {\grqq}funct$\ldots$}
@@ -2992,8 +3037,8 @@
       \strng{authorbibnamehash}{c8cc80f102140a20b53625da14b492a5}
       \strng{authornamehash}{c8cc80f102140a20b53625da14b492a5}
       \strng{authorfullhash}{c8cc80f102140a20b53625da14b492a5}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Self-excited vibration, widely referred to as chatter, has always been a limitation and challenge in machining. To suppress milling chatter vibration $\ldots$}
@@ -3323,8 +3368,8 @@
       \strng{authorbibnamehash}{8c8a21b012b156aa7db82008f63d4570}
       \strng{authornamehash}{8c8a21b012b156aa7db82008f63d4570}
       \strng{authorfullhash}{8c8a21b012b156aa7db82008f63d4570}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The use of additive manufacturing technologies in different industries has increased substantially during the past years. Henry Ford introduced the mo$\ldots$}
@@ -3475,19 +3520,6 @@
       \verb 10.1142/S2424862219300011
       \endverb
     \endentry
-    \entry{3D}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{abstract}{AnkerMake M5C 3D-Drucker + 2kg Filament - Mühelose Steuerung von mehreren Geräten aus Anpassbare {"}One-Click{"}-Taste 500mm/s Hochgeschwindigkeitsdruck[1] 35mm$^3$/s Extrusionsfluss 0,1mm Druckpräzision[2] 7$\times$7 Auto-Nivellierung Mühelose Einrichtung in nur 15 Minuten Struktur aus Aluminiumlegierung 220$\times$220$\times$220mm$^3$ Druckvolumen}
-      \field{title}{AnkerMake M5C 3D-Drucker + 2kg Filament: Last access: 30.10.2023}
-      \verb{urlraw}
-      \verb https://www.ankermake.com/eu-de/products/m5c-3d-printer-2kg-filament?variant=45837302694176&discount=WS24DEM5C
-      \endverb
-      \verb{url}
-      \verb https://www.ankermake.com/eu-de/products/m5c-3d-printer-2kg-filament?variant=45837302694176&discount=WS24DEM5C
-      \endverb
-    \endentry
     \entry{Svetlizky.2021}{article}{}
       \name{author}{9}{}{%
         {{hash=b802de1ab5097711916905d6ed317c7e}{%
@@ -3579,6 +3611,65 @@
       \verb 10.31030/3290011
       \endverb
     \endentry
+    \entry{Ou.2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fd762c131409ead60c94ae65feb47cad}{%
+           family={Ou},
+           familyi={O\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=072990a4766dc0d5024cdd12679f1405}{%
+           family={Mukherjee},
+           familyi={M\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b29b39badfea2d7ad83d39ed0fdd5a24}{%
+           family={Knapp},
+           familyi={K\bibinitperiod},
+           given={G.\bibnamedelimi L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=39a828ca447ab36e7e33ce05d4c575d9}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=eb149039038c6ca02af5debcae806110}{%
+           family={DebRoy},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{fullhash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{bibnamehash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{authorbibnamehash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{authornamehash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \strng{authorfullhash}{eef4eb6956add0c853e9a8d21118a9f4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Structure, properties and serviceability of components made by wire arc additive manufacturing (WAAM) depend on the process parameters such as arc pow$\ldots$}
+      \field{issn}{0017-9310}
+      \field{journaltitle}{International Journal of Heat and Mass Transfer}
+      \field{title}{Fusion zone geometries, cooling rates and solidification parameters during wire arc additive manufacturing}
+      \field{volume}{127}
+      \field{year}{2018}
+      \field{pages}{1084\bibrangedash 1094}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.ijheatmasstransfer.2018.08.111
+      \endverb
+      \verb{file}
+      \verb Ou, Mukherjee et al. 2018 - Fusion zone geometries:Attachments/Ou, Mukherjee et al. 2018 - Fusion zone geometries.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0017931018323974
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0017931018323974
+      \endverb
+    \endentry
     \entry{Cunningham.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=0f4aa9b723d3efd8d5286f3d9be1018d}{%
@@ -3636,6 +3727,171 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/s2214860418303920
+      \endverb
+    \endentry
+    \entry{Ding.2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=62907ec38463ccc60c56556aefabae53}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Donghong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d8d1756d391b3b0eb8dcc0bf791d1fbf}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Zengxi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=274afe708f5bd0556dec396d7265bea2}{%
+           family={Cuiuri},
+           familyi={C\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f606fef6e71a3be35e11adc561b1422e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Huijun},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{fullhash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{bibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{authorbibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{authornamehash}{aafd04ab6b37bd187b72b7b014edabae}
+      \strng{authorfullhash}{aafd04ab6b37bd187b72b7b014edabae}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Wire-feed additive manufacturing (AM) is a promising alternative to traditional subtractive manufacturing for fabricating large expensive metal components with complex geometry. The current research focus on wire-feed AM is trying to produce complex-shaped functional metal components with good geometry accuracy, surface finish and material property to meet the demanding requirements from aerospace, automotive and rapid tooling industry. Wire-feed AM processes generally involve high residual stresses and distortions due to the excessive heat input and high deposition rate. The influences of process conditions, such as energy input, wire-feed rate, welding speed, deposition pattern and deposition sequences, etc., on thermal history and resultant residual stresses of AM-processed components needs to be further understood. In addition, poor accuracy and surface finish of the process limit the applications of wire-feed AM technology. In this paper, after an introduction of various wire-feed AM technologies and its characteristics, an in depth review of various process aspects of wire-feed AM, including quality and accuracy of wire-feed AM processed components, will be presented. The overall objective is to identify the current challenges for wire-feed AM as well as point out the future research direction.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{1-4}
+      \field{title}{Wire-feed additive manufacturing of metal components: technologies, developments and future interests}
+      \field{volume}{81}
+      \field{year}{2015}
+      \field{pages}{465\bibrangedash 481}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s00170-015-7077-3
+      \endverb
+      \verb{file}
+      \verb Ding, Pan et al. 2015 - Wire-feed additive manufacturing of metal:Attachments/Ding, Pan et al. 2015 - Wire-feed additive manufacturing of metal.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-015-7077-3
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-015-7077-3
+      \endverb
+    \endentry
+    \entry{Schmitz.2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=68b1a7b46f40b7c801ef89dae7296816}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b05e6a3ae9764201ad5b8dca1253cf5}{%
+           family={Wiartalla},
+           familyi={W\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=30797a6192d17c3a000b03d4e7fadd8a}{%
+           family={Gelfgren},
+           familyi={G\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fab618f1321f12cc560875c3a91b6bb9}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e67a8122b799fdf450be3aadceedce44}{%
+           family={Corves},
+           familyi={C\bibinitperiod},
+           given={Burkhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e30b00ec4014b77d38ed322c83771586}{%
+           family={Hüsing},
+           familyi={H\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{fullhash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{bibnamehash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{authorbibnamehash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{authornamehash}{24a8c90dc924e8aa048113888d25e12e}
+      \strng{authorfullhash}{24a8c90dc924e8aa048113888d25e12e}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Previous algorithms for slicing, path planning or trajectory planning of additive manufacturing cannot be used consistently for multidirectional additive manufacturing with pure object manipulation in wire-arc additive manufacturing. This work presents a novel path planning approach that directly takes robot kinematics into account and thus ensures the reachability of all critical path poses. In an additional step, the planned path segments are smoothed so that joint velocity limits are respected. It is shown that the implemented path planner generates executable robot paths and at the same time maintains the process quality (in this case, sufficient coverage of the slice area). While the introduced method enables the generation of reachable printing paths, the smoothing algorithm allows for the execution of the path with respect to the robot's velocity limits and at the same time improves the slice coverage. Future experiments will show the realization of the real robot setup presented.}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{13}
+      \field{title}{A Robot-Centered Path-Planning Algorithm for Multidirectional Additive Manufacturing for WAAM Processes and Pure Object Manipulation}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{pages}{5759}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app11135759
+      \endverb
+      \verb{file}
+      \verb Schmitz, Wiartalla et al. 2021 - A Robot-Centered Path-Planning Algorithm:Attachments/Schmitz, Wiartalla et al. 2021 - A Robot-Centered Path-Planning Algorithm.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-3417/11/13/5759
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-3417/11/13/5759
+      \endverb
+    \endentry
+    \entry{Nagasai.2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f055f515efbc3651a9fcde31d9d7b8ef}{%
+           family={Nagasai},
+           familyi={N\bibinitperiod},
+           given={Bellamkonda\bibnamedelima Prasanna},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ee14b8193cbb7aa0f52f95887b2b9538}{%
+           family={Malarvizhi},
+           familyi={M\bibinitperiod},
+           given={Sudersanan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6e47819e4c5929d10dbbd90437645332}{%
+           family={Balasubramanian},
+           familyi={B\bibinitperiod},
+           given={Visvalingam},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{fullhash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{bibnamehash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{authorbibnamehash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{authornamehash}{6abc97353bef5855cea6b9e94e9f2457}
+      \strng{authorfullhash}{6abc97353bef5855cea6b9e94e9f2457}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In recent decades, Additive Manufacturing (AM) has become a viable alternative to the manufacture of metal parts. Wire arc additive manufacturing (WAA$\ldots$}
+      \field{issn}{1755-5817}
+      \field{journaltitle}{CIRP Journal of Manufacturing Science and Technology}
+      \field{title}{Effect of welding processes on mechanical and metallurgical characteristics of carbon steel cylindrical components made by wire arc additive manufacturing (WAAM) technique}
+      \field{volume}{36}
+      \field{year}{2022}
+      \field{pages}{100\bibrangedash 116}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.cirpj.2021.11.005
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581721001887
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1755581721001887
       \endverb
     \endentry
     \entry{IvanTabernero.2018}{article}{}
@@ -3860,230 +4116,6 @@
       \endverb
       \verb{url}
       \verb https://www.lortek.es/en/technological-areas/metal-additive-manufacturing/waam
-      \endverb
-    \endentry
-    \entry{Ou.2018}{article}{}
-      \name{author}{5}{}{%
-        {{hash=fd762c131409ead60c94ae65feb47cad}{%
-           family={Ou},
-           familyi={O\bibinitperiod},
-           given={W.},
-           giveni={W\bibinitperiod}}}%
-        {{hash=072990a4766dc0d5024cdd12679f1405}{%
-           family={Mukherjee},
-           familyi={M\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-        {{hash=b29b39badfea2d7ad83d39ed0fdd5a24}{%
-           family={Knapp},
-           familyi={K\bibinitperiod},
-           given={G.\bibnamedelimi L.},
-           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=39a828ca447ab36e7e33ce05d4c575d9}{%
-           family={Wei},
-           familyi={W\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=eb149039038c6ca02af5debcae806110}{%
-           family={DebRoy},
-           familyi={D\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{eef4eb6956add0c853e9a8d21118a9f4}
-      \strng{fullhash}{eef4eb6956add0c853e9a8d21118a9f4}
-      \strng{bibnamehash}{eef4eb6956add0c853e9a8d21118a9f4}
-      \strng{authorbibnamehash}{eef4eb6956add0c853e9a8d21118a9f4}
-      \strng{authornamehash}{eef4eb6956add0c853e9a8d21118a9f4}
-      \strng{authorfullhash}{eef4eb6956add0c853e9a8d21118a9f4}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Structure, properties and serviceability of components made by wire arc additive manufacturing (WAAM) depend on the process parameters such as arc pow$\ldots$}
-      \field{issn}{0017-9310}
-      \field{journaltitle}{International Journal of Heat and Mass Transfer}
-      \field{title}{Fusion zone geometries, cooling rates and solidification parameters during wire arc additive manufacturing}
-      \field{volume}{127}
-      \field{year}{2018}
-      \field{pages}{1084\bibrangedash 1094}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1016/j.ijheatmasstransfer.2018.08.111
-      \endverb
-      \verb{file}
-      \verb Ou, Mukherjee et al. 2018 - Fusion zone geometries:Attachments/Ou, Mukherjee et al. 2018 - Fusion zone geometries.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/s0017931018323974
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/s0017931018323974
-      \endverb
-    \endentry
-    \entry{Ding.2015}{article}{}
-      \name{author}{4}{}{%
-        {{hash=62907ec38463ccc60c56556aefabae53}{%
-           family={Ding},
-           familyi={D\bibinitperiod},
-           given={Donghong},
-           giveni={D\bibinitperiod}}}%
-        {{hash=d8d1756d391b3b0eb8dcc0bf791d1fbf}{%
-           family={Pan},
-           familyi={P\bibinitperiod},
-           given={Zengxi},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=274afe708f5bd0556dec396d7265bea2}{%
-           family={Cuiuri},
-           familyi={C\bibinitperiod},
-           given={Dominic},
-           giveni={D\bibinitperiod}}}%
-        {{hash=f606fef6e71a3be35e11adc561b1422e}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Huijun},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{aafd04ab6b37bd187b72b7b014edabae}
-      \strng{fullhash}{aafd04ab6b37bd187b72b7b014edabae}
-      \strng{bibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
-      \strng{authorbibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
-      \strng{authornamehash}{aafd04ab6b37bd187b72b7b014edabae}
-      \strng{authorfullhash}{aafd04ab6b37bd187b72b7b014edabae}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Wire-feed additive manufacturing (AM) is a promising alternative to traditional subtractive manufacturing for fabricating large expensive metal components with complex geometry. The current research focus on wire-feed AM is trying to produce complex-shaped functional metal components with good geometry accuracy, surface finish and material property to meet the demanding requirements from aerospace, automotive and rapid tooling industry. Wire-feed AM processes generally involve high residual stresses and distortions due to the excessive heat input and high deposition rate. The influences of process conditions, such as energy input, wire-feed rate, welding speed, deposition pattern and deposition sequences, etc., on thermal history and resultant residual stresses of AM-processed components needs to be further understood. In addition, poor accuracy and surface finish of the process limit the applications of wire-feed AM technology. In this paper, after an introduction of various wire-feed AM technologies and its characteristics, an in depth review of various process aspects of wire-feed AM, including quality and accuracy of wire-feed AM processed components, will be presented. The overall objective is to identify the current challenges for wire-feed AM as well as point out the future research direction.}
-      \field{issn}{1433-3015}
-      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
-      \field{number}{1-4}
-      \field{title}{Wire-feed additive manufacturing of metal components: technologies, developments and future interests}
-      \field{volume}{81}
-      \field{year}{2015}
-      \field{pages}{465\bibrangedash 481}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1007/s00170-015-7077-3
-      \endverb
-      \verb{file}
-      \verb Ding, Pan et al. 2015 - Wire-feed additive manufacturing of metal:Attachments/Ding, Pan et al. 2015 - Wire-feed additive manufacturing of metal.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/article/10.1007/s00170-015-7077-3
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/article/10.1007/s00170-015-7077-3
-      \endverb
-    \endentry
-    \entry{Schmitz.2021}{article}{}
-      \name{author}{6}{}{%
-        {{hash=68b1a7b46f40b7c801ef89dae7296816}{%
-           family={Schmitz},
-           familyi={S\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4b05e6a3ae9764201ad5b8dca1253cf5}{%
-           family={Wiartalla},
-           familyi={W\bibinitperiod},
-           given={Jan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=30797a6192d17c3a000b03d4e7fadd8a}{%
-           family={Gelfgren},
-           familyi={G\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fab618f1321f12cc560875c3a91b6bb9}{%
-           family={Mann},
-           familyi={M\bibinitperiod},
-           given={Samuel},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e67a8122b799fdf450be3aadceedce44}{%
-           family={Corves},
-           familyi={C\bibinitperiod},
-           given={Burkhard},
-           giveni={B\bibinitperiod}}}%
-        {{hash=e30b00ec4014b77d38ed322c83771586}{%
-           family={Hüsing},
-           familyi={H\bibinitperiod},
-           given={Mathias},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{24a8c90dc924e8aa048113888d25e12e}
-      \strng{fullhash}{24a8c90dc924e8aa048113888d25e12e}
-      \strng{bibnamehash}{24a8c90dc924e8aa048113888d25e12e}
-      \strng{authorbibnamehash}{24a8c90dc924e8aa048113888d25e12e}
-      \strng{authornamehash}{24a8c90dc924e8aa048113888d25e12e}
-      \strng{authorfullhash}{24a8c90dc924e8aa048113888d25e12e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Previous algorithms for slicing, path planning or trajectory planning of additive manufacturing cannot be used consistently for multidirectional additive manufacturing with pure object manipulation in wire-arc additive manufacturing. This work presents a novel path planning approach that directly takes robot kinematics into account and thus ensures the reachability of all critical path poses. In an additional step, the planned path segments are smoothed so that joint velocity limits are respected. It is shown that the implemented path planner generates executable robot paths and at the same time maintains the process quality (in this case, sufficient coverage of the slice area). While the introduced method enables the generation of reachable printing paths, the smoothing algorithm allows for the execution of the path with respect to the robot's velocity limits and at the same time improves the slice coverage. Future experiments will show the realization of the real robot setup presented.}
-      \field{journaltitle}{Applied Sciences}
-      \field{number}{13}
-      \field{title}{A Robot-Centered Path-Planning Algorithm for Multidirectional Additive Manufacturing for WAAM Processes and Pure Object Manipulation}
-      \field{volume}{11}
-      \field{year}{2021}
-      \field{pages}{5759}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/app11135759
-      \endverb
-      \verb{file}
-      \verb Schmitz, Wiartalla et al. 2021 - A Robot-Centered Path-Planning Algorithm:Attachments/Schmitz, Wiartalla et al. 2021 - A Robot-Centered Path-Planning Algorithm.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.mdpi.com/2076-3417/11/13/5759
-      \endverb
-      \verb{url}
-      \verb https://www.mdpi.com/2076-3417/11/13/5759
-      \endverb
-    \endentry
-    \entry{Nagasai.2022}{article}{}
-      \name{author}{3}{}{%
-        {{hash=f055f515efbc3651a9fcde31d9d7b8ef}{%
-           family={Nagasai},
-           familyi={N\bibinitperiod},
-           given={Bellamkonda\bibnamedelima Prasanna},
-           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=ee14b8193cbb7aa0f52f95887b2b9538}{%
-           family={Malarvizhi},
-           familyi={M\bibinitperiod},
-           given={Sudersanan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=6e47819e4c5929d10dbbd90437645332}{%
-           family={Balasubramanian},
-           familyi={B\bibinitperiod},
-           given={Visvalingam},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{6abc97353bef5855cea6b9e94e9f2457}
-      \strng{fullhash}{6abc97353bef5855cea6b9e94e9f2457}
-      \strng{bibnamehash}{6abc97353bef5855cea6b9e94e9f2457}
-      \strng{authorbibnamehash}{6abc97353bef5855cea6b9e94e9f2457}
-      \strng{authornamehash}{6abc97353bef5855cea6b9e94e9f2457}
-      \strng{authorfullhash}{6abc97353bef5855cea6b9e94e9f2457}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In recent decades, Additive Manufacturing (AM) has become a viable alternative to the manufacture of metal parts. Wire arc additive manufacturing (WAA$\ldots$}
-      \field{issn}{1755-5817}
-      \field{journaltitle}{CIRP Journal of Manufacturing Science and Technology}
-      \field{title}{Effect of welding processes on mechanical and metallurgical characteristics of carbon steel cylindrical components made by wire arc additive manufacturing (WAAM) technique}
-      \field{volume}{36}
-      \field{year}{2022}
-      \field{pages}{100\bibrangedash 116}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1016/j.cirpj.2021.11.005
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/s1755581721001887
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/s1755581721001887
       \endverb
     \endentry
     \entry{Dutra.2015}{article}{}
@@ -4388,8 +4420,8 @@
       \strng{authorbibnamehash}{735b4302940f5ca514012172355617a8}
       \strng{authornamehash}{735b4302940f5ca514012172355617a8}
       \strng{authorfullhash}{735b4302940f5ca514012172355617a8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{It can be difficult to capture a clear video of cold metal transfer welds due variation in light. Using a Xiris weld camera can help solve this.}
@@ -5256,6 +5288,41 @@
       \verb Singh, Kukshal et al. 2021 - A Review on Forward:Attachments/Singh, Kukshal et al. 2021 - A Review on Forward.pdf:application/pdf
       \endverb
     \endentry
+    \entry{HuynhHoaiNam.2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=af65202c872c733936dfa89c773c5f86}{%
+           family={{Huynh Hoai Nam}},
+           familyi={H\bibinitperiod}}}%
+        {{hash=db790f8f9fb8401b1ea11e8f14118089}{%
+           family={{Edouard Riviere}},
+           familyi={E\bibinitperiod}}}%
+        {{hash=25c9235d3452177edc517679de67c9c7}{%
+           family={{Olivier Verlinden}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{fullhash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{bibnamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{authorbibnamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{authornamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \strng{authorfullhash}{412fbedda8ee8955e6ddfb5ba6f05acb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{PDF | As robots are increasingly involved in industry, robotic manufacturing techniques arise in order to replace their conventional counterpart.... | Find, read and cite all the research you need on ResearchGate}
+      \field{title}{Multibody modelling of a flexible 6-axis robot dedicated to robotic machining}
+      \field{year}{2018}
+      \verb{file}
+      \verb Huynh Hoai Nam, Edouard Riviere et al. 2018 - Multibody modelling of a flexible:Attachments/Huynh Hoai Nam, Edouard Riviere et al. 2018 - Multibody modelling of a flexible.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/profile/huynh-hoai-nam/publication/326106790_multibody_modelling_of_a_flexible_6-axis_robot_dedicated_to_robotic_machining
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/profile/huynh-hoai-nam/publication/326106790_multibody_modelling_of_a_flexible_6-axis_robot_dedicated_to_robotic_machining
+      \endverb
+    \endentry
     \entry{Lin.2023}{article}{}
       \name{author}{3}{}{%
         {{hash=5f65c83b890486e05d6fb24cca8e5b72}{%
@@ -5381,41 +5448,6 @@
       \endverb
       \verb{url}
       \verb https://www.jstage.jst.go.jp/article/jrobomech/31/1/31_57/_article/-char/ja/
-      \endverb
-    \endentry
-    \entry{HuynhHoaiNam.2018}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=af65202c872c733936dfa89c773c5f86}{%
-           family={{Huynh Hoai Nam}},
-           familyi={H\bibinitperiod}}}%
-        {{hash=db790f8f9fb8401b1ea11e8f14118089}{%
-           family={{Edouard Riviere}},
-           familyi={E\bibinitperiod}}}%
-        {{hash=25c9235d3452177edc517679de67c9c7}{%
-           family={{Olivier Verlinden}},
-           familyi={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
-      \strng{fullhash}{412fbedda8ee8955e6ddfb5ba6f05acb}
-      \strng{bibnamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
-      \strng{authorbibnamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
-      \strng{authornamehash}{412fbedda8ee8955e6ddfb5ba6f05acb}
-      \strng{authorfullhash}{412fbedda8ee8955e6ddfb5ba6f05acb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{PDF | As robots are increasingly involved in industry, robotic manufacturing techniques arise in order to replace their conventional counterpart.... | Find, read and cite all the research you need on ResearchGate}
-      \field{title}{Multibody modelling of a flexible 6-axis robot dedicated to robotic machining}
-      \field{year}{2018}
-      \verb{file}
-      \verb Huynh Hoai Nam, Edouard Riviere et al. 2018 - Multibody modelling of a flexible:Attachments/Huynh Hoai Nam, Edouard Riviere et al. 2018 - Multibody modelling of a flexible.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.researchgate.net/profile/huynh-hoai-nam/publication/326106790_multibody_modelling_of_a_flexible_6-axis_robot_dedicated_to_robotic_machining
-      \endverb
-      \verb{url}
-      \verb https://www.researchgate.net/profile/huynh-hoai-nam/publication/326106790_multibody_modelling_of_a_flexible_6-axis_robot_dedicated_to_robotic_machining
       \endverb
     \endentry
     \entry{Yuan.2020}{article}{}
@@ -7360,8 +7392,8 @@
       \strng{authorbibnamehash}{3bd84671bd37bbf14b8d5ec3776be6af}
       \strng{authornamehash}{3bd84671bd37bbf14b8d5ec3776be6af}
       \strng{authorfullhash}{3bd84671bd37bbf14b8d5ec3776be6af}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Singularity avoidance and aspect maintenance in redundant manipulators}
@@ -7398,8 +7430,8 @@
       \strng{authorbibnamehash}{298cbea50f0726ed213e1fc7304830d6}
       \strng{authornamehash}{298cbea50f0726ed213e1fc7304830d6}
       \strng{authorfullhash}{298cbea50f0726ed213e1fc7304830d6}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings, IEEE International Conference on Robotics and Automation}
