@@ -36,10 +36,10 @@
 \contentsline {subsection}{\numberline {3.3.3}Information Extraction form Time-Series Data}{39}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Information from Angular Position}{40}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{41}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{43}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{44}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk of the Joints}{44}{subsection.3.4.3}%
 \contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{46}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Energy Usage}{47}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Energy Usage}{48}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Continuous Energy-Usage}{48}{subsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{50}{subsection.3.6.2}%
 \contentsline {section}{\numberline {3.7}Reach, Singularities and Torch Orientation}{51}{section.3.7}%

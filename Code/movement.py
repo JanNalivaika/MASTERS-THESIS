@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+import math
 # DH parameters
 
 d =     [600,       0,      0,   800,    0,     200]
@@ -52,6 +52,32 @@ def forward_kinematics(a, alpha, d, theta):
     return transformations, position,rmatrix
 
 
+
+def rotate_x_axis(x, y, z, angle, origin_x=0, origin_y=0, origin_z=0):
+    # Adjust coordinates relative to the origin point
+    x = np.asarray(x)
+    y = np.asarray(y)
+    z = np.asarray(z)
+
+    x -= origin_x
+    y -= origin_y
+    z -= origin_z
+
+    # Convert angle to radians
+    angle_rad = math.radians(angle)
+
+    # Apply rotation formulas
+    y_rotated = (y * math.cos(angle_rad)) - (z * math.sin(angle_rad))
+    z_rotated = (y * math.sin(angle_rad)) + (z * math.cos(angle_rad))
+
+    # Add back the origin point coordinates
+    x_rotated = x + origin_x
+    y_rotated += origin_y
+    z_rotated += origin_z
+
+    return list(x_rotated), list(y_rotated), list(z_rotated)
+
+
 x_coords = []
 y_coords = []
 z_coords = []
@@ -59,9 +85,11 @@ EV = []
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
 pos = np.load("Joint_angles/path_3_rot_0_tilt_0_C_0.npy")
-pos = np.load("RealA.npy")
+pos = np.load("RealG_angles/path_4_rot_0_tilt_conti._C_-30.npy")
 
-for iter in range(0,len(pos),10):
+xyz = np.load(f"RealG.npy")
+angel_before = 0
+for iter in range(0,len(pos),55):
     plt.clf()
     theta = pos[iter]
     theta = np.degrees(theta)
@@ -121,11 +149,16 @@ for iter in range(0,len(pos),10):
     x_coords.append(x)
     y_coords.append(y)
     z_coords.append(z)
+    #ax.scatter(x_coords, y_coords, z_coords, c=col, marker='o', s=2)
 
+    angel = xyz[6,iter]-angel_before
+    #print(angel)
+    x_coords, y_coords, z_coords = rotate_x_axis(x_coords, y_coords, z_coords, angel,
+                                                             origin_x=1000, origin_y=0, origin_z=600)
+
+    angel_before  = xyz[6,iter]
     ax.scatter(x_coords,y_coords,z_coords, c=col, marker='o', s=2)
-
-
-
+    #ax.scatter(x_coords_tilt, y_coords_tilt, z_coords_tilt, c=col, marker='o', s=2)
 
     # Set plot limits
     ax.set_xlim([-100, 1500])
@@ -146,6 +179,13 @@ for iter in range(0,len(pos),10):
     # ax.view_init(elev=30, azim=45)
     ax.elev = 45#35  # Set the elevation angle (vertical rotation)
     ax.azim = -50#-45  # Set the azimuth angle (horizontal rotation
+
+    """ax.elev = 0
+    ax.azim = 0
+    ax.set_ylim([-300, 300])
+    ax.set_zlim([500, 1000])
+    """
+
     # Set plot labels
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
@@ -153,11 +193,12 @@ for iter in range(0,len(pos),10):
     #print(iter, x, y, z)
 
     # Show plot
-    #plt.savefig(f"../Latex/figures/robotprog.png", dpi=500, bbox_inches="tight", pad_inches=0.3)
+    #if iter%100==0: plt.savefig(f"robot/robot{iter}.png", dpi=200, bbox_inches="tight", pad_inches=0.3)
     plt.pause(0.01)
     #print(theta[3]+theta[5])
     #print(pointer1)
     #plt.show()
+    #plt.close()
 
 
     if iter%100 ==0: print(iter)

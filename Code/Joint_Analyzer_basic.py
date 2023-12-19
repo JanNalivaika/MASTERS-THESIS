@@ -70,6 +70,7 @@ def basicscore():
     for path in [1,2,3]:
 
         files = glob.glob(f'Joint_angles/*path_{path}_rot_0_tilt_0*')
+
         DC_tracker = []
         Travel_tracker = []
         Acc_tracker = []
@@ -146,6 +147,102 @@ def basicscore():
         #plt.show()
         plt.close()
 
+
+def RealG():
+    files = glob.glob(f'RealG_angles/*')
+
+    DC_tracker1 = []
+    DC_tracker2 = []
+    DC_tracker3 = []
+    V_tracker4 = []
+    T_tracker6 = []
+
+    X_ax = []
+
+    for idx, file in enumerate(files):
+        C_val = np.float64(file.split("_")[-1].split(".npy")[0])
+
+        X_ax.append(C_val)
+
+        DC_1 = 0
+        DC_2 = 0
+        DC_3 = 0
+        V_4 = 0
+        T_6 = 0
+        for joint in range(6):
+
+            joint_positions = np.degrees(np.load(file)[:, joint])
+            joint_positions = simplify_angle(joint_positions)
+
+            if joint == 0:
+                DC_1 = count_direction_changes(joint_positions)
+
+            if joint == 1:
+                DC_2 = count_direction_changes(joint_positions)
+
+            if joint == 2:
+                DC_3 = count_direction_changes(joint_positions)
+
+
+            if joint == 3:
+                joint_velocity = np.gradient(joint_positions, np.arange(len(joint_positions)*0.1,step = 0.1))
+                V_4 = np.sum(np.square(joint_velocity))
+
+            if joint == 5:
+                for x in range(1, len(joint_positions)):
+                    T_6 += abs(joint_positions[x - 1] - joint_positions[x])
+
+        DC_tracker1.append(DC_1)
+        DC_tracker2.append(DC_2)
+        DC_tracker3.append(DC_3)
+        V_tracker4.append(V_4)
+        T_tracker6.append(T_6)
+
+    plt.figure(figsize=(10, 4), dpi=200)
+
+    scaled_DC_tracker1 = min_max_scaler.fit_transform(-np.array(DC_tracker1).reshape(-1, 1))*100*0.2
+    scaled_DC_tracker2 = min_max_scaler.fit_transform(-np.array(DC_tracker2).reshape(-1, 1))*100*0.2
+    scaled_DC_tracker3 = min_max_scaler.fit_transform(-np.array(DC_tracker3).reshape(-1, 1))*100*0.2
+    scaled_V_tracker4 = min_max_scaler.fit_transform(-np.array(V_tracker4).reshape(-1, 1)) * 100 * 0.2
+    scaled_T_tracker6 = min_max_scaler.fit_transform(-np.array(T_tracker6).reshape(-1, 1)) * 100 * 0.2
+
+
+    X_ax, scaled_DC_tracker1, scaled_DC_tracker2, scaled_DC_tracker3,scaled_V_tracker4,scaled_T_tracker6 = zip(*sorted(zip(X_ax, scaled_DC_tracker1, scaled_DC_tracker2, scaled_DC_tracker3,scaled_V_tracker4,scaled_T_tracker6)))
+
+    plt.plot(X_ax,scaled_DC_tracker1, lw = 0.5, label="Direction changes in joints 1",linestyle='dashed', marker='o')
+    plt.plot(X_ax,scaled_DC_tracker2, lw = 0.5, label="Direction changes in joints 2",linestyle='dashed', marker='o')
+    plt.plot(X_ax,scaled_DC_tracker3, lw = 0.5,  label="Direction changes in joints 3",linestyle='dashed', marker='o')
+    plt.plot(X_ax, scaled_V_tracker4, lw=0.5, label="Velocity in joint 5", linestyle='dashed', marker='o')
+    plt.plot(X_ax, scaled_T_tracker6, lw=0.5, label="Total Travel in joint 6", linestyle='dashed', marker='o')
+
+    plt.xlabel('Rotation around Z in degrees [°]')
+    plt.ylabel('Local Score')
+    plt.ylim((-3,25))
+
+    plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
+    plt.savefig(f"../Latex/figures/LocalScores_{4}.png", bbox_inches='tight',dpi=1200)
+    plt.close()
+    plt.figure(figsize=(10, 4))
+
+    SCORE = np.array(scaled_DC_tracker1)+ np.array(scaled_DC_tracker2) + np.array(scaled_DC_tracker3) + np.array(scaled_V_tracker4) + np.array(scaled_T_tracker6)
+
+    max_value = np.max(SCORE)
+    max_index = X_ax[int(np.where(SCORE == max_value)[0])]
+
+    print(max_value, max_index)
+
+
+    plt.plot(X_ax,SCORE, lw = 0.5, c="red", label = "Global score",linestyle='dashed', marker='o')
+    plt.scatter(max_index, max_value, s = 200, c="green", label="Optimal boundary condition", marker = "2")
+    plt.ylim((-10, 110))
+    plt.xlabel('Rotation around Z in degrees [°]')
+    plt.ylabel('Score')
+
+    plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
+    plt.savefig(f"../Latex/figures/best_c_{4}.png",bbox_inches='tight',dpi=1200)
+    #plt.savefig(f"../Latex/figures/best_c_{4}_combi.png", bbox_inches='tight',dpi=1000)
+    #plt.show()
+    plt.close()
 
 
 def TWODplot():
@@ -265,5 +362,6 @@ def TWODplot():
 
 
 #basicplot()
-basicscore()
+#basicscore()
+RealG()
 #TWODplot()

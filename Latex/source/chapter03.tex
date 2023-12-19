@@ -200,7 +200,7 @@ To address this issue, one possible solution is to generate multiple toolpaths w
 Figure \ref{Localscore} shows how a local score can be calculated by means of variation. Each variation  of the boundary condition results in a different number of direction changes in joint 1. The local score can be determined by essentially applying a Min-Max scaler, which normalizes the values between a minimum and maximum range. In this case the range is set from 0 to 100.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=1\textwidth]{figures/localscore.png}}
+	\centerline{\includegraphics[width=0.9\textwidth]{figures/localscore.png}}
 	\caption{Calculation of the local score trough variation}
 	\label{Localscore}
 \end{figure}
@@ -210,13 +210,13 @@ It is important to note that increasing the number of variations performed befor
 Another factor that needs to be analyzed is whether the variations in the boundary conditions lead to different process parameter values that exceed a certain standard deviation. Figure~\ref{lowstd} illustrates how a local score of 66 is calculated, despite the presence of very small absolute differences. In this case, the standard deviation is only 0.37. On the other hand, Figure~\ref{highstd} demonstrates how the same local score of 66 is calculated, even though the absolute differences are significantly higher. Here, the standard deviation is 22.36. The local score should only be used as input for the global score if the standard deviation exceeds a predetermined threshold. If the standard deviation criteria are not met, the corresponding process parameter should be excluded from the calculation of the global score.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.9\textwidth]{figures/lowstd.png}}
+	\centerline{\includegraphics[width=0.85\textwidth]{figures/lowstd.png}}
 	\caption{Variation with low standard deviation}
 	\label{lowstd}
 \end{figure}
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.9\textwidth]{figures/highstd.png}}
+	\centerline{\includegraphics[width=0.85\textwidth]{figures/highstd.png}}
 	\caption{Variation with high standard deviation}
 	\label{highstd}
 \end{figure}
@@ -250,7 +250,7 @@ Figure \ref{equi} illustrates the rotational position of a rotary joint in radia
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=1\textwidth]{figures/equionchange.png}}
+	\centerline{\includegraphics[width=0.9\textwidth]{figures/equionchange.png}}
 	%\caption{Time-series of a rotary joint with equidistant time steps}
 	\caption{Two option for recording the joint position in a time-series}
 	\label{equi}
@@ -281,7 +281,7 @@ Figure \ref{dirchange} provides a visual representation of the points where the 
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.8\textwidth]{figures/dirchange.png}}
+\centerline{\includegraphics[width=0.7\textwidth]{figures/dirchange.png}}
 	\caption{Calculating direction changes from a time-series}
 	\label{dirchange}
 \end{figure}
@@ -325,11 +325,11 @@ When there are only a few direction changes but with a high variance, the result
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.8\textwidth]{figures/DirSTD.png}}
+	\centerline{\includegraphics[width=0.75\textwidth]{figures/DirSTD.png}}
 	\caption{Two Time-Series with equal number of direction changes but different characteristics}
 	\label{dirchangeSTD}
 \end{figure}
-
+\newpage
 \subsection{Rotation Limits}\label{RotLim}
 Additionally, a straightforward analysis of rotational limits can be conducted, requiring knowledge of two distinct values. The first value is the physical limit that a joint cannot exceed, as surpassing this limit can cause significant damage to the robot. The second value relates to potential soft limits put in place to prevent over-rotation of the joint beyond its physical limits. To validate whether any rotational positions approach or exceed these limits, a simple comparison of all values can be performed. In cases where it is known that a joint is most stable within a specific range, additional limits can be defined accordingly.
 
@@ -338,7 +338,7 @@ Once a toolpath with defined boundary conditions is established, the joint angle
 Figure \ref{limits} visually illustrates an example of how the analysis includes the hard and soft limits, as well as the desired position range, of a specific joint. If the limits are not exceeded, the toolpath with the set boundary conditions is deemed safe to be executed. At each time step, the amount by which the joint exceeds the desired area can be summed up to form a scalar value, which can then be used to calculate the local score. By doing so, the toolpath with the most optimal boundary conditions will ensure that the joint positions remain within the desired area.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.8\textwidth]{figures/limits.png}}
+	\centerline{\includegraphics[width=0.85\textwidth]{figures/limits.png}}
 	\caption{}
 	\label{limits}
 \end{figure}
@@ -371,7 +371,7 @@ It is also possible to determine whether a short but significant peak over the t
 The simplest approach, however, is to square all values and take the sum. This method eliminates the need to define threshold boundaries. Additionally, high peaks will have a greater impact on the resulting value compared to small, constant values, without overshadowing the final result.
 
 If the velocity exceeds the maximum velocity, a "No-Go" exception must be triggered, indicating that the movement is not possible. The same rating principle can be applied to acceleration and jerk. Acceleration is obtained by taking the derivative of velocity, while jerk is obtained by taking the second derivative. Individual limits and thresholds can be set to determine the optimality of the robot's movement. If the maximum acceleration or jerk is exceeded, a "No-Go" error is also triggered.
-\newpage
+
 Table \ref{VAJ} presents the calculation of a global score, which incorporates a weighting that prioritizes low acceleration in joint 2 and allows for high velocity in all joints. The acceleration in joint 1 and joints 3 to 6 are considered to be of lesser significance. The jerk is completely omitted from the rating in this example.
 
 Due to the close-to-optimal acceleration in joint 2 and its high importance value, the overall score of the toolpath with the defined boundary condition is also very good.
@@ -411,7 +411,7 @@ To quantitatively analyze the magnitude and frequency of these deviations, it is
 Figure \ref{devi} gives a visual example of the position in th X-Y plane that the robot needs to traverse. The expected deviation is shown in red.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=.651\textwidth]{figures/uber.png}}
+	\centerline{\includegraphics[width=.5\textwidth]{figures/uber.png}}
 	\caption{Deviation of of the TCP from the actual toolpath}
 	\label{devi}
 \end{figure}
@@ -465,7 +465,7 @@ Aggregating the time-series data from all joints into one time-series provides a
 This approach offers a notable advantage in its simplicity. Nevertheless, its primary limitation stems from the potential inaccuracies that may arise when working with an average scaling value. If this value is derived by averaging all possible positions, but only a limited number of positions are actually traversed by the robot, significant discrepancies can occur.
 
 
-To address these limitations, more advanced approaches are necessary. For instance, the utilization of multi-body simulations (MBS) in \acrshort{CAM} software enables a direct analysis of the exact energy requirements for a robot to move between different poses. This method requires precise modeling of weight distribution to achieve accurate outcomes. However, it is important to consider that implementing this approach may require substantial computation and development time.
+To address these limitations, more advanced approaches are necessary. For instance, the utilization of Multi-Body Simulations (\acrshort{MBS}) in \acrshort{CAM} software enables a direct analysis of the exact energy requirements for a robot to move between different poses. This method requires precise modeling of weight distribution to achieve accurate outcomes. However, it is important to consider that implementing this approach may require substantial computation and development time.
 
 
 Another viable option to consider, is the utilization of a machine learning (\acrshort{ML}) approach for estimating energy consumption during transitions between discrete poses. By employing a supervised learning technique, where the input data includes the current joint positions and velocities as well as the target pose, an \acrshort{ML} model can be trained to predict the energy required for each transition. This approach offers the advantage of leveraging \acrshort{ML} algorithms to provide accurate energy consumption estimates in a more efficient manner. However, it is important to acknowledge that generating high-quality training data and training the \acrshort{ML} model can be time-intensive processes.
@@ -473,14 +473,14 @@ Another viable option to consider, is the utilization of a machine learning (\ac
 Figure \ref{ENERGYOPTIONS} illustrates the three aforementioned options along with their key requirements. It is important to note that these examples only give an excerpt on how to get a energy estimation and do not cover all possible solutions to address this problem. 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=.9\textwidth]{figures/ENERGYOPTIONS.png}}
+	\centerline{\includegraphics[width=1\textwidth]{figures/ENERGYOPTIONS.png}}
 	\caption{Exemplary methods for energy usage calculations}
 	\label{ENERGYOPTIONS}
 \end{figure}
 
 Once the time-series data for energy consumption is obtained, it becomes possible to identify peaks and associate them with specific movements. In line with the optimization objective, it is also feasible to establish threshold values, as discussed in Chapter \ref{CVA}, to optimize for a constant energy consumption.
 
-
+\newpage
 \subsection{Total Energy-Usage}
 When the aim is to obtain a single scalar value for energy consumption, the same procedures outlined in the preceding chapter can be applied, and the values from the time-series can be aggregated through summation.
 
@@ -498,7 +498,7 @@ In addition to the factors mentioned earlier, the duration of the welding proces
 
 However, this specific part of the total energy consumption cannot be optimized by defining the boundary conditions of redundant \acrshort{DoF}s. The energy required for the welding process is solely defined by the welding parameters and the final part geometry.
 
-
+\newpage
 \section{Reach, Singularities and Torch Orientation}
 The following discusses the robot poses with respect to reach and positioning, singularity avoidance, and torch orientation. These factors are essential in ensuring successful and efficient robotic operations.
 
@@ -551,8 +551,8 @@ Figure \ref{deviation} illustrates an example of how the scalar value is calcula
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=.9\textwidth]{figures/devi.png}}
-	\caption{From time-series of the deviation vector to scalar value}
+	\centerline{\includegraphics[width=.7\textwidth]{figures/devi.png}}
+	\caption{From time-series of the deviation vector to scalar value -- MAKE THSI A TABLE}
 	\label{deviation}
 \end{figure}
  
@@ -575,7 +575,7 @@ In both the forward kinematics approach and the G-code, the rotation is describe
 Figure \ref{tilt} gives a visual example in 2D on how the Z-axis of the tool is deviating from the vector of gravity.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=.5\textwidth]{figures/ttilt.png}}
+	\centerline{\includegraphics[width=.45\textwidth]{figures/ttilt.png}}
 	\caption{Example of non-optimal tilt in the welding torch}
 	\label{tilt}
 \end{figure}
