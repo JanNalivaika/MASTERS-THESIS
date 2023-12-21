@@ -19,7 +19,7 @@ Since the toolpath is a movement relative to the work piece, the user must speci
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=.6]{figures/BasicScore.png}}
+	\centerline{\includegraphics[scale=.55]{figures/BasicScore.png}}
 	\caption{Interdependence of various parameters}
 	\label{BasicScore}
 \end{figure}
@@ -30,7 +30,7 @@ The rotation around the Z-axis can theoretically be set to any value, but it can
 
 Once the constraints are established and the toolpath is generated, various process parameters can be analyzed. Some notable parameters include the total angular travel of a specific joint and the total angular acceleration. Alongside these numerical values, the user has the option to assign specific importance or weight to the analyzed process parameters. By weighting all available process parameters, an overall score for the determined toolpath with the set boundary condition can be calculated.
 
-
+\newpage
 In the following, the elements "Adjacent parameters" and "Material" are excluded in this discussion, as they do not directly impact the optimization of the manufacturing process as explained in Chapter \ref{OBJECTIVE}. These elements serve as hard constraints that define the feasible toolpath and are not directly linked to the redundant degrees of freedom. However, it is important to acknowledge that these adjacent parameters can still greatly enhance areas such as cycle time or surface finish of the manufactured part.
 
 
@@ -103,10 +103,10 @@ By utilizing a forward kinematics approach or extracting it from the G-code dire
 
 
 \subsubsection*{Energy Usage}
-Estimating energy usage in industrial robot applications is increasingly important in the current manufacturing environment. One accurate method to estimate energy consumption is through multi-body simulation, which requires a correct 3D model incorporating information about the weight and distribution of the robot joints. Another approach is to utilize machine learning (ML) techniques or other intermediate analyses.
+Estimating energy usage in industrial robot applications is increasingly important in the current manufacturing environment. One accurate method to estimate energy consumption is through multi-body simulation, which requires a correct 3D model incorporating information about the weight and distribution of the robot joints. Another approach is to utilize Machine Learning (ML) techniques or other intermediate analyses.
 
 Moreover, in cases where the industrial robot is used for \acrshort{WAAM}, the power required for welding can be determined by analyzing the duration during which the welding torch remains active, which can be extracted from the G-code. Similar to the other parameters mentioned earlier, the continuous energy usage is also stored in the form of an array to capture variations over time.
-
+\newpage
 Total energy usage, measured in kilowatt-hours (kWh), is a crucial parameter that can be directly measured during the manufacturing process. It offers valuable insights into the overall energy consumption of the industrial robot system. This parameter can be obtained by monitoring and recording the real-time energy usage or by integrating the time-series data of continuous energy consumption.
 
 By analyzing energy usage, manufacturers can identify energy-intensive processes or operations, optimize energy consumption, and implement strategies to reduce overall energy consumption. This not only leads to cost savings but also provides environmental benefits.
@@ -147,19 +147,17 @@ Figure \ref{ParamsFlow} illustrates the interconnectedness of the different para
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=1\textwidth]{figures/Flow.png}}
+	\centerline{\includegraphics[width=0.9\textwidth]{figures/Flow.png}}
 	\caption{Parameter Flowchart}
 	\label{ParamsFlow}
 \end{figure}
 
-\newpage
+
 
 \section{User-Defined Weights and Score Calculation}\label{weights}
 \subsection{Local Rating and Global Score}
-In order to evaluate whether a toolpath, along with its boundary conditions, is optimal or can be improved, it is necessary to have a score or rating value that considers the process parameters and their importance.
-
-Assigning relative importance to different parameters can involve subjective judgments, expert knowledge, and consideration of specific manufacturing constraints. For instance, in some cases, minimizing joint jerk may be the main objective, while in others, energy usage may be more important.
-
+In order to evaluate whether a toolpath, along with its boundary conditions, is optimal or can be improved, it is necessary to have a score or rating value that considers the process parameters and their importance. Assigning relative importance to different parameters can involve subjective judgments, expert knowledge, and consideration of specific manufacturing constraints. For instance, in some cases, minimizing joint jerk may be the main objective, while in others, energy usage may be more important.
+\newpage
 To quantify the performance of a toolpath, the user can assign weights or importance factors to each parameter based on their specific requirements. These weights can reflect the relative significance of each parameter in achieving the desired optimum. A weighted sum or scoring method can then be used to evaluate and compare different toolpaths with varying constraints, based on the aggregated scores of the individual parameters. %The sum of all defined importance values must add up to 1 so that the most optimal toolpath has the global score of 100.
 
 It's important to note that the subjective weighing of parameters can vary between different manufacturing scenarios and requires continuous evaluation and adjustment based on changing priorities or goals.
@@ -171,7 +169,7 @@ The local scores for all parameters are then summed to obtain the overall global
 \begin{table}[H]
 	\centering
 	\begin{tabular}{||l|r|r|r||}
-		Process Parameters & Local rating & Importance & Local score\\
+		Process Parameters & Local rating & Importance factor& Local score\\
 		\hline
 		\hline
 		\hline
@@ -200,20 +198,22 @@ To address this issue, one possible solution is to generate multiple toolpaths w
 Figure \ref{Localscore} shows how a local score can be calculated by means of variation. Each variation  of the boundary condition results in a different number of direction changes in joint 1. The local score can be determined by essentially applying a Min-Max scaler, which normalizes the values between a minimum and maximum range. In this case the range is set from 0 to 100.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.9\textwidth]{figures/localscore.png}}
+	\centerline{\includegraphics[width=0.85\textwidth]{figures/localscore.png}}
 	\caption{Calculation of the local score trough variation}
 	\label{Localscore}
 \end{figure}
 
 It is important to note that increasing the number of variations performed before calculating the local score will enhance the accuracy of this approach. If only a few variations are executed, there is a possibility that only similar outcomes will be identified, which can significantly affect the result. Furthermore, the user needs to specify whether a high or low scalar value of a process parameter is desired. The Min-Max scaler should return the local score accordingly. 
 
-Another factor that needs to be analyzed is whether the variations in the boundary conditions lead to different process parameter values that exceed a certain standard deviation. Figure~\ref{lowstd} illustrates how a local score of 66 is calculated, despite the presence of very small absolute differences. In this case, the standard deviation is only 0.37. On the other hand, Figure~\ref{highstd} demonstrates how the same local score of 66 is calculated, even though the absolute differences are significantly higher. Here, the standard deviation is 22.36. The local score should only be used as input for the global score if the standard deviation exceeds a predetermined threshold. If the standard deviation criteria are not met, the corresponding process parameter should be excluded from the calculation of the global score.
+Another factor that needs to be analyzed is whether the variations in the boundary conditions lead to different process parameter values that exceed a certain standard deviation. Figure~\ref{lowstd} illustrates how a local score of 66 is calculated, despite the presence of very small absolute differences. 
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.85\textwidth]{figures/lowstd.png}}
 	\caption{Variation with low standard deviation}
 	\label{lowstd}
 \end{figure}
+
+In this case, the standard deviation is only 0.37. On the other hand, Figure~\ref{highstd} demonstrates how the same local score of 66 is calculated, even though the absolute differences are significantly higher. Here, the standard deviation is 22.36. The local score should only be used as input for the global score if the standard deviation exceeds a predetermined threshold. If the standard deviation criteria are not met, the corresponding process parameter should be excluded from the calculation of the global score.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.85\textwidth]{figures/highstd.png}}
@@ -228,7 +228,7 @@ It is important to note that, as discussed in Chapter \ref{LRC}, the computation
 
 
 
-\newpage
+
 \section{Information from Angular Position}
 In its isolated form, the angular position of a joint does not provide much information to enable extensive qualitative analysis. However, when supplemented with temporal information, it becomes a valuable source of information. By considering the angular position in conjunction with the temporal dimension, a more comprehensive understanding of joint behavior can be obtained, allowing for more in depth analysis.
 
@@ -237,7 +237,7 @@ In its isolated form, the angular position of a joint does not provide much info
 Figure \ref{agularstuff} visualizes what information needs to be added to enrich the analysis of these process parameters that are directly related to the angular position of joints.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.8\textwidth]{figures/angularstuff.png}}
+	\centerline{\includegraphics[width=0.7\textwidth]{figures/angularstuff.png}}
 	\caption{Additional Information for angular position of each joint}
 	\label{agularstuff}
 \end{figure}
@@ -250,7 +250,7 @@ Figure \ref{equi} illustrates the rotational position of a rotary joint in radia
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.9\textwidth]{figures/equionchange.png}}
+	\centerline{\includegraphics[width=0.95\textwidth]{figures/equionchange.png}}
 	%\caption{Time-series of a rotary joint with equidistant time steps}
 	\caption{Two option for recording the joint position in a time-series}
 	\label{equi}
@@ -272,7 +272,7 @@ Figure \ref{travel} provides a visual representation of the calculation of total
 	\caption{Summing up the rotation in the clockwise and anti-clockwise direction }
 	\label{travel}
 \end{figure}
-
+\newpage
 The number of direction changes is a parameter that can be determined by analyzing the joint position alone, without the need for temporal information. This can be accomplished by identifying points where the position before and after either decreases or increases. However, it is important to note that this method may not be applicable to points where multiple positions are recorded at the same value consecutively.
 
 To address the issue of multiple positions recorded at the same value, a potential solution is to introduce a tracking value that indicates whether the previous change in direction of two consecutive positions was either upward or downward. If the direction of two positions is different from the tracking value, the direction change counter is incremented by 1. However, if the direction is the same as the previous points or if the positions are identical (neutral), the direction change counter and tracking values remain unchanged.
@@ -314,22 +314,22 @@ Table \ref{exampleDirTravel} provides an example of how a global score can be ca
 	\label{exampleDirTravel}
 \end{table}
 
-\newpage
+
 In certain cases, adjusting the boundary conditions may not be sufficient to reduce the number of direction changes. It is important to note that having the same number of direction changes does not necessarily mean that two time-series are identical. Figure \ref{dirchangeSTD} visually demonstrates two time-series with the same number of direction changes but distinct characteristics.
-
-To distinguish between these cases, the standard deviation can be utilized. By incorporating the standard deviation, toolpaths that result in frequent and closely spaced direction changes can be identified and are generally considered less desirable.
-
-To combine the factor of standard deviation with the number of direction changes, they can be integrated into a single parameter. This can be achieved by dividing the number of direction changes by the standard deviation. By incorporating this calculation and the variation-approach, a local score can be determined. This approach provides an evaluation method that takes into account both the quantity of direction changes and the variability within the time-series data.
-
-When there are only a few direction changes but with a high variance, the resulting parameter value will be low. Conversely, when there are numerous direction changes but with a low variance, the parameter value will be high.
-
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.75\textwidth]{figures/DirSTD.png}}
 	\caption{Two Time-Series with equal number of direction changes but different characteristics}
 	\label{dirchangeSTD}
 \end{figure}
-\newpage
+
+To distinguish between these cases, the standard deviation can be utilized. By incorporating the standard deviation, toolpaths that result in frequent and closely spaced direction changes can be identified and are generally considered less desirable.
+
+To combine the factor of standard deviation with the number of direction changes, they can be integrated into a single parameter. This can be achieved by dividing the number of direction changes by the standard deviation. By incorporating this calculation and the variation-approach, a local score can be determined. This approach provides an evaluation method that takes into account both the quantity of direction changes and the variability within the time-series data. When there are only a few direction changes but with a high variance, the resulting parameter value will be low. Conversely, when there are numerous direction changes but with a low variance, the parameter value will be high.
+
+
+
+
 \subsection{Rotation Limits}\label{RotLim}
 Additionally, a straightforward analysis of rotational limits can be conducted, requiring knowledge of two distinct values. The first value is the physical limit that a joint cannot exceed, as surpassing this limit can cause significant damage to the robot. The second value relates to potential soft limits put in place to prevent over-rotation of the joint beyond its physical limits. To validate whether any rotational positions approach or exceed these limits, a simple comparison of all values can be performed. In cases where it is known that a joint is most stable within a specific range, additional limits can be defined accordingly.
 
@@ -354,23 +354,20 @@ Figure \ref{velo} demonstrates how the velocity aspect can be transformed into a
 	\label{velo}
 \end{figure}
 
-Additionally, it is feasible to incorporate multiple thresholds and assign linear or exponential weights to them relative to each other. The combined outcome is then utilized to calculate the local score.
+Additionally, it is feasible to incorporate multiple thresholds and assign linear or exponential weights to them relative to each other. The combined outcome is then utilized to calculate the local score. For example, if the 80\%-threshold is exceeded for 15 seconds and the 90\% threshold is exceeded for 5 seconds, the a scalar value is calculated by multiplying the corresponding time and threshold and summing them up. In this case the result is 80~*~15~+~90~*~5~=~1650.
 
-
-For example, if the 80\%-threshold is exceeded for 15 seconds and the 90\% threshold is exceeded for 5 seconds, the a scalar value is calculated by multiplying the corresponding time and threshold and summing them up. In this case the result is 80 * 15 + 90 * 5 = 1650.
-
-It is also possible to determine whether a short but significant peak over the threshold values is more desirable than a constant but small overstep. Figure \ref{peaklong} provides a visualization of these two cases. In the former case, where peaks are more desirable, it is sufficient to sum up the area between the velocity and the set threshold. If avoiding peaks is the top priority, all elements in the velocity time series can be cubed and summed up. By cubing the values, peaks will be exponentially weighted, making them easier to optimize for.
+It is also possible to determine whether a short but significant peak over the threshold values is more desirable than a constant but small overstep. Figure \ref{peaklong} provides a visualization of these two cases.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/peaklong.png}}
 	\caption{Overstepping the threshold value}
 	\label{peaklong}
 \end{figure}
+\newpage
+In the former case, where peaks are more desirable, it is sufficient to sum up the area between the velocity and the set threshold. If avoiding peaks is the top priority, all elements in the velocity time series can be cubed and summed up. By cubing the values, peaks will be exponentially weighted, making them easier to optimize for.
 
 
-The simplest approach, however, is to square all values and take the sum. This method eliminates the need to define threshold boundaries. Additionally, high peaks will have a greater impact on the resulting value compared to small, constant values, without overshadowing the final result.
-
-If the velocity exceeds the maximum velocity, a "No-Go" exception must be triggered, indicating that the movement is not possible. The same rating principle can be applied to acceleration and jerk. Acceleration is obtained by taking the derivative of velocity, while jerk is obtained by taking the second derivative. Individual limits and thresholds can be set to determine the optimality of the robot's movement. If the maximum acceleration or jerk is exceeded, a "No-Go" error is also triggered.
+The simplest approach, however, is to square all values and take the sum. This method eliminates the need to define threshold boundaries. Additionally, high peaks will have a greater impact on the resulting value compared to small, constant values, without overshadowing the final result. If the velocity exceeds the maximum velocity, a "No-Go" exception must be triggered, indicating that the movement is not possible. The same rating principle can be applied to acceleration and jerk. Acceleration is obtained by taking the derivative of velocity, while jerk is obtained by taking the second derivative. Individual limits and thresholds can be set to determine the optimality of the robot's movement. If the maximum acceleration or jerk is exceeded, a "No-Go" error is also triggered.
 
 Table \ref{VAJ} presents the calculation of a global score, which incorporates a weighting that prioritizes low acceleration in joint 2 and allows for high velocity in all joints. The acceleration in joint 1 and joints 3 to 6 are considered to be of lesser significance. The jerk is completely omitted from the rating in this example.
 
@@ -436,9 +433,7 @@ Firstly, a continuous energy analysis allows for the attribution of specific ene
 \subsection{Continuous Energy-Usage}
 Tracking energy consumption can be achieved through a straightforward method of monitoring the velocity and acceleration of individual joints. The energy demand is composed of two components: the rotational movement of a joint at a predetermined speed and the joint's acceleration.
 
-To determine the energy consumed by each joint, the time-series data of joint velocity can be multiplied by the average energy consumption value associated with that particular joint. The same principle is applied to the time-series data of joint acceleration. By summing up these resultant time-series, an energy consumption profile for each joint can be obtained. The newly obtained time-series represent the energy consumption to move from one pose to another.
-
-Aggregating the time-series data from all joints into one time-series provides an overall estimation of the robot's energy consumption. Table \ref{scalers} gives exemplary values for the scaling factors.\newline
+To determine the energy consumed by each joint, the time-series data of joint velocity can be multiplied by the average energy consumption value associated with that particular joint. The same principle is applied to the time-series data of joint acceleration. By summing up these resultant time-series, an energy consumption profile for each joint can be obtained. The newly obtained time-series represent the energy consumption to move from one pose to another. Aggregating the time-series data from all joints into one time-series provides an overall estimation of the robot's energy consumption. Table \ref{scalers} gives exemplary values for the scaling factors.
 
 
 \begin{table}[H]
@@ -465,10 +460,10 @@ Aggregating the time-series data from all joints into one time-series provides a
 This approach offers a notable advantage in its simplicity. Nevertheless, its primary limitation stems from the potential inaccuracies that may arise when working with an average scaling value. If this value is derived by averaging all possible positions, but only a limited number of positions are actually traversed by the robot, significant discrepancies can occur.
 
 
-To address these limitations, more advanced approaches are necessary. For instance, the utilization of Multi-Body Simulations (\acrshort{MBS}) in \acrshort{CAM} software enables a direct analysis of the exact energy requirements for a robot to move between different poses. This method requires precise modeling of weight distribution to achieve accurate outcomes. However, it is important to consider that implementing this approach may require substantial computation and development time.
+To address these limitations, more advanced approaches are necessary. For instance, the utilization of multi-body simulations (\acrshort{MBS}) in \acrshort{CAM} software enables a direct analysis of the exact energy requirements for a robot to move between different poses. This method requires precise modeling of weight distribution to achieve accurate outcomes. However, it is important to consider that implementing this approach may require substantial computation and development time.
 
 
-Another viable option to consider, is the utilization of a machine learning (\acrshort{ML}) approach for estimating energy consumption during transitions between discrete poses. By employing a supervised learning technique, where the input data includes the current joint positions and velocities as well as the target pose, an \acrshort{ML} model can be trained to predict the energy required for each transition. This approach offers the advantage of leveraging \acrshort{ML} algorithms to provide accurate energy consumption estimates in a more efficient manner. However, it is important to acknowledge that generating high-quality training data and training the \acrshort{ML} model can be time-intensive processes.
+Another viable option to consider, is the utilization of a \acrshort{ML} approach for estimating energy consumption during transitions between discrete poses. By employing a supervised learning technique, where the input data includes the current joint positions and velocities as well as the target pose, an \acrshort{ML} model can be trained to predict the energy required for each transition. This approach offers the advantage of leveraging \acrshort{ML} algorithms to provide accurate energy consumption estimates in a more efficient manner. However, it is important to acknowledge that generating high-quality training data and training the \acrshort{ML} model can be time-intensive processes.
 
 Figure \ref{ENERGYOPTIONS} illustrates the three aforementioned options along with their key requirements. It is important to note that these examples only give an excerpt on how to get a energy estimation and do not cover all possible solutions to address this problem. 
 
@@ -480,11 +475,11 @@ Figure \ref{ENERGYOPTIONS} illustrates the three aforementioned options along wi
 
 Once the time-series data for energy consumption is obtained, it becomes possible to identify peaks and associate them with specific movements. In line with the optimization objective, it is also feasible to establish threshold values, as discussed in Chapter \ref{CVA}, to optimize for a constant energy consumption.
 
-\newpage
+
 \subsection{Total Energy-Usage}
 When the aim is to obtain a single scalar value for energy consumption, the same procedures outlined in the preceding chapter can be applied, and the values from the time-series can be aggregated through summation.
 
-In situations where the temporal information in energy consumption is considered irrelevant, alternative \acrshort{ML} approaches can be employed. For example, Recurrent Neural Networks (\acrshort{RNN}s) can be utilized, as they have the ability to take an entire time-series as input and generate a scalar value representing the total energy consumption. \acrshort{RNN}s excel at capturing dependencies and patterns in sequential data. By training an \acrshort{RNN} model using a time-series dataset, it can learn to predict the total energy consumption based on the provided input. However, it is important to note that, like most \acrshort{ML} approaches, this method requires substantial effort and time for generating training data and conducting the training process.
+In situations where the temporal information in energy consumption is considered irrelevant, alternative \acrshort{ML} approaches can be employed. For example, Recurrent neural-networks (\acrshort{RNN}s) can be utilized, as they have the ability to take an entire time-series as input and generate a scalar value representing the total energy consumption. \acrshort{RNN}s excel at capturing dependencies and patterns in sequential data. By training an \acrshort{RNN} model using a time-series dataset, it can learn to predict the total energy consumption based on the provided input. However, it is important to note that, like most \acrshort{ML} approaches, this method requires substantial effort and time for generating training data and conducting the training process.
 
 In \acrshort{WAAM}, it is important to consider the energy consumption associated with the welding process itself. The determination of energy use in welding involves various factors. The G-code, which comprises instructions for the welding process, can provide information on the wire-feed, voltage and the desired power input. By analyzing this code, it becomes possible to estimate the energy consumption during each welding operation. Alternatively, these parameters are often pre-defined as constants on the welding appliance, with the G-code solely specifying the turn-on and turn-off points. Figure \ref{waamgcode} gives an example on how the turn-on and turn-off points can look in the G-code.
  
@@ -498,7 +493,7 @@ In addition to the factors mentioned earlier, the duration of the welding proces
 
 However, this specific part of the total energy consumption cannot be optimized by defining the boundary conditions of redundant \acrshort{DoF}s. The energy required for the welding process is solely defined by the welding parameters and the final part geometry.
 
-\newpage
+
 \section{Reach, Singularities and Torch Orientation}
 The following discusses the robot poses with respect to reach and positioning, singularity avoidance, and torch orientation. These factors are essential in ensuring successful and efficient robotic operations.
 
@@ -547,14 +542,29 @@ In other scenarios, it is more optimal to route the cables towards a specific po
 To minimize the deviation from the optimal vector or vanishing point, the redundant degrees of freedom can be utilized. One approach is to analyze the deviation and track it over time, creating a time-series. Each element in this time-series can be squared or cubed, depending on the weight assigned to small and constant deviations versus large but short offsets. The time-series is then summed up to form a scalar value, which can be used to calculate the local score through the variation method.
 
 
-Figure \ref{deviation} illustrates an example of how the scalar value is calculated. It is evident that when cubing the time series, more importance is placed on the larger deviations rather than small deviations.
+Table \ref{deviation} illustrates an example of how the scalar value is calculated. It is evident that when cubing the time series, more importance is placed on the larger deviations rather than small deviations.
 
 
-\begin{figure}[H]
-	\centerline{\includegraphics[width=.7\textwidth]{figures/devi.png}}
-	\caption{From time-series of the deviation vector to scalar value -- MAKE THSI A TABLE}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{||l|c|c|c|c|c|c|c|c|l||}
+		\hline
+		Time-step:  & 1 & 2& 3& 4& 5& 6& 7& 8&  \\
+		\hline
+		Deviation:  & 1° & 2°& 2°& 2°& 3°& 10°& 0°& 2°&  \\
+		\hline
+		\hline
+		Squared:  & 1 & 4& 4& 4& 9& 100& 0& 4& Sum: 126  \\
+		Cubed:  & 1 & 8& 8& 8& 27& 1000& 0& 8& Sum: 1060  \\
+		\hline
+		\hline
+		
+	\end{tabular}
+	
+	\caption{From time-series of the deviation vector to scalar value}
 	\label{deviation}
-\end{figure}
+\end{table}
+
  
 
 \subsection{Singularities}
@@ -584,15 +594,15 @@ To quantify the torch orientation parameter, it is recorded in a time-series for
 
 
 \newpage
-\section{Summery for Boundary Condition Evaluation}
+\section{Summary for Boundary Condition Evaluation}
 
 
 
-Image \ref{allflow} gives a summary and visual representation in form of a flowchart on how a toolpath with defined boundary conditions is evaluated by calculating the individual local scores for the process parameters that can be optimized by the redundant \acrshort{DoF}.
+Figure \ref{allflow} gives a summary and visual representation in form of a flowchart on how a toolpath with defined boundary conditions is evaluated by calculating the individual local scores for the process parameters that can be optimized by the redundant \acrshort{DoF}.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/flowchart.png}}
-	\caption{x}
+	\caption{Evaluation of a toolpath}
 	\label{allflow}
 \end{figure}
 
@@ -649,7 +659,7 @@ Following the score calculation, an optimization algorithm is employed to genera
 Once the most optimal or close-to-optimal boundary condition is found, it is used as input for the \acrshort{CAM} software to validate that no collisions or other exceptions are triggered. After this validation process, the G-code can be utilized in production.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.8\textwidth]{figures/noCAM.png}}
+	\centerline{\includegraphics[width=0.75\textwidth]{figures/noCAM.png}}
 	\caption{Schematic process of optimization without CAM software}
 	\label{noCAM}
 \end{figure}
@@ -658,7 +668,7 @@ In this method, the optimization of boundary conditions occurs externally to the
 
 The advantage of this approach is that the external algorithms are independent and can be easily exchanged or modified. It does not necessitate in-depth knowledge or access to the source code of the \acrshort{CAM} software. Therefore, any \acrshort{CAM} software can be utilized with this approach, providing flexibility and compatibility.    
 
-However, it is important to note that one drawback of this approach is that the complete closure of the loop can only be achieved if the most optimal boundary condition can be automatically fed back to the \acrshort{CAM} software for the final validation. If there is no Application Programming Interface (\acrshort{API}) available or accessible for the \acrshort{CAM} software, this step may need to be performed manually. This manual intervention can introduce additional time and effort into the optimization process.
+However, it is important to note that one drawback of this approach is that the complete closure of the loop can only be achieved if the most optimal boundary condition can be automatically fed back to the \acrshort{CAM} software for the final validation. If there is no application programming interface (\acrshort{API}) available or accessible for the \acrshort{CAM} software, this step may need to be performed manually. This manual intervention can introduce additional time and effort into the optimization process.
 
 Depending on the chosen optimization algorithm, it may be necessary to calculate multiple scores for multiple boundary conditions before generating a new suggestion. In this scenario, the variations in the redundant \acrshort{DoF} can be utilized to calculate multiple scores relative to each other. These scores can then be used as input for the optimization algorithm, allowing for a more comprehensive evaluation and selection of the most optimal boundary condition. By considering multiple scores, the algorithm can effectively explore different possibilities and make informed suggestions for improving the boundary conditions.
 
@@ -689,9 +699,7 @@ By directly including the \acrshort{CAM} software, the optimization loop becomes
  	\label{CAMloop}
  \end{figure}
 
-In this method, the \acrshort{CAM} software plays a crucial role in the optimization process. It first generates the initial toolpath by automatically setting the redundant \acrshort{DoF} based on the given part geometry and robot configuration. Unlike traditional approaches, the \acrshort{CAM} software does not export G-code but utilizes its internal resources and algorithms to calculate the joint positions via inverse kinematics.
-
-The optimization process is performed iteratively, involving multiple variations in the redundant \acrshort{DoF}. Each variation generates a different toolpath, which in turn results in different joint positions of the robot. The process parameters are then analyzed to calculate a score that represents the quality of the toolpath.
+In this method, the \acrshort{CAM} software plays a crucial role in the optimization process. It first generates the initial toolpath by automatically setting the redundant \acrshort{DoF} based on the given part geometry and robot configuration. Unlike traditional approaches, the \acrshort{CAM} software does not export G-code but utilizes its internal resources and algorithms to calculate the joint positions via inverse kinematics. The optimization process is performed iteratively, involving multiple variations in the redundant \acrshort{DoF}. Each variation generates a different toolpath, which in turn results in different joint positions of the robot. The process parameters are then analyzed to calculate a score that represents the quality of the toolpath.
 
 The optimization algorithm, seamlessly integrated within the \acrshort{CAM} software, utilizes the obtained scores to propose a new setting for the redundant \acrshort{DoF}. This new setting aims to improve the toolpath and optimize the process parameters further. The iteration continues until a defined score or a predetermined number of iterations is reached, indicating that the optimization loop has converged.
 Once the optimization loop is terminated, the \acrshort{CAM} software exports the G-code with the best-found boundary conditions, representing the optimized toolpath.

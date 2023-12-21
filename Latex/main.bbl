@@ -7546,6 +7546,27 @@
       \verb 10.1007/s00170-022-09889-4
       \endverb
     \endentry
+    \entry{Reisch.2023}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b0cc52627ecfb7d7ff271afbd78e34fb}{%
+           family={Reisch},
+           familyi={R\bibinitperiod},
+           given={Raven},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0cc52627ecfb7d7ff271afbd78e34fb}
+      \strng{fullhash}{b0cc52627ecfb7d7ff271afbd78e34fb}
+      \strng{bibnamehash}{b0cc52627ecfb7d7ff271afbd78e34fb}
+      \strng{authorbibnamehash}{b0cc52627ecfb7d7ff271afbd78e34fb}
+      \strng{authornamehash}{b0cc52627ecfb7d7ff271afbd78e34fb}
+      \strng{authorfullhash}{b0cc52627ecfb7d7ff271afbd78e34fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Prozessorientierter Digitaler Zwilling für die Additive Fertigung mittels Lichtbogenauftragschwei{ß}en (Dissertation)}
+      \field{year}{2023}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

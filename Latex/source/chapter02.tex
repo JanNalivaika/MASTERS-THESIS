@@ -24,7 +24,7 @@ Subtractive manufacturing involves various techniques such as milling, turning, 
 
 The versatility and precision of subtractive manufacturing are two of its significant advantages. A \acrshort{CNC} machine can process a diverse array of materials, such as metals, plastics, and composites, with high levels of precision and surface quality, allowing for the creation of intricate and complex components~\cite{Tomaz.2021,Yang.2019}. As a result, it finds applications in industries where precision and quality are critical, such as aerospace, automotive, and medical.
 
-The process of subtractive manufacturing starts with the drafting of the intended component using Computer-Aided Design (\acrshort{CAD}) software. Subsequently, \acrshort{CAM} software is used to generate instructions that are used to guide the \acrshort{CNC} machine (see chapter \ref{CAMmain} for more details). The machining process begins with the machine operator setting up and securing the workpiece in the machine and starting the execution of the generated instructions~\cite{Nee.2015}. The cutting tools then perform various operations, such as drilling holes, creating pockets or slots, and shaping the external contours of the part, by following the predetermined movements. In a typical 3-axis machine, the degrees of freedom are along the X, Y, and Z axes. In a 5-axis machine, two additional degrees of freedom in form of rotations are present.   Additionally, recent research is trying to extend the machines possibilities by adding advanced abilities like constantly monitoring and adjusting the cutting parameters on the fly to ensure the most efficient cutting speed, feed rate, and tool engagement while minimizing errors~\cite{Tien.2021}.
+The process of subtractive manufacturing starts with the drafting of the intended component using computer-aided design (\acrshort{CAD}) software. Subsequently, \acrshort{CAM} software is used to generate instructions that are used to guide the \acrshort{CNC} machine (see chapter \ref{CAMmain} for more details). The machining process begins with the machine operator setting up and securing the workpiece in the machine and starting the execution of the generated instructions~\cite{Nee.2015}. The cutting tools then perform various operations, such as drilling holes, creating pockets or slots, and shaping the external contours of the part, by following the predetermined movements. In a typical 3-axis machine, the degrees of freedom are along the X, Y, and Z axes. In a 5-axis machine, two additional degrees of freedom in form of rotations are present.   Additionally, recent research is trying to extend the machines possibilities by adding advanced abilities like constantly monitoring and adjusting the cutting parameters on the fly to ensure the most efficient cutting speed, feed rate, and tool engagement while minimizing errors~\cite{Tien.2021}.
 
 
 Subtractive manufacturing provides numerous advantages over alternative manufacturing techniques. This method allows for the creation of intricate and highly customizable components with tight tolerances and complex geometries~\cite{Jayawardane.2023}. In addition, it results in exceptional surface finish, dimensional accuracy, and consistency, guaranteeing uniform quality across production runs. Moreover, it is cost-effective for small to medium production volumes as it does not necessitate the use of costly molds or part-specific tooling, which makes it a great alternative to produce a multitude of parts~\cite{Gu.2018}.
@@ -69,7 +69,7 @@ The inclusion of these two additional degrees of freedom in the 5-axis \acrshort
 \subsection{Additive Manufacturing}
 \acrshort{AM} consists of the conversion of digital designs into physical objects by building them layer by layer. This layering approach offers the option for creating complex geometries that would be extremely challenging or impossible to produce using traditional manufacturing methods~\cite{Prakash.2018}. This advantage allows to fabricate intricate structures with internal cavities or undercuts, thus opening up new possibilities in engineering and design~\cite{Abdulhameed.2019}.%overhangs ???????
 
-Various \acrshort{AM} technologies utilize different methods to build the layers. Fused Deposition Modeling (\acrshort{FDM}), for example, involves extruding molten thermoplastic filament through a heated nozzle, which solidifies as it cools, creating the desired shape~\cite{Wickramasinghe.2020}. Stereolithography (\acrshort{SLA}) employs a liquid photopolymer resin that is solidified by a UV laser, while Selective Laser Melting (\acrshort{SLM}) uses a high-power laser to selectively fuse powdered materials, such as plastics or metals~\cite{Wang.2016, Meier.2017}.
+Various \acrshort{AM} technologies utilize different methods to build the layers. Fused deposition modeling (\acrshort{FDM}), for example, involves extruding molten thermoplastic filament through a heated nozzle, which solidifies as it cools, creating the desired shape~\cite{Wickramasinghe.2020}. Stereolithography (\acrshort{SLA}) employs a liquid photopolymer resin that is solidified by a UV laser, while selective laser melting (\acrshort{SLM}) uses a high-power laser to selectively fuse powdered materials, such as plastics or metals~\cite{Wang.2016, Meier.2017}.
 
 The compatibility of \acrshort{AM} with a wide range of materials is another significant advantage~\cite{Bose.2018}. It enables the production of components with diverse properties, including strength, flexibility, conductivity, and heat resistance. \acrshort{AM} can accommodate various plastics, such as ABS, PLA, and nylon, as well as metals like titanium, aluminum, and stainless steel. Additionally, ceramics and even biomaterials, like hydrogels or living cells, can be used in \acrshort{AM} processes. New materials specifically tailored for \acrshort{AM} are continuously developed,  expanding the possibilities for unique applications~\cite{Attaran.2017}.
 
@@ -90,7 +90,7 @@ As \acrshort{AM} technologies continue to advance, they have the potential to tr
 %\end{figure}
 
 \subsubsection{Wire Arc Additive Manufacturing}
-\acrshort{WAAM} is a specific type of additive manufacturing process which is part of Directed Energy Deposition (\acrshort{DED}) processes~\cite{Svetlizky.2021}. According to the DIN EN ISO 52900 standard, DED involves using focused thermal energy to melt material during the application process to build up the individual layers~\cite{Additive}. 
+\acrshort{WAAM} is a specific type of additive manufacturing process which is part of directed energy deposition (\acrshort{DED}) processes~\cite{Svetlizky.2021}. According to the DIN EN ISO 52900 standard, DED involves using focused thermal energy to melt material during the application process to build up the individual layers~\cite{Additive}. 
 
 The operating principle of \acrshort{WAAM} involves the generation of an arc through electrical discharge between an feed-wire and the workpiece. This arc transfers energy to the workpiece, causing melting in the fusion zone~\cite{Ou.2018}. Additionally, if a welding filler material in the form of a wire is introduced into the arc, it also melts and can be used to deposit additional material onto a metallic substrate~\cite{Cunningham.2018}. To ensure a continuous weld seam, a wire feed system must be employed~\cite{Ding.2015}. By placing multiple weld seams over each other, the workpiece is formed layer by layer.
 
@@ -104,7 +104,7 @@ Another advantage of \acrshort{WAAM} is its capability to construct large compon
 
 However, it is important to note that \acrshort{WAAM} components may have some inherent defects. These include residual stresses and deformations that persist after the production process, as well as relatively low geometric precision and modest surface quality. These limitations should be taken into consideration when utilizing \acrshort{WAAM} for manufacturing purposes. \cite{Wu.2018}
 
-Figure \ref{WAAMs} shows a schematic representation of the \acrshort{WAAM} process. In this process, a wire is fed trough the Gas Metal Arc Welding (\acrshort{GMAW}) torch to supply a continuous stream of material. The wire is then subjected to high heat generated by an electric arc. The wire is melted and then deposited onto a substrate plate. The substrate plate serves as the foundation or base on which the material is built. As the molten wire is deposited, it solidifies and fuses with the previous layers, gradually building up the desired 3D object.
+Figure \ref{WAAMs} shows a schematic representation of the \acrshort{WAAM} process. In this process, a wire is fed trough the gas metal arc welding (\acrshort{GMAW}) torch to supply a continuous stream of material. The wire is then subjected to high heat generated by an electric arc. The wire is melted and then deposited onto a substrate plate. The substrate plate serves as the foundation or base on which the material is built. As the molten wire is deposited, it solidifies and fuses with the previous layers, gradually building up the desired 3D object.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=1.3]{figures/WAAM.png}}
@@ -186,13 +186,13 @@ One common type of industrial robots are the articulated robots. These robots ha
 	\centering
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.8\textwidth]{figures/scara.png}
+		\includegraphics[width=0.9\textwidth]{figures/scara.png}
 		\caption{SCARA robot}
 		\label{Scara}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.5\textwidth]{figures/delta.png}
+		\includegraphics[width=0.6\textwidth]{figures/delta.png}
 		\caption{Delta robot}
 		\label{Delta}
 	\end{minipage}\par
@@ -273,7 +273,7 @@ Figure \ref{C1} gives a visual example of a contouring toolpath that is defined 
 
 
  \begin{figure}[H]
- 	\centerline{\includegraphics[scale=.25]{figures/conti.png}}
+ 	\centerline{\includegraphics[scale=.3]{figures/conti.png}}
  	\caption{Desired path with constant velocity~\cite{sinumericmanual}}
  	\label{C1}
  \end{figure}
@@ -282,7 +282,7 @@ Figure \ref{C1} gives a visual example of a contouring toolpath that is defined 
 Figure \ref{C2} shows how specific G-code commands of the SINUMERIK 840D influence the targeted feedrate. N1 to N12 are the individual G-code lines defining the coordinates with the corresponding orientation, also called waypoints, of the tool center point \acrshort{TCP}.  When using the G60 command, the points are reached exactly, but the feedrate is reducing to 0 at every waypoint. When implementing the G64 (continuous pathmode) command, the feedrate can be held at the desired value but at the cost of precision.
  
  \begin{figure}[H]
- 	\centerline{\includegraphics[scale=0.25]{figures/conti1.png}}
+ 	\centerline{\includegraphics[width=\textwidth]{figures/conti1.png}}
  	\caption{Influence of G-Code commands regarding feedrate compliance~\cite{sinumericmanual}}
  	\label{C2}
  \end{figure}
@@ -291,15 +291,15 @@ The SINUMERIK 840D offer more commands to specify how much deviation is desired.
 Figure \ref{C3} shows how the G-code command G641 ADIS=0.5 is influencing the programmed contour. The rounding of the path begins no more than 0.5 mm before the programmed end of the block and must finish 0.5 mm after the end of the block. 
  
  \begin{figure}[H]
- 	\centerline{\includegraphics[scale=.25]{figures/conti2.png}}
+ 	\centerline{\includegraphics[scale=.3]{figures/conti2.png}}
  	\caption{Predetermined deviation of the programmed and executed path~\cite{sinumericmanual}}
  	\label{C3}
  \end{figure}
- 
+ \newpage
 It is also possible to define the precision criterion globally instead of individually at every coordinate. For that the commands G601 and G602 can be utilized. Figure \ref{C4} shows how these two commands influence the executed trajectory. In this case, two different tolerance limits allow the tool to deviate from the programmed path.
  
 \begin{figure}[H]
- 	\centerline{\includegraphics[scale=.25]{figures/conti3.png}}
+ 	\centerline{\includegraphics[scale=.3]{figures/conti3.png}}
  	\caption{Influence of commands G601 and G602~\cite{sinumericmanual}}
  	\label{C4}
 \end{figure}
@@ -311,7 +311,7 @@ Continuous-path mode in \acrshort{CNC} machining is a crucial aspect when it com
 In \acrshort{CNC} machines, toolpaths are typically composed of lines and arcs~\cite{Liu.2020}. At the transition points between these elements, careful consideration is required to ensure that the physical limits of the machine are not exceeded. For example, when the machine is moving at a constant feedrate, a sudden change in velocity can occur when two successive non-tangent linear moves meet. This can lead to undesirable effects on the machine and the quality of the cut~\cite{Boujelbene.2004}. Similar issues arise at transitions between lines and arcs or between two arcs, where curvature discontinuities need to be addressed. 
 
 %To overcome these challenges and achieve a smooth and continuous toolpath, path smoothing techniques are necessary.
-Many path smoothing methods have been proposed in the literature, but most of them are limited to linear toolpaths. However, in high-speed \acrshort{CNC} machines and industrial robots, the toolpaths often consist of both lines and arcs. Therefore, there is a need for a path smoothing method that can handle both line-to-line transitions and transitions involving arcs~\cite{Shahzadeh.2018}. These errors are caused by factors such as servo lag, dynamics mismatch, external disturbances, and more~\cite{Jia.2018}. Reducing these contouring errors while at the same time allowing high-speed and high-precision machining is essential for improving the performance of \acrshort{CNC} motion systems. 
+Many path smoothing methods have been proposed in the literature, but most of them are limited to linear toolpaths. However, in high-speed \acrshort{CNC} machines and industrial robots, the toolpaths often consist of both lines and arcs. Therefore, there is a need for a path smoothing method that can handle both line-to-line transitions and transitions involving arcs~\cite{Shahzadeh.2018}. These errors are caused by factors such as servo lag, dynamics mismatch, external disturbances, and more~\cite{Jia.2018}.% Reducing these contouring errors while at the same time allowing high-speed and high-precision machining is essential for improving the performance of \acrshort{CNC} motion systems. 
 
 %and enhance both processing efficiency and precision
 To address this issue, various estimation and compensation methods have been proposed for reducing trajectory error. These approaches can be divided into contouring-error estimation and contouring-error reduction approaches~\cite{Jia.2018}. These approaches include the "Moving frame based method", "Analytical method", "Generalized method" or "Servo-tuning approach". It is important to note that these methods for contouring-error estimation and reduction, only offer relative significance. Each algorithm has its own optimal range of applications and may outperform other methods within that range. Additionally, it is important to note that not every approach can be implemented on every system.
@@ -352,7 +352,7 @@ One of the key features of \acrshort{CAM} software is its ability to optimize th
 
 %It also offers advanced features such as multi-axis machining and support for complex geometries. It can generate toolpaths for machines with multiple axes of motion, allowing for more intricate and precise machining operations. It can handle complex geometries, including freeform surfaces and curved profiles, and generate toolpaths that accurately follow the desired shape~\cite{Liang.2021}.
 
-Furthermore, \acrshort{CAM} software often integrates with other manufacturing software systems, such as Computer-Aided Engineering (\acrshort{CAE}) and enterprise resource planning (\acrshort{ERP}) systems~\cite{Ramazanov.2020}. This integration enables seamless data exchange, improves collaboration between different departments, and ensures that the manufacturing process is aligned with the overall production goals~\cite{Kadam.2023}. With features such as optimization, simulation, multi-axis machining, and integration with other systems, \acrshort{CAM} software empowers manufacturers to stay competitive in today's fast-paced and complex manufacturing environment~\cite{Kappmeyer.2021}.
+Furthermore, \acrshort{CAM} software often integrates with other manufacturing software systems, such as computer-aided engineering (\acrshort{CAE}) and enterprise resource planning (\acrshort{ERP}) systems~\cite{Ramazanov.2020}. This integration enables seamless data exchange, improves collaboration between different departments, and ensures that the manufacturing process is aligned with the overall production goals~\cite{Kadam.2023}. With features such as optimization, simulation, multi-axis machining, and integration with other systems, \acrshort{CAM} software empowers manufacturers to stay competitive in today's fast-paced and complex manufacturing environment~\cite{Kappmeyer.2021}.
 
 %It enables manufacturers to improve efficiency, reduce errors, and achieve higher-quality products.
 
@@ -491,7 +491,7 @@ Most of the research is limited to the mathematical analysis of singularities an
 
 Another approach proposes a kinetostatic performance index for evaluating the quality of robotic postures, which includes singularity avoidance and joint limit consideration~\cite{Huo.2008}. This method is also transferable to applications like milling. A parameter called "condition number" and "manipulability" are introduced, which are used to calculate the "kinetostatic performance index". The presented method can increase the distance from singularities and lower the maximum rotation velocity of the fourth joint. One disadvantage of the proposed method is the manual selection of a parameter. This parameter is responsible for avoiding joint limits and minimizing joint velocities. Manual fine-tuning of that parameter is required for optimal performance. 
 
-Further approaches are proposing roll motion around the tool's symmetry axis to counter the loss of a degree of freedom at the singularity. Paths with varying tool roll or fixed roll angles can be chosen, with considerations for tool elevation changes. Selecting paths with a fixed roll angle simplifies implementation for existing robot controllers~\cite{Milenkovic.2021}.
+Further approaches are proposing roll motion around the tool's symmetry axis to counter the loss of a \acrshort{DoF} at the singularity. Paths with varying tool roll or fixed roll angles can be chosen, with considerations for tool elevation changes. Selecting paths with a fixed roll angle simplifies implementation for existing robot controllers~\cite{Milenkovic.2021}.
 
 Another approach uses the non-square Jacobi matrix and, after analysis, derives a simplified version through the selection of coordinate systems and primary transformation. By using block matrix analysis, the singularity conditions of the articulated robot are determined.
 A singular configuration avoidance algorithm is used to avoid singular patterns through constraining redundant \acrshort{DoF}~\cite{Shi.2021}.
@@ -519,13 +519,13 @@ A recent publication is evaluating the stiffness of a robot using a newly define
 Each joint of the robot is modeled as a linear torsion spring, which is transferred into a stiffness matrix. This method is applied to a 6-\acrshort{DoF} robot that is used for a milling operation. The goal of this method is to set the redundant angle in such a way that stiffness is maximized. Simulations and experiments on an industrial robot validate the performance index and optimization algorithm, demonstrating improved machining accuracy using this method~\cite{Xiong.2019}.
 
 
-Another approach is working with a dynamic model to reduce the chatter in a milling operation with a 6-\acrshort{DoF} robot. By considering the frequency response function, the maximum possible cutting depth, without the occurrence of chatter can be determined. The cutting depth is a function of the redundant degree of freedom. In this case, the redundant degree of freedom is the rotation around the axis of the spindle. An experimental analysis of a full-slot cut is performed. The results show that a significant reduction in chatter can be achieved by setting the redundant degree of freedom to the optimal value~\cite{Wang.2022}.
+Another approach is working with a dynamic model to reduce the chatter in a milling operation with a 6-\acrshort{DoF} robot. By considering the frequency response function, the maximum possible cutting depth, without the occurrence of chatter can be determined. The cutting depth is a function of the redundant \acrshort{DoF}. In this case, the redundant \acrshort{DoF} is the rotation around the axis of the spindle. An experimental analysis of a full-slot cut is performed. The results show that a significant reduction in chatter can be achieved by setting the redundant \acrshort{DoF} to the optimal value~\cite{Wang.2022}.
 
 A further publication performs a comparative study of robot pose optimization using static and dynamic stiffness models. The results suggest that the static stiffness model can achieve close to optimal results for pose selection for tasks where the process forces do not approach the resonant frequencies of the robot. It is also discussed that static and dynamic stiffness-based optimizations cannot reduce the deflections of the cutting tool to a range smaller than the robot's repeatability~\cite{Cvitanic.2020}.
 
 There are many more methods, like finite element analysis, matrix structure analysis, and virtual joint modeling. 
 To enhance stiffness models, further investigation needs to be conducted. The current state of the art shows a need for standardization in stiffness modeling, as there is currently no universally accepted procedure for establishing such models. Developing a modeling process with standard principles, evaluation indicators, and measuring techniques can simplify the selection and application of modeling methods. Additionally, the application of machine learning techniques, such as artificial neural networks, can be explored for stiffness modeling. Processing experimental data using machine learning algorithms can yield high-precision stiffness models~\cite{Wu.2022}.
-
+\newpage
 \subsection{Optimization of Energy use}
 Energy-efficient usage of industrial robots is essential for achieving cost savings and sustainable manufacturing processes. Manufacturers can achieve this by implementing strategies such as optimizing robot movement paths, reducing idle time, and using energy-efficient components, resulting in significant reductions in energy consumption of their robotic systems. Incorporating advanced algorithms enables robots to adapt to changing conditions and operate at their most efficient levels, optimizing energy usage~\cite{Uhlmann.2016}. 
 
@@ -539,5 +539,5 @@ Another publication analyzes the general energy consumption of an industrial rob
 
 
 
-\subsection{Summery}
+\subsection{Summary}
 Setting the appropriate process parameters directly impacts the performance and efficiency of a production system. By carefully fine-tuning parameters such as singularity avoidance, joint accelerations, and jerks, the system can operate smoothly, minimizing wear on the structure while achieving precise trajectory tracking. Moreover, optimizing energy usage through the adjustment of parameters related to movement speed not only contributes to environmental sustainability but also leads to economic benefits by reducing long-term operational costs. Additionally, the consideration of parameters like stiffness and joint limits ensures the safety of both the manufacturing system and its operators. The optimization of stiffness, for instance, enables the maximization of the system's performance and the attainment of improved machining accuracy. In conclusion, the careful selection and optimization of process parameters play a significant role in achieving optimal performance, efficiency, safety, and utilization of manufacturing systems, thereby contributing to overall operational success.
