@@ -204,6 +204,7 @@ class PSO:
 
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")
+            plt.title(f"Toolpath {path}. Initial random positions")
             plt.savefig(f"../Latex/figures/swarm_true/{path}_{i}.png", bbox_inches='tight', dpi=1000)
             plt.close()
             plt.close()
@@ -288,7 +289,7 @@ if __name__ == "__main__":
     num_particles = 20
     max_iter = 5
 
-    for path in [1,3]:
+    for path in []:
 
         Position_list = []
         File_list = []

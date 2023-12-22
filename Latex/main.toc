@@ -59,12 +59,12 @@
 \contentsline {subsection}{\numberline {4.2.1}Toolpath Evaluation with one Redundant DoF}{66}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Validation on a production grade toolpath}{71}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Toolpath Evaluation with two Redundant DoF}{73}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Boundary Condition Optimization }{76}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}Boundary Condition Optimization }{75}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}Analysis and Discussion of the Results}{81}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Analysis of the Results}{81}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Discussion of the Results}{83}{subsection.4.3.2}%
 \contentsline {chapter}{\numberline {5}Conclusion}{85}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Summary}{85}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Outlook}{86}{section.5.2}%
-\contentsline {chapter}{Bibliography}{95}{chapter*.89}%
+\contentsline {chapter}{Bibliography}{95}{chapter*.91}%
 \contentsfinish 

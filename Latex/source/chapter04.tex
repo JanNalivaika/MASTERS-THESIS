@@ -32,10 +32,9 @@ To test the proposed method, a simplified articulated 6-\acrshort{DoF} industria
 \end{table}
 
 These parameters are essential for describing the geometry and kinematics of a robotic arm. They establish the relationship between adjacent links in the robot's kinematic chain. The \acrshort{DH} parameters consist of various values, including link lengths, link twists, and link offsets. In this particular model, "a" represents the link lengths between adjacent joints, "alpha" represents the link twists or rotations around the Z-axis between adjacent joints, and "d" represents the link offsets or distances along the Z-axis between adjacent joints.
-
 It is worth noting that the last rotation is defined in the negative direction. This convention is employed to ensure that the end of the final joint can be interpreted as the tip of a tool without requiring additional transformations.
 
-Figure \ref{robotprog} portrays the robot modeled using Python. The joint positions, in degrees, are as follows: [2, 75, -45, -88, -91, 61], corresponding to joints 1 to 6, respectively.
+Figure \ref{robotprog} portrays the robot modeled using Python in combination with the \textit{Matplotlib}-library. The joint positions, in degrees, are as follows: [2, 75, -45, -88, -91, 61], corresponding to joints 1 to 6, respectively.
 
  \begin{figure}[H]
 	\centerline{\includegraphics[width=0.9\textwidth]{figures/robotprog.png}}
@@ -44,13 +43,13 @@ Figure \ref{robotprog} portrays the robot modeled using Python. The joint positi
 \end{figure}
 
 
-The arrows depicted in the figure represent the coordinate axes of the \acrshort{TCP}. For simplicity, the \acrshort{TCP} is considered to be the endpoint of the last joint. The X-axis is denoted in red, while the Y-axis and Z-axis are represented by the colors green and blue, respectively. The first link, originating from the point X=0, Y=0, Z=0, is displayed in green.
+The arrows depicted in the figure represent the coordinate axes of the \acrshort{TCP}. For simplicity, the \acrshort{TCP} is considered to be the endpoint of the last joint. The X-axis of the \acrshort{TCP} coordinate system is denoted in red, while the Y-axis and Z-axis are represented by the colors green and blue, respectively. The first link, originating from the point X=0, Y=0, Z=0, of the world coordinate system and is displayed in green.
 \newpage
 The schematic of the modeled robot can be observed in Figure \ref{schema}. In this specific configuration, all joints are in their initial position with no rotation applied.
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.7\textwidth]{figures/schema.png}}
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/schema.png}}
 	\caption{Schematics of the modeled robot}
 	\label{schema}
 \end{figure}
@@ -58,32 +57,7 @@ The schematic of the modeled robot can be observed in Figure \ref{schema}. In th
 \subsection{Modeling a basic Toolpath}\label{MBT}
 Before analyzing the process parameters, it is necessary to define a toolpath for the \acrshort{TCP} to follow. In this case, three options are presented, each consisting of 3000 coordinates. It should be noted that the redundant \acrshort{DoF} in these cases is the rotation around the Z-axis. This rotation will be adjusted to determine the optimal value for the desired outcome. A and B are held at 0°.
 
-The first toolpath, depicted in Figure \ref{path1}, represents a converging-diverging spiral. Figure \ref{path2} illustrates a converging infinity-loop, and Figure \ref{path3} displays a forward-moving sinusoidal curve. The corresponding equations for these toolpaths are given by Equation \ref{eq1}, Equation \ref{eq2}, and Equation \ref{eq3}. The variable \textit{iter} ranges from 0 to 3000 and is used to calculate the X, Y, and Z coordinates. Trigonometric functions are employed using the \textit{Numpy} library. Currently, no rotation (A, B, or C) has been defined. Only the coordinates are specified. Each toolpath has specific dimensions and characteristics. Toolpaths 1 and 2 are continuous, while toolpath 3 exhibits abrupt changes in direction. Only toolpath 1 possesses rotational symmetry.
-
-\begin{equation}\label{eq1}
-\begin{split}
-x &= np.cos(np.deg2rad(iter)) * (500 - iter / 3)\\
-y &= np.sin(np.deg2rad(iter)) * (500 - iter / 3)\\
-z &= iter / 10
-\end{split}
-\end{equation}
-
-
-\begin{equation}\label{eq2}
-\begin{split}
-x &= np.sin(np.deg2rad(iter)) * (400-iter / 5)\\
-y &= np.sin(np.deg2rad(iter)) * np.cos(np.deg2rad(iter)) * (500-iter / 6)\\
-z &= iter / 10
-\end{split}
-\end{equation}
-
-\begin{equation}\label{eq3}
-\begin{split}
-x &= np.sin(np.deg2rad(iter)) * 200\\
-y &= iter / 3 - (2500/6)\\
-z &= np.sin(np.deg2rad(x))*100
-\end{split}
-\end{equation}
+The first toolpath, depicted in Figure \ref{path1}, represents a converging-diverging spiral. Figure \ref{path2} illustrates a converging infinity-loop, and Figure \ref{path3} displays a forward-moving sinusoidal curve. The corresponding equations for these toolpaths are given by Equation \ref{eq1}, Equation \ref{eq2}, and Equation \ref{eq3}. The variable \textit{iter} ranges from 0 to 3000 and is used to calculate the X, Y, and Z coordinates. Trigonometric functions are employed using the \textit{Numpy} library.  Currently, no rotation (A, B, or C) has been defined. Only the coordinates are specified. Each toolpath has specific dimensions and characteristics. Toolpaths 1 and 2 are continuous, while toolpath 3 exhibits abrupt changes in direction. Only toolpath 1 possesses rotational symmetry.
 
 
 \begin{figure}[H]% [H] is so declass\'e!
@@ -94,19 +68,55 @@ z &= np.sin(np.deg2rad(x))*100
 		\label{path1}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{figures/path2.png}
+		\begin{equation}\label{eq1}
+			\begin{split}
+				x &= cos(iter) * (500 - iter / 3)\\
+				y &= sin(iter) * (500 - iter / 3)\\
+				z &= iter / 10
+			\end{split}
+		\end{equation}
+	\end{minipage}\par
+\end{figure}
+
+\begin{figure}[H]% [H] is so declass\'e!
+	\centering
+	\begin{minipage}{0.5\textwidth}
+			\includegraphics[width=0.95\textwidth]{figures/path2.png}
 		\caption{Toolpath 2: Converging Loop}
 		\label{path2}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\begin{equation}\label{eq2}
+			\begin{split}
+				x &= sin(iter) * (400-iter / 5)\\
+				y &= sin(iter) * cos(iter) * (500-iter / 6)\\
+				z &= iter / 10
+			\end{split}
+		\end{equation}
 	\end{minipage}\par
-	\vskip\floatsep% normal separation between figures
-	\includegraphics[width=0.5\textwidth]{figures/path3.png}
-
-	\caption{Toolpath 3: Pendulum Oscillation}
-	\label{path3}
 \end{figure}
 
 
-Figure \ref{TP1robot} illustrates the robot and Toolpath 1 (defined by Equation \ref{eq1}) at the toolpath's final position. The origin of the toolpath is shifted by X=1000 and Z=600 relative to the robot's coordinate system. No rotations are applied around the X, Y, and Z axes, resulting in A, B, and C being zero. Thus, the coordinate axes of the toolpath are parallel to the axes of the robot's coordinate system.
+\begin{figure}[H]% [H] is so declass\'e!
+	\centering
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{figures/path3.png}
+		\caption{Toolpath 3: Pendulum Oscillation}
+		\label{path3}
+	\end{minipage}\hfill
+	\begin{minipage}{0.5\textwidth}
+		\begin{equation}\label{eq3}
+			\begin{split}
+				x &= sin(iter) * 200\\
+				y &= (iter / 3) - (2500/6)\\
+				z &= sin(x)*100
+			\end{split}
+		\end{equation}
+	\end{minipage}\par
+\end{figure}
+
+
+Figure \ref{TP1robot} illustrates the robot and Toolpath 1 (defined by Equation \ref{eq1}) at the toolpath's final position. The origin of the toolpath is shifted by X=+1000 and Z=+600 relative to the robot's coordinate system. No rotations are applied around the X, Y, and Z axes, resulting in A, B, and C being zero. Thus, the coordinate axes of the toolpath are parallel to the axes of the robot's coordinate system (world coordinate system).
 
 
 
@@ -184,7 +194,7 @@ Velocity, acceleration, and jerk are disregarded for all other joints.
 
 
 Since only one \acrshort{DoF} is being analyzed, it is possible to represent the individual local scores and global score as a one-dimensional graph. Firstly, toolpath 1 is analyzed by incrementing the redundant \acrshort{DoF} by 5 degrees, starting from -135 degrees and ending at 135 degrees.
-
+\newpage
 Figure \ref{TP1-25} illustrates a case with a -45-degree rotation around the Z-axis for toolpath~1.
 Similarly, Figure \ref{TP1+25} displays a case with a +45-degree rotation around the Z-axis for toolpath~1.
 
@@ -368,8 +378,6 @@ Figure \ref{best_2D_tp2} and Figure \ref{best_2D_tp1} depict the visualization o
 \end{comment}
 
 
-
-\newpage
 \subsection{Boundary Condition Optimization }
 So far, only the analysis of different boundary conditions has been performed by exploring the defined range of the redundant DoF. However, this approach is very time-consuming and scales exponentially with additional redundant degrees of freedom and a finer step size.
 
