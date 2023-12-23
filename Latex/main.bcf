@@ -71,7 +71,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labeldateparts</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
@@ -100,7 +100,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>99</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -180,7 +180,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
-      <bcf:value>false</bcf:value>
+      <bcf:value>minyear</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
@@ -314,7 +314,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labeldateparts</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
@@ -335,7 +335,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>99</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -395,7 +395,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
-      <bcf:value>false</bcf:value>
+      <bcf:value>minyear</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
@@ -641,8 +641,8 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">subentry</bcf:option>
-    <bcf:option datatype="boolean">subentrycomp</bcf:option>
+    <bcf:option datatype="boolean">dashed</bcf:option>
+    <bcf:option datatype="boolean">mergedate</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
@@ -724,8 +724,7 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">subentry</bcf:option>
-    <bcf:option datatype="boolean">subentrycomp</bcf:option>
+    <bcf:option datatype="boolean">mergedate</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="xml">labelalphatemplate</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
@@ -813,8 +812,7 @@
     <bcf:option datatype="boolean" backendout="1">doi</bcf:option>
     <bcf:option datatype="boolean" backendout="1">eprint</bcf:option>
     <bcf:option datatype="boolean" backendout="1">related</bcf:option>
-    <bcf:option datatype="boolean" backendout="1">subentry</bcf:option>
-    <bcf:option datatype="boolean" backendout="1">subentrycomp</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">mergedate</bcf:option>
     <bcf:option datatype="boolean" backendout="1">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer" backendin="maxcitenames,maxbibnames,maxsortnames">maxnames</bcf:option>
     <bcf:option datatype="integer" backendin="mincitenames,minbibnames,minsortnames">minnames</bcf:option>
@@ -2389,8 +2387,9 @@
     <bcf:citekey order="17" intorder="4">Uhlmann.2016</bcf:citekey>
     <bcf:citekey order="18" intorder="1">Anjum.2022</bcf:citekey>
     <bcf:citekey order="19" intorder="1">Boscariol.2020</bcf:citekey>
-    <bcf:citekey order="19" intorder="2">Liu.2022</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Liu.2022</bcf:citekey>
+    <bcf:citekey order="19" intorder="2">Wang.2022</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Kireanski.1993</bcf:citekey>
+    <bcf:citekey order="20" intorder="2">Wang.2022</bcf:citekey>
     <bcf:citekey order="21" intorder="1">Malyshev.2022</bcf:citekey>
     <bcf:citekey order="22" intorder="1">Zhao.2021</bcf:citekey>
     <bcf:citekey order="22" intorder="2">Milenkovic.2021</bcf:citekey>
@@ -2402,7 +2401,7 @@
     <bcf:citekey order="27" intorder="1">Duong.2021</bcf:citekey>
     <bcf:citekey order="28" intorder="1">Lin.2022</bcf:citekey>
     <bcf:citekey order="29" intorder="1">Xiong.2019</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">Liu.2022</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Wang.2022</bcf:citekey>
     <bcf:citekey order="30" intorder="2">Shi.2021</bcf:citekey>
     <bcf:citekey order="31" intorder="1">Duong.2021</bcf:citekey>
     <bcf:citekey order="32" intorder="1">Huynh.2020</bcf:citekey>
@@ -2505,14 +2504,14 @@
     <bcf:citekey order="121" intorder="1">Lin.2023</bcf:citekey>
     <bcf:citekey order="122" intorder="1">Bosscher.2011</bcf:citekey>
     <bcf:citekey order="123" intorder="1">Domae.2019</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">Liu.2022</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">Wang.2022</bcf:citekey>
     <bcf:citekey order="125" intorder="1">Duong.2021</bcf:citekey>
     <bcf:citekey order="126" intorder="1">Shi.2021</bcf:citekey>
     <bcf:citekey order="127" intorder="1">Milenkovic.2021</bcf:citekey>
     <bcf:citekey order="128" intorder="1">Yuan.2020</bcf:citekey>
     <bcf:citekey order="129" intorder="1">Boscariol.2019</bcf:citekey>
     <bcf:citekey order="130" intorder="1">Hanafusa.1981</bcf:citekey>
-    <bcf:citekey order="130" intorder="2">Liu.2022</bcf:citekey>
+    <bcf:citekey order="130" intorder="2">Wang.2022</bcf:citekey>
     <bcf:citekey order="131" intorder="1">linear</bcf:citekey>
     <bcf:citekey order="132" intorder="1">linear</bcf:citekey>
     <bcf:citekey order="133" intorder="1">Hagane.2022</bcf:citekey>

@@ -3,13 +3,15 @@
               ,optCharter%           font
               %,optCMYK%             color model
               ,optBiber% 	         bibliography tool
-              %,optBibstyleAuthorYear %iwb citation style
-              ,optBibstyleNumeric
+              ,optBibstyleAuthorYear %iwb citation style
+              %,optBibstyleNumeric
               ,optEnglish% 		 language
               %,optTikzExternalize%  compiles faster for large tikz images
               ]{IWBlatex}%
 %
 % Set paths
+%\pdfcompresslevel=0
+%\pdfobjcompresslevel=0
 
 \usepackage{subfig}
 \usepackage{comment}
@@ -26,12 +28,12 @@
 \include{source/abbreviations}%
 %\include{source/glossary}%
 
-%\DeclareCiteCommand{\cite}[\mkbibparens]
-%{\usebibmacro{prenote}}
-%{\usebibmacro{citeindex}
-%	\printtext[bibhyperref]{\usebibmacro{cite}}}
-%{\multicitedelim}
-%{\usebibmacro{postnote}}
+\DeclareCiteCommand{\cite}[\mkbibparens]
+{\usebibmacro{prenote}}
+{\usebibmacro{citeindex}
+	\printtext[bibhyperref]{\usebibmacro{cite}}}
+{\multicitedelim}
+{\usebibmacro{postnote}}
 
 %
 \begin{document}%

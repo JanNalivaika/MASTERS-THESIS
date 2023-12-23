@@ -12,59 +12,59 @@
 \contentsline {subsection}{\numberline {2.1.2}Additive Manufacturing}{9}{subsection.2.1.2}%
 \contentsline {subsubsection}{Wire Arc Additive Manufacturing}{10}{subsubsection*.8}%
 \contentsline {subsubsection}{Cold Metal Transfer}{11}{subsubsection*.11}%
-\contentsline {subsection}{\numberline {2.1.3}Industrial Robots}{13}{subsection.2.1.3}%
-\contentsline {subsubsection}{Redundancy in robotic systems}{16}{subsubsection*.16}%
-\contentsline {subsubsection}{Continuous-path mode}{18}{subsubsection*.19}%
-\contentsline {section}{\numberline {2.2}Computer-Aided Manufacturing}{21}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}\acrshort {CAM} Software}{21}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Path Planning}{22}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Optimization Algorithms}{23}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Comparison of the State of the Art }{25}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Singularity avoidance}{25}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Optimization of Joint Accelerations and Jerk}{27}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Optimization of Stiffens}{27}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Optimization of Energy use}{29}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Summary}{29}{subsection.2.4.5}%
-\contentsline {chapter}{\numberline {3}Methodology}{31}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{31}{section.3.1}%
-\contentsline {section}{\numberline {3.2}General Methodology for Process Analysis and Evaluation}{31}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}General Methodology}{31}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Process Parameters}{33}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}User-Defined Weights and Score Calculation}{36}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Local Rating and Global Score}{36}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Local Rating Calculation}{37}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Information Extraction form Time-Series Data}{39}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Information from Angular Position}{39}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{40}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{43}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk of the Joints}{44}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{45}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Energy Usage}{47}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Continuous Energy-Usage}{47}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{49}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Reach, Singularities and Torch Orientation}{50}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Reach and Orientation}{50}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Singularities}{52}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Torch Orientation in WAAM}{52}{subsection.3.7.3}%
-\contentsline {section}{\numberline {3.8}Summary for Boundary Condition Evaluation}{54}{section.3.8}%
-\contentsline {section}{\numberline {3.9}General Methodology for Process Optimization}{56}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Optimization Loop without CAM-software}{56}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Optimization Loop with CAM-software}{58}{subsection.3.9.2}%
-\contentsline {chapter}{\numberline {4}Implementation and Validation}{61}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Simple Implementation}{61}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Modeling a 6-DoF robot}{61}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Modeling a basic Toolpath}{63}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Extracting process parameters}{65}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Testing and Validation}{66}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Toolpath Evaluation with one Redundant DoF}{66}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Validation on a production grade toolpath}{71}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Toolpath Evaluation with two Redundant DoF}{73}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Boundary Condition Optimization }{75}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Analysis and Discussion of the Results}{81}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis of the Results}{81}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Discussion of the Results}{83}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{85}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{85}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Outlook}{86}{section.5.2}%
-\contentsline {chapter}{Bibliography}{95}{chapter*.91}%
+\contentsline {subsection}{\numberline {2.1.3}Industrial Robots}{14}{subsection.2.1.3}%
+\contentsline {subsubsection}{Redundancy in robotic systems}{18}{subsubsection*.16}%
+\contentsline {subsubsection}{Continuous-path mode}{20}{subsubsection*.19}%
+\contentsline {section}{\numberline {2.2}Computer-Aided Manufacturing}{25}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}\acrshort {CAM} Software}{25}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Path Planning}{26}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Optimization Algorithms}{27}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Comparison of the State of the Art }{29}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Singularity avoidance}{29}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Optimization of Joint Accelerations and Jerk}{31}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Optimization of Stiffens}{31}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Optimization of Energy use}{33}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Summary}{33}{subsection.2.4.5}%
+\contentsline {chapter}{\numberline {3}Methodology}{35}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{35}{section.3.1}%
+\contentsline {section}{\numberline {3.2}General Methodology for Process Analysis and Evaluation}{35}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}General Methodology}{35}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Process Parameters}{37}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}User-Defined Weights and Score Calculation}{40}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Local Rating and Global Score}{40}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Local Rating Calculation}{41}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Information Extraction form Time-Series Data}{43}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Information from Angular Position}{43}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{44}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{47}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk of the Joints}{48}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{49}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Energy Usage}{51}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Continuous Energy-Usage}{51}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{53}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Reach, Singularities and Torch Orientation}{54}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Reach and Orientation}{54}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Singularities}{56}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Torch Orientation in WAAM}{56}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Summary for Boundary Condition Evaluation}{58}{section.3.8}%
+\contentsline {section}{\numberline {3.9}General Methodology for Process Optimization}{60}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Optimization Loop without CAM-software}{60}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Optimization Loop with CAM-software}{62}{subsection.3.9.2}%
+\contentsline {chapter}{\numberline {4}Implementation and Validation}{65}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Simple Implementation}{65}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Modeling a 6-DoF robot}{65}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Modeling a basic Toolpath}{67}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Extracting process parameters}{69}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Testing and Validation}{70}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Toolpath Evaluation with one Redundant DoF}{70}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Validation on a production grade toolpath}{75}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Toolpath Evaluation with two Redundant DoF}{77}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Boundary Condition Optimization }{79}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Analysis and Discussion of the Results}{85}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis of the Results}{85}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Discussion of the Results}{87}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{89}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{89}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{90}{section.5.2}%
+\contentsline {chapter}{Bibliography}{99}{chapter*.91}%
 \contentsfinish 
