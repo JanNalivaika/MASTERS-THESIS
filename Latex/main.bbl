@@ -530,53 +530,6 @@
       \field{title}{Computer aided design and manufacturing}
       \field{year}{2020}
     \endentry
-    \entry{Liberman.2021}{article}{}
-      \name{author}{2}{}{%
-        {{hash=a36964058a389ba95c1b58763351a3d0}{%
-           family={Liberman},
-           familyi={L\bibinitperiod},
-           given={Ya.\bibnamedelimi L.},
-           giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=fb2e2b88a0a61a358b0c0bd939f3f6e1}{%
-           family={Gorbunova},
-           familyi={G\bibinitperiod},
-           given={L.\bibnamedelimi N.},
-           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-      }
-      \strng{namehash}{27e66cb83001be261ac6d9fb06161a6e}
-      \strng{fullhash}{27e66cb83001be261ac6d9fb06161a6e}
-      \strng{bibnamehash}{27e66cb83001be261ac6d9fb06161a6e}
-      \strng{authorbibnamehash}{27e66cb83001be261ac6d9fb06161a6e}
-      \strng{authornamehash}{27e66cb83001be261ac6d9fb06161a6e}
-      \strng{authorfullhash}{27e66cb83001be261ac6d9fb06161a6e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The quality of CNC machines and their control systems is assessed in terms of the contour accuracy, consisting of two components: the accuracy in sending the signal confirming that the working component has reached the specified coordinate; and the accuracy in executing the stop command, given the inertia of the actuators. Recommendations are made regarding the selection of the device for monitoring the motion of the working components in a CNC machine with a gapless gear transmission and a torsional motor. If the required positional accuracy is low, it is acceptable to disregard the error in the gear ratio of the mechanical transmission between the sensor and the guide screw (or any other device converting rotation into linear motion). When using a device for monitoring the motion of the working components in a CNC machine, the adjustment of the sensor at the center of the scale interval should be as precise as possible.}
-      \field{issn}{1934-8088}
-      \field{journaltitle}{Russian Engineering Research}
-      \field{number}{11}
-      \field{title}{Selection of Positioning Devices for the Components of CNC Machines}
-      \field{volume}{41}
-      \field{year}{2021}
-      \field{pages}{1067\bibrangedash 1070}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.3103/S1068798X21110204
-      \endverb
-      \verb{file}
-      \verb Liberman, Gorbunova 2021 - Selection of Positioning Devices:Attachments/Liberman, Gorbunova 2021 - Selection of Positioning Devices.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/article/10.3103/s1068798x21110204
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/article/10.3103/s1068798x21110204
-      \endverb
-    \endentry
     \entry{Jia.2018}{article}{}
       \name{author}{5}{}{%
         {{hash=d261670f4ba5df509b360f3d91c5c892}{%
@@ -626,6 +579,53 @@
       \range{pages}{21}
       \verb{doi}
       \verb 10.1016/j.ijmachtools.2017.10.008
+      \endverb
+    \endentry
+    \entry{Liberman.2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a36964058a389ba95c1b58763351a3d0}{%
+           family={Liberman},
+           familyi={L\bibinitperiod},
+           given={Ya.\bibnamedelimi L.},
+           giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=fb2e2b88a0a61a358b0c0bd939f3f6e1}{%
+           family={Gorbunova},
+           familyi={G\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{fullhash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{bibnamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authorbibnamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authornamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authorfullhash}{27e66cb83001be261ac6d9fb06161a6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The quality of CNC machines and their control systems is assessed in terms of the contour accuracy, consisting of two components: the accuracy in sending the signal confirming that the working component has reached the specified coordinate; and the accuracy in executing the stop command, given the inertia of the actuators. Recommendations are made regarding the selection of the device for monitoring the motion of the working components in a CNC machine with a gapless gear transmission and a torsional motor. If the required positional accuracy is low, it is acceptable to disregard the error in the gear ratio of the mechanical transmission between the sensor and the guide screw (or any other device converting rotation into linear motion). When using a device for monitoring the motion of the working components in a CNC machine, the adjustment of the sensor at the center of the scale interval should be as precise as possible.}
+      \field{issn}{1934-8088}
+      \field{journaltitle}{Russian Engineering Research}
+      \field{number}{11}
+      \field{title}{Selection of Positioning Devices for the Components of CNC Machines}
+      \field{volume}{41}
+      \field{year}{2021}
+      \field{pages}{1067\bibrangedash 1070}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.3103/S1068798X21110204
+      \endverb
+      \verb{file}
+      \verb Liberman, Gorbunova 2021 - Selection of Positioning Devices:Attachments/Liberman, Gorbunova 2021 - Selection of Positioning Devices.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.3103/s1068798x21110204
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.3103/s1068798x21110204
       \endverb
     \endentry
     \entry{Sherwani.2020}{inproceedings}{}
@@ -1099,6 +1099,43 @@
       \verb Boscariol, Caracciolo et al. 2020 - Energy Optimization of Functionally Redundant:Attachments/Boscariol, Caracciolo et al. 2020 - Energy Optimization of Functionally Redundant.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Kireanski.1993}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cd867ee3a86e0a5a0f0ca290e19ad163}{%
+           family={Kiréanski},
+           familyi={K\bibinitperiod},
+           given={Manja\bibnamedelima V.},
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e83a8da7f65c22593a9ad66565b13661}{%
+           family={Petrovié},
+           familyi={P\bibinitperiod},
+           given={Tatjana\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{fullhash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{bibnamehash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{authorbibnamehash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{authornamehash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{authorfullhash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0278-3649}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{number}{2}
+      \field{title}{Combined Analytical- Pseudoinverse Inverse Kinematic Solution for Simple Redundant Manipulators and Singularity Avoidance}
+      \field{volume}{12}
+      \field{year}{1993}
+      \field{pages}{188\bibrangedash 196}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1177/027836499301200207
+      \endverb
+    \endentry
     \entry{Wang.2022}{article}{}
       \name{author}{5}{}{%
         {{hash=e4b2ac8bed44f2d428aa4517c0f0c1bd}{%
@@ -1151,42 +1188,8 @@
       \verb{doi}
       \verb 10.1007/s00170-022-09889-4
       \endverb
-    \endentry
-    \entry{Kireanski.1993}{article}{}
-      \name{author}{2}{}{%
-        {{hash=cd867ee3a86e0a5a0f0ca290e19ad163}{%
-           family={Kiréanski},
-           familyi={K\bibinitperiod},
-           given={Manja\bibnamedelima V.},
-           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=e83a8da7f65c22593a9ad66565b13661}{%
-           family={Petrovié},
-           familyi={P\bibinitperiod},
-           given={Tatjana\bibnamedelima M.},
-           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{54af957f146d1f608c14f7a32fd8f2c4}
-      \strng{fullhash}{54af957f146d1f608c14f7a32fd8f2c4}
-      \strng{bibnamehash}{54af957f146d1f608c14f7a32fd8f2c4}
-      \strng{authorbibnamehash}{54af957f146d1f608c14f7a32fd8f2c4}
-      \strng{authornamehash}{54af957f146d1f608c14f7a32fd8f2c4}
-      \strng{authorfullhash}{54af957f146d1f608c14f7a32fd8f2c4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0278-3649}
-      \field{journaltitle}{The International Journal of Robotics Research}
-      \field{number}{2}
-      \field{title}{Combined Analytical- Pseudoinverse Inverse Kinematic Solution for Simple Redundant Manipulators and Singularity Avoidance}
-      \field{volume}{12}
-      \field{year}{1993}
-      \field{pages}{188\bibrangedash 196}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1177/027836499301200207
+      \verb{file}
+      \verb Wang, Liu et al. 2022 - Optimization of redundant degree:Attachments/Wang, Liu et al. 2022 - Optimization of redundant degree.pdf:application/pdf
       \endverb
     \endentry
     \entry{Malyshev.2022}{incollection}{}
@@ -1702,8 +1705,8 @@
       \strng{authorbibnamehash}{24d7309417112ffae6d00aab4715847f}
       \strng{authornamehash}{3e7c41bfaa483905afba3bc8bf0a1154}
       \strng{authorfullhash}{24d7309417112ffae6d00aab4715847f}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -2637,8 +2640,8 @@
       \strng{authorbibnamehash}{5c0cdd815ae0aed91df980c76448d6ad}
       \strng{authornamehash}{b3bd782ae628c63309d63505092d5ebc}
       \strng{authorfullhash}{5c0cdd815ae0aed91df980c76448d6ad}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -2688,8 +2691,8 @@
       \strng{authorbibnamehash}{e8f738c7a52fe62173f4d6069461b546}
       \strng{authornamehash}{166ce9d007168b640c509f2403f18968}
       \strng{authorfullhash}{e8f738c7a52fe62173f4d6069461b546}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -3199,8 +3202,8 @@
       \strng{authorbibnamehash}{c8cc80f102140a20b53625da14b492a5}
       \strng{authornamehash}{53401f6724d0bbad6298f417d4b5e204}
       \strng{authorfullhash}{c8cc80f102140a20b53625da14b492a5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -3233,6 +3236,7 @@
       \field{labeldatesource}{}
       \field{labeltitlesource}{title}
       \field{abstract}{In this buyer's guide we cover each type of CNC machine like mills, lathes, plasma cutters, and more and discuss their uses, prices, and must-have features}
+      \field{number}{Last access: 30.10.2023}
       \field{title}{CNC Masters}
       \field{year}{2022}
       \verb{urlraw}
@@ -3553,8 +3557,8 @@
       \strng{authorbibnamehash}{8c8a21b012b156aa7db82008f63d4570}
       \strng{authornamehash}{8c8a21b012b156aa7db82008f63d4570}
       \strng{authorfullhash}{8c8a21b012b156aa7db82008f63d4570}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -3958,8 +3962,8 @@
       \strng{authorbibnamehash}{aafd04ab6b37bd187b72b7b014edabae}
       \strng{authornamehash}{9dfe31957bae9109ae3b15fff5969d15}
       \strng{authorfullhash}{aafd04ab6b37bd187b72b7b014edabae}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -4360,8 +4364,8 @@
       \strng{authorbibnamehash}{d46aaec18c55208e4ebcc7a89159c774}
       \strng{authornamehash}{4672b3e58131284a3e6714fe9d4c276b}
       \strng{authorfullhash}{d46aaec18c55208e4ebcc7a89159c774}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
