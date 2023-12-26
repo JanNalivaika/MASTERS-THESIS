@@ -260,7 +260,7 @@ While redundancy in industrial robots can provide increased flexibility and adap
 
 
 \subsubsection{Continuous-path mode}\label{CPM}
-In the context of industrial robotics, continuous paths without abrupt direction or velocity changes of a tool play a crucial role in achieving precise and smooth movements of robotic arms along a defined trajectory~\cite{Jia.2018}. This ensures that the robot can execute complex tasks and movements with accuracy and efficiency. By incorporating continuous path mode into industrial robot programming, manufacturers can optimize production processes and improve the quality of manufactured products~\cite{Zhang.2020}. Constant velocity of a tool is especially important in applications like \acrshort{WAAM} where the quality of the layer is directly dependent on the feed rate~\cite{Li.2018b}. In \acrshort{CNC} machining, discontinuities in velocity, acceleration, and jerk result in non-optimal surface finishes~\cite{Sun.2021}.
+In the context of industrial robotics, continuous paths without abrupt direction or velocity changes of a tool play a crucial role in achieving smooth movements of robotic arms along a defined trajectory~\cite{Jia.2018}. This ensures that the robot can execute complex tasks and movements with accuracy and efficiency. By incorporating continuous path mode into industrial robot programming, manufacturers can optimize production processes and improve the quality of manufactured products~\cite{Zhang.2020}. Constant velocity of a tool is especially important in applications like \acrshort{WAAM} where the quality of the layer is directly dependent on the feed rate~\cite{Li.2018b}. In \acrshort{CNC} machining, discontinuities in velocity, acceleration, and jerk result in non-optimal surface finishes~\cite{Sun.2021}.
 
 
 Continuous path mode refers to a mode of operation in high-speed robotics as well as \acrshort{CNC} machines where the goal is to achieve a smooth and uninterrupted movement of the machine along a toolpath. In this mode, the machine is expected to follow a path without any sudden changes in velocity, acceleration, or curvature. The purpose of continuous path mode is to minimize jerk spikes, machine vibrations, and other undesirable effects that can occur when there are discontinuities in the toolpath~\cite{Jia.2018, Yang.2017}.
@@ -275,8 +275,7 @@ Figure \ref{C1} gives a visual example of a contouring toolpath that is defined 
  	\label{C1}
  \end{figure}
 
-\newpage
-Figure \ref{C2} shows how specific G-code commands of the SINUMERIK 840D influence the targeted feedrate. N1 to N12 are the individual G-code lines defining the coordinates with the corresponding orientation, also called waypoints, of the tool center point \acrshort{TCP}.  When using the G60 command, the points are reached exactly, but the feedrate is reducing to 0 at every waypoint. When implementing the G64 (continuous pathmode) command, the feedrate can be held at the desired value but at the cost of precision.
+Figure \ref{C2} shows how specific G-code commands of the SINUMERIK 840D influence the targeted feedrate. N1 to N12 are the individual G-code lines defining the coordinates with the corresponding orientation, also called waypoints, of the tool center point (\acrshort{TCP}).  When using the G60 command, the points are reached exactly, but the feedrate is reducing to 0 at every waypoint. When implementing the G64 (continuous pathmode) command, the feedrate can be held at the desired value but also requires \textit{LookAhead}-deceleration to maintain precision.
  
  \begin{figure}[H]
  	\centerline{\includegraphics[width=\textwidth]{figures/conti1.png}}
@@ -284,16 +283,16 @@ Figure \ref{C2} shows how specific G-code commands of the SINUMERIK 840D influen
  	\label{C2}
  \end{figure}
  
-The SINUMERIK 840D offer more commands to specify how much deviation is desired.
-Figure \ref{C3} shows how the G-code command G641 ADIS=0.5 is influencing the programmed contour. The rounding of the path begins no more than 0.5 mm before the programmed end of the block and must finish 0.5 mm after the end of the block. 
+The SINUMERIK 840D offer more commands to specify how much deviation is acceptable.
+Figure \ref{C3} shows how the G-code command G641 ADIS=0.5 is influencing the programmed contour. The rounding of the path begins no more than 0.5 mm before the programmed end of the contour and must finish 0.5 mm after the end of the corner point. 
  
  \begin{figure}[H]
- 	\centerline{\includegraphics[scale=.3]{figures/conti2.png}}
+ 	\centerline{\includegraphics[scale=.35]{figures/conti2.png}}
  	\caption{Predetermined deviation of the programmed and executed path~\cite{sinumericmanual}}
  	\label{C3}
  \end{figure}
- \newpage
-It is also possible to define the precision criterion globally instead of individually at every coordinate. For that the commands G601 and G602 can be utilized. Figure \ref{C4} shows how these two commands influence the executed trajectory. In this case, two different tolerance limits allow the tool to deviate from the programmed path.
+
+It is also possible to define the precision criterion globally instead of individually at every coordinate. For that the commands G601 and G602 can be utilized. Figure \ref{C4} shows how these two commands influence the executed trajectory. In this case, two different tolerances, according to the axis-specific tolerance limits, allow the tool to deviate from the programmed path.
  
 \begin{figure}[H]
  	\centerline{\includegraphics[scale=.3]{figures/conti3.png}}
@@ -301,14 +300,12 @@ It is also possible to define the precision criterion globally instead of indivi
  	\label{C4}
 \end{figure}
  
- 
- 
 Continuous-path mode in \acrshort{CNC} machining is a crucial aspect when it comes to processing parts with rapidly varied geometric features. These types of components, often found in high-end equipment, pose challenges due to their intricate structures and strict dimensional requirements. The presence of rapidly varied geometric features, coupled with the continuous-path running characteristic, gives rise to trajectory errors during the machining process, which severely hampers the overall machining accuracy of such parts~\cite{Shahzadeh.2018}. This becomes even more critical in high-speed machining scenarios, where existing studies struggle to effectively reduce this error without compromising machining efficiency~\cite{Li.2018}.
 
 In \acrshort{CNC} machines, toolpaths are typically composed of lines and arcs~\cite{Liu.2020}. At the transition points between these elements, careful consideration is required to ensure that the physical limits of the machine are not exceeded. For example, when the machine is moving at a constant feedrate, a sudden change in velocity can occur when two successive non-tangent linear moves meet. This can lead to undesirable effects on the machine and the quality of the cut~\cite{Boujelbene.2004}. Similar issues arise at transitions between lines and arcs or between two arcs, where curvature discontinuities need to be addressed. 
 
 %To overcome these challenges and achieve a smooth and continuous toolpath, path smoothing techniques are necessary.
-Many path smoothing methods have been proposed in the literature, but most of them are limited to linear toolpaths. However, in high-speed \acrshort{CNC} machines and industrial robots, the toolpaths often consist of both lines and arcs. Therefore, there is a need for a path smoothing method that can handle both line-to-line transitions and transitions involving arcs~\cite{Shahzadeh.2018}. These errors are caused by factors such as servo lag, dynamics mismatch, external disturbances, and more~\cite{Jia.2018}.% Reducing these contouring errors while at the same time allowing high-speed and high-precision machining is essential for improving the performance of \acrshort{CNC} motion systems. 
+Many path smoothing methods have been proposed in the literature, but most of them are limited to linear toolpaths. However, in high-speed \acrshort{CNC} machines and industrial robots, the toolpaths often consist of both lines and arcs. Therefore, there is a need for a path smoothing method that can handle both line-to-line transitions and transitions involving arcs~\cite{Shahzadeh.2018}. These errors are caused by factors such as servo lag, dynamics mismatch, external disturbances, and more.%~\cite{Jia.2018}.% Reducing these contouring errors while at the same time allowing high-speed and high-precision machining is essential for improving the performance of \acrshort{CNC} motion systems. 
 
 %and enhance both processing efficiency and precision
 To address this issue, various estimation and compensation methods have been proposed for reducing trajectory error. These approaches can be divided into contouring-error estimation and contouring-error reduction approaches~\cite{Jia.2018}. These approaches include the "Moving frame based method", "Analytical method", "Generalized method" or "Servo-tuning approach". It is important to note that these methods for contouring-error estimation and reduction, only offer relative significance. Each algorithm has its own optimal range of applications and may outperform other methods within that range. Additionally, it is important to note that not every approach can be implemented on every system.
@@ -322,6 +319,15 @@ To address this issue, various estimation and compensation methods have been pro
 
 
 Another approach for achieving continuous path mode is by using biclothoid fillets. These fillets are used for corner smoothing and can be fitted between two arcs or a line and an arc. The main advantage of using biclothoid fillets is that they result in a smoother curvature profile compared to other methods, such as Bezier fillets. Especially with tight tolerance values, only a few biclothoid fillets are needed compared to Bezier fillets. Additionally, the biclothoid approach is more suitable in regards to the jerk and acceleration limits of the driving units. This smoother curvature profile allows for higher feedrates and shorter cycle times, ultimately improving the overall performance of the \acrshort{CNC} machine~\cite{Shahzadeh.2018}. 
+\newpage
+
+
+
+
+
+
+
+
 
 
 
@@ -345,10 +351,7 @@ Another approach for achieving continuous path mode is by using biclothoid fille
 
 \acrshort{CAM} software enables manufacturers to generate toolpaths and machining instructions for a variety of manufacturing processes, including milling, turning, drilling, and 3D printing~\cite{Kumar.2019}. It takes into account factors such as material properties, tool capabilities, and manufacturing constraints to generate the most efficient and accurate instructions for the machines. \acrshort{CAM} software can also simulate the machining process to detect any potential collisions or issues before actual production begins, saving time and resources~\cite{Bui.2019}.
 
-One of the key features of \acrshort{CAM} software is its ability to optimize the machining process. It can automatically optimize toolpaths to minimize machining time, reduce material waste, and improve surface finish. By analyzing the geometry of the part, the software can determine the most efficient toolpath strategies, such as contouring, pocketing, or adaptive machining. It can also optimize tool selection, toolpath sequencing, and cutting parameters to achieve the best possible results~\cite{Kyratsis.2020}.
-
-%It also offers advanced features such as multi-axis machining and support for complex geometries. It can generate toolpaths for machines with multiple axes of motion, allowing for more intricate and precise machining operations. It can handle complex geometries, including freeform surfaces and curved profiles, and generate toolpaths that accurately follow the desired shape~\cite{Liang.2021}.
-
+One of the key features of \acrshort{CAM} software is its ability to optimize the machining process. It can automatically optimize toolpaths to minimize machining time, reduce material waste, and improve surface finish. By analyzing the geometry of the part, the software can determine the most efficient toolpath strategies, such as contouring, pocketing, or adaptive machining. It can also optimize tool selection, toolpath sequencing, and cutting parameters to achieve the best possible results~\cite{Kyratsis.2020}. %It also offers advanced features such as multi-axis machining and support for complex geometries. It can generate toolpaths for machines with multiple axes of motion, allowing for more intricate and precise machining operations. It can handle complex geometries, including freeform surfaces and curved profiles, and generate toolpaths that accurately follow the desired shape~\cite{Liang.2021}.
 Furthermore, \acrshort{CAM} software often integrates with other manufacturing software systems, such as computer-aided engineering (\acrshort{CAE}) and enterprise resource planning (\acrshort{ERP}) systems~\cite{Ramazanov.2020}. This integration enables seamless data exchange, improves collaboration between different departments, and ensures that the manufacturing process is aligned with the overall production goals~\cite{Kadam.2023}. With features such as optimization, simulation, multi-axis machining, and integration with other systems, \acrshort{CAM} software empowers manufacturers to stay competitive in today's fast-paced and complex manufacturing environment~\cite{Kappmeyer.2021}.
 
 %It enables manufacturers to improve efficiency, reduce errors, and achieve higher-quality products.
@@ -356,35 +359,33 @@ Furthermore, \acrshort{CAM} software often integrates with other manufacturing s
 Figure \ref{CAMinterface} shows the interface of Siemens NX, a \acrshort{CAM}/\acrshort{CAD} software that can be used to design parts and generate machine-specific instructions for manufacturing. 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=.4]{figures/CAM.png}}
+	\centerline{\includegraphics[width=1\textwidth]{figures/CAM.png}}
 	\caption{Interface of Siemens NX~\cite{NXManufacturing.2015}}
 	\label{CAMinterface}
 \end{figure}
 
 
 \subsection{Path Planning}\label{papla}
-Path planning and generation are crucial features of \acrshort{CAM}. It involves establishing the most effective toolpaths for machining operations, guaranteeing efficient and precise production~\cite{Brecher.2013}.
-
-Path planning involves determining the optimal sequence of movements for the machining tool to follow while producing a component. It considers factors such as part geometry, tool capabilities, machining constraints, and desired parameters. Its goal is to minimize machining time, reduce waste, and improve the finished product~\cite{Xu.2015}. \acrshort{CAM} software employs algorithms and mathematical models to determine the tool's position and orientation on the toolpath. Additionally, factors such as cutting direction, feed rate, and tool engagement need to be taken into account~\cite{Tunc.2017}.
+Path planning is a crucial features of \acrshort{CAM}. It involves establishing the most effective toolpaths for machining operations, guaranteeing efficient and precise production~\cite{Brecher.2013}. It involves determining the optimal sequence of movements for the machining tool to follow while producing a part. It considers factors such as geometry, tool capabilities, machining constraints, and desired parameters. Its goal is to minimize machining time, reduce waste, and improve the finished product~\cite{Xu.2015}. \acrshort{CAM} software employs algorithms and mathematical models to determine the tool's position and orientation on the toolpath. Additionally, factors such as cutting direction, feed rate, and tool engagement need to be taken into account~\cite{Tunc.2017}.
 
 Adaptive machining is a critical part of path planning and generation. It enables the \acrshort{CAM} software to adjust the toolpath and cutting parameters in real-time based on material properties, tool wear, and other factors. This constant monitoring and adaptation ensure precise and dependable outcomes, even in difficult manufacturing conditions~\cite{Liu.2017}.
 
 Multi-axis machining is an advanced function of \acrshort{CAM} software, ideal for intricate cuts and shapes on complex geometries. By allowing the tool to move simultaneously along multiple axes, it delivers greater precision and accuracy during the machining of curved surfaces, free-form shapes, or parts with undercuts~\cite{Takeuchi.2014}.
 
 %Simulation is vital in planning and generating paths for this process.
-\acrshort{CAM} software typically includes simulation tools that enable users to visualize and verify the toolpath prior to production. These simulations can detect and resolve potential collisions, interference, or errors that may occur during machining, leading to cost savings and increased safety~\cite{Dubovska.2014}. 
+\acrshort{CAM} software typically includes simulation tools that enable users to visualize and verify the toolpath prior to production. These simulations can detect potential collisions or errors that may occur during machining~\cite{Dubovska.2014}. 
 
-Figure \ref{3path} shows three different path trajectories for planar milling operations. Depending on the area of application, different paths can be optimal. In generic 3D-printing as well as in \acrshort{WAAM} multiple different infill methods, similar to the planar milling operations, can be used to build up the desired geometry.  
+Figure \ref{3path} shows three different path trajectories for planar milling operations. Depending on the area of application, different paths can be optimal. In generic 3D-printing as well as in \acrshort{WAAM} multiple different infill methods, similar to the planar milling operations, can be used to build up and fill the desired geometry.  
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=.35]{figures/path.png}}
+	\centerline{\includegraphics[width=1\textwidth]{figures/path.png}}
 	\caption{Three exemplary tool paths for iso-planar milling~\cite{Zhao.2018}}
 	\label{3path}
 \end{figure}
 
 \section{Optimization Algorithms}%
 
-Optimization algorithms are computational methods used to find the best possible solution to a problem within a given set of constraints. These algorithms aim to minimize or maximize an objective function by iteratively adjusting the values of decision variables~\cite{Sivanandam.2007b}. They are widely used in various fields, including engineering, operations research, finance, and machine learning, to optimize resource allocation, scheduling, parameter tuning, and other complex tasks. For the problem described in \ref{Problem Formulation} optimization algorithms can be used for determining optimal parameters for the redundant \acrshort{DoF}s while considering the defined objective, like reduction of direction changes or energy optimization. 
+Optimization algorithms are computational methods used to find the best possible solution to a problem within a given set of constraints. These algorithms aim to minimize or maximize an objective function by iteratively adjusting the values of decision variables~\cite{Sivanandam.2007b}. They are widely used in various fields, including engineering, operations research, finance, and machine learning, to optimize resource allocation, scheduling, parameter tuning, and other complex tasks. For the problem described in Chapter \ref{Problem Formulation} optimization algorithms can be used for determining optimal constraint for the redundant \acrshort{DoF}s while considering the defined objective, like reduction of direction changes or energy optimization. 
 
 
 Optimization algorithms are computational techniques employed to identify the optimal solution or set of solutions for a given problem. There are several types of optimization algorithms, each exhibiting a unique methodology and characteristics. Gradient-based optimization algorithms, like gradient descent, update the solution iteratively by following the direction of the steepest ascent or descent of the objective function~\cite{Ruder.2017}. These algorithms are efficient for convex optimization problems where the objective function is smooth and has a unique global minimum or maximum.
@@ -393,11 +394,11 @@ Another type of optimization algorithm is the evolutionary algorithm, which is i
 
 Genetic algorithms are evolutionary algorithms that use genetic operators, like crossover and mutation, to evolve solutions in a population. They can handle various types of optimization problems. Genetic algorithms are particularly effective for multi-objective optimization problems. They generate a set of solutions called the Pareto front, which represents the trade-off between conflicting objectives~\cite{Lambora.2019,Katoch.2021}.
 
-Particle swarm optimization (\acrshort{PSO}) is a metaheuristic optimization algorithm based on the collective behavior of a particle swarm. In \acrshort{PSO}, each particle represents a potential solution, and it moves through the search space to discover the optimal solution by exchanging information with nearby particles. This cooperative behavior enables the algorithm to efficiently converge to better solutions. \acrshort{PSO} is especially beneficial for continuous optimization problems that have numerous local optima~\cite{Back.1993}.
+Particle swarm optimization (\acrshort{PSO}) is a metaheuristic optimization algorithm based on the collective behavior of a particle swarm. In \acrshort{PSO}, each particle represents a potential solution, and it moves through the search space to discover the optimal solution by exchanging information with other particles. This cooperative behavior enables the algorithm to efficiently converge to better solutions. \acrshort{PSO} is especially beneficial for continuous optimization problems that have numerous local optima~\cite{Back.1993}.
 
 In recent years, there has been an increasing interest in metaheuristic optimization algorithms. Examples of such algorithms are ant colony optimization, differential evolution, and harmony search, which draw inspiration from natural phenomena or human behavior. These general-purpose algorithms can be applied to various optimization problems and provide efficient and flexible approaches to finding optimal solutions~\cite{Yang.2011}.
 
-Optimization algorithms prove to be significant resources for uncovering optimal solutions to intricate issues. Be it via gradient-based means, evolutionary algorithms, metaheuristics, or other customized mechanisms. Optimization algorithms effectively fine-tune objectives, meet requirements, and refine decision-making processes across a broad spectrum of industries. The algorithm choice relies on the problem's characteristics, the available computational resources, and the desired balance between solution quality and computational efficiency.
+Optimization algorithms prove to be significant resources for uncovering optimal solutions to intricate issues. Optimization algorithms effectively fine-tune objectives, meet requirements, and refine decision-making processes across a broad spectrum of industries. The algorithm choice relies on the problem's characteristics, the available computational resources, and the desired balance between solution quality and computational efficiency.
 
 
 \begin{comment}
@@ -444,9 +445,12 @@ In conclusion, ML techniques offer powerful tools for solving optimization probl
 \newpage
 \section{Comparison of the State of the Art }\label{comp}
 
-In the following, a literature analysis is performed regarding the optimization of various process parameters. The focus lies on manufacturing systems with redundant \acrshort{DoF}, specifically for tasks such as milling and \acrshort{WAAM}. In cases where no literature is available that incorporates redundant \acrshort{DoF}, non-redundant systems are analyzed.
-Table \ref{parameter} summarizes the analyzed parameters. 
+In the following, a literature analysis is performed regarding the optimization of various process parameters. The focus lies on manufacturing systems with redundant \acrshort{DoF}s, specifically for tasks such as milling and \acrshort{WAAM}. 
+The main focus lies on the parameters: singularity avoidance, joint accelerations and jerk, stiffness and energy use.
+In cases where no literature is available that incorporates redundant \acrshort{DoF}s, non-redundant systems are analyzed. Additional parameters like transfer time, precision, and maximum load capacity can also be analyzed but are omitted from the detailed analysis due to the limitations of scope.
+%Table \ref{parameter} summarizes the analyzed parameters. 
 
+\begin{comment}
 
 \begin{table} [H]
 	\centering
@@ -465,26 +469,28 @@ Table \ref{parameter} summarizes the analyzed parameters.
 	\caption{Areas of influence of boundary conditions and process parameters}
 	\label{parameter}
 \end{table}
+	\end{comment}
+	
+	
+%Additional parameters like transfer time, precision, and maximum load capacity can also be analyzed but are omitted from the detailed analysis due to the limitations of scope.%~\cite{Breaz.2017, Hirzinger.2005, Pham.2018}. Direction changes in the joint are briefly mentioned in~\cite{Halbauer.2013} but not discussed in detail in any other publication.
 
-Additional parameters like transfer time, precision, and maximum load capacity can also be analyzed but are omitted from the detailed analysis due to the limitations of scope~\cite{Breaz.2017, Hirzinger.2005, Pham.2018}. Direction changes in the joint are briefly mentioned in~\cite{Halbauer.2013} but not discussed in detail in any other publication.
-
-\subsection{Singularity avoidance}\label{Singularity avoidance}
+\subsection{Singularity Avoidance}\label{Singularity avoidance}
 As mentioned in Chapter \ref{Problem Formulation}, singularities occur when the robot manipulator loses control or achieves limited mobility due to certain configurations~\cite{Malyshev.2022}. This results in the loss of a \acrshort{DoF} or makes the system highly sensitive to small changes~\cite{Zhao.2021, Milenkovic.2021}.
-Figure \ref{wristsingular} shows how the 5th joint needs to rotate significantly when moving along a straight line in Cartesian space. When an additional velocity boundary condition is set that defines the feed rate of that path, the rotation is very difficult to perform as the motor joints cannot keep up with the required angular acceleration. This is unnecessary movement that increases energy consumption and adds unnecessary wear to the joints. 
+Figure \ref{wristsingular} shows how the 5th joint needs to rotate significantly when moving along a straight line in Cartesian space. When an additional velocity boundary condition is set that defines the feed rate of that path, the rotation is very difficult to perform as the motor joints cannot keep up with the required angular acceleration. This movement significantly increases energy consumption and increases wear on the joints. 
 
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=.25]{figures/wristsingular.png}}
+	\centerline{\includegraphics[scale=.35]{figures/wristsingular.png}}
 	\caption{Passing trough a wrist singularity~\cite{meca}}
 	\label{wristsingular}
 \end{figure}
-\newpage
-Due to the numerous possible solutions for the inverse kinematics of redundant manipulators, it is exceptionally challenging to predict and prevent the occurrence of singularity configurations during motion planning~\cite{Shi.2021}.
+
+Due to the infinite possible solutions for the inverse kinematics of redundant manipulators, it is exceptionally challenging to predict and prevent the occurrence of singularity configurations during motion planning~\cite{Shi.2021}.
 
 In tasks that involve functional redundancy, as where the manipulator has more \acrshort{DoF} than required for the task, the general projection method cannot be applied~\cite{Wei.2014}. Robotic industrial welding processes often have functional redundancy due to the presence of symmetry axes when using generic 6-\acrshort{DoF} industrial robots. Different approaches have been proposed to solve functional redundancy, including adding a virtual joint to the manipulator or using the twist decomposition approach (\acrshort{TWA}).
 
-Most of the research is limited to the mathematical analysis of singularities and does not consider the industrial implementation of the proposed algorithms in an industrial setting. The manipulability measure and maximization of Jacobian minors are commonly used methods to avoid singularities. Other methods, such as condition number and singular value decomposition, can also be used~\cite{Stevenson.}. Another mathematical analysis performs a differentiation between non-recoverable singularities and configurations where through self-motion recovery into a nonsingular configuration is possible~\cite{Bedrossian.2002}
+Most of the research is limited to the mathematical analysis of singularities and does not consider the industrial implementation of the proposed algorithms in an industrial setting. The manipulability measure and maximization of Jacobian minors are commonly used methods to avoid singularities. Other methods, such as condition number and singular value decomposition, can also be used~\cite{Stevenson.}. Another mathematical analysis performs a differentiation between non-recoverable singularities and configurations where through self-motion recovery into a non-singular configuration is possible~\cite{Bedrossian.2002}.
 
 Another approach proposes a kinetostatic performance index for evaluating the quality of robotic postures, which includes singularity avoidance and joint limit consideration~\cite{Huo.2008}. This method is also transferable to applications like milling. A parameter called "condition number" and "manipulability" are introduced, which are used to calculate the "kinetostatic performance index". The presented method can increase the distance from singularities and lower the maximum rotation velocity of the fourth joint. One disadvantage of the proposed method is the manual selection of a parameter. This parameter is responsible for avoiding joint limits and minimizing joint velocities. Manual fine-tuning of that parameter is required for optimal performance. 
 
@@ -494,7 +500,7 @@ Another approach uses the non-square Jacobi matrix and, after analysis, derives 
 A singular configuration avoidance algorithm is used to avoid singular patterns through constraining redundant \acrshort{DoF}~\cite{Shi.2021}.
 
 Neural networks and other machine learning approaches are commonly used to solve the issue of inverse kinematics. In this case, the optimization variable is not only limited to singularity avoidance but can also be focused on precision or optimization of feed rate~\cite{Wei.2014}.
-
+\newpage
 \subsection{Optimization of Joint Accelerations and Jerk}
 
 Jerk and acceleration control are critical because high values can wear out the robot structure and significantly stimulate its resonance frequencies. Vibrations caused by non-smooth trajectories can harm the robot's actuators and produce substantial deviations when completing tasks like trajectory tracking. Furthermore, low-jerk trajectories can be accomplished more quickly and precisely~\cite{Gasparetto.2010}.
