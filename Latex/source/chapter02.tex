@@ -279,7 +279,7 @@ Figure \ref{C2} shows how specific G-code commands of the SINUMERIK 840D influen
  
  \begin{figure}[H]
  	\centerline{\includegraphics[width=\textwidth]{figures/conti1.png}}
- 	\caption{Influence of G-Code commands regarding feedrate compliance~\cite{sinumericmanual}}
+ 	\caption{Influence of G-Code commands G64 and G60~\cite{sinumericmanual}}
  	\label{C2}
  \end{figure}
  
@@ -288,7 +288,7 @@ Figure \ref{C3} shows how the G-code command G641 ADIS=0.5 is influencing the pr
  
  \begin{figure}[H]
  	\centerline{\includegraphics[scale=.35]{figures/conti2.png}}
- 	\caption{Predetermined deviation of the programmed and executed path~\cite{sinumericmanual}}
+ 	\caption{Predetermined deviation of the programmed path~\cite{sinumericmanual}}
  	\label{C3}
  \end{figure}
 
@@ -349,7 +349,7 @@ Another approach for achieving continuous path mode is by using biclothoid fille
 
 %\acrshort{CAM} software is a type of computer software used to automate and optimize the manufacturing process. \acrshort{CAM} software takes the design data from computer-aided design (\acrshort{CAD}) software and converts it into instructions that control machines and tools to produce the desired product~\cite{Bi.2021}. It plays a critical role in modern manufacturing, helping to streamline production, improve efficiency, and reduce errors.
 
-\acrshort{CAM} software enables manufacturers to generate toolpaths and machining instructions for a variety of manufacturing processes, including milling, turning, drilling, and 3D printing~\cite{Kumar.2019}. It takes into account factors such as material properties, tool capabilities, and manufacturing constraints to generate the most efficient and accurate instructions for the machines. \acrshort{CAM} software can also simulate the machining process to detect any potential collisions or issues before actual production begins, saving time and resources~\cite{Bui.2019}.
+\acrshort{CAM} software enables manufacturers to generate toolpaths for a variety of manufacturing processes, including milling, turning, drilling, and 3D printing~\cite{Kumar.2019}. It takes into account factors such as material properties, tool capabilities, and manufacturing constraints to generate the most efficient and accurate instructions for the machines. \acrshort{CAM} software can also simulate the machining process to detect any potential collisions or issues before actual production begins, saving time and resources~\cite{Bui.2019}.
 
 One of the key features of \acrshort{CAM} software is its ability to optimize the machining process. It can automatically optimize toolpaths to minimize machining time, reduce material waste, and improve surface finish. By analyzing the geometry of the part, the software can determine the most efficient toolpath strategies, such as contouring, pocketing, or adaptive machining. It can also optimize tool selection, toolpath sequencing, and cutting parameters to achieve the best possible results~\cite{Kyratsis.2020}. %It also offers advanced features such as multi-axis machining and support for complex geometries. It can generate toolpaths for machines with multiple axes of motion, allowing for more intricate and precise machining operations. It can handle complex geometries, including freeform surfaces and curved profiles, and generate toolpaths that accurately follow the desired shape~\cite{Liang.2021}.
 Furthermore, \acrshort{CAM} software often integrates with other manufacturing software systems, such as computer-aided engineering (\acrshort{CAE}) and enterprise resource planning (\acrshort{ERP}) systems~\cite{Ramazanov.2020}. This integration enables seamless data exchange, improves collaboration between different departments, and ensures that the manufacturing process is aligned with the overall production goals~\cite{Kadam.2023}. With features such as optimization, simulation, multi-axis machining, and integration with other systems, \acrshort{CAM} software empowers manufacturers to stay competitive in today's fast-paced and complex manufacturing environment~\cite{Kappmeyer.2021}.
@@ -374,7 +374,7 @@ Multi-axis machining is an advanced function of \acrshort{CAM} software, ideal f
 
 %Simulation is vital in planning and generating paths for this process.
 \acrshort{CAM} software typically includes simulation tools that enable users to visualize and verify the toolpath prior to production. These simulations can detect potential collisions or errors that may occur during machining~\cite{Dubovska.2014}. 
-
+\newpage
 Figure \ref{3path} shows three different path trajectories for planar milling operations. Depending on the area of application, different paths can be optimal. In generic 3D-printing as well as in \acrshort{WAAM} multiple different infill methods, similar to the planar milling operations, can be used to build up and fill the desired geometry.  
 
 \begin{figure}[H]
@@ -481,7 +481,7 @@ Figure \ref{wristsingular} shows how the 5th joint needs to rotate significantly
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=.35]{figures/wristsingular.png}}
+	\centerline{\includegraphics[scale=.4]{figures/wristsingular.png}}
 	\caption{Passing trough a wrist singularity~\cite{meca}}
 	\label{wristsingular}
 \end{figure}
@@ -501,24 +501,23 @@ A singular configuration avoidance algorithm is used to avoid singular patterns 
 
 Neural networks and other machine learning approaches are commonly used to solve the issue of inverse kinematics. In this case, the optimization variable is not only limited to singularity avoidance but can also be focused on precision or optimization of feed rate~\cite{Wei.2014}.
 \newpage
-\subsection{Optimization of Joint Accelerations and Jerk}
+\subsection{Optimization of Joint Accelerations and Joint Jerk}
 
 Jerk and acceleration control are critical because high values can wear out the robot structure and significantly stimulate its resonance frequencies. Vibrations caused by non-smooth trajectories can harm the robot's actuators and produce substantial deviations when completing tasks like trajectory tracking. Furthermore, low-jerk trajectories can be accomplished more quickly and precisely~\cite{Gasparetto.2010}.
 
- 
-One recently published approach uses an adaptive greedy algorithm to generate the jerk-optimized trajectory with discrete time constraints. The proposed algorithm improves the trajectory in an iterative routine after obtaining an initial trajectory by a graph-search method~\cite{Dai.2020}.
-A further method proposes a sequential quadratic programming method. The results show that optimal time-jerk trajectories with traveling time constraints can be obtained~\cite{Jiang.2017}. 
+A recently published approach uses an adaptive greedy algorithm for generating the jerk-optimized trajectory with discrete time constraints. The proposed algorithm improves the trajectory in an iterative routine after obtaining an initial trajectory by utilizing a graph-search method~\cite{Dai.2020}.
+A further method proposes a sequential quadratic programming method. The results show that optimal time-jerk trajectories with traveling time constraints can be obtained. By modifying the weighting coefficients and the elastic coefficient, it is possible to achieve various trajectory planning objectives, such as rapid execution, a seamless trajectory, or a combination of both aspects~\cite{Jiang.2017}. 
  
 Another method is proposing a method of reconstructing the path by a sequence of via-points that define the positions and orientations of the robot's end-effector. Unlike most minimum-jerk trajectory planning techniques, this algorithm does not force an execution time beforehand and takes into account constraints such as upper bounds on velocity, acceleration, and jerk. The algorithm uses a hybrid objective function that balances execution time and smoothness of the trajectory. The output of the algorithm is a vector of time intervals between consecutive via-points that minimizes the objective function~\cite{Gasparetto.2010}. 
 
 
-A further method is using an algorithm for adjusting the increments of the generalized coordinate vector. By using a pseudo-inverse of the Jacobi matrix and a Taylor’s expansion, the robot's acceleration and jerk can be calculated. Results show that when the end effector is closer to the center of the robot, joint jerk increases. It is also shown that if trajectories are designed on the OXZ plane and directed away from the robot's center, the jerk decreases~\cite{Duong.2021}.
+The last analyzed method is using an algorithm for adjusting the increments of the generalized coordinate vector. By using a pseudo-inverse of the Jacobi matrix and a Taylor’s expansion, the robot's acceleration and jerk can be calculated. Results show that when the end effector is closer to the center of the robot, joint jerk increases. It is also shown that if trajectories are designed on the X-Z plane and directed away from the robot's center, the jerk decreases~\cite{Duong.2021}.
 
-\subsection{Optimization of Stiffens}\label{OOS}
+\subsection{Optimization of Stiffness}\label{OOS}
 Stiffness plays a crucial role in machining with industrial robots. It refers to the ability of a machine or structure to resist deformation under an applied load. In the context of machining, stiffness directly affects the accuracy, precision, and overall performance of the robot. A high level of stiffness ensures that the robot remains stable and rigid during machining operations, minimizing unwanted vibrations, deflections, and inaccuracies~\cite{Wu.2022}. This is particularly important when dealing with high-speed or heavy-duty machining tasks, as any lack of stiffness can result in poor surface finish, dimensional inaccuracies, and reduced tool life. 
 
 
-A recent publication is evaluating the stiffness of a robot using a newly defined performance index, which is maximized to optimize the robot's posture. The problem is solved using a discretization search algorithm, taking into account joint limits, singularity avoidance, and trajectory smoothness. 
+One method for evaluating the stiffness of a robot is using a newly defined performance index, which is maximized to optimize the robot's posture. The problem is solved using a discretization search algorithm, taking into account joint limits, singularity avoidance, and trajectory smoothness. 
 Each joint of the robot is modeled as a linear torsion spring, which is transferred into a stiffness matrix. This method is applied to a 6-\acrshort{DoF} robot that is used for a milling operation. The goal of this method is to set the redundant angle in such a way that stiffness is maximized. Simulations and experiments on an industrial robot validate the performance index and optimization algorithm, demonstrating improved machining accuracy using this method~\cite{Xiong.2019}.
 
 
@@ -527,14 +526,12 @@ Another approach is working with a dynamic model to reduce the chatter in a mill
 A further publication performs a comparative study of robot pose optimization using static and dynamic stiffness models. The results suggest that the static stiffness model can achieve close to optimal results for pose selection for tasks where the process forces do not approach the resonant frequencies of the robot. It is also discussed that static and dynamic stiffness-based optimizations cannot reduce the deflections of the cutting tool to a range smaller than the robot's repeatability~\cite{Cvitanic.2020}.
 
 There are many more methods, like finite element analysis, matrix structure analysis, and virtual joint modeling. 
-To enhance stiffness models, further investigation needs to be conducted. The current state of the art shows a need for standardization in stiffness modeling, as there is currently no universally accepted procedure for establishing such models. Developing a modeling process with standard principles, evaluation indicators, and measuring techniques can simplify the selection and application of modeling methods. Additionally, the application of machine learning techniques, such as artificial neural networks, can be explored for stiffness modeling. Processing experimental data using machine learning algorithms can yield high-precision stiffness models~\cite{Wu.2022}.
-\newpage
-\subsection{Optimization of Energy use}
+To enhance stiffness models, further investigation needs to be conducted. The current state of the art shows a need for standardization in stiffness modeling, as there is currently no universally accepted procedure for establishing such models. Developing a modeling process with standard principles, evaluation indicators, and measuring techniques can simplify the selection and application of modeling methods. Additionally, the application of machine learning techniques, such as artificial neural networks, can be explored for stiffness modeling. Processing experimental data using machine learning algorithms is shown to yield high-precision stiffness models~\cite{Wu.2022}.
+
+\subsection{Optimization of Energy Usage}
 Energy-efficient usage of industrial robots is essential for achieving cost savings and sustainable manufacturing processes. Manufacturers can achieve this by implementing strategies such as optimizing robot movement paths, reducing idle time, and using energy-efficient components, resulting in significant reductions in energy consumption of their robotic systems. Incorporating advanced algorithms enables robots to adapt to changing conditions and operate at their most efficient levels, optimizing energy usage~\cite{Uhlmann.2016}. 
 
-One paper analyzed the different methods at different development stages of a production environment in regards to energy optimization. The results show that operating speed and payload strongly influence power consumption, and reducing it can be achieved through optimizing speed, reducing weight, and smoothing motion~\cite{Paryanto.2015}.
-
-Further analysis in a different publication shows that in a setting where a 6-\acrshort{DoF} is used to perform a 5-\acrshort{DoF} task, energy savings of up to 20.8\% can be expected. The proposed method uses the yaw angle as an optimization variable that can be set to a value in a certain range~\cite{Boscariol.2020}. 
+One publication by  Paryanto et al. analyzes the different methods at different development stages of a production environment in regards to energy optimization. The results show that operating speed and payload strongly influence power consumption~\cite{Paryanto.2015}. Further analysis in a different publication shows that in a setting where a 6-\acrshort{DoF} is used to perform a 5-\acrshort{DoF} task, energy savings of up to 20.8\% can be expected. The proposed method uses the yaw angle (C-axis) as an optimization variable that can be set to a value in a certain range~\cite{Boscariol.2020}. 
 
 Another publication analyzes the general energy consumption of an industrial robot. The results show that cooling and movement speed have the most significant impact on energy consumption. The axis drives are responsible for 23\% of the energy consumption. Based on this result, it is shown that optimizing the robot's movement in regards to optimal movement will significantly reduce its energy usage~\cite{Uhlmann.2016}. 
 
@@ -543,4 +540,4 @@ Another publication analyzes the general energy consumption of an industrial rob
 
 
 \subsection{Summary}
-Setting the appropriate process parameters directly impacts the performance and efficiency of a production system. By carefully fine-tuning parameters such as singularity avoidance, joint accelerations, and jerks, the system can operate smoothly, minimizing wear on the structure while achieving precise trajectory tracking. Moreover, optimizing energy usage through the adjustment of parameters related to movement speed not only contributes to environmental sustainability but also leads to economic benefits by reducing long-term operational costs. Additionally, the consideration of parameters like stiffness and joint limits ensures the safety of both the manufacturing system and its operators. The optimization of stiffness, for instance, enables the maximization of the system's performance and the attainment of improved machining accuracy. In conclusion, the careful selection and optimization of process parameters play a significant role in achieving optimal performance, efficiency, safety, and utilization of manufacturing systems, thereby contributing to overall operational success.
+Setting the appropriate boundary conditions in form of constraints, directly impacts the performance and efficiency of a production system. By carefully fine-tuning these values, improved process parameters such as singularity avoidance, minimization of joint acceleration and jerk can be achieved. Moreover, optimizing energy usage through the adjustment of parameters related to movement speed not only contributes to environmental sustainability but also leads to economic benefits by reducing long-term operational costs. Additionally, the consideration of parameters like stiffness and joint limits ensures the safety of both the manufacturing system and its operators. %The optimization of stiffness, for instance, enables the maximization of the system's performance and the attainment of improved machining accuracy.  In conclusion, the careful selection and optimization of process parameters play a significant role in achieving optimal performance, efficiency, safety, and utilization of manufacturing systems, thereby contributing to overall operational success.

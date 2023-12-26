@@ -21,9 +21,9 @@
 \contentsline {section}{\numberline {2.3}Optimization Algorithms}{24}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Comparison of the State of the Art }{26}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Singularity Avoidance}{26}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Optimization of Joint Accelerations and Jerk}{28}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Optimization of Stiffens}{28}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Optimization of Energy use}{30}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.2}Optimization of Joint Accelerations and Joint Jerk}{28}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Optimization of Stiffness}{28}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Optimization of Energy Usage}{29}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Summary}{30}{subsection.2.4.5}%
 \contentsline {chapter}{Bibliography}{35}{chapter*.29}%
 \contentsfinish 
