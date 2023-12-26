@@ -25,5 +25,30 @@
 \contentsline {subsection}{\numberline {2.4.3}Optimization of Stiffness}{28}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Optimization of Energy Usage}{29}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Summary}{30}{subsection.2.4.5}%
-\contentsline {chapter}{Bibliography}{35}{chapter*.29}%
+\contentsline {chapter}{\numberline {3}Methodology}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}General Method for Process Analysis and Evaluation}{31}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}General Methodology}{31}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Process Parameters}{33}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}User-Defined Weights and Score Calculation}{37}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Local Rating and Global Score}{37}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Local Rating Calculation}{38}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Information Extraction form Time-Series Data}{40}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Information from Angular Position}{40}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{41}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{44}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk of the Joints}{45}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}TCP Coordinates, Velocity and Acceleration}{46}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Energy Usage}{48}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Continuous Energy-Usage}{48}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Total Energy-Usage}{50}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Reach, Singularities and Torch Orientation}{51}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Reach and Orientation}{51}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Singularities}{53}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Torch Orientation in WAAM}{53}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Summary for Boundary Condition Evaluation}{55}{section.3.8}%
+\contentsline {section}{\numberline {3.9}General Methodology for Process Optimization}{57}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Optimization Loop without CAM-software}{57}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Optimization Loop with CAM-software}{59}{subsection.3.9.2}%
+\contentsline {chapter}{Bibliography}{65}{chapter*.59}%
 \contentsfinish 
