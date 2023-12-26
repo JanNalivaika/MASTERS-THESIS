@@ -4845,7 +4845,7 @@
 % Sorting
 % -------
 %HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-\ExecuteBibliographyOptions{sorting=none}%  Set sorting order
+\ExecuteBibliographyOptions{sorting=nty}%  Set sorting order WAS = none
 \ExecuteBibliographyOptions{maxnames=99}%  Set maximum names of a reference
 \DeclareNameAlias{sortname}{family-given}% Sort by last name
 \DeclareNameAlias{default}{family-given}%  Print last name first
