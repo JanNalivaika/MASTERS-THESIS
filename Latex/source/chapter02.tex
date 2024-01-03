@@ -445,9 +445,9 @@ In conclusion, ML techniques offer powerful tools for solving optimization probl
 \newpage
 \section{Comparison of the State of the Art }\label{comp}
 
-In the following, a literature analysis is performed regarding the optimization of various process parameters. The focus lies on manufacturing systems with redundant \acrshort{DoF}s, specifically for tasks such as milling and \acrshort{WAAM}. 
-The main focus lies on the parameters: singularity avoidance, joint accelerations and jerk, stiffness and energy use.
-In cases where no literature is available that incorporates redundant \acrshort{DoF}s, non-redundant systems are analyzed. Additional parameters like transfer time, precision, and maximum load capacity can also be analyzed but are omitted from the detailed analysis due to the limitations of scope.
+In the following, a literature analysis is performed regarding the optimization of various process variables. The focus lies on manufacturing systems with redundant \acrshort{DoF}s, specifically for tasks such as milling and \acrshort{WAAM}. 
+The main focus lies on the process variables: singularity avoidance, joint accelerations and jerk, stiffness and energy use.
+In cases where no literature is available that incorporates redundant \acrshort{DoF}s, non-redundant systems are analyzed. Additional variables like precision and maximum load capacity can also be analyzed but are omitted from the detailed analysis due to the limitations of scope.
 %Table \ref{parameter} summarizes the analyzed parameters. 
 
 \begin{comment}
@@ -476,12 +476,12 @@ In cases where no literature is available that incorporates redundant \acrshort{
 
 \subsection{Singularity Avoidance}\label{Singularity avoidance}
 As mentioned in Chapter \ref{Problem Formulation}, singularities occur when the robot manipulator loses control or achieves limited mobility due to certain configurations~\cite{Malyshev.2022}. This results in the loss of a \acrshort{DoF} or makes the system highly sensitive to small changes~\cite{Zhao.2021, Milenkovic.2021}.
-Figure \ref{wristsingular} shows how the 5th joint needs to rotate significantly when moving along a straight line in Cartesian space. When an additional velocity boundary condition is set that defines the feed rate of that path, the rotation is very difficult to perform as the motor joints cannot keep up with the required angular acceleration. This movement significantly increases energy consumption and increases wear on the joints. 
+Figure \ref{wristsingular} shows how the 5th joint needs to rotate significantly when moving along a straight line along the Y-axis in Cartesian space. When an additional velocity boundary condition is set that defines the feed rate of that path, the rotation is very difficult to perform as the motor joints cannot keep up with the required angular acceleration. This movement significantly increases energy consumption and increases wear on the joints. 
 
 
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=.4]{figures/wristsingular.png}}
+	\centerline{\includegraphics[scale=.45]{figures/wristsingular.png}}
 	\caption{Passing trough a wrist singularity~\cite{meca}}
 	\label{wristsingular}
 \end{figure}
@@ -540,4 +540,5 @@ Another publication analyzes the general energy consumption of an industrial rob
 
 
 \subsection{Summary}
-Setting the appropriate boundary conditions in form of constraints, directly impacts the performance and efficiency of a production system. By carefully fine-tuning these values, improved process parameters such as singularity avoidance, minimization of joint acceleration and jerk can be achieved. Moreover, optimizing energy usage through the adjustment of parameters related to movement speed not only contributes to environmental sustainability but also leads to economic benefits by reducing long-term operational costs. Additionally, the consideration of parameters like stiffness and joint limits ensures the safety of both the manufacturing system and its operators. %The optimization of stiffness, for instance, enables the maximization of the system's performance and the attainment of improved machining accuracy.  In conclusion, the careful selection and optimization of process parameters play a significant role in achieving optimal performance, efficiency, safety, and utilization of manufacturing systems, thereby contributing to overall operational success.
+Setting the appropriate boundary conditions in form of constraints, directly impacts the performance and efficiency of a production system. By carefully fine-tuning these values, improved process variables such as singularity avoidance, minimization of joint acceleration and jerk can be achieved. Moreover, optimizing energy usage through the adjustment of variables related to movement speed not only contributes to environmental sustainability but also leads to economic benefits by reducing long-term operational costs. Additionally, the consideration of variables like stiffness and joint limits ensures the safety of both the manufacturing system and its operators.\newline %The optimization of stiffness, for instance, enables the maximization of the system's performance and the attainment of improved machining accuracy. 
+In conclusion, the careful selection and optimization of process variables play a significant role in achieving optimal performance. The discussed publications, work only on the optimization of individual process variables. A method that takes a holistic approach, is not yet published. Additionally no presented method in those publications gives the user the possibility to weigh the individual process variables in relation to each other and optimize the setting of redundant \acrshort{DoF}s towards this user-defined goal. The goal of the following proposed method is to fill this demonstrated research gap.
