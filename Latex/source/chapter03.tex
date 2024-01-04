@@ -466,36 +466,36 @@ The following discusses the robot poses with respect to reach and alignment, sin
 
 \subsection{Reach and Alignment}\label{RO}
 
-As mentioned in Chapter \ref{pp}, the analysis of the reachability index can be conducted in various formats. The first format involves a simple analysis to determine if all the points that the robot needs to traverse lie within its work volume, without any self-collisions or exceeding the soft and hard joint limits. This aspect is closely related to the joint limits, as discussed in Chapter \ref{RotLim}. Additionally, it is necessary to analyze that there are no collisions between the robot and the workpiece. If all these parameters are met, a binary index can be used to indicate the feasibility and safety of executing the program. However, this index cannot be used for optimizing the robot's movement, as the parameters influencing this index are mostly defined by the G-Code.
+As mentioned in Chapter \ref{pp}, the analysis of the reachability index can be conducted in various formats. The first format involves a simple analysis to determine if all the points that the robot needs to traverse, lie within its work volume without any self-collisions or exceeding the soft and hard joint limits. This aspect is closely related to the joint limits, as discussed in Chapter \ref{RotLim}. Additionally, it is necessary to analyze that there are no collisions between the robot and the workpiece. If all these conditions are met, a binary index can be used to indicate the feasibility and safety of executing the program. However, this index cannot be used for optimizing the robot's movement, as the parameters influencing this index are mostly defined by the G-Code.
 
 When utilizing a robotic system with a specific tool, such as a milling spindle or a welding torch for \acrshort{WAAM}, it is crucial to consider the boundary conditions and limits associated with that tool. Figure \ref{rot} illustrates a case where the rotation around the Z-axis of the welding torch can be manually defined. Each positions leads to different strains on the wire-feed system and power-cables.
 
 \begin{figure}[H]%
 	\centering
-	\subfloat[\centering No rotation]{{\includegraphics[width=.45\textwidth]{figures/rot0.png} }}%
+	\subfloat[\centering No rotation]{{\includegraphics[width=.35\textwidth]{figures/rot0.png} }}%
 	\qquad
-	\subfloat[\centering 30 degree rotation]{{ \includegraphics[width=.45\textwidth]{figures/rot1.png}}}%
+	\subfloat[\centering 30 degree rotation]{{ \includegraphics[width=.35\textwidth]{figures/rot1.png}}}%
 	\caption{Rotation around the C-axis of a welding torch }%
 	\label{rot}%
 \end{figure}
 
-In most cases, the spindle and welding torch come with cables that provide power from an external power supply. These cables have an optimal orientation where bending and wear are minimized. By positioning the cables in an optimal orientation, the robotic system can operate efficiently and effectively without any interference or limitations due to cable movement, potential damage, or excessive bending or twisting. To assess the optimality of the robot's cable pose, it is important to consider additional parameters. In certain cases, it is preferable to route the cables in a specific alignment along a spatial vector, allowing for parallel translation or movement in the direction of that vector. In this case, the angle between the planes of the robot's base coordinate system and the optimal translation vector remains constant. Figure \ref{OOPti}a provides a visual representation of this example. The wire, shown in red, has an optimal orientation where the least amount of strain is present. Any position along that vector where the cable transitions to the welding torch tangentially is considered optimal. It is worth noting that this vector can be translated parallel in space while still maintaining its optimal status.
+In most cases, the spindle and welding torch come with cables that provide power from an external power supply. These cables have an optimal orientation where bending and wear are minimized. By positioning the cables in an optimal orientation, the robotic system can operate efficiently and effectively without any interference or limitations due to cable movement, potential damage, or excessive bending or twisting. To assess the optimality of the robot's cable pose, it is important to consider additional information. In certain cases, it is preferable to route the cables in a specific alignment along a spatial vector, allowing for parallel translation or movement in the direction of that vector. In this case, the angle between the planes of the robot's base coordinate system and the optimal translation vector remains constant. Figure \ref{OOPti}a provides a visual representation of this example. The wire, shown in red, has an optimal alignment along a vector where the least amount of strain is present. Any position along that vector where the cable transitions to the welding torch tangentially is considered optimal. It is worth noting that this vector can be translated parallel in space while still maintaining its optimal status.
 
 In other scenarios, it is more optimal to route the cables towards a specific point in space, such as a mounting point on a wall or ceiling. Figure \ref{OOPti}b illustrates an example where the optimal alignment of a milling spindle is directed towards a designated point where the cables originate. In this case, any position is considered optimal as long as the extended spindle vector aligns with the vanishing point.
 
 
 \begin{figure}[H]%
 	\centering
-	\subfloat[\centering Optimal orientation along a vector ]{{\includegraphics[width=.5\textwidth]{figures/paralell.png} }}%
+	\subfloat[\centering Optimal alignment along a vector ]{{\includegraphics[width=.5\textwidth]{figures/paralell.png} }}%
 	\qquad
-	\subfloat[\centering Optimal orientation towards a defined points ]{{ \includegraphics[width=.35\textwidth]{figures/angle.png}}}%
-	\caption{Two examples for optimal orientation along a vector in 2D}%
+	\subfloat[\centering Optimal alignment towards a vanishing point ]{{ \includegraphics[width=.35\textwidth]{figures/angle.png}}}%
+	\caption{Two examples for optimal alignments along a vector in 2D}%
 	\label{OOPti}%
 \end{figure}
 
 
 
-To minimize the deviation from the optimal vector or vanishing point, the redundant degrees of freedom can be utilized. One approach is to analyze the deviation and track it over time, creating a time-series. Each element in this time-series can be squared or cubed, depending on the weight assigned to small and constant deviations versus large but short offsets. The time-series is then summed up to form a scalar value, which can be used to calculate the local score through the variation method. Table \ref{deviation} illustrates an example of how the scalar value is calculated. It is evident that when cubing the time series, more importance is placed on the larger deviations rather than small deviations.
+To minimize the deviation from the optimal vector or vanishing point, the redundant \acrshort{DoF}s can be utilized. One approach is to analyze the deviation and track it over time, creating a time-series. Each element in this time-series can be squared or cubed, depending on the weight assigned to small and constant deviations versus large but short offsets. The time-series is then summed up to form a scalar value, which can be used to calculate the local score through the variation method. Table \ref{deviation} illustrates an example of how the scalar value is calculated. It is evident that when cubing the time series, more importance is placed on the larger deviations rather than small deviations.
 
 
 \begin{table}[H]
@@ -533,23 +533,20 @@ Alternatively, a time-series can be used where the determinant, not the eigenval
 \subsection{Torch Orientation in WAAM}
 The torch orientation variable in \acrshort{WAAM}, similar to the cable routing orientation variable, analyzes the angle at which the welding torch is positioned during the process. This variable is specific to \acrshort{WAAM} and ensures that the torch is at the optimal angle for welding. Achieving material deposition in the direction of gravity is crucial for obtaining the best results. The orientation of the \acrshort{TCP}, which represents the welding torch tip, can be determined either through the forward kinematics approach or by extracting it directly from the G-code.
 
-In both the forward kinematics approach and the G-code, the rotation is described as the rotation A, B, and C around the axes. However, the necessary information for torch orientation is simply the angle between the tilted Z-axis of the tool and the vector of gravity. To obtain this information, a dot product is performed between the rotation matrix and the Z-axis of the base coordinate system. This yields a vector corresponding to the tilted Z-axis of the tool. The enclosed angle can then be calculated using the scalar product. This step assumes that the defined bast coordinate system is oriented in a way that aligns the Z-axis parallel to the gravity vector. Figure \ref{tilt} gives a visual example in 2D on how the Z-axis of the tool is deviating from the vector of gravity.
+In both the forward kinematics approach and the G-code, the rotation is described as the rotation  around the A-, B-, and C-axes. However, the necessary information for torch orientation is simply the angle between the tilted Z-axis of the tool and the vector of gravity. To obtain this information, a dot product is performed between the rotation matrix and the Z-axis of the base coordinate system. This yields a vector corresponding to the tilted Z-axis of the tool. The enclosed angle can then be calculated using the scalar product. This step assumes that the defined bast coordinate system is oriented in a way that aligns the Z-axis parallel to the gravity vector. Figure \ref{tilt} gives a visual example in 2D on how the Z-axis of the tool is deviating from the vector of gravity.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=.45\textwidth]{figures/ttilt.png}}
-	\caption{Example of non-optimal tilt in the welding torch}
+	\caption{Example of optimal and non-optimal tilt in the welding torch}
 	\label{tilt}
 \end{figure}
 
-To quantify the torch orientation parameter, it is recorded in a time-series format. To obtain a scalar value for this parameter, all the values can be squared, cubed, or subjected to other mathematical operations, and then summed up. This process is similar to the one described in Chapter \ref{RO} for the cable routing orientation variable.
+To quantify the torch orientation variable, it is recorded in a time-series format. To obtain a scalar value for this process variable, all the values can be squared, cubed, or subjected to other mathematical operations, and then summed up. This process is similar to the one described in Chapter \ref{RO} for the cable routing orientation variable.
 
 
-
+\newpage
 \section{Summary for Boundary Condition Evaluation}
-
-
-
-Figure \ref{allflow} gives a summary and visual representation in form of a flowchart on how a toolpath with defined boundary conditions is evaluated by calculating the individual local scores for the process variables that can be optimized by the redundant \acrshort{DoF}.
+Figure \ref{allflow} gives a summary and visual representation, in form of a flowchart, on how a toolpath with defined boundary conditions is evaluated by calculating the individual local scores for the process variables that can be influenced by the redundant \acrshort{DoF}s.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/flowchart.png}}
@@ -557,14 +554,10 @@ Figure \ref{allflow} gives a summary and visual representation in form of a flow
 	\label{allflow}
 \end{figure}
 
+\newpage
+It is important to note that for a local score calculation the user defined importance values need to be multiplied with the local rating that results form the numerical values of the process variables. The local scores are then summed up to create the global score.
 
-The local scores are then summed up to create the global score. It is important to note that multiple boundary conditions must be analyzed when calculating local scores.
-
-Figure \ref{grob} illustrates how a boundary condition for a toolpath can be evaluated. In this case, the toolpath is defined using only 5 DoF, including X-Y-Z coordinates and rotation around the X- and Y-Axis. However, the rotation C around the Z-Axis, which is the axis of symmetry for the tool, is not defined and must be specified manually.
-
-
-Once this boundary condition is established, the joint positions are analyzed and individual variables, such as direction changes, can be extracted. In this example, the objective is to assess the optimality of a rotation angle of zero degrees.
-To calculate a local score, additional variations of the rotation around the C-Axis are analyzed. With the help of user-defined weights, the local scores are weighted and summed up to form the global score for the boundary condition.
+Figure \ref{grob} illustrates how a boundary condition for a toolpath can be evaluated. In this case, the toolpath is defined using only 5 \acrshort{DoF}s, including X-, Y- and Z-coordinates as wll as the rotation around the X- and Y-Axis. However, the rotation C around the Z-Axis, which is the axis of symmetry for the tool, is not defined and must be specified manually. Once this boundary condition is established, the joint positions are analyzed and individual variables, such as direction changes, can be extracted. In this example, the objective is to assess the optimality of a rotation angle of zero degrees of the C-axis. To calculate a local score, additional variations of the rotation around the C-Axis are analyzed. With the help of user-defined weights, the local ratings are weighted and summed up to form the global score for the boundary condition (see Chapter \ref{weights}).\newline
 
 
 \begin{figure}[H]
@@ -574,58 +567,37 @@ To calculate a local score, additional variations of the rotation around the C-A
 \end{figure}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\newpage
 \section{General Methodology for Process Optimization}
 So far only the analysis of a toolpath with set boundary conditions is discussed. In the following sections, two methods for optimizing boundary conditions towards a specific goal is presented. The main difference between these two methods lies in the different incorporation of a \acrshort{CAM} software.
 
-It is important to note that optimizing certain process parameters may have a direct negative impact on others. For example, optimizing the tools orientation towards a specific vanishing point can significantly increase the total number of direction changes in the joints. Therefore, the user must be aware of these cross-influences and adjust the weights accordingly.
+It is important to note that optimizing certain process variables may have a direct negative impact on others. For example, optimizing the tools orientation towards a specific vanishing point can significantly increase the total number of direction changes in the joints. Therefore, the user must be aware of these cross-influences and adjust the weights accordingly.
 
-\subsection{Optimization Loop without CAM-software}\label{noCAMchap}
+\subsection{Optimization without CAM software in the Loop}\label{noCAMchap}
 
-Figure \ref{noCAM} illustrates the process of optimizing the redundant \acrshort{DoF} based on a predefined goal determined by weighing the process variables. In this method, the part and the robot are fixed components that are loaded into the \acrshort{CAM} software. Before generating a toolpath, the redundant \acrshort{DoF} must be set manually. These constraints can be set flexibly, as long as they do not lead to any "No-Go" exceptions caused by collisions or exceeding the joint limits.
+Figure \ref{noCAM} illustrates the process of optimizing the redundant \acrshort{DoF}s based on a predefined goal determined by weighing the process variables. In this method, the part and the manufacturing machine are fixed components that are loaded into the \acrshort{CAM} software. Before generating a toolpath, the redundant \acrshort{DoF}s must be set manually. These constraints can be set based on prior experience, as long as they do not lead to any "No-Go" exceptions caused by collisions or exceeding the joint limits.
 
-When the toolpath is generated, it is defined in all available \acrshort{DoF}. To evaluate the set boundary conditions, the redundant \acrshort{DoF} is varied, resulting in multiple toolpaths. In some cases, this variation simply involves varying the rotation around the Z-Axis, while keeping all the coordinates (X-Y-Z) defined in the G-code unchanged.
+When the toolpath is generated, it is defined in all available \acrshort{DoF}s of the manufacturing machine. This information is now in form of a G-code. To evaluate the set boundary conditions, the information from the G-code is extracted and the redundant \acrshort{DoF}s are varied, resulting in multiple toolpaths with multiple boundary conditions. In some cases, this variation simply involves varying the rotation around the Z-Axis, while keeping all the X-, Y- and Z-coordinates defined in the G-code, unchanged. In other cases, the redundant \acrshort{DoF}s involve the rotation and tilt of a rotary-tilt table. In such situations, every single coordinate in the G-code needs to be rotated around the tilting-axes of the rotary-tilt table. After obtaining the multiple toolpaths, each one is subjected to an inverse kinematics algorithm. This algorithm utilizes the machine's parameters, for example, arm length and joint sequence, to calculate the joint positions to reach every point in the different G-Codes. From these values, the score of the originally set boundary condition can be determined. By utilizing a external inverse kinematics approach, the \acrshort{CAM} software is not part of the optimization loop. This approach give  the user to work with any \acrshort{CAM} software.  
 
-In other cases, the redundant \acrshort{DoF}s involve the rotation and tilt of a rotary-tilt table. In such situations, every single point in the G-code needs to be rotated around the origin or the rotary-tilt table.
-
-After obtaining the multiple toolpaths, each one is subjected to an inverse kinematics algorithm. This algorithm utilizes the robot's parameters, such as arm length and joint sequence, to calculate the joint positions for every point. From these values, the score of the originally set boundary condition can be determined.
-
-Following the score calculation, an optimization algorithm is employed to generate a new boundary condition for the redundant \acrshort{DoF}. This cycle of optimization continues either for a predetermined number of iterations or a specified duration. Alternatively, a desired minimal score can be defined as the target that the toolpath needs to achieve.
- 
-
-Once the most optimal or close-to-optimal boundary condition is found, it is used as input for the \acrshort{CAM} software to validate that no collisions or other exceptions are triggered. After this validation process, the G-code can be utilized in production.
+Following the score calculation, an optimization algorithm (see Chapter \ref{OA}) is employed to generate a new boundary condition for the redundant \acrshort{DoF}s. This cycle of optimization continues either for a predetermined number of iterations or a specified duration. Alternatively, a desired minimal score can be defined as the target, that the toolpath needs to achieve. Once the most optimal or close-to-optimal boundary condition is found, it is used as input for the \acrshort{CAM} software to validate that no collisions or other exceptions are triggered. After this validation process, the G-code can be utilized in production.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.75\textwidth]{figures/noCAM.png}}
-	\caption{Schematic process of optimization without CAM software}
+	\centerline{\includegraphics[width=1\textwidth]{figures/noCAM.png}}
+	\caption{Schematic process of optimization without CAM software in the loop}
 	\label{noCAM}
 \end{figure}
 
-In this method, the optimization of boundary conditions occurs externally to the \acrshort{CAM} software. The \acrshort{CAM} software is solely utilized for generating the initial toolpath and validating the most optimal boundary condition. The inverse kinematics process is performed outside of the \acrshort{CAM} software and can be implemented in various programming languages such as Python or C++. The same is applicable to the optimization algorithm.
+In this method, the optimization of boundary conditions occurs externally to the \acrshort{CAM} software. The \acrshort{CAM} software is solely utilized for generating the initial toolpath and validating the most optimal boundary condition that is returned by the optimization algorithm. The inverse kinematics process is performed outside of the \acrshort{CAM} software and can be implemented in various programming languages such as Python or C++. The same is applicable to the optimization algorithm.
 
 The advantage of this approach is that the external algorithms are independent and can be easily exchanged or modified. It does not necessitate in-depth knowledge or access to the source code of the \acrshort{CAM} software. Therefore, any \acrshort{CAM} software can be utilized with this approach, providing flexibility and compatibility.    
 
 However, it is important to note that one drawback of this approach is that the complete closure of the loop can only be achieved if the most optimal boundary condition can be automatically fed back to the \acrshort{CAM} software for the final validation. If there is no application programming interface (\acrshort{API}) available or accessible for the \acrshort{CAM} software, this step may need to be performed manually. This manual intervention can introduce additional time and effort into the optimization process.
 
-Depending on the chosen optimization algorithm, it may be necessary to calculate multiple scores for multiple boundary conditions before generating a new suggestion. In this scenario, the variations in the redundant \acrshort{DoF} can be utilized to calculate multiple scores relative to each other. These scores can then be used as input for the optimization algorithm, allowing for a more comprehensive evaluation and selection of the most optimal boundary condition. By considering multiple scores, the algorithm can effectively explore different possibilities and make informed suggestions for improving the boundary conditions.
+Depending on the chosen optimization algorithm, it may be necessary to calculate multiple scores for multiple boundary conditions before generating a new suggestion. In this scenario, the variations in the redundant \acrshort{DoF}s can be utilized to calculate multiple scores relative to each other. These scores can then be used as input for the optimization algorithm, allowing for a more comprehensive evaluation and selection of the most optimal boundary condition. By considering multiple scores, the algorithm can effectively explore different possibilities and make informed suggestions for improving the boundary conditions.
 
-Figure \ref{variation} illustrates the process of varying a simple toolpath. In this specific example, the toolpath is defined in six \acrshort{DoF}, with the redundant \acrshort{DoF} being the rotation around the Z-axis. Initially, the toolpath is set at its original configuration with C = 0.0.
+Another drawback of this approach, is that for the variation of the redundant \acrshort{DoF}s the G-Code file is utilized. for that a dedicated software-program is necessary that can read the G-Code and adapt the individual coordinates accordingly. Another level of complexity can occur, if the G-Code is utilizing non-standard or user-defined commands. Many edge cases need to be considered before such a program is deemed save for production.       
 
-To explore different possibilities, three variations of the toolpath are created by incrementing the rotation by 5 degrees for each variation. These variations allow for an examination of the impact of different orientations on the overall process. By systematically adjusting the rotation, the algorithm can evaluate the performance of each variation.
+Figure \ref{variation} illustrates the process of varying a simple toolpath. In this specific example, the toolpath is defined in six \acrshort{DoF}s, with the redundant \acrshort{DoF} being the rotation around the Z-axis. Initially, the toolpath is set at its original configuration with C = 0.0. To explore different possibilities, three variations of the toolpath are created by incrementing the rotation by 5 degrees for each variation. These variations allow for an examination of the impact of different orientations on the overall process. By systematically adjusting the rotation, the algorithm can evaluate the performance of each variation and suggest even better values.
 
 
 \begin{figure}[H]
@@ -634,27 +606,25 @@ To explore different possibilities, three variations of the toolpath are created
 	\label{variation}
 \end{figure}
 
+\newpage
+\subsection{Optimization Loop with CAM software in the Loop}
 
-\subsection{Optimization Loop with CAM-software}
-
-The previously mentioned method in Chapter \ref{noCAMchap} described a process that does not involve a \acrshort{CAM} software within the optimization loop. However, another method can be employed that directly incorporates a \acrshort{CAM} software into the optimization process.
-
-
-By directly including the \acrshort{CAM} software, the optimization loop becomes more tightly integrated, enabling seamless feedback and iteration between the toolpath generation and the optimization of redundant \acrshort{DoF}. This approach can significantly enhance the overall optimization process and improve the quality and efficiency of the final toolpath.
+The previously mentioned optimization approach in Chapter \ref{noCAMchap} describes a process that does not involve a \acrshort{CAM} software within the optimization loop. However, another method can be employed that directly incorporates a \acrshort{CAM} software into the optimization process and thus allows for seamless integration. By directly including the \acrshort{CAM} software, the optimization loop becomes more tightly knit, enabling seamless feedback and iteration between the toolpath generation and the optimization of constrains for the redundant \acrshort{DoF}s. This approach can significantly enhance the overall optimization process and significantly improves the quality and efficiency of the final toolpath.
 
 
+In this method, the \acrshort{CAM} software plays a crucial role in the optimization process. It first generates the initial toolpath by automatically setting the redundant \acrshort{DoF} based on the given part geometry and machine configuration. Unlike traditional approaches, the \acrshort{CAM} software does not export G-code but utilizes its internal resources and algorithms to calculate the joint positions via a internal inverse kinematics algorithm. The optimization process is performed iteratively, involving multiple variations in the redundant \acrshort{DoF}s. Each variation generates a different toolpath, which in turn results in different joint positions of the manufacturing machine. The process variables are then analyzed to calculate a score that represents the quality of the toolpath. Figure \ref{CAMloop} shows the schematic representation of the optimization loop.\newline
 
  \begin{figure}[H]
- 	\centerline{\includegraphics[width=0.9\textwidth]{figures/CAMloop.png}}
+ 	\centerline{\includegraphics[width=1\textwidth]{figures/CAMloop.png}}
  	\caption{Schematic process of optimization with CAM software in the loop}
  	\label{CAMloop}
  \end{figure}
 
-In this method, the \acrshort{CAM} software plays a crucial role in the optimization process. It first generates the initial toolpath by automatically setting the redundant \acrshort{DoF} based on the given part geometry and robot configuration. Unlike traditional approaches, the \acrshort{CAM} software does not export G-code but utilizes its internal resources and algorithms to calculate the joint positions via inverse kinematics. The optimization process is performed iteratively, involving multiple variations in the redundant \acrshort{DoF}. Each variation generates a different toolpath, which in turn results in different joint positions of the robot. The process variables are then analyzed to calculate a score that represents the quality of the toolpath.
 
-The optimization algorithm, seamlessly integrated within the \acrshort{CAM} software, utilizes the obtained scores to propose a new setting for the redundant \acrshort{DoF}. This new setting aims to improve the toolpath and optimize the process variables further. The iteration continues until a defined score or a predetermined number of iterations is reached, indicating that the optimization loop has converged.
+
+The optimization algorithm, seamlessly integrated within the \acrshort{CAM} software, utilizes the obtained scores to propose a new setting for the redundant \acrshort{DoF}s. This new setting aims to improve the toolpath and optimize the process variables further. The iteration continues until a defined score or a predetermined number of iterations is reached, indicating that the optimization loop has converged.
 Once the optimization loop is terminated, the \acrshort{CAM} software exports the G-code with the best-found boundary conditions, representing the optimized toolpath.
 
 The advantage of this approach lies in leveraging the \acrshort{CAM} software's specialized capabilities and features for toolpath generation and optimization. By directly integrating with the software, the optimization process becomes more efficient and streamlined, eliminating the need for external scripts or algorithms.
 
-However, a significant disadvantage of this method is the requirement for access to the source code of the \acrshort{CAM} software to add the optimization algorithm and the specific post-processor that calculates the joint positions. Adding the necessary features and functionalities necessitates modifying the software, which may not be feasible or practical in all situations. In this case the method has to implemented by the provider of the \acrshort{CAM} software.
+However, a significant disadvantage of this method is the requirement for access to the source code of the \acrshort{CAM} software to add the optimization algorithm and the specific post-processor that calculates the joint positions. Adding the necessary features and functionalities necessitates modifying the software, which may not be feasible or practical in all situations. For that reason, this approach has to be implemented by the provider of the \acrshort{CAM} software. 

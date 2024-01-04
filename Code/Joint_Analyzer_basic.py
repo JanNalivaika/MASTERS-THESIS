@@ -26,6 +26,9 @@ def basicplot():
 
     for tp in [1,2,3]:
         for C in [0,45]:
+            import matplotlib.pyplot as plt
+            plt.rcParams.update({'font.size': 12})
+
             plt.figure(figsize=(10, 4), dpi=200)
             for joint in range(6):
                 joint_positions = np.degrees(np.load(f'Joint_angles/path_{tp}_rot_0_tilt_0_C_{C}.npy')[:, joint])
@@ -39,7 +42,7 @@ def basicplot():
 
             plt.legend(bbox_to_anchor=(1.04, 1), loc="upper left")
             plt.title(f'Toolpath {tp}, A=0° B=0° C={C}°')
-            plt.xlabel('Time [s]')
+            plt.xlabel('Time in seconds [s]')
             plt.ylabel('Position in degrees [°] ')
             plt.ylim((-180,180))
             plt.tight_layout()
@@ -121,6 +124,7 @@ def basicscore():
         plt.xlabel('Rotation around Z in degrees [°]')
         plt.ylabel('Local Score')
         plt.ylim((-10,110))
+        plt.xlim((-145, 145))
 
         plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
         plt.savefig(f"../Latex/figures/LocalScores_{path}.png", bbox_inches='tight',dpi=1200)
@@ -136,10 +140,16 @@ def basicscore():
 
 
         plt.plot(X_ax,SCORE, lw = 0.5, c="red", label = "Global score",linestyle='dashed', marker='o')
-        plt.scatter(max_index, max_value, s = 200, c="green", label="Optimal boundary condition", marker = "2")
-        plt.ylim((-10, 110))
+        plt.scatter(max_index, max_value, s = 250, c="green", label="Optimal boundary condition", marker = "2")
+
         plt.xlabel('Rotation around Z in degrees [°]')
         plt.ylabel('Score')
+
+        plt.ylim((0, 105))
+        plt.xlim((-145, 145))
+        plt.vlines(max_index, -0, max_value, linestyle="dashed")
+        plt.hlines(max_value, -145, max_index, linestyle="dashed")
+        plt.text(max_index, max_value+5, f"Global score = {np.round(max_value,1)}, Optimal rotation = {int(max_index)}°", color='black')
 
         plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
         plt.savefig(f"../Latex/figures/best_c_{path}.png",bbox_inches='tight',dpi=1200)
@@ -213,7 +223,7 @@ def RealG():
     plt.plot(X_ax,scaled_DC_tracker2, lw = 0.5, label="Direction changes in joints 2",linestyle='dashed', marker='o')
     plt.plot(X_ax,scaled_DC_tracker3, lw = 0.5,  label="Direction changes in joints 3",linestyle='dashed', marker='o')
     plt.plot(X_ax, scaled_V_tracker4, lw=0.5, label="Velocity in joint 5", linestyle='dashed', marker='o')
-    plt.plot(X_ax, scaled_T_tracker6, lw=0.5, label="Total Travel in joint 6", linestyle='dashed', marker='o')
+    plt.plot(X_ax, scaled_T_tracker6, lw=0.5, label="Total travel in joint 6", linestyle='dashed', marker='o')
 
     plt.xlabel('Rotation around Z in degrees [°]')
     plt.ylabel('Local Score')
@@ -234,7 +244,12 @@ def RealG():
 
     plt.plot(X_ax,SCORE, lw = 0.5, c="red", label = "Global score",linestyle='dashed', marker='o')
     plt.scatter(max_index, max_value, s = 200, c="green", label="Optimal boundary condition", marker = "2")
-    plt.ylim((-10, 110))
+    plt.ylim((0, 105))
+    plt.xlim((-145, 145))
+    plt.vlines(max_index, -0, max_value, linestyle="dashed")
+    plt.hlines(max_value, -145, max_index, linestyle="dashed")
+    plt.text(max_index, max_value + 5, f"Global score = {np.round(max_value, 1)}, Optimal rotation = {int(max_index)}°",
+             color='black')
     plt.xlabel('Rotation around Z in degrees [°]')
     plt.ylabel('Score')
 
@@ -351,17 +366,24 @@ def TWODplot():
         pos = np.unravel_index(matrix.argmax(), matrix.shape)
         plt.scatter(pos[1],pos[0],marker = "2",c="red",s = 300)
 
+        print(pos)
+        print(matrix[pos[0], pos[1]])
+
+        plt.hlines(pos[0], 0, pos[1], linestyle="dashed", color="black")
+        plt.vlines(pos[1], 45, pos[0], linestyle="dashed",color="black")
+        plt.text(pos[1]+2, pos[0],
+                 f"Global score = {np.round(matrix[pos[0], pos[1]],1)}, \nOptimal rotation C = {-135+5*int(pos[1])}° \nOptimal tilt = {-45+2*int(pos[0])}°",
+                 color='black')
+
         plt.savefig(f"../Latex/figures/best_2D_{toolpath}.png", bbox_inches='tight',dpi=1000)
         #plt.show()
         plt.close()
-        pos = np.unravel_index(matrix.argmax(), matrix.shape)
-        print(pos)
-        print(matrix[pos[0],pos[1]])
+
         np.save(f"matrix_{toolpath}.npy", matrix)
         plt.close()
 
 
 #basicplot()
 #basicscore()
-RealG()
-#TWODplot()
+#RealG()
+TWODplot()
