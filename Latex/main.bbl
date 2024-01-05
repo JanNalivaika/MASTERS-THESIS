@@ -1474,8 +1474,10 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2351978917303529
       \endverb
     \endentry
-    \entry{Additive}{misc}{}
-      \list{location}{1}{%
+    \entry{DIN66025}{misc}{}
+      \list{location}{3}{%
+        {DIN 66025-1:1983-01, Programmaufbau für numerisch gesteuerte Arbeitsmaschinen}%
+        {Allgemeines}%
         {Berlin}%
       }
       \list{publisher}{1}{%
@@ -1483,11 +1485,13 @@
       }
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labeltitlesource}{title}
-      \field{title}{DIN EN ISO/ASTM 52900:2022-03, Additive Fertigung{\_}- Grundlagen{\_}- Terminologie (ISO/ASTM 52900:2021); Deutsche Fassung EN{\_}ISO/ASTM 52900:2021}
+      \field{title}{DIN-66025}
+      \field{year}{2023}
       \verb{doi}
-      \verb 10.31030/3290011
+      \verb 10.31030/1300778
       \endverb
     \endentry
     \entry{Ding.2015}{article}{}

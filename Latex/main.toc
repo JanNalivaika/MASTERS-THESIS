@@ -43,7 +43,7 @@
 \contentsline {section}{\numberline {3.5}Reach, Singularities and Torch Orientation}{49}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Reach and Alignment}{49}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Singularities}{51}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Torch Orientation in WAAM}{52}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.3}Torch Orientation in WAAM}{51}{subsection.3.5.3}%
 \contentsline {section}{\numberline {3.6}Summary for Boundary Condition Evaluation}{53}{section.3.6}%
 \contentsline {section}{\numberline {3.7}General Methodology for Process Optimization}{55}{section.3.7}%
 \contentsline {subsection}{\numberline {3.7.1}Optimization Without CAM Software in the Loop}{55}{subsection.3.7.1}%
