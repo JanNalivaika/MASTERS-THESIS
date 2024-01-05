@@ -295,7 +295,7 @@ In certain cases, adjusting the boundary conditions may not be sufficient to red
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.75\textwidth]{figures/DirSTD.png}}
-	\caption{Two Time-Series with equal number of direction changes but different characteristics}
+	\caption{Two time-series with equal number of direction changes but different characteristics}
 	\label{dirchangeSTD}
 \end{figure}
 
@@ -314,7 +314,7 @@ Figure \ref{limits} visually illustrates an example of how the analysis includes
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.9\textwidth]{figures/limits.png}}
-	\caption{}
+	\caption{Hard and soft limits with desired range}
 	\label{limits}
 \end{figure}
 
@@ -482,7 +482,7 @@ When utilizing a robotic system with a specific tool, such as a milling spindle 
 In most cases, the spindle and welding torch come with cables that provide power from an external power supply. These cables have an optimal orientation where bending and wear are minimized. By positioning the cables in an optimal orientation, the robotic system can operate efficiently and effectively without any interference or limitations due to cable movement, potential damage, or excessive bending or twisting. To assess the optimality of the robot's cable pose, it is important to consider additional information. In certain cases, it is preferable to route the cables in a specific alignment along a spatial vector, allowing for parallel translation or movement in the direction of that vector. In this case, the angle between the planes of the robot's base coordinate system and the optimal translation vector remains constant. Figure \ref{OOPti}a provides a visual representation of this example. The wire, shown in red, has an optimal alignment along a vector where the least amount of strain is present. Any position along that vector where the cable transitions to the welding torch tangentially is considered optimal. It is worth noting that this vector can be translated parallel in space while still maintaining its optimal status.
 
 In other scenarios, it is more optimal to route the cables towards a specific point in space, such as a mounting point on a wall or ceiling. Figure \ref{OOPti}b illustrates an example where the optimal alignment of a milling spindle is directed towards a designated point where the cables originate. In this case, any position is considered optimal as long as the extended spindle vector aligns with the vanishing point.
-
+\newpage
 
 \begin{figure}[H]%
 	\centering
@@ -573,7 +573,7 @@ So far only the analysis of a toolpath with set boundary conditions is discussed
 
 It is important to note that optimizing certain process variables may have a direct negative impact on others. For example, optimizing the tools orientation towards a specific vanishing point can significantly increase the total number of direction changes in the joints. Therefore, the user must be aware of these cross-influences and adjust the weights accordingly.
 
-\subsection{Optimization without CAM software in the Loop}\label{noCAMchap}
+\subsection{Optimization Without CAM Software in the Loop}\label{noCAMchap}
 
 Figure \ref{noCAM} illustrates the process of optimizing the redundant \acrshort{DoF}s based on a predefined goal determined by weighing the process variables. In this method, the part and the manufacturing machine are fixed components that are loaded into the \acrshort{CAM} software. Before generating a toolpath, the redundant \acrshort{DoF}s must be set manually. These constraints can be set based on prior experience, as long as they do not lead to any "No-Go" exceptions caused by collisions or exceeding the joint limits.
 
@@ -607,7 +607,7 @@ Figure \ref{variation} illustrates the process of varying a simple toolpath. In 
 \end{figure}
 
 \newpage
-\subsection{Optimization Loop with CAM software in the Loop}
+\subsection{Optimization Loop With CAM Software in the Loop}\label{CAMinloop}
 
 The previously mentioned optimization approach in Chapter \ref{noCAMchap} describes a process that does not involve a \acrshort{CAM} software within the optimization loop. However, another method can be employed that directly incorporates a \acrshort{CAM} software into the optimization process and thus allows for seamless integration. By directly including the \acrshort{CAM} software, the optimization loop becomes more tightly knit, enabling seamless feedback and iteration between the toolpath generation and the optimization of constrains for the redundant \acrshort{DoF}s. This approach can significantly enhance the overall optimization process and significantly improves the quality and efficiency of the final toolpath.
 

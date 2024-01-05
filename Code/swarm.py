@@ -102,7 +102,7 @@ class PSO:
             ax = fig.add_subplot(111)
             for j in range(0, num_particles):
                 ax.scatter(self.swarm[j].position_i[1], self.swarm[j].position_i[0], color='r', marker='o',
-                           edgecolors='black')
+                           edgecolors='black',label="Particles")
             ax.set_xlim((0, 54))
             ax.set_ylim((0, 45))
 
@@ -126,7 +126,15 @@ class PSO:
 
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")
-            #plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+            pos = np.unravel_index(matrix.argmax(), matrix.shape)
+            plt.scatter(pos[1], pos[0], marker="2", c="red", s=300, label="Best global Score")
+
+            handles, labels = plt.gca().get_legend_handles_labels()
+            by_label = dict(zip(labels, handles))
+            plt.legend(by_label.values(), by_label.keys(), loc='upper center', bbox_to_anchor=(0.1, -0.1),
+                       fancybox=True, shadow=False, ncol=1)
+
+            plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
             plt.close()
             plt.close()
 
@@ -150,7 +158,7 @@ class PSO:
 
                 # plot particles
                 ax.scatter(self.swarm[j].position_i[1], self.swarm[j].position_i[0], color='r', marker='o',
-                           edgecolors='black')
+                           edgecolors='black', label="Particles")
                 ax.set_xlim((0, 54))
                 ax.set_ylim((0, 45))
 
@@ -181,9 +189,18 @@ class PSO:
 
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")
-            #plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+
+            pos = np.unravel_index(matrix.argmax(), matrix.shape)
+            plt.scatter(pos[1], pos[0], marker="2", c="red", s=300, label="Best global Score")
+
+
+            handles, labels = plt.gca().get_legend_handles_labels()
+            by_label = dict(zip(labels, handles))
+            plt.legend(by_label.values(), by_label.keys(),loc='upper center', bbox_to_anchor=(0.1, -0.1),
+                       fancybox=True, shadow=False, ncol=1)
+            plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
             #print(i, path)
-            plt.pause(0.8)
+            #plt.pause(0.8)
         plt.close()
 
 
@@ -193,7 +210,7 @@ if __name__ == "__main__":
     num_particles = 20
     max_iter = 5
 
-    for path in [1,2,3]:
+    for path in [3]:
         pso = PSO(bounds, num_particles, max_iter, path)
 
         best_position, best_value = pso.get_best_position()

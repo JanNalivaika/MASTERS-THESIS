@@ -128,8 +128,8 @@ def basicscore():
 
         plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
         plt.savefig(f"../Latex/figures/LocalScores_{path}.png", bbox_inches='tight',dpi=1200)
-        plt.close()
-        plt.figure(figsize=(10, 4))
+        #plt.close()
+        #plt.figure(figsize=(10, 4))
 
         SCORE = np.array(scaled_DC_tracker)+ np.array(scaled_Travel_tracker) + np.array(scaled_Acc_tracker)
 
@@ -140,7 +140,8 @@ def basicscore():
 
 
         plt.plot(X_ax,SCORE, lw = 0.5, c="red", label = "Global score",linestyle='dashed', marker='o')
-        plt.scatter(max_index, max_value, s = 250, c="green", label="Optimal boundary condition", marker = "2")
+        plt.scatter(max_index, max_value, s = 250, c="green", label="Best global score", marker = "2")
+        plt.scatter(max_index, 3, s=80, c="red", label="Best boundary condition", marker="v")
 
         plt.xlabel('Rotation around Z in degrees [°]')
         plt.ylabel('Score')
@@ -152,8 +153,8 @@ def basicscore():
         plt.text(max_index, max_value+5, f"Global score = {np.round(max_value,1)}, Optimal rotation = {int(max_index)}°", color='black')
 
         plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
-        plt.savefig(f"../Latex/figures/best_c_{path}.png",bbox_inches='tight',dpi=1200)
-        #plt.savefig(f"../Latex/figures/best_c_{path}_combi.png", bbox_inches='tight',dpi=1000)
+        #plt.savefig(f"../Latex/figures/best_c_{path}.png",bbox_inches='tight',dpi=1200)
+        plt.savefig(f"../Latex/figures/best_c_{path}_combi.png", bbox_inches='tight',dpi=1000)
         #plt.show()
         plt.close()
 
@@ -243,7 +244,8 @@ def RealG():
 
 
     plt.plot(X_ax,SCORE, lw = 0.5, c="red", label = "Global score",linestyle='dashed', marker='o')
-    plt.scatter(max_index, max_value, s = 200, c="green", label="Optimal boundary condition", marker = "2")
+    plt.scatter(max_index, max_value, s=250, c="green", label="Best global score", marker="2")
+    plt.scatter(max_index, 3, s=80, c="red", label="Best boundary condition", marker="v")
     plt.ylim((0, 105))
     plt.xlim((-145, 145))
     plt.vlines(max_index, -0, max_value, linestyle="dashed")
@@ -364,7 +366,7 @@ def TWODplot():
         plt.grid(color='black', linewidth=0.1)
 
         pos = np.unravel_index(matrix.argmax(), matrix.shape)
-        plt.scatter(pos[1],pos[0],marker = "2",c="red",s = 300)
+        plt.scatter(pos[1],pos[0],marker = "2",c="red",s = 300,label="Best global Score")
 
         print(pos)
         print(matrix[pos[0], pos[1]])
@@ -374,7 +376,8 @@ def TWODplot():
         plt.text(pos[1]+2, pos[0],
                  f"Global score = {np.round(matrix[pos[0], pos[1]],1)}, \nOptimal rotation C = {-135+5*int(pos[1])}° \nOptimal tilt = {-45+2*int(pos[0])}°",
                  color='black')
-
+        plt.legend(loc='upper center', bbox_to_anchor=(0.1, -0.1),
+               fancybox=True, shadow=False, ncol=1)
         plt.savefig(f"../Latex/figures/best_2D_{toolpath}.png", bbox_inches='tight',dpi=1000)
         #plt.show()
         plt.close()
@@ -386,4 +389,4 @@ def TWODplot():
 #basicplot()
 #basicscore()
 #RealG()
-TWODplot()
+#TWODplot()

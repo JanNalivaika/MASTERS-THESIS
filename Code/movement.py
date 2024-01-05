@@ -141,7 +141,7 @@ for iter in range(0, len(pos), 1):
             [0, d[0]], 'g')
 
     # Plot robot joints
-    ax.scatter(positions[:, 0], positions[:, 1], positions[:, 2], c='r', marker='o')
+    ax.scatter(positions[:, 0], positions[:, 1], positions[:, 2], c='r', marker='o', label="Joints")
     ax.scatter(0, 0, 0, c='r', marker='o')
 
     x_coords.append(x)
@@ -155,7 +155,7 @@ for iter in range(0, len(pos), 1):
                                                  origin_x=1000, origin_y=0, origin_z=600)
 
     angel_before = xyz[6, iter]"""
-    ax.scatter(x_coords, y_coords, z_coords, c=col, marker='o', s=2)
+    ax.scatter(x_coords, y_coords, z_coords, c=col, marker='o', s=2, label="Traversed coordinates")
     # ax.scatter(x_coords_tilt, y_coords_tilt, z_coords_tilt, c=col, marker='o', s=2)
 
     # Set plot limits
@@ -168,12 +168,12 @@ for iter in range(0, len(pos), 1):
     pointer3 = np.dot(rotM, [0, 0, 1])
 
     # JOINTS HERE
-    ax.scatter(0, -600, 0, c='r', marker='o')
-    ax.text(30, -600, -10, "= Joints", color='Black', fontsize=12)
+    #ax.scatter(0, -600, 0, c='r', marker='o')
+    #ax.text(30, -600, -10, "= Joints", color='Black', fontsize=12)
 
 
     # Plot robot end-effector
-    ax.scatter(x, y, z, c='black', marker='o', s=20)
+    ax.scatter(x, y, z, c='black', marker='o', s=30, label="TCP")
 
     ax.quiver(x, y, z, pointer1[0], pointer1[1], pointer1[2], length=300, normalize=True, color='r',
               linewidth=3)  # x-axis
@@ -226,15 +226,15 @@ for iter in range(0, len(pos), 1):
     # plt.close()
 
     if iter % 100 == 0: print(iter)
-
+ax.legend(loc='center left', bbox_to_anchor=(0, 0.08), fontsize=10)
 #plt.setp(ax.get_xticklabels(), visible=False)
 #plt.setp(ax.get_yticklabels(), visible=False)
 #plt.setp(ax.get_zticklabels(), visible=False)
 # plt.savefig(f"../Latex/figures/robotANDpath3_45.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
-# plt.savefig(f"../Latex/figures/robotprog.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
-# plt.savefig(f"../Latex/figures/robotANDpath1.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
+#plt.savefig(f"../Latex/figures/robotprog.png", dpi=700, bbox_inches="tight", pad_inches=0.2)
+#plt.savefig(f"../Latex/figures/robotANDpath1.png", dpi=700, bbox_inches="tight", pad_inches=0.2)
 #plt.savefig(f"../Latex/figures/robotANDpath1_45.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
-plt.savefig(f"../Latex/figures/robotANDpath3_45.png", dpi=500, bbox_inches="tight", pad_inches=0.1)
+plt.savefig(f"../Latex/figures/robotANDpath3_45.png", dpi=700, bbox_inches="tight", pad_inches=0.3)
 
 plt.show()
 # plt.plot(EV)

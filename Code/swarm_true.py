@@ -205,6 +205,13 @@ class PSO:
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")
             plt.title(f"Toolpath {path}. Initial random positions")
+            pos = np.unravel_index(matrix.argmax(), matrix.shape)
+            plt.scatter(pos[1], pos[0], marker="2", c="red", s=300, label="Best global Score")
+
+            handles, labels = plt.gca().get_legend_handles_labels()
+            by_label = dict(zip(labels, handles))
+            plt.legend(by_label.values(), by_label.keys(), loc='upper center', bbox_to_anchor=(0.1, -0.1),
+                       fancybox=True, shadow=False, ncol=1)
             plt.savefig(f"../Latex/figures/swarm_true/{path}_{i}.png", bbox_inches='tight', dpi=1000)
             plt.close()
             plt.close()
@@ -243,7 +250,7 @@ class PSO:
             #pos_best_g = [0,0]
             print(pos_best_g)
             ax.scatter(pos_best_g[0], pos_best_g[1], color='green', marker='o', s = 300,
-                       edgecolors='black')
+                       edgecolors='black', label="Best found score so far")
 
                     # update the velocity and position of each particle
             for j in range(0, num_particles):
@@ -252,7 +259,7 @@ class PSO:
 
                 # plot particles
                 ax.scatter(self.swarm[j].position_i[0], self.swarm[j].position_i[1], color='r', marker='o',
-                           edgecolors='black')
+                           edgecolors='black', label="Particles")
                 ax.set_xlim((0, 54))
                 ax.set_ylim((0, 45))
 
@@ -260,7 +267,7 @@ class PSO:
 
             ax.imshow(matrix)
 
-            plt.pause(0.5)
+            #plt.pause(0.5)
 
             i += 1
 
@@ -275,6 +282,15 @@ class PSO:
 
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")
+
+            pos = np.unravel_index(matrix.argmax(), matrix.shape)
+            plt.scatter(pos[1], pos[0], marker="2", c="red", s=300, label="Best global Score")
+
+            handles, labels = plt.gca().get_legend_handles_labels()
+            by_label = dict(zip(labels, handles))
+            plt.legend(by_label.values(), by_label.keys(), loc='upper center', bbox_to_anchor=(0.1, -0.1),
+                       fancybox=True, shadow=False, ncol=1)
+
             plt.savefig(f"../Latex/figures/swarm_true/{path}_{i}.png", bbox_inches='tight', dpi=1000)
             ax.cla()
         plt.close()
@@ -289,7 +305,7 @@ if __name__ == "__main__":
     num_particles = 20
     max_iter = 5
 
-    for path in []:
+    for path in [3]:
 
         Position_list = []
         File_list = []
