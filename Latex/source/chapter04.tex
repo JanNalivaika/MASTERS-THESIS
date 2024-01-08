@@ -3,7 +3,7 @@
 
 The first step in the validation process involves selecting a manufacturing machine and constructing a fundamental model that captures the kinematics and dynamics. In this case, a simple articulated robot is chosen as the manufacturing machine. To test the method in a straightforward scenario, initial tests are conducted on a 6-\acrshort{DoF} model with a 5-\acrshort{DoF} toolpath. The sixth \acrshort{DoF}, which represents rotation around the Z-axis, is freely defined and utilized for optimization purposes. Once this simple model is successfully validated, an additional redundant \acrshort{DoF} is introduced by incorporating the tilt of a rotary-tilt table.
 
-After establishing the basic mathematical model, an optimization algorithm is implemented to determine the optimal values for each process variable associated with the redundant \acrshort{DoF}. These optimization algorithms take into consideration the specific constraints and objectives of the industrial robot, such as minimizing direction changes or joint accelerations.
+After establishing the basic mathematical model, an optimization algorithm is implemented to determine the optimal values for each redundant \acrshort{DoF} in order to optimize the process variables. This optimization algorithm takes into consideration the specific constraints and objectives of the industrial robot, such as minimizing direction changes or joint accelerations.
 
 %After that, the goal is to incorporate this method with a selected \acrshort{CAM} software to be tested in more complex scenarios.
 
@@ -12,18 +12,20 @@ After establishing the basic mathematical model, an optimization algorithm is im
 \subsection{Modeling a 6-DoF Robot}
 To test the proposed method, a simplified articulated industrial robot with 6-\acrshort{DoF} is utilized as a model. A visual representation of this robot can be seen in Figure \ref{robotprog}. The Denavit-Hartenberg (\acrshort{DH}) parameters for this robot are provided in Table \ref{DHp}. These parameters are crucial for describing the geometry and kinematics of the robotic arm. They establish the relationship between adjacent links in the kinematic chain of the robot.
 
-The \acrshort{DH} parameters consist of various values, including link lengths, link twists, and link offsets. In this particular model, "a" represents the link lengths between adjacent joints, "alpha" represents the link twists or rotations around the Z-axis between adjacent joints, and "d" represents the link offsets or distances along the Z-axis between adjacent joints. It is worth noting that the last rotation is defined in the negative direction. This convention is employed to ensure that the end of the final joint can be interpreted as the tip of a tool without requiring additional transformations.
+The \acrshort{DH} parameters consist of various values, including link lengths, link twists, and link offsets. In this particular model, \textit{a} represents the link lengths between adjacent joints, \textit{alpha} represents the link twists or rotations around the Z-axis between adjacent joints, and \textit{d} represents the link offsets or distances along the Z-axis between adjacent joints. The units of \textit{a} and \textit{d} are set in millimeters, while the rotation \textit{alpha} is defined in degrees.
+
+It is worth noting that the last rotation is defined in the negative direction. This convention is employed to ensure that the end of the final joint can be interpreted as the tip of a tool without requiring additional transformations from the flange to the \acrshort{TCP}.
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{||l|l||}
-		  & Values \\
+		Parameters  & Values \\
 		\hline
 		\hline
 		\hline
-		a	&		[200, 900, 150, 0,   150, 0] \\
-		alpha	&  	[90,  0,   90,  -90, 90,  -90] \\
-		d	& 		[600  0,   0,   800, 0,   200]\\
+		a in [mm] 	&		[200, 900, 150, 0,   150, 0] \\
+		alpha in [°]	&  	[90,  0,   90,  -90, 90,  -90] \\
+		d in [mm]	& 		[600  0,   0,   800, 0,   200]\\
 		
 		\hline
 		\hline
@@ -62,7 +64,7 @@ The first toolpath, depicted in Figure \ref{path1}, represents a converging-dive
 	\centering
 	\begin{minipage}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{figures/path1.png}
-		\caption{Toolpath 1: Converging-Diverging Spiral}
+		\caption{Toolpath 1: Converging-diverging spiral}
 		\label{path1}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
@@ -80,7 +82,7 @@ The first toolpath, depicted in Figure \ref{path1}, represents a converging-dive
 	\centering
 	\begin{minipage}{0.5\textwidth}
 			\includegraphics[width=0.95\textwidth]{figures/path2.png}
-		\caption{Toolpath 2: Converging Loop}
+		\caption{Toolpath 2: Converging infinity loop}
 		\label{path2}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
@@ -99,7 +101,7 @@ The first toolpath, depicted in Figure \ref{path1}, represents a converging-dive
 	\centering
 	\begin{minipage}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{figures/path3.png}
-		\caption{Toolpath 3: Pendulum Oscillation}
+		\caption{Toolpath 3: Forward moving pendulum oscillation}
 		\label{path3}
 	\end{minipage}\hfill
 	\begin{minipage}{0.5\textwidth}
@@ -128,13 +130,13 @@ Figure \ref{TP1robot} illustrates the robot and Toolpath 1 (defined by Equation 
 
 
 \subsection{Extracting Process Variables}
-By utilizing the inverse kinematics algorithm from the Python library \textit{visual\_kinematics}, the joint angles for each coordinate can be computed. To achieve this, the rotations A, B, and C need to be defined. The outcome is a time series that contains the corresponding joint positions. For all tests, all coordinates must be traversed in equidistant time steps. With this information, it becomes possible to calculate the velocity and other related variables. By transforming all the data from the time series into scalar values and calculating the local rating, the local and global scores can be determined.
+By utilizing the inverse kinematics algorithm from the Python library \textit{visual\_kinematics}, the joint angles for each coordinate can be computed. To achieve this, the rotations A, B, and C need to be defined. The outcome is a time-series that contains the corresponding joint positions. For all tests, all coordinates must be traversed in equidistant time steps. With this information, it becomes possible to calculate the velocity and other related variables. By transforming all the data from the time-series into scalar values and calculating the local rating, the local and global scores can be determined.
 \newpage
 \section{Testing and Validation}%
 
 \subsection{Toolpath Evaluation With one Redundant DoF}
 %\subsubsection{Obtaining Joint Positions}
-As discussed in Chapter \ref{MBT}, the toolpath remains constant with respect to the X, Y, and Z coordinates. The fixed boundary conditions for the robot are that there are no rotations around the X and Y axes, resulting in A and B both being equal to zero. This condition is fixed for the entire toolpath. The user has the ability to set the \acrshort{DoF} for the rotation around the Z-axis, which is the redundant \acrshort{DoF}. Figure \ref{TP1ABC0} displays the variation of each joint over time for toolpath 1. In this specific case, the rotations A, B, and C are all set to 0. The entire toolpath is traversed in 300 seconds.
+As discussed in Chapter \ref{MBT}, the toolpath remains constant with respect to the X-, Y-, and Z-coordinates. The fixed boundary conditions for the robot are that there are no rotations around the X and Y axes, resulting in A and B both being equal to zero. This condition is fixed for the entire toolpath. The user has the ability to set the \acrshort{DoF} for the rotation around the Z-axis, which is the redundant \acrshort{DoF}. Figure \ref{TP1ABC0} displays the variation of each joint over time for toolpath 1. In this specific case, the rotations A, B, and C are all set to 0. The entire toolpath is traversed in 300 seconds.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/TP1ABC0.png}}
@@ -142,7 +144,7 @@ As discussed in Chapter \ref{MBT}, the toolpath remains constant with respect to
 	\label{TP1ABC0}
 \end{figure}
 
-Figure \ref{TP1ABC45} depicts the joint positions for all six joints over time for the same toolpath (toolpath 1) with a 45° rotation around the Z-axis (C = 45°). 
+Figure \ref{TP1ABC45} depicts the joint positions for all six joints over time for the same toolpath (toolpath~1) with a 45° rotation around the Z-axis (C = 45°). 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/TP1ABC45.png}}
 	\caption{Visualization of the joint positions over time for toolpath 1 with C=45°}
@@ -169,7 +171,7 @@ Additionally, the acceleration of joint 1 is analyzed. To obtain a scalar value 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{||l|l||}
-		Process variables& Importance Factor \\
+		Process variables& Importance factors \\
 		\hline
 		\hline
 		\hline
@@ -242,23 +244,24 @@ The same analysis, using identical process variables and weights, can be perform
 \label{TP3_combi}
 \end{figure}
 
-It is noteworthy that even though all toolpaths have significantly different characteristics, all global scores show a similar trend. High global scores are achieved by setting the rotation to less than 0°, while low scores are achieved by setting the rotation to higher than 30°. Additionally, it is important to mention that when a local score reaches its maximum value, it does not imply that the corresponding process variables, such as the number of direction changes, become zero. Instead, it signifies that the number of direction changes is at its lowest compared to all other analyzed options.
+It is noteworthy that even though all toolpaths have significantly different characteristics, all global scores show a similar trend. High global scores are achieved by setting the rotation to less than 0°, while low scores are achieved by setting the rotation to higher than 30°. Additionally, it is important to mention that when a local score reaches its maximum value, it does not imply that the corresponding process variables, such as the number of direction changes, become zero. Instead, it signifies that the number of direction changes is at its lowest compared to all other analyzed options.\newline
+Based on this result, it is reasonable to conclude that correctly setting the redundant \acrshort{DoF}s can significantly improve the manufacturing process.
 \newpage
 \subsection{Validation on a Production Grade toolpath}\label{RG}
 In addition to the three simulated toolpaths, a real toolpath used for \acrshort{WAAM} is now being used for validation. The toolpath has an organic structure that requires tilting of the rotary-tilt table to ensure that the material deposition process occurs in the direction of gravity. Thus, the position of the rotary-tilt table is not horizontal during the process. The redundant \acrshort{DoF} remains the rotation around the Z-axis of the tool, as before. Figure \ref{rav} provides a visual representation of the analyzed toolpath. It consists of 28,000 coordinates and is modeled to be traversed in 2,800 seconds.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.3\textwidth]{figures/raven.png}}
-	\caption{Organic toolpath  \cite{Reisch.2023}}
+	\caption{Organic toolpath \cite{Reisch.2023}}
 	\label{rav}
 \end{figure}
 
-The process variables for the analysis of this toolpath are defined in Table \ref{ravenparams}. In this example, the direction changes in joints 1, 2, and 3 are all individually weighted with a factor of 0.2. The last two variables are the velocity in joint 5 and the total travel in joint 6. These variables are also weighted with an importance factor of 0.2. To obtain a scalar value for the velocity, all elements of the time series are squared and summed up. 
+The process variables for the analysis of this toolpath are defined in Table \ref{ravenparams}. In this example, the direction changes in joints 1, 2, and 3 are all individually weighted with a factor of 0.2. The last two variables are the velocity in joint 5 and the total travel in joint 6. These variables are also weighted with an importance factor of 0.2. To obtain a scalar value for the velocity, all elements of the time-series are squared and summed up. 
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{||l|l||}
-		Process variables& Importance Factor \\
+		Process variables& Importance factors \\
 		\hline
 		\hline
 		\hline
@@ -283,7 +286,7 @@ The redundant \acrshort{DoF} is once again analyzed in 5° increments, starting 
 	\label{LS4}
 \end{figure}
 
-Figure \ref{GS4} illustrates the combined local scores in the form of the global score. The highest global score is 75.5, which is achieved by setting the C-axis to -15°. Notably, in the range from -70° to 40°, a very smooth curve is observed. This smooth progression of the global score serves as a strong indicator that the optimization algorithm will easily find an optimum setting for the redundant \acrshort{DoF}.
+Figure \ref{GS4} illustrates the combined local scores in the form of the global score. The highest global score is 75.5, which is achieved by setting the C-axis to -15°. Notably, in the range from -70° to 40°, a very smooth curve is observed. This smooth progression of the global score serves as a strong indicator that an optimization algorithm will easily find an optimum setting for the redundant \acrshort{DoF}.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/best_c_4.png}}
@@ -318,12 +321,12 @@ Similar to the previous analysis, the same steps need to be followed. The newly 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{||l|l||}
-		Process variables & Importance Factor \\
+		Process variables & Importance factors \\
 		\hline
 		\hline
 		\hline
 		Direction changes in joints 2+3+5	&		0.3 \\
-		Direction changes in joints 1	&  	0.25 \\
+		Direction changes in joints 1	& 	0.25 \\
 		Acceleration in joint 4	& 		0.25\\
 		Velocity in joint 6	& 		0.2\\
 		\hline
@@ -335,7 +338,7 @@ Similar to the previous analysis, the same steps need to be followed. The newly 
 \end{table}
 
 
-Figure \ref{TP3_25_robot} displays the robot and its orientation while following the tilted toolpath 3. It is crucial to note that since the toolpath is defined in 5 \acrshort{DoF} in its own frame, the frame of the \acrshort{TCP} must also tilt by the same degree as the table. The two redundant \acrshort{DoF} in this case are the rotation around the Z-axis in the frame of the tilted toolpath and the tilting of the toolpath itself. This introduces an additional dimension, as now two parameters can be adapted for optimization.
+Figure \ref{TP3_25_robot} displays the robot and its orientation while following the tilted toolpath 3. It is crucial to note that since the toolpath is defined in 5 \acrshort{DoF}s in its own frame, the frame of the \acrshort{TCP} must also tilt by the same degree as the table. The two redundant \acrshort{DoF}s in this case are the rotation around the Z-axis in the frame of the tilted toolpath and the tilting of the toolpath itself. This introduces an additional dimension, as now two parameters can be adapted for optimization.
 
 
 \begin{figure}[H]
@@ -346,7 +349,7 @@ Figure \ref{TP3_25_robot} displays the robot and its orientation while following
 
 The range of possible tilt positions ranges from -45° to 45° in 2-degree increments. For every combination of tilt and rotation, the joint angles are generated using inverse kinematics. To speed up the computation, only every third coordinate is utilized in the inverse kinematic algorithm. This reduces the toolpath by 2000 points and speeds up calculation time. On average, it now takes only 10 seconds to calculate the joint positions. A total of 2530 individual combinations are analyzed.
 
-The extracted process variables are again multiplied by -1, as the objective is to minimize them. Afterwards, the Min-Max scaler is applied. The individual values are aggregated and presented in the form of a matrix. The values of this matrix are visualized in Figure \ref{best_2D}. The maximum achievable score from all possible combinations is 72.96, visualized by the red cross. This score was attained by setting the table tilt to -3° and the rotation around the Z-axis of the tool to +35°. The resulting hyperplane exhibits two distinct local maxima. The entire surface displays a smooth curvature, although it appears less smooth in the range from -20° to 45°.
+The extracted process variables are again multiplied by -1, as the objective is to minimize them. Afterwards, the Min-Max scaler is applied. The individual values are aggregated and presented in the form of a matrix. The values of this matrix are visualized in Figure \ref{best_2D}. The maximum achievable score from all possible combinations is 70.4, visualized by the red cross. This score was attained by setting the table tilt to -5° and the rotation around the Z-axis of the tool to +35°. The resulting hyperplane exhibits two distinct local maxima. The entire surface displays a smooth curvature, although it appears less smooth in the range from -20° to 45°.
 
 
 \begin{figure}[H]
@@ -373,7 +376,7 @@ The same analysis is performed with toolpath 1 and toolpath 2. The resulting mat
 
 \newpage
 \subsection{Boundary Condition Optimization }
-So far, only the analysis of different boundary conditions has been performed by exploring the entire range of possible settings for the redundant \acrshort{DoF}s. However, this approach is very time-consuming and becomes exponentially more complex with additional redundant \acrshort{DoF} and a finer step size. To address this issue and efficiently search the extensive solution space for optimal values of the redundant \acrshort{DoF}, a \acrshort{PSO} algorithm is proposed. In this algorithm, individual particles navigate the search space by adjusting their positions based on their own best position and the best position found by the entire swarm. This cooperative behavior enables the particles to explore the search space more effectively and converge towards the best solution (see Chapter \ref{PSO}).
+So far, only the analysis of different boundary conditions has been performed by exploring the entire range of possible settings for the redundant \acrshort{DoF}s. However, this approach is very time-consuming and becomes exponentially more complex with additional redundant \acrshort{DoF} and a finer step size. To address this issue and efficiently search the extensive solution space for optimal values of the redundant \acrshort{DoF}, a \acrshort{PSO} algorithm is proposed. In this algorithm, individual particles navigate the search space by adjusting their positions based on their own best position and the best position found by the entire swarm. This cooperative behavior enables the particles to explore the search space more effectively and converge towards the best solution (see Chapter \ref{OA}).
 
 The first test is conducted using the global score matrix of toolpath 3. Initially, 20 particles are randomly placed on the plane. Each particle's score is determined by the corresponding global score at its position. By increasing the number of particles and iterations, the search space can be analyzed more comprehensively. Figure \ref{PSO_1} illustrates the randomly placed particles on the pre-calculated global score matrix of toolpath 3, considering the previously selected importance factors (see table \ref{PP_2}).
 
@@ -421,12 +424,12 @@ Figures \ref{2} to \ref{5} demonstrate the convergence of the particles towards 
 \newpage
 One important consideration in this test is, that the scores have already been calculated. The global score matrix is determined by evaluating all possible combinations of different boundary conditions. However, in the intended scenario where this method is used to find the optimal boundary condition, such a pre-calculated matrix does not exist.
 
-Therefore, in each iteration, the scores of individual positions need to be compared relative to each other, taking into account the previous iterations. This process is illustrated in Figure \ref{swarmloop}. Initially, a predetermined number of particles is randomly placed on the plane, with the X and Y values representing the selected boundary conditions. For each selected boundary condition, the joint angles are calculated using the inverse kinematic approach. The analyzed process variables are then extracted and the joint angles are stored. The score for each current position is calculated relative to all stored toolpaths.
+Therefore, in each iteration, the scores of the individual particle positions need to be compared relative to each other, taking into account the previous iterations. This process is illustrated in Figure \ref{swarmloop}. Initially, a predetermined number of particles is randomly placed on the plane, with the X and Y values representing the selected boundary conditions. For each selected boundary condition, the joint angles are calculated using the inverse kinematic approach. The analyzed process variables are then extracted and the joint angles are stored. The score for each current position is calculated relative to all stored toolpaths.
 
 It is possible that in an early iteration, a particle had a position with a significantly higher score compared to the other available toolpaths. Therefore, after each iteration, it is necessary to update the score of the particle's most optimal position as more boundary conditions are analyzed. This is done to ensure that a score, which may have been mistakenly chosen as the best, does not influence the subsequent search directions.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=0.9\textwidth]{figures/swarmloop.png}}
+	\centerline{\includegraphics[width=1\textwidth]{figures/swarmloop.png}}
 	\caption{PSO-Loop}
 	\label{swarmloop}
 \end{figure}
@@ -473,7 +476,7 @@ Figure \ref{5_true} illustrates the positions of the particles after the fifth a
 
 
 
-The same optimization process can be applied to toolpath 1 and toolpath 2. The same process variables and weights are selected as for toolpath 3 (see Table \ref{PP_2}). Once again, 20 particles are analyzed over 5 iterations. Figures \ref{tp1_0} through \ref{tp1_5} depict the positions of the particles after the first and final iteration when analyzing the first toolpath, while Figures \ref{tp2_0} and \ref{tp2_5} showcase the initial and final positions of the particles when analyzing the second toolpath. In both cases, the PSO algorithm successfully converges towards the optimal boundary condition.
+The same optimization process can be applied to toolpath 1 and toolpath 2. The same process variables and weights are selected as for toolpath 3 (see Table \ref{PP_2}). Once again, 20 particles are analyzed over 5 iterations. Figures \ref{tp1_0} through \ref{tp1_5} depict the positions of the particles after the first and final iteration when analyzing the first toolpath, while Figures \ref{tp2_0} and \ref{tp2_5} showcase the initial and final positions of the particles when analyzing the second toolpath. In both cases, the PSO algorithm successfully converges very closely towards the optimal boundary condition.
 \newpage
 	
 \begin{figure}[H]	
@@ -519,7 +522,7 @@ To further validate the proposed method for analyzing process variables, a produ
 
 When considering the scenario where two \acrshort{DoF} can be set, it is observed that toolpath 1 and toolpath 2 have very similar boundary conditions for the global optimum (see Figure \ref{best_2D_1} and Figure \ref{best_2D_2}). This suggests that these two toolpaths do not differ significantly from each other when considering the process variables alone. 
 
-Analyzing the hyperplane of toolpath 1 (Figure \ref{best_2D_1}), it is clearly visible that most of the possible combinations result in a very high global score. The combinations that lead to a low local score form a ravine that is clearly visible on the right-hand side. In the case of toolpath 2 (Figure \ref{best_2D_2}), distinct streaks can be observed. The middle of the matrix represents a continuous region, while multiple discontinuities occur on the sides. Toolpath 3 (Figure \ref{best_2D}) exhibits an almost symmetrical hyperplane. Two local optima are visible on the left and right sides, while the middle part consists of a jagged area with many non-smooth jumps. It is worth noting that the calculation of each individual global score matrix takes approximately 1 hour.
+Analyzing the hyperplane of toolpath 1 (Figure \ref{best_2D_1}), it is clearly visible that most of the possible combinations result in a very high global score. The combinations that lead to a low local score form a ravine that is clearly visible on the right-hand side. In the case of toolpath~2 (Figure \ref{best_2D_2}), distinct streaks can be observed. The middle of the matrix represents a continuous region, while multiple discontinuities occur on the sides. Toolpath 3 (Figure \ref{best_2D}) exhibits an almost symmetrical hyperplane. Two local optima are visible on the left and right sides, while the middle part consists of a jagged area with many non-smooth jumps. It is worth noting that the calculation of each individual global score matrix takes approximately 1 hour.
 
 
 Based on the results obtained from the \acrshort{PSO} algorithm (see Figure \ref{5_true}), it can be concluded that achieving a close-to-optimal result is feasible when the global score matrix yields smooth surfaces. By implementing this approach, a significant reduction in computation time is possible. Instead of calculating the entire matrix, only 100 toolpaths need to be computed using the inverse kinematics algorithm, resulting in a computation time of just 15 minutes.
@@ -541,8 +544,10 @@ The number of particles is selected to be as high as possible while also conside
 
 Even though the results show a very promising outcome, it is necessary to consider some additional factors. One of the most obvious elements is that only three artificial and one production-grate toolpaths are analyzed. To validate this method in detail, it is necessary to use more real-life production G-code with correctly modeled robotic systems and analyze whether it can be optimized. It should be noted that this work only provides a limited excerpt and does not analyze complex multi-axis operations, which are a significant advantage and building block of the \acrshort{WAAM} process.
 
-The selected inverse kinematics algorithm is not designed for optimal high-performance calculations, making it infeasible to use when dealing with toolpaths that have millions of coordinates. Additionally, the algorithm calculates the joint position numerically rather than analytically, which can result in unexpected robot poses. \acrshort{CAM} software such as \textit{Siemens NX} offers additional options for inverse kinematics that can be used to fine-tune the behavior of the robot.
+The selected inverse kinematics algorithm is not designed for optimal high-performance calculations, making it infeasible to use when dealing with toolpaths that have millions of coordinates. Additionally, the algorithm calculates the joint position numerically rather than analytically, which can result in unexpected robot poses. \acrshort{CAM} software such as \textit{Siemens NX} or \textit{Master CAM} offer additional options for inverse kinematics that can be used to fine-tune the behavior of the robot.
 
 When analyzing multiple process variables, it is not guaranteed that the resulting surface will be smooth and optimal for the selected optimization algorithm. Additionally, when working with a \acrshort{PSO} algorithm, the final result strongly depends on the initial distribution of the particles. If the optimum is a very tight and sharp spike, the probability of finding the optimal boundary condition is significantly lower. This is particularly true in systems with 3 or more redundant \acrshort{DoF}, where simple optimization algorithms can lead to suboptimal results or require unfeasibly long computation times. When implementing the \acrshort{PSO} algorithm, 20 particles over 5 iterations are analyzed. In future work, it is necessary to analyze how a increase in population size will improve the convergence rate. 
+
+When analyzing Figure \ref{GS1}, Figure \ref{TP2_combi}, and Figure \ref{TP3_combi}, it becomes evident that the best boundary conditions for the highest global score are very similar. Both toolpath 1 and 2 have an optimum of -120°, while toolpath 3 has an optimum at -90°. This suggests that there could be an optimal robot configuration that is applicable to any toolpath.
 
 In general, the presented methodology does provide a solid basis as a proof of concept for the proposed method. However, additional implementations and test are necessary for it to be feasible in an industrial environment.
