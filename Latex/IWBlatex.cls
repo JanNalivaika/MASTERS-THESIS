@@ -5310,9 +5310,9 @@
 %===================
 \newcommand{\IWBstudentthesisAbstract}[2]{%
 	\thispagestyle{empty}%
-	\vspace*{2cm}%
+	\vspace*{0cm}%HERE WAS 2
 	\section*{\color{TUMBlack}Abstract}\IWBlangForceEnglish{#1}%
-	\vspace*{1cm}%
+	\vspace*{0.5cm}%
 	\section*{\color{TUMBlack}Zusammenfassung}\IWBlangForceGerman{#2}%
 	\vfill%
 	\cleardoublepage%

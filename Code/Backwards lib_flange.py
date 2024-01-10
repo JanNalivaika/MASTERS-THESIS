@@ -20,7 +20,7 @@ dh_params = np.array(np.transpose(np.vstack((d, a, np.radians(alpha), theta))))
 np.set_printoptions(precision=5, suppress=True)
 
 C = 30
-T = 25
+T = 45
 xyz = np.load(f"Toolpaths/path_1_rot_0_tilt_{T}.npy")
 
 sol = [0, 0, 0, 0, 0, 0]

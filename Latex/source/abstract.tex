@@ -1,12 +1,18 @@
+% !TeX spellcheck = en_US
 % In total max. 1 Page!
 \IWBstudentthesisAbstract{%
-	%
-	% Abstract English:
-	Place your abstract here.
-}{%
+%
+% Abstract English:
+This thesis discusses a method for analyzing process variables and optimizing boundary conditions in manufacturing systems with redundant degrees of freedom (\acrshort{DoF}). Strong focus is placed on industrial robots that traverse a toolpath in 5-\acrshort{DoF}. This means that while the toolpath defines the X, Y, and Z coordinates, as well as rotations A and B, rotation C is not defined and can be chosen freely. The first part of the methodology covers the analysis of process variables such as direction changes in the joints and total travel of the joints, as well as the influence of the defined boundary condition that constrains the redundant \acrshort{DoF} to a specific value.
+The second part of the method proposes a procedure to optimize the setting of the redundant \acrshort{DoF} in order to optimize the user-selected process variables. This problem is analogous to an optimization problem where the process quality is to be maximized. By implementing a PSO algorithm, it is possible to find the most optimal setting for the redundant \acrshort{DoF}, thus maximizing the process quality. This procedure shows fast convergence and that it is not necessary to analyze each possible combination of the redundant \acrshort{DoF} in a brute-force manner, to find the most optimal setting.
+
+	
+}
+{%
 	%
 	% Zusammenfassung Deutsch:
-	Hier könnte Ihre Kurzzusammenfassung stehen.%
+	In dieser Arbeit wird eine Methode zur Analyse von Prozessvariablen und zur Optimierung von Randbedingungen in Fertigungssystemen mit redundanten Freiheitsgraden diskutiert. Der Schwerpunkt liegt dabei auf Industrierobotern, die einen Werkzeugweg in 5-DoF abfahren. Das bedeutet, dass der Werkzeugweg zwar die X-, Y- und Z-Koordinaten sowie die Drehungen A und B definiert, die Drehung C jedoch nicht festgelegt ist und frei gewählt werden kann. Der erste Teil der Methode befasst sich mit der Analyse von Prozessvariablen wie Richtungsänderungen in den Gelenken und dem Gesamtverfahrweg der Gelenke sowie dem Einfluss der definierten Randbedingung, die die redundanten Freiheitsgrade auf einen bestimmten Wert beschränkt.
+	Im zweiten Teil der Methode wird ein Verfahren zur Optimierung der Einstellung der redundanten Freiheitsgrade vorgeschlagen, um die vom Benutzer gewählten Prozessvariablen zu optimieren. Dieses Problem ist analog zu einem globalen Optimierungsproblem, bei dem die Prozessqualität maximiert werden soll. Durch die Implementierung eines PSO-Algorithmus ist es möglich, die optimalste Einstellung für die redundante DoF zu finden und damit die Prozessqualität zu maximieren. Dieses Verfahren zeigt eine schnelle Konvergenz und dass es nicht notwendig ist, jede mögliche Kombination der redundanten Freiheitsgrade in einer Brute-Force-Methode zu analysieren, um die optimalste Einstellung zu finden.
 }%
 %
 %

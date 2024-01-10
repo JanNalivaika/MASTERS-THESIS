@@ -32,7 +32,6 @@ def basicplot():
             plt.figure(figsize=(10, 4), dpi=200)
             for joint in range(6):
                 joint_positions = np.degrees(np.load(f'Joint_angles/path_{tp}_rot_0_tilt_0_C_{C}.npy')[:, joint])
-
                 for i in range(6):
                     joint_positions = simplify_angle(joint_positions)
 
@@ -48,7 +47,7 @@ def basicplot():
             plt.tight_layout()
             plt.savefig(f"../Latex/figures/TP{tp}ABC{C}.png",dpi=1200)
             print(f"TP{tp}ABC{C}.png")
-            #plt.show()
+            plt.show()
             plt.close()
 
 
@@ -386,7 +385,7 @@ def TWODplot():
         plt.close()
 
 
-#basicplot()
+basicplot()
 #basicscore()
 #RealG()
 #TWODplot()

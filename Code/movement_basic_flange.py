@@ -167,5 +167,6 @@ for iter in range(0, len(pos), 1):
     #plt.show()
     plt.pause(0.01)
     if iter % 100 == 0: print(iter)
+    #print(np.linalg.det(rotM))
 
 plt.show()
