@@ -2648,4 +2648,379 @@ Package pdftex.def Info: figures/localscore.png  used on input line 188.
 File: figures/lowstd.png Graphic file (type png)
 <use figures/lowstd.png>
 Package pdftex.def Info: figures/lowstd.png  used on input line 198.
-(pdftex.def)         
+(pdftex.def)             Requested size: 374.86775pt x 85.29832pt.
+Package cleveref Info: loaded `english' language definitions on input line 202.
+
+ [8 <./figures/localscore.png>]
+<figures/highstd.png, id=253, 645.04819pt x 146.78242pt>
+File: figures/highstd.png Graphic file (type png)
+<use figures/highstd.png>
+Package pdftex.def Info: figures/highstd.png  used on input line 206.
+(pdftex.def)             Requested size: 374.86775pt x 85.30408pt.
+<figures/angularstuff.png, id=256, 809.83405pt x 295.03844pt>
+File: figures/angularstuff.png Graphic file (type png)
+<use figures/angularstuff.png>
+Package pdftex.def Info: figures/angularstuff.png  used on input line 224.
+(pdftex.def)             Requested size: 441.01773pt x 160.67345pt.
+Package cleveref Info: loaded `english' language definitions on input line 227.
+
+ [9 <./figures/lowstd.png> <./figures/highstd.png>]
+<figures/equionchange.png, id=264, 712.00046pt x 237.05585pt>
+File: figures/equionchange.png Graphic file (type png)
+<use figures/equionchange.png>
+Package pdftex.def Info: figures/equionchange.png  used on input line 235.
+(pdftex.def)             Requested size: 396.91325pt x 132.15353pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 240.
+
+ [10 <./figures/angularstuff.png>]
+<figures/travel.png, id=271, 595.33054pt x 221.29485pt>
+File: figures/travel.png Graphic file (type png)
+<use figures/travel.png>
+Package pdftex.def Info: figures/travel.png  used on input line 253.
+(pdftex.def)             Requested size: 352.81552pt x 131.15036pt.
+Package cleveref Info: loaded `english' language definitions on input line 259.
+
+ [11 <./figures/equionchange.png> <./figures/travel.png>]
+<figures/dirchange.png, id=278, 747.60385pt x 221.36757pt>
+File: figures/dirchange.png Graphic file (type png)
+<use figures/dirchange.png>
+Package pdftex.def Info: figures/dirchange.png  used on input line 262.
+(pdftex.def)             Requested size: 441.01773pt x 130.58545pt.
+Package cleveref Info: loaded `english' language definitions on input line 297.
+
+ [12 <./figures/dirchange.png>]
+<figures/DirSTD.png, id=288, 541.89687pt x 471.93335pt>
+File: figures/DirSTD.png Graphic file (type png)
+<use figures/DirSTD.png>
+Package pdftex.def Info: figures/DirSTD.png  used on input line 299.
+(pdftex.def)             Requested size: 352.81552pt x 307.27151pt.
+
+Overfull \hbox (2.12566pt too wide) in paragraph at lines 311--312
+[]\T1/bch/m/n/10.95 Additionally, a straight-for-ward anal-y-sis of ro-ta-tiona
+l lim-its can be con-ducted, re-quir-ing knowl-
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 312.
+
+[13 <./figures/DirSTD.png>]
+<figures/limits.png, id=296, 705.20912pt x 377.81577pt>
+File: figures/limits.png Graphic file (type png)
+<use figures/limits.png>
+Package pdftex.def Info: figures/limits.png  used on input line 318.
+(pdftex.def)             Requested size: 396.91325pt x 212.64766pt.
+Package cleveref Info: loaded `english' language definitions on input line 327.
+
+ [14 <./figures/limits.png>]
+<figures/veloy.png, id=303, 821.17429pt x 270.1796pt>
+File: figures/veloy.png Graphic file (type png)
+<use figures/veloy.png>
+Package pdftex.def Info: figures/veloy.png  used on input line 329.
+(pdftex.def)             Requested size: 441.01773pt x 145.10326pt.
+<figures/peaklong.png, id=305, 836.93529pt x 244.61601pt>
+File: figures/peaklong.png Graphic file (type png)
+<use figures/peaklong.png>
+Package pdftex.def Info: figures/peaklong.png  used on input line 339.
+(pdftex.def)             Requested size: 441.01773pt x 128.89935pt.
+Package cleveref Info: loaded `english' language definitions on input line 348.
+
+ [15 <./figures/veloy.png> <./figures/peaklong.png>] Excluding 'comment' commen
+t.
+Excluding 'comment' comment.
+Package cleveref Info: loaded `english' language definitions on input line 432.
+
+ [16{C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ly1/texnan
+si.enc}]
+<figures/ENERGYOPTIONS.png, id=327, 799.3267pt x 258.1346pt>
+File: figures/ENERGYOPTIONS.png Graphic file (type png)
+<use figures/ENERGYOPTIONS.png>
+Package pdftex.def Info: figures/ENERGYOPTIONS.png  used on input line 442.
+(pdftex.def)             Requested size: 441.01773pt x 142.42348pt.
+Package cleveref Info: loaded `english' language definitions on input line 453.
+
+ [17 <./figures/ENERGYOPTIONS.png>]
+<figures/waamgcode.png, id=341, 739.26187pt x 182.18062pt>
+File: figures/waamgcode.png Graphic file (type png)
+<use figures/waamgcode.png>
+Package pdftex.def Info: figures/waamgcode.png  used on input line 458.
+(pdftex.def)             Requested size: 330.76329pt x 81.51071pt.
+
+Underfull \vbox (badness 3058) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 472.
+
+ [18 <./figures/waamgcode.png>]
+<figures/rot0.png, id=354, 174.6525pt x 170.13562pt>
+File: figures/rot0.png Graphic file (type png)
+<use figures/rot0.png>
+Package pdftex.def Info: figures/rot0.png  used on input line 477.
+(pdftex.def)             Requested size: 154.35889pt x 150.3766pt.
+<figures/rot1.png, id=355, 173.89969pt x 170.13562pt>
+File: figures/rot1.png Graphic file (type png)
+<use figures/rot1.png>
+Package pdftex.def Info: figures/rot1.png  used on input line 479.
+(pdftex.def)             Requested size: 154.35889pt x 151.02301pt.
+Package cleveref Info: loaded `english' language definitions on input line 485.
+
+ [19 <./figures/rot0.png> <./figures/rot1.png>]
+<figures/paralell.png, id=369, 788.619pt x 450.264pt>
+File: figures/paralell.png Graphic file (type png)
+<use figures/paralell.png>
+Package pdftex.def Info: figures/paralell.png  used on input line 491.
+(pdftex.def)             Requested size: 220.50887pt x 125.90129pt.
+<figures/angle.png, id=370, 503.262pt x 494.721pt>
+File: figures/angle.png Graphic file (type png)
+<use figures/angle.png>
+Package pdftex.def Info: figures/angle.png  used on input line 493.
+(pdftex.def)             Requested size: 154.35889pt x 151.73892pt.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 5
+09.
+
+(C:\Users\z0041bmr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1bch.fd
+File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
+)
+
+LaTeX Warning: Reference `Singularity avoidance' on page 20 undefined on input 
+line 527.
+
+
+Underfull \vbox (badness 6625) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 528.
+
+ [20 <./figures/paralell.png> <./figures/angle.png>]
+Overfull \hbox (5.45901pt too wide) in paragraph at lines 531--532
+[]\T1/bch/m/n/10.95 Alternatively, a time-series can be used where the de-ter-m
+i-nant, not the eigen-val-ues, is recorded
+ []
+
+<figures/ttilt.png, id=390, 1122.156pt x 479.829pt>
+File: figures/ttilt.png Graphic file (type png)
+<use figures/ttilt.png>
+Package pdftex.def Info: figures/ttilt.png  used on input line 540.
+(pdftex.def)             Requested size: 198.45662pt x 84.85724pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 544.
+
+ [21]
+<figures/flowchart.png, id=399, 887.35771pt x 806.11803pt>
+File: figures/flowchart.png Graphic file (type png)
+<use figures/flowchart.png>
+Package pdftex.def Info: figures/flowchart.png  used on input line 553.
+(pdftex.def)             Requested size: 441.01773pt x 400.63486pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 557.
+
+ [22 <./figures/ttilt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+
+ []
+
+<figures/grob.png, id=410, 745.89304pt x 522.35577pt>
+File: figures/grob.png Graphic file (type png)
+<use figures/grob.png>
+Package pdftex.def Info: figures/grob.png  used on input line 565.
+(pdftex.def)             Requested size: 418.96548pt x 293.40993pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 569.
+
+ [23 <./figures/flowchart.png>]
+Package cleveref Info: loaded `english' language definitions on input line 581.
+
+ [24 <./figures/grob.png>]
+
+LaTeX Warning: Reference `OA' on page 25 undefined on input line 583.
+
+<figures/noCAM.png, id=433, 851.22272pt x 445.60094pt>
+File: figures/noCAM.png Graphic file (type png)
+<use figures/noCAM.png>
+Package pdftex.def Info: figures/noCAM.png  used on input line 586.
+(pdftex.def)             Requested size: 441.01773pt x 230.86389pt.
+Package cleveref Info: loaded `english' language definitions on input line 592.
+
+[25 <./figures/noCAM.png>]
+<figures/gcodevariation.png, id=452, 599.403pt x 473.697pt>
+File: figures/gcodevariation.png Graphic file (type png)
+<use figures/gcodevariation.png>
+Package pdftex.def Info: figures/gcodevariation.png  used on input line 605.
+(pdftex.def)             Requested size: 396.91325pt x 313.68182pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 609.
+
+ [26]
+Underfull \hbox (badness 10000) in paragraph at lines 616--617
+
+ []
+
+<figures/CAMloop.png, id=468, 906.96288pt x 410.17068pt>
+File: figures/CAMloop.png Graphic file (type png)
+<use figures/CAMloop.png>
+Package pdftex.def Info: figures/CAMloop.png  used on input line 619.
+(pdftex.def)             Requested size: 441.01773pt x 199.45201pt.
+Package cleveref Info: loaded `english' language definitions on input line 622.
+
+[27 <./figures/gcodevariation.png>])
+Package cleveref Info: loaded `english' language definitions on input line 82.
+ [28 <./figures/CAMloop.png>]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [29
+
+] [30
+
+]
+[31]
+Overfull \hbox (2.94188pt too wide) in paragraph at lines 100--100
+[][]\T1/bch/m/sc/10.95 Bonev\T1/bch/m/n/10.95 , I., (2001).  \T1/bch/m/it/10.95
+ Delta par-al-lel robot-the story of suc-cess\T1/bch/m/n/10.95 .  Newslet-ter, 
+avail-able at http://www.
+ []
+
+
+Overfull \hbox (1.03952pt too wide) in paragraph at lines 100--100
+\T1/bch/m/n/10.95 par-al-lelmic. org.  \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 
+: []$http : / / www . robotics . caltech . edu / ~jwb / courses / me115 / hando
+uts /
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+[32]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [33]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [34]
+Overfull \hbox (1.43756pt too wide) in paragraph at lines 100--100
+[][]\T1/bch/m/sc/10.95 Gasparetto\T1/bch/m/n/10.95 , A. and \T1/bch/m/sc/10.95 
+Zan-otto\T1/bch/m/n/10.95 , V., (2010).  ^^P  Op-ti-mal tra-jec-tory plan-ning 
+for in-dus-trial robots^^Q.
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+[35]
+Overfull \hbox (21.09532pt too wide) in paragraph at lines 100--100
+\T1/bch/m/n/10.95 2019 . 101852$[].  \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 : 
+[]$https : / / www . sciencedirect . com / science / article / pii / s073658451
+9301784$[]. 
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+[36]
+Overfull \hbox (1.85678pt too wide) in paragraph at lines 100--100
+\T1/bch/m/it/10.95 chine Tools and Man-u-fac-ture \T1/bch/m/n/10.95 125, pp. 34
+^^U54.  \T1/bch/m/sc/10.95 issn\T1/bch/m/n/10.95 : 0890-6955.  \T1/bch/m/sc/10.
+95 doi\T1/bch/m/n/10.95 : []$10 . 1016 / j . ijmachtools .
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+[37]
+Overfull \hbox (1.75531pt too wide) in paragraph at lines 100--100
+\T1/bch/m/n/10.95 Tech-nolo-gies^^Q.  In: \T1/bch/m/it/10.95 Ma-chines \T1/bch/
+m/n/10.95 8.1, p. 13.  \T1/bch/m/sc/10.95 issn\T1/bch/m/n/10.95 : 2075-1702.  \
+T1/bch/m/sc/10.95 doi\T1/bch/m/n/10.95 : []$10 . 3390 / machines8010013$[].
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+[38]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [39]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [40]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [41]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [42]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [43]
+Overfull \hbox (20.51498pt too wide) in paragraph at lines 100--100
+\T1/bch/m/n/10.95 2022 . 102436$[].  \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 : 
+[]$https : / / www . sciencedirect . com / science / article / pii / s073658452
+200120x$[]. 
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+[44]
+Overfull \hbox (31.867pt too wide) in paragraph at lines 100--100
+\T1/bch/m/n/10.95 In:  Springer, Berlin, Hei-del-berg,  pp. 21^^U32.  \T1/bch/m
+/sc/10.95 doi\T1/bch/m/n/10.95 : []$10 . 1007 / 978 -[] 3 -[] 642 -[] 20662 -[]
+ 7{\textunderscore }
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+[45]
+Package cleveref Info: loaded `english' language definitions on input line 104.
+
+ [46] [47
+
+
+] (main.aux
+Package cleveref Info: loaded `english' language definitions on input line 24.
+ (source/chapter03.aux)
+* soulpos - computing points - it may take a few seconds *
+\openout5 = `main.upb'.
+
+ (main.upa))
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 50D42632B3DBFA405BB105BB0C11DD2B;2191.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 66934 strings out of 475247
+ 1536097 string characters out of 5756376
+ 2538578 words of memory out of 5000000
+ 87078 multiletter control sequences out of 15000+600000
+ 643944 words of font info for 134 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 109i,13n,131p,3569b,2463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter
+/bchb8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/bitstr
+ea/charter/bchr8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/bitstrea/charter/bchri8a.pfb><C:/Users/z0041bmr/AppData/Local/Programs/MiKT
+eX/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/z0041bmr/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/z0041bmr/AppData/
+Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/z0041bmr/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (53 pages, 16602803 bytes).
+PDF statistics:
+ 1206 PDF objects out of 1440 (max. 8388607)
+ 288 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+

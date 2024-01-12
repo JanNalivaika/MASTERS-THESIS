@@ -44,7 +44,7 @@ z_coords = []
 
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load(f"Joint_angles_flange/path_{3}_rot_0_tilt_{0}_C_{-130}.npy")
+pos = np.load(f"Joint_angles_flange/path_{3}_rot_0_tilt_{0}_C_{95}.npy")
 #pos = np.load(f"wrong0.npy")
 for iter in range(0, len(pos), 10):
     plt.clf()
