@@ -31,7 +31,7 @@ def basicplot():
 
             plt.figure(figsize=(10, 4), dpi=200)
             for joint in range(6):
-                joint_positions = np.degrees(np.load(f'Joint_angles/path_{tp}_rot_0_tilt_0_C_{C}.npy')[:, joint])
+                joint_positions = np.degrees(np.load(f'Joint_angles_flange/path_{tp}_rot_0_tilt_0_C_{C}.npy')[:, joint])
                 for i in range(6):
                     joint_positions = simplify_angle(joint_positions)
 
@@ -45,7 +45,7 @@ def basicplot():
             plt.ylabel('Position in degrees [°] ')
             plt.ylim((-180,180))
             plt.tight_layout()
-            plt.savefig(f"../Latex/figures/TP{tp}ABC{C}.png",dpi=1200)
+            #plt.savefig(f"../Latex/figures/TP{tp}ABC{C}.png",dpi=1200)
             print(f"TP{tp}ABC{C}.png")
             plt.show()
             plt.close()
@@ -71,7 +71,7 @@ def count_direction_changes(time_series):
 def basicscore():
     for path in [1,2,3]:
 
-        files = glob.glob(f'Joint_angles/*path_{path}_rot_0_tilt_0*')
+        files = glob.glob(f'Joint_angles_flange/*path_{path}_rot_0_tilt_0*')
 
         DC_tracker = []
         Travel_tracker = []
@@ -126,7 +126,7 @@ def basicscore():
         plt.xlim((-145, 145))
 
         plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
-        plt.savefig(f"../Latex/figures/LocalScores_{path}.png", bbox_inches='tight',dpi=1200)
+        #plt.savefig(f"../Latex/figures/LocalScores_{path}.png", bbox_inches='tight',dpi=1200)
         #plt.close()
         #plt.figure(figsize=(10, 4))
 
@@ -145,7 +145,7 @@ def basicscore():
         plt.xlabel('Rotation around Z in degrees [°]')
         plt.ylabel('Score')
 
-        plt.ylim((0, 105))
+        plt.ylim((-5, 110))
         plt.xlim((-145, 145))
         plt.vlines(max_index, -0, max_value, linestyle="dashed")
         plt.hlines(max_value, -145, max_index, linestyle="dashed")
@@ -153,8 +153,8 @@ def basicscore():
 
         plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
         #plt.savefig(f"../Latex/figures/best_c_{path}.png",bbox_inches='tight',dpi=1200)
-        plt.savefig(f"../Latex/figures/best_c_{path}_combi.png", bbox_inches='tight',dpi=1000)
-        #plt.show()
+        #plt.savefig(f"../Latex/figures/best_c_{path}_combi.png", bbox_inches='tight',dpi=1000)
+        plt.show()
         plt.close()
 
 
@@ -385,7 +385,7 @@ def TWODplot():
         plt.close()
 
 
-basicplot()
-#basicscore()
+#basicplot()
+basicscore()
 #RealG()
 #TWODplot()

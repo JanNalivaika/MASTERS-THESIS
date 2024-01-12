@@ -29,9 +29,9 @@
 %\include{source/glossary}%
 
 \DeclareCiteCommand{\cite}[\mkbibparens]
-{\usebibmacro{prenote}}
-{\usebibmacro{citeindex}
-\printtext[bibhyperref]{\usebibmacro{cite}}}
+{\usebibmacro{prenote}}%
+{\usebibmacro{citeindex}%
+\printtext[bibhyperref]{\usebibmacro{cite}}}%
 {\multicitedelim}
 {\usebibmacro{postnote}}
 
@@ -59,11 +59,11 @@
 %
 % Task formulation
 % ----------------
-\include{source/task}%
+%\include{source/task}%% ADD ME !!!!!!!!!!!!!!!!!!!!
 %
 % Abstract
 % --------
-\include{source/abstract}%
+%\include{source/abstract}%% ADD ME !!!!!!!!!!!!!!!!!!!!
 %
 % Content
 % -------
@@ -77,11 +77,11 @@
 % ----------
 \mainmatter%
 %\include{source/latex_tutorial}%
-\include{source/chapter01}%
-\include{source/chapter02}%
-\include{source/chapter03}%
-\include{source/chapter04}%
-\include{source/chapter05}%
+%\include{source/chapter01}%% ADD ME !!!!!!!!!!!!!!!!!!!!
+%\include{source/chapter02}%% ADD ME !!!!!!!!!!!!!!!!!!!!
+\include{source/chapter03}%% ADD ME !!!!!!!!!!!!!!!!!!!!
+%\include{source/chapter04}%% ADD ME !!!!!!!!!!!!!!!!!!!!
+%\include{source/chapter05}%% ADD ME !!!!!!!!!!!!!!!!!!!!
 %
 % Appendix
 % --------
@@ -89,15 +89,15 @@
 %\include{source/appendixA}%
 %
 
-\listoffigures
-\listoftables
+%\listoffigures % ADD ME !!!!!!!!!!!!!!!!!!!!
+%\listoftables
 % Glossary
 % ---------------------
 %\printnoidxglossary[sort=standard,title={\IWBlangGlossary}]
 %
 % References
 % ----------
-\printbibliography[heading=bibintoc, title={\IWBlangBibliography}]%
+!\printbibliography[heading=bibintoc, title={\IWBlangBibliography}]%
 
 %
 %

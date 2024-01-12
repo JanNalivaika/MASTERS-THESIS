@@ -44,8 +44,9 @@ z_coords = []
 
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
-pos = np.load("wrong0.npy")
-for iter in range(0, len(pos), 1):
+pos = np.load(f"Joint_angles_flange/path_{3}_rot_0_tilt_{0}_C_{-130}.npy")
+#pos = np.load(f"wrong0.npy")
+for iter in range(0, len(pos), 10):
     plt.clf()
 
     theta = [2, 75, -45, -88, -91, 61 + np.sin(np.radians(iter)) * 30]
@@ -54,6 +55,7 @@ for iter in range(0, len(pos), 1):
     theta = [0, 135, -45, 0, 0, 0]
     theta = pos[iter]
     theta = np.degrees(theta)
+    print(theta)
 
     transformations, [x, y, z], rotM = forward_kinematics(a, alpha, d, theta)
 
