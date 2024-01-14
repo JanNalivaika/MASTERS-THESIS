@@ -29,7 +29,7 @@ def basicplot():
             import matplotlib.pyplot as plt
             plt.rcParams.update({'font.size': 12})
 
-            plt.figure(figsize=(10, 4), dpi=200)
+            plt.figure(figsize=(10, 6), dpi=200)
             for joint in range(6):
                 joint_positions = np.degrees(np.load(f'Joint_angles_flange/path_{tp}_rot_0_tilt_0_C_{C}.npy')[:, joint])
                 for i in range(6):
@@ -39,15 +39,18 @@ def basicplot():
                 plt.plot(time, np.round(joint_positions, 2), label=f"Joint {joint+1}", lw=3)
 
 
-            plt.legend(bbox_to_anchor=(1.04, 1), loc="upper left")
+
+            #plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left", mode="expand", borderaxespad=0, ncol=3)
             plt.title(f'Toolpath {tp}, A=0° B=0° C={C}°')
             plt.xlabel('Time in seconds [s]')
             plt.ylabel('Position in degrees [°] ')
-            plt.ylim((-180,180))
+            plt.ylim((-130,130))
+            plt.xlim((-2, 302))
+            plt.legend(bbox_to_anchor=(1, 1.25), ncol=2)#,  loc='upper right'
             plt.tight_layout()
-            #plt.savefig(f"../Latex/figures/TP{tp}ABC{C}.png",dpi=1200)
+            plt.savefig(f"../Latex/figures/TP{tp}ABC{C}.png",dpi=1200)
             print(f"TP{tp}ABC{C}.png")
-            plt.show()
+            #plt.show()
             plt.close()
 
 
@@ -108,7 +111,7 @@ def basicscore():
             Travel_tracker.append(total_travel)
             Acc_tracker.append(accel_sore)
 
-        plt.figure(figsize=(10, 4), dpi=200)
+        plt.figure(figsize=(10, 5), dpi=200)
 
         scaled_DC_tracker = min_max_scaler.fit_transform(-np.array(DC_tracker).reshape(-1, 1))*100*0.2
         scaled_Travel_tracker = min_max_scaler.fit_transform(-np.array(Travel_tracker).reshape(-1, 1))*100*0.4
@@ -121,14 +124,24 @@ def basicscore():
         plt.plot(X_ax,scaled_Acc_tracker, lw = 0.5,  label="Acceleration in joint 1",linestyle='dashed', marker='o')
 
         plt.xlabel('Rotation around Z in degrees [°]')
-        plt.ylabel('Local Score')
-        plt.ylim((-10,110))
-        plt.xlim((-145, 145))
+        plt.ylabel('Local Score [-]')
+        plt.title(f'Corresponding local scores of toolpath {path}')
+        #plt.ylim((-3,110))
+        plt.ylim((-5, 50))
+        plt.xlim((-138, 138))
 
-        plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
-        #plt.savefig(f"../Latex/figures/LocalScores_{path}.png", bbox_inches='tight',dpi=1200)
+        #plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
+        plt.gca().xaxis.set_major_locator(plt.MultipleLocator(15))
+        plt.legend(bbox_to_anchor=(1, 1.), ncol=2)  # ,  loc='upper right'
+        plt.tight_layout()
+        plt.savefig(f"../Latex/figures/LocalScores_{path}.png", bbox_inches='tight',dpi=1200)
+
+
+        """!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"""
+
+
         #plt.close()
-        #plt.figure(figsize=(10, 4))
+        #plt.figure(figsize=(10, 5), dpi=200)
 
         SCORE = np.array(scaled_DC_tracker)+ np.array(scaled_Travel_tracker) + np.array(scaled_Acc_tracker)
 
@@ -139,27 +152,40 @@ def basicscore():
 
 
         plt.plot(X_ax,SCORE, lw = 0.5, c="red", label = "Global score",linestyle='dashed', marker='o')
-        plt.scatter(max_index, max_value, s = 250, c="green", label="Best global score", marker = "2")
-        plt.scatter(max_index, 3, s=80, c="red", label="Best boundary condition", marker="v")
+        plt.scatter(max_index, max_value, s = 300, c="orange", label="Best global score", marker = "*")
+        plt.scatter(max_index, 0, s=80, c="red", label="Best boundary condition", marker="v")
 
         plt.xlabel('Rotation around Z in degrees [°]')
-        plt.ylabel('Score')
+        plt.ylabel('Score [-]')
+        plt.title(f'Corresponding global scores of toolpath {path}')
 
-        plt.ylim((-5, 110))
-        plt.xlim((-145, 145))
-        plt.vlines(max_index, -0, max_value, linestyle="dashed")
+        plt.ylim((-3, 110))
+        plt.xlim((-138, 138))
+        plt.vlines(max_index, -10, max_value, linestyle="dashed")
         plt.hlines(max_value, -145, max_index, linestyle="dashed")
-        plt.text(max_index, max_value+5, f"Global score = {np.round(max_value,1)}, Optimal rotation = {int(max_index)}°", color='black')
+        if max_index>0:
+            t_pos =max_index-110
+        else:
+            t_pos = max_index
+        plt.text(t_pos, max_value+5, f"Global score = {np.round(max_value,1)}, Optimal rotation = {int(max_index)}°", color='black')
 
-        plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
+        plt.ylim((-3, 115))
+        plt.xlim((-138, 138))
+
+        #plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
+        #plt.legend(bbox_to_anchor=(1.04, 1), loc="upper left", ncol=1)
+        plt.legend(bbox_to_anchor=(1, 1.35), ncol=2)  # ,  loc='upper right'
+
+        plt.gca().xaxis.set_major_locator(plt.MultipleLocator(15))
+        plt.tight_layout()
         #plt.savefig(f"../Latex/figures/best_c_{path}.png",bbox_inches='tight',dpi=1200)
-        #plt.savefig(f"../Latex/figures/best_c_{path}_combi.png", bbox_inches='tight',dpi=1000)
-        plt.show()
+        plt.savefig(f"../Latex/figures/best_c_{path}_combi.png", bbox_inches='tight',dpi=1000)
+        #plt.show()
         plt.close()
 
 
 def RealG():
-    files = glob.glob(f'RealG_angles/*')
+    files = glob.glob(f'Joint_angles_flange/path_4*')
 
     DC_tracker1 = []
     DC_tracker2 = []
@@ -230,7 +256,8 @@ def RealG():
     plt.ylim((-3,25))
 
     plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
-    plt.savefig(f"../Latex/figures/LocalScores_{4}.png", bbox_inches='tight',dpi=1200)
+    #plt.savefig(f"../Latex/figures/LocalScores_{4}.png", bbox_inches='tight',dpi=1200)
+    plt.show()
     plt.close()
     plt.figure(figsize=(10, 4))
 
@@ -255,9 +282,9 @@ def RealG():
     plt.ylabel('Score')
 
     plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
-    plt.savefig(f"../Latex/figures/best_c_{4}.png",bbox_inches='tight',dpi=1200)
+    #plt.savefig(f"../Latex/figures/best_c_{4}.png",bbox_inches='tight',dpi=1200)
     #plt.savefig(f"../Latex/figures/best_c_{4}_combi.png", bbox_inches='tight',dpi=1000)
-    #plt.show()
+    plt.show()
     plt.close()
 
 
@@ -386,6 +413,6 @@ def TWODplot():
 
 
 #basicplot()
-basicscore()
-#RealG()
+#basicscore()
+RealG()
 #TWODplot()

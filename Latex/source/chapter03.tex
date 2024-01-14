@@ -137,7 +137,7 @@ Torch orientation is a crucial variable in \acrshort{WAAM}, as it tracks the til
 
 \subsubsection*{Flowchart of process variables}
 Figure \ref{ParamsFlow} illustrates the interconnections of the different variables. It is evident that all variables can be derived from the position of the joints. This highlights the significance of this information. The position data is vital for analyzing and optimizing the robot system's performance. By monitoring and analyzing the joint positions, users can gain insights into various aspects of the robot's operation and make informed decisions to enhance productivity.
-
+\newpage
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.95\textwidth]{figures/Flow.png}}
@@ -215,7 +215,7 @@ It is important to note that, as discussed in Chapter \ref{LRC}, the computation
 
 
 
-
+\newpage
 \section{Information from Angular Position}
 In its isolated form, the rotational or angular position of a joint does not provide much information to enable extensive qualitative analysis. However, when supplemented with temporal information, it becomes a valuable source of information. By considering the angular position in conjunction with the temporal dimension, a more comprehensive understanding of joint behavior can be obtained, allowing for more in depth analysis. 
 Figure \ref{agularstuff} visualizes what information needs to be added to enrich the analysis of these process variables that are directly related to the angular position of joints.
@@ -446,14 +446,14 @@ Figure \ref{ENERGYOPTIONS} illustrates the three aforementioned options along wi
 
 Once the time-series data for energy consumption is obtained, it becomes possible to identify peaks and associate them with specific movements. In line with the optimization objective, it is also feasible to establish threshold values, as discussed in Chapter \ref{VAJJ}, to optimize for a constant energy consumption.
 
-
+\newpage
 \subsection{Total Energy Usage}
 When the aim is to obtain a single scalar value for the total energy consumption, the same procedures outlined in the preceding chapter can be applied, and the values from the time-series can be aggregated through summation.
 
 In situations where the temporal information in energy consumption is considered irrelevant, alternative \acrshort{ML} approaches can be employed. For example, Recurrent neural-networks (\acrshort{RNN}s) can be utilized, as they have the ability to take an entire time-series as input and generate a scalar value representing the total energy consumption. \acrshort{RNN}s excel at capturing dependencies and patterns in sequential data. By training an \acrshort{RNN} model using a time-series dataset, it can learn to predict the total energy consumption based on the provided input. However, it is important to note that, like most \acrshort{ML} approaches, this method requires substantial effort and time for generating training data and conducting the training process.
 
 In \acrshort{WAAM}, it is important to consider the energy consumption associated with the welding process itself. The determination of energy use in welding involves various factors. The G-code, which comprises instructions for the welding process, can provide information on the wire-feed, voltage and the desired power input. By analyzing this code, it becomes possible to estimate the energy consumption during each welding operation. Alternatively, these parameters are often pre-defined as constants on the welding appliance, with the G-code solely specifying the turn-on and turn-off points. Figure \ref{waamgcode} gives an example on how the turn-on (N10) and turn-off points (N70) can be defined in the G-code.
- 
+
 \begin{figure}[H]
 	\centerline{\includegraphics[width=.75\textwidth]{figures/waamgcode.png}}
 	\caption{Turn-on and turn-off points in the G-code used in WAAM}
@@ -462,7 +462,7 @@ In \acrshort{WAAM}, it is important to consider the energy consumption associate
 
 By considering these factors, it is possible to accurately assess the energy usage during welding operations. However, this specific part of the total energy consumption cannot be optimized by defining the boundary conditions of redundant \acrshort{DoF}s. The energy required for the welding process is solely defined by the welding parameters and the final part geometry.
 
-
+\newpage
 \section{Reach, Singularities and Torch Orientation}
 The following discusses the robot poses with respect to reach and alignment, singularity avoidance, and torch orientation. These factors are essential in ensuring successful and efficient robotic operations.
 
@@ -537,7 +537,7 @@ The torch orientation variable in \acrshort{WAAM}, similar to the cable routing 
 In both the forward kinematics approach and the G-code, the rotation is described as the rotation of the A-, B-, and C-axes. However, the necessary information for torch orientation is simply the angle between the tilted Z-axis of the tool and the vector of gravity. To obtain this information, a dot product is performed between the rotation matrix and the Z-axis of the base coordinate system. This yields a vector corresponding to the tilted Z-axis of the tool. The enclosed angle can then be calculated using the scalar product. This step assumes that the defined base coordinate system is oriented in a way that aligns the Z-axis parallel to the gravity vector. Figure \ref{tilt} gives a visual example in 2D on how the Z-axis of the tool is deviating from the vector of gravity.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[width=.45\textwidth]{figures/ttilt.png}}
+	\centerline{\includegraphics[width=0.8\textwidth]{figures/ttilt.png}}
 	\caption{Example of optimal and non-optimal tilt in the welding torch}
 	\label{tilt}
 \end{figure}
@@ -545,7 +545,7 @@ In both the forward kinematics approach and the G-code, the rotation is describe
 To quantify the torch orientation variable, it is recorded in a time-series format. To obtain a scalar value for this process variable, all the values can be squared, cubed, or subjected to other mathematical operations, and then summed up. This process is similar to the one described in Chapter \ref{RO} for the cable routing orientation variable. It is important to note that the tool orientation variable can be in direct conflict with the alignment variable. This conflict is particularly noticeable in cases where the optimal alignment vector does not correspond with the optimal tool orientation vector. In such cases, it is crucial to have knowledge of the parameters of the manufacturing system and adjust the importance factors of the process variables accordingly. 
 
 
-
+\newpage
 \section{Summary for Boundary Condition Evaluation}
 Figure \ref{allflow} gives a summary and visual representation, in form of a flowchart, on how a toolpath with defined boundary conditions is evaluated by calculating the individual local scores for the process variables that can be influenced by the redundant \acrshort{DoF}s.
 
@@ -568,7 +568,7 @@ Figure \ref{grob} illustrates how a boundary condition for a toolpath can be eva
 \end{figure}
 
 
-
+\newpage
 \section{General Methodology for Process Optimization}
 So far only the analysis of a toolpath with set boundary conditions is discussed. In the following sections, two methods for optimizing boundary conditions towards a specific goal is presented. The main difference between these two methods lies in the different incorporation of a \acrshort{CAM} software.
 
@@ -580,7 +580,9 @@ Figure \ref{noCAM} illustrates the process of optimizing the redundant \acrshort
 
 When the toolpath is generated, it is defined in all available \acrshort{DoF}s of the manufacturing machine. This information is now in form of a G-code. To evaluate the set boundary conditions, the information from the G-code is extracted and the redundant \acrshort{DoF}s are varied, resulting in multiple toolpaths with multiple boundary conditions. In some cases, this variation simply involves varying the rotation around the Z-Axis, while keeping all the X-, Y- and Z-coordinates defined in the G-code, unchanged. In other cases, the redundant \acrshort{DoF}s involve the rotation and tilt of a rotary-tilt table. In such situations, every single coordinate in the G-code needs to be rotated around the tilting-axes of the rotary-tilt table. After obtaining the multiple toolpaths, each one is subjected to an inverse kinematics algorithm. This algorithm utilizes the machine's parameters, for example, arm length and joint sequence, to calculate the joint positions to reach every point in the different G-Codes. From these values, the score of the originally set boundary condition can be determined. By utilizing a external inverse kinematics approach, the \acrshort{CAM} software is not part of the optimization loop. This approach give  the user to work with any \acrshort{CAM} software.  
 
-Following the score calculation, an optimization algorithm (see Chapter \ref{OA}) is employed to generate a new boundary condition for the redundant \acrshort{DoF}s. This cycle of optimization continues either for a predetermined number of iterations or a specified duration. Alternatively, a desired minimal score can be defined as the target, that the toolpath needs to achieve. Once the most optimal or close-to-optimal boundary condition is found, it is used as input for the \acrshort{CAM} software to validate that no collisions or other exceptions are triggered. After this validation process, the G-code can be utilized in production.
+Following the score calculation, an optimization algorithm (see Chapter \ref{OA}) is employed to generate a new boundary condition for the redundant \acrshort{DoF}s. This cycle of optimization continues either for a predetermined number of iterations or a specified duration. 
+\newpage
+Alternatively, a desired minimal score can be defined as the target, that the toolpath needs to achieve. Once the most optimal or close-to-optimal boundary condition is found, it is used as input for the \acrshort{CAM} software to validate that no collisions or other exceptions are triggered. After this validation process, the G-code can be utilized in production.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/noCAM.png}}
@@ -607,7 +609,7 @@ Figure \ref{variation} illustrates the process of varying a simple toolpath. In 
 	\label{variation}
 \end{figure}
 
-
+\newpage
 \subsection{Optimization Loop With CAM Software in the Loop}\label{CAMinloop}
 
 The previously mentioned optimization approach in Chapter \ref{noCAMchap} describes a process that does not involve a \acrshort{CAM} software within the optimization loop. However, another method can be employed that directly incorporates a \acrshort{CAM} software into the optimization process and thus allows for seamless integration. By directly including the \acrshort{CAM} software, the optimization loop becomes more tightly knit, enabling seamless feedback and iteration between the toolpath generation and the optimization of constrains for the redundant \acrshort{DoF}s. This approach can significantly enhance the overall optimization process and significantly improves the quality and efficiency of the final toolpath.
