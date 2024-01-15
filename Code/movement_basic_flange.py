@@ -70,11 +70,12 @@ angel_before = 0
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
 xyz = np.load(f"RealG.npy")
-path = 4
+path = 3
+tilt = 45
+C_ax = 0
+pos = np.load(f"Joint_angles_flange/path_{path}_rot_0_tilt_{tilt}_C_{C_ax}.npy")
 
-pos = np.load(f"Joint_angles_flange/path_{path}_rot_0_tilt_{0}_C_{-135}.npy")
-
-for iter in range(0, len(pos), 50):
+for iter in range(0, len(pos), 1):
     plt.clf()
 
     theta = [2, 75, -45, -88, -91, 61 + np.sin(np.radians(iter)) * 30]
@@ -137,6 +138,11 @@ for iter in range(0, len(pos), 50):
         ax.set_xlim([-100, 100])
         ax.set_ylim([-200, 200])
         ax.set_zlim([300, 700])
+
+    if tilt == 45:
+        ax.set_xlim([0, 1300])
+        ax.set_ylim([-600, 600])
+        ax.set_zlim([0, 1300])
 
     pointer1 = np.dot(rotM, [1, 0, 0])
     pointer2 = np.dot(rotM, [0, 1, 0])
@@ -211,7 +217,7 @@ for iter in range(0, len(pos), 50):
         # ax.scatter(x_coords, y_coords, z_coords, c=col, marker='o', s=2)
 
         angel = xyz[6, iter] - angel_before
-        print(angel)
+        #print(angel)
         x_coords, y_coords, z_coords = rotate_x_axis(x_coords, y_coords, z_coords, angel,
                                                      origin_x=800, origin_y=0, origin_z=400)
 
@@ -228,7 +234,7 @@ for iter in range(0, len(pos), 50):
 
     ax.text(transformed_end_point_1[0] + 310, transformed_end_point_1[1], transformed_end_point_1[2], "X'", color='r', fontsize=fs)
     ax.text(transformed_end_point_1[0], transformed_end_point_1[1] + 310, transformed_end_point_1[2], "Y'", color='g', fontsize=fs)
-    ax.text(transformed_end_point_1[0], transformed_end_point_1[1], transformed_end_point_1[2] + 450, "Z'", color='b', fontsize=fs)
+    ax.text(transformed_end_point_1[0], transformed_end_point_1[1], transformed_end_point_1[2] + 200, "Z'", color='b', fontsize=fs) # was 450
 
     ax.legend(loc='upper right',  bbox_to_anchor=(1, 0.9), fontsize=10, ncol=2) #bbox_to_anchor=(0, 0.08),
 
@@ -241,4 +247,5 @@ for iter in range(0, len(pos), 50):
 #plt.savefig(f'../Latex/figures/robotprog.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
 #plt.savefig(f'../Latex/figures/robotANDpath1.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
 #plt.savefig(f'../Latex/figures/robotANDpath1_45.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
+plt.savefig(f'../Latex/figures/robotANDpath3_45.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
 plt.show()

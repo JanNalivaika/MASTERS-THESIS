@@ -29,9 +29,9 @@ def basicplot():
             import matplotlib.pyplot as plt
             plt.rcParams.update({'font.size': 12})
 
-            plt.figure(figsize=(10, 6), dpi=200)
+            plt.figure(figsize=(10, 5), dpi=200)
             for joint in range(6):
-                joint_positions = np.degrees(np.load(f'Joint_angles_flange/path_{tp}_rot_0_tilt_0_C_{C}.npy')[:, joint])
+                joint_positions = np.degrees(np.load(f'Joint_angles_flange/path_{tp}_rot_0_tilt_{0}_C_{C}.npy')[:, joint])
                 for i in range(6):
                     joint_positions = simplify_angle(joint_positions)
 
@@ -46,23 +46,23 @@ def basicplot():
             plt.ylabel('Position in degrees [°] ')
             plt.ylim((-130,130))
             plt.xlim((-2, 302))
-            plt.legend(bbox_to_anchor=(1, 1.25), ncol=2)#,  loc='upper right'
+            plt.legend(bbox_to_anchor=(1, 1.3), ncol=2)#,  loc='upper right'
             plt.tight_layout()
             plt.savefig(f"../Latex/figures/TP{tp}ABC{C}.png",dpi=1200)
             print(f"TP{tp}ABC{C}.png")
-            #plt.show()
+            plt.show()
             plt.close()
 
 
 def count_direction_changes(time_series):
     direction_changes = 0
     remeber = 1
-    time_series = np.round(time_series,3)
+    #time_series = np.round(time_series,2)
     for i in range(1, len(time_series)):
-        if time_series[i-1] < time_series[i] and remeber == -1 and abs(time_series[i-1] - time_series[i]) > 0.01:
+        if time_series[i-1] < time_series[i] and remeber == -1: # and abs(time_series[i-1] - time_series[i]) > 0.001
             direction_changes += 1
             remeber = 1
-        if time_series[i-1] > time_series[i] and remeber == 1 and abs(time_series[i-1] - time_series[i]) > 0.01:
+        if time_series[i-1] > time_series[i] and remeber == 1:
             direction_changes += 1
             remeber = -1
 
@@ -132,7 +132,7 @@ def basicscore():
 
         #plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
         plt.gca().xaxis.set_major_locator(plt.MultipleLocator(15))
-        plt.legend(bbox_to_anchor=(1, 1.), ncol=2)  # ,  loc='upper right'
+        plt.legend(bbox_to_anchor=(1, 1.26), ncol=2)  # ,  loc='upper right'
         plt.tight_layout()
         plt.savefig(f"../Latex/figures/LocalScores_{path}.png", bbox_inches='tight',dpi=1200)
 
@@ -157,7 +157,8 @@ def basicscore():
 
         plt.xlabel('Rotation around Z in degrees [°]')
         plt.ylabel('Score [-]')
-        plt.title(f'Corresponding global scores of toolpath {path}')
+        plt.title(f'Corresponding global and local scores of toolpath {path}')
+        #plt.title(f'Corresponding global scores of toolpath {path}')
 
         plt.ylim((-3, 110))
         plt.xlim((-138, 138))
@@ -234,7 +235,7 @@ def RealG():
         V_tracker4.append(V_4)
         T_tracker6.append(T_6)
 
-    plt.figure(figsize=(10, 4), dpi=200)
+    plt.figure(figsize=(10, 5), dpi=200)
 
     scaled_DC_tracker1 = min_max_scaler.fit_transform(-np.array(DC_tracker1).reshape(-1, 1))*100*0.2
     scaled_DC_tracker2 = min_max_scaler.fit_transform(-np.array(DC_tracker2).reshape(-1, 1))*100*0.2
@@ -252,14 +253,18 @@ def RealG():
     plt.plot(X_ax, scaled_T_tracker6, lw=0.5, label="Total travel in joint 6", linestyle='dashed', marker='o')
 
     plt.xlabel('Rotation around Z in degrees [°]')
-    plt.ylabel('Local Score')
+    plt.ylabel('Local Score [-]')
+    plt.title(f'Corresponding local scores')
     plt.ylim((-3,25))
-
-    plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
-    #plt.savefig(f"../Latex/figures/LocalScores_{4}.png", bbox_inches='tight',dpi=1200)
+    plt.xlim((-138, 138))
+    plt.gca().xaxis.set_major_locator(plt.MultipleLocator(15))
+    #plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=3)
+    plt.legend(bbox_to_anchor=(1, 1.35), ncol=2)  # ,  loc='upper right'
+    plt.tight_layout()
+    plt.savefig(f"../Latex/figures/LocalScores_{4}.png", bbox_inches='tight',dpi=1200)
     plt.show()
     plt.close()
-    plt.figure(figsize=(10, 4))
+    plt.figure(figsize=(10, 5))
 
     SCORE = np.array(scaled_DC_tracker1)+ np.array(scaled_DC_tracker2) + np.array(scaled_DC_tracker3) + np.array(scaled_V_tracker4) + np.array(scaled_T_tracker6)
 
@@ -270,19 +275,28 @@ def RealG():
 
 
     plt.plot(X_ax,SCORE, lw = 0.5, c="red", label = "Global score",linestyle='dashed', marker='o')
-    plt.scatter(max_index, max_value, s=250, c="green", label="Best global score", marker="2")
-    plt.scatter(max_index, 3, s=80, c="red", label="Best boundary condition", marker="v")
-    plt.ylim((0, 105))
-    plt.xlim((-145, 145))
+    plt.scatter(max_index, max_value, s = 300, c="orange", label="Best global score", marker = "*")
+    plt.scatter(max_index, 0, s=80, c="red", label="Best boundary condition", marker="v")
+    plt.ylim((-3, 115))
+    plt.xlim((-138, 138))
     plt.vlines(max_index, -0, max_value, linestyle="dashed")
     plt.hlines(max_value, -145, max_index, linestyle="dashed")
-    plt.text(max_index, max_value + 5, f"Global score = {np.round(max_value, 1)}, Optimal rotation = {int(max_index)}°",
-             color='black')
-    plt.xlabel('Rotation around Z in degrees [°]')
-    plt.ylabel('Score')
 
-    plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
-    #plt.savefig(f"../Latex/figures/best_c_{4}.png",bbox_inches='tight',dpi=1200)
+    if max_index > 0:
+        t_pos = max_index - 110
+    else:
+        t_pos = max_index
+    plt.text(t_pos, max_value + 5, f"Global score = {np.round(max_value, 1)}, Optimal rotation = {int(max_index)}°",
+             color='black')
+
+    plt.xlabel('Rotation around Z in degrees [°]')
+    plt.ylabel('Global Score [-]')
+    plt.title(f'Corresponding global scores')
+    plt.gca().xaxis.set_major_locator(plt.MultipleLocator(15))
+    #plt.legend(bbox_to_anchor=(0, 1.02, 1, 0.2), loc="lower left",mode="expand", borderaxespad=0, ncol=2)
+    plt.legend(bbox_to_anchor=(1, 1.25), ncol=2)  # ,  loc='upper right'
+    plt.tight_layout()
+    plt.savefig(f"../Latex/figures/best_c_{4}.png",bbox_inches='tight',dpi=1200)
     #plt.savefig(f"../Latex/figures/best_c_{4}_combi.png", bbox_inches='tight',dpi=1000)
     plt.show()
     plt.close()
@@ -312,7 +326,7 @@ def TWODplot():
                     accel_sore = 0
                     v_score = 0
 
-                    joints = np.load(f"Joint_angles_lowres/path_{toolpath}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy")
+                    joints = np.load(f"Joint_angles_lowres_flange/path_{toolpath}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy")
 
                     for j in range(6):
                         joint = joints[:,j]
@@ -359,6 +373,30 @@ def TWODplot():
         DC_tracker1 = min_max_scaler.fit_transform(-np.array(DC_tracker1).reshape(-1, 1)) * 100 * 0.25
         Acc_tracker = min_max_scaler.fit_transform(-np.array(Acc_tracker).reshape(-1, 1)) * 100 * 0.25
         V_tracker = min_max_scaler.fit_transform(-np.array(V_tracker).reshape(-1, 1)) * 100 * 0.2
+        """"""
+        matrix = np.reshape(DC_tracker234, (-1, 55))
+        plt.figure(figsize=(9, 9))
+        plt.imshow(matrix)
+        plt.savefig(f"../Latex/figures/DC_tracker234{toolpath}.png", bbox_inches='tight', dpi=1000)
+        plt.close()
+
+        matrix = np.reshape(DC_tracker1, (-1, 55))
+        plt.figure(figsize=(9, 9))
+        plt.imshow(matrix)
+        plt.savefig(f"../Latex/figures/DC_tracker1_{toolpath}.png", bbox_inches='tight', dpi=1000)
+        plt.close()
+
+        matrix = np.reshape(Acc_tracker, (-1, 55))
+        plt.figure(figsize=(9, 9))
+        plt.imshow(matrix)
+        plt.savefig(f"../Latex/figures/Acc_tracker{toolpath}.png", bbox_inches='tight', dpi=1000)
+        plt.close()
+
+        matrix = np.reshape(V_tracker, (-1, 55))
+        plt.figure(figsize=(9, 9))
+        plt.imshow(matrix)
+        plt.savefig(f"../Latex/figures/V_tracker{toolpath}.png", bbox_inches='tight', dpi=1000)
+        plt.close()
 
 
         score = np.array(DC_tracker234) + np.array(DC_tracker1)+ np.array(V_tracker)+ np.array(Acc_tracker)
@@ -384,7 +422,7 @@ def TWODplot():
         y_new = list(range(-45, 46 ,6)) #2
         plt.yticks(y_org, y_new)
 
-        cb = plt.colorbar()
+        cb = plt.colorbar(orientation="horizontal", pad=0.08)
         tick_locator = ticker.MaxNLocator(nbins=12)
         cb.locator = tick_locator
         cb.update_ticks()
@@ -399,11 +437,20 @@ def TWODplot():
 
         plt.hlines(pos[0], 0, pos[1], linestyle="dashed", color="black")
         plt.vlines(pos[1], 45, pos[0], linestyle="dashed",color="black")
-        plt.text(pos[1]+2, pos[0],
+
+        t_x = pos[1]
+        t_y = pos[0]
+        if pos[1]>45:
+            t_x = pos[1]- 18
+        if pos[0]< 25:
+            t_y = pos[0]+5
+        plt.text(t_x, t_y,
                  f"Global score = {np.round(matrix[pos[0], pos[1]],1)}, \nOptimal rotation C = {-135+5*int(pos[1])}° \nOptimal tilt = {-45+2*int(pos[0])}°",
                  color='black')
-        plt.legend(loc='upper center', bbox_to_anchor=(0.1, -0.1),
-               fancybox=True, shadow=False, ncol=1)
+
+        #plt.text(25, 40,f"Local score",  color='black')
+        cb.set_label('Global score')
+        plt.legend(bbox_to_anchor=(1, 1.13), shadow=False, ncol=1)
         plt.savefig(f"../Latex/figures/best_2D_{toolpath}.png", bbox_inches='tight',dpi=1000)
         #plt.show()
         plt.close()
@@ -414,5 +461,5 @@ def TWODplot():
 
 #basicplot()
 #basicscore()
-RealG()
-#TWODplot()
+#RealG()
+TWODplot()

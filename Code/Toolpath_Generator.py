@@ -129,6 +129,7 @@ for rot_winkel in range(1):
 
                 # plt.title(tit,fontsize=20)
                 # ax.tick_params(labelsize=15)
+                plt.gca().xaxis.set_major_locator(plt.MultipleLocator(200))
                 plt.savefig(f'../Latex/figures/path{selection}_kipp_{kipp_winkel}_comparison.png', dpi=500, bbox_inches="tight", pad_inches=0.3)
                 # Display the plot
                 #plt.show()

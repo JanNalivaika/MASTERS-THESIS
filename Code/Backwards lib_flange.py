@@ -41,12 +41,12 @@ dh_params = np.array(np.transpose(np.vstack((d, a, np.radians(alpha), theta))))
 
 np.set_printoptions(precision=5, suppress=True)
 
-for selection in [4]:
-    for kipp_winkel in range(1):  # -45,46,2
-        for c_axis in range(-135, 140, 5):  # -135,140,5 [-120]:#
+for selection in [1,2,3]:
+    for kipp_winkel in range(-45,46,2):  # -45,46,2
+        for c_axis in range(-135,140,5):  # -135,140,5 [-120]:#
 
             if os.path.exists(
-                    f"XXXXXXXXJoint_angles_lowres_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy"):
+                    f"XXJoint_angles_lowres_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy"):
                 print("exists")
             else:
                 if selection ==4 :
@@ -66,10 +66,10 @@ for selection in [4]:
                     sol = [ 0,  7.0e+01, -3.8e+01,  0,  5.5e+01, 0]
                 pos = []
 
-                for iter in range(0, len(xyz[0]), 1):
+                for iter in range(0, len(xyz[0]), 3):
                     robot = RobotSerial(dh_params)
 
-                    if iter % 1000 == 0: print(f"{iter} / {len(xyz[0])}")
+                    #if iter % 1000 == 0: print(f"{iter} / {len(xyz[0])}")
                     # abc = np.array([c_axis,-np.pi*1.5,-np.deg2rad(kipp_winkel)])
                     abc = np.array(np.radians([90 + kipp_winkel, 90 + c_axis, 90]))
                     tcp = np.array([[xyz[0, iter]], [xyz[1, iter]], [xyz[2, iter]]])
@@ -93,5 +93,6 @@ for selection in [4]:
                     pos.append(sol)
 
                 # np.save(f"Joint_angles_lowres_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
-                np.save(f"Joint_angles_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
+                #np.save(f"Joint_angles_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
+                np.save(f"Joint_angles_lowres_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
                 print(f"path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy")

@@ -7,8 +7,7 @@ from sklearn import preprocessing
 min_max_scaler = preprocessing.MinMaxScaler()
 
 def simplify_angle(angles):
-    angles = np.array(angles)
-    #angle = np.round(angle,2)
+
     while all(i > 180 for i in angles):
         angles -= 2 * 180
     while all(i < -180 for i in angles):
@@ -18,7 +17,7 @@ def simplify_angle(angles):
 def count_direction_changes(time_series):
     direction_changes = 0
     remeber = 1
-    time_series = np.round(time_series,2)
+    #time_series = np.round(time_series,2)
     for i in range(1, len(time_series)):
         if time_series[i-1] < time_series[i] and remeber == -1:
             direction_changes += 1
@@ -83,7 +82,7 @@ def get_score(list):
 
     score = np.array(DC_tracker234) + np.array(DC_tracker1) + np.array(V_tracker) + np.array(Acc_tracker)
 
-    return(-score.flatten())
+    return(score.flatten())
 
 
 
@@ -92,8 +91,8 @@ class Particle:
         self.position_i = []  # particle position
         self.velocity_i = []  # particle velocity
         self.pos_best_i = []  # best position individual
-        self.err_best_i = -1  # best error individual
-        self.err_i = -1  # error individual
+        self.err_best_i = 1  # best error individual
+        self.err_i = 1  # error individual
         self.visited = []
 
         for i in range(0, num_dimensions):
@@ -103,18 +102,7 @@ class Particle:
             # evaluate current fitness
 
     def evaluate(self, score, score_list_ind, Position_list_ind):
-        # self.err_i = costFunc(self.position_i)
-        #self.position_i[0] = int(self.position_i[0])
-        #self.position_i[1] = int(self.position_i[1])
-        #name = f"Joint_angles_lowres/path_{path}_rot_0_tilt_{(self.position_i[0]*2)-45}_C_{(self.position_i[1]*5)-135}.npy"
-        #print(name)
-        #file = np.load(name)
-        #matrix = np.load(f"matrix_{path}.npy")
-        # matrix = normalize(matrix, axis=0, norm='l1')
         self.err_i = score
-        # self.err_i = -self.position_i[0]-self.position_i[1]
-
-        # check if current position is an individual best
         min_pos_idx = np.array(np.where(score_list_ind == score_list_ind.min())).flatten()
         min_pos = Position_list_ind[min_pos_idx[0]]
 
@@ -169,27 +157,138 @@ class PSO:
         global num_dimensions
 
         num_dimensions = 2
-        err_best_g = 1  # best error for group
-        pos_best_g = []  # best position for group
+
 
         # establish the swarm
         self.swarm = []
         for i in range(0, num_particles):
-            self.swarm.append(Particle([np.random.randint(0, high=54), np.random.randint(0, high=45)]))
+            self.swarm.append(Particle([np.random.randint(0, high=45), np.random.randint(0, high=54)]))
 
-            # for visualization
+
 
         i = 0
         if i == 0:
             fig = plt.figure(figsize=(8, 8))
             ax = fig.add_subplot(111)
+
+
+            for j in range(0, num_particles):
+
+                Position_list.append(self.swarm[j].position_i[:])
+
+                p0 = int(self.swarm[j].position_i[1])*5-135
+                p1 = int(self.swarm[j].position_i[0])*2-45
+
+                name = f"Joint_angles_lowres_flange/path_{path}_rot_0_tilt_{p1}_C_{p0}.npy"
+                File_list.append(name)
+
+            score = -get_score(File_list)
+
+            for j in range(0, num_particles):
+                score_list_ind = score[j::num_particles]
+                Position_list_ind = np.array(Position_list)[j::num_particles][:]
+                score_i = score_list_ind[-1]
+                self.swarm[j].evaluate(score_i, score_list_ind, Position_list_ind)
+
+                # determine if current particle is the best (globally)
+
+            min_pos_idx = np.array(np.where(score == score.min())).flatten()
+            pos_best_g = Position_list[int(min_pos_idx[0])]
+
+            # pos_best_g = [0,0]
+            print(pos_best_g)
+            ax.scatter(pos_best_g[1], pos_best_g[0], color='green', marker='o', s=200,
+                       edgecolors='black', label="Best found score so far")
+
             for j in range(0, num_particles):
                 ax.scatter(self.swarm[j].position_i[1], self.swarm[j].position_i[0], color='r', marker='o',
-                           edgecolors='black')
-            ax.set_xlim((0, 54))
-            ax.set_ylim((0, 45))
+                           edgecolors='black', label="Particles")
+
 
             matrix = np.load(f"matrix_{path}.npy")
+            # matrix = np.flip(matrix, 0)
+
+            im = ax.imshow(matrix)
+            #plt.show()
+
+
+            x_org = list(range(0, 55, 4))
+            x_new = list(range(-135, 140, 20))
+            plt.xticks(x_org, x_new)
+            y_org = list(range(0, 46, 3))  # 1
+            y_new = list(range(-45, 46, 6))  # 2
+            plt.yticks(y_org, y_new)
+            cb = fig.colorbar(im, orientation="horizontal", pad=0.08)
+            cb.set_label('Global score')
+            tick_locator = ticker.MaxNLocator(nbins=12)
+            cb.locator = tick_locator
+            cb.update_ticks()
+            plt.title(f"Toolpath {path}. PSO-algorithm: Initial Position")
+
+            plt.xlabel("C in Degrees [°]")
+            plt.ylabel("Tilting in Degrees [°]")
+            pos = np.unravel_index(matrix.argmax(), matrix.shape)
+            plt.scatter(pos[1], pos[0], marker="2", c="red", s=300, label="Best global Score")
+
+            handles, labels = plt.gca().get_legend_handles_labels()
+            by_label = dict(zip(labels, handles))
+
+            plt.legend(by_label.values(), by_label.keys(), bbox_to_anchor=(1, 1.25), shadow=False, ncol=1)
+
+            plt.savefig(f"../Latex/figures/swarm_true/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+            plt.close()
+            plt.close()
+
+
+        while i < max_iter:
+            fig = plt.figure(figsize=(8, 8))
+            ax = fig.add_subplot(111)
+
+            # evaluate fitness of each particle
+            for j in range(0, num_particles):
+
+                Position_list.append(self.swarm[j].position_i[:])
+
+                p0 = int(self.swarm[j].position_i[1])*5-135
+                p1 = int(self.swarm[j].position_i[0])*2-45
+
+                name = f"Joint_angles_lowres/path_{path}_rot_0_tilt_{p1}_C_{p0}.npy"
+                File_list.append(name)
+
+            score = -get_score(File_list)
+
+            for j in range(0, num_particles):
+                score_list_ind = score[j::num_particles]
+                Position_list_ind = np.array(Position_list)[j::num_particles][:]
+                score_i = score_list_ind[-1]
+                self.swarm[j].evaluate(score_i, score_list_ind, Position_list_ind)
+
+                # determine if current particle is the best (globally)
+
+            min_pos_idx = np.array(np.where(score == score.min())).flatten()
+            pos_best_g = Position_list[int(min_pos_idx[0])]
+
+            # pos_best_g = [0,0]
+
+            print(pos_best_g)
+            ax.scatter(pos_best_g[1], pos_best_g[0], color='green', marker='o', s=200,
+                       edgecolors='black', label="Best found score so far")
+
+            # update the velocity and position of each particle
+            for j in range(0, num_particles):
+                self.swarm[j].update_velocity(pos_best_g)
+                self.swarm[j].update_position(bounds)
+
+                # plot particles
+                ax.scatter(self.swarm[j].position_i[1], self.swarm[j].position_i[0], color='r', marker='o',
+                           edgecolors='black', label="Particles")
+
+
+
+
+
+            matrix = np.load(f"matrix_{path}.npy")
+            # matrix = np.flip(matrix, 0)
             # matrix = normalize(matrix, axis=0, norm='l1')
             im = ax.imshow(matrix)
 
@@ -200,99 +299,38 @@ class PSO:
             plt.xticks(x_org, x_new)
             y_org = list(range(0, 46, 3))  # 1
             y_new = list(range(-45, 46, 6))  # 2
+
             plt.yticks(y_org, y_new)
+            cb = fig.colorbar(im, orientation="horizontal", pad=0.08)
+            cb.set_label('Global score')
+            tick_locator = ticker.MaxNLocator(nbins=12)
+            cb.locator = tick_locator
+            cb.update_ticks()
+            plt.title(f"Toolpath {path}. PSO-algorithm: Initial Position")
 
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")
-            plt.title(f"Toolpath {path}. Initial random positions")
             pos = np.unravel_index(matrix.argmax(), matrix.shape)
             plt.scatter(pos[1], pos[0], marker="2", c="red", s=300, label="Best global Score")
 
+
+            # plt.show()
+            i+=1
+
+
+
+
+            #plt.show()
+
             handles, labels = plt.gca().get_legend_handles_labels()
             by_label = dict(zip(labels, handles))
-            plt.legend(by_label.values(), by_label.keys(), loc='upper center', bbox_to_anchor=(0.1, -0.1),
-                       fancybox=True, shadow=False, ncol=1)
+
+            plt.legend(by_label.values(), by_label.keys(), bbox_to_anchor=(1, 1.25), shadow=False, ncol=1)
+
             plt.savefig(f"../Latex/figures/swarm_true/{path}_{i}.png", bbox_inches='tight', dpi=1000)
             plt.close()
             plt.close()
 
-        fig = plt.figure(figsize=(8, 8))
-        ax = fig.add_subplot(111)
-        while i < max_iter:
-            ax.cla()
-            # evaluate fitness of each particle
-            for j in range(0, num_particles):
-
-                self.swarm[j].position_i[0] = int(self.swarm[j].position_i[0])
-                self.swarm[j].position_i[1] = int(self.swarm[j].position_i[1])
-                Position_list.append(self.swarm[j].position_i[:])
-
-                p0 = int(self.swarm[j].position_i[0])*5-135
-                p1 = int(self.swarm[j].position_i[1])*2-45
-
-                name = f"Joint_angles_lowres/path_{path}_rot_0_tilt_{p1}_C_{p0}.npy"
-                File_list.append(name)
-
-            score = get_score(File_list)
-
-            for j in range(0, num_particles):
-                score_list_ind = score[j::num_particles]
-                Position_list_ind = np.array(Position_list)[j::num_particles][:]
-                score_i = score_list_ind[-1]
-                self.swarm[j].evaluate(score_i,score_list_ind,Position_list_ind)
-
-                # determine if current particle is the best (globally)
-
-            min_pos_idx = np.array(np.where(score == score.min())).flatten()
-            pos_best_g = Position_list[int(min_pos_idx[0])]
-
-
-            #pos_best_g = [0,0]
-            print(pos_best_g)
-            ax.scatter(pos_best_g[0], pos_best_g[1], color='green', marker='o', s = 300,
-                       edgecolors='black', label="Best found score so far")
-
-                    # update the velocity and position of each particle
-            for j in range(0, num_particles):
-                self.swarm[j].update_velocity(pos_best_g)
-                self.swarm[j].update_position(bounds)
-
-                # plot particles
-                ax.scatter(self.swarm[j].position_i[0], self.swarm[j].position_i[1], color='r', marker='o',
-                           edgecolors='black', label="Particles")
-                ax.set_xlim((0, 54))
-                ax.set_ylim((0, 45))
-
-            matrix = np.load(f"matrix_{path}.npy")
-
-            ax.imshow(matrix)
-
-            #plt.pause(0.5)
-
-            i += 1
-
-            x_org = list(range(0, 55, 4))
-            x_new = list(range(-135, 140, 20))
-            plt.xticks(x_org, x_new)
-            y_org = list(range(0, 46, 3))  # 1
-            y_new = list(range(-45, 46, 6))  # 2
-            plt.yticks(y_org, y_new)
-
-            plt.title(f"Toolpath {path}. PSO-algorithm iteration: {i}")
-
-            plt.xlabel("C in Degrees [°]")
-            plt.ylabel("Tilting in Degrees [°]")
-
-            pos = np.unravel_index(matrix.argmax(), matrix.shape)
-            plt.scatter(pos[1], pos[0], marker="2", c="red", s=300, label="Best global Score")
-
-            handles, labels = plt.gca().get_legend_handles_labels()
-            by_label = dict(zip(labels, handles))
-            plt.legend(by_label.values(), by_label.keys(), loc='upper center', bbox_to_anchor=(0.1, -0.1),
-                       fancybox=True, shadow=False, ncol=1)
-
-            plt.savefig(f"../Latex/figures/swarm_true/{path}_{i}.png", bbox_inches='tight', dpi=1000)
-            ax.cla()
         plt.close()
 
 
@@ -301,15 +339,15 @@ if __name__ == "__main__":
 
 
 
-    bounds = [(0, 54), (0, 45)]  # input bounds
+    bounds = [(0, 45), (0, 54)]  # input bounds
     num_particles = 20
     max_iter = 5
 
-    for path in [3]:
+    for path in [1,2,3]:
 
         Position_list = []
         File_list = []
-        Process_parameter_list = []
+
 
         pso = PSO(bounds, num_particles, max_iter, path)
 
