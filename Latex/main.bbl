@@ -1474,24 +1474,27 @@
       \verb https://www.sciencedirect.com/science/article/pii/s2351978917303529
       \endverb
     \endentry
-    \entry{DIN66025}{misc}{}
-      \list{location}{3}{%
-        {DIN 66025-1:1983-01, Programmaufbau für numerisch gesteuerte Arbeitsmaschinen}%
-        {Allgemeines}%
-        {Berlin}%
+    \entry{Additive}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b8f07fe3887bcdaff729fd3113b1d487}{%
+           family={{DIN EN ISO/ASTM 52900}},
+           familyi={D\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Beuth Verlag GmbH}%
-      }
+      \strng{namehash}{b8f07fe3887bcdaff729fd3113b1d487}
+      \strng{fullhash}{b8f07fe3887bcdaff729fd3113b1d487}
+      \strng{bibnamehash}{b8f07fe3887bcdaff729fd3113b1d487}
+      \strng{authorbibnamehash}{b8f07fe3887bcdaff729fd3113b1d487}
+      \strng{authornamehash}{b8f07fe3887bcdaff729fd3113b1d487}
+      \strng{authorfullhash}{b8f07fe3887bcdaff729fd3113b1d487}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{title}{DIN-66025}
-      \field{year}{2023}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{Additive Fertigung - Grundlagen - Terminologie (ISO/ASTM 52900:2021); Deutsche Fassung EN{\_}ISO/ASTM 52900:2021}
+      \field{year}{2022}
       \verb{doi}
-      \verb 10.31030/1300778
+      \verb 10.31030/3290011
       \endverb
     \endentry
     \entry{Ding.2015}{article}{}

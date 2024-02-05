@@ -219,7 +219,7 @@ class PSO:
             y_new = list(range(-45, 46, 6))  # 2
             plt.yticks(y_org, y_new)
             cb = fig.colorbar(im, orientation="horizontal", pad=0.08)
-            cb.set_label('Global score')
+            cb.set_label('Global score [-]')
             tick_locator = ticker.MaxNLocator(nbins=12)
             cb.locator = tick_locator
             cb.update_ticks()
@@ -252,7 +252,7 @@ class PSO:
                 p0 = int(self.swarm[j].position_i[1])*5-135
                 p1 = int(self.swarm[j].position_i[0])*2-45
 
-                name = f"Joint_angles_lowres/path_{path}_rot_0_tilt_{p1}_C_{p0}.npy"
+                name = f"Joint_angles_lowres_flange/path_{path}_rot_0_tilt_{p1}_C_{p0}.npy"
                 File_list.append(name)
 
             score = -get_score(File_list)
@@ -302,11 +302,11 @@ class PSO:
 
             plt.yticks(y_org, y_new)
             cb = fig.colorbar(im, orientation="horizontal", pad=0.08)
-            cb.set_label('Global score')
+            cb.set_label('Global score [-]')
             tick_locator = ticker.MaxNLocator(nbins=12)
             cb.locator = tick_locator
             cb.update_ticks()
-            plt.title(f"Toolpath {path}. PSO-algorithm: Initial Position")
+            plt.title(f"Toolpath {path}. PSO-algorithm iteration: {i+1}")
 
             plt.xlabel("C in Degrees [°]")
             plt.ylabel("Tilting in Degrees [°]")

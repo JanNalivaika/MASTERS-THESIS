@@ -156,6 +156,7 @@ def basicscore():
         plt.scatter(max_index, 0, s=80, c="red", label="Best boundary condition", marker="v")
 
         plt.xlabel('Rotation around Z in degrees [°]')
+        #plt.ylabel('Global score [-]')
         plt.ylabel('Score [-]')
         plt.title(f'Corresponding global and local scores of toolpath {path}')
         #plt.title(f'Corresponding global scores of toolpath {path}')
@@ -235,6 +236,20 @@ def RealG():
         V_tracker4.append(V_4)
         T_tracker6.append(T_6)
 
+    print(np.std(DC_tracker1))
+    print(np.std(DC_tracker2))
+    print(np.std(DC_tracker3))
+    print(np.std(V_tracker4))
+    print(np.std(T_tracker6))
+    print("")
+    print(np.unique(DC_tracker1))
+
+    """plt.plot(DC_tracker1)
+    plt.plot(DC_tracker2)
+    plt.plot(DC_tracker3)
+    plt.show()
+    plt.close()"""
+
     plt.figure(figsize=(10, 5), dpi=200)
 
     scaled_DC_tracker1 = min_max_scaler.fit_transform(-np.array(DC_tracker1).reshape(-1, 1))*100*0.2
@@ -267,6 +282,9 @@ def RealG():
     plt.figure(figsize=(10, 5))
 
     SCORE = np.array(scaled_DC_tracker1)+ np.array(scaled_DC_tracker2) + np.array(scaled_DC_tracker3) + np.array(scaled_V_tracker4) + np.array(scaled_T_tracker6)
+
+    SCORE = np.array(scaled_DC_tracker2) + np.array(scaled_DC_tracker3) + np.array(
+        scaled_V_tracker4) + np.array(scaled_T_tracker6)
 
     max_value = np.max(SCORE)
     max_index = X_ax[int(np.where(SCORE == max_value)[0])]
@@ -442,14 +460,18 @@ def TWODplot():
         t_y = pos[0]
         if pos[1]>45:
             t_x = pos[1]- 18
+        else:
+            t_x = pos[1] + 1
         if pos[0]< 25:
             t_y = pos[0]+5
+        else:
+            t_y = pos[0] - 1
         plt.text(t_x, t_y,
                  f"Global score = {np.round(matrix[pos[0], pos[1]],1)}, \nOptimal rotation C = {-135+5*int(pos[1])}° \nOptimal tilt = {-45+2*int(pos[0])}°",
                  color='black')
 
         #plt.text(25, 40,f"Local score",  color='black')
-        cb.set_label('Global score')
+        cb.set_label('Global score [-]')
         plt.legend(bbox_to_anchor=(1, 1.13), shadow=False, ncol=1)
         plt.savefig(f"../Latex/figures/best_2D_{toolpath}.png", bbox_inches='tight',dpi=1000)
         #plt.show()

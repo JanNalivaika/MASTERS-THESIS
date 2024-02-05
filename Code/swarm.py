@@ -202,7 +202,7 @@ class PSO:
             handles, labels = plt.gca().get_legend_handles_labels()
             by_label = dict(zip(labels, handles))
 
-            cb.set_label('Global score')
+            cb.set_label('Global score [-]')
             plt.legend(by_label.values(), by_label.keys(), bbox_to_anchor=(1, 1.2), shadow=False, ncol=1)
 
 
@@ -217,10 +217,10 @@ class PSO:
 if __name__ == "__main__":
 
     bounds = [(0, 45), (0, 54)]  # input bounds
-    num_particles = 100
+    num_particles = 20
     max_iter = 5
 
-    for path in [1,2,3]:
+    for path in [0]:
         pso = PSO(bounds, num_particles, max_iter, path)
 
         best_position, best_value = pso.get_best_position()

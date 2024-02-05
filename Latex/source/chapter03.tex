@@ -6,12 +6,12 @@
 The proposed method aims to provide a framework for optimizing various process variables of a manufacturing system in order to achieve a global optimum. These process variables are numerical values that describe the behavior and attributes of a system during the execution of a manufacturing process. One example of a process variable and a manufacturing system, is the combined angular travel of all joints of an industrial robot that is traversing a defined toolpath.
 The goal of this method is to effectively utilize the redundant \acrshort{DoF}s of a system, as mentioned in Chapter \ref{OBJECTIVE}, to optimize the process variables that are important to the user. This method is suitable for robotic milling operations, robotic \acrshort{WAAM} processes, and other systems that have redundant \acrshort{DoF}s. Implementing this method can improve the overall performance and efficiency, ultimately leading to increased productivity.
 
-The method is divided into two parts. Firstly, for a specific toolpath with user-defined boundary conditions (constraints for the redundant \acrshort{DoF}), a set of selected process variables are evaluated. 
+The method is divided into two parts. Firstly, for a specific toolpath with user-defined boundary conditions (constraints for the redundant \acrshort{DoF}), a set of selected process variables are analyzed. 
 The user has the option to assign a relative importance to the process variables and thus specifying a personal priority rating. Based on the numerical values of the process variables and their relative importance, it can be determined how optimal the set boundary conditions are.
 
 Secondly, the optimization of these boundary conditions is carried out. In this step, the aim is to find the most optimal setting for the redundant \acrshort{DoF}s in order to optimize the selected process variables. In other words, the aim is to maximize a score describing the process. This goal can be, for example, the reduction of acceleration peaks in the robot's joints as well as minimizing direction changes of the driving motors.
 
-This method is transferable to any manufacturing system that is used to perform a task with more \acrshort{DoF}s than required by the toolpath. In robotic cells specifically, this form of redundancy can be in form of rotary-til tables, linear-axes or simply traversing a 5-axis toolpath with a 6-axis industrial robot. 
+This method is transferable to any manufacturing system that is used to perform a task with more \acrshort{DoF}s than required by the toolpath. In robotic cells specifically, this form of redundancy can be in form of rotary-tilt tables, linear-axes or simply traversing a 5-axis toolpath with a 6-axis industrial robot. 
 
 
 
@@ -58,6 +58,7 @@ The first group of process variables covers the position, velocity, acceleration
 
 \begin{table}[H]
 	\centering
+	\caption{Process variables and their numerical form}
 	\begin{tabular}{||l|r||}
 		\hline
 		Process variables & Numerical form\\
@@ -97,7 +98,7 @@ The first group of process variables covers the position, velocity, acceleration
 	\end{tabular}
 	
 	
-	\caption{Process variables and their numerical form}
+	
 	\label{procesparameters}
 \end{table}
 
@@ -105,7 +106,7 @@ The first group of process variables covers the position, velocity, acceleration
 One of the primary variables in a robotic manufacturing system is the joint positions. This process variable is recorded as a one-dimensional array comprising the rotational position or extension values of each rotary or linear joint at each time step. This data serves as the foundation for calculating subsequent variables like velocity, acceleration, and jerk. Analyzing these variables is crucial to ensure that the joints are not excessively strained during the manufacturing process, thus prolonging their service life as much as possible. To extend the lifespan of an industrial robot, it is essential to take into account the load on individual joints.
 
 \subsubsection*{Direction Changes and Total Travel}
-An important factor in assessing joint load is the number of direction changes that occur during operation. High-frequency rotational changes can lead to degradation and reduced precision in manufacturing processes. This process variables, referred to as the number of direction changes, is a scalar value that can be derived from the angular position of each joint. By analyzing the joint position data further, the total travel of a joint can be determined by integrating the joint velocity over time. Furthermore, it can be important to analyze if velocity changes consistently occur at the same position, leading to wear on the same tooth flank. This can cause significant localized wear and shorten the lifespan of the joints. Programs or toolpaths that require less overall joint travel are generally preferred. By minimizing the number of direction changes and optimizing joint travel in regards to acceleration and jerk, stress and wear on the robot joints can be reduced, ultimately extending the overall lifespan of the system.
+An important factor in assessing joint load is the number of direction changes that occur during operation. High-frequency rotational changes can lead to degradation and reduced precision in manufacturing processes. This process variables, referred to as the number of direction changes, is a scalar value that can be derived from the angular position of each joint. By analyzing the joint position data further, the total travel of a joint can be determined by integrating the joint velocity over time. Furthermore, it can be important to analyze if velocity changes consistently occur at the same position, leading to wear on the same tooth flank of the gears. This can cause significant localized wear and shorten the lifespan of the joints. Programs or toolpaths that require less overall joint travel are generally preferred. By minimizing the number of direction changes and optimizing joint travel in regards to acceleration and jerk, stress and wear on the robot joints can be reduced, ultimately extending the overall lifespan of the system.
 
 %\subsubsection*{TCP Position, Velocity and Acceleration}
 %By utilizing a forward kinematics approach or extracting it from the G-code directly, it is possible to attain the position (X-, Y-, Z-position) and orientation (rotation) of the \acrshort{TCP}. Furthermore, the acceleration and jerk of the \acrshort{TCP} can be calculated by deriving their respective values with respect to time. These derived variables, along with the joint positions, are stored in arrays that track the temporal changes in their values. These variables enable the determination of the number of deviations from the intended toolpath and the extent of deviation that can be expected in continuous path mode as explained in Chapter \ref{CPM}.
@@ -152,10 +153,11 @@ Figure \ref{ParamsFlow} illustrates the interconnections of the different variab
 In order to evaluate whether the boundary conditions for a toolpath are optimal or can be improved, it is necessary to have a score or rating value that considers the process variables and their importance. Assigning relative importance to different variables can involve subjective judgments, expert knowledge, and consideration of specific manufacturing constraints. For instance, in some cases, minimizing joint jerk may be the main objective, while in others, energy usage may be more important. To quantify the performance of a toolpath, the user can assign weights or importance factors to each variable based on their specific requirements. These weights reflect the relative significance of each variable in achieving the desired optimum. A weighted sum or scoring method can then be used to evaluate and compare the toolpath with varying constraints based on the aggregated scores of the individual process variables. %The sum of all defined importance values must add up to 1 so that the most optimal toolpath has the global score of 100.
 It's important to note that the subjective weighing of variables can vary between different manufacturing scenarios and requires continuous evaluation and adjustment based on changing priorities or goals.
 
-The score of a toolpath with its boundary conditions is calculated as shown in table \ref{weighting}. Each process variable is assigned a local rating ranging from 0 to 100, where 0 represents the least optimal and 100 represents the best-case solution. This local rating is multiplied by the corresponding importance factor, resulting in a local score. The local scores for all variables are then summed to obtain the overall global score for that specific boundary condition. It is crucial to ensure that the sum of all defined importance values equals 1, so that the toolpath with the most optimal boundary conditions yields a global score of 100.
+The score of a toolpath with its boundary conditions is calculated as shown in table \ref{weighting}. Each process variable is assigned a local rating ranging from 0 to 100, where 0 represents the least optimal and 100 represents the best-case solution. This local rating is multiplied by the corresponding importance factor, resulting in a local score. The local scores for all variables are then summed to obtain the overall global score for that specific boundary condition.\newpage It is crucial to ensure that the sum of all defined importance values equals 1, so that the toolpath with the most optimal boundary conditions yields a global score of 100.
 
 \begin{table}[H]
 	\centering
+	\caption{Calculation of a global score for a specific boundary condition}
 	\begin{tabular}{||l|r|r|r||}
 		Process variable & Local rating & Importance factor& Local score\\
 		\hline
@@ -174,7 +176,7 @@ The score of a toolpath with its boundary conditions is calculated as shown in t
 		\hline
 	\end{tabular}
 	
-	\caption{Calculation of a global score for a specific boundary condition}
+	
 	\label{weighting}
 \end{table}
 
@@ -191,7 +193,7 @@ Figure \ref{Localscore} shows how a local rating can be calculated by means of v
 \end{figure}
 
 It is important to note that increasing the number of variations performed before calculating the local score will enhance the accuracy of this approach. If only a few variations are executed, there is a possibility that only similar outcomes will be found, which significantly affects the result. Furthermore, the user needs to specify whether a high or low scalar value of a process variable is desired. The Min-Max scaler should return the local score accordingly. 
-
+\newpage
 Another factor that needs to be analyzed is whether the variations in the boundary conditions lead to process variable values that exceed a certain standard deviation. Figure~\ref{lowstd} illustrates how a local rating of 70 for the total energy consumption is calculated, despite the presence of very small absolute differences. In this case, the standard deviation is only 0.369.
 
 \begin{figure}[H]
@@ -200,7 +202,7 @@ Another factor that needs to be analyzed is whether the variations in the bounda
 	\label{lowstd}
 \end{figure}
 
- On the other hand, Figure~\ref{highstd} demonstrates how the same local rating of 66 is calculated, even though the absolute differences are significantly higher. Here, the standard deviation is 22.3636.99. The local rating should only be used as input for the local score if the standard deviation exceeds a predetermined threshold. If the standard deviation criteria are not met, the corresponding process variables and its local score should be excluded from the calculation of the global score. In the following chapters, each process variable and its conversion into a single scalar value is discussed in more detail. 
+ On the other hand, Figure~\ref{highstd} demonstrates how the same local rating of 66 is calculated, even though the absolute differences are significantly higher. Here, the standard deviation is 36.996. The local rating should only be used as input for the local score if the standard deviation exceeds a predetermined threshold. If the standard deviation criteria are not met, the corresponding process variables and its local score should be excluded from the calculation of the global score. In the following chapters, each process variable and its conversion into a single scalar value is discussed in more detail. 
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=0.85\textwidth]{figures/highstd.png}}
@@ -210,7 +212,7 @@ Another factor that needs to be analyzed is whether the variations in the bounda
 
  
 \subsection{Information Extraction form Time-Series Data}\label{extraction}
-It is important to note that, as discussed in Chapter \ref{LRC}, the computation of a local score requires transforming a time-series into a single scalar value. This transformation can be accomplished by directly manipulating the time-series data, such as summing up all values, or by conducting subsequent analyses. Since each time-series captures distinct physical phenomena, each one necessitates a unique process for converting it into a scalar value.
+It is important to note that, as discussed in Chapter \ref{LRC}, the computation of a local score requires transforming time-series data into a single scalar value. This transformation can be accomplished by directly manipulating the time-series data, such as summing up all values, or by conducting subsequent analyses. Since each time-series captures distinct physical phenomena, each one necessitates a unique process for converting it into a scalar value.
 
 
 
@@ -270,6 +272,7 @@ Table \ref{exampleDirTravel} provides an example of how a global score can be ca
 
 \begin{table}[H]
 	\centering
+	\caption{Calculation of a score regarding only direction changes and total travel}
 	\begin{tabular}{||l|r|r|r||}
 		Process variables & Local rating & Importance & Local score\\
 		\hline
@@ -288,7 +291,7 @@ Table \ref{exampleDirTravel} provides an example of how a global score can be ca
 		\hline
 	\end{tabular}
 	
-	\caption{Calculation of a score regarding only direction changes and total travel}
+	
 	\label{exampleDirTravel}
 \end{table}
 
@@ -303,8 +306,6 @@ In certain cases, adjusting the boundary conditions may not be sufficient to red
 
 To distinguish between these cases in the local rating, the standard deviation can be utilized. By incorporating the standard deviation, toolpaths that result in frequent and closely spaced direction changes can be identified and are generally considered less desirable. By combining the standard deviation of the timely occurrence with the number of direction changes, they can be integrated into a single variable. This can be achieved by dividing the number of direction changes by the standard deviation. %By incorporating this calculation and the variation-approach, a local score can be determined.
 This approach provides an evaluation method that takes into account both the quantity of direction changes and the variability within the time-series data. When there are only a few direction changes but with a high variance, the resulting variable value will be very low. Conversely, when there are numerous direction changes but with a low variance, the variable value will be high.
-
-
 
 
 \subsection{Rotation Limits}\label{RotLim}
@@ -346,18 +347,19 @@ In the former case, where peaks are more desirable, it is sufficient to sum up t
 
 The simplest approach, however, is to square all values and take the sum. This method eliminates the need to define multiple threshold boundaries. Additionally, high peaks will have a greater impact on the resulting value compared to small, constant values, without overshadowing the final result. If the velocity exceeds the maximum velocity, a "No-Go" exception must be triggered, indicating that the movement is not possible. The same rating principle can be applied to acceleration and jerk. Acceleration is obtained by taking the derivative of velocity, while jerk is obtained by taking the second derivative. Individual limits and thresholds can be set to determine the optimality of the robot's movement. If the maximum acceleration or jerk is exceeded, a "No-Go" error is also triggered.
 
-Table \ref{VAJ} presents the calculation of a global score, which incorporates a weighting that prioritizes low acceleration in joint 2 and allows for high velocity in all joints. The acceleration in joint 1 and joints 3 to 6 are considered to be of lesser significance. The jerk is completely omitted from the rating in this example. Due to the close-to-optimal acceleration in joint 2 and its high importance value, the overall score of the toolpath with the defined boundary condition is also very good.
+Table \ref{VAJ} presents the calculation of a global score, which incorporates a weighting that prioritizes low acceleration in joint 2 and allows for high velocity in all joints. The acceleration in joint 1 and joints 3 to 6 are considered to be of lesser significance. The jerk is completely omitted from the rating in this example. Due to the close-to-optimal acceleration in joint 2 and its high importance value, the overall score of the toolpath with the defined boundary condition is also very high.
 
 \begin{table}[H]
 	\centering
+	\caption{Calculation of a score regarding only velocity, acceleration and jerk}
 	\begin{tabular}{||l|r|r|r||}
 		Process variables & Local rating & Importance factors & Local score\\
 		\hline
 		\hline
 		\hline
-		Velocity in Joints 1-6& 45& 0.1&4.5\\
-		Accelerations in Joint 2& 90 & 0.8 & 72\\
-		Accelerations in Joint 1 and 3-6 & 15& 0.1&1.5\\
+		Velocity in joints 1-6& 45& 0.1&4.5\\
+		Accelerations in joint 2& 90 & 0.8 & 72\\
+		Accelerations in joint 1 and 3-6 & 15& 0.1&1.5\\
 		Jerk in joints 1-6& 4& 0&0\\
 		
 		\hline
@@ -368,7 +370,7 @@ Table \ref{VAJ} presents the calculation of a global score, which incorporates a
 		\hline
 	\end{tabular}
 	
-	\caption{Calculation of a score regarding only velocity, acceleration and jerk}
+	
 	\label{VAJ}
 \end{table}
 
@@ -428,10 +430,7 @@ To determine the energy consumed by each joint, the time-series data of joint ve
 	\label{scalers}
 \end{table}
 \end{comment}
-This approach offers a notable advantage in its simplicity. Nevertheless, its primary limitation stems from the potential inaccuracies that may arise when working with an average scaling value. If this value is derived by averaging all possible positions, but only a limited number of positions are actually traversed by the robot, significant discrepancies can occur.
-
-
-To address these limitations, more advanced approaches are necessary. For instance, the utilization of multi-body simulations (\acrshort{MBS}) in \acrshort{CAM} software enables a direct analysis of the exact energy requirements for a robot to move between different poses. This method requires precise modeling of weight distribution to achieve accurate outcomes. However, it is important to consider that implementing this approach may require substantial computation and development time.
+This approach offers a notable advantage in its simplicity. Nevertheless, its primary limitation stems from the potential inaccuracies that may arise when working with an average scaling value. If this value is derived by averaging all possible positions, but only a limited number of positions are actually traversed by the robot, significant discrepancies can occur. To address these limitations, more advanced approaches are necessary. For instance, the utilization of multi-body simulations (\acrshort{MBS}) in \acrshort{CAM} software enables a direct analysis of the exact energy requirements for a robot to move between different poses. This method requires precise modeling of weight distribution to achieve accurate outcomes. However, it is important to consider that implementing this approach may require substantial computation and development time.
 
 
 Another viable option to consider, is the utilization of a \acrshort{ML} approach for estimating energy consumption during transitions between discrete poses. By employing a supervised learning technique, where the input data includes the current joint positions and velocities as well as the target pose, an \acrshort{ML} model can be trained to predict the energy required for each transition. This approach offers the advantage of leveraging \acrshort{ML} algorithms to provide accurate energy consumption estimates in a more efficient manner. However, it is important to note that generating high-quality training data and training the \acrshort{ML} model can be a time-intensive processes.
@@ -446,7 +445,7 @@ Figure \ref{ENERGYOPTIONS} illustrates the three aforementioned options along wi
 
 Once the time-series data for energy consumption is obtained, it becomes possible to identify peaks and associate them with specific movements. In line with the optimization objective, it is also feasible to establish threshold values, as discussed in Chapter \ref{VAJJ}, to optimize for a constant energy consumption.
 
-\newpage
+
 \subsection{Total Energy Usage}
 When the aim is to obtain a single scalar value for the total energy consumption, the same procedures outlined in the preceding chapter can be applied, and the values from the time-series can be aggregated through summation.
 
@@ -464,7 +463,7 @@ By considering these factors, it is possible to accurately assess the energy usa
 
 \newpage
 \section{Reach, Singularities and Torch Orientation}
-The following discusses the robot poses with respect to reach and alignment, singularity avoidance, and torch orientation. These factors are essential in ensuring successful and efficient robotic operations.
+The following discusses the robot poses with respect to reach and alignment, singularity avoidance, and torch orientation. These factors are essential in ensuring successful and efficient robotic operations, especially in \acrshort{WAAM}.
 
 \subsection{Reach and Alignment}\label{RO}
 
@@ -497,11 +496,12 @@ In other scenarios, it is more optimal to route the cables towards a specific po
 
 
 
-To minimize the deviation from the optimal vector or vanishing point, the redundant \acrshort{DoF}s can be utilized. One approach is to analyze the deviation and track it over time, creating a time-series. Each element in this time-series can be squared or cubed, depending on the weight assigned to small and constant deviations versus large but short offsets. The time-series is then summed up to form a scalar value, which can be used to calculate the local score through the variation method. Table \ref{deviation} illustrates an example of how the scalar value is calculated. It is evident that when cubing the time-series, more importance is placed on the larger deviations rather than small deviations.
+To minimize the deviation from the optimal vector or vanishing point, the redundant \acrshort{DoF}s can be utilized. One approach is to analyze the deviation and track it over time, creating a time-series. Each element in this time-series can be squared or cubed, depending on the weight assigned to small and constant deviations versus large but short offsets. The time-series is then summed up to form a scalar value, which can be used to calculate the local score through the variation method. Table \ref{deviation} illustrates an example of how the scalar value is calculated. It is evident that when cubing the time-series, more importance is placed on the larger deviations rather than small deviations. The deviation in time-step 6 is making up approximately 80\% of the summed value when squared and 94\% when cubed. 
 
 
 \begin{table}[H]
 	\centering
+	\caption{From time-series of the deviation vector to scalar value}
 	\begin{tabular}{||l|c|c|c|c|c|c|c|c|l||}
 		\hline
 		Time-step:  & 1 & 2& 3& 4& 5& 6& 7& 8&  \\
@@ -516,7 +516,7 @@ To minimize the deviation from the optimal vector or vanishing point, the redund
 		
 	\end{tabular}
 	
-	\caption{From time-series of the deviation vector to scalar value}
+	
 	\label{deviation}
 \end{table}
 
@@ -558,7 +558,7 @@ Figure \ref{allflow} gives a summary and visual representation, in form of a flo
 
 It is important to note that for a local score calculation the user defined importance values need to be multiplied with the local rating that results form the numerical values of the process variables. The local scores are then summed up to create the global score.
 
-Figure \ref{grob} illustrates how a boundary condition for a toolpath can be evaluated with the mentioned variation method (see Chapter \ref{LRC}). In this case, the toolpath is defined using only 5 \acrshort{DoF}s, including X-, Y- and Z-coordinates as wll as the rotation around the X- and Y-Axis. However, the C-axis (rotation around the Z-Axis), which is the axis of symmetry for the tool, is not defined and must be specified manually. Once this boundary condition is established, the joint positions are analyzed and individual variables, such as direction changes, can be extracted. In this example, the objective is to assess the optimality of a rotation angle of zero degrees of the C-axis. To calculate a local score, additional variations of the rotation around the C-Axis are analyzed. With the help of user-defined weights, the local ratings are weighted and summed up to form the global score for the boundary condition (see Chapter \ref{weights}).\newline
+Figure \ref{grob} illustrates how a boundary condition for a toolpath can be evaluated with the mentioned variation method (see Chapter \ref{LRC}). In this case, the toolpath is defined using only 5 \acrshort{DoF}s, including X-, Y- and Z-coordinates as well as the rotation around the X- and Y-Axis. However, the C-axis (rotation around the Z-Axis), which is the axis of symmetry for the tool, is not defined and must be specified manually. Once this boundary condition is established, the joint positions are analyzed and individual variables, such as direction changes, can be extracted. In this example, the objective is to assess the optimality of a rotation angle of zero degrees of the C-axis. To calculate a local score, additional variations of the rotation around the C-Axis are analyzed. With the help of user-defined weights, the local ratings are weighted and summed up to form the global score for the boundary condition (see Chapter \ref{weights}).\newline
 
 
 \begin{figure}[H]
@@ -598,7 +598,7 @@ However, it is important to note that one drawback of this approach is that the 
 
 Depending on the chosen optimization algorithm, it may be necessary to calculate multiple scores for multiple boundary conditions before generating a new suggestion. In this scenario, the variations in the redundant \acrshort{DoF}s can be utilized to calculate multiple scores relative to each other. These scores can then be used as input for the optimization algorithm, allowing for a more comprehensive evaluation and selection of the most optimal boundary condition. By considering multiple scores, the algorithm can effectively explore different possibilities and make informed suggestions for improving the boundary conditions.
 
-Another drawback of this approach, is that for the variation of the redundant \acrshort{DoF}s the G-Code file is utilized. for that a dedicated software-program is necessary that can read the G-Code and adapt the individual coordinates accordingly. Another level of complexity can occur, if the G-Code is utilizing non-standard or user-defined commands. Many edge cases need to be considered before such a program is deemed save for production.       
+Another drawback of this approach, is that for the variation of the redundant \acrshort{DoF}s the G-Code file is utilized. For that a dedicated software-program is necessary that can read the G-Code and adapt the individual coordinates accordingly. Another level of complexity can occur, if the G-Code is utilizing non-standard or user-defined commands. Many edge cases need to be considered before such a program is deemed save for production.       
 
 Figure \ref{variation} illustrates the process of varying a simple toolpath. In this specific example, the toolpath is defined in six \acrshort{DoF}s, with the redundant \acrshort{DoF} being the rotation around the Z-axis. Initially, the toolpath is set at its original configuration with C = 0.0°. To explore different possibilities, three variations of the toolpath are created by incrementing the rotation by five degrees for each variation. These variations allow for an examination of the impact of different orientations on the overall process. By systematically adjusting the rotation, the algorithm can evaluate the performance of each variation and suggest even better values.
 
