@@ -417,9 +417,33 @@ The same analysis is performed with toolpath 1 and toolpath 2. The resulting mat
 \end{figure}
 
 
-
+\newpage
 \subsection{Boundary Condition Optimization }
-So far, only the analysis of different boundary conditions has been performed by exploring the entire range of possible settings for the redundant \acrshort{DoF}s. However, this approach is very time-consuming and becomes exponentially more complex with additional redundant \acrshort{DoF} and a finer step size. To address this issue and efficiently search the extensive solution space for optimal values of the redundant \acrshort{DoF}, a \acrshort{PSO} algorithm is proposed. In this algorithm, individual particles navigate the search space by adjusting their positions based on their own best position and the best position found by the entire swarm. This cooperative behavior enables the particles to explore the search space more effectively and converge towards the best solution (see Chapter \ref{OA}).
+So far, only the analysis of different boundary conditions has been performed by exploring the entire range of possible settings for the redundant \acrshort{DoF}s. However, this approach is very time-consuming and becomes exponentially more complex with additional redundant \acrshort{DoF} and a finer step size. To address this issue and efficiently search the extensive solution space for optimal values of the redundant \acrshort{DoF}, a \acrshort{PSO} algorithm is proposed. In this algorithm, individual particles navigate the search space by adjusting their positions based on their own best position and the best position found by the entire swarm. 
+
+In more detail, each particle in a swarm optimization algorithm has an initial velocity, which represents its momentum or tendency to continue moving in the same direction. This velocity is adjusted based on several factors, including its current velocity, its own historical best position, and the best-known position of the entire swarm.
+
+The mathematical procedure for adjusting the velocity of a particle is represented by the equation \ref{equation}.
+In this equation, $velocity_{current}$(t+1) is the updated velocity of the particle at time t+1. $velocity_{current}$(t) is the current velocity of the particle at time t. c1 and c2 are cognitive and social constants, respectively, which are both typically set to 1. r1 and r2 are random values in the range (0,1). $position_{inividual best}$ represents the particle's own historical best position, and $position_{global best}$ represents the best-known position of the entire swarm.
+
+Additionally, the equation includes an inertia weight, denoted as w. This weight is used to balance the exploration and exploitation capabilities of the algorithm. A higher inertia weight allows for more exploration, while a lower inertia weight promotes exploitation. In most cases, the inertia weight is set to a value of 0.4.
+
+
+\begin{equation}
+	\begin{array}{l} 
+	velocity_{cognitive}(t) = c1 * r1 * (position_{inividual best} - position_{current}(t))\\
+
+	velocity_{social}(t) = c2 * r2 * (position_{global best} - position_{current}(t))\\
+
+	velocity_{current}(t+1) = w * velocity_{current}(t) + velocity_{cognitive}(t) + velocity_{social}(t)\\
+	
+	position_{current}(t+1) = position_{current}(t) + velocity_{current}(t+1)
+	\end{array}
+	\label{equation}
+\end{equation}  
+
+
+This procedure is iteratively applied to each particle in the swarm. This cooperative behavior enables the particles to explore the search space more effectively and converge towards the best solution (see Chapter \ref{OA}).
 
 The first test is conducted using the global score matrix of toolpath 3. Initially, 20 particles are randomly placed on the plane. Each particle's score is determined by the corresponding global score at its position. By increasing the number of particles and iterations, the search space can be analyzed more comprehensively. Figure \ref{PSO_1} illustrates the randomly placed particles on the pre-calculated global score matrix of toolpath 3, considering the previously selected importance factors (see table \ref{PP_2}).
 
@@ -557,15 +581,15 @@ The same optimization process can be applied to toolpath 1 and toolpath 2. The s
 \section{Analysis and Discussion of the Results}%
 In the following, the results of the performed validation are analyzed in detail and critically discussed.
 
-\subsection{Summary and Analysis of the Results}
-When analyzing only one redundant \acrshort{DoF}, specifically the rotation around the Z-axis (see Figure \ref{GS1}, Figure \ref{TP2_combi}, and Figure \ref{TP3_combi}), it becomes evident that there is significant potential for improvement in the robots movement. In this initial test, the process variables: direction changes in all joints, total travel in all joints, and acceleration in joint 1 are analyzed. The local score for total travel in all joints and acceleration in joint 1 both exhibit a very continuous change ans almost symmetrical behavior over the entire analyzed range. This characteristic is a clear indication that optimization algorithms are a reasonable choice for finding the optimal boundary condition.
+\subsection{Analysis of the Results}
+When analyzing only one redundant \acrshort{DoF}, specifically the rotation around the Z-axis (see Figure \ref{GS1}, Figure \ref{TP2_combi}, and Figure \ref{TP3_combi}), it becomes evident that there is significant potential for improvement in the robots movement. In this initial test multiple process variables are analyzed. The local score for total travel in all joints and acceleration in joint 1 both exhibit a very continuous change and almost symmetrical behavior over the entire analyzed range. This characteristic is a clear indication that optimization algorithms are a reasonable choice for finding the optimal boundary condition.
 
-To further validate the proposed method for analyzing process variables, a production-grade G-Code is examined (see Figure \ref{LS4}). This G-Code consists of 28,000 coordinates and takes significantly longer to analyze. The resulting comparison of all possible values for the redundant \acrshort{DoF} shows a fairly smooth curve of the global score. It is important to note that the local score for the direction changes in joint 1 is omitted due to a comparatively small standard deviation.  In all other analyzed toolpaths the local score for the direction changes are the least smooth compared other analyzed variables.
+To further validate the proposed method for analyzing process variables, a production-grade G-Code is examined (see Figure \ref{LS4}). This G-Code consists of 28,000 coordinates and takes significantly longer to analyze. The resulting comparison of all possible values for the redundant \acrshort{DoF} shows a fairly smooth curve of the global score. It is important to note that the local score for the direction changes in joint 1 is omitted due to a comparatively small standard deviation.  In all other analyzed toolpaths the local score for the direction changes are the least smooth compared to the other analyzed variables.
 
 
-When considering the scenario where two \acrshort{DoF} can be set, it is observed that toolpath 1 and toolpath 2 have a very similar global score matrix (see Figure \ref{best_2D_1} and Figure \ref{best_2D_2}). This suggests that these two toolpaths do not differ significantly from each other when considering the process variables alone. A distinct streak is visible in both matrices can be observed.
+When considering the scenario where two \acrshort{DoF} can be set, it is observed that toolpath 1 and toolpath 2 have a very similar global score matrix (see Figure \ref{best_2D_1} and Figure \ref{best_2D_2}). This suggests that these two toolpaths do not differ significantly from each other when considering the process variables alone. A distinct streak is visible in both matrices.
 
-Analyzing the hyperplane of toolpath 3 (Figure \ref{best_2D}), it is clearly visible that most of the possible combinations result in a global score in the range from 50 to 70. The combinations that lead to a low local score form a single area that is clearly visible in the lower part in the center.  Toolpath 3 (Figure \ref{best_2D}) exhibits an almost symmetrical hyperplane. Two local optima are visible on the left and right sides. It is worth noting that the calculation of each individual global score matrix takes approximately 1 hour.
+Analyzing the hyperplane of toolpath 3 (Figure \ref{best_2D}), it is clearly visible that most of the possible combinations result in a global score in the range from 50 to 70. The combinations that lead to a low local score form a single area that is clearly visible in the lower part in the center.  Toolpath 3 (Figure \ref{best_2D}) exhibits an almost symmetrical hyperplane. Two local optima are visible on the left and right sides.
 
 
 Based on the results obtained from the \acrshort{PSO} algorithm (see Figure \ref{5_true}), it can be concluded that achieving a close-to-optimal result is feasible when the global score matrix yields smooth surfaces. By implementing this approach, a significant reduction in computation time is possible. Instead of calculating the entire matrix, only 100 toolpaths need to be computed using the inverse kinematics algorithm, resulting in a computation time of just 15 minutes.
@@ -573,13 +597,15 @@ Based on the results obtained from the \acrshort{PSO} algorithm (see Figure \ref
 The number of particles is selected to be as high as possible while also considering the computational costs. Rather than increasing the number of particles, the number of iterations is set to 5 in order to facilitate convergence towards the global optima. The results clearly show that such a convergence is possible.
 
 
-%NO \acrshort{CAM} EXPLAIN
 
 
 
 
 
-
+In conclusion, the analysis of a single redundant degree of freedom (DoF) revealed significant potential for improvement in the robot's movement. The smooth and symmetrical behavior of process variables suggests that optimization algorithms are suitable for finding the optimal boundary condition. The validation of the proposed method using a production-grade G-Code further supported the effectiveness of analyzing process variables.
+When considering the scenario with two DoFs, toolpath 1 and toolpath 2 showed similar global score matrices, indicating minimal differences in process variables alone. On the other hand, toolpath 3 exhibited an almost symmetrical hyperplane with visible local optima on both sides.
+The results obtained from the PSO algorithm demonstrated that achieving close-to-optimal results is feasible when the global score matrix exhibits smooth surfaces. By implementing this approach, a significant reduction in computation time can be achieved.
+In conclusion, the analysis highlights the potential for improving the robot's movement through optimization algorithms and validates the effectiveness of analyzing process variables. The findings provide valuable insights for optimizing toolpaths and reducing computation time.
 
 
 \subsection{Discussion of the Results}%
@@ -593,4 +619,4 @@ When analyzing multiple process variables, it is not guaranteed that the resulti
 
 %This suggests that there could be an optimal robot configuration that is applicable to any toolpath.
 
-In general, the presented validation does provide a solid basis as a proof of concept for the proposed method. However, additional implementations and test are necessary for it to be feasible in an industrial environment.
+In general, the presented validation does provide a solid basis as a proof of concept for the proposed method. However, additional implementations and tests are necessary for it to be feasible in an industrial environment.

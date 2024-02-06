@@ -343,7 +343,7 @@ if __name__ == "__main__":
     num_particles = 20
     max_iter = 5
 
-    for path in [1,2,3]:
+    for path in [2]:
 
         Position_list = []
         File_list = []
