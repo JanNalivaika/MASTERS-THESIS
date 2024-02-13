@@ -92,7 +92,7 @@ for selection in [1,2,3]:
                     sol = robot.axis_values
                     pos.append(sol)
 
-                # np.save(f"Joint_angles_lowres_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
+                #np.save(f"Joint_angles_lowres_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
                 #np.save(f"Joint_angles_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
-                np.save(f"Joint_angles_lowres_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
+                #np.save(f"Joint_angles_lowres_flange/path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy", pos)
                 print(f"path_{selection}_rot_0_tilt_{kipp_winkel}_C_{c_axis}.npy")

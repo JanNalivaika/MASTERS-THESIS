@@ -70,10 +70,10 @@ angel_before = 0
 col = []
 fig = plt.figure(figsize=(8, 8), dpi=100)
 xyz = np.load(f"RealG.npy")
-path = 3
-tilt = 45
+path = 1
+tilt = -45
 C_ax = 0
-pos = np.load(f"Joint_angles_flange/path_{path}_rot_0_tilt_{tilt}_C_{C_ax}.npy")
+pos = np.load(f"Joint_angles_lowres_flange/path_{path}_rot_0_tilt_{tilt}_C_{C_ax}.npy")
 
 for iter in range(0, len(pos), 1):
     plt.clf()
@@ -239,7 +239,7 @@ for iter in range(0, len(pos), 1):
     ax.legend(loc='upper right',  bbox_to_anchor=(1, 0.9), fontsize=10, ncol=2) #bbox_to_anchor=(0, 0.08),
 
     #plt.show()
-    plt.pause(0.01)
+    #plt.pause(0.01)
     if iter % 100 == 0: print(iter)
     #print(np.linalg.det(rotM))
 
@@ -247,5 +247,5 @@ for iter in range(0, len(pos), 1):
 #plt.savefig(f'../Latex/figures/robotprog.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
 #plt.savefig(f'../Latex/figures/robotANDpath1.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
 #plt.savefig(f'../Latex/figures/robotANDpath1_45.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
-plt.savefig(f'../Latex/figures/robotANDpath3_45.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
+#plt.savefig(f'../Latex/figures/robotANDpath3_45.png', dpi=1200, bbox_inches="tight", pad_inches=0.3)
 plt.show()
