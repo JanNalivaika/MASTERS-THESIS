@@ -11,59 +11,39 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Conference Paper Title*\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
-\thanks{Identify applicable funding agency here. If none, delete this.}
+\title{Methodical Approach for Analyzing Process
+	Variables and Optimizing Boundary Conditions in Multi-Axis Robot Programs
 }
 
-\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Marius Breuer}
+\IEEEauthorblockA{\textit{Siemens} \\
+\textit{T AMC FMP-DE}\\
+Munich, Germany \\
+marius.breuer@siemens.com}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\IEEEauthorblockN{2\textsuperscript{nd} Jan Nalivaika}
+\IEEEauthorblockA{\textit{Technical University of Munich} \\
+%\textit{Institute for Machine Tools}\\
+%\textit{and Industrial Management}\\
+Munich, Germany \\
+nalivaika@outlook.de}
 \and
-\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\IEEEauthorblockN{3\textsuperscript{rd}  Ludwig Siebert}
+\IEEEauthorblockA{\textit{Technical University of Munich} \\
+\textit{Institute for Machine Tools}\\
+\textit{and Industrial Management}\\
+Munich, Germany \\
+ludwig.siebert@iwb.tum.de}
 }
 
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+This thesis discusses a methodology for analyzing and optimizing process variables in manufacturing systems with redundant DoFs. The main focus lies on a 6-DoF industrial robot that traverses a toolpath defined in 5-DoFs (X,Y,Z,A,B). This means that the rotation C, which represents the rotation around the tool symmetry axis, is a redundant DoF and can be chosen freely. The first part of the methodology covers the analysis of process variables, such as direction changes in the joints or the total travel of the joints. The goal is to understand how the redundant DoFs affect the robot's behavior and how they can be used to optimize user-selected process variables. The second part of the methodology proposes a procedure to optimize the user-selected process variables by properly constraining the redundant DoF. After modeling the robot in Python, validation is performed on multiple toolpaths. The results show that the redundant DoFs can significantly affect the process variables. By implementing a PSO algorithm, it is possible to find the ideal setting for the redundant DoFs, thus maximizing the process quality with respect to the process variables. 
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+Industrial Robot, Redundant DoF, Milling, WAAM, Optimization
 \end{IEEEkeywords}
 
 \section{Introduction}

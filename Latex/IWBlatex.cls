@@ -5312,6 +5312,7 @@
 	\thispagestyle{empty}%
 	\vspace*{0cm}%HERE WAS 2
 	\section*{\color{TUMBlack}Abstract}\IWBlangForceEnglish{#1}%
+	%changed to 0.25 from 0.5
 	\vspace*{0.5cm}%
 	\section*{\color{TUMBlack}Zusammenfassung}\IWBlangForceGerman{#2}%
 	\vfill%

@@ -56,7 +56,8 @@ class Particle:
 
     def update_position(self, bounds):
         for i in range(0, num_dimensions):
-            self.position_i[i] = self.position_i[i] + self.velocity_i[i]
+            print("REMOVE 0.1")
+            self.position_i[i] = self.position_i[i] + self.velocity_i[i]*0.1
 
             # adjust maximum position if necessary
             if self.position_i[i] > bounds[i][1]:
@@ -137,7 +138,7 @@ class PSO:
 
             plt.legend(by_label.values(), by_label.keys(), bbox_to_anchor=(1, 1.2), shadow=False, ncol=1)
             #plt.show()
-            plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+            #plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
             plt.close()
             plt.close()
 
@@ -146,17 +147,21 @@ class PSO:
         while i < max_iter:
             ax.cla()
             # evaluate fitness of each particle
-            for j in range(0, num_particles):
-                self.swarm[j].evaluate(path)
+            print("remove if")
+            if i%10==0:
+                for j in range(0, num_particles):
+                    self.swarm[j].evaluate(path)
 
-                # determine if current particle is the best (globally)
-                if self.swarm[j].err_i < err_best_g:
-                    pos_best_g = list(self.swarm[j].position_i)
-                    err_best_g = float(self.swarm[j].err_i)
+                    # determine if current particle is the best (globally)
+                    if self.swarm[j].err_i < err_best_g:
+                        pos_best_g = list(self.swarm[j].position_i)
+                        err_best_g = float(self.swarm[j].err_i)
 
                     # update the velocity and position of each particle
             for j in range(0, num_particles):
-                self.swarm[j].update_velocity(pos_best_g)
+                print("remove if")
+                if i % 10 == 0:
+                    self.swarm[j].update_velocity(pos_best_g)
                 self.swarm[j].update_position(bounds)
 
                 # plot particles
@@ -208,7 +213,8 @@ class PSO:
 
             #plt.legend(by_label.values(), by_label.keys(),loc='upper center', bbox_to_anchor=(0.1, -0.1),
             #           fancybox=True, shadow=False, ncol=1)
-            plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+            #plt.savefig(f"../Latex/figures/swarm/{path}_{i}.png", bbox_inches='tight', dpi=1000)
+            plt.savefig(f"../Latex/figures/GIF/{path}_{i}.png", bbox_inches='tight', dpi=250)
             #print(i, path)
             #plt.pause(0.8)
         plt.close()
@@ -218,9 +224,9 @@ if __name__ == "__main__":
 
     bounds = [(0, 45), (0, 54)]  # input bounds
     num_particles = 20
-    max_iter = 5
+    max_iter = 50
 
-    for path in [0]:
+    for path in [1]:
         pso = PSO(bounds, num_particles, max_iter, path)
 
         best_position, best_value = pso.get_best_position()
