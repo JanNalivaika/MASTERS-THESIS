@@ -1,0 +1,18 @@
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Process variables and their numerical form}}{44}{table.caption.27}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Calculation of a global score for a specific boundary condition}}{48}{table.caption.29}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Calculation of a score regarding only direction changes and total travel}}{53}{table.caption.37}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Calculation of a score regarding only velocity, acceleration and jerk}}{56}{table.caption.42}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces From time-series of the deviation vector to scalar value}}{61}{table.caption.47}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces DH-parameters for the modeled robot}}{72}{table.caption.54}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Selected process variables and their importance factors}}{77}{table.caption.64}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Selected process variables and their importance factors for the organic toolpath}}{81}{table.caption.71}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Selected process variables and their importance factors for 2 redundant DoF}}{83}{table.caption.75}%
+\addvspace {10\p@ }
+\contentsfinish 

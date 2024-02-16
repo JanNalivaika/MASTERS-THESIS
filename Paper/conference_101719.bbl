@@ -1,0 +1,1927 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Singh.2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=fcdac3d1c0370d50d9ade1c68adf53e7}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Maulshree},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a2654bd8a8aa9268e7a21e308e0d1b4}{%
+           family={Fuenmayor},
+           familyi={F\bibinitperiod},
+           given={Evert},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3b9cd2f3f78a736c40b558124e087a7f}{%
+           family={Hinchy},
+           familyi={H\bibinitperiod},
+           given={Eoin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d32e628881ed4370c656517178858e6a}{%
+           family={Qiao},
+           familyi={Q\bibinitperiod},
+           given={Yuansong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4406e8ec11aada3ea6ae39cb12fc3df8}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Niall},
+           giveni={N\bibinitperiod}}}%
+        {{hash=489135b3b667ea33671a7d61fd19dbd1}{%
+           family={Devine},
+           familyi={D\bibinitperiod},
+           given={Declan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e6e640470d00814fb7185a77e4c3a1b}
+      \strng{fullhash}{4e88214af3ad8296ecc986b9a7083d81}
+      \strng{bibnamehash}{1e6e640470d00814fb7185a77e4c3a1b}
+      \strng{authorbibnamehash}{1e6e640470d00814fb7185a77e4c3a1b}
+      \strng{authornamehash}{1e6e640470d00814fb7185a77e4c3a1b}
+      \strng{authorfullhash}{4e88214af3ad8296ecc986b9a7083d81}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Digital Twin (DT) refers to the virtual copy or model of any physical entity (physical twin) both of which are interconnected via exchange of data in real time. Conceptually, a DT mimics the state of its physical twin in real time and vice versa. Application of DT includes real-time monitoring, designing/planning, optimization, maintenance, remote access, etc. Its implementation is expected to grow exponentially in the coming decades. The advent of Industry 4.0 has brought complex industrial systems that are more autonomous, smart, and highly interconnected. These systems generate considerable amounts of data useful for several applications such as improving performance, predictive maintenance, training, etc. A sudden influx in the number of publications related to `Digital Twin' has led to confusion between different terminologies related to the digitalization of industries. Another problem that has arisen due to the growing popularity of DT is a lack of consensus on the description of DT as well as so many different types of DT, which adds to the confusion. This paper intends to consolidate the different types of DT and different definitions of DT throughout the literature for easy identification of DT from the rest of the complimentary terms such as `product avatar', `digital thread', `digital model', and `digital shadow'. The paper looks at the concept of DT since its inception to its predicted future to realize the value it can bring to certain sectors. Understanding the characteristics and types of DT while weighing its pros and cons is essential for any researcher, business, or sector before investing in the technology.}
+      \field{issn}{2571-5577}
+      \field{journaltitle}{Applied System Innovation}
+      \field{number}{2}
+      \field{title}{Digital Twin: Origin to Future}
+      \field{volume}{4}
+      \field{year}{2021}
+      \field{pages}{36}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/asi4020036
+      \endverb
+      \verb{file}
+      \verb Singh, Fuenmayor et al. 2021 - Digital Twin:Attachments/Singh, Fuenmayor et al. 2021 - Digital Twin.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2571-5577/4/2/36
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2571-5577/4/2/36
+      \endverb
+    \endentry
+    \entry{Ghobakhloo.2020}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b963f11ee19f34f2782fe4268d3c630e}{%
+           family={Ghobakhloo},
+           familyi={G\bibinitperiod},
+           given={Morteza},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{fullhash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{bibnamehash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{authorbibnamehash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{authornamehash}{b963f11ee19f34f2782fe4268d3c630e}
+      \strng{authorfullhash}{b963f11ee19f34f2782fe4268d3c630e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The fourth industrial revolution and the underlying digital transformation, known as Industry 4.0, is progressing exponentially. The digital revolutio$\ldots$}
+      \field{issn}{0959-6526}
+      \field{journaltitle}{Journal of Cleaner Production}
+      \field{title}{Industry 4.0, digitization, and opportunities for sustainability}
+      \field{volume}{252}
+      \field{year}{2020}
+      \field{pages}{119869}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jclepro.2019.119869
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0959652619347390
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0959652619347390
+      \endverb
+    \endentry
+    \entry{Feldhausen.2022}{article}{}
+      \name{author}{8}{}{%
+        {{hash=1fcc6f8faf4c012f8812c14e48592619}{%
+           family={Feldhausen},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8ad1f9a5dfdc7a9a4751ff8e298dcb68}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Lauren},
+           giveni={L\bibinitperiod}}}%
+        {{hash=576d0f3a2743c22f2fa5e73c7b1d17dc}{%
+           family={Saleeby},
+           familyi={S\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b9433f98ba57277927bb9565006e5522}{%
+           family={Burl},
+           familyi={B\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=534f01189692eecff628019365739686}{%
+           family={Post},
+           familyi={P\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7295faa5948140f837898d5ff44d3aab}{%
+           family={MacDonald},
+           familyi={M\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7e01c8508ff6e485b9b078f512528ee5}{%
+           family={Saldana},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9786ff23f0de904481b8940f51cadf01}{%
+           family={Love},
+           familyi={L\bibinitperiod},
+           given={Lonnie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c697cd29d434b0acfc357b7990a8997}
+      \strng{fullhash}{a39fb9c2ced0266507b84ea8862589c2}
+      \strng{bibnamehash}{4c697cd29d434b0acfc357b7990a8997}
+      \strng{authorbibnamehash}{4c697cd29d434b0acfc357b7990a8997}
+      \strng{authornamehash}{4c697cd29d434b0acfc357b7990a8997}
+      \strng{authorfullhash}{a39fb9c2ced0266507b84ea8862589c2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2214-8604}
+      \field{journaltitle}{Additive Manufacturing}
+      \field{title}{Review of Computer-Aided Manufacturing (CAM) strategies for hybrid directed energy deposition}
+      \field{volume}{56}
+      \field{year}{2022}
+      \field{pages}{102900}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.addma.2022.102900
+      \endverb
+    \endentry
+    \entry{LalitNarayan.2013b}{book}{}
+      \name{author}{3}{}{%
+        {{hash=243173cc300f93b6619a5b4a8584f8d8}{%
+           family={{Lalit Narayan}},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=85580600b26932c6424a73a33d72207c}{%
+           family={{Mallikarjuna Rao}},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b18978de0abd39c01eb80a77d628ef04}{%
+           family={Sarcar},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Delhi}%
+      }
+      \list{publisher}{1}{%
+        {PHI Learning Private Limited}%
+      }
+      \strng{namehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{fullhash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{bibnamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{authorbibnamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{authornamehash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \strng{authorfullhash}{5b4333d1fa4ee5ea5bf59c095bf3cd5b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The impact of the technology of Computer-Aided Design and Manufacturing in automobile engineering, marine engineering and aerospace engineering has been tremendous. Using computers in manufacturing is receiving particular prominence as industries seek to improve product quality, increase productivity and to reduce inventory costs. Therefore, the emphasis has been attributed to the subject of CAD and its integration with CAM. Designed as a textbook for the undergraduate students of mechanical engineering, production engineering and industrial engineering, it provides a description of both the hardware and software of CAD/CAM systems. The Coverage Includes  Principles of interactive computer graphics  Wireframe, surface and solid modelling  Finite element modelling and analysis  NC part programming and computer-aided part programming  Machine vision systems  Robot technology and automated guided vehicles  Flexible manufacturing systems  Computer integrated manufacturing  Artificial intelligence and expert systems  Communication systems in manufacturing PEDAGOGICAL FEATURES  CNC program examples and APT program examples  Review questions at the end of every chapter  A comprehensive Glossary  A Question Bank at the end of the chapters}
+      \field{edition}{Second printing}
+      \field{isbn}{9788120333420}
+      \field{title}{Computer aided design and manufacturing}
+      \field{year}{2013}
+    \endentry
+    \entry{Pan}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d8d1756d391b3b0eb8dcc0bf791d1fbf}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Zengxi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c32fd0be1e3e915523d485514c47167f}{%
+           family={Polden},
+           familyi={P\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2df951682e26288bf1eec511ac674a79}{%
+           family={Larkin},
+           familyi={L\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d672e2365ff9715e02b6d7cc967f31bd}{%
+           family={{van Duin}},
+           familyi={v\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=faa48da64a59d5d87f14e1c289dff2f3}{%
+           family={Norrish},
+           familyi={N\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{866d54d0005f1e4045db90a208139b8a}
+      \strng{fullhash}{f761a4be96bfa54e38efc7abe3f55986}
+      \strng{bibnamehash}{866d54d0005f1e4045db90a208139b8a}
+      \strng{authorbibnamehash}{866d54d0005f1e4045db90a208139b8a}
+      \strng{authornamehash}{866d54d0005f1e4045db90a208139b8a}
+      \strng{authorfullhash}{f761a4be96bfa54e38efc7abe3f55986}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although an automated flexible production cell is an intriguing prospect for small to median enterprises (SMEs) in current global market conditions, t$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{number}{2}
+      \field{title}{Recent progress on programming methods for industrial robots}
+      \field{volume}{28}
+      \field{year}{2012}
+      \field{pages}{87\bibrangedash 94}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2011.08.004
+      \endverb
+      \verb{file}
+      \verb Pan, Polden et al. 2012 - Recent progress on programming methods:Attachments/Pan, Polden et al. 2012 - Recent progress on programming methods.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584511001001
+      \endverb
+    \endentry
+    \entry{Sherwani.2020}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=74afc8eac3125f8a5ba2005650aa5d5b}{%
+           family={Sherwani},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5beec9a83acacd1281d1e2109defc69c}{%
+           family={Asad},
+           familyi={A\bibinitperiod},
+           given={Muhammad\bibnamedelima Mujtaba},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=300a4531558edeb90108e848763e84b7}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={B.S.K.K.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{fullhash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{bibnamehash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{authorbibnamehash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{authornamehash}{ab02489726a9d5fb9051764243c03bac}
+      \strng{authorfullhash}{ab02489726a9d5fb9051764243c03bac}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 International Conference on Emerging Trends in Smart Technologies (ICETST)}
+      \field{title}{Collaborative Robots and Industrial Revolution 4.0 (IR 4.0)}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1109/icetst49965.2020.9080724
+      \endverb
+    \endentry
+    \entry{Iglesias.2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9d76380f63f96fc5d2229cbfb09d136a}{%
+           family={Iglesias},
+           familyi={I\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2e1126a6d5673b00bfeabdf856ad92ed}{%
+           family={Sebastián},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=be658f859bcce77eb51e1b432ebeb72e}{%
+           family={Ares},
+           familyi={A\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{fullhash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{bibnamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authorbibnamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authornamehash}{749e05a950c719602aa7befa804aa4cd}
+      \strng{authorfullhash}{749e05a950c719602aa7befa804aa4cd}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nowadays industrial robots are an appropriate technology for developing flexible and reconfigurable manufacturing systems which contribute to perform $\ldots$}
+      \field{issn}{1877-7058}
+      \field{journaltitle}{1877-7058}
+      \field{title}{Overview of the State of Robotic Machining: Current Situation and Future Potential}
+      \field{volume}{132}
+      \field{year}{2015}
+      \field{pages}{911\bibrangedash 917}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.proeng.2015.12.577
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877705815044896
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s1877705815044896
+      \endverb
+    \endentry
+    \entry{Liberman.2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a36964058a389ba95c1b58763351a3d0}{%
+           family={Liberman},
+           familyi={L\bibinitperiod},
+           given={Ya.\bibnamedelimi L.},
+           giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=fb2e2b88a0a61a358b0c0bd939f3f6e1}{%
+           family={Gorbunova},
+           familyi={G\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{fullhash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{bibnamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authorbibnamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authornamehash}{27e66cb83001be261ac6d9fb06161a6e}
+      \strng{authorfullhash}{27e66cb83001be261ac6d9fb06161a6e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The quality of CNC machines and their control systems is assessed in terms of the contour accuracy, consisting of two components: the accuracy in sending the signal confirming that the working component has reached the specified coordinate; and the accuracy in executing the stop command, given the inertia of the actuators. Recommendations are made regarding the selection of the device for monitoring the motion of the working components in a CNC machine with a gapless gear transmission and a torsional motor. If the required positional accuracy is low, it is acceptable to disregard the error in the gear ratio of the mechanical transmission between the sensor and the guide screw (or any other device converting rotation into linear motion). When using a device for monitoring the motion of the working components in a CNC machine, the adjustment of the sensor at the center of the scale interval should be as precise as possible.}
+      \field{issn}{1934-8088}
+      \field{journaltitle}{Russian Engineering Research}
+      \field{number}{11}
+      \field{title}{Selection of Positioning Devices for the Components of CNC Machines}
+      \field{volume}{41}
+      \field{year}{2021}
+      \field{pages}{1067\bibrangedash 1070}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.3103/S1068798X21110204
+      \endverb
+      \verb{file}
+      \verb Liberman, Gorbunova 2021 - Selection of Positioning Devices:Attachments/Liberman, Gorbunova 2021 - Selection of Positioning Devices.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.3103/s1068798x21110204
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.3103/s1068798x21110204
+      \endverb
+    \endentry
+    \entry{Billard.2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3cd4f444d840eee2580ddf886f20b1c8}{%
+           family={Billard},
+           familyi={B\bibinitperiod},
+           given={Aude},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d8a72b3bd29e9244932e7c10628e6b03}{%
+           family={Kragic},
+           familyi={K\bibinitperiod},
+           given={Danica},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{fullhash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{bibnamehash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{authorbibnamehash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{authornamehash}{17a114522a9a892d516c37aaa1200bfa}
+      \strng{authorfullhash}{17a114522a9a892d516c37aaa1200bfa}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dexterous manipulation is one of the primary goals in robotics. Robots with this capability could sort and package objects, chop vegetables, and fold clothes. As robots come to work side by side with humans, they must also become human-aware. Over the past decade, research has made strides toward these goals. Progress has come from advances in visual and haptic perception and in mechanics in the form of soft actuators that offer a natural compliance. Most notably, immense progress in machine learning has been leveraged to encapsulate models of uncertainty and to support improvements in adaptive and robust control. Open questions remain in terms of how to enable robots to deal with the most unpredictable agent of all, the human.}
+      \field{journaltitle}{Science}
+      \field{number}{6446}
+      \field{title}{Trends and challenges in robot manipulation}
+      \field{volume}{364}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1126/science.aat8414
+      \endverb
+      \verb{file}
+      \verb Billard, Kragic 2019 - Trends and challenges in robot:Attachments/Billard, Kragic 2019 - Trends and challenges in robot.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Gadaleta.2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=807c10fb532b591cda91e43b0f123b9a}{%
+           family={Gadaleta},
+           familyi={G\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a9987fac2d05b57c877ce85876b19634}{%
+           family={Pellicciari},
+           familyi={P\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1efd6d2180b616f007a1dd10d0cc187d}{%
+           family={Berselli},
+           familyi={B\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{fullhash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{bibnamehash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{authorbibnamehash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{authornamehash}{899081cccc02beb53eee3ab6caa967d2}
+      \strng{authorfullhash}{899081cccc02beb53eee3ab6caa967d2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At present, energy consumption strongly affects the financial payback period of industrial robots, as well as the related manufacturing process sustai$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Optimization of the energy consumption of industrial robots for automatic code generation}
+      \field{volume}{57}
+      \field{year}{2019}
+      \field{pages}{452\bibrangedash 464}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2018.12.020
+      \endverb
+      \verb{file}
+      \verb Gadaleta, Pellicciari et al. 2019 - Optimization of the energy consumption:Attachments/Gadaleta, Pellicciari et al. 2019 - Optimization of the energy consumption.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584518301856
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584518301856
+      \endverb
+    \endentry
+    \entry{Kyratsis.2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f0f4d1ae4b73b351a3433475ee8a9d8a}{%
+           family={Kyratsis},
+           familyi={K\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6c3d2d1220789b9b37833a9dd8449a26}{%
+           family={Kakoulis},
+           familyi={K\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ce8901da7dca3010122999e867e638f3}{%
+           family={Markopoulos},
+           familyi={M\bibinitperiod},
+           given={Angelos\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{fullhash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{bibnamehash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{authorbibnamehash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{authornamehash}{6c808711020e6242cf71b7fee55be8c0}
+      \strng{authorfullhash}{6c808711020e6242cf71b7fee55be8c0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Computer-aided design, computer-aided manufacturing and computer-aided engineering (CAD/CAM/CAE) technologies find more and more applications in today's industry, e [...]}
+      \field{issn}{2075-1702}
+      \field{journaltitle}{Machines}
+      \field{number}{1}
+      \field{title}{Advances in CAD/CAM/CAE Technologies}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{13}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/machines8010013
+      \endverb
+      \verb{file}
+      \verb Kyratsis, Kakoulis et al. 2020 - Advances in CAD CAM CAE Technologies:Attachments/Kyratsis, Kakoulis et al. 2020 - Advances in CAD CAM CAE Technologies.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2075-1702/8/1/13/htm
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2075-1702/8/1/13/htm
+      \endverb
+    \endentry
+    \entry{Maiti.2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=159334c0584644af762e2a392ff063b6}{%
+           family={Maiti},
+           familyi={M\bibinitperiod},
+           given={C.\bibnamedelimi K.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Temasek Boulevard, Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Pan Stanford Publishing}%
+      }
+      \strng{namehash}{159334c0584644af762e2a392ff063b6}
+      \strng{fullhash}{159334c0584644af762e2a392ff063b6}
+      \strng{bibnamehash}{159334c0584644af762e2a392ff063b6}
+      \strng{authorbibnamehash}{159334c0584644af762e2a392ff063b6}
+      \strng{authornamehash}{159334c0584644af762e2a392ff063b6}
+      \strng{authorfullhash}{159334c0584644af762e2a392ff063b6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cover -- Half Title -- Title Page -- Copyright Page -- Dedication -- Table of Contents -- Preface -- 1: Introduction -- 1.1 The Need -- 1.2 Role of TCAD -- 1.3 TCAD: Challenges -- 1.4 TCAD: 2D versus 3D -- 1.5 TCAD: Design Flow -- 1.6 Extending TCAD -- 1.7 Process Compact Model -- 1.8 Process-Aware Design -- 1.9 Design for Manufacturing -- 1.10 TCAD Calibration -- 1.11 TCAD Tools -- 1.12 Technology Boosters -- 1.13 BiCMOS Process Simulation -- 1.14 SiGe and SiGeC HBTs -- 1.15 Silicon Hetero-FETs -- 1.16 FinFETs -- 1.17 Advanced Devices -- 1.18 Memory Devices -- 1.19 Power Devices -- 1.20 Solar Cells -- 1.21 TCAD for SPICE Parameter Extraction -- 1.22 TCAD for DFM -- 1.23 VWF and Online Laboratory -- 1.24 Summary -- 2: Technology CAD Tools -- 2.1 History of Process and Device Simulation Tools -- 2.2 Commercial TCAD Tools -- 2.3 Silvaco Tool Overview -- 2.3.1 MaskViews -- 2.4 ATHENA -- 2.5 ATLAS -- 2.5.1 Physical Structure -- 2.5.2 Structure Editing -- 2.5.3 Meshing -- 2.5.4 Mesh Definition -- 2.5.5 Regions and Materials -- 2.5.6 Physical Models -- 2.5.6.1 Models -- 2.5.7 Impact Ionization Models -- 2.5.7.1 C-Interpreter functions -- 2.5.8 Gate Current Models -- 2.5.9 Bandgap Narrowing -- 2.5.10 Solution Methods -- 2.5.11 VictoryCell -- 2.5.12 VictoryProcess -- 2.5.13 VictoryStress -- 2.5.13.1 VictoryStress features and capabilities -- 2.5.14 VictoryDevice -- 2.6 Stress Modeling -- 2.6.1 Stress-Strain Relationship -- 2.6.2 Mobility -- 2.6.3 SmartSpice -- 2.7 Synopsys TCAD Platforms -- 2.7.1 Taurus-Device -- 2.7.2 Taurus-Process -- 2.7.3 Device Simulation -- 2.7.4 Carrier Recombination-Generation -- 2.7.4.1 Thin-layer mobility -- 2.7.4.2 High-k degradation mobility -- 2.7.5 Stress Effects -- 2.7.5.1 Band-to-band tunneling leakage current -- 2.8 Atomistic Simulation -- 2.8.1 GARAND -- 2.8.2 MYSTIC -- 2.8.3 RandomSPICE -- 2.9 Summary.}
+      \field{isbn}{9789814745529}
+      \field{title}{Introducing technology computer-aided design (TCAD): Fundamentals, simulations and applications}
+      \field{year}{2017}
+      \verb{file}
+      \verb Maiti 2017 - Introducing technology computer-aided design TCAD:Attachments/Maiti 2017 - Introducing technology computer-aided design TCAD.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Uhlmann.2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c20323865440ae4b0b8ce8bf141d9d4e}{%
+           family={Uhlmann},
+           familyi={U\bibinitperiod},
+           given={Eckart},
+           giveni={E\bibinitperiod}}}%
+        {{hash=135a164f1340d305db91f9dff62b0973}{%
+           family={Reinkober},
+           familyi={R\bibinitperiod},
+           given={Sascha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a2c1d486f058eed1b688ce1d1af41644}{%
+           family={Hollerbach},
+           familyi={H\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{fullhash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{bibnamehash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{authorbibnamehash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{authornamehash}{dd61e7fe220fe654819a05eb3587df83}
+      \strng{authorfullhash}{dd61e7fe220fe654819a05eb3587df83}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Robot guided machining has a great potential to substitute or supplement machining with expensive machine tools as well as the inaccurate manual proce$\ldots$}
+      \field{issn}{2212-8271}
+      \field{journaltitle}{2212-8271}
+      \field{title}{Energy Efficient Usage of Industrial Robots for Machining Processes}
+      \field{volume}{48}
+      \field{year}{2016}
+      \field{pages}{206\bibrangedash 211}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.procir.2016.03.241
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2212827116305303
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2212827116305303
+      \endverb
+    \endentry
+    \entry{Anjum.2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=59f0de275df09cf2edfa7bcaaca6358d}{%
+           family={Anjum},
+           familyi={A\bibinitperiod},
+           given={Zuha},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=417bd19388df6649be328814b9e03667}{%
+           family={Samo},
+           familyi={S\bibinitperiod},
+           given={Saifullah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9f82fdb5339a807a2adeb7f8597f3b24}{%
+           family={Nighat},
+           familyi={N\bibinitperiod},
+           given={Arbab},
+           giveni={A\bibinitperiod}}}%
+        {{hash=831c47b45c6c1e74fbfdf7636ba5f385}{%
+           family={Nisa},
+           familyi={N\bibinitperiod},
+           given={Akhtar\bibnamedelima Un},
+           giveni={A\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=21339c1ea2a0359ccfafd6519a566d99}{%
+           family={Soomro},
+           familyi={S\bibinitperiod},
+           given={Muhammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=89296f511ec981007202a96033b61c31}{%
+           family={Alayi},
+           familyi={A\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{94fdc7418a5989d0fdcd9791233aa266}
+      \strng{fullhash}{cc9ebca48c5f1514888234ae5ffc99e5}
+      \strng{bibnamehash}{94fdc7418a5989d0fdcd9791233aa266}
+      \strng{authorbibnamehash}{94fdc7418a5989d0fdcd9791233aa266}
+      \strng{authornamehash}{94fdc7418a5989d0fdcd9791233aa266}
+      \strng{authorfullhash}{cc9ebca48c5f1514888234ae5ffc99e5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Design and Modeling of 9 Degrees of Freedom Redundant Robotic Manipulator}
+      \field{issn}{2715-5056}
+      \field{journaltitle}{Journal of Robotics and Control (JRC)}
+      \field{number}{6}
+      \field{title}{Design and Modeling of 9 Degrees of Freedom Redundant Robotic Manipulator}
+      \field{volume}{3}
+      \field{year}{2022}
+      \field{pages}{800\bibrangedash 808}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.18196/jrc.v3i6.15958
+      \endverb
+      \verb{file}
+      \verb Anjum, Samo et al. 2022 - Design and Modeling of 9:Attachments/Anjum, Samo et al. 2022 - Design and Modeling of 9.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journal.umy.ac.id/index.php/jrc/article/view/15958
+      \endverb
+      \verb{url}
+      \verb https://journal.umy.ac.id/index.php/jrc/article/view/15958
+      \endverb
+    \endentry
+    \entry{Boscariol.2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=079253368d3f09dc5f85f0038f9725d3}{%
+           family={Boscariol},
+           familyi={B\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e289e9a0bc2aacc0c06e8ce8a419bff2}{%
+           family={Caracciolo},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=56f53631c0da54a7dd0203bdd6aef15f}{%
+           family={Richiedei},
+           familyi={R\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+        {{hash=738a99fc8baa74c721e495509033c45d}{%
+           family={Trevisani},
+           familyi={T\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3888aa627a18bea58cd6e66c0457ee6f}
+      \strng{fullhash}{fbfdfcef58711df33d90b84cd4b571bb}
+      \strng{bibnamehash}{3888aa627a18bea58cd6e66c0457ee6f}
+      \strng{authorbibnamehash}{3888aa627a18bea58cd6e66c0457ee6f}
+      \strng{authornamehash}{3888aa627a18bea58cd6e66c0457ee6f}
+      \strng{authorfullhash}{fbfdfcef58711df33d90b84cd4b571bb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{9}
+      \field{title}{Energy Optimization of Functionally Redundant Robots through Motion Design}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{3022}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app10093022
+      \endverb
+      \verb{file}
+      \verb Boscariol, Caracciolo et al. 2020 - Energy Optimization of Functionally Redundant:Attachments/Boscariol, Caracciolo et al. 2020 - Energy Optimization of Functionally Redundant.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Kireanski.1993}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cd867ee3a86e0a5a0f0ca290e19ad163}{%
+           family={Kiréanski},
+           familyi={K\bibinitperiod},
+           given={Manja\bibnamedelima V.},
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e83a8da7f65c22593a9ad66565b13661}{%
+           family={Petrovié},
+           familyi={P\bibinitperiod},
+           given={Tatjana\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{fullhash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{bibnamehash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{authorbibnamehash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{authornamehash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \strng{authorfullhash}{54af957f146d1f608c14f7a32fd8f2c4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0278-3649}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{number}{2}
+      \field{title}{Combined Analytical- Pseudoinverse Inverse Kinematic Solution for Simple Redundant Manipulators and Singularity Avoidance}
+      \field{volume}{12}
+      \field{year}{1993}
+      \field{pages}{188\bibrangedash 196}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1177/027836499301200207
+      \endverb
+    \endentry
+    \entry{Wang.2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e4b2ac8bed44f2d428aa4517c0f0c1bd}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Linwei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=93c82128aca25c57cfb17e90d02136d5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=37b1b6da57c8e2bdd8c0ef5045632a57}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=61660b97cdba4981a8815a4feeb249c9}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jinyu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=488553daf9166a59ba516b7db07498fc}{%
+           family={Shu},
+           familyi={S\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3242f839ed2d86478cdc05c8f948031c}
+      \strng{fullhash}{73714cc52cde9b8eedd588da9d6307b6}
+      \strng{bibnamehash}{3242f839ed2d86478cdc05c8f948031c}
+      \strng{authorbibnamehash}{3242f839ed2d86478cdc05c8f948031c}
+      \strng{authornamehash}{3242f839ed2d86478cdc05c8f948031c}
+      \strng{authorfullhash}{73714cc52cde9b8eedd588da9d6307b6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{11-12}
+      \field{title}{Optimization of redundant degree of freedom in robotic milling considering chatter stability}
+      \field{volume}{121}
+      \field{year}{2022}
+      \field{pages}{8379\bibrangedash 8394}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s00170-022-09889-4
+      \endverb
+      \verb{file}
+      \verb Wang, Liu et al. 2022 - Optimization of redundant degree:Attachments/Wang, Liu et al. 2022 - Optimization of redundant degree.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Malyshev.2022}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=0862b994f24da22a4104fff5805d56de}{%
+           family={Malyshev},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=148b978a467efc9842f66e4e1f4c17b3}{%
+           family={Rybak},
+           familyi={R\bibinitperiod},
+           given={L.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a49ddd1353f5948e079716c4c708c10a}{%
+           family={Pisarenko},
+           familyi={P\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=11a8816771b866515384e23d2a7ea03a}{%
+           family={Cherkasov},
+           familyi={C\bibinitperiod},
+           given={V.\bibnamedelimi V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b6cfa06c6d110548dbb088a1445563f5}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7fbe96d4f8bcef734703749abac931e2}{%
+           family={Brandstötter},
+           familyi={B\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{2}{%
+        {Springer International Publishing}%
+        {Imprint: Springer}%
+      }
+      \strng{namehash}{9e4f3baaf3d44496e0f6a4b853b47a42}
+      \strng{fullhash}{5719c16169230b9e69b09f46c6a0af02}
+      \strng{bibnamehash}{9e4f3baaf3d44496e0f6a4b853b47a42}
+      \strng{authorbibnamehash}{9e4f3baaf3d44496e0f6a4b853b47a42}
+      \strng{authornamehash}{9e4f3baaf3d44496e0f6a4b853b47a42}
+      \strng{authorfullhash}{5719c16169230b9e69b09f46c6a0af02}
+      \strng{editorbibnamehash}{a9ff748c17b8d12fc25970e4653186a7}
+      \strng{editornamehash}{a9ff748c17b8d12fc25970e4653186a7}
+      \strng{editorfullhash}{a9ff748c17b8d12fc25970e4653186a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Service and Industrial Robotics}
+      \field{isbn}{978-3-031-04869-2}
+      \field{series}{Mechanisms and Machine Science}
+      \field{title}{Analysis of the Singularities Influence on the Forward Kinematics Solution and the Geometry of the Workspace of the Gough-Stewart Platform}
+      \field{volume}{120}
+      \field{year}{2022}
+      \field{pages}{60\bibrangedash 67}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-031-04870-8{\textunderscore }8
+      \endverb
+      \verb{file}
+      \verb Malyshev, Rybak et al. 2022 - Analysis of the Singularities Influence:Attachments/Malyshev, Rybak et al. 2022 - Analysis of the Singularities Influence.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Zhao.2021}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=0db445256963546f26ac7dc0d929265b}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Hang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=dc86a56f5713c9035c86aeed5fb14222}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bangcheng},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8ba2426904463349cba1a2ebc5476f78}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Xiaojing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a8cfd0afb4a2a8779cdb000367c9e4d9}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ziqiang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=fa5520f5635265a711b5eac8525441fc}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{5ec0e7ebffac08319cf42f86637f670c}
+      \strng{fullhash}{d1694b68d78ce00a948b9394625fbe3f}
+      \strng{bibnamehash}{5ec0e7ebffac08319cf42f86637f670c}
+      \strng{authorbibnamehash}{5ec0e7ebffac08319cf42f86637f670c}
+      \strng{authornamehash}{5ec0e7ebffac08319cf42f86637f670c}
+      \strng{authorfullhash}{d1694b68d78ce00a948b9394625fbe3f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 China Automation Congress (CAC)}
+      \field{title}{Singularity Analysis and Singularity Avoidance Trajectory Planning for Industrial Robots}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1109/cac53003.2021.9727497
+      \endverb
+    \endentry
+    \entry{Milenkovic.2021}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a534dddef54a82e5640f139a110dfb8b}{%
+           family={Milenkovic},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{fullhash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{bibnamehash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{authorbibnamehash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{authornamehash}{a534dddef54a82e5640f139a110dfb8b}
+      \strng{authorfullhash}{a534dddef54a82e5640f139a110dfb8b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Novel high-order procedures follow finite displacements avoiding the adverse effects of the wrist singularity of a serial robot manipulating a curved $\ldots$}
+      \field{issn}{0094-114X}
+      \field{journaltitle}{Mechanism and Machine Theory}
+      \field{title}{Wrist singularity avoidance with a robot end-effector adding an oblique, redundant axis}
+      \field{volume}{162}
+      \field{year}{2021}
+      \field{pages}{104355}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.mechmachtheory.2021.104355
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x21001130
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x21001130
+      \endverb
+    \endentry
+    \entry{Faria.2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7202002fb39565af2f99107905419dda}{%
+           family={Faria},
+           familyi={F\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3c9cca3893fa6df8c0f874e341a92f6e}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Flora},
+           giveni={F\bibinitperiod}}}%
+        {{hash=dd1fb017f52faeb721a19c6f47f8ec49}{%
+           family={Erlhagen},
+           familyi={E\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=63654051e3e1974ff72abc5dca6b0a56}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Sérgio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eac57fa6b7dde7ed0413ceb627dfcb65}{%
+           family={Bicho},
+           familyi={B\bibinitperiod},
+           given={Estela},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7304253e3359366e1d093cc59a7c58ea}
+      \strng{fullhash}{4136ab05678bd5960bbfe82dc7147620}
+      \strng{bibnamehash}{7304253e3359366e1d093cc59a7c58ea}
+      \strng{authorbibnamehash}{7304253e3359366e1d093cc59a7c58ea}
+      \strng{authornamehash}{7304253e3359366e1d093cc59a7c58ea}
+      \strng{authorfullhash}{4136ab05678bd5960bbfe82dc7147620}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a novel analytic method to uniquely solve inverse kinematics of 7 degrees-of-freedom manipulators while avoiding joint limits and $\ldots$}
+      \field{issn}{0094-114X}
+      \field{journaltitle}{Mechanism and Machine Theory}
+      \field{title}{Position-based kinematics for 7-DoF serial manipulators with global configuration control, joint limit and singularity avoidance}
+      \field{volume}{121}
+      \field{year}{2018}
+      \field{pages}{317\bibrangedash 334}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.mechmachtheory.2017.10.025
+      \endverb
+      \verb{file}
+      \verb Faria, Ferreira et al. 2018 - Position-based kinematics for 7-DoF serial:Attachments/Faria, Ferreira et al. 2018 - Position-based kinematics for 7-DoF serial.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x17306559
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0094114x17306559
+      \endverb
+    \endentry
+    \entry{Duong.2021}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0db7c6ec6f80d078b9bfa0f4b47d6e9d}{%
+           family={Duong},
+           familyi={D\bibinitperiod},
+           given={Xuan\bibnamedelima Bien},
+           giveni={X\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{fullhash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{bibnamehash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{authorbibnamehash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{authornamehash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \strng{authorfullhash}{0db7c6ec6f80d078b9bfa0f4b47d6e9d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is focused on investigating the joints jerk of industrial serial redundant manipulators with 6 degrees of freedom (6-DOF) under the variation of the end-effector point (EEP) trajectory in the workspace. The EEP trajectories are initially built in the basic planes because of their simplicity, verification and experimentation are smooth, and most of the actual welded structures are performed on these basic planes. The jerk is determined by solving the inverse kinematics problem of the redundant system. This problem is solved based on the algorithm which is used for adjusting the increments of the generalized coordinate vector (AGV). The efficiency of this algorithm is shown through the error between a given trajectory and the recalculated trajectory through the forward kinematics problem. The result of this study allows us to evaluate the effect of the change of the trajectory on the kinematics characteristics of the robot in general and the jerk of the joints in particular. On the other hand, these results can be used as the basis for planning the EEP trajectory for redundant robots, developing algorithms to reduce joint jerky, increase the life of robot systems, and improve the accuracy of the redundant robot movement.}
+      \field{issn}{2383-4536}
+      \field{journaltitle}{Journal of Applied and Computational Mechanics}
+      \field{number}{3}
+      \field{title}{On the Effect of the End-effector Point Trajectory on the Joint Jerk of the Redundant Manipulators}
+      \field{volume}{7}
+      \field{year}{2021}
+      \field{pages}{1575\bibrangedash 1582}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.22055/jacm.2021.35350.2635
+      \endverb
+      \verb{file}
+      \verb Duong 2021 - On the Effect:Attachments/Duong 2021 - On the Effect.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://jacm.scu.ac.ir/article_16660.html
+      \endverb
+      \verb{url}
+      \verb https://jacm.scu.ac.ir/article_16660.html
+      \endverb
+    \endentry
+    \entry{Staff.1988}{book}{}
+      \name{author}{3}{}{%
+        {{hash=3bc4939df463ff8a9329c377273d57fd}{%
+           family={{R.V. Dubey}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=002c258aea02c3c04ce47382b34335e7}{%
+           family={{J.A. Euler}},
+           familyi={J\bibinitperiod}}}%
+        {{hash=5cb458aecab8f0eda9b8f23af2da6e30}{%
+           family={{S.M. Babcock}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Ieee International Conference on Ro Staff}%
+      }
+      \list{location}{1}{%
+        {Los Alamitos}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society Press}%
+      }
+      \strng{namehash}{667838421ce2a9bf23db5846c442b516}
+      \strng{fullhash}{667838421ce2a9bf23db5846c442b516}
+      \strng{bibnamehash}{667838421ce2a9bf23db5846c442b516}
+      \strng{authorbibnamehash}{667838421ce2a9bf23db5846c442b516}
+      \strng{authornamehash}{667838421ce2a9bf23db5846c442b516}
+      \strng{authorfullhash}{667838421ce2a9bf23db5846c442b516}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0818608528}
+      \field{title}{Robotics and Automation, 5th IEEE International Conference on, 1988: Proceedings}
+      \field{year}{1988}
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/servlet/opac?punumber=202
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/servlet/opac?punumber=202
+      \endverb
+    \endentry
+    \entry{Huynh.2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=af65202c872c733936dfa89c773c5f86}{%
+           family={Huynh},
+           familyi={H\bibinitperiod},
+           given={Hoai\bibnamedelima Nam},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8b5159bbd6ac93b4917ba992e199a721}{%
+           family={Assadi},
+           familyi={A\bibinitperiod},
+           given={Hamed},
+           giveni={H\bibinitperiod}}}%
+        {{hash=15f352c66a076908413d9f126f51101c}{%
+           family={Rivière-Lorphèvre},
+           familyi={R\bibinithyphendelim L\bibinitperiod},
+           given={Edouard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=857efd7ebd753c97b63a92eea568bf26}{%
+           family={Verlinden},
+           familyi={V\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b155ad17c1775eb669add593573004f4}{%
+           family={Ahmadi},
+           familyi={A\bibinitperiod},
+           given={Keivan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b66a5f5e3fe37de49581740eff2a63fd}
+      \strng{fullhash}{2fea5c5d575befa8a2b30fc3496ca329}
+      \strng{bibnamehash}{b66a5f5e3fe37de49581740eff2a63fd}
+      \strng{authorbibnamehash}{b66a5f5e3fe37de49581740eff2a63fd}
+      \strng{authornamehash}{b66a5f5e3fe37de49581740eff2a63fd}
+      \strng{authorfullhash}{2fea5c5d575befa8a2b30fc3496ca329}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using industrial robots as machine tools is targeted by many industries for their lower cost and larger workspace. Nevertheless, performance of indust$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Modelling the dynamics of industrial robots for milling operations}
+      \field{volume}{61}
+      \field{year}{2020}
+      \field{pages}{101852}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2019.101852
+      \endverb
+      \verb{file}
+      \verb Huynh, Assadi et al. 2020 - Modelling the dynamics of industrial:Attachments/Huynh, Assadi et al. 2020 - Modelling the dynamics of industrial.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584519301784
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584519301784
+      \endverb
+    \endentry
+    \entry{ChenGang.2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ce27d38a9b96ffca656bd49a0591a1c4}{%
+           family={Chen-Gang},
+           familyi={C\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=cd470c0d8f2dcfb3e7beaf1c1dc2cb2f}{%
+           family={Li-Tong},
+           familyi={L\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=db68f4980149ff9e1a18ee47be27f801}{%
+           family={Chu-Ming},
+           familyi={C\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=30110dbb7d28d4d38952a0412c235988}{%
+           family={Xuan},
+           familyi={X\bibinitperiod},
+           given={Jia-Qing},
+           giveni={J\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=742bc0288b954555e372979862e5877e}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Sun-Han},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c38c6e9988b9792602757052f341045e}
+      \strng{fullhash}{7202dd683adbf52ae463bfecd6a7f600}
+      \strng{bibnamehash}{c38c6e9988b9792602757052f341045e}
+      \strng{authorbibnamehash}{c38c6e9988b9792602757052f341045e}
+      \strng{authornamehash}{c38c6e9988b9792602757052f341045e}
+      \strng{authorfullhash}{7202dd683adbf52ae463bfecd6a7f600}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Robot kinematics calibration is of great significance for improving robot absolute pose accuracy, which can be divided into modelbased and non-parametric kinematics calibration. For model-based kinematics calibration, kinematics calibration modeling, pose measurement of end-effector, kinematics parameters calibration and error compensation are systematically analyzed. And with the increasing demand for autonomy, the autonomous kinematics calibration is introduced. On the other hand, research status of nonparametric kinematics calibration is elaborated, the advantages and disadvantage of which are discussed respectively. On the basis, comprehensive and organized description and summarization of the three kinds of calibrations are given. Overall, aiming at robot kinematics calibration, existing achievements are summarized, a typical calibration process is carried out and calibration precautions are detailed, then calibration results of various methods are compared and analyzed. Finally, existing problems in kinematics calibration are analyzed and development prospects are presented.}
+      \field{issn}{2005-4602}
+      \field{journaltitle}{International Journal of Precision Engineering and Manufacturing}
+      \field{number}{8}
+      \field{title}{Review on kinematics calibration technology of serial robots}
+      \field{volume}{15}
+      \field{year}{2014}
+      \field{pages}{1759\bibrangedash 1774}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s12541-014-0528-1
+      \endverb
+      \verb{file}
+      \verb Chen-Gang, Li-Tong et al. 2014 - Review on kinematics calibration technology:Attachments/Chen-Gang, Li-Tong et al. 2014 - Review on kinematics calibration technology.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12541-014-0528-1
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12541-014-0528-1
+      \endverb
+    \endentry
+    \entry{Gasparetto.2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ec3ce1be2e73081dad44f25325c92284}{%
+           family={Gasparetto},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=922955151d75da1ab0c9909c4da292f1}{%
+           family={Zanotto},
+           familyi={Z\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{8007fcacd991e3142712a21847874a2b}
+      \strng{fullhash}{8007fcacd991e3142712a21847874a2b}
+      \strng{bibnamehash}{8007fcacd991e3142712a21847874a2b}
+      \strng{authorbibnamehash}{8007fcacd991e3142712a21847874a2b}
+      \strng{authornamehash}{8007fcacd991e3142712a21847874a2b}
+      \strng{authorfullhash}{8007fcacd991e3142712a21847874a2b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An analysis of the results of an algorithm for optimal trajectory planning of robot manipulators is described in this paper. The objective function to$\ldots$}
+      \field{issn}{0965-9978}
+      \field{journaltitle}{Advances in Engineering Software}
+      \field{number}{4}
+      \field{title}{Optimal trajectory planning for industrial robots}
+      \field{volume}{41}
+      \field{year}{2010}
+      \field{pages}{548\bibrangedash 556}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.advengsoft.2009.11.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0965997809002464
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0965997809002464
+      \endverb
+    \endentry
+    \entry{VandeWeghe.2007}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=e5527f8c93d89e1543be456262f19585}{%
+           family={{Vande Weghe}},
+           familyi={V\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=35f3ca374463c429652940b9722efa08}{%
+           family={Ferguson},
+           familyi={F\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a77cf8d8e3ec4a0f44508c534df6e5af}{%
+           family={Srinivasa},
+           familyi={S\bibinitperiod},
+           given={Siddhartha\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c77de54242eca57385f84e2551fd674f}
+      \strng{fullhash}{c77de54242eca57385f84e2551fd674f}
+      \strng{bibnamehash}{c77de54242eca57385f84e2551fd674f}
+      \strng{authorbibnamehash}{c77de54242eca57385f84e2551fd674f}
+      \strng{authornamehash}{c77de54242eca57385f84e2551fd674f}
+      \strng{authorfullhash}{c77de54242eca57385f84e2551fd674f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2007 7th IEEE-RAS International Conference on Humanoid Robots}
+      \field{title}{Randomized path planning for redundant manipulators without inverse kinematics}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1109/ichr.2007.4813913
+      \endverb
+      \verb{file}
+      \verb Vande Weghe, Ferguson et al. 2007 - Randomized path planning for redundant:Attachments/Vande Weghe, Ferguson et al. 2007 - Randomized path planning for redundant.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Reiter.2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=bf4330c73776862e0013e58f8df3a2b9}{%
+           family={Reiter},
+           familyi={R\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bd3a94ded53b2df3f4d08462262f8a64}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f72fb7098ec14120894cb67f6c3bd0a}{%
+           family={Gattringer},
+           familyi={G\bibinitperiod},
+           given={Hubert},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{fullhash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{bibnamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{authorbibnamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{authornamehash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \strng{authorfullhash}{7f3aacd8b0e00eb75fc80a01dd1ba46c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IECON 2016 - 42nd Annual Conference of the IEEE Industrial Electronics Society}
+      \field{title}{Inverse kinematics in minimum-time trajectory planning for kinematically redundant manipulators}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1109/iecon.2016.7793436
+      \endverb
+    \endentry
+    \entry{Ayten.2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b31a1082fe3fcfab2b5b24e0db7f5e36}{%
+           family={Ayten},
+           familyi={A\bibinitperiod},
+           given={K.\bibnamedelimi Koray},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=b6ec53052c9b432db6520c4ddf758448}{%
+           family={Sahinkaya},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi Necip},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8008da4c415be6a036f818d7e4b8ee32}{%
+           family={Dumlu},
+           familyi={D\bibinitperiod},
+           given={Ahmet},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{fullhash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{bibnamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{authorbibnamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{authornamehash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \strng{authorfullhash}{b1f672c9f862679a70ddddaa8c4a9a37}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents an optimization technique to develop minimum energy consumption trajectories for redundant/hyper-redundant manipulators with pre-d$\ldots$}
+      \field{issn}{2405-8963}
+      \field{journaltitle}{IFAC-PapersOnLine}
+      \field{number}{21}
+      \field{title}{Optimum Trajectory Generation for Redundant/Hyper-Redundant Manipulators}
+      \field{volume}{49}
+      \field{year}{2016}
+      \field{pages}{493\bibrangedash 500}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.ifacol.2016.10.651
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s2405896316322637
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s2405896316322637
+      \endverb
+    \endentry
+    \entry{Shi.2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a1770271e12b3ed81b13f52fe408d895}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Xiaohua},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7ab947d5412a3e2fb932e67fcdb67505}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=77d6fd64a87e74cba85a7796cbdf353e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xuechan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=06f197c11eed4b6e57fe4044e996cf0c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ziming},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f3f19ca065d221c5861419a36bd95b4d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zhiwei},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e7c41bfaa483905afba3bc8bf0a1154}
+      \strng{fullhash}{24d7309417112ffae6d00aab4715847f}
+      \strng{bibnamehash}{3e7c41bfaa483905afba3bc8bf0a1154}
+      \strng{authorbibnamehash}{3e7c41bfaa483905afba3bc8bf0a1154}
+      \strng{authornamehash}{3e7c41bfaa483905afba3bc8bf0a1154}
+      \strng{authorfullhash}{24d7309417112ffae6d00aab4715847f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A new method of kinematic analysis and singularity analysis is proposed for a 7-DOF redundant manipulator with three consecutive parallel axes. First, the redundancy angle is described according to the self-motion characteristics of the manipulator, the position and orientation of the end-effector are separated, and the inverse kinematics of this manipulator is analyzed by geometric methods with the redundancy angle as a constraint. Then, the Jacobian matrix is established to derive the conditions for the kinematic singularities of the robotic arm by using the primitive matrix method and the block matrix method. Then, the kinematic singularities conditions in the joint space are mapped to the Cartesian space, and the singular configuration is described using the end poses and redundancy angles of the robotic arm, and a singularity avoidance method based on the redundancy angles and end pose is proposed. Finally, the correctness and feasibility of the inverse kinematics algorithm and the singularity avoidance method are verified by simulation examples.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{21}
+      \field{title}{Kinematics and Singularity Analysis of a 7-DOF Redundant Manipulator}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{pages}{7257}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s21217257
+      \endverb
+      \verb{file}
+      \verb Shi, Guo et al. 2021 - Kinematics and Singularity Analysis:Attachments/Shi, Guo et al. 2021 - Kinematics and Singularity Analysis.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/21/21/7257
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/21/21/7257
+      \endverb
+    \endentry
+    \entry{Wei.2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b776d95c77c10edd3b69c4d4b3bca3ef}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Yanhui},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=dbc9a408ae134b4cbcaf2346442669ff}{%
+           family={Jian},
+           familyi={J\bibinitperiod},
+           given={Shengqi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6b0027ab5b2ab9fedc846971f3bde20e}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9a77c75cd895982edeea3643a0cc326d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhepeng},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca25229efb7310f9eed3fdbfc96dd4d4}
+      \strng{fullhash}{768c70f2a46e422474b531bb77c7c1f5}
+      \strng{bibnamehash}{ca25229efb7310f9eed3fdbfc96dd4d4}
+      \strng{authorbibnamehash}{ca25229efb7310f9eed3fdbfc96dd4d4}
+      \strng{authornamehash}{ca25229efb7310f9eed3fdbfc96dd4d4}
+      \strng{authorfullhash}{768c70f2a46e422474b531bb77c7c1f5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0094-114X}
+      \field{journaltitle}{Mechanism and Machine Theory}
+      \field{title}{General approach for inverse kinematics of nR robots}
+      \field{volume}{75}
+      \field{year}{2014}
+      \field{pages}{97\bibrangedash 106}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.mechmachtheory.2014.01.008
+      \endverb
+    \endentry
+    \entry{Stevenson.}{article}{}
+      \name{author}{3}{}{%
+        {{hash=40afec41cd9a3bd23b0c741c255d4a2d}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=aef7a669ff5aff98420893f480e848ad}{%
+           family={Shirinzadeh},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2f8eb2ade0b9dd0a566a4c741dde9f6a}{%
+           family={Alici},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bd84671bd37bbf14b8d5ec3776be6af}
+      \strng{fullhash}{3bd84671bd37bbf14b8d5ec3776be6af}
+      \strng{bibnamehash}{3bd84671bd37bbf14b8d5ec3776be6af}
+      \strng{authorbibnamehash}{3bd84671bd37bbf14b8d5ec3776be6af}
+      \strng{authornamehash}{3bd84671bd37bbf14b8d5ec3776be6af}
+      \strng{authorfullhash}{3bd84671bd37bbf14b8d5ec3776be6af}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Singularity avoidance and aspect maintenance in redundant manipulators}
+      \field{year}{2002}
+      \field{pages}{857\bibrangedash 862}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICARCV.2002.1238536
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/1238536
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/1238536
+      \endverb
+    \endentry
+    \entry{Bedrossian.2002}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=298cbea50f0726ed213e1fc7304830d6}{%
+           family={Bedrossian},
+           familyi={B\bibinitperiod},
+           given={N.\bibnamedelimi S.},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{298cbea50f0726ed213e1fc7304830d6}
+      \strng{fullhash}{298cbea50f0726ed213e1fc7304830d6}
+      \strng{bibnamehash}{298cbea50f0726ed213e1fc7304830d6}
+      \strng{authorbibnamehash}{298cbea50f0726ed213e1fc7304830d6}
+      \strng{authornamehash}{298cbea50f0726ed213e1fc7304830d6}
+      \strng{authorfullhash}{298cbea50f0726ed213e1fc7304830d6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings, IEEE International Conference on Robotics and Automation}
+      \field{isbn}{0-8186-9061-5}
+      \field{title}{Classification of singular configurations for redundant manipulators}
+      \field{year}{2002}
+      \field{pages}{818\bibrangedash 823}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ROBOT.1990.126089
+      \endverb
+    \endentry
+    \entry{Huo.2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7680363d614029d92a1274a98af6e940}{%
+           family={Huo},
+           familyi={H\bibinitperiod},
+           given={Liguo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0771e3821162c315bdb59e81165cca98}{%
+           family={Baron},
+           familyi={B\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{fullhash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{bibnamehash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{authorbibnamehash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{authornamehash}{8bb246f39064ca5180efc9e4e567d66e}
+      \strng{authorfullhash}{8bb246f39064ca5180efc9e4e567d66e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The joint--limits and singularity avoidance in robotic welding - Author: Liguo Huo, Luc Baron}
+      \field{journaltitle}{Industrial Robot: An International Journal}
+      \field{number}{5}
+      \field{title}{The joint--limits and singularity avoidance in robotic welding}
+      \field{volume}{35}
+      \field{year}{2008}
+      \field{pages}{456\bibrangedash 464}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1108/01439910810893626
+      \endverb
+      \verb{urlraw}
+      \verb https://www.emerald.com/insight/content/doi/10.1108/01439910810893626/full/pdf
+      \endverb
+      \verb{url}
+      \verb https://www.emerald.com/insight/content/doi/10.1108/01439910810893626/full/pdf
+      \endverb
+    \endentry
+    \entry{Dai.2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3c12ad843e22656349eb255ec8142fff}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Chengkai},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3b2fdb7691472aa2d01dd28201ec15f4}{%
+           family={Lefebvre},
+           familyi={L\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b68de3749a4f654fd7c83f8431419d10}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Kai-Ming},
+           giveni={K\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=7e3e39d9b670ae3b7edc136ba414b51d}{%
+           family={Geraedts},
+           familyi={G\bibinitperiod},
+           given={Jo\bibnamedelima M.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=67857bd3a22d47754bccb05202b9067d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Charlie\bibnamedelimb C.\bibnamedelimi L.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b69a50dd5acfde6d2455e2a4c389ac3}
+      \strng{fullhash}{c671eed5abbc8a9f2821039c27c4a793}
+      \strng{bibnamehash}{5b69a50dd5acfde6d2455e2a4c389ac3}
+      \strng{authorbibnamehash}{5b69a50dd5acfde6d2455e2a4c389ac3}
+      \strng{authornamehash}{5b69a50dd5acfde6d2455e2a4c389ac3}
+      \strng{authorfullhash}{c671eed5abbc8a9f2821039c27c4a793}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1545-5955}
+      \field{journaltitle}{IEEE Transactions on Automation Science and Engineering}
+      \field{number}{4}
+      \field{title}{Planning Jerk-Optimized Trajectory With Discrete Time Constraints for Redundant Robots}
+      \field{volume}{17}
+      \field{year}{2020}
+      \field{pages}{1711\bibrangedash 1724}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TASE.2020.2974771
+      \endverb
+    \endentry
+    \entry{Jiang.2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=357b0b769575e7caa1fa1e98ea04a1fe}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c7ef349c1c8e212b8d562a4371a7ecea}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Shaotian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a12a68d7687a0ed00c3b62ec705e4190}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Yikun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3fa0fc975919b588144e2596d884cb4e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jingdong},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d69f5f1a2be8a0507d4e511dc700b68c}
+      \strng{fullhash}{a73a70d96946f2f6de401149132fa2be}
+      \strng{bibnamehash}{d69f5f1a2be8a0507d4e511dc700b68c}
+      \strng{authorbibnamehash}{d69f5f1a2be8a0507d4e511dc700b68c}
+      \strng{authornamehash}{d69f5f1a2be8a0507d4e511dc700b68c}
+      \strng{authorfullhash}{a73a70d96946f2f6de401149132fa2be}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Time-Jerk Optimal Trajectory Planning for a 7-DOF Redundant Robot Using the Sequential Quadratic Programming Method}
+      \field{volume}{2017}
+      \field{year}{2017}
+      \field{pages}{343\bibrangedash 353}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/978-3-319-65298-6{\textunderscore }32
+      \endverb
+    \endentry
+    \entry{Wu.2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6925c5dcdb9b5ed8f2a02432404549e7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=899707226730bae3eac3d43e628c4645}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jiaquan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=385515219469b49871047a8385f24608}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Huan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9e115f3a9820b00a0540bf9b5b92fdfc}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3231d57a15fd159e0a480f54ba37348}
+      \strng{fullhash}{ef7a0310d754c94bfb8bd4545a5a7e12}
+      \strng{bibnamehash}{a3231d57a15fd159e0a480f54ba37348}
+      \strng{authorbibnamehash}{a3231d57a15fd159e0a480f54ba37348}
+      \strng{authornamehash}{a3231d57a15fd159e0a480f54ba37348}
+      \strng{authorfullhash}{ef7a0310d754c94bfb8bd4545a5a7e12}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Due to their high flexibility, large workspace, and high repeatability, industrial robots are widely used in roughing and semifinishing fields. However, their low machining accuracy and low stability limit further development of industrial robots in the machining field, with low stiffness being the most significant factor. The stiffness of industrial robots is affected by the joint deformation, transmission mechanism, friction, environment, and coupling of these factors. Moreover, the stiffness of a robot has a nonlinear distribution throughout the workspace, and external forces during processing cause irregular deviations of the robot, thereby affecting the machining accuracy and surface quality of the workpiece. Many scholars have researched identifying the stiffness of industrial robots and have proposed methods for improving the performance of industrial robots, mainly by optimizing the body structure of the robot and compensating for deformation errors with stiffness models. This paper reviews recent research on the stiffness modelling of industrial robots, which can be broadly classified as finite element analysis (FEA), matrix structure analysis (MSA), and virtual joint modelling (VJM) methods. Each method is studied from three aspects: algorithms, implementation, and limitations. In addition, common measurement techniques have been introduced for measuring deformation. Further research directions are also discussed.}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{17}
+      \field{title}{Review of Industrial Robot Stiffness Identification and Modelling}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{8719}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app12178719
+      \endverb
+      \verb{file}
+      \verb Wu, Li et al. 2022 - Review of Industrial Robot Stiffness:Attachments/Wu, Li et al. 2022 - Review of Industrial Robot Stiffness.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-3417/12/17/8719
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-3417/12/17/8719
+      \endverb
+    \endentry
+    \entry{Xiong.2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a9911a26db1d9920ffe275904c37177f}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f8d1f12e82b36e862d7c06e7e02c9118}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4b839c2989e3a8ee7c890b6a2f0fccc9}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={LiMin},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{fullhash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{bibnamehash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{authorbibnamehash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{authornamehash}{75ac0c8f58119b4a6c7a3db610110358}
+      \strng{authorfullhash}{75ac0c8f58119b4a6c7a3db610110358}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robot provides an optimistic alternative of traditional CNC machine tool due to its advantages of large workspace, low cost and great flexi$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Stiffness-based pose optimization of an industrial robot for five-axis milling}
+      \field{volume}{55}
+      \field{year}{2019}
+      \field{pages}{19\bibrangedash 28}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2018.07.001
+      \endverb
+      \verb{file}
+      \verb Xiong, Ding et al. 2019 - Stiffness-based pose optimization:Attachments/Xiong, Ding et al. 2019 - Stiffness-based pose optimization.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584517304556
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584517304556
+      \endverb
+    \endentry
+    \entry{Cvitanic.2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e6ac0dc60696f57da819f4c1478bc53f}{%
+           family={Cvitanic},
+           familyi={C\bibinitperiod},
+           given={Toni},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6a8f26aa94297d679633525b05d3ee8a}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Vinh},
+           giveni={V\bibinitperiod}}}%
+        {{hash=abb074cf4970aa5af4a03ff208125d32}{%
+           family={Melkote},
+           familyi={M\bibinitperiod},
+           given={Shreyes\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{fullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{bibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authorbibnamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authornamehash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \strng{authorfullhash}{0b5acc627fa0967bfb4c7ce8a9fa02bd}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robots are typically not used for milling of hard materials due to their low stiffness compared to traditional machine tools. Due to millin$\ldots$}
+      \field{issn}{0736-5845}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{Pose optimization in robotic machining using static and dynamic stiffness models}
+      \field{volume}{66}
+      \field{year}{2020}
+      \field{pages}{101992}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rcim.2020.101992
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584520302039
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/s0736584520302039
+      \endverb
+    \endentry
+    \entry{Paryanto.2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3242bba193892017b1b05cc7db7c8751}{%
+           family={Paryanto},
+           familyi={P\bibinitperiod}}}%
+        {{hash=04b86ad368ecded47027ace56a26fe3d}{%
+           family={Brossog},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=316ed9a8a2dbccd6efcf973009da29dd}{%
+           family={Bornschlegl},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=861854a17a7d79ab04e94dc8829f0e71}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{53eb9b62e0d5b9435e3d156a1c6eaaf2}
+      \strng{fullhash}{e969e4995806b4e27aea8e45b8f9ad51}
+      \strng{bibnamehash}{53eb9b62e0d5b9435e3d156a1c6eaaf2}
+      \strng{authorbibnamehash}{53eb9b62e0d5b9435e3d156a1c6eaaf2}
+      \strng{authornamehash}{53eb9b62e0d5b9435e3d156a1c6eaaf2}
+      \strng{authorfullhash}{e969e4995806b4e27aea8e45b8f9ad51}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reducing the energy consumption of industrial robots (IR) that are used in manufacturing systems has become a main focus in the development of green production systems. This is due to the reality that almost all automated manufacturing processes are using IR as the main component. Thus, reducing the energy consumption of IR will automatically reduce operating costs and CO2 emissions. Therefore, a method for reducing the energy consumption of IR in manufacturing systems is desired. Firstly, this paper presents a literature survey of the research in energy consumption analysis of IR that is used in manufacturing processes. The survey found that current research in this field is focused on the development of simulation models of IR that are able to be used to predict its energy consumption. Secondly, a modular model to analyze power consumption and dynamic behavior of IR is developed. Afterward, an experimental investigation is carried out to validate and estimate the accuracy of the model developed. The investigation shows that the developed modular model can be conveniently used to optimize the industrial robot's operating parameters, which are commonly needed for production planning and at the process optimization stage. In addition, the investigation shows that the process constraints, environment layout, productivity requirement, as well as the robot payload and operating speed are the key factors that must be considered for optimizing the productivity and efficiency of IR.}
+      \field{issn}{1433-3015}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{number}{5-8}
+      \field{title}{Reducing the energy consumption of industrial robots in manufacturing systems}
+      \field{volume}{78}
+      \field{year}{2015}
+      \field{pages}{1315\bibrangedash 1328}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s00170-014-6737-z
+      \endverb
+      \verb{file}
+      \verb Paryanto, Brossog et al. 2015 - Reducing the energy consumption:Attachments/Paryanto, Brossog et al. 2015 - Reducing the energy consumption.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00170-014-6737-z
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00170-014-6737-z
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
