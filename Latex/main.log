@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  14 FEB 2024 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  23 FEB 2024 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3341,17 +3341,15 @@ Package cleveref Info: loaded `english' language definitions on input line 418.
 Package cleveref Info: loaded `english' language definitions on input line 420.
 
  [79 <./figures/best_2D_2.png>]
-<figures/swarm/3_0.png, id=2049, 480.5955pt x 509.2867pt>
+Package cleveref Info: loaded `english' language definitions on input line 449.
+
+ [80]
+<figures/swarm/3_0.png, id=2058, 480.5955pt x 509.2867pt>
 File: figures/swarm/3_0.png Graphic file (type png)
 <use figures/swarm/3_0.png>
 Package pdftex.def Info: figures/swarm/3_0.png  used on input line 451.
 (pdftex.def)             Requested size: 441.01773pt x 467.34492pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package cleveref Info: loaded `english' language definitions on input line 455.
-
- [80]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package cleveref Info: loaded `english' language definitions on input line 461.
@@ -3637,7 +3635,7 @@ Data/Local/Programs/MiKTeX/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users
 /Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.p
 fb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uh
 vro8a.pfb>
-Output written on main.pdf (127 pages, 70112236 bytes).
+Output written on main.pdf (127 pages, 70101348 bytes).
 PDF statistics:
  2982 PDF objects out of 2984 (max. 8388607)
  475 named destinations out of 1000 (max. 500000)
