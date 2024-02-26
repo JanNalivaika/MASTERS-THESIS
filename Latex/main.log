@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  23 FEB 2024 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.4)  26 FEB 2024 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2606,12 +2606,12 @@ LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
 (Font)              scaled to size 10.51207pt on input line 86.
 LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
 (Font)              scaled to size 10.51207pt on input line 86.
-)
-Overfull \hbox (24.0pt too wide) in paragraph at lines 84--62
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 84--90
 [] 
  []
 
-[7]
+) [7]
 \openout2 = `source/abstract.aux'.
 
  (source/abstract.tex
@@ -2917,16 +2917,16 @@ Package pdftex.def Info: figures/localscore.png  used on input line 190.
 Package cleveref Info: loaded `english' language definitions on input line 196.
 
  [38 <./figures/localscore.png>]
-<figures/lowstd.png, id=1566, 645.22134pt x 146.81879pt>
+<figures/lowstd.png, id=1566, 705.20912pt x 146.78242pt>
 File: figures/lowstd.png Graphic file (type png)
 <use figures/lowstd.png>
 Package pdftex.def Info: figures/lowstd.png  used on input line 200.
-(pdftex.def)             Requested size: 374.86775pt x 85.29832pt.
-<figures/highstd.png, id=1568, 645.04819pt x 146.78242pt>
+(pdftex.def)             Requested size: 374.86775pt x 78.02724pt.
+<figures/highstd.png, id=1568, 705.20912pt x 146.78242pt>
 File: figures/highstd.png Graphic file (type png)
 <use figures/highstd.png>
 Package pdftex.def Info: figures/highstd.png  used on input line 208.
-(pdftex.def)             Requested size: 374.86775pt x 85.30408pt.
+(pdftex.def)             Requested size: 374.86775pt x 78.02724pt.
 Package cleveref Info: loaded `english' language definitions on input line 220.
 
  [39 <./figures/lowstd.png> <./figures/highstd.png>]
@@ -3484,12 +3484,20 @@ Package cleveref Info: loaded `english' language definitions on input line 67.
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
-Package cleveref Info: loaded `english' language definitions on input line 100.
-
+Package cleveref Info: loaded `english' language definitions on input line 93.
 
 [97] [98
 
-] [99]
+] (main.lot
+Package cleveref Info: loaded `english' language definitions on input line 1.
+Package cleveref Info: loaded `english' language definitions on input line 3.
+)
+\tf@lot=\write10
+\openout10 = `main.lot'.
+
+ [99] [100
+
+] [101]
 Overfull \hbox (2.94188pt too wide) in paragraph at lines 100--100
 [][]\T1/bch/m/sc/10.95 Bonev\T1/bch/m/n/10.95 , I., (2001).  \T1/bch/m/it/10.95
  Delta par-al-lel robot-the story of suc-cess\T1/bch/m/n/10.95 .  Newslet-ter, 
@@ -3505,13 +3513,13 @@ uts /
 
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
-[100]
+[102]
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
- [101]
+ [103]
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
- [102]
+ [104]
 Overfull \hbox (1.43756pt too wide) in paragraph at lines 100--100
 [][]\T1/bch/m/sc/10.95 Gasparetto\T1/bch/m/n/10.95 , A. and \T1/bch/m/sc/10.95 
 Zan-otto\T1/bch/m/n/10.95 , V., (2010).  ^^P  Op-ti-mal tra-jec-tory plan-ning 
@@ -3520,7 +3528,7 @@ for in-dus-trial robots^^Q.
 
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
-[103]
+[105]
 Overfull \hbox (21.09532pt too wide) in paragraph at lines 100--100
 \T1/bch/m/n/10.95 2019 . 101852$[].  \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 : 
 []$https : / / www . sciencedirect . com / science / article / pii / s073658451
@@ -3529,7 +3537,7 @@ Overfull \hbox (21.09532pt too wide) in paragraph at lines 100--100
 
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
-[104]
+[106]
 Overfull \hbox (1.85678pt too wide) in paragraph at lines 100--100
 \T1/bch/m/it/10.95 chine Tools and Man-u-fac-ture \T1/bch/m/n/10.95 125, pp. 34
 ^^U54.  \T1/bch/m/sc/10.95 issn\T1/bch/m/n/10.95 : 0890-6955.  \T1/bch/m/sc/10.
@@ -3538,7 +3546,7 @@ Overfull \hbox (1.85678pt too wide) in paragraph at lines 100--100
 
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
-[105]
+[107]
 Overfull \hbox (1.75531pt too wide) in paragraph at lines 100--100
 \T1/bch/m/n/10.95 Tech-nolo-gies^^Q.  In: \T1/bch/m/it/10.95 Ma-chines \T1/bch/
 m/n/10.95 8.1, p. 13.  \T1/bch/m/sc/10.95 issn\T1/bch/m/n/10.95 : 2075-1702.  \
@@ -3547,13 +3555,7 @@ T1/bch/m/sc/10.95 doi\T1/bch/m/n/10.95 : []$10 . 3390 / machines8010013$[].
 
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
-[106]
-Package cleveref Info: loaded `english' language definitions on input line 100.
-
- [107]
-Package cleveref Info: loaded `english' language definitions on input line 100.
-
- [108]
+[108]
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
  [109]
@@ -3563,6 +3565,12 @@ Package cleveref Info: loaded `english' language definitions on input line 100.
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
  [111]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [112]
+Package cleveref Info: loaded `english' language definitions on input line 100.
+
+ [113]
 Overfull \hbox (20.51498pt too wide) in paragraph at lines 100--100
 \T1/bch/m/n/10.95 2022 . 102436$[].  \T1/bch/m/sc/10.95 url\T1/bch/m/n/10.95 : 
 []$https : / / www . sciencedirect . com / science / article / pii / s073658452
@@ -3571,7 +3579,7 @@ Overfull \hbox (20.51498pt too wide) in paragraph at lines 100--100
 
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
-[112]
+[114]
 Overfull \hbox (31.867pt too wide) in paragraph at lines 100--100
 \T1/bch/m/n/10.95 In:  Springer, Berlin, Hei-del-berg,  pp. 21^^U32.  \T1/bch/m
 /sc/10.95 doi\T1/bch/m/n/10.95 : []$10 . 1007 / 978 -[] 3 -[] 642 -[] 20662 -[]
@@ -3580,10 +3588,10 @@ Overfull \hbox (31.867pt too wide) in paragraph at lines 100--100
 
 Package cleveref Info: loaded `english' language definitions on input line 100.
 
-[113]
+[115]
 Package cleveref Info: loaded `english' language definitions on input line 104.
 
- [114] [115
+ [116] [117
 
 
 ] (main.aux
@@ -3606,7 +3614,7 @@ L3 programming layer <2023-08-29>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7295D95D651CB94043CA1F2A7BC41BFF;5112.
+(rerunfilecheck)             Checksum: 546845FEC9F9AD15107BE1F0B84B2F8B;5130.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -3617,10 +3625,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68116 strings out of 475247
- 1559705 string characters out of 5756376
- 2586230 words of memory out of 5000000
- 88012 multiletter control sequences out of 15000+600000
+ 68126 strings out of 475247
+ 1559867 string characters out of 5756376
+ 2586244 words of memory out of 5000000
+ 88016 multiletter control sequences out of 15000+600000
  650045 words of font info for 141 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  109i,13n,131p,3569b,3841s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3635,9 +3643,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users
 /Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.p
 fb><C:/Users/z0041bmr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uh
 vro8a.pfb>
-Output written on main.pdf (127 pages, 70101348 bytes).
+Output written on main.pdf (129 pages, 70457322 bytes).
 PDF statistics:
- 2982 PDF objects out of 2984 (max. 8388607)
- 475 named destinations out of 1000 (max. 500000)
+ 3001 PDF objects out of 3580 (max. 8388607)
+ 478 named destinations out of 1000 (max. 500000)
  924 words of extra memory for PDF output out of 10000 (max. 10000000)
 

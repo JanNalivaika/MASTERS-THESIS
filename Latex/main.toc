@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {2.4.1}Singularity Avoidance}{26}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Optimization of Joint Accelerations and Joint Jerk}{28}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Optimization of Stiffness}{28}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Optimization of Energy Usage}{29}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.4}Optimization of Energy Consumption}{29}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Summary}{30}{subsection.2.4.5}%
 \contentsline {chapter}{\numberline {3}Methodology}{31}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{31}{section.3.1}%
@@ -38,8 +38,8 @@
 \contentsline {subsection}{\numberline {3.4.1}Total Joint Travel and Direction Changes}{41}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Rotation Limits}{43}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Velocity, Acceleration and Jerk of the Joints}{44}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Continuous Energy Usage}{46}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Total Energy Usage}{47}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.4}Continuous Energy consumption}{46}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Total Energy consumption}{47}{subsection.3.4.5}%
 \contentsline {section}{\numberline {3.5}Reach, Singularities and Torch Orientation}{49}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Reach and Alignment}{49}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Singularities}{51}{subsection.3.5.2}%
@@ -67,5 +67,5 @@
 \contentsline {chapter}{\numberline {5}Conclusion}{91}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Summary}{91}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Outlook}{93}{section.5.2}%
-\contentsline {chapter}{Bibliography}{99}{chapter*.94}%
+\contentsline {chapter}{Bibliography}{101}{chapter*.95}%
 \contentsfinish 

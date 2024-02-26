@@ -35,7 +35,7 @@
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Hard and soft limits with desired range}}{44}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Calculating velocity from the joint position over time}}{45}{figure.caption.41}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Overstepping the threshold value}}{45}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Exemplary methods for energy usage calculations}}{47}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Exemplary methods for energy consumption calculations}}{47}{figure.caption.44}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Turn-on and turn-off points in the G-code used in WAAM}}{48}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Rotation around the C-axis of a welding torch }}{49}{figure.caption.46}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering No rotation}}}{49}{subfigure.16.1}%

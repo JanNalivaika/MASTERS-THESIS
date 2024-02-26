@@ -4,15 +4,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Process variables and their numerical form}}{44}{table.caption.27}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Calculation of a global score for a specific boundary condition}}{48}{table.caption.29}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Calculation of a score regarding only direction changes and total travel}}{53}{table.caption.37}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Calculation of a score regarding only velocity, acceleration and jerk}}{56}{table.caption.42}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces From time-series of the deviation vector to scalar value}}{61}{table.caption.47}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Process variables and their numerical form}}{34}{table.caption.28}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Calculation of a global score for a specific boundary condition}}{38}{table.caption.30}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Calculation of a score regarding only direction changes and total travel}}{42}{table.caption.38}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Calculation of a score regarding only velocity, acceleration and jerk}}{46}{table.caption.43}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces From time-series of the deviation vector to scalar value}}{51}{table.caption.48}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces DH-parameters for the modeled robot}}{72}{table.caption.54}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Selected process variables and their importance factors}}{77}{table.caption.64}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Selected process variables and their importance factors for the organic toolpath}}{81}{table.caption.71}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Selected process variables and their importance factors for 2 redundant DoF}}{83}{table.caption.75}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces DH-parameters for the modeled robot}}{62}{table.caption.55}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Selected process variables and their importance factors}}{68}{table.caption.66}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Selected process variables and their importance factors for the organic toolpath}}{73}{table.caption.73}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Standard deviation of the selected process variables}}{74}{table.caption.75}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Selected process variables and their importance factors for two redundant DoFs}}{75}{table.caption.78}%
 \addvspace {10\p@ }
 \contentsfinish 

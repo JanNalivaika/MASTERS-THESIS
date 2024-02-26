@@ -16,7 +16,7 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Singularity\040Avoidance}{section.2.4}% 16
 \BOOKMARK [2][-]{subsection.2.4.2}{Optimization\040of\040Joint\040Accelerations\040and\040Joint\040Jerk}{section.2.4}% 17
 \BOOKMARK [2][-]{subsection.2.4.3}{Optimization\040of\040Stiffness}{section.2.4}% 18
-\BOOKMARK [2][-]{subsection.2.4.4}{Optimization\040of\040Energy\040Usage}{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.4}{Optimization\040of\040Energy\040Consumption}{section.2.4}% 19
 \BOOKMARK [2][-]{subsection.2.4.5}{Summary}{section.2.4}% 20
 \BOOKMARK [0][-]{chapter.3}{Methodology}{}% 21
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 22
@@ -31,8 +31,8 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{Total\040Joint\040Travel\040and\040Direction\040Changes}{section.3.4}% 31
 \BOOKMARK [2][-]{subsection.3.4.2}{Rotation\040Limits}{section.3.4}% 32
 \BOOKMARK [2][-]{subsection.3.4.3}{Velocity,\040Acceleration\040and\040Jerk\040of\040the\040Joints}{section.3.4}% 33
-\BOOKMARK [2][-]{subsection.3.4.4}{Continuous\040Energy\040Usage}{section.3.4}% 34
-\BOOKMARK [2][-]{subsection.3.4.5}{Total\040Energy\040Usage}{section.3.4}% 35
+\BOOKMARK [2][-]{subsection.3.4.4}{Continuous\040Energy\040consumption}{section.3.4}% 34
+\BOOKMARK [2][-]{subsection.3.4.5}{Total\040Energy\040consumption}{section.3.4}% 35
 \BOOKMARK [1][-]{section.3.5}{Reach,\040Singularities\040and\040Torch\040Orientation}{chapter.3}% 36
 \BOOKMARK [2][-]{subsection.3.5.1}{Reach\040and\040Alignment}{section.3.5}% 37
 \BOOKMARK [2][-]{subsection.3.5.2}{Singularities}{section.3.5}% 38
@@ -59,4 +59,4 @@
 \BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 59
 \BOOKMARK [1][-]{section.5.1}{Summary}{chapter.5}% 60
 \BOOKMARK [1][-]{section.5.2}{Outlook}{chapter.5}% 61
-\BOOKMARK [0][-]{chapter*.94}{Bibliography}{}% 62
+\BOOKMARK [0][-]{chapter*.95}{Bibliography}{}% 62

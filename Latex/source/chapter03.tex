@@ -54,7 +54,7 @@ In the following steps of the method, the adjacent parameters, machine, part geo
 
 Table \ref{procesparameters} presents an overview of a select group of the various process variables and their numerical form. These process variables can be derived from a toolpath with defined boundary conditions that is executed by an industrial robot. Due to the limited scope of this thesis, only this selected group of process variables is discussed in detail. Further process variables are mentioned in Chapter \ref{Outlook}.
 
-The first group of process variables covers the position, velocity, acceleration, and jerk of the individual joints. These parameters are closely related to the joint position, as they are derived from it. The second group includes the number of direction changes of a joint during operation and the total travel of a joint. The third group comprises the continuous and total energy usage of the manufacturing system during production. The last group consists of the reachability index, singularity analysis, and torch orientation. In the following section, each of these process parameters, their numerical form and required post processing is discussed in detail.
+The first group of process variables covers the position, velocity, acceleration, and jerk of the individual joints. These variables are closely related to the joint position, as they are derived from it. The second group includes the number of direction changes of a joint during operation and the total travel of a joint. The third group comprises the continuous and total energy consumption of the manufacturing system during production. The last group consists of the reachability index, singularity analysis, and torch orientation. In the following section, each of these process variables, their numerical form and required post processing is discussed in detail.
 
 \begin{table}[H]
 	\centering
@@ -83,8 +83,8 @@ The first group of process variables covers the position, velocity, acceleration
 		
 		%\hline
 		%\hline
-		Continuous energy usage & Time-series\\
-		Total energy usage & Scalar value\\
+		Continuous energy consumption & Time-series\\
+		Total energy consumption & Scalar value\\
 		\hline
 		\hline
 		Reachability index & Binary value / Time-series\\
@@ -112,13 +112,13 @@ An important factor in assessing joint load is the number of direction changes t
 %By utilizing a forward kinematics approach or extracting it from the G-code directly, it is possible to attain the position (X-, Y-, Z-position) and orientation (rotation) of the \acrshort{TCP}. Furthermore, the acceleration and jerk of the \acrshort{TCP} can be calculated by deriving their respective values with respect to time. These derived variables, along with the joint positions, are stored in arrays that track the temporal changes in their values. These variables enable the determination of the number of deviations from the intended toolpath and the extent of deviation that can be expected in continuous path mode as explained in Chapter \ref{CPM}.
 
 
-\subsubsection*{Energy Usage}
-Estimating energy usage in industrial robot applications is increasingly important in the current manufacturing environment. One accurate method to estimate energy consumption is through multi-body simulation (\acrshort{MBS}), which requires a correct 3D model incorporating information about the weight and distribution of the robot joints. Another approach is to utilize Machine Learning (\acrshort{ML}) techniques in combination with the joint positions over time or other intermediate analyses. Moreover, in cases where the industrial robot is used for \acrshort{WAAM}, the power required for welding can be determined by analyzing the duration during which the welding torch remains active, which can be extracted from the G-code. Similar to the variables mentioned earlier, the continuous energy usage is also stored in the form of an array to capture variations over time.
+\subsubsection*{Energy consumption}
+Estimating energy consumption in industrial robot applications is increasingly important in the current manufacturing environment. One accurate method to estimate energy consumption is through multi-body simulation (\acrshort{MBS}), which requires a correct 3D model incorporating information about the weight and distribution of the robot joints. Another approach is to utilize Machine Learning (\acrshort{ML}) techniques in combination with the joint positions over time or other intermediate analyses. Moreover, in cases where the industrial robot is used for \acrshort{WAAM}, the power required for welding can be determined by analyzing the duration during which the welding torch remains active, which can be extracted from the G-code. Similar to the variables mentioned earlier, the continuous energy consumption is also stored in the form of an array to capture variations over time.
 
-Total energy usage, measured in kilowatt-hours (kWh), is a crucial variable that can be directly extracted after finishing the manufacturing process. It offers valuable insights into the overall energy consumption of the industrial robot system. This variables can be obtained by recording the overall energy usage as a single value or by integrating the time-series data of continuous energy consumption. By analyzing energy usage, manufacturers can identify energy-intensive processes or operations, optimize energy consumption, and implement strategies to reduce overall energy consumption. This not only leads to cost savings but also provides environmental benefits.
+Total energy consumption, measured in kilowatt-hours (kWh), is a crucial variable that can be directly extracted after finishing the manufacturing process. It offers valuable insights into the overall energy consumption of the industrial robot system. This variables can be obtained by recording the overall energy consumption as a single value or by integrating the time-series data of continuous energy consumption. By analyzing energy consumption, manufacturers can identify energy-intensive processes or operations, optimize energy consumption, and implement strategies to reduce overall energy consumption. This not only leads to cost savings but also provides environmental benefits.
 
 
-%Alternatively, if direct measurement of energy usage is not available, the energy consumption can be estimated by integrating the time-series data of the energy consumption. This involves summing up the energy consumed at each time-step over the duration of the manufacturing process. Although this estimation method may not be as accurate as direct measurement, it can still provide valuable insights into the overall energy usage.
+%Alternatively, if direct measurement of energy consumption is not available, the energy consumption can be estimated by integrating the time-series data of the energy consumption. This involves summing up the energy consumed at each time-step over the duration of the manufacturing process. Although this estimation method may not be as accurate as direct measurement, it can still provide valuable insights into the overall energy consumption.
 
 \subsubsection*{Reachability}
 The reachability index is a binary variable used to assess the feasibility of executing a program in an industrial robot system. It determines whether all the necessary points defined in the toolpath are within the robot's working volume and can be reached by its \acrshort{TCP}. This variable ensures that the robot can physically access all required positions in the work area. If any point is found to be outside the reachable workspace, adjustments are necessary. Reachability can also be influenced by additional factors such as cable routing. Even if all the traversed points are within the robot's working volume, factors like wire-feed systems or optical fibers used for laser transmission may have limitations on bending degrees. When analyzing cable routing in relation to orientation, the reachability index can be represented as a time-series that records the deviation of the cable's bending angle from the optimal angle.
@@ -150,7 +150,7 @@ Figure \ref{ParamsFlow} illustrates the interconnections of the different variab
 
 \section{User-Defined Weights and Score Calculation}\label{weights}
 \subsection{Local Rating and Global Score}\label{LR}
-In order to evaluate whether the boundary conditions for a toolpath are optimal or can be improved, it is necessary to have a score or rating value that considers the process variables and their importance. Assigning relative importance to different variables can involve subjective judgments, expert knowledge, and consideration of specific manufacturing constraints. For instance, in some cases, minimizing joint jerk may be the main objective, while in others, energy usage may be more important. To quantify the performance of a toolpath, the user can assign weights or importance factors to each variable based on their specific requirements. These weights reflect the relative significance of each variable in achieving the desired optimum. A weighted sum or scoring method can then be used to evaluate and compare the toolpath with varying constraints based on the aggregated scores of the individual process variables. %The sum of all defined importance values must add up to 1 so that the most optimal toolpath has the global score of 100.
+In order to evaluate whether the boundary conditions for a toolpath are optimal or can be improved, it is necessary to have a score or rating value that considers the process variables and their importance. Assigning relative importance to different variables can involve subjective judgments, expert knowledge, and consideration of specific manufacturing constraints. For instance, in some cases, minimizing joint jerk may be the main objective, while in others, energy consumption may be more important. To quantify the performance of a toolpath, the user can assign weights or importance factors to each variable based on their specific requirements. These weights reflect the relative significance of each variable in achieving the desired optimum. A weighted sum or scoring method can then be used to evaluate and compare the toolpath with varying constraints based on the aggregated scores of the individual process variables. %The sum of all defined importance values must add up to 1 so that the most optimal toolpath has the global score of 100.
 It's important to note that the subjective weighing of variables can vary between different manufacturing scenarios and requires continuous evaluation and adjustment based on changing priorities or goals.
 
 The score of a toolpath with its boundary conditions is calculated as shown in table \ref{weighting}. Each process variable is assigned a local rating ranging from 0 to 100, where 0 represents the least optimal and 100 represents the best-case solution. This local rating is multiplied by the corresponding importance factor, resulting in a local score. The local scores for all variables are then summed to obtain the overall global score for that specific boundary condition.\newpage It is crucial to ensure that the sum of all defined importance values equals 1, so that the toolpath with the most optimal boundary conditions yields a global score of 100.
@@ -400,12 +400,12 @@ In the context of \acrshort{WAAM}, the acceleration of the welding torch plays a
 
 However, it is worth noting that, similar to the deviation in the toolpath discussed earlier, this issue cannot be directly optimized by simply defining specific boundary conditions in the form of redundant \acrshort{DoF}.
 
-\section{Energy Usage}
-Energy usage is a critical factor in modern manufacturing. To minimize unnecessary and energy-intensive movements, it is crucial to select appropriate boundary conditions for the additional constraint . The analysis of energy usage can be approached in two distinct ways.
+\section{Energy consumption}
+Energy consumption is a critical factor in modern manufacturing. To minimize unnecessary and energy-intensive movements, it is crucial to select appropriate boundary conditions for the additional constraint . The analysis of energy consumption can be approached in two distinct ways.
 
-Firstly, a continuous energy analysis allows for the attribution of specific energy consumption to each movement. This approach provides detailed insights into the energy usage of individual actions or operations. Secondly, considering the overall energy requirement throughout the entire manufacturing process provides a holistic perspective on energy utilization. This approach allows for optimizing energy usage and making informed decisions regarding energy efficiency in manufacturing.
+Firstly, a continuous energy analysis allows for the attribution of specific energy consumption to each movement. This approach provides detailed insights into the energy consumption of individual actions or operations. Secondly, considering the overall energy requirement throughout the entire manufacturing process provides a holistic perspective on energy utilization. This approach allows for optimizing energy consumption and making informed decisions regarding energy efficiency in manufacturing.
 \end{comment}
-\subsection{Continuous Energy Usage}
+\subsection{Continuous Energy consumption}
 Tracking energy consumption can be achieved through a straightforward method of monitoring the velocity and acceleration of individual joints. The energy demand is composed of two components: the rotational movement of a joint at a predetermined speed and the joint's acceleration.
 
 To determine the energy consumed by each joint, the time-series data of joint velocity and acceleration can be multiplied by the average energy consumption value, either in \(\frac{\si[per-mode=symbol]{\kWh}}{\si[per-mode=symbol]{\m\per\sec }}\) or \(\frac{\si[per-mode=symbol]{\kWh}}{\si[per-mode=symbol]{\m\per\sec\squared }}\), associated with that particular joint. By summing up these resultant time-series, an energy consumption profile for each joint can be obtained. The newly obtained time-series represent the energy consumption to move from one pose to another. Aggregating the time-series data from all joints into one time-series provides an overall estimation of the robot's energy consumption. %Table \ref{scalers} gives exemplary values for the scaling factors.
@@ -439,14 +439,14 @@ Figure \ref{ENERGYOPTIONS} illustrates the three aforementioned options along wi
 
 \begin{figure}[H]
 	\centerline{\includegraphics[width=1\textwidth]{figures/ENERGYOPTIONS.png}}
-	\caption{Exemplary methods for energy usage calculations}
+	\caption{Exemplary methods for energy consumption calculations}
 	\label{ENERGYOPTIONS}
 \end{figure}
 
 Once the time-series data for energy consumption is obtained, it becomes possible to identify peaks and associate them with specific movements. In line with the optimization objective, it is also feasible to establish threshold values, as discussed in Chapter \ref{VAJJ}, to optimize for a constant energy consumption.
 
 
-\subsection{Total Energy Usage}
+\subsection{Total Energy consumption}
 When the aim is to obtain a single scalar value for the total energy consumption, the same procedures outlined in the preceding chapter can be applied, and the values from the time-series can be aggregated through summation.
 
 In situations where the temporal information in energy consumption is considered irrelevant, alternative \acrshort{ML} approaches can be employed. For example, Recurrent neural-networks (\acrshort{RNN}s) can be utilized, as they have the ability to take an entire time-series as input and generate a scalar value representing the total energy consumption. \acrshort{RNN}s excel at capturing dependencies and patterns in sequential data. By training an \acrshort{RNN} model using a time-series dataset, it can learn to predict the total energy consumption based on the provided input. However, it is important to note that, like most \acrshort{ML} approaches, this method requires substantial effort and time for generating training data and conducting the training process.
@@ -459,7 +459,7 @@ In \acrshort{WAAM}, it is important to consider the energy consumption associate
 	\label{waamgcode}
 \end{figure}
 
-By considering these factors, it is possible to accurately assess the energy usage during welding operations. However, this specific part of the total energy consumption cannot be optimized by defining the boundary conditions of redundant \acrshort{DoF}s. The energy required for the welding process is solely defined by the welding parameters and the final part geometry.
+By considering these factors, it is possible to accurately assess the energy consumption during welding operations. However, this specific part of the total energy consumption cannot be optimized by defining the boundary conditions of redundant \acrshort{DoF}s. The energy required for the welding process is solely defined by the welding parameters and the final part geometry.
 
 \newpage
 \section{Reach, Singularities and Torch Orientation}
